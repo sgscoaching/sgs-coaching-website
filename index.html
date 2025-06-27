@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGS Coaching Institute</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <img src="sgs-logo.png" alt="SGS Coaching Logo" class="logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder'; console.log('Logo not found. Check if sgs-logo.png is in the folder or upload it to your hosting.');">
+        <h1>SGS Coaching Institute</h1>
+        <p>Success Through Guidance and Study</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to SGS Coaching</h2>
+        <p>Located at Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab, SGS Coaching provides top-quality education for students in Classes 6-12 and competitive exams. Join us to excel!</p>
+        <a href="quizzes.html" class="btn">Try Our Quizzes</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Established to empower students, SGS Coaching Institute offers personalized learning with experienced tutors. Our mission is to guide students to academic success.</p>
+        <h3>Our Tutors</h3>
+        <ul>
+            <li><strong>Priyanshu</strong>: B.Sc. (Non-Medical), M.Sc. Physics</li>
+            <li><strong>Gopal</strong>: B.Sc. (Non-Medical), B.Ed.</li>
+        </ul>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Classes 6-10</h3>
+                <p>All Subjects</p>
+                <p>Fee: ₹600-1000 per subject | Offers: 10% off for first month!</p>
+            </div>
+            <div class="course">
+                <h3>Classes 11-12</h3>
+                <p>Physics, Mathematics</p>
+                <p>Fee: ₹1500-2000 per subject | Offers: Free demo class + 15% off for annual payment</p>
+            </div>
+            <div class="course">
+                <h3>Competitive Exams</h3>
+                <p>Constable, Excise, Patwari, SSC CHSL</p>
+                <p>Fee: ₹8000-15000 package (all subjects) | Offers: Group discounts available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab</p>
+        <p><strong>Contact Numbers:</strong> 8580436681, 6280083892</p>
+        <p><strong>Join Our WhatsApp Group:</strong></p>
+        <img src="whatsapp-qr.png" alt="WhatsApp Group QR Code" class="qr-code" onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=WhatsApp+QR+Not+Found'; this.alt='WhatsApp QR Placeholder'; console.log('QR not found. Check if whatsapp-qr.png is in the folder or upload it to your hosting.');">
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

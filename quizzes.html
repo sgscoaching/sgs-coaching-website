@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGS Coaching Quizzes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="sgs-logo.png" alt="SGS Coaching Logo" class="logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder'; console.log('Logo not found. Check if sgs-logo.png is in the folder or upload it to your hosting.');">
+        <h1>SGS Coaching Quizzes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#courses">Courses</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quizzes">
+        <h2>Select Your Quiz</h2>
+        <div class="quiz-selector">
+            <label for="class-select">Select Class:</label>
+            <select id="class-select" onchange="loadSubjects()">
+                <option value="">Choose Class</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8">Class 8</option>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+                <option value="11">Class 11</option>
+                <option value="12">Class 12</option>
+            </select>
+
+            <label for="subject-select">Select Subject:</label>
+            <select id="subject-select" onchange="loadQuizzes()">
+                <option value="">Choose Subject</option>
+            </select>
+
+            <label for="quiz-select">Select Quiz:</label>
+            <select id="quiz-select" onchange="loadQuiz()">
+                <option value="">Choose Quiz</option>
+            </select>
+        </div>
+        <div id="quiz-container">
+            <h3 id="quiz-title">Select a Class, Subject, and Quiz</h3>
+            <div id="quiz-questions"></div>
+            <button id="submit-quiz" onclick="submitQuiz()" style="display:none;">Submit Quiz</button>
+            <div id="quiz-result"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
