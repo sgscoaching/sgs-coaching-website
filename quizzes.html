@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGS Coaching Quizzes</title>
+    <title>SGS Coaching Institute - Interactive Quizzes</title>
+    <meta name="description" content="Test your knowledge with interactive quizzes for Classes 6-12 at SGS Coaching Institute. Explore subjects like Math, Science, and more!">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: 'Arial', sans-serif; line-height: 1.8; }
+        header, section { text-align: center; padding: 60px 20px; }
+        h1 { font-size: 3em; }
+        h2 { font-size: 2.5em; }
+        select, label { font-size: 1.3em; padding: 10px; margin: 10px; }
+        .btn { background: #2ecc71; color: #ffffff; padding: 12px 25px; font-size: 1.3em; border: none; border-radius: 5px; }
+        #quiz-container { margin-top: 30px; }
+        #questions { text-align: left; max-width: 600px; margin: 0 auto; }
+        .question { margin-bottom: 20px; }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="sgs-logo.png" alt="SGS Coaching Logo" class="logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder'; console.log('Logo not found. Check if sgs-logo.png is in the folder or upload it to your hosting.');">
-        <h1>SGS Coaching Quizzes</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#courses">Courses</a></li>
-                <li><a href="#quizzes">Quizzes</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+        <img src="https://i.imgur.com/xyz123.png" alt="SGS Coaching Logo" class="logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder'; console.log('Logo not found.');">
+        <h1 style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Quiz Zone</h1>
+        <p style="color: #e0e0e0; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">Challenge Yourself and Learn!</p>
     </header>
 
-    <section id="quizzes">
+    <section style="background-color: #f5f5f5; padding: 60px 20px;">
         <h2>Select Your Quiz</h2>
-        <div class="quiz-selector">
-            <label for="class-select">Select Class:</label>
-            <select id="class-select" onchange="loadSubjects()">
-                <option value="">Choose Class</option>
+        <div class="quiz-selector" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <label for="class-select">Choose Class:</label>
+            <select id="class-select" onchange="loadQuizzes()">
+                <option value="">Select Class</option>
                 <option value="6">Class 6</option>
                 <option value="7">Class 7</option>
                 <option value="8">Class 8</option>
@@ -35,29 +39,33 @@
                 <option value="11">Class 11</option>
                 <option value="12">Class 12</option>
             </select>
-
-            <label for="subject-select">Select Subject:</label>
+            <label for="subject-select">Choose Subject:</label>
             <select id="subject-select" onchange="loadQuizzes()">
-                <option value="">Choose Subject</option>
+                <option value="">Select Subject</option>
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
             </select>
-
-            <label for="quiz-select">Select Quiz:</label>
-            <select id="quiz-select" onchange="loadQuiz()">
-                <option value="">Choose Quiz</option>
-            </select>
-        </div>
-        <div id="quiz-container">
-            <h3 id="quiz-title">Select a Class, Subject, and Quiz</h3>
-            <div id="quiz-questions"></div>
-            <button id="submit-quiz" onclick="submitQuiz()" style="display:none;">Submit Quiz</button>
-            <div id="quiz-result"></div>
+            <label for="quiz-select">Choose Quiz:</label>
+            <select id="quiz-select" onchange="loadQuiz()"></select>
+            <div id="quiz-container" style="margin-top: 30px; display: none;">
+                <h3 id="quiz-title" style="color: #3498db; font-size: 1.8em;"></h3>
+                <form id="quiz-form">
+                    <div id="questions"></div>
+                    <button type="submit" class="btn" style="margin-top: 20px;">Submit Quiz</button>
+                </form>
+                <div id="result" style="margin-top: 20px; display: none;">
+                    <p id="score" style="font-size: 1.5em; color: #2ecc71;"></p>
+                    <p id="feedback" style="font-size: 1.3em;"></p>
+                    <button id="try-again-btn" class="btn" style="margin-top: 20px; display: none;" onclick="location.reload();">Try Another Quiz</button>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <footer style="background-color: #2c3e50; color: #ffffff; padding: 20px; text-align: center;">
         <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
 </html>
