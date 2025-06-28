@@ -19,8 +19,8 @@
     </style>
 </head>
 <body>
-    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
-        <img src="https://i.imgur.com/xyz123.png" alt="SGS Coaching Logo" class="logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder'; console.log('Logo not found.');">
+    <header style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1300&q=80'); background-size: cover;">
+        <img src="https://i.imgur.com/xyz123.png" alt="SGS Coaching Logo" class="logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Not Found';" style="width:100px;height:100px;margin-bottom:20px;">
         <h1 style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Quiz Zone</h1>
         <p style="color: #e0e0e0; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">Challenge Yourself and Learn!</p>
     </header>
@@ -29,7 +29,7 @@
         <h2>Select Your Quiz</h2>
         <div class="quiz-selector" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 15px;">
             <label for="class-select">Choose Class:</label>
-            <select id="class-select" onchange="loadQuizzes()">
+            <select id="class-select">
                 <option value="">Select Class</option>
                 <option value="6">Class 6</option>
                 <option value="7">Class 7</option>
@@ -40,14 +40,14 @@
                 <option value="12">Class 12</option>
             </select>
             <label for="subject-select">Choose Subject:</label>
-            <select id="subject-select" onchange="loadQuizzes()">
+            <select id="subject-select">
                 <option value="">Select Subject</option>
                 <option value="math">Mathematics</option>
                 <option value="science">Science</option>
                 <option value="english">English</option>
             </select>
             <label for="quiz-select">Choose Quiz:</label>
-            <select id="quiz-select" onchange="loadQuiz()"></select>
+            <select id="quiz-select"></select>
             <div id="quiz-container" style="margin-top: 30px; display: none;">
                 <h3 id="quiz-title" style="color: #3498db; font-size: 1.8em;"></h3>
                 <form id="quiz-form">
@@ -66,6 +66,6 @@
     <footer style="background-color: #2c3e50; color: #ffffff; padding: 20px; text-align: center;">
         <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
+</body>
 </html>
