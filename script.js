@@ -12687,10 +12687,9 @@ Social_science: [
 }
 ]
     // ...other subjects for class 10
-  },
-
-  11: {
-    Physics: [
+},
+11: {
+ Physics: [
       // Chapter 1: Physical World
 {
   title: "Physical World - Quiz 1",
@@ -13443,9 +13442,8 @@ Social_science: [
     {q: "The SI unit of frequency is:", options: ["Hertz", "Meter", "Newton", "Joule"], answer: "Hertz"}
   ]
 }
-  // ...more chapters
-    ],
-    Chemistry: [
+],
+ Chemistry: [
     // Chapter 1: Some Basic Concepts of Chemistry
 {
   title: "Some Basic Concepts of Chemistry - Quiz 1",
@@ -14114,9 +14112,8 @@ Social_science: [
     {q: "EDTA is used for:", options: ["Water softening", "Water hardening", "Increase pH", "Decrease pH"], answer: "Water softening"}
   ]
 }
-      // ...more chapters
-    ],
-    Mathematics: [
+],
+  Mathematics: [
      // Chapter 1: Sets
 {
   title: "Sets - Quiz 1",
@@ -14784,2775 +14781,9 @@ Social_science: [
     {q: "If two dice are thrown, probability both show same number is:", options: ["1/6", "1/12", "1/36", "1/18"], answer: "1/6"},
     {q: "Probability of getting a prime number on a die is:", options: ["1/2", "1/3", "2/3", "1/6"], answer: "1/2"}
   ]
-    }
-      ],
-   Biology: [
-// Chapter 1: The Living World
-{
-  title: "The Living World - Quiz 1",
-  questions: [
-    {q: "Who is known as the Father of Taxonomy?", options: ["Carolus Linnaeus", "Aristotle", "John Ray", "Charles Darwin"], answer: "Carolus Linnaeus"},
-    {q: "ICBN stands for:", options: ["International Code of Botanical Nomenclature", "Indian Council of Biological Names", "International Council of Botanical Nomenclature", "Indian Code for Botanical Nomenclature"], answer: "International Code of Botanical Nomenclature"},
-    {q: "The basic unit of classification is:", options: ["Species", "Genus", "Family", "Order"], answer: "Species"},
-    {q: "Which is the correct sequence of taxonomic hierarchy?", options: ["Kingdom, Phylum, Class, Order, Family, Genus, Species", "Phylum, Kingdom, Class, Order, Genus, Family, Species", "Kingdom, Class, Phylum, Order, Family, Genus, Species", "Kingdom, Order, Class, Phylum, Family, Genus, Species"], answer: "Kingdom, Phylum, Class, Order, Family, Genus, Species"},
-    {q: "Binomial nomenclature contains:", options: ["Genus and species", "Species and variety", "Family and genus", "Order and family"], answer: "Genus and species"},
-    {q: "Which is not a taxon?", options: ["Class", "Phylum", "Species", "Key"], answer: "Key"},
-    {q: "A group of similar organisms that can interbreed forms a:", options: ["Species", "Genus", "Family", "Order"], answer: "Species"},
-    {q: "The process of arranging organisms into groups based on similarities is called:", options: ["Classification", "Identification", "Nomenclature", "Taxonomy"], answer: "Classification"},
-    {q: "Taxonomic keys are used for:", options: ["Identification", "Classification", "Nomenclature", "Variety"], answer: "Identification"},
-    {q: "The largest category in taxonomic hierarchy is:", options: ["Kingdom", "Phylum", "Class", "Order"], answer: "Kingdom"},
-    {q: "Which is not a feature of living organisms?", options: ["Reproduction", "Digestion", "Growth", "Response to stimuli"], answer: "Digestion"},
-    {q: "Who coined the term ‘species’?", options: ["John Ray", "Linnaeus", "Aristotle", "Darwin"], answer: "John Ray"},
-    {q: "A ‘family’ in plants ends with:", options: ["-aceae", "-idae", "-ales", "-ineae"], answer: "-aceae"},
-    {q: "Which statement is true?", options: ["All living things grow and reproduce", "All living things have the same number of cells", "All living things are visible to naked eye", "All living things photosynthesize"], answer: "All living things grow and reproduce"},
-    {q: "Which among the following is NOT a correct match?", options: ["Order - Primata", "Class - Mammalia", "Phylum - Angiospermae", "Genus - Homo"], answer: "Phylum - Angiospermae"}
-  ]
-},
-{
-  title: "The Living World - Quiz 2",
-  questions: [
-    {q: "Which taxonomic aid is generally preserved in jars or containers?", options: ["Herbarium", "Museum", "Key", "Monograph"], answer: "Museum"},
-    {q: "Which is not a correct pair?", options: ["Genus – Homo", "Species – sapiens", "Order – Primata", "Class – Reptilia for human"], answer: "Class – Reptilia for human"},
-    {q: "A taxon is:", options: ["A group of related organisms", "A type of leaf", "A scientist", "A type of reproduction"], answer: "A group of related organisms"},
-    {q: "Nomenclature deals with:", options: ["Assigning names", "Grouping", "Classification", "Separation"], answer: "Assigning names"},
-    {q: "Flora is:", options: ["A book with information about plants of a region", "A list of animals", "A type of flower", "A key"], answer: "A book with information about plants of a region"},
-    {q: "The correct scientific name for mango is:", options: ["Mangifera indica", "Mangifera Indica", "Mango indica", "Mangifera Indicus"], answer: "Mangifera indica"},
-    {q: "Manuals are useful for:", options: ["Identifying species in an area", "Naming species", "Preserving specimens", "Classifying families"], answer: "Identifying species in an area"},
-    {q: "Keys are based on:", options: ["Contrasting characters", "Similarities", "Habitat", "Size"], answer: "Contrasting characters"},
-    {q: "Which one is not a taxonomic aid?", options: ["Atlas", "Herbarium", "Museum", "Monograph"], answer: "Atlas"},
-    {q: "Which is NOT a correct statement?", options: ["All species are given binomial names", "All living organisms can reproduce", "All organisms are multicellular", "All living things show metabolism"], answer: "All organisms are multicellular"},
-    {q: "Typification is related to:", options: ["Nomenclature", "Growth", "Classification", "Metabolism"], answer: "Nomenclature"},
-    {q: "The scientific name of human is:", options: ["Homo sapiens", "Homo Sapiens", "Homo sapien", "Homo sapienus"], answer: "Homo sapiens"},
-    {q: "Which is NOT a feature of living beings?", options: ["Metabolism", "Consciousness", "Growth", "Chromatography"], answer: "Chromatography"},
-    {q: "The tool used for preserving plant specimens is:", options: ["Herbarium", "Museum", "Monograph", "Key"], answer: "Herbarium"},
-    {q: "The process of assigning scientific names is called:", options: ["Nomenclature", "Classification", "Hybridization", "Identification"], answer: "Nomenclature"}
-  ]
-},
-
-// Chapter 2: Biological Classification
-{
-  title: "Biological Classification - Quiz 1",
-  questions: [
-    {q: "The five kingdom classification was proposed by:", options: ["R.H. Whittaker", "Linnaeus", "Haeckel", "Aristotle"], answer: "R.H. Whittaker"},
-    {q: "Which kingdom includes blue-green algae?", options: ["Monera", "Protista", "Plantae", "Fungi"], answer: "Monera"},
-    {q: "Which is not a feature of Kingdom Monera?", options: ["Prokaryotic", "Unicellular", "Nucleus present", "Cell wall present"], answer: "Nucleus present"},
-    {q: "Which group of Protista has pseudopodia?", options: ["Amoeboid protozoans", "Flagellated protozoans", "Ciliated protozoans", "Sporozoans"], answer: "Amoeboid protozoans"},
-    {q: "Which kingdom includes yeast?", options: ["Fungi", "Monera", "Plantae", "Protista"], answer: "Fungi"},
-    {q: "Slime molds belong to:", options: ["Protista", "Monera", "Fungi", "Plantae"], answer: "Protista"},
-    {q: "Which statement is true for viruses?", options: ["They are obligate parasites", "They have cell walls", "They are prokaryotic", "They have ribosomes"], answer: "They are obligate parasites"},
-    {q: "The cell wall of fungi is composed of:", options: ["Chitin", "Cellulose", "Pectin", "Protein"], answer: "Chitin"},
-    {q: "Which kingdom includes diatoms?", options: ["Protista", "Monera", "Fungi", "Plantae"], answer: "Protista"},
-    {q: "The reserve food material of fungi is:", options: ["Glycogen", "Starch", "Cellulose", "Sucrose"], answer: "Glycogen"},
-    {q: "Bacteria which can live in extreme salty environments are called:", options: ["Halophiles", "Thermophiles", "Methanogens", "Acidophiles"], answer: "Halophiles"},
-    {q: "Which is not a characteristic of Euglena?", options: ["Cellulose cell wall", "Flagella", "Photosynthetic pigments", "Unicellular"], answer: "Cellulose cell wall"},
-    {q: "Viruses contain:", options: ["Either DNA or RNA", "Both DNA and RNA", "Only proteins", "Only carbohydrates"], answer: "Either DNA or RNA"},
-    {q: "Which is NOT included in Whittaker’s five kingdom?", options: ["Viruses", "Monera", "Protista", "Fungi"], answer: "Viruses"},
-    {q: "Which is not a fungal disease?", options: ["Pneumonia", "Ringworm", "Athlete’s foot", "Aspergillosis"], answer: "Pneumonia"}
-  ]
-},
-{
-  title: "Biological Classification - Quiz 2",
-  questions: [
-    {q: "Who discovered bacteria?", options: ["Anton van Leeuwenhoek", "Louis Pasteur", "Robert Koch", "Edward Jenner"], answer: "Anton van Leeuwenhoek"},
-    {q: "Which is NOT a cyanobacterium?", options: ["Euglena", "Nostoc", "Anabaena", "Oscillatoria"], answer: "Euglena"},
-    {q: "The sexual reproduction in fungi is absent in:", options: ["Deuteromycetes", "Ascomycetes", "Zygomycetes", "Basidiomycetes"], answer: "Deuteromycetes"},
-    {q: "The causative agent of late blight of potato is:", options: ["Phytophthora", "Albugo", "Puccinia", "Ustilago"], answer: "Phytophthora"},
-    {q: "Which is NOT true about mycoplasma?", options: ["They have cell wall", "They are the smallest living cells", "They can survive without oxygen", "They cause disease in plants"], answer: "They have cell wall"},
-    {q: "The reserve food material in blue-green algae is:", options: ["Cyanophycean starch", "Glycogen", "Starch", "Cellulose"], answer: "Cyanophycean starch"},
-    {q: "Which group does Plasmodium belong to?", options: ["Sporozoans", "Ciliates", "Flagellates", "Amoeboids"], answer: "Sporozoans"},
-    {q: "The bread mold is:", options: ["Rhizopus", "Agaricus", "Penicillium", "Aspergillus"], answer: "Rhizopus"},
-    {q: "Which of the following is a symbiotic association?", options: ["Lichen", "Moss", "Algae", "Fern"], answer: "Lichen"},
-    {q: "Which kingdom contains prokaryotes?", options: ["Monera", "Protista", "Fungi", "Plantae"], answer: "Monera"},
-    {q: "The genetic material of a retrovirus is:", options: ["RNA", "DNA", "Both", "Neither"], answer: "RNA"},
-    {q: "Which structure is absent in viruses?", options: ["Cell wall", "Protein coat", "Nucleic acid", "Capsid"], answer: "Cell wall"},
-    {q: "Yeast is used in the production of:", options: ["Alcohol", "Vaccine", "Antibiotic", "Bread"], answer: "Alcohol"},
-    {q: "Which of the following is NOT a protist?", options: ["Amoeba", "Paramecium", "Spirogyra", "Euglena"], answer: "Spirogyra"},
-    {q: "Which is a thermophilic archaebacterium?", options: ["Thermus aquaticus", "Halobacterium", "Methanobacterium", "Nostoc"], answer: "Thermus aquaticus"}
-  ]
-},
-// Chapter 3: Plant Kingdom
-{
-  title: "Plant Kingdom - Quiz 1",
-  questions: [
-    {q: "Bryophytes are called amphibians of the plant kingdom because:", options: ["They require water for fertilization", "They live in water", "They are aquatic plants", "They are seedless"], answer: "They require water for fertilization"},
-    {q: "Which of the following is a non-vascular plant?", options: ["Liverwort", "Fern", "Cycas", "Pine"], answer: "Liverwort"},
-    {q: "Which phase is dominant in pteridophytes?", options: ["Sporophyte", "Gametophyte", "Prothallus", "Zygote"], answer: "Sporophyte"},
-    {q: "The main plant body in bryophytes is:", options: ["Gametophyte", "Sporophyte", "Seed", "Fruit"], answer: "Gametophyte"},
-    {q: "Mosses belong to which group?", options: ["Bryophyta", "Pteridophyta", "Gymnosperms", "Angiosperms"], answer: "Bryophyta"},
-    {q: "The first vascular plants are:", options: ["Pteridophytes", "Bryophytes", "Gymnosperms", "Angiosperms"], answer: "Pteridophytes"},
-    {q: "Double fertilization occurs in:", options: ["Angiosperms", "Gymnosperms", "Bryophytes", "Algae"], answer: "Angiosperms"},
-    {q: "Which is NOT a gymnosperm?", options: ["Mango", "Pine", "Cycas", "Ginkgo"], answer: "Mango"},
-    {q: "The dominant phase in gymnosperms is:", options: ["Sporophyte", "Gametophyte", "Zygote", "Prothallus"], answer: "Sporophyte"},
-    {q: "Funaria is an example of:", options: ["Moss", "Fern", "Pine", "Ginkgo"], answer: "Moss"},
-    {q: "The seeds of gymnosperms are described as:", options: ["Naked seeds", "Covered seeds", "Enclosed in fruit", "Fleshy"], answer: "Naked seeds"},
-    {q: "Which of the following is NOT a pteridophyte?", options: ["Marchantia", "Selaginella", "Equisetum", "Pteris"], answer: "Marchantia"},
-    {q: "Megaspore and microspore are produced by:", options: ["Heterosporous pteridophytes", "Bryophytes", "Algae", "Angiosperms only"], answer: "Heterosporous pteridophytes"},
-    {q: "Sargassum is an example of:", options: ["Brown algae", "Red algae", "Green algae", "Bryophyte"], answer: "Brown algae"},
-    {q: "Gametophyte of moss is:", options: ["Green, leafy, photosynthetic", "Small, non-photosynthetic", "Seedless", "Non-green"], answer: "Green, leafy, photosynthetic"}
-  ]
-},
-{
-  title: "Plant Kingdom - Quiz 2",
-  questions: [
-    {q: "Which pigment is found in red algae?", options: ["Phycoerythrin", "Chlorophyll a", "Chlorophyll b", "Fucoxanthin"], answer: "Phycoerythrin"},
-    {q: "The first land plants were:", options: ["Bryophytes", "Algae", "Gymnosperms", "Angiosperms"], answer: "Bryophytes"},
-    {q: "Which of the following has motile gametes?", options: ["Algae", "Bryophytes", "Pteridophytes", "All of these"], answer: "All of these"},
-    {q: "Which is NOT a feature of angiosperms?", options: ["Naked seeds", "Double fertilization", "Flowers", "Enclosed seeds"], answer: "Naked seeds"},
-    {q: "Which of the following is a vascular cryptogam?", options: ["Fern", "Moss", "Cycas", "Pine"], answer: "Fern"},
-    {q: "Protonema is found in:", options: ["Mosses", "Ferns", "Gymnosperms", "Algae"], answer: "Mosses"},
-    {q: "Which group shows alternation of generations?", options: ["All plant groups", "Only gymnosperms", "Algae only", "Bryophytes only"], answer: "All plant groups"},
-    {q: "Which plant group is called ‘reptiles of plant kingdom’?", options: ["Gymnosperms", "Ferns", "Algae", "Bryophytes"], answer: "Gymnosperms"},
-    {q: "Which is a heterosporous pteridophyte?", options: ["Selaginella", "Funaria", "Pteris", "Marchantia"], answer: "Selaginella"},
-    {q: "Which is the largest group among plants?", options: ["Angiosperms", "Bryophytes", "Algae", "Gymnosperms"], answer: "Angiosperms"},
-    {q: "Ginkgophyta is represented by:", options: ["Ginkgo biloba", "Pinus", "Cycas", "Thuja"], answer: "Ginkgo biloba"},
-    {q: "The main plant body in gymnosperms is:", options: ["Sporophyte", "Prothallus", "Gametophyte", "Seed"], answer: "Sporophyte"},
-    {q: "Which of the following is NOT an algae?", options: ["Riccia", "Ulothrix", "Chlamydomonas", "Sargassum"], answer: "Riccia"},
-    {q: "The leaf-like structures of moss are called:", options: ["Phyllids", "Microphylls", "Fronds", "Sporophylls"], answer: "Phyllids"},
-    {q: "Which of the following is a red algae?", options: ["Polysiphonia", "Ulva", "Fucus", "Chara"], answer: "Polysiphonia"}
-  ]
-},
-
-// Chapter 4: Animal Kingdom
-{
-  title: "Animal Kingdom - Quiz 1",
-  questions: [
-    {q: "Which of the following is diploblastic?", options: ["Cnidaria", "Arthropoda", "Annelida", "Platyhelminthes"], answer: "Cnidaria"},
-    {q: "The body cavity lined by mesoderm is called:", options: ["Coelom", "Pseudocoelom", "Acoelom", "Haemocoel"], answer: "Coelom"},
-    {q: "Which phylum has water vascular system?", options: ["Echinodermata", "Annelida", "Arthropoda", "Mollusca"], answer: "Echinodermata"},
-    {q: "Which is NOT a characteristic of chordates?", options: ["Presence of notochord", "Dorsal nerve cord", "Open circulatory system", "Pharyngeal gill slits"], answer: "Open circulatory system"},
-    {q: "Which animal is radially symmetrical?", options: ["Aurelia", "Planaria", "Earthworm", "Cockroach"], answer: "Aurelia"},
-    {q: "Which group includes earthworms?", options: ["Annelida", "Arthropoda", "Mollusca", "Nematoda"], answer: "Annelida"},
-    {q: "Which phylum includes leech?", options: ["Annelida", "Mollusca", "Arthropoda", "Platyhelminthes"], answer: "Annelida"},
-    {q: "Which of the following is NOT a feature of mammals?", options: ["External ears", "Hair", "Mammary glands", "Feathers"], answer: "Feathers"},
-    {q: "The exoskeleton of arthropods is made up of:", options: ["Chitin", "Keratin", "Calcium carbonate", "Silica"], answer: "Chitin"},
-    {q: "Which is NOT a mammal?", options: ["Penguin", "Bat", "Whale", "Kangaroo"], answer: "Penguin"},
-    {q: "Which of the following is a cartilaginous fish?", options: ["Shark", "Rohu", "Tuna", "Catfish"], answer: "Shark"},
-    {q: "Which phylum shows metamerism?", options: ["Annelida", "Platyhelminthes", "Porifera", "Cnidaria"], answer: "Annelida"},
-    {q: "Which phylum has the largest number of species?", options: ["Arthropoda", "Mollusca", "Chordata", "Annelida"], answer: "Arthropoda"},
-    {q: "The stinging cells of cnidarians are called:", options: ["Cnidocytes", "Sclerocytes", "Nephridia", "Ostia"], answer: "Cnidocytes"},
-    {q: "Which of the following is a non-chordate?", options: ["Earthworm", "Frog", "Bird", "Human"], answer: "Earthworm"}
-  ]
-},
-{
-  title: "Animal Kingdom - Quiz 2",
-  questions: [
-    {q: "Which class of vertebrates is cold-blooded and lays eggs in water?", options: ["Amphibia", "Mammalia", "Reptilia", "Aves"], answer: "Amphibia"},
-    {q: "Which animal is a hemichordate?", options: ["Balanoglossus", "Herdmania", "Salpa", "Petromyzon"], answer: "Balanoglossus"},
-    {q: "Which is an acoelomate phylum?", options: ["Platyhelminthes", "Annelida", "Nematoda", "Mollusca"], answer: "Platyhelminthes"},
-    {q: "Which of the following has a water canal system?", options: ["Porifera", "Mollusca", "Echinodermata", "Cnidaria"], answer: "Porifera"},
-    {q: "Which one has an open circulatory system?", options: ["Arthropoda", "Chordata", "Annelida", "Platyhelminthes"], answer: "Arthropoda"},
-    {q: "Which is NOT a feature of reptiles?", options: ["Hair", "Scales", "Cold-blooded", "Lay eggs"], answer: "Hair"},
-    {q: "Which animal is a mammal?", options: ["Whale", "Shark", "Salamander", "Turtle"], answer: "Whale"},
-    {q: "Which is a jawless fish?", options: ["Petromyzon", "Shark", "Rohu", "Catla"], answer: "Petromyzon"},
-    {q: "Which of the following has a four-chambered heart?", options: ["Bird", "Frog", "Lizard", "Fish"], answer: "Bird"},
-    {q: "Which is a hermaphrodite animal?", options: ["Earthworm", "Cockroach", "Frog", "Pigeon"], answer: "Earthworm"},
-    {q: "Which of the following has compound eyes?", options: ["Cockroach", "Frog", "Earthworm", "Man"], answer: "Cockroach"},
-    {q: "Which of the following is a monotreme?", options: ["Platypus", "Kangaroo", "Dog", "Cat"], answer: "Platypus"},
-    {q: "Which is a feature of aves?", options: ["Feathers", "Scales", "Hair", "Gills"], answer: "Feathers"},
-    {q: "The body cavity between body wall and gut wall is called:", options: ["Coelom", "Haemocoel", "Blastocoel", "Pseudocoel"], answer: "Coelom"},
-    {q: "Which of these is a filter feeder?", options: ["Balanoglossus", "Leech", "Planaria", "Frog"], answer: "Balanoglossus"}
-  ]
-},
-// Chapter 5: Morphology of Flowering Plants
-{
-  title: "Morphology of Flowering Plants - Quiz 1",
-  questions: [
-    {q: "The main function of root hairs is:", options: ["Absorption of water and minerals", "Anchorage", "Storage", "Photosynthesis"], answer: "Absorption of water and minerals"},
-    {q: "A leaf with a single undivided lamina is called:", options: ["Simple leaf", "Compound leaf", "Bipinnate", "Palmate"], answer: "Simple leaf"},
-    {q: "Phyllotaxy with two leaves at each node is:", options: ["Opposite", "Alternate", "Whorled", "Spiral"], answer: "Opposite"},
-    {q: "The edible part of onion is:", options: ["Fleshy leaves", "Root", "Stem", "Flower"], answer: "Fleshy leaves"},
-    {q: "Which inflorescence has the youngest flower at the base?", options: ["Racemose", "Cymose", "Capitulum", "Catkin"], answer: "Racemose"},
-    {q: "A fruit formed without fertilization is called:", options: ["Parthenocarpic", "Aggregate", "Multiple", "False fruit"], answer: "Parthenocarpic"},
-    {q: "Which of the following is a modified stem?", options: ["Potato tuber", "Carrot", "Sweet potato", "Turnip"], answer: "Potato tuber"},
-    {q: "The arrangement of ovules within the ovary is called:", options: ["Placentation", "Venation", "Phyllotaxy", "Pollination"], answer: "Placentation"},
-    {q: "Which plant shows pinnately compound leaves?", options: ["Neem", "Palm", "Coriander", "China rose"], answer: "Neem"},
-    {q: "In monocots, the root system is generally:", options: ["Fibrous", "Tap root", "Adventitious", "Aerial"], answer: "Fibrous"},
-    {q: "The swollen base of a flower to which all floral whorls are attached is:", options: ["Thalamus", "Ovary", "Calyx", "Corolla"], answer: "Thalamus"},
-    {q: "The type of placentation in tomato is:", options: ["Axile", "Marginal", "Parietal", "Basal"], answer: "Axile"},
-    {q: "Which part of the plant is ginger?", options: ["Rhizome", "Tuber", "Corm", "Bulb"], answer: "Rhizome"},
-    {q: "The term 'epiphyllous stamen' refers to stamens attached to:", options: ["Petals", "Sepals", "Ovary", "Thalamus"], answer: "Petals"},
-    {q: "Which of the following is an example of aggregate fruit?", options: ["Strawberry", "Apple", "Tomato", "Banana"], answer: "Strawberry"}
-  ]
-},
-{
-  title: "Morphology of Flowering Plants - Quiz 2",
-  questions: [
-    {q: "The modification of root in carrot is for:", options: ["Storage", "Climbing", "Respiration", "Absorption"], answer: "Storage"},
-    {q: "Which venation is found in dicot leaves?", options: ["Reticulate", "Parallel", "Spiral", "Palmate"], answer: "Reticulate"},
-    {q: "A flower with both androecium and gynoecium is:", options: ["Bisexual", "Unisexual", "Polygamous", "Trisexual"], answer: "Bisexual"},
-    {q: "The edible part of mango is derived from:", options: ["Mesocarp", "Endocarp", "Epicarp", "Seed"], answer: "Mesocarp"},
-    {q: "Which of the following is an example of a corm?", options: ["Colocasia", "Potato", "Ginger", "Onion"], answer: "Colocasia"},
-    {q: "Pollination by wind is called:", options: ["Anemophily", "Hydrophily", "Entomophily", "Ornithophily"], answer: "Anemophily"},
-    {q: "Which of the following is NOT a type of placentation?", options: ["Adnation", "Axile", "Parietal", "Free central"], answer: "Adnation"},
-    {q: "The largest seed is found in:", options: ["Coco de mer", "Mango", "Lotus", "Apple"], answer: "Coco de mer"},
-    {q: "The root cap is absent in:", options: ["Hydrophytes", "Mesophytes", "Xerophytes", "Epiphytes"], answer: "Hydrophytes"},
-    {q: "Which of the following is a false fruit?", options: ["Apple", "Mango", "Grape", "Banana"], answer: "Apple"},
-    {q: "The term 'polyadelphous' describes a condition of stamens where:", options: ["Stamens are united into more than two bundles", "Stamens are free", "Stamens form one bundle", "Stamens are attached to petals"], answer: "Stamens are united into more than two bundles"},
-    {q: "The type of inflorescence in sunflower is:", options: ["Capitulum", "Spike", "Raceme", "Corymb"], answer: "Capitulum"},
-    {q: "Which among the following is an aquatic root modification?", options: ["Pneumatophores", "Prop roots", "Stilt roots", "Haustoria"], answer: "Pneumatophores"},
-    {q: "Which part of banana is edible?", options: ["Fleshy pericarp", "Seed", "Endosperm", "Epicarp"], answer: "Fleshy pericarp"},
-    {q: "The condition in which sepals are united is called:", options: ["Gamosepalous", "Polysepalous", "Gamopetalous", "Polypetalous"], answer: "Gamosepalous"}
-  ]
-},
-
-// Chapter 6: Anatomy of Flowering Plants
-{
-  title: "Anatomy of Flowering Plants - Quiz 1",
-  questions: [
-    {q: "The tissue responsible for the increase in girth of dicot roots is:", options: ["Lateral meristem", "Apical meristem", "Intercalary meristem", "Dermal tissue"], answer: "Lateral meristem"},
-    {q: "The main function of stomata is:", options: ["Gaseous exchange", "Water absorption", "Food storage", "Support"], answer: "Gaseous exchange"},
-    {q: "Casparian strips are found in:", options: ["Endodermis", "Cortex", "Pericycle", "Epidermis"], answer: "Endodermis"},
-    {q: "Companion cells are associated with:", options: ["Sieve tube elements", "Xylem vessels", "Tracheids", "Parenchyma"], answer: "Sieve tube elements"},
-    {q: "Which of the following is NOT a simple tissue?", options: ["Sieve tube", "Parenchyma", "Collenchyma", "Sclerenchyma"], answer: "Sieve tube"},
-    {q: "The periderm includes:", options: ["Phellem, phellogen, phelloderm", "Cork, cortex, pericycle", "Cortex, endodermis, pericycle", "Epidermis, cortex, phloem"], answer: "Phellem, phellogen, phelloderm"},
-    {q: "Annual rings are formed due to activity of:", options: ["Cambium", "Pericycle", "Endodermis", "Xylem"], answer: "Cambium"},
-    {q: "Which cells are dead at maturity?", options: ["Tracheids", "Parenchyma", "Companion cells", "Collenchyma"], answer: "Tracheids"},
-    {q: "The main water-conducting tissue in gymnosperms is:", options: ["Tracheids", "Vessels", "Sieve tubes", "Phloem fibers"], answer: "Tracheids"},
-    {q: "Vascular bundles in monocot stem are:", options: ["Scattered", "Arranged in a ring", "Absent", "Amphivasal"], answer: "Scattered"},
-    {q: "Which tissue is responsible for secondary growth?", options: ["Lateral meristem", "Apical meristem", "Intercalary meristem", "Dermal tissue"], answer: "Lateral meristem"},
-    {q: "The outermost layer of root is called:", options: ["Epidermis", "Pericycle", "Endodermis", "Cortex"], answer: "Epidermis"},
-    {q: "Heartwood differs from sapwood in:", options: ["Being non-functional in conduction", "Having living cells", "Being lighter in color", "Containing more parenchyma"], answer: "Being non-functional in conduction"},
-    {q: "The tissue that provides mechanical support in young dicot stems is:", options: ["Collenchyma", "Parenchyma", "Sclerenchyma", "Xylem"], answer: "Collenchyma"},
-    {q: "The cork cambium is also called:", options: ["Phellogen", "Phellem", "Pericycle", "Endodermis"], answer: "Phellogen"}
-  ]
-},
-{
-  title: "Anatomy of Flowering Plants - Quiz 2",
-  questions: [
-    {q: "Which of the following is NOT part of a vascular bundle?", options: ["Pericycle", "Xylem", "Phloem", "Cambium"], answer: "Pericycle"},
-    {q: "The function of lenticels is:", options: ["Gaseous exchange", "Water conduction", "Food storage", "Translocation"], answer: "Gaseous exchange"},
-    {q: "In monocot roots, vascular bundles are:", options: ["Radial", "Conjoint", "Collateral", "Bicollateral"], answer: "Radial"},
-    {q: "Which tissue is absent in monocot stems?", options: ["Cambium", "Xylem", "Phloem", "Parenchyma"], answer: "Cambium"},
-    {q: "The bark of a tree is composed of:", options: ["Secondary phloem and periderm", "Primary phloem", "Xylem", "Cambium"], answer: "Secondary phloem and periderm"},
-    {q: "Which tissue is present in the leaf for photosynthesis?", options: ["Palisade parenchyma", "Sclerenchyma", "Collenchyma", "Tracheid"], answer: "Palisade parenchyma"},
-    {q: "Vascular cambium develops from:", options: ["Interfascicular and intrafascicular cambium", "Pericycle", "Epidermis", "Endodermis"], answer: "Interfascicular and intrafascicular cambium"},
-    {q: "The main function of root cap is:", options: ["Protection of root tip", "Absorption", "Storage", "Conduction"], answer: "Protection of root tip"},
-    {q: "The tissue which stores food in potato tuber is:", options: ["Parenchyma", "Collenchyma", "Sclerenchyma", "Phloem"], answer: "Parenchyma"},
-    {q: "Which of the following is a complex tissue?", options: ["Xylem", "Parenchyma", "Collenchyma", "Sclerenchyma"], answer: "Xylem"},
-    {q: "The main function of sieve tubes is:", options: ["Translocation of food", "Water conduction", "Support", "Storage"], answer: "Translocation of food"},
-    {q: "Which is NOT a component of periderm?", options: ["Cambium", "Phellogen", "Phellem", "Phelloderm"], answer: "Cambium"},
-    {q: "Which tissue is responsible for new cells in plants?", options: ["Meristematic", "Parenchyma", "Sclerenchyma", "Phloem"], answer: "Meristematic"},
-    {q: "The process of formation of secondary vascular tissues is called:", options: ["Secondary growth", "Primary growth", "Regeneration", "Translocation"], answer: "Secondary growth"},
-    {q: "The tissue that provides flexibility to plants is:", options: ["Collenchyma", "Sclerenchyma", "Parenchyma", "Xylem"], answer: "Collenchyma"}
-  ]
-},
-
-// Chapter 7: Structural Organisation in Animals
-{
-  title: "Structural Organisation in Animals - Quiz 1",
-  questions: [
-    {q: "The basic unit of nervous tissue is:", options: ["Neuron", "Axon", "Dendrite", "Synapse"], answer: "Neuron"},
-    {q: "Which cell is responsible for clotting of blood?", options: ["Platelets", "RBC", "WBC", "Plasma cells"], answer: "Platelets"},
-    {q: "The main excretory organ in earthworm is:", options: ["Nephridia", "Malpighian tubules", "Kidneys", "Flame cells"], answer: "Nephridia"},
-    {q: "The tissue lining the inner surface of blood vessels is:", options: ["Squamous epithelium", "Cuboidal epithelium", "Columnar epithelium", "Ciliated epithelium"], answer: "Squamous epithelium"},
-    {q: "The functional unit of skeletal muscle is:", options: ["Sarcomere", "Myofibril", "Muscle fiber", "Actin"], answer: "Sarcomere"},
-    {q: "The connective tissue with maximum collagen is:", options: ["Tendon", "Ligament", "Areolar", "Adipose"], answer: "Tendon"},
-    {q: "Which gland is only found in mammals?", options: ["Mammary gland", "Salivary gland", "Sweat gland", "Pituitary gland"], answer: "Mammary gland"},
-    {q: "The cells that produce antibodies are:", options: ["Plasma cells", "T-cells", "Macrophages", "Monocytes"], answer: "Plasma cells"},
-    {q: "The exoskeleton of cockroach is made of:", options: ["Chitin", "Cellulose", "Keratin", "Collagen"], answer: "Chitin"},
-    {q: "Which animal exhibits metameric segmentation?", options: ["Earthworm", "Cockroach", "Frog", "Hydra"], answer: "Earthworm"},
-    {q: "Which is NOT a connective tissue?", options: ["Muscle", "Blood", "Cartilage", "Adipose"], answer: "Muscle"},
-    {q: "The tissue present in the walls of the stomach is:", options: ["Smooth muscle", "Skeletal muscle", "Cardiac muscle", "Areolar tissue"], answer: "Smooth muscle"},
-    {q: "The respiratory pigment in earthworm is:", options: ["Haemoglobin", "Haemocyanin", "Myoglobin", "Chlorocruorin"], answer: "Haemoglobin"},
-    {q: "Which tissue connects muscles to bones?", options: ["Tendons", "Ligaments", "Cartilage", "Adipose"], answer: "Tendons"},
-    {q: "The excretory organs in cockroach are:", options: ["Malpighian tubules", "Nephridia", "Green glands", "Flame cells"], answer: "Malpighian tubules"}
-  ]
-},
-{
-  title: "Structural Organisation in Animals - Quiz 2",
-  questions: [
-    {q: "The main function of adipose tissue is:", options: ["Storage of fat", "Support", "Transport", "Protection"], answer: "Storage of fat"},
-    {q: "Which type of muscle is found in the heart?", options: ["Cardiac muscle", "Smooth muscle", "Skeletal muscle", "Areolar tissue"], answer: "Cardiac muscle"},
-    {q: "Which of the following is NOT a part of nephron?", options: ["Malpighian corpuscle", "Loop of Henle", "Bowman’s capsule", "Islets of Langerhans"], answer: "Islets of Langerhans"},
-    {q: "The segmental arrangement in earthworm is called:", options: ["Metamerism", "Cephalization", "Hermaphroditism", "Bilaterality"], answer: "Metamerism"},
-    {q: "The cells responsible for bone formation are:", options: ["Osteoblasts", "Chondrocytes", "Osteoclasts", "Fibroblasts"], answer: "Osteoblasts"},
-    {q: "The tissue that forms covering or lining of organs is:", options: ["Epithelial", "Connective", "Muscle", "Nervous"], answer: "Epithelial"},
-    {q: "Which is NOT a feature of cardiac muscle?", options: ["Multinucleate", "Striated", "Branched", "Involuntary"], answer: "Multinucleate"},
-    {q: "The cell junctions that stop substances from leaking across a tissue are:", options: ["Tight junctions", "Gap junctions", "Adhering junctions", "Desmosomes"], answer: "Tight junctions"},
-    {q: "The exoskeleton of prawn is made of:", options: ["Chitin", "Cellulose", "Keratin", "Calcium carbonate"], answer: "Chitin"},
-    {q: "Which muscle is voluntary?", options: ["Skeletal muscle", "Cardiac muscle", "Smooth muscle", "All of these"], answer: "Skeletal muscle"},
-    {q: "Which cells are responsible for immunity?", options: ["Lymphocytes", "RBC", "Platelets", "Fibroblasts"], answer: "Lymphocytes"},
-    {q: "The supporting tissue in plants is:", options: ["Collenchyma", "Parenchyma", "Sclerenchyma", "Epidermis"], answer: "Collenchyma"},
-    {q: "Which of the following is not a function of blood?", options: ["Photosynthesis", "Transport", "Protection", "Regulation"], answer: "Photosynthesis"},
-    {q: "The transparent tissue present in the cornea is:", options: ["Non-vascular epithelial tissue", "Areolar tissue", "Cartilage", "Muscle"], answer: "Non-vascular epithelial tissue"},
-    {q: "Which structure is present in all animal cells?", options: ["Plasma membrane", "Cell wall", "Chloroplast", "Central vacuole"], answer: "Plasma membrane"}
-  ]
-},
-
-// Chapter 8: Cell – The Unit of Life
-{
-  title: "Cell – The Unit of Life - Quiz 1",
-  questions: [
-    {q: "Who discovered the cell?", options: ["Robert Hooke", "Schwann", "Schleiden", "Leeuwenhoek"], answer: "Robert Hooke"},
-    {q: "Which organelle is known as the ‘powerhouse of the cell’?", options: ["Mitochondria", "Nucleus", "Ribosome", "Chloroplast"], answer: "Mitochondria"},
-    {q: "The main component of plasma membrane is:", options: ["Phospholipids", "Cellulose", "Peptidoglycan", "Pectin"], answer: "Phospholipids"},
-    {q: "Which of the following is a prokaryote?", options: ["Bacteria", "Fungi", "Amoeba", "Paramecium"], answer: "Bacteria"},
-    {q: "The genetic material in prokaryotes is:", options: ["Naked DNA", "Enclosed in nucleus", "In nucleolus", "In mitochondria"], answer: "Naked DNA"},
-    {q: "The cell wall of plant cells is made up of:", options: ["Cellulose", "Chitin", "Peptidoglycan", "Lignin"], answer: "Cellulose"},
-    {q: "Which is the largest cell organelle?", options: ["Nucleus", "Mitochondria", "Chloroplast", "Lysosome"], answer: "Nucleus"},
-    {q: "The organelle responsible for protein synthesis is:", options: ["Ribosome", "Golgi body", "Mitochondria", "Peroxisome"], answer: "Ribosome"},
-    {q: "Which of the following is NOT found in animal cells?", options: ["Cell wall", "Mitochondria", "Golgi apparatus", "Centrosome"], answer: "Cell wall"},
-    {q: "The fluid mosaic model of plasma membrane was proposed by:", options: ["Singer and Nicolson", "Watson and Crick", "Robert Brown", "Schleiden and Schwann"], answer: "Singer and Nicolson"},
-    {q: "Cristae are found in:", options: ["Mitochondria", "Chloroplast", "Nucleus", "Ribosome"], answer: "Mitochondria"},
-    {q: "The nucleolus is concerned with:", options: ["Ribosome synthesis", "DNA synthesis", "Lipid synthesis", "Protein synthesis"], answer: "Ribosome synthesis"},
-    {q: "The functional unit of the cell is:", options: ["Organelle", "Tissue", "Nucleus", "Plasma membrane"], answer: "Organelle"},
-    {q: "Which of the following is a double membrane-bound organelle?", options: ["Mitochondria", "Ribosome", "Lysosome", "Golgi apparatus"], answer: "Mitochondria"},
-    {q: "The non-membranous organelle is:", options: ["Ribosome", "Nucleus", "Mitochondria", "Chloroplast"], answer: "Ribosome"}
-  ]
-},
-{
-  title: "Cell – The Unit of Life - Quiz 2",
-  questions: [
-    {q: "The function of lysosomes is:", options: ["Digestion", "Photosynthesis", "Respiration", "Synthesis"], answer: "Digestion"},
-    {q: "Which structure regulates the entry and exit of substances in the cell?", options: ["Plasma membrane", "Cell wall", "Nucleus", "Cytoplasm"], answer: "Plasma membrane"},
-    {q: "The site of photosynthesis in plant cells is:", options: ["Chloroplast", "Mitochondria", "Nucleus", "Ribosome"], answer: "Chloroplast"},
-    {q: "The smallest cell organelle is:", options: ["Ribosome", "Mitochondria", "Nucleus", "Chloroplast"], answer: "Ribosome"},
-    {q: "Which of the following is absent in prokaryotic cells?", options: ["Nucleus", "Ribosome", "DNA", "Cell membrane"], answer: "Nucleus"},
-    {q: "The cell organelle involved in cell division is:", options: ["Centrosome", "Lysosome", "Golgi apparatus", "Peroxisome"], answer: "Centrosome"},
-    {q: "The storage of genetic material in eukaryotes is in:", options: ["Nucleus", "Mitochondria", "Cytoplasm", "Golgi apparatus"], answer: "Nucleus"},
-    {q: "The function of smooth endoplasmic reticulum is:", options: ["Lipid synthesis", "Protein synthesis", "DNA replication", "Respiration"], answer: "Lipid synthesis"},
-    {q: "Plastids are found in:", options: ["Plant cells", "Animal cells", "Bacteria", "Fungi"], answer: "Plant cells"},
-    {q: "The cytoplasmic connections between adjacent plant cells are called:", options: ["Plasmodesmata", "Desmosomes", "Gap junctions", "Tight junctions"], answer: "Plasmodesmata"},
-    {q: "The primary wall of plant cells is mainly composed of:", options: ["Cellulose", "Chitin", "Lignin", "Peptidoglycan"], answer: "Cellulose"},
-    {q: "Which of the following is called the ‘suicide bag’ of the cell?", options: ["Lysosome", "Mitochondria", "Ribosome", "Chloroplast"], answer: "Lysosome"},
-    {q: "The main function of rough endoplasmic reticulum is:", options: ["Protein synthesis", "Lipid synthesis", "Carbohydrate synthesis", "DNA synthesis"], answer: "Protein synthesis"},
-    {q: "The unit of measurement of cell organelles is:", options: ["Micron", "Meter", "Millimeter", "Centimeter"], answer: "Micron"},
-    {q: "The shape of bacterial DNA is:", options: ["Circular", "Linear", "Helical", "Double helix"], answer: "Circular"}
-  ]
-},
-// Chapter 9: Biomolecules
-{
-  title: "Biomolecules - Quiz 1",
-  questions: [
-    {q: "Which of the following is a disaccharide?", options: ["Sucrose", "Glucose", "Fructose", "Starch"], answer: "Sucrose"},
-    {q: "The building blocks of proteins are:", options: ["Amino acids", "Nucleotides", "Monosaccharides", "Fatty acids"], answer: "Amino acids"},
-    {q: "Which vitamin is water soluble?", options: ["Vitamin C", "Vitamin A", "Vitamin D", "Vitamin K"], answer: "Vitamin C"},
-    {q: "Enzymes are chemically:", options: ["Proteins", "Lipids", "Carbohydrates", "Vitamins"], answer: "Proteins"},
-    {q: "The bond joining two amino acids is called:", options: ["Peptide bond", "Glycosidic bond", "Phosphodiester bond", "Hydrogen bond"], answer: "Peptide bond"},
-    {q: "Which of the following is a saturated fatty acid?", options: ["Palmitic acid", "Oleic acid", "Linoleic acid", "Arachidonic acid"], answer: "Palmitic acid"},
-    {q: "Which is the storage polysaccharide in animals?", options: ["Glycogen", "Starch", "Cellulose", "Chitin"], answer: "Glycogen"},
-    {q: "The most abundant protein in the animal world is:", options: ["Collagen", "Keratin", "Albumin", "Globulin"], answer: "Collagen"},
-    {q: "Which of the following is a reducing sugar?", options: ["Maltose", "Sucrose", "Cellulose", "Starch"], answer: "Maltose"},
-    {q: "The nitrogenous base not found in RNA is:", options: ["Thymine", "Uracil", "Adenine", "Cytosine"], answer: "Thymine"},
-    {q: "Which of the following is a coenzyme?", options: ["NAD+", "ATP", "DNA", "RNA"], answer: "NAD+"},
-    {q: "The enzyme that breaks down starch is:", options: ["Amylase", "Lipase", "Protease", "Maltase"], answer: "Amylase"},
-    {q: "The process by which a protein loses its structure is called:", options: ["Denaturation", "Renaturation", "Hydrolysis", "Oxidation"], answer: "Denaturation"},
-    {q: "Which of the following is a non-reducing sugar?", options: ["Sucrose", "Lactose", "Maltose", "Glucose"], answer: "Sucrose"},
-    {q: "Which bond is found in nucleic acids?", options: ["Phosphodiester bond", "Peptide bond", "Glycosidic bond", "Disulfide bond"], answer: "Phosphodiester bond"}
-  ]
-},
-{
-  title: "Biomolecules - Quiz 2",
-  questions: [
-    {q: "Which of the following is a pentose sugar?", options: ["Ribose", "Glucose", "Fructose", "Galactose"], answer: "Ribose"},
-    {q: "The enzyme required for conversion of glucose to glucose-6-phosphate is:", options: ["Hexokinase", "Amylase", "Lactase", "Lipase"], answer: "Hexokinase"},
-    {q: "Which of the following is NOT a function of proteins?", options: ["Genetic information storage", "Enzymatic activity", "Transport", "Structural support"], answer: "Genetic information storage"},
-    {q: "Which vitamin is necessary for blood clotting?", options: ["Vitamin K", "Vitamin D", "Vitamin A", "Vitamin C"], answer: "Vitamin K"},
-    {q: "The most common secondary structure in proteins is:", options: ["Alpha helix", "Beta sheet", "Random coil", "Double helix"], answer: "Alpha helix"},
-    {q: "The basic unit of nucleic acids is:", options: ["Nucleotide", "Amino acid", "Monosaccharide", "Fatty acid"], answer: "Nucleotide"},
-    {q: "Which of the following is a lipid soluble vitamin?", options: ["Vitamin A", "Vitamin C", "Vitamin B", "Vitamin B12"], answer: "Vitamin A"},
-    {q: "Cellulose is a polymer of:", options: ["Glucose", "Fructose", "Galactose", "Ribose"], answer: "Glucose"},
-    {q: "Co-factors required for enzyme activity may be:", options: ["Metal ions", "Amino acids", "Monosaccharides", "Polysaccharides"], answer: "Metal ions"},
-    {q: "Which of the following is a disaccharide?", options: ["Lactose", "Glucose", "Starch", "Cellulose"], answer: "Lactose"},
-    {q: "The vitamin which prevents scurvy is:", options: ["Vitamin C", "Vitamin D", "Vitamin K", "Vitamin A"], answer: "Vitamin C"},
-    {q: "The most important energy currency of the cell is:", options: ["ATP", "DNA", "RNA", "NADH"], answer: "ATP"},
-    {q: "Which of the following is NOT a polysaccharide?", options: ["Glucose", "Glycogen", "Starch", "Cellulose"], answer: "Glucose"},
-    {q: "The enzyme that digests proteins in the stomach is:", options: ["Pepsin", "Trypsin", "Lipase", "Amylase"], answer: "Pepsin"},
-    {q: "Which of the following is a purine base?", options: ["Adenine", "Thymine", "Cytosine", "Uracil"], answer: "Adenine"}
-  ]
-},
-
-// Chapter 10: Cell Cycle and Cell Division
-{
-  title: "Cell Cycle and Cell Division - Quiz 1",
-  questions: [
-    {q: "The phase in which DNA replication occurs is:", options: ["S phase", "G1 phase", "G2 phase", "M phase"], answer: "S phase"},
-    {q: "Mitosis occurs in:", options: ["Somatic cells", "Gametes", "Zygote", "Spores"], answer: "Somatic cells"},
-    {q: "The longest phase of cell cycle is:", options: ["Interphase", "Prophase", "Metaphase", "Anaphase"], answer: "Interphase"},
-    {q: "Crossing over occurs in:", options: ["Pachytene", "Leptotene", "Zygotene", "Diplotene"], answer: "Pachytene"},
-    {q: "The process of cytoplasmic division is called:", options: ["Cytokinesis", "Karyokinesis", "Mitosis", "Meiosis"], answer: "Cytokinesis"},
-    {q: "In which stage do chromosomes line up at the equator?", options: ["Metaphase", "Anaphase", "Telophase", "Prophase"], answer: "Metaphase"},
-    {q: "Reductional division occurs in:", options: ["Meiosis I", "Meiosis II", "Mitosis", "Interphase"], answer: "Meiosis I"},
-    {q: "Number of chromosomes in daughter cells after mitosis:", options: ["Same as parent", "Half of parent", "Double the parent", "Varies"], answer: "Same as parent"},
-    {q: "Synapsis occurs during:", options: ["Zygotene", "Leptotene", "Pachytene", "Diplotene"], answer: "Zygotene"},
-    {q: "At which stage does the nuclear envelope disappear?", options: ["Prophase", "Metaphase", "Anaphase", "Telophase"], answer: "Prophase"},
-    {q: "Meiosis results in:", options: ["Four haploid cells", "Two diploid cells", "Two haploid cells", "Four diploid cells"], answer: "Four haploid cells"},
-    {q: "The phase between two cell divisions is called:", options: ["Interphase", "Prophase", "Metaphase", "Telophase"], answer: "Interphase"},
-    {q: "The structure that holds sister chromatids together is:", options: ["Centromere", "Chromosome", "Spindle fiber", "Kinetochore"], answer: "Centromere"},
-    {q: "In animal cells, the constriction of cytoplasm during cytokinesis is due to:", options: ["Cleavage furrow", "Cell plate", "Spindle fiber", "Centrosome"], answer: "Cleavage furrow"},
-    {q: "Which stage is also called 'resting phase'?", options: ["G0 phase", "S phase", "M phase", "G2 phase"], answer: "G0 phase"}
-  ]
-},
-{
-  title: "Cell Cycle and Cell Division - Quiz 2",
-  questions: [
-    {q: "The cell plate formation occurs during cytokinesis in:", options: ["Plant cells", "Animal cells", "Bacteria", "Fungi"], answer: "Plant cells"},
-    {q: "G1, S, and G2 phases together are called:", options: ["Interphase", "Prophase", "Metaphase", "Cytokinesis"], answer: "Interphase"},
-    {q: "The process by which homologous chromosomes separate is:", options: ["Anaphase I", "Metaphase II", "Telophase", "Prophase"], answer: "Anaphase I"},
-    {q: "Meiosis II is similar to:", options: ["Mitosis", "Meiosis I", "Interphase", "Prophase"], answer: "Mitosis"},
-    {q: "The number of chromatids in a human cell at G2 phase is:", options: ["92", "46", "23", "184"], answer: "92"},
-    {q: "The pairing of homologous chromosomes is called:", options: ["Synapsis", "Crossing over", "Recombination", "Segregation"], answer: "Synapsis"},
-    {q: "Spindle fibers are made of:", options: ["Microtubules", "Actin filaments", "Myosin", "Collagen"], answer: "Microtubules"},
-    {q: "Which event occurs during telophase?", options: ["Nuclear envelope re-forms", "Chromosomes align at equator", "Chromatids separate", "Spindle disappears"], answer: "Nuclear envelope re-forms"},
-    {q: "The protein that controls the cell cycle is:", options: ["Cyclin", "Keratin", "Tubulin", "Myosin"], answer: "Cyclin"},
-    {q: "The diploid number of chromosomes in humans is:", options: ["46", "23", "92", "44"], answer: "46"},
-    {q: "The first phase of mitosis is:", options: ["Prophase", "Metaphase", "Anaphase", "Telophase"], answer: "Prophase"},
-    {q: "The reduction in chromosome number to half takes place during:", options: ["Meiosis I", "Meiosis II", "Mitosis", "Interphase"], answer: "Meiosis I"},
-    {q: "Which phase occupies the maximum duration in cell cycle?", options: ["G1 phase", "M phase", "S phase", "G2 phase"], answer: "G1 phase"},
-    {q: "If a cell has 20 chromosomes at G1, how many chromatids will it have at G2?", options: ["40", "20", "10", "30"], answer: "40"},
-    {q: "The stage at which chromosomes become visible is:", options: ["Prophase", "Metaphase", "Anaphase", "Telophase"], answer: "Prophase"}
-  ]
-},
-
-// Chapter 11: Transport in Plants
-{
-  title: "Transport in Plants - Quiz 1",
-  questions: [
-    {q: "The main force responsible for the ascent of sap is:", options: ["Transpiration pull", "Root pressure", "Capillarity", "Osmosis"], answer: "Transpiration pull"},
-    {q: "Which tissue is responsible for water transport in plants?", options: ["Xylem", "Phloem", "Collenchyma", "Parenchyma"], answer: "Xylem"},
-    {q: "Transpiration occurs mostly through:", options: ["Stomata", "Cuticle", "Lenticels", "Root hairs"], answer: "Stomata"},
-    {q: "Translocation of organic solutes occurs through:", options: ["Phloem", "Xylem", "Cortex", "Pericycle"], answer: "Phloem"},
-    {q: "The movement of water from cell to cell is mainly through:", options: ["Plasmodesmata", "Stomata", "Cuticle", "Vessels"], answer: "Plasmodesmata"},
-    {q: "Root pressure develops due to:", options: ["Active absorption", "Transpiration", "Guttation", "Diffusion"], answer: "Active absorption"},
-    {q: "Which of the following is NOT a passive absorption process?", options: ["Root pressure", "Transpiration pull", "Osmosis", "Imbibition"], answer: "Root pressure"},
-    {q: "The process by which minerals are absorbed against concentration gradient is called:", options: ["Active transport", "Passive transport", "Diffusion", "Osmosis"], answer: "Active transport"},
-    {q: "Cohesion-tension theory explains:", options: ["Ascent of sap", "Photosynthesis", "Translocation", "Guttation"], answer: "Ascent of sap"},
-    {q: "The loss of water in the form of droplets from leaf margins is called:", options: ["Guttation", "Transpiration", "Evaporation", "Respiration"], answer: "Guttation"},
-    {q: "Which plant hormone increases the rate of transpiration?", options: ["Abscisic acid", "Auxin", "Gibberellin", "Cytokinin"], answer: "Abscisic acid"},
-    {q: "Water potential is highest in:", options: ["Pure water", "Sugar solution", "Salt solution", "Cell sap"], answer: "Pure water"},
-    {q: "The process of imbibition is important for:", options: ["Seed germination", "Root pressure", "Guttation", "Transpiration"], answer: "Seed germination"},
-    {q: "The cell wall is mainly permeable to:", options: ["Water and dissolved substances", "Proteins", "Lipids", "Chlorophyll"], answer: "Water and dissolved substances"},
-    {q: "The pressure exerted by protoplast against cell wall is:", options: ["Turgor pressure", "Osmotic pressure", "Root pressure", "Wall pressure"], answer: "Turgor pressure"}
-  ]
-},
-{
-  title: "Transport in Plants - Quiz 2",
-  questions: [
-    {q: "Casparian strip is present in:", options: ["Endodermis", "Cortex", "Epidermis", "Pericycle"], answer: "Endodermis"},
-    {q: "The rate of transpiration is least in:", options: ["High humidity", "High temperature", "Low humidity", "Windy day"], answer: "High humidity"},
-    {q: "The movement of substances from leaves to other plant parts is called:", options: ["Translocation", "Transpiration", "Diffusion", "Imbibition"], answer: "Translocation"},
-    {q: "The main driving force for mass flow hypothesis is:", options: ["Osmotic pressure gradient", "Root pressure", "Active transport", "Diffusion"], answer: "Osmotic pressure gradient"},
-    {q: "The apoplastic pathway involves movement through:", options: ["Cell wall", "Cytoplasm", "Plasmodesmata", "Vacuole"], answer: "Cell wall"},
-    {q: "Which is the main form of sugar transported in phloem?", options: ["Sucrose", "Glucose", "Fructose", "Maltose"], answer: "Sucrose"},
-    {q: "The instrument used to measure water potential is called:", options: ["Psychrometer", "Potometer", "Manometer", "Hygrometer"], answer: "Psychrometer"},
-    {q: "Transpiration is regulated by:", options: ["Guard cells", "Endodermis", "Root hairs", "Vessels"], answer: "Guard cells"},
-    {q: "The transport proteins required for facilitated diffusion are:", options: ["Carrier proteins", "Enzymes", "Hormones", "Pigments"], answer: "Carrier proteins"},
-    {q: "Which of the following does NOT affect transpiration?", options: ["Atmospheric pressure", "Light", "Wind", "Leaf color"], answer: "Leaf color"},
-    {q: "The pressure flow hypothesis was given by:", options: ["Munch", "Darwin", "Priestley", "Engelmann"], answer: "Munch"},
-    {q: "The main component of xylem in angiosperms is:", options: ["Vessels", "Tracheids", "Fibers", "Parenchyma"], answer: "Vessels"},
-    {q: "Which of the following acts as an anti-transpirant?", options: ["Abscisic acid", "Gibberellin", "Auxin", "Cytokinin"], answer: "Abscisic acid"},
-    {q: "Transpiration helps in:", options: ["Cooling of plant", "Photosynthesis", "Seed germination", "Pollination"], answer: "Cooling of plant"},
-    {q: "Which pathway is blocked by Casparian strip?", options: ["Apoplast", "Symplast", "Transmembrane", "Osmotic"], answer: "Apoplast"}
-  ]
-},
-
-// Chapter 12: Mineral Nutrition
-{
-  title: "Mineral Nutrition - Quiz 1",
-  questions: [
-    {q: "Which is a macronutrient?", options: ["Nitrogen", "Zinc", "Copper", "Molybdenum"], answer: "Nitrogen"},
-    {q: "The deficiency of nitrogen in plants causes:", options: ["Chlorosis", "Necrosis", "Wilting", "Anthocyanin formation"], answer: "Chlorosis"},
-    {q: "Which element is essential for the synthesis of chlorophyll?", options: ["Magnesium", "Iron", "Potassium", "Sulphur"], answer: "Magnesium"},
-    {q: "Leguminous plants fix nitrogen with the help of:", options: ["Rhizobium", "Azotobacter", "Nostoc", "Anabaena"], answer: "Rhizobium"},
-    {q: "The process of conversion of nitrate to nitrogen gas is called:", options: ["Denitrification", "Nitrification", "Ammonification", "Nitrogen fixation"], answer: "Denitrification"},
-    {q: "Which micronutrient is a component of nitrate reductase enzyme?", options: ["Molybdenum", "Iron", "Zinc", "Copper"], answer: "Molybdenum"},
-    {q: "The element required for opening and closing of stomata is:", options: ["Potassium", "Calcium", "Sodium", "Magnesium"], answer: "Potassium"},
-    {q: "Which element is required for the synthesis of auxin?", options: ["Zinc", "Manganese", "Copper", "Iron"], answer: "Zinc"},
-    {q: "Hydroponics is:", options: ["Growing plants without soil", "Growing plants with soil", "Growing plants in pots", "Growing plants in water with soil"], answer: "Growing plants without soil"},
-    {q: "The first stable product of nitrogen fixation is:", options: ["Ammonia", "Nitrate", "Nitrite", "Nitrogen gas"], answer: "Ammonia"},
-    {q: "Which element is required for nitrogen fixation by legumes?", options: ["Molybdenum", "Zinc", "Copper", "Iron"], answer: "Molybdenum"},
-    {q: "The element required for synthesis of DNA and RNA is:", options: ["Phosphorus", "Potassium", "Calcium", "Sulphur"], answer: "Phosphorus"},
-    {q: "The symptom of potassium deficiency is:", options: ["Leaf margin chlorosis", "Interveinal chlorosis", "Necrosis", "Wilting"], answer: "Leaf margin chlorosis"},
-    {q: "Which of the following is a micronutrient?", options: ["Copper", "Magnesium", "Calcium", "Sulphur"], answer: "Copper"},
-    {q: "The yellowing of leaves due to loss of chlorophyll is called:", options: ["Chlorosis", "Necrosis", "Wilting", "Etiolation"], answer: "Chlorosis"}
-  ]
-},
-{
-  title: "Mineral Nutrition - Quiz 2",
-  questions: [
-    {q: "Which mineral is essential for cell wall formation?", options: ["Calcium", "Magnesium", "Iron", "Sulphur"], answer: "Calcium"},
-    {q: "Deficiency of which element causes 'whiptail' disease in cauliflower?", options: ["Molybdenum", "Boron", "Zinc", "Copper"], answer: "Molybdenum"},
-    {q: "Iron is a component of:", options: ["Cytochromes", "Chlorophyll", "DNA", "ATP"], answer: "Cytochromes"},
-    {q: "Deficiency of which element causes 'little leaf' disease in cotton?", options: ["Zinc", "Copper", "Iron", "Boron"], answer: "Zinc"},
-    {q: "Which element is NOT a micronutrient?", options: ["Magnesium", "Copper", "Zinc", "Boron"], answer: "Magnesium"},
-    {q: "Sulphur is present in which amino acid?", options: ["Cysteine", "Glycine", "Alanine", "Valine"], answer: "Cysteine"},
-    {q: "Which deficiency causes necrosis?", options: ["Calcium", "Potassium", "Magnesium", "Iron"], answer: "Calcium"},
-    {q: "Which of the following is a non-essential element?", options: ["Sodium", "Nitrogen", "Potassium", "Phosphorus"], answer: "Sodium"},
-    {q: "Which process converts atmospheric nitrogen to ammonia?", options: ["Nitrogen fixation", "Nitrification", "Assimilation", "Denitrification"], answer: "Nitrogen fixation"},
-    {q: "Boron is essential for:", options: ["Pollen germination", "Chlorophyll formation", "Protein synthesis", "Respiration"], answer: "Pollen germination"},
-    {q: "Which mineral ion is essential for opening and closing of stomata?", options: ["Potassium", "Calcium", "Sodium", "Magnesium"], answer: "Potassium"},
-    {q: "The process of absorption of minerals against concentration gradient is called:", options: ["Active absorption", "Passive absorption", "Diffusion", "Imbibition"], answer: "Active absorption"},
-    {q: "Which element is essential for synthesis of ATP?", options: ["Phosphorus", "Potassium", "Calcium", "Sulphur"], answer: "Phosphorus"},
-    {q: "Leg-haemoglobin is present in:", options: ["Root nodules", "Leaves", "Stem", "Flower"], answer: "Root nodules"},
-    {q: "Sulphur is absorbed in the form of:", options: ["SO4^2-", "SO2", "S2-", "H2S"], answer: "SO4^2-"}
-  ]
-},
-// Chapter 13: Photosynthesis in Higher Plants
-{
-  title: "Photosynthesis in Higher Plants - Quiz 1",
-  questions: [
-    {q: "The site of light reactions in chloroplast is:", options: ["Thylakoid membrane", "Stroma", "Matrix", "Outer membrane"], answer: "Thylakoid membrane"},
-    {q: "The first stable product of C3 cycle is:", options: ["3-phosphoglycerate", "Phosphoenolpyruvate", "Malate", "Glucose"], answer: "3-phosphoglycerate"},
-    {q: "The enzyme Rubisco catalyzes:", options: ["Carboxylation of RuBP", "Photolysis of water", "Reduction of PGA", "Formation of ATP"], answer: "Carboxylation of RuBP"},
-    {q: "Hill reaction demonstrates:", options: ["Evolution of oxygen", "Formation of ATP", "Fixation of CO2", "Synthesis of glucose"], answer: "Evolution of oxygen"},
-    {q: "The pigment responsible for absorbing red and blue light is:", options: ["Chlorophyll a", "Chlorophyll b", "Carotene", "Xanthophyll"], answer: "Chlorophyll a"},
-    {q: "The C4 cycle is also known as:", options: ["Hatch and Slack pathway", "Calvin cycle", "TCA cycle", "Glycolysis"], answer: "Hatch and Slack pathway"},
-    {q: "Photorespiration is favored by:", options: ["High O2, low CO2", "High CO2, low O2", "High light, low temperature", "Darkness"], answer: "High O2, low CO2"},
-    {q: "Bundle sheath cells are characteristic of:", options: ["C4 plants", "C3 plants", "CAM plants", "Algae"], answer: "C4 plants"},
-    {q: "The source of oxygen released in photosynthesis is:", options: ["Water", "CO2", "Glucose", "Chlorophyll"], answer: "Water"},
-    {q: "CAM plants open stomata:", options: ["At night", "During the day", "All the time", "Never"], answer: "At night"},
-    {q: "During photorespiration, the toxic compound produced is:", options: ["Glycolate", "Malate", "Glycerate", "Glucose"], answer: "Glycolate"},
-    {q: "The final product of light reaction is:", options: ["ATP and NADPH", "Glucose", "CO2", "Pyruvate"], answer: "ATP and NADPH"},
-    {q: "Which acts as the primary CO2 acceptor in C4 plants?", options: ["PEP", "RuBP", "PGA", "NADP+"], answer: "PEP"},
-    {q: "Chlorophyll absorbs maximum light in:", options: ["Blue and red regions", "Green region", "Yellow region", "Black region"], answer: "Blue and red regions"},
-    {q: "The Calvin cycle occurs in:", options: ["Stroma", "Grana", "Matrix", "Cristae"], answer: "Stroma"}
-  ]
-},
-{
-  title: "Photosynthesis in Higher Plants - Quiz 2",
-  questions: [
-    {q: "The Z scheme explains:", options: ["Electron transport in light reaction", "Calvin cycle", "CAM pathway", "Photorespiration"], answer: "Electron transport in light reaction"},
-    {q: "Photolysis of water produces:", options: ["O2, protons, electrons", "CO2 and water", "ATP and NADPH", "Glucose"], answer: "O2, protons, electrons"},
-    {q: "Which of the following is NOT a pigment?", options: ["RuBP", "Chlorophyll b", "Carotenoid", "Xanthophyll"], answer: "RuBP"},
-    {q: "The first acceptor of electrons from PSII is:", options: ["Plastoquinone", "Ferredoxin", "NADP+", "Cytochrome"], answer: "Plastoquinone"},
-    {q: "The main adaptive advantage of C4 plants is:", options: ["Low photorespiration", "High water requirement", "More light absorption", "High temperature sensitivity"], answer: "Low photorespiration"},
-    {q: "The process of carbon fixation in Calvin cycle is catalyzed by:", options: ["Rubisco", "ATP synthase", "NADP reductase", "Phosphatase"], answer: "Rubisco"},
-    {q: "Which is the main site of dark reaction?", options: ["Stroma", "Grana", "Thylakoid membrane", "Matrix"], answer: "Stroma"},
-    {q: "NADPH is produced in:", options: ["Light reaction", "Dark reaction", "Glycolysis", "TCA cycle"], answer: "Light reaction"},
-    {q: "Which of the following plants can perform photosynthesis with closed stomata during the day?", options: ["CAM plants", "C3 plants", "C4 plants", "Algae"], answer: "CAM plants"},
-    {q: "The main product of Calvin cycle is:", options: ["Glucose", "ATP", "NADPH", "O2"], answer: "Glucose"},
-    {q: "The enzyme PEP carboxylase is found in:", options: ["C4 plants", "C3 plants", "Algae", "Fungi"], answer: "C4 plants"},
-    {q: "Which is the terminal electron acceptor in light reaction?", options: ["NADP+", "O2", "CO2", "RuBP"], answer: "NADP+"},
-    {q: "The photophosphorylation that does not produce NADPH is:", options: ["Cyclic", "Non-cyclic", "Both", "None"], answer: "Cyclic"},
-    {q: "The number of turns of Calvin cycle needed to produce one glucose molecule is:", options: ["6", "2", "3", "4"], answer: "6"},
-    {q: "CAM pathway is mainly found in:", options: ["Succulents", "Legumes", "Grasses", "Cereals"], answer: "Succulents"}
-  ]
-},
-
-// Chapter 14: Respiration in Plants
-{
-  title: "Respiration in Plants - Quiz 1",
-  questions: [
-    {q: "The site of glycolysis is:", options: ["Cytoplasm", "Mitochondria", "Chloroplast", "Nucleus"], answer: "Cytoplasm"},
-    {q: "The end product of glycolysis is:", options: ["Pyruvate", "Acetyl-CoA", "Ethanol", "Lactate"], answer: "Pyruvate"},
-    {q: "The link between glycolysis and Krebs cycle is:", options: ["Acetyl-CoA", "Lactate", "FADH2", "ATP"], answer: "Acetyl-CoA"},
-    {q: "Krebs cycle occurs in the:", options: ["Mitochondrial matrix", "Cytoplasm", "Chloroplast", "Stroma"], answer: "Mitochondrial matrix"},
-    {q: "Which enzyme is responsible for conversion of pyruvate to lactate?", options: ["Lactate dehydrogenase", "Pyruvate dehydrogenase", "Alcohol dehydrogenase", "Hexokinase"], answer: "Lactate dehydrogenase"},
-    {q: "The total number of ATP generated from one glucose molecule in aerobic respiration is:", options: ["38", "36", "24", "18"], answer: "38"},
-    {q: "The process of conversion of glucose to ethanol is called:", options: ["Alcoholic fermentation", "Lactic acid fermentation", "Aerobic respiration", "Photophosphorylation"], answer: "Alcoholic fermentation"},
-    {q: "The respiratory quotient (RQ) for carbohydrates is:", options: ["1", "0.7", "0.9", "0.5"], answer: "1"},
-    {q: "Electron transport chain is located in:", options: ["Inner mitochondrial membrane", "Outer mitochondrial membrane", "Cytoplasm", "Nucleus"], answer: "Inner mitochondrial membrane"},
-    {q: "The enzyme involved in the first step of glycolysis is:", options: ["Hexokinase", "Phosphofructokinase", "Aldolase", "Pyruvate kinase"], answer: "Hexokinase"},
-    {q: "Which is the final electron acceptor in aerobic respiration?", options: ["Oxygen", "CO2", "NAD+", "FAD"], answer: "Oxygen"},
-    {q: "The number of ATP produced by substrate level phosphorylation in glycolysis is:", options: ["4", "2", "6", "8"], answer: "4"},
-    {q: "The step in glycolysis that generates NADH is catalyzed by:", options: ["Glyceraldehyde-3-phosphate dehydrogenase", "Hexokinase", "Aldolase", "Pyruvate kinase"], answer: "Glyceraldehyde-3-phosphate dehydrogenase"},
-    {q: "The cycle that fixes CO2 during respiration is:", options: ["Krebs cycle", "Calvin cycle", "Glycolysis", "Hatch-Slack cycle"], answer: "Krebs cycle"},
-    {q: "The net gain of ATP in anaerobic glycolysis is:", options: ["2", "4", "6", "8"], answer: "2"}
-  ]
-},
-{
-  title: "Respiration in Plants - Quiz 2",
-  questions: [
-    {q: "Oxidative phosphorylation occurs in:", options: ["Mitochondria", "Chloroplast", "Cytoplasm", "Nucleus"], answer: "Mitochondria"},
-    {q: "In the absence of oxygen, yeast produces:", options: ["Ethanol and CO2", "Lactic acid", "Acetic acid", "Formic acid"}, answer: "Ethanol and CO2"},
-    {q: "The enzyme complex for ATP synthesis is called:", options: ["ATP synthase", "Hexokinase", "NADPH oxidase", "Cytochrome oxidase"], answer: "ATP synthase"},
-    {q: "The main product of anaerobic respiration in animal muscle is:", options: ["Lactic acid", "Alcohol", "CO2", "Pyruvate"], answer: "Lactic acid"},
-    {q: "The TCA cycle is also known as:", options: ["Krebs cycle", "Calvin cycle", "Glycolysis", "Hatch-Slack cycle"], answer: "Krebs cycle"},
-    {q: "The number of NADH molecules produced per turn of Krebs cycle is:", options: ["3", "2", "1", "4"], answer: "3"},
-    {q: "Which is NOT a step in glycolysis?", options: ["Oxidative decarboxylation", "Phosphorylation", "Cleavage", "Isomerisation"], answer: "Oxidative decarboxylation"},
-    {q: "The molecule that carries electrons to the electron transport chain is:", options: ["NADH", "ATP", "CO2", "Glucose"], answer: "NADH"},
-    {q: "The respiratory quotient (RQ) for fats is:", options: ["0.7", "1", "1.3", "0.9"], answer: "0.7"},
-    {q: "During strenuous exercise, muscle cells perform:", options: ["Anaerobic respiration", "Aerobic respiration", "Photosynthesis", "Fermentation"}, answer: "Anaerobic respiration"},
-    {q: "The enzyme alcohol dehydrogenase converts acetaldehyde to:", options: ["Ethanol", "Lactic acid", "Pyruvate", "CO2"], answer: "Ethanol"},
-    {q: "Which of the following is not produced in Krebs cycle?", options: ["O2", "CO2", "NADH", "FADH2"], answer: "O2"},
-    {q: "The first product of glycolysis is:", options: ["Glucose-6-phosphate", "Pyruvate", "Fructose-1,6-bisphosphate", "Glyceraldehyde-3-phosphate"], answer: "Glucose-6-phosphate"},
-    {q: "FADH2 yields how many ATP molecules in ETC?", options: ["2", "3", "1", "4"], answer: "2"},
-    {q: "The process of conversion of ADP to ATP is called:", options: ["Phosphorylation", "Hydrolysis", "Oxidation", "Reduction"], answer: "Phosphorylation"}
-  ]
-},
-
-// Chapter 15: Plant Growth and Development
-{
-  title: "Plant Growth and Development - Quiz 1",
-  questions: [
-    {q: "The hormone responsible for cell elongation is:", options: ["Auxin", "Cytokinin", "Gibberellin", "Abscisic acid"], answer: "Auxin"},
-    {q: "Photoperiodism is the response to:", options: ["Length of day and night", "Temperature", "Water", "Minerals"], answer: "Length of day and night"},
-    {q: "The hormone promoting fruit ripening is:", options: ["Ethylene", "Auxin", "Gibberellin", "Cytokinin"], answer: "Ethylene"},
-    {q: "The process of seed germination begins with:", options: ["Imbibition", "Photosynthesis", "Respiration", "Transpiration"], answer: "Imbibition"},
-    {q: "The hormone which induces dormancy is:", options: ["Abscisic acid", "Gibberellin", "Auxin", "Cytokinin"], answer: "Abscisic acid"},
-    {q: "The natural inhibitor of plant growth is:", options: ["Abscisic acid", "Gibberellin", "Auxin", "Cytokinin"], answer: "Abscisic acid"},
-    {q: "The hormone that breaks seed and bud dormancy is:", options: ["Gibberellin", "Auxin", "Ethylene", "Abscisic acid"], answer: "Gibberellin"},
-    {q: "Vernalization is:", options: ["Induction of flowering by low temperature", "Growth by high temperature", "Ripening by light", "Dormancy by water"], answer: "Induction of flowering by low temperature"},
-    {q: "The plant hormone mainly responsible for apical dominance is:", options: ["Auxin", "Cytokinin", "Gibberellin", "Abscisic acid"], answer: "Auxin"},
-    {q: "Which hormone delays senescence?", options: ["Cytokinin", "Ethylene", "Auxin", "Abscisic acid"], answer: "Cytokinin"},
-    {q: "The phase of growth curve with maximum growth is:", options: ["Log phase", "Lag phase", "Stationary phase", "Decline phase"], answer: "Log phase"},
-    {q: "The site of perception of photoperiod in plants is:", options: ["Leaves", "Roots", "Stem", "Flower"], answer: "Leaves"},
-    {q: "Which hormone is used for inducing root formation in cuttings?", options: ["Auxin", "Gibberellin", "Cytokinin", "Ethylene"], answer: "Auxin"},
-    {q: "The process of aging in plants is termed as:", options: ["Senescence", "Dormancy", "Vernalization", "Abscission"], answer: "Senescence"},
-    {q: "Which plant hormone is gaseous?", options: ["Ethylene", "Auxin", "Gibberellin", "Cytokinin"], answer: "Ethylene"}
-  ]
-},
-{
-  title: "Plant Growth and Development - Quiz 2",
-  questions: [
-    {q: "Gibberellins are mainly involved in:", options: ["Stem elongation", "Root formation", "Senescence", "Leaf abscission"], answer: "Stem elongation"},
-    {q: "The phenomenon of falling of leaves is called:", options: ["Abscission", "Senescence", "Photoperiodism", "Dormancy"], answer: "Abscission"},
-    {q: "Which hormone inhibits seed germination?", options: ["Abscisic acid", "Gibberellin", "Ethylene", "Auxin"], answer: "Abscisic acid"},
-    {q: "The term 'bolting' refers to:", options: ["Sudden elongation of stem", "Leaf fall", "Bud break", "Fruit ripening"], answer: "Sudden elongation of stem"},
-    {q: "The hormone that promotes cell division is:", options: ["Cytokinin", "Auxin", "Ethylene", "Abscisic acid"], answer: "Cytokinin"},
-    {q: "Which hormone can replace the requirement of chilling in some plants?", options: ["Gibberellin", "Auxin", "Ethylene", "Abscisic acid"], answer: "Gibberellin"},
-    {q: "The plant hormone responsible for fruit drop is:", options: ["Ethylene", "Auxin", "Cytokinin", "Gibberellin"], answer: "Ethylene"},
-    {q: "The hormone that causes leaf abscission is:", options: ["Abscisic acid", "Gibberellin", "Cytokinin", "Auxin"], answer: "Abscisic acid"},
-    {q: "The term 'photomorphogenesis' refers to:", options: ["Light-controlled growth and development", "Growth in dark", "Temperature control", "Nutrient deficiency"}, answer: "Light-controlled growth and development"},
-    {q: "The region of maximum growth in a root is:", options: ["Zone of elongation", "Root cap", "Zone of maturation", "Zone of cell division"], answer: "Zone of elongation"},
-    {q: "Which hormone promotes flowering in long day plants?", options: ["Gibberellin", "Auxin", "Abscisic acid", "Cytokinin"], answer: "Gibberellin"},
-    {q: "The process of programmed cell death is called:", options: ["Apoptosis", "Senescence", "Abscission", "Dormancy"], answer: "Apoptosis"},
-    {q: "Which hormone is used to induce parthenocarpy in tomatoes?", options: ["Auxin", "Cytokinin", "Gibberellin", "Abscisic acid"], answer: "Auxin"},
-    {q: "The natural hormone that induces fruit ripening is:", options: ["Ethylene", "Auxin", "Cytokinin", "Gibberellin"], answer: "Ethylene"},
-    {q: "The stationary phase in growth curve indicates:", options: ["No net increase in growth", "Maximum growth", "Rapid cell division", "Cell elongation"}, answer: "No net increase in growth"}
-  ]
-},
-
-// Chapter 16: Digestion and Absorption
-{
-  title: "Digestion and Absorption - Quiz 1",
-  questions: [
-    {q: "The enzyme pepsin acts in:", options: ["Stomach", "Mouth", "Small intestine", "Pancreas"], answer: "Stomach"},
-    {q: "Bile is produced by:", options: ["Liver", "Pancreas", "Stomach", "Gall bladder"}, answer: "Liver"},
-    {q: "The main function of bile is to:", options: ["Emulsify fats", "Digest proteins", "Digest carbohydrates", "Digest nucleic acids"}, answer: "Emulsify fats"},
-    {q: "The end product of carbohydrate digestion is:", options: ["Glucose", "Amino acids", "Fatty acids", "Glycerol"}, answer: "Glucose"},
-    {q: "The digestive enzyme maltase acts on:", options: ["Maltose", "Lactose", "Sucrose", "Starch"}, answer: "Maltose"},
-    {q: "The main site for absorption of nutrients is:", options: ["Small intestine", "Large intestine", "Stomach", "Oesophagus"}, answer: "Small intestine"},
-    {q: "The process of chewing is called:", options: ["Mastication", "Deglutition", "Peristalsis", "Ingestion"}, answer: "Mastication"},
-    {q: "The muscular movement that pushes food along the gut is called:", options: ["Peristalsis", "Mastication", "Churning", "Segmentation"}, answer: "Peristalsis"},
-    {q: "The enzyme lipase digests:", options: ["Fats", "Carbohydrates", "Proteins", "Nucleic acids"}, answer: "Fats"},
-    {q: "The finger-like projections in small intestine are called:", options: ["Villi", "Microvilli", "Rugae", "Plicae"}, answer: "Villi"},
-    {q: "The pH of gastric juice is:", options: ["1.5-2.0", "5.5-6.0", "7.0-8.0", "3.5-4.5"}, answer: "1.5-2.0"},
-    {q: "The largest gland in the human body is:", options: ["Liver", "Pancreas", "Salivary gland", "Thyroid"}, answer: "Liver"},
-    {q: "The process of swallowing is called:", options: ["Deglutition", "Peristalsis", "Mastication", "Ingestion"}, answer: "Deglutition"},
-    {q: "The enzyme trypsin acts on:", options: ["Proteins", "Carbohydrates", "Fats", "Nucleic acids"}, answer: "Proteins"},
-    {q: "The end product of protein digestion is:", options: ["Amino acids", "Peptides", "Fatty acids", "Monosaccharides"}, answer: "Amino acids"}
-  ]
-},
-{
-  title: "Digestion and Absorption - Quiz 2",
-  questions: [
-    {q: "The enzyme present in saliva is:", options: ["Amylase", "Pepsin", "Lipase", "Trypsin"}, answer: "Amylase"},
-    {q: "Bile is stored in:", options: ["Gall bladder", "Liver", "Pancreas", "Stomach"}, answer: "Gall bladder"},
-    {q: "The hormone that stimulates gastric secretion is:", options: ["Gastrin", "Secretin", "Cholecystokinin", "Insulin"}, answer: "Gastrin"},
-    {q: "The absorption of glucose occurs by:", options: ["Active transport", "Osmosis", "Diffusion", "Pinocytosis"}, answer: "Active transport"},
-    {q: "The brush border is associated with:", options: ["Microvilli", "Villi", "Rugae", "Plicae"}, answer: "Microvilli"},
-    {q: "The enzyme that digests DNA is:", options: ["Nuclease", "Lipase", "Amylase", "Pepsin"}, answer: "Nuclease"},
-    {q: "Chylomicrons are formed in:", options: ["Intestinal mucosa", "Liver", "Stomach", "Pancreas"}, answer: "Intestinal mucosa"},
-    {q: "The vitamin synthesized by gut bacteria is:", options: ["Vitamin K", "Vitamin D", "Vitamin A", "Vitamin C"}, answer: "Vitamin K"},
-    {q: "Which part absorbs most water from the food?", options: ["Large intestine", "Small intestine", "Stomach", "Rectum"}, answer: "Large intestine"},
-    {q: "The structure that prevents food from entering the windpipe is:", options: ["Epiglottis", "Glottis", "Uvula", "Soft palate"}, answer: "Epiglottis"},
-    {q: "The process of breaking down of large fat globules into smaller ones is called:", options: ["Emulsification", "Hydrolysis", "Digestion", "Peristalsis"}, answer: "Emulsification"},
-    {q: "The enzyme enterokinase activates:", options: ["Trypsinogen", "Pepsinogen", "Amylase", "Lipase"}, answer: "Trypsinogen"},
-    {q: "The main function of the stomach is:", options: ["Protein digestion", "Fat absorption", "Water absorption", "Carbohydrate digestion"}, answer: "Protein digestion"},
-    {q: "The end product of fat digestion is:", options: ["Fatty acids and glycerol", "Amino acids", "Glucose", "Starch"}, answer: "Fatty acids and glycerol"},
-    {q: "Which is NOT a salivary gland?", options: ["Adrenal", "Parotid", "Submandibular", "Sublingual"}, answer: "Adrenal"}
-  ]
-},
-// Chapter 17: Breathing and Exchange of Gases
-{
-  title: "Breathing and Exchange of Gases - Quiz 1",
-  questions: [
-    {q: "The primary muscle involved in breathing is:", options: ["Diaphragm", "Abdominal muscle", "Intercostal muscle", "Pectoral muscle"], answer: "Diaphragm"},
-    {q: "The normal respiratory rate in healthy adult humans is:", options: ["12-16 breaths/min", "5-8 breaths/min", "20-25 breaths/min", "30-35 breaths/min"], answer: "12-16 breaths/min"},
-    {q: "Oxygen is transported in blood mainly as:", options: ["Oxyhaemoglobin", "Dissolved in plasma", "Carbaminohaemoglobin", "Free oxygen"], answer: "Oxyhaemoglobin"},
-    {q: "Exchange of gases occurs in:", options: ["Alveoli", "Bronchi", "Trachea", "Nasal cavity"], answer: "Alveoli"},
-    {q: "The volume of air inspired or expired during normal breathing is called:", options: ["Tidal volume", "Residual volume", "Vital capacity", "Inspiratory reserve volume"], answer: "Tidal volume"},
-    {q: "The enzyme that converts CO2 and water to carbonic acid is:", options: ["Carbonic anhydrase", "Pepsin", "Lipase", "Amylase"], answer: "Carbonic anhydrase"},
-    {q: "The main respiratory pigment in humans is:", options: ["Haemoglobin", "Myoglobin", "Haemocyanin", "Chlorocruorin"], answer: "Haemoglobin"},
-    {q: "The exchange of gases between blood and tissues is called:", options: ["Internal respiration", "External respiration", "Inspiration", "Expiration"], answer: "Internal respiration"},
-    {q: "The affinity of haemoglobin for oxygen increases with:", options: ["Increase in pH", "Decrease in pH", "Increase in CO2", "Increase in temperature"], answer: "Increase in pH"},
-    {q: "The largest amount of CO2 is carried in blood as:", options: ["Bicarbonate", "Carbaminohaemoglobin", "Dissolved CO2", "Free CO2"], answer: "Bicarbonate"},
-    {q: "During inspiration, the diaphragm:", options: ["Contracts and moves down", "Relaxes and moves up", "Contracts and moves up", "Relaxes and moves down"], answer: "Contracts and moves down"},
-    {q: "Which part of the brain regulates breathing?", options: ["Medulla oblongata", "Cerebrum", "Cerebellum", "Thalamus"], answer: "Medulla oblongata"},
-    {q: "The partial pressure of oxygen in alveolar air is about:", options: ["104 mm Hg", "40 mm Hg", "76 mm Hg", "120 mm Hg"], answer: "104 mm Hg"},
-    {q: "The Bohr effect is related to:", options: ["Release of O2 from haemoglobin", "Binding of CO2 to haemoglobin", "Binding of O2 to myoglobin", "Release of CO2 from plasma"], answer: "Release of O2 from haemoglobin"},
-    {q: "The respiratory surface in insects is:", options: ["Tracheae", "Lungs", "Gills", "Skin"], answer: "Tracheae"}
-  ]
-},
-{
-  title: "Breathing and Exchange of Gases - Quiz 2",
-  questions: [
-    {q: "Residual volume is:", options: ["Air left in lungs after maximum expiration", "Air left after normal expiration", "Air inhaled in excess of tidal volume", "Air exhaled in excess of tidal volume"], answer: "Air left in lungs after maximum expiration"},
-    {q: "The tidal volume in a healthy adult is about:", options: ["500 mL", "1500 mL", "150 mL", "2500 mL"], answer: "500 mL"},
-    {q: "Carbon monoxide poisoning is due to:", options: ["High affinity of CO for haemoglobin", "High affinity for myoglobin", "Low affinity for O2", "Blocking of alveoli"}, answer: "High affinity of CO for haemoglobin"},
-    {q: "Which is NOT a respiratory disorder?", options: ["Nephritis", "Asthma", "Emphysema", "Bronchitis"], answer: "Nephritis"},
-    {q: "The oxygen-haemoglobin dissociation curve is:", options: ["Sigmoid", "Linear", "Hyperbolic", "Parallel"], answer: "Sigmoid"},
-    {q: "Hyperventilation leads to:", options: ["Decrease in CO2 in blood", "Increase in CO2 in blood", "Increase in O2 in blood", "No change"}, answer: "Decrease in CO2 in blood"},
-    {q: "The primary site for exchange of gases is:", options: ["Alveoli", "Trachea", "Bronchiole", "Pharynx"], answer: "Alveoli"},
-    {q: "The condition when oxygen supply to tissues is inadequate is called:", options: ["Hypoxia", "Anaemia", "Asphyxia", "Bronchitis"], answer: "Hypoxia"},
-    {q: "Which of the following has the highest affinity for O2?", options: ["Myoglobin", "Haemoglobin", "Haemocyanin", "Chlorocruorin"], answer: "Myoglobin"},
-    {q: "The chloride shift is related to:", options: ["Transport of CO2", "Transport of O2", "Bohr effect", "Transport of bicarbonate"}, answer: "Transport of CO2"},
-    {q: "The respiratory quotient (RQ) for carbohydrate is:", options: ["1", "0.7", "1.5", "0.9"], answer: "1"},
-    {q: "Which of the following is NOT a part of respiratory system?", options: ["Kidney", "Trachea", "Bronchi", "Alveoli"], answer: "Kidney"},
-    {q: "Which instrument is used to measure lung volumes?", options: ["Spirometer", "Barometer", "Manometer", "Hygrometer"], answer: "Spirometer"},
-    {q: "The respiratory pigment in earthworm is:", options: ["Haemoglobin", "Haemocyanin", "Chlorocruorin", "Myoglobin"], answer: "Haemoglobin"},
-    {q: "Respiratory surfaces must be:", options: ["Moist and thin", "Dry and thick", "Dry and thin", "Moist and thick"], answer: "Moist and thin"}
-  ]
-},
-
-// Chapter 18: Body Fluids and Circulation
-{
-  title: "Body Fluids and Circulation - Quiz 1",
-  questions: [
-    {q: "The most abundant plasma protein is:", options: ["Albumin", "Globulin", "Fibrinogen", "Prothrombin"], answer: "Albumin"},
-    {q: "The normal pH of human blood is:", options: ["7.4", "7.0", "7.8", "8.0"], answer: "7.4"},
-    {q: "The universal donor blood group is:", options: ["O negative", "AB positive", "A positive", "B negative"], answer: "O negative"},
-    {q: "Which chamber of heart receives oxygenated blood from lungs?", options: ["Left atrium", "Right atrium", "Left ventricle", "Right ventricle"], answer: "Left atrium"},
-    {q: "Heart sounds are produced due to:", options: ["Closure of valves", "Opening of valves", "Contraction of auricles", "Contraction of ventricles"], answer: "Closure of valves"},
-    {q: "The pacemaker of the heart is:", options: ["SA node", "AV node", "Bundle of His", "Purkinje fibres"], answer: "SA node"},
-    {q: "The process of formation of blood cells is called:", options: ["Haemopoiesis", "Haemolysis", "Haemostasis", "Haematuria"], answer: "Haemopoiesis"},
-    {q: "The main function of lymph is:", options: ["Return of proteins to blood", "Oxygen transport", "Clotting", "Hormone transport"], answer: "Return of proteins to blood"},
-    {q: "The valve between left atrium and left ventricle is:", options: ["Bicuspid valve", "Tricuspid valve", "Aortic valve", "Pulmonary valve"], answer: "Bicuspid valve"},
-    {q: "The lifespan of RBCs is about:", options: ["120 days", "60 days", "180 days", "30 days"], answer: "120 days"},
-    {q: "The blood vessel carrying oxygenated blood from lungs to heart is:", options: ["Pulmonary vein", "Pulmonary artery", "Aorta", "Vena cava"], answer: "Pulmonary vein"},
-    {q: "The normal blood pressure in humans is:", options: ["120/80 mm Hg", "80/120 mm Hg", "100/70 mm Hg", "140/90 mm Hg"], answer: "120/80 mm Hg"},
-    {q: "The instrument used to measure blood pressure is:", options: ["Sphygmomanometer", "Spirometer", "Barometer", "Haemocytometer"], answer: "Sphygmomanometer"},
-    {q: "The double-walled sac covering the heart is called:", options: ["Pericardium", "Endocardium", "Myocardium", "Epicardium"], answer: "Pericardium"},
-    {q: "The largest artery in the human body is:", options: ["Aorta", "Pulmonary artery", "Carotid artery", "Coronary artery"], answer: "Aorta"}
-  ]
-},
-{
-  title: "Body Fluids and Circulation - Quiz 2",
-  questions: [
-    {q: "Blood group AB is called:", options: ["Universal recipient", "Universal donor", "Universal acceptor", "Universal rejector"], answer: "Universal recipient"},
-    {q: "The white blood cells responsible for immunity are:", options: ["Lymphocytes", "Neutrophils", "Eosinophils", "Basophils"], answer: "Lymphocytes"},
-    {q: "The part of brain that regulates heart rate is:", options: ["Medulla oblongata", "Cerebellum", "Cerebrum", "Thalamus"], answer: "Medulla oblongata"},
-    {q: "The component of blood responsible for clotting is:", options: ["Platelets", "RBCs", "WBCs", "Plasma"}, answer: "Platelets"},
-    {q: "The pulmonary artery carries:", options: ["Deoxygenated blood", "Oxygenated blood", "Mixed blood", "Lymph"}, answer: "Deoxygenated blood"},
-    {q: "The process of stopping bleeding is called:", options: ["Haemostasis", "Haemolysis", "Haemopoiesis", "Haematuria"], answer: "Haemostasis"},
-    {q: "The instrument used to count blood cells is:", options: ["Haemocytometer", "Sphygmomanometer", "Spirometer", "Barometer"], answer: "Haemocytometer"},
-    {q: "The heart is covered by:", options: ["Pericardium", "Myocardium", "Endocardium", "Epicardium"], answer: "Pericardium"},
-    {q: "The valve between right atrium and right ventricle is:", options: ["Tricuspid valve", "Bicuspid valve", "Aortic valve", "Pulmonary valve"], answer: "Tricuspid valve"},
-    {q: "The pigment responsible for red color of blood is:", options: ["Haemoglobin", "Myoglobin", "Haemocyanin", "Chlorocruorin"], answer: "Haemoglobin"},
-    {q: "The vessel carrying blood from digestive tract to liver is:", options: ["Hepatic portal vein", "Hepatic vein", "Renal vein", "Aorta"], answer: "Hepatic portal vein"},
-    {q: "The most abundant formed element in blood is:", options: ["RBC", "WBC", "Platelets", "Lymphocytes"], answer: "RBC"},
-    {q: "The opening and closing of heart valves is due to:", options: ["Pressure differences", "Hormones", "Nerve impulse", "Body temperature"], answer: "Pressure differences"},
-    {q: "Lymph differs from blood in having:", options: ["No RBC", "No plasma", "More platelets", "More proteins"], answer: "No RBC"},
-    {q: "The normal count of WBCs per mm3 is:", options: ["5000-10000", "1000-2000", "20000-25000", "10000-20000"], answer: "5000-10000"}
-  ]
-},
-
-// Chapter 19: Excretory Products and their Elimination
-{
-  title: "Excretory Products and their Elimination - Quiz 1",
-  questions: [
-    {q: "The functional unit of kidney is:", options: ["Nephron", "Neuron", "Glomerulus", "Bowman's capsule"], answer: "Nephron"},
-    {q: "The process of filtration of blood in kidney occurs in:", options: ["Glomerulus", "Loop of Henle", "Collecting duct", "Ureter"], answer: "Glomerulus"},
-    {q: "The main nitrogenous waste in humans is:", options: ["Urea", "Uric acid", "Ammonia", "Creatinine"], answer: "Urea"},
-    {q: "The hormone responsible for water reabsorption is:", options: ["ADH", "Aldosterone", "Cortisol", "Insulin"], answer: "ADH"},
-    {q: "The process of expulsion of urine from the body is called:", options: ["Micturition", "Glomerular filtration", "Ultrafiltration", "Secretion"], answer: "Micturition"},
-    {q: "The counter-current mechanism operates in:", options: ["Loop of Henle", "Glomerulus", "Proximal tubule", "Distal tubule"], answer: "Loop of Henle"},
-    {q: "The innermost layer of the kidney is:", options: ["Renal pelvis", "Renal cortex", "Renal medulla", "Renal capsule"], answer: "Renal pelvis"},
-    {q: "The structure that collects urine from nephrons is:", options: ["Collecting duct", "Loop of Henle", "Glomerulus", "Cortex"], answer: "Collecting duct"},
-    {q: "The process by which useful substances are reabsorbed in kidney is called:", options: ["Selective reabsorption", "Ultrafiltration", "Secretion", "Excretion"], answer: "Selective reabsorption"},
-    {q: "The pH of normal urine is:", options: ["6.0", "7.4", "5.0", "8.0"], answer: "6.0"},
-    {q: "The blood vessel entering the glomerulus is:", options: ["Afferent arteriole", "Efferent arteriole", "Renal vein", "Renal artery"], answer: "Afferent arteriole"},
-    {q: "The structure responsible for urine concentration is:", options: ["Loop of Henle", "Bowman's capsule", "Glomerulus", "Cortex"], answer: "Loop of Henle"},
-    {q: "The basic excretory product of birds is:", options: ["Uric acid", "Ammonia", "Urea", "Creatinine"], answer: "Uric acid"},
-    {q: "The process of removal of metabolic wastes is called:", options: ["Excretion", "Secretion", "Filtration", "Reabsorption"], answer: "Excretion"},
-    {q: "The tube carrying urine from kidney to bladder is:", options: ["Ureter", "Urethra", "Vas deferens", "Fallopian tube"], answer: "Ureter"}
-  ]
-},
-{
-  title: "Excretory Products and their Elimination - Quiz 2",
-  questions: [
-    {q: "The hormone aldosterone acts on:", options: ["Distal tubule", "Proximal tubule", "Glomerulus", "Collecting duct"], answer: "Distal tubule"},
-    {q: "Malpighian tubules are excretory organs of:", options: ["Insects", "Earthworm", "Mammals", "Amphibians"], answer: "Insects"},
-    {q: "The main excretory product in aquatic animals is:", options: ["Ammonia", "Urea", "Uric acid", "Creatinine"], answer: "Ammonia"},
-    {q: "The process of adding substances to filtrate is called:", options: ["Secretion", "Reabsorption", "Filtration", "Absorption"], answer: "Secretion"},
-    {q: "The condition of excess urea in blood is:", options: ["Uraemia", "Glycosuria", "Ketonuria", "Haematuria"], answer: "Uraemia"},
-    {q: "The outermost layer of the kidney is:", options: ["Renal capsule", "Renal cortex", "Renal medulla", "Renal pelvis"], answer: "Renal capsule"},
-    {q: "The renal portal system is found in:", options: ["Frogs", "Humans", "Birds", "Dogs"], answer: "Frogs"},
-    {q: "The glomerular filtrate is devoid of:", options: ["Proteins", "Glucose", "Urea", "Water"], answer: "Proteins"},
-    {q: "The process of ultrafiltration occurs in:", options: ["Bowman's capsule", "Collecting duct", "Loop of Henle", "Distal tubule"], answer: "Bowman's capsule"},
-    {q: "The main function of the collecting duct is:", options: ["Water reabsorption", "Filtration", "Protein digestion", "Secretion"], answer: "Water reabsorption"},
-    {q: "The kidney disorder due to infection is:", options: ["Glomerulonephritis", "Uraemia", "Renal calculi", "Diabetes insipidus"], answer: "Glomerulonephritis"},
-    {q: "The tube through which urine is expelled is:", options: ["Urethra", "Ureter", "Vas deferens", "Fallopian tube"], answer: "Urethra"},
-    {q: "The functional unit of excretion in earthworm is:", options: ["Nephridia", "Malpighian tubule", "Flame cell", "Kidney"], answer: "Nephridia"},
-    {q: "Which of the following is NOT a function of kidney?", options: ["Regulation of blood sugar", "Excretion of waste", "Maintenance of pH", "Osmoregulation"], answer: "Regulation of blood sugar"},
-    {q: "The process of artificial removal of waste from blood is:", options: ["Dialysis", "Filtration", "Excretion", "Reabsorption"], answer: "Dialysis"}
-  ]
-},
-
-// Chapter 20: Locomotion and Movement
-{
-  title: "Locomotion and Movement - Quiz 1",
-  questions: [
-    {q: "The contractile unit of muscle is:", options: ["Sarcomere", "Myofibril", "Muscle fiber", "Actin"], answer: "Sarcomere"},
-    {q: "The protein that forms the thick filament is:", options: ["Myosin", "Actin", "Tropomyosin", "Troponin"], answer: "Myosin"},
-    {q: "The type of joint found in the shoulder is:", options: ["Ball and socket", "Hinge", "Pivot", "Saddle"], answer: "Ball and socket"},
-    {q: "The mineral required for muscle contraction is:", options: ["Calcium", "Iron", "Potassium", "Sodium"], answer: "Calcium"},
-    {q: "The functional unit of a muscle fiber is:", options: ["Sarcomere", "Myofibril", "Fascicle", "Endomysium"], answer: "Sarcomere"},
-    {q: "The protein forming the thin filament is:", options: ["Actin", "Myosin", "Tropomyosin", "Collagen"], answer: "Actin"},
-    {q: "Red muscle fibers are rich in:", options: ["Myoglobin", "Glycogen", "Collagen", "Keratin"], answer: "Myoglobin"},
-    {q: "The largest bone in the human body is:", options: ["Femur", "Tibia", "Humerus", "Fibula"], answer: "Femur"},
-    {q: "The type of movement shown by cilia is:", options: ["Undulating", "Amoeboid", "Gliding", "Flagellar"], answer: "Undulating"},
-    {q: "ATP is required for:", options: ["Muscle contraction", "Muscle relaxation", "Nerve impulse", "Bone growth"], answer: "Muscle contraction"},
-    {q: "The joint between atlas and axis is:", options: ["Pivot joint", "Hinge joint", "Ball and socket", "Fibrous joint"], answer: "Pivot joint"},
-    {q: "The structure connecting muscle to bone is:", options: ["Tendon", "Ligament", "Cartilage", "Fascia"], answer: "Tendon"},
-    {q: "The smallest bone in the human body is:", options: ["Stapes", "Femur", "Tibia", "Humerus"], answer: "Stapes"},
-    {q: "The movement of limb away from the body is called:", options: ["Abduction", "Adduction", "Flexion", "Extension"], answer: "Abduction"},
-    {q: "Which of the following is NOT an involuntary muscle?", options: ["Skeletal muscle", "Cardiac muscle", "Smooth muscle", "Visceral muscle"], answer: "Skeletal muscle"}
-  ]
-},
-{
-  title: "Locomotion and Movement - Quiz 2",
-  questions: [
-    {q: "The contractile protein present in muscle is:", options: ["Actin and Myosin", "Collagen and Elastin", "Fibronectin and Laminin", "Keratin and Myoglobin"], answer: "Actin and Myosin"},
-    {q: "The smallest functional unit of contraction in muscle is:", options: ["Sarcomere", "Myofibril", "Fascicle", "Muscle fiber"], answer: "Sarcomere"},
-    {q: "The type of movement in earthworm is:", options: ["Amoeboid", "Ciliary", "Flagellar", "Undulating"], answer: "Amoeboid"},
-    {q: "The protein that binds calcium ions in muscle contraction is:", options: ["Troponin", "Tropomyosin", "Myosin", "Actin"], answer: "Troponin"},
-    {q: "The joint between humerus and ulna is:", options: ["Hinge joint", "Ball and socket", "Pivot", "Saddle"], answer: "Hinge joint"},
-    {q: "Which of the following is a fibrous joint?", options: ["Sutures of skull", "Shoulder joint", "Elbow joint", "Wrist joint"], answer: "Sutures of skull"},
-    {q: "The muscle found in the heart is:", options: ["Cardiac muscle", "Skeletal muscle", "Smooth muscle", "Striated muscle"], answer: "Cardiac muscle"},
-    {q: "The connective tissue joining two bones is called:", options: ["Ligament", "Tendon", "Cartilage", "Fascia"], answer: "Ligament"},
-    {q: "The bones of the forearm are:", options: ["Radius and Ulna", "Femur and Tibia", "Humerus and Radius", "Tibia and Fibula"], answer: "Radius and Ulna"},
-    {q: "Which of the following bones is not part of the axial skeleton?", options: ["Femur", "Sternum", "Ribs", "Vertebrae"], answer: "Femur"},
-    {q: "The protein that inhibits actin-myosin interaction at rest is:", options: ["Tropomyosin", "Troponin", "Myoglobin", "Hemoglobin"], answer: "Tropomyosin"},
-    {q: "The process of bone formation is called:", options: ["Ossification", "Calcification", "Myogenesis", "Chondrogenesis"], answer: "Ossification"},
-    {q: "The cranial bones are joined by:", options: ["Sutures", "Ligaments", "Tendons", "Cartilage"], answer: "Sutures"},
-    {q: "The vertebral column in humans consists of:", options: ["33 vertebrae", "26 vertebrae", "18 vertebrae", "24 vertebrae"], answer: "33 vertebrae"},
-    {q: "The movement of limb towards the body is called:", options: ["Adduction", "Abduction", "Flexion", "Extension"], answer: "Adduction"}
-  ]
-},
-// Chapter 21: Neural Control and Coordination
-{
-  title: "Neural Control and Coordination - Quiz 1",
-  questions: [
-    {q: "The structural and functional unit of nervous system is:", options: ["Neuron", "Glial cell", "Axon", "Dendrite"], answer: "Neuron"},
-    {q: "The junction between two neurons is called:", options: ["Synapse", "Node of Ranvier", "Axon hillock", "Neurolemma"], answer: "Synapse"},
-    {q: "The part of brain responsible for intelligence and memory is:", options: ["Cerebrum", "Cerebellum", "Medulla oblongata", "Pons"], answer: "Cerebrum"},
-    {q: "The covering of axon in myelinated neurons is called:", options: ["Myelin sheath", "Schwann cell", "Neurilemma", "Node of Ranvier"], answer: "Myelin sheath"},
-    {q: "Which of the following is NOT a part of forebrain?", options: ["Cerebellum", "Cerebrum", "Thalamus", "Hypothalamus"], answer: "Cerebellum"},
-    {q: "The main function of cerebellum is:", options: ["Coordination and balance", "Vision", "Hearing", "Memory"], answer: "Coordination and balance"},
-    {q: "The neurotransmitter released at neuromuscular junction is:", options: ["Acetylcholine", "Dopamine", "Serotonin", "GABA"], answer: "Acetylcholine"},
-    {q: "The pathway involved in reflex action is called:", options: ["Reflex arc", "Action potential", "Synaptic cleft", "Resting potential"], answer: "Reflex arc"},
-    {q: "The fluid present in the brain ventricles is:", options: ["Cerebrospinal fluid", "Blood plasma", "Lymph", "Synovial fluid"], answer: "Cerebrospinal fluid"},
-    {q: "Which among the following is a sensory nerve?", options: ["Optic nerve", "Vagus nerve", "Facial nerve", "Accessory nerve"], answer: "Optic nerve"},
-    {q: "The relay center for sensory and motor signals is:", options: ["Thalamus", "Hypothalamus", "Cerebellum", "Pons"], answer: "Thalamus"},
-    {q: "The part of the brain controlling heartbeat and breathing is:", options: ["Medulla oblongata", "Cerebellum", "Cerebrum", "Hypothalamus"], answer: "Medulla oblongata"},
-    {q: "The fastest conduction occurs in:", options: ["Myelinated neurons", "Unmyelinated neurons", "Glial cells", "Dendrites"], answer: "Myelinated neurons"},
-    {q: "Which is NOT a function of hypothalamus?", options: ["Coordination of voluntary movement", "Regulation of body temperature", "Hunger and thirst", "Control of pituitary gland"], answer: "Coordination of voluntary movement"},
-    {q: "Which part of the eye controls the amount of light entering?", options: ["Iris", "Cornea", "Lens", "Retina"], answer: "Iris"}
-  ]
-},
-{
-  title: "Neural Control and Coordination - Quiz 2",
-  questions: [
-    {q: "The gap between two neurons is called:", options: ["Synaptic cleft", "Node of Ranvier", "Myelin sheath", "Dendrite"], answer: "Synaptic cleft"},
-    {q: "The retina contains:", options: ["Rods and cones", "Cilia and flagella", "Ganglia", "Neuroglia"}, answer: "Rods and cones"},
-    {q: "The light sensitive pigment in rods is:", options: ["Rhodopsin", "Iodopsin", "Melanin", "Haemoglobin"}, answer: "Rhodopsin"},
-    {q: "The function of semicircular canals in the ear is:", options: ["Balance", "Hearing", "Vision", "Smell"}, answer: "Balance"},
-    {q: "Which part of the neuron receives impulses?", options: ["Dendrite", "Axon", "Cell body", "Synapse"], answer: "Dendrite"},
-    {q: "The main function of the spinal cord is:", options: ["Reflex actions", "Vision", "Hearing", "Memory"}, answer: "Reflex actions"},
-    {q: "The fluid found in the anterior chamber of the eye is:", options: ["Aqueous humour", "Vitreous humour", "Synovial fluid", "Cytosol"}, answer: "Aqueous humour"},
-    {q: "The blind spot in the eye is due to:", options: ["No photoreceptors", "No cornea", "No lens", "No iris"}, answer: "No photoreceptors"},
-    {q: "The auditory nerve carries impulses from:", options: ["Ear to brain", "Brain to ear", "Ear to eye", "Ear to spinal cord"}, answer: "Ear to brain"},
-    {q: "The pacinian corpuscles are receptors for:", options: ["Pressure", "Light", "Sound", "Smell"}, answer: "Pressure"},
-    {q: "The area of sharpest vision in the retina is:", options: ["Fovea", "Blind spot", "Lens", "Cornea"}, answer: "Fovea"},
-    {q: "The neurotransmitter inhibiting pain sensation is:", options: ["Endorphin", "Dopamine", "Serotonin", "GABA"}, answer: "Endorphin"},
-    {q: "The cranial nerve supplying the diaphragm is:", options: ["Phrenic nerve", "Vagus nerve", "Facial nerve", "Accessory nerve"}, answer: "Phrenic nerve"},
-    {q: "The autonomic nervous system controls:", options: ["Involuntary activities", "Voluntary activities", "Vision", "Hearing"}, answer: "Involuntary activities"},
-    {q: "The part of the ear responsible for hearing is:", options: ["Cochlea", "Semicircular canal", "Tympanum", "Eustachian tube"}, answer: "Cochlea"}
-  ]
-},
-
-// Chapter 22: Chemical Coordination and Integration
-{
-  title: "Chemical Coordination and Integration - Quiz 1",
-  questions: [
-    {q: "The master gland of the endocrine system is:", options: ["Pituitary gland", "Thyroid gland", "Adrenal gland", "Pineal gland"}, answer: "Pituitary gland"},
-    {q: "Insulin is secreted by:", options: ["Beta cells of pancreas", "Alpha cells of pancreas", "Liver", "Adrenal cortex"}, answer: "Beta cells of pancreas"},
-    {q: "The hormone responsible for lowering blood glucose is:", options: ["Insulin", "Glucagon", "Adrenaline", "Thyroxine"}, answer: "Insulin"},
-    {q: "The hormone secreted by adrenal medulla is:", options: ["Adrenaline", "Cortisol", "Aldosterone", "Thyroxine"}, answer: "Adrenaline"},
-    {q: "The function of parathyroid hormone is:", options: ["Increase blood calcium", "Decrease blood calcium", "Increase blood glucose", "Increase blood potassium"}, answer: "Increase blood calcium"},
-    {q: "The gland that secretes melatonin is:", options: ["Pineal gland", "Adrenal gland", "Thyroid gland", "Pituitary gland"}, answer: "Pineal gland"},
-    {q: "The hormone responsible for uterine contraction is:", options: ["Oxytocin", "Prolactin", "FSH", "LH"}, answer: "Oxytocin"},
-    {q: "The deficiency of iodine causes:", options: ["Goitre", "Diabetes", "Cretinism", "Addison's disease"}, answer: "Goitre"},
-    {q: "The hormone responsible for 'fight or flight' response is:", options: ["Adrenaline", "Insulin", "Glucagon", "Aldosterone"}, answer: "Adrenaline"},
-    {q: "The hormone that stimulates milk production is:", options: ["Prolactin", "Oxytocin", "FSH", "LH"}, answer: "Prolactin"},
-    {q: "Thyroxine regulates:", options: ["Basal metabolic rate", "Blood calcium", "Blood sugar", "Blood pressure"}, answer: "Basal metabolic rate"},
-    {q: "Which gland is both exocrine and endocrine?", options: ["Pancreas", "Thyroid", "Pituitary", "Adrenal"}, answer: "Pancreas"},
-    {q: "The hormone that increases blood sugar is:", options: ["Glucagon", "Insulin", "Thyroxine", "Calcitonin"}, answer: "Glucagon"},
-    {q: "The hormone responsible for ovulation is:", options: ["LH", "FSH", "Prolactin", "TSH"}, answer: "LH"},
-    {q: "The hormone secreted by thymus is:", options: ["Thymosin", "Thyroxine", "Insulin", "Melatonin"}, answer: "Thymosin"}
-  ]
-},
-{
-  title: "Chemical Coordination and Integration - Quiz 2",
-  questions: [
-    {q: "The hormone responsible for water reabsorption is:", options: ["ADH", "Aldosterone", "Cortisol", "Insulin"}, answer: "ADH"},
-    {q: "The hormone that regulates sodium and potassium balance is:", options: ["Aldosterone", "Cortisol", "Adrenaline", "Insulin"}, answer: "Aldosterone"},
-    {q: "The hormone responsible for stress response is:", options: ["Cortisol", "Thyroxine", "Insulin", "Parathormone"}, answer: "Cortisol"},
-    {q: "The hormone that causes hyperglycemia is:", options: ["Glucagon", "Insulin", "Thyroxine", "Calcitonin"}, answer: "Glucagon"},
-    {q: "The hormone responsible for growth is:", options: ["GH", "LH", "FSH", "TSH"}, answer: "GH"},
-    {q: "Deficiency of growth hormone in children causes:", options: ["Dwarfism", "Gigantism", "Acromegaly", "Cretinism"}, answer: "Dwarfism"},
-    {q: "Which hormone is anti-diuretic?", options: ["ADH", "Aldosterone", "FSH", "TSH"}, answer: "ADH"},
-    {q: "The hormone secreted by corpus luteum is:", options: ["Progesterone", "Estrogen", "Prolactin", "FSH"}, answer: "Progesterone"},
-    {q: "Diabetes insipidus is caused by deficiency of:", options: ["ADH", "Insulin", "Cortisol", "Thyroxine"}, answer: "ADH"},
-    {q: "The gland situated on top of kidneys is:", options: ["Adrenal gland", "Pituitary gland", "Pineal gland", "Thyroid gland"}, answer: "Adrenal gland"},
-    {q: "The hormone responsible for pigmentation is:", options: ["MSH", "TSH", "ACTH", "GH"}, answer: "MSH"},
-    {q: "The hormone secreted by testes is:", options: ["Testosterone", "Estrogen", "Progesterone", "FSH"}, answer: "Testosterone"},
-    {q: "The hormone responsible for female secondary sexual characteristics is:", options: ["Estrogen", "Testosterone", "Progesterone", "FSH"}, answer: "Estrogen"},
-    {q: "The hormone that regulates metabolism of calcium is:", options: ["Calcitonin", "Thyroxine", "Insulin", "Cortisol"}, answer: "Calcitonin"},
-    {q: "The hormone that increases absorption of calcium from intestine is:", options: ["Parathyroid hormone", "Insulin", "Cortisol", "Thyroxine"}, answer: "Parathyroid hormone"}
-  ]
-}
-]
-    // ...other subjects for class 11
-  },
-
-  12: {
-    physics: [
-    
-// Chapter 1: Electric Charges and Fields
-{
-  title: "Electric Charges and Fields - Quiz 1",
-  questions: [
-    {q: "Coulomb’s law is valid for:", options: ["Point charges", "Large bodies", "Charged rods", "All charges"], answer: "Point charges"},
-    {q: "The SI unit of electric charge is:", options: ["Coulomb", "Farad", "Ampere", "Volt"], answer: "Coulomb"},
-    {q: "Electric field inside a conductor is:", options: ["Zero", "Infinite", "Maximum", "Constant"], answer: "Zero"},
-    {q: "The direction of electric field is:", options: ["From positive to negative", "Negative to positive", "Any direction", "None"], answer: "From positive to negative"},
-    {q: "Value of 1 microcoulomb is:", options: ["10⁻⁶ C", "10⁻³ C", "10⁻⁹ C", "10⁻¹² C"], answer: "10⁻⁶ C"},
-    {q: "Electric flux through a closed surface in a uniform field is:", options: ["Zero", "Maximum", "Minimum", "Constant"], answer: "Zero"},
-    {q: "Gauss’s law is useful for calculating:", options: ["Electric field", "Electric potential", "Capacitance", "Resistance"], answer: "Electric field"},
-    {q: "The charge on a proton is:", options: ["+1.6 × 10⁻¹⁹ C", "–1.6 × 10⁻¹⁹ C", "1.6 × 10⁻¹⁸ C", "Zero"], answer: "+1.6 × 10⁻¹⁹ C"},
-    {q: "The force between two charges doubles if:", options: ["Distance is halved", "Distance is doubled", "Both charges are halved", "Medium is changed"], answer: "Distance is halved"},
-    {q: "Line of force never:", options: ["Intersect", "End", "Start", "Curve"], answer: "Intersect"},
-    {q: "If electric field is zero at a point, then:", options: ["Net force is zero", "Charge is zero", "Potential is zero", "Flux is zero"], answer: "Net force is zero"},
-    {q: "The electric field due to a dipole at axial point is proportional to:", options: ["1/r³", "1/r²", "1/r", "1/r⁴"], answer: "1/r³"},
-    {q: "A charge q is placed at the center of a cube. The flux through one face is:", options: ["q/6ε₀", "q/ε₀", "q/3ε₀", "q/2ε₀"], answer: "q/6ε₀"},
-    {q: "The number of lines of force from a charge q is:", options: ["q/ε₀", "qε₀", "q²/ε₀", "ε₀/q"], answer: "q/ε₀"},
-    {q: "The force between two charges in a medium is minimum when:", options: ["Dielectric constant is maximum", "Minimum", "Zero", "Infinite"], answer: "Dielectric constant is maximum"}
-  ]
-},
-{
-  title: "Electric Charges and Fields - Quiz 2",
-  questions: [
-    {q: "The principle of superposition applies to:", options: ["Forces", "Fields", "Potentials", "All of these"], answer: "All of these"},
-    {q: "The electric field at the center of a uniformly charged ring is:", options: ["Zero", "Maximum", "Minimum", "Equal to charge"], answer: "Zero"},
-    {q: "A positive charge moves in the direction of:", options: ["Electric field", "Potential difference", "Current", "Magnetic field"], answer: "Electric field"},
-    {q: "SI unit of permittivity is:", options: ["C²/N·m²", "C/N·m", "N·m²/C", "N/C"], answer: "C²/N·m²"},
-    {q: "The value of ε₀ is:", options: ["8.85 × 10⁻¹² C²/N·m²", "9 × 10⁹ N·m²/C²", "3 × 10⁸ m/s", "1.6 × 10⁻¹⁹ C"], answer: "8.85 × 10⁻¹² C²/N·m²"},
-    {q: "Two charges 2q and –2q are placed at a distance r. The electric field at the midpoint is:", options: ["4q/πε₀r²", "Zero", "2q/πε₀r²", "q/πε₀r²"], answer: "4q/πε₀r²"},
-    {q: "The force between two charges in air is F. If placed in dielectric of k=2, force is:", options: ["F/2", "2F", "F", "F/4"], answer: "F/2"},
-    {q: "Electric field due to infinite sheet of charge is:", options: ["σ/2ε₀", "σ/ε₀", "2σ/ε₀", "Zero"], answer: "σ/2ε₀"},
-    {q: "If charge is doubled and distance is halved, force becomes:", options: ["8 times", "4 times", "2 times", "16 times"], answer: "8 times"},
-    {q: "The total flux through a cube with no charge inside is:", options: ["Zero", "q/ε₀", "q/2ε₀", "q/3ε₀"], answer: "Zero"},
-    {q: "The force between two charges in vacuum is:", options: ["Largest", "Smallest", "Zero", "Infinite"], answer: "Largest"},
-    {q: "The direction of electric field due to negative charge is:", options: ["Towards charge", "Away from charge", "Circular", "Zero"], answer: "Towards charge"},
-    {q: "The work done in moving a charge on an equipotential surface is:", options: ["Zero", "Maximum", "Minimum", "Equal to charge"], answer: "Zero"},
-    {q: "The number of excess electrons in 1C of charge is:", options: ["6.25 × 10¹⁸", "1.6 × 10⁻¹⁹", "3 × 10⁸", "10⁶"], answer: "6.25 × 10¹⁸"},
-    {q: "The force per unit positive charge is called:", options: ["Electric field", "Potential", "Flux", "Charge density"], answer: "Electric field"}
-  ]
-},
-
-// Chapter 2: Electrostatic Potential and Capacitance
-{
-  title: "Electrostatic Potential and Capacitance - Quiz 1",
-  questions: [
-    {q: "SI unit of electric potential is:", options: ["Volt", "Coulomb", "Newton", "Joule"], answer: "Volt"},
-    {q: "Work done in bringing unit positive charge from infinity is:", options: ["Potential", "Field", "Flux", "Current"], answer: "Potential"},
-    {q: "Potential at the center of a charged ring is:", options: ["kQ/R", "Zero", "kQ/2R", "2kQ/R"], answer: "kQ/R"},
-    {q: "The relation between electric field (E) and potential (V) is:", options: ["E = –dV/dr", "E = dV/dr", "E = Vd", "E = V/r"], answer: "E = –dV/dr"},
-    {q: "The potential at distance r due to point charge q is:", options: ["kq/r", "kq/r²", "kr/q", "q/kr"], answer: "kq/r"},
-    {q: "A parallel plate capacitor with air has capacitance C. If dielectric (k) is inserted, capacitance becomes:", options: ["kC", "C/k", "C", "k²C"], answer: "kC"},
-    {q: "Energy stored in a capacitor is:", options: ["½CV²", "CV", "V/C", "C²V"], answer: "½CV²"},
-    {q: "Capacitance of a parallel plate capacitor is proportional to:", options: ["Area/distance", "Distance/area", "Area × distance", "1/area"], answer: "Area/distance"},
-    {q: "The potential due to a dipole at a distant point is proportional to:", options: ["1/r²", "1/r³", "1/r", "1/r⁴"], answer: "1/r²"},
-    {q: "The total charge on both plates of a capacitor is:", options: ["Zero", "Maximum", "Minimum", "Equal to applied charge"], answer: "Zero"},
-    {q: "If plates of capacitor are brought closer, capacitance:", options: ["Increases", "Decreases", "Remains same", "Becomes zero"], answer: "Increases"},
-    {q: "If a conductor is connected to earth, its potential becomes:", options: ["Zero", "Maximum", "Minimum", "Infinite"], answer: "Zero"},
-    {q: "The dielectric strength of air is:", options: ["3 × 10⁶ V/m", "1 × 10⁶ V/m", "5 × 10⁶ V/m", "2 × 10⁶ V/m"], answer: "3 × 10⁶ V/m"},
-    {q: "The equivalent capacitance for capacitors in series is:", options: ["Less than smallest", "Greater than largest", "Equal to sum", "Zero"], answer: "Less than smallest"},
-    {q: "The SI unit of capacitance is:", options: ["Farad", "Coulomb", "Volt", "Siemens"], answer: "Farad"}
-  ]
-},
-{
-  title: "Electrostatic Potential and Capacitance - Quiz 2",
-  questions: [
-    {q: "The work done in moving a charge between two points of equal potential is:", options: ["Zero", "Maximum", "Minimum", "Infinite"], answer: "Zero"},
-    {q: "The potential at the surface of a sphere of radius R and charge Q is:", options: ["kQ/R", "kQ/2R", "kQ/R²", "kQ²/R"], answer: "kQ/R"},
-    {q: "If the separation between capacitor plates is doubled, capacitance:", options: ["Halves", "Doubles", "Remains the same", "Becomes zero"], answer: "Halves"},
-    {q: "The energy density in a parallel plate capacitor is:", options: ["½ε₀E²", "½CV²", "CV", "E/V"], answer: "½ε₀E²"},
-    {q: "The series combination of two capacitors C1 and C2 has value:", options: ["C1C2/(C1+C2)", "C1+C2", "C1–C2", "C1/C2"], answer: "C1C2/(C1+C2)"},
-    {q: "A 2 μF capacitor is charged to 100 V, energy stored is:", options: ["0.01 J", "0.02 J", "0.1 J", "0.001 J"], answer: "0.01 J"},
-    {q: "If a dielectric is removed from a charged capacitor, its voltage:", options: ["Increases", "Decreases", "Remains same", "Zero"], answer: "Increases"},
-    {q: "The potential at a point 2m away from 2μC charge is (k=9×10⁹):", options: ["9000 V", "18000 V", "4500 V", "36000 V"], answer: "9000 V"},
-    {q: "If three capacitors of 2μF each are connected in parallel, net capacitance is:", options: ["6μF", "2μF", "3μF", "1μF"], answer: "6μF"},
-    {q: "The potential difference between plates of a capacitor is 200V. If charge is 0.01C, capacitance is:", options: ["0.00005 F", "0.005 F", "0.02 F", "0.5 F"], answer: "0.00005 F"},
-    {q: "If charge on a capacitor is halved, energy stored becomes:", options: ["1/4th", "Half", "Same", "Double"], answer: "1/4th"},
-    {q: "The capacitance of Earth is about:", options: ["710 μF", "1 μF", "1 F", "100 μF"], answer: "710 μF"},
-    {q: "Capacitors are used for:", options: ["Storing charge", "Storing current", "Storing resistance", "Storing voltage"], answer: "Storing charge"},
-    {q: "If a 10 μF and 20 μF capacitor are in series, net capacitance is:", options: ["6.67 μF", "10 μF", "30 μF", "15 μF"], answer: "6.67 μF"},
-    {q: "A capacitor blocks:", options: ["DC", "AC", "Both", "None"], answer: "DC"}
-  ]
-},
-// Chapter 3: Current Electricity
-{
-  title: "Current Electricity - Quiz 1",
-  questions: [
-    {q: "Drift velocity is proportional to:", options: ["Electric field", "Current", "Resistance", "Charge"], answer: "Electric field"},
-    {q: "SI unit of resistivity is:", options: ["Ohm-m", "Ohm", "Ohm-m²", "Ohm/m"], answer: "Ohm-m"},
-    {q: "Ohm’s law is not applicable to:", options: ["Vacuum diode", "Copper wire", "Silver wire", "Carbon resistor"], answer: "Vacuum diode"},
-    {q: "If a wire’s length is doubled and area halved, resistance becomes:", options: ["4 times", "2 times", "Half", "Double"], answer: "4 times"},
-    {q: "The emf of a cell depends on:", options: ["Electrolytes", "Electrode material", "Temperature", "All of these"], answer: "All of these"},
-    {q: "Kirchhoff’s junction law is based on:", options: ["Conservation of charge", "Conservation of energy", "Conservation of momentum", "Conservation of mass"], answer: "Conservation of charge"},
-    {q: "The potential difference across an ideal cell is:", options: ["Equal to emf", "Zero", "Infinite", "None"], answer: "Equal to emf"},
-    {q: "Current in a conductor is due to:", options: ["Drift of electrons", "Protons", "Neutrons", "Ions"], answer: "Drift of electrons"},
-    {q: "A voltmeter is always connected in:", options: ["Parallel", "Series", "Both", "Neither"], answer: "Parallel"},
-    {q: "The reciprocal of resistance is:", options: ["Conductance", "Capacitance", "Inductance", "Reactance"], answer: "Conductance"},
-    {q: "The total resistance of n resistors of resistance R in parallel is:", options: ["R/n", "nR", "n/R", "R+n"], answer: "R/n"},
-    {q: "Wheatstone bridge is used to measure:", options: ["Unknown resistance", "Current", "Voltage", "Power"], answer: "Unknown resistance"},
-    {q: "The internal resistance of an ideal cell is:", options: ["Zero", "One", "Infinite", "Very high"], answer: "Zero"},
-    {q: "The drift velocity in a conductor is of the order of:", options: ["mm/s", "m/s", "km/s", "cm/s"], answer: "mm/s"},
-    {q: "The maximum power is delivered to the load when:", options: ["Load resistance equals internal resistance", "Load resistance is zero", "Load resistance is infinite", "Load resistance is twice internal resistance"], answer: "Load resistance equals internal resistance"}
-  ]
-},
-{
-  title: "Current Electricity - Quiz 2",
-  questions: [
-    {q: "Ammeter is always connected in:", options: ["Series", "Parallel", "Both", "Neither"], answer: "Series"},
-    {q: "The SI unit of current is:", options: ["Ampere", "Coulomb", "Volt", "Ohm"], answer: "Ampere"},
-    {q: "The color code for a 1 kΩ resistor is:", options: ["Brown, Black, Red", "Red, Red, Red", "Brown, Black, Black", "Red, Black, Black"], answer: "Brown, Black, Red"},
-    {q: "If the area of cross-section of a wire is doubled, its resistance:", options: ["Halves", "Doubles", "Quadruples", "Remains the same"], answer: "Halves"},
-    {q: "The SI unit of electric charge is:", options: ["Coulomb", "Ampere", "Ohm", "Volt"], answer: "Coulomb"},
-    {q: "The direction of conventional current is:", options: ["Positive to negative", "Negative to positive", "Either", "None"], answer: "Positive to negative"},
-    {q: "If temperature increases, the resistance of a conductor:", options: ["Increases", "Decreases", "Remains the same", "Becomes zero"], answer: "Increases"},
-    {q: "The resistance of an ideal voltmeter is:", options: ["Infinite", "Zero", "Very low", "Very high"], answer: "Infinite"},
-    {q: "Potentiometer is used to measure:", options: ["Emf accurately", "Current", "Power", "Charge"], answer: "Emf accurately"},
-    {q: "A cell of emf 2V and internal resistance 1Ω is connected to a 3Ω resistor. The current is:", options: ["0.5 A", "1 A", "2 A", "1.5 A"], answer: "0.5 A"},
-    {q: "The specific resistance of a material depends on:", options: ["Nature of material", "Length", "Area", "Current"], answer: "Nature of material"},
-    {q: "The resistivity of a perfect conductor is:", options: ["Zero", "Infinite", "One", "High"], answer: "Zero"},
-    {q: "The potential gradient in a potentiometer is decreased by:", options: ["Increasing length", "Decreasing length", "Increasing resistance", "Increasing current"], answer: "Increasing length"},
-    {q: "The resistance of a wire at 0°C is 5 Ω. At 100°C, it is 6 Ω. The temperature coefficient is:", options: ["0.002/°C", "0.01/°C", "0.02/°C", "0.1/°C"], answer: "0.002/°C"},
-    {q: "Which of the following has negative temperature coefficient?", options: ["Semiconductor", "Metal", "Alloy", "Electrolyte"], answer: "Semiconductor"}
-  ]
-},
-
-// Chapter 4: Moving Charges and Magnetism
-{
-  title: "Moving Charges and Magnetism - Quiz 1",
-  questions: [
-    {q: "The SI unit of magnetic field is:", options: ["Tesla", "Gauss", "Weber", "Henry"], answer: "Tesla"},
-    {q: "The magnetic field at the center of a circular coil is proportional to:", options: ["Number of turns", "Radius", "Area", "Voltage"], answer: "Number of turns"},
-    {q: "The direction of force on a current-carrying conductor in a magnetic field is given by:", options: ["Fleming’s left hand rule", "Fleming’s right hand rule", "Lenz's law", "Ampere’s law"], answer: "Fleming’s left hand rule"},
-    {q: "The force between two parallel current-carrying wires is:", options: ["Attractive if same direction", "Repulsive if same direction", "Zero", "Maximum if perpendicular"], answer: "Attractive if same direction"},
-    {q: "The magnetic field due to a long straight wire at a distance r is proportional to:", options: ["1/r", "r", "1/r²", "r²"], answer: "1/r"},
-    {q: "The magnitude of magnetic force on a moving charge is maximum when angle with field is:", options: ["90°", "0°", "45°", "180°"], answer: "90°"},
-    {q: "A charged particle moving parallel to magnetic field experiences:", options: ["No force", "Maximum force", "Minimum force", "Centripetal force"}, answer: "No force"},
-    {q: "The SI unit of permeability is:", options: ["H/m", "T·m", "A/m", "Wb"], answer: "H/m"},
-    {q: "Ampere’s circuital law relates:", options: ["Magnetic field and current", "Electric field and charge", "Force and charge", "Inductance and current"], answer: "Magnetic field and current"},
-    {q: "The value of μ₀/4π is:", options: ["10⁻⁷ T·m/A", "10⁻⁷ N·m²/C²", "9 × 10⁹ N·m²/C²", "1.6 × 10⁻¹⁹ C"}, answer: "10⁻⁷ T·m/A"},
-    {q: "The magnetic moment of a current loop is:", options: ["Current × Area", "Current/Area", "Area/Current", "Current × Radius"], answer: "Current × Area"},
-    {q: "The earth’s magnetic field is of the order of:", options: ["10⁻⁵ T", "1T", "10⁻² T", "10T"], answer: "10⁻⁵ T"},
-    {q: "The magnetic field inside a solenoid is:", options: ["Uniform", "Zero", "Non-uniform", "Maximum at ends"}, answer: "Uniform"},
-    {q: "The angle of dip at the magnetic equator is:", options: ["0°", "90°", "45°", "30°"}, answer: "0°"},
-    {q: "The unit of magnetic flux is:", options: ["Weber", "Tesla", "Henry", "Farad"], answer: "Weber"}
-  ]
-},
-{
-  title: "Moving Charges and Magnetism - Quiz 2",
-  questions: [
-    {q: "The SI unit of magnetic permeability is:", options: ["H/m", "T·m", "A/m", "Wb"], answer: "H/m"},
-    {q: "When a current passes through a straight conductor, the magnetic field produced is in the shape of:", options: ["Concentric circles", "Parallel lines", "Straight lines", "Elliptical"}, answer: "Concentric circles"},
-    {q: "If two parallel wires carry currents in opposite directions, the force is:", options: ["Repulsive", "Attractive", "Zero", "Maximum"}, answer: "Repulsive"},
-    {q: "The magnetic field at the center of a solenoid is independent of:", options: ["Radius", "Current", "Number of turns", "Length"}, answer: "Radius"},
-    {q: "The device used to measure current is:", options: ["Galvanometer", "Voltmeter", "Ammeter", "Potentiometer"}, answer: "Galvanometer"},
-    {q: "The magnetic field due to a moving charge is perpendicular to:", options: ["Both velocity and field", "Field", "Velocity", "Neither"}, answer: "Both velocity and field"},
-    {q: "The force on a charge q moving with velocity v in magnetic field B is:", options: ["q(v × B)", "q(v · B)", "qB", "qvB"], answer: "q(v × B)"},
-    {q: "The value of Bohr magneton is:", options: ["9.27 × 10⁻²⁴ A·m²", "6.63 × 10⁻³⁴ J·s", "1.6 × 10⁻¹⁹ C", "1.38 × 10⁻²³ J/K"}, answer: "9.27 × 10⁻²⁴ A·m²"},
-    {q: "The angle of dip at poles is:", options: ["90°", "0°", "60°", "180°"}, answer: "90°"},
-    {q: "If a current flows in a circular coil, the magnetic field at the center is:", options: ["Directly proportional to current", "Inversely proportional to radius", "Proportional to area", "All of these"}, answer: "All of these"},
-    {q: "The torque on a current loop in uniform magnetic field is maximum when angle is:", options: ["90°", "0°", "180°", "45°"}, answer: "90°"},
-    {q: "Magnetic susceptibility of a diamagnetic material is:", options: ["Negative", "Positive", "Zero", "Infinite"}, answer: "Negative"},
-    {q: "The earth’s magnetic declination at a place is:", options: ["Angle between magnetic meridian and geographic meridian", "Angle of dip", "Horizontal component", "Vertical component"}, answer: "Angle between magnetic meridian and geographic meridian"},
-    {q: "The field at the center of a circular coil of radius r carrying current I and n turns is:", options: ["μ₀nI/2r", "μ₀nI/4πr", "μ₀nI/πr²", "μ₀nI/r"], answer: "μ₀nI/2r"},
-    {q: "The value of μ₀ is:", options: ["4π × 10⁻⁷ H/m", "8.85 × 10⁻¹²", "9 × 10⁹", "1.6 × 10⁻¹⁹"}, answer: "4π × 10⁻⁷ H/m"}
-  ]
-},
-
-// Chapter 5: Magnetism and Matter
-{
-  title: "Magnetism and Matter - Quiz 1",
-  questions: [
-    {q: "The SI unit of magnetic moment is:", options: ["A·m²", "T·m²", "Wb·m", "A·m"], answer: "A·m²"},
-    {q: "The earth behaves as a:", options: ["Huge bar magnet", "Electrostatic dipole", "Electric monopole", "Permanent magnet"}, answer: "Huge bar magnet"},
-    {q: "Magnetic susceptibility (χ) for a paramagnetic material is:", options: ["Positive and small", "Large and negative", "Zero", "Large and positive"}, answer: "Positive and small"},
-    {q: "Permanent magnets are made of:", options: ["Steel", "Soft iron", "Copper", "Aluminium"}, answer: "Steel"},
-    {q: "The angle of dip at equator is:", options: ["0°", "90°", "45°", "60°"}, answer: "0°"},
-    {q: "The horizontal component of earth’s magnetic field is maximum at:", options: ["Equator", "Poles", "Tropic of Cancer", "Tropic of Capricorn"}, answer: "Equator"},
-    {q: "The value of angle of declination is zero at:", options: ["Agonic line", "Poles", "Equator", "Any place"}, answer: "Agonic line"},
-    {q: "The most suitable material for the core of an electromagnet is:", options: ["Soft iron", "Steel", "Copper", "Aluminium"}, answer: "Soft iron"},
-    {q: "Diamagnetic materials are:", options: ["Repelled by magnetic field", "Attracted by field", "Strongly attracted", "Ferromagnetic"}, answer: "Repelled by magnetic field"},
-    {q: "The susceptibility of a ferromagnetic material is:", options: ["Very large and positive", "Small and positive", "Negative", "Zero"}, answer: "Very large and positive"},
-    {q: "The direction of earth’s magnetic field at a place is given by:", options: ["Angle of dip and declination", "Inclination only", "Declination only", "None"}, answer: "Angle of dip and declination"},
-    {q: "The Curie temperature is the temperature above which:", options: ["Ferromagnetic becomes paramagnetic", "Paramagnetic becomes diamagnetic", "Diamagnetic becomes ferromagnetic", "None"}, answer: "Ferromagnetic becomes paramagnetic"},
-    {q: "The magnetic moment of a solenoid is:", options: ["nIA", "n²IA", "IA", "nI/A"], answer: "nIA"},
-    {q: "Earth’s magnetic field is also called:", options: ["Geomagnetic field", "Electrostatic field", "Solar field", "Atmospheric field"}, answer: "Geomagnetic field"},
-    {q: "The unit of pole strength is:", options: ["A·m", "A·m²", "T·m²", "Wb·m"], answer: "A·m"}
-  ]
-},
-{
-  title: "Magnetism and Matter - Quiz 2",
-  questions: [
-    {q: "A magnetic field can be produced by:", options: ["Moving charges", "Stationary charges", "Both", "None"}, answer: "Moving charges"},
-    {q: "The magnetic moment of a current loop is:", options: ["Current × Area", "Current/Area", "Area/Current", "Current × Radius"}, answer: "Current × Area"},
-    {q: "The magnetic susceptibility of a perfect diamagnetic is:", options: ["–1", "0", "1", "Infinity"}, answer: "–1"},
-    {q: "Direction of magnetic field inside a bar magnet is:", options: ["South to north", "North to south", "East to west", "West to east"}, answer: "South to north"},
-    {q: "The unit of magnetic field intensity (H) is:", options: ["A/m", "T·m²", "A·m", "T"], answer: "A/m"},
-    {q: "Which material is used for making permanent magnets?", options: ["Steel", "Soft iron", "Copper", "Aluminium"}, answer: "Steel"},
-    {q: "The horizontal component of earth's magnetic field at poles is:", options: ["Zero", "Maximum", "Equal to vertical", "Infinity"}, answer: "Zero"},
-    {q: "A freely suspended magnet always points towards:", options: ["North-South", "East-West", "North-East", "South-West"}, answer: "North-South"},
-    {q: "The earth's magnetic field is due to:", options: ["Motion of molten iron in core", "Atmosphere", "Mountains", "Sun"], answer: "Motion of molten iron in core"},
-    {q: "The tangent law relates magnetic fields at:", options: ["Right angles", "Parallel", "Opposite", "No relation"}, answer: "Right angles"},
-    {q: "The angle of dip at the magnetic equator is:", options: ["0°", "90°", "45°", "60°"}, answer: "0°"},
-    {q: "A material with large positive susceptibility is:", options: ["Ferromagnetic", "Paramagnetic", "Diamagnetic", "Non-magnetic"}, answer: "Ferromagnetic"},
-    {q: "The direction of the magnetic field lines outside a bar magnet is:", options: ["North to South", "South to North", "East to West", "West to East"}, answer: "North to South"},
-    {q: "The magnetization of a substance is defined as:", options: ["Magnetic moment per unit volume", "Magnetic field per unit volume", "Field strength per unit area", "None"}, answer: "Magnetic moment per unit volume"},
-    {q: "The SI unit of magnetization is:", options: ["A/m", "T", "A·m", "T·m"], answer: "A/m"}
-  ]
-},
-// Chapter 6: Electromagnetic Induction
-{
-  title: "Electromagnetic Induction - Quiz 1",
-  questions: [
-    {q: "Faraday’s law of electromagnetic induction states that the induced emf is:", options: ["Proportional to the rate of change of magnetic flux", "Proportional to magnetic field", "Proportional to charge", "Proportional to resistance"], answer: "Proportional to the rate of change of magnetic flux"},
-    {q: "Lenz’s law is based on the law of:", options: ["Conservation of energy", "Conservation of charge", "Conservation of momentum", "Conservation of mass"}, answer: "Conservation of energy"},
-    {q: "The unit of magnetic flux is:", options: ["Weber", "Tesla", "Henry", "Volt"], answer: "Weber"},
-    {q: "The SI unit of self-inductance is:", options: ["Henry", "Tesla", "Weber", "Ampere"], answer: "Henry"},
-    {q: "The direction of induced current is given by:", options: ["Lenz’s law", "Faraday’s law", "Ampere’s law", "Gauss’s law"], answer: "Lenz’s law"},
-    {q: "The induced emf in a coil is maximum when the angle between B and the area vector is:", options: ["90°", "0°", "45°", "180°"], answer: "90°"},
-    {q: "When the number of turns in a coil is doubled, the induced emf is:", options: ["Doubled", "Halved", "Same", "Quadrupled"], answer: "Doubled"},
-    {q: "Mutual inductance depends on:", options: ["Number of turns", "Area", "Distance", "All of these"], answer: "All of these"},
-    {q: "Eddy currents are produced when:", options: ["Magnetic flux through a conductor changes", "Current is steady", "Voltage is constant", "Wire is heated"}, answer: "Magnetic flux through a conductor changes"},
-    {q: "Self-inductance of a long solenoid of N turns, length l, area A is:", options: ["μ₀N²A/l", "μ₀Nl/A", "μ₀NA/l", "μ₀lN/A"], answer: "μ₀N²A/l"},
-    {q: "A transformer works on the principle of:", options: ["Mutual induction", "Self-induction", "Electrostatics", "Heating effect"}, answer: "Mutual induction"},
-    {q: "For complete magnetic flux linkage, the orientation of the coil must be:", options: ["Normal to field", "Parallel to field", "At 45°", "Any angle"}, answer: "Normal to field"},
-    {q: "The back emf in an inductor opposes:", options: ["Change of current", "Current", "Voltage", "Resistance"}, answer: "Change of current"},
-    {q: "The energy stored in an inductor is:", options: ["½LI²", "½CV²", "½mv²", "½RI²"], answer: "½LI²"},
-    {q: "The emf induced in a coil rotating in a uniform magnetic field is:", options: ["Alternating", "Constant", "Zero", "Direct"}, answer: "Alternating"}
-  ]
-},
-{
-  title: "Electromagnetic Induction - Quiz 2",
-  questions: [
-    {q: "If the magnetic flux through a coil changes from 5 Wb to 3 Wb in 0.5 s, the average emf is:", options: ["4 V", "2 V", "1 V", "8 V"], answer: "4 V"},
-    {q: "If the current in a coil increases, the induced emf:", options: ["Opposes the increase", "Aids the increase", "Is zero", "Is maximum"}, answer: "Opposes the increase"},
-    {q: "The induced emf in a conductor of length l moving with velocity v perpendicular to field B is:", options: ["Blv", "Bvl/2", "Bl/v", "v/B"], answer: "Blv"},
-    {q: "The SI unit of mutual inductance is:", options: ["Henry", "Tesla", "Weber", "Volt"], answer: "Henry"},
-    {q: "A transformer cannot work with:", options: ["DC", "AC", "Pulsed DC", "All of these"}, answer: "DC"},
-    {q: "Which law gives the polarity of induced emf?", options: ["Lenz’s law", "Faraday’s law", "Ampere’s law", "Gauss’s law"], answer: "Lenz’s law"},
-    {q: "The coefficient of self-induction depends on:", options: ["Geometry of coil", "Number of turns", "Nature of core", "All of these"], answer: "All of these"},
-    {q: "Eddy currents can be reduced by:", options: ["Laminating the core", "Using a solid iron core", "Increasing resistance", "None of these"}, answer: "Laminating the core"},
-    {q: "In a step-up transformer:", options: ["Secondary voltage > primary voltage", "Primary = secondary", "Secondary < primary", "None"}, answer: "Secondary voltage > primary voltage"},
-    {q: "The efficiency of a transformer is maximum if:", options: ["Copper and iron losses are small", "Core is solid", "Wire is thick", "Windings are few"}, answer: "Copper and iron losses are small"},
-    {q: "The ratio of primary to secondary turns in a transformer is 2:5. If input is 100V, output is:", options: ["250V", "40V", "200V", "400V"], answer: "250V"},
-    {q: "The core of a transformer is laminated to:", options: ["Reduce eddy currents", "Reduce hysteresis loss", "Reduce weight", "Increase size"}, answer: "Reduce eddy currents"},
-    {q: "The direction of induced current is such as to oppose the:", options: ["Cause that produces it", "Current", "Voltage", "Resistance"}, answer: "Cause that produces it"},
-    {q: "If the rate of change of magnetic flux is zero, the induced emf is:", options: ["Zero", "Maximum", "Minimum", "Infinite"}, answer: "Zero"},
-    {q: "The phenomenon of self-induction is similar to:", options: ["Inertia", "Momentum", "Force", "Energy"}, answer: "Inertia"}
-  ]
-},
-
-// Chapter 7: Alternating Current
-{
-  title: "Alternating Current - Quiz 1",
-  questions: [
-    {q: "The average value of AC over a complete cycle is:", options: ["Zero", "Maximum", "RMS value", "Peak value"}, answer: "Zero"},
-    {q: "The unit of reactance is:", options: ["Ohm", "Farad", "Henry", "Volt"], answer: "Ohm"},
-    {q: "The phase difference between voltage and current in a pure resistor is:", options: ["Zero", "π/2", "π", "π/4"], answer: "Zero"},
-    {q: "The phase difference in a pure inductor is:", options: ["π/2 (current lags voltage)", "π/2 (current leads voltage)", "Zero", "π"], answer: "π/2 (current lags voltage)"},
-    {q: "The root mean square (RMS) value of AC is:", options: ["I₀/√2", "I₀/2", "I₀", "I₀√2"], answer: "I₀/√2"},
-    {q: "Power factor in an AC circuit is:", options: ["cos φ", "sin φ", "tan φ", "cot φ"], answer: "cos φ"},
-    {q: "In a series RLC circuit, resonance occurs when:", options: ["XL = XC", "R = XL", "R = XC", "XL = R"], answer: "XL = XC"},
-    {q: "Q-factor of a coil is given by:", options: ["ωL/R", "R/ωL", "ωC/R", "R/ωC"], answer: "ωL/R"},
-    {q: "The impedance of a series RL circuit is:", options: ["√(R²+XL²)", "R+XL", "R–XL", "R·XL"], answer: "√(R²+XL²)"},
-    {q: "The unit of impedance is:", options: ["Ohm", "Henry", "Farad", "Siemens"], answer: "Ohm"},
-    {q: "In a capacitor, the current:", options: ["Leads the voltage by π/2", "Lags voltage by π/2", "Is in phase", "Is zero"}, answer: "Leads the voltage by π/2"},
-    {q: "The resonance frequency in an LC circuit is:", options: ["1/(2π√(LC))", "2π√(LC)", "1/√(LC)", "π√(LC)"], answer: "1/(2π√(LC))"},
-    {q: "In an ideal transformer, the power output is:", options: ["Equal to power input", "Greater than input", "Less than input", "Zero"}, answer: "Equal to power input"},
-    {q: "The maximum value of an alternating current is called:", options: ["Peak value", "RMS value", "Mean value", "Average value"}, answer: "Peak value"},
-    {q: "A choke coil is used to:", options: ["Reduce current without loss of energy", "Increase current", "Reduce voltage", "Increase resistance"}, answer: "Reduce current without loss of energy"}
-  ]
-},
-{
-  title: "Alternating Current - Quiz 2",
-  questions: [
-    {q: "If the frequency of AC is 50 Hz, its angular frequency is:", options: ["100π rad/s", "50 rad/s", "25π rad/s", "200π rad/s"], answer: "100π rad/s"},
-    {q: "The current in a pure resistor leads/lag voltage by:", options: ["Zero", "π/2", "π", "π/4"}, answer: "Zero"},
-    {q: "In a series LC circuit at resonance, impedance is:", options: ["Minimum", "Maximum", "Zero", "Infinite"}, answer: "Minimum"},
-    {q: "The value of power factor at resonance is:", options: ["1", "0", "0.5", "0.8"}, answer: "1"},
-    {q: "The power factor is unity when the circuit is:", options: ["Purely resistive", "Purely inductive", "Purely capacitive", "RLC at resonance"}, answer: "Purely resistive"},
-    {q: "The instantaneous value of AC current is given by:", options: ["I=I₀sin(ωt)", "I=I₀/√2", "I=I₀cos(ωt)", "I=I₀tan(ωt)" ], answer: "I=I₀sin(ωt)"},
-    {q: "The reactance of a capacitor is:", options: ["1/ωC", "ωC", "R", "ωL"], answer: "1/ωC"},
-    {q: "In an AC circuit, the average power consumed is:", options: ["VIcosφ", "VI", "VIsinφ", "Zero"}, answer: "VIcosφ"},
-    {q: "A 60W, 220V bulb is used on 110V supply, its power is:", options: ["15W", "30W", "60W", "7.5W"}, answer: "15W"},
-    {q: "Current leads voltage by π/2 in:", options: ["Capacitor", "Inductor", "Resistor", "Transformer"}, answer: "Capacitor"},
-    {q: "The RMS value of 10A peak current is:", options: ["7.07A", "5A", "10A", "14.1A"}, answer: "7.07A"},
-    {q: "The resonance in a series circuit is useful for:", options: ["Tuning radios", "Heating", "Lighting", "Pumping water"}, answer: "Tuning radios"},
-    {q: "The phase difference between voltage and current in a pure inductor is:", options: ["π/2", "π", "Zero", "π/4"}, answer: "π/2"},
-    {q: "The average power consumed in a pure inductor is:", options: ["Zero", "Maximum", "Minimum", "Infinite"}, answer: "Zero"},
-    {q: "A transformer works on:", options: ["Mutual induction", "Self-induction", "Electrostatics", "Heating effect"}, answer: "Mutual induction"}
-  ]
-},
-
-// Chapter 8: Electromagnetic Waves
-{
-  title: "Electromagnetic Waves - Quiz 1",
-  questions: [
-    {q: "Electromagnetic waves are:", options: ["Transverse", "Longitudinal", "Both", "Neither"], answer: "Transverse"},
-    {q: "The speed of electromagnetic waves in vacuum is:", options: ["3 × 10⁸ m/s", "3 × 10⁶ m/s", "3 × 10⁵ m/s", "1.5 × 10⁸ m/s"], answer: "3 × 10⁸ m/s"},
-    {q: "The energy of EM waves is carried by:", options: ["Electric and magnetic fields", "Only electric field", "Only magnetic field", "Charge"], answer: "Electric and magnetic fields"},
-    {q: "The unit of electric field is:", options: ["V/m", "T", "Wb", "A/m"], answer: "V/m"},
-    {q: "The magnetic field and electric field in EM waves are:", options: ["Perpendicular to each other", "Parallel", "At 45°", "At 30°"], answer: "Perpendicular to each other"},
-    {q: "The source of electromagnetic waves is:", options: ["Accelerated charge", "Constant charge", "Moving magnet", "Stationary charge"], answer: "Accelerated charge"},
-    {q: "The wavelength range of visible light is:", options: ["400-700 nm", "10-400 nm", "700-1000 nm", "1-10 nm"], answer: "400-700 nm"},
-    {q: "The SI unit of frequency is:", options: ["Hertz", "Meter", "Second", "Newton"], answer: "Hertz"},
-    {q: "Which has the highest frequency?", options: ["Gamma rays", "X-rays", "Microwaves", "Radio waves"], answer: "Gamma rays"},
-    {q: "The direction of propagation of EM wave is given by:", options: ["E × B", "E + B", "E – B", "E/B"], answer: "E × B"},
-    {q: "Microwaves are used for:", options: ["Radar", "Sterilization", "Medical imaging", "Photosynthesis"}, answer: "Radar"},
-    {q: "The part of EM spectrum with frequency just higher than visible light is:", options: ["Ultraviolet", "Infrared", "X-rays", "Gamma rays"], answer: "Ultraviolet"},
-    {q: "The energy per unit area per unit time is called:", options: ["Intensity", "Amplitude", "Frequency", "Wavelength"], answer: "Intensity"},
-    {q: "The SI unit of magnetic field (B) is:", options: ["Tesla", "Ampere", "Volt", "Coulomb"], answer: "Tesla"},
-    {q: "Which EM waves are used in TV remote controls?", options: ["Infrared", "Microwave", "Visible", "Ultraviolet"], answer: "Infrared"}
-  ]
-},
-{
-  title: "Electromagnetic Waves - Quiz 2",
-  questions: [
-    {q: "The displacement current is due to:", options: ["Changing electric field", "Changing magnetic field", "Constant electric field", "Constant current"}, answer: "Changing electric field"},
-    {q: "Which of the following has the longest wavelength?", options: ["Radio waves", "X-rays", "Gamma rays", "Visible light"], answer: "Radio waves"},
-    {q: "The frequency of red light is:", options: ["Lowest in visible spectrum", "Highest in visible spectrum", "Same as violet", "Zero"}, answer: "Lowest in visible spectrum"},
-    {q: "The velocity of EM wave in vacuum is given by:", options: ["1/√(μ₀ε₀)", "μ₀ε₀", "μ₀/ε₀", "ε₀/μ₀"], answer: "1/√(μ₀ε₀)"},
-    {q: "Which of the following is NOT a property of EM waves?", options: ["Require no medium", "Are longitudinal", "Travel at speed of light", "Carry energy"}, answer: "Are longitudinal"},
-    {q: "The frequency of a wave with wavelength 600 nm is:", options: ["5 × 10¹⁴ Hz", "3 × 10⁸ Hz", "3 × 10¹⁷ Hz", "6 × 10¹³ Hz"], answer: "5 × 10¹⁴ Hz"},
-    {q: "The unit of displacement current is:", options: ["Ampere", "Tesla", "Volt", "Watt"], answer: "Ampere"},
-    {q: "The source of X-rays is:", options: ["Bombardment of electrons on metal target", "Radioactive decay", "Nuclear fusion", "Electric spark"}, answer: "Bombardment of electrons on metal target"},
-    {q: "Infrared rays are used for:", options: ["Night vision", "Sterilization", "Medical imaging", "Photosynthesis"}, answer: "Night vision"},
-    {q: "The ratio of amplitudes of E and B in an EM wave is:", options: ["c", "1/c", "c²", "1"], answer: "c"},
-    {q: "Which of the following rays is used for sterilization?", options: ["Ultraviolet", "Infrared", "Microwave", "Radio wave"], answer: "Ultraviolet"},
-    {q: "The SI unit of energy density is:", options: ["J/m³", "Joule", "Watt", "Coulomb"], answer: "J/m³"},
-    {q: "The electric field and magnetic field in an EM wave are related by:", options: ["E = cB", "E = B/c", "E = Bc²", "E = c/B"], answer: "E = cB"},
-    {q: "The polarization of light proves:", options: ["Transverse nature", "Longitudinal nature", "Particle nature", "Dual nature"}, answer: "Transverse nature"},
-    {q: "The frequency of ultraviolet rays is:", options: ["Higher than visible", "Lower than visible", "Same as visible", "Lower than radio"}, answer: "Higher than visible"}
-  ]
-},
-// Chapter 9: Ray Optics and Optical Instruments
-{
-  title: "Ray Optics and Optical Instruments - Quiz 1",
-  questions: [
-    {q: "The focal length of a plane mirror is:", options: ["Infinity", "Zero", "One", "Negative"], answer: "Infinity"},
-    {q: "The image formed by a convex mirror is always:", options: ["Virtual, erect and diminished", "Real, inverted and diminished", "Virtual, inverted and enlarged", "Real, erect and enlarged"], answer: "Virtual, erect and diminished"},
-    {q: "If the object is at 2F of a convex lens, the image is formed at:", options: ["2F", "F", "Infinity", "At the pole"], answer: "2F"},
-    {q: "Critical angle for glass-air interface is minimum for:", options: ["Violet light", "Red light", "Green light", "Yellow light"], answer: "Violet light"},
-    {q: "The power of a lens is measured in:", options: ["Dioptre", "Joule", "Watt", "Volt"], answer: "Dioptre"},
-    {q: "A real, inverted and same size image is formed by a convex lens when the object is at:", options: ["2F", "F", "Infinity", "At the pole"], answer: "2F"},
-    {q: "Magnification produced by a plane mirror is:", options: ["+1", "–1", "0", "Infinity"], answer: "+1"},
-    {q: "The refractive index of water with respect to air is 1.33. The speed of light in water is:", options: ["2.25 × 10⁸ m/s", "3 × 10⁸ m/s", "1.5 × 10⁸ m/s", "2.00 × 10⁸ m/s"], answer: "2.25 × 10⁸ m/s"},
-    {q: "The angle of minimum deviation for a prism depends on:", options: ["Material and angle of prism", "Wavelength only", "Only angle of prism", "Only refractive index"}, answer: "Material and angle of prism"},
-    {q: "The working of optical fiber is based on:", options: ["Total internal reflection", "Refraction", "Diffraction", "Interference"], answer: "Total internal reflection"},
-    {q: "The radius of curvature of a plane mirror is:", options: ["Infinity", "Zero", "One", "Negative"], answer: "Infinity"},
-    {q: "Lateral magnification is the ratio of:", options: ["Image height to object height", "Object height to image height", "Image distance to object distance", "Object distance to image distance"], answer: "Image height to object height"},
-    {q: "The lens used to correct myopia is:", options: ["Concave", "Convex", "Cylindrical", "Plano-convex"], answer: "Concave"},
-    {q: "The image produced by a simple microscope is:", options: ["Virtual and erect", "Real and inverted", "Virtual and inverted", "Real and erect"], answer: "Virtual and erect"},
-    {q: "The magnifying power of a compound microscope is maximum when the final image is formed at:", options: ["Least distance of distinct vision", "Infinity", "Twice the focal length", "Focal point"}, answer: "Least distance of distinct vision"}
-  ]
-},
-{
-  title: "Ray Optics and Optical Instruments - Quiz 2",
-  questions: [
-    {q: "The mirror formula is:", options: ["1/f = 1/v + 1/u", "f = v + u", "1/f = v/u", "f = 1/v + 1/u"], answer: "1/f = 1/v + 1/u"},
-    {q: "Which type of lens is thicker at the edges than at the center?", options: ["Concave lens", "Convex lens", "Biconvex lens", "Plano-convex lens"], answer: "Concave lens"},
-    {q: "The refractive index has no unit because it is:", options: ["A ratio", "A difference", "A product", "A sum"], answer: "A ratio"},
-    {q: "When light travels from denser to rarer medium, it bends:", options: ["Away from the normal", "Towards the normal", "Does not bend", "Randomly"}, answer: "Away from the normal"},
-    {q: "The phenomenon responsible for rainbow formation is:", options: ["Dispersion", "Reflection", "Diffraction", "Polarization"], answer: "Dispersion"},
-    {q: "A convex mirror always forms an image that is:", options: ["Virtual, erect and diminished", "Real, inverted and enlarged", "Virtual, inverted and enlarged", "Real, erect and diminished"], answer: "Virtual, erect and diminished"},
-    {q: "The lens formula is:", options: ["1/f = 1/v – 1/u", "f = v – u", "1/f = 1/v + 1/u", "f = 1/v – 1/u"], answer: "1/f = 1/v – 1/u"},
-    {q: "For a prism, the angle of deviation is minimum when the angle of incidence is:", options: ["Equal to the angle of emergence", "Zero", "Maximum", "Twice the angle of prism"], answer: "Equal to the angle of emergence"},
-    {q: "If the refractive index of glass is 1.5, then the speed of light in glass is:", options: ["2 × 10⁸ m/s", "3 × 10⁸ m/s", "1.5 × 10⁸ m/s", "2.5 × 10⁸ m/s"], answer: "2 × 10⁸ m/s"},
-    {q: "The resolving power of a microscope increases with:", options: ["Decrease in wavelength", "Increase in aperture", "Longer focal length", "Smaller aperture"], answer: "Decrease in wavelength"},
-    {q: "Which optical instrument uses total internal reflection?", options: ["Periscope", "Microscope", "Telescope", "Camera"], answer: "Periscope"},
-    {q: "A convex lens forms a virtual image when the object is placed:", options: ["Between F and optical center", "At 2F", "Beyond 2F", "At F"], answer: "Between F and optical center"},
-    {q: "The minimum distance for distinct vision in a normal human eye is:", options: ["25 cm", "50 cm", "10 cm", "100 cm"], answer: "25 cm"},
-    {q: "A lens having power –2D is a:", options: ["Concave lens", "Convex lens", "Plano-convex lens", "Biconcave lens"], answer: "Concave lens"},
-    {q: "When white light passes through a prism, which color deviates least?", options: ["Red", "Violet", "Green", "Blue"], answer: "Red"}
-  ]
-},
-
-// Chapter 10: Wave Optics
-{
-  title: "Wave Optics - Quiz 1",
-  questions: [
-    {q: "The phenomenon of light bending around obstacles is:", options: ["Diffraction", "Interference", "Polarization", "Reflection"], answer: "Diffraction"},
-    {q: "Young’s double slit experiment proves:", options: ["Wave nature of light", "Particle nature of light", "Photoelectric effect", "Reflection"], answer: "Wave nature of light"},
-    {q: "The angular width of the central maximum in single slit diffraction is proportional to:", options: ["λ/a", "a/λ", "λ²/a", "a/λ²"], answer: "λ/a"},
-    {q: "When two waves superpose, the resultant intensity is maximum when phase difference is:", options: ["Zero", "π", "π/2", "2π"], answer: "Zero"},
-    {q: "Polarization can be explained only by:", options: ["Transverse waves", "Longitudinal waves", "Both", "Neither"], answer: "Transverse waves"},
-    {q: "The width of the central maximum in a single slit experiment increases if:", options: ["Wavelength increases", "Slit width increases", "Aperture increases", "Source moves away"], answer: "Wavelength increases"},
-    {q: "In YDSE, the fringe width is:", options: ["λD/d", "d/λD", "λd/D", "D/λd"], answer: "λD/d"},
-    {q: "In double slit experiment, if the distance between slits is doubled, the fringe width:", options: ["Halves", "Doubles", "Remains same", "Quadruples"], answer: "Halves"},
-    {q: "For constructive interference, the path difference should be:", options: ["Integral multiple of λ", "Odd multiple of λ/2", "λ/4", "λ/8"], answer: "Integral multiple of λ"},
-    {q: "A polaroid is used to:", options: ["Polarize light", "Increase intensity", "Change color", "Increase speed"}, answer: "Polarize light"},
-    {q: "The distance between adjacent bright fringes in YDSE is called:", options: ["Fringe width", "Wavelength", "Amplitude", "Phase"], answer: "Fringe width"},
-    {q: "The intensity of light at a point in YDSE is zero when the path difference is:", options: ["Odd multiple of λ/2", "Even multiple of λ/2", "Zero", "Integral multiple of λ"], answer: "Odd multiple of λ/2"},
-    {q: "Polarization is not shown by:", options: ["Sound waves", "Light waves", "Transverse waves", "EM waves"], answer: "Sound waves"},
-    {q: "The ratio of intensities of two waves is 9:1. The ratio of max to min intensity is:", options: ["4:1", "9:1", "3:1", "5:1"], answer: "4:1"},
-    {q: "The phase difference in destructive interference is:", options: ["π", "0", "2π", "π/2"], answer: "π"}
-  ]
-},
-{
-  title: "Wave Optics - Quiz 2",
-  questions: [
-    {q: "In YDSE, if the monochromatic light is replaced by white light, the central fringe is:", options: ["White", "Red", "Blue", "Yellow"], answer: "White"},
-    {q: "The maximum number of orders in a diffraction pattern is given by:", options: ["(2d/λ)", "(d/λ)", "(λ/d)", "(d/2λ)"], answer: "(2d/λ)"},
-    {q: "The polarization of light proves its:", options: ["Transverse nature", "Longitudinal nature", "Dual nature", "Wave nature"}, answer: "Transverse nature"},
-    {q: "The dark fringe in YDSE is due to:", options: ["Destructive interference", "Constructive interference", "Polarization", "Reflection"}, answer: "Destructive interference"},
-    {q: "Which light deviates most in a prism?", options: ["Violet", "Red", "Green", "Yellow"], answer: "Violet"},
-    {q: "The width of central maximum in single slit diffraction is:", options: ["Inversely proportional to slit width", "Directly proportional to slit width", "Independent of slit width", "None"}, answer: "Inversely proportional to slit width"},
-    {q: "The ratio of fringe width to wavelength in YDSE is:", options: ["D/d", "d/D", "λ/D", "D/λ"], answer: "D/d"},
-    {q: "If the slit width in a single slit experiment is decreased, the central maximum becomes:", options: ["Wider", "Narrower", "Unchanged", "Disappears"}, answer: "Wider"},
-    {q: "The minimum number of polaroids required to reduce intensity to zero is:", options: ["Two at 90°", "One", "Three", "Four"}, answer: "Two at 90°"},
-    {q: "The Brewster angle is the angle for which reflected and refracted rays are:", options: ["Perpendicular", "Parallel", "Equal", "Opposite"}, answer: "Perpendicular"},
-    {q: "The condition for bright fringe in YDSE is:", options: ["Path difference = nλ", "Path difference = (2n+1)λ/2", "Zero path difference", "None"}, answer: "Path difference = nλ"},
-    {q: "The polaroid is used in sunglasses to:", options: ["Reduce glare", "Increase brightness", "Enhance color", "None"}, answer: "Reduce glare"},
-    {q: "Which phenomenon cannot be explained by wave theory of light?", options: ["Photoelectric effect", "Interference", "Diffraction", "Polarization"}, answer: "Photoelectric effect"},
-    {q: "When the optical path difference is zero, the two waves are:", options: ["In phase", "Out of phase", "Orthogonal", "Equal amplitude"}, answer: "In phase"},
-    {q: "The law of Malus is used in:", options: ["Polarization", "Diffraction", "Interference", "Reflection"}, answer: "Polarization"}
-  ]
-},
-
-// Chapter 11: Dual Nature of Radiation and Matter
-{
-  title: "Dual Nature of Radiation and Matter - Quiz 1",
-  questions: [
-    {q: "The photoelectric effect proves:", options: ["Particle nature of light", "Wave nature of light", "Dual nature", "Polarization"}, answer: "Particle nature of light"},
-    {q: "Threshold frequency depends on:", options: ["Material of the metal", "Intensity of light", "Wavelength of light", "Work function only"}, answer: "Material of the metal"},
-    {q: "The stopping potential in photoelectric effect is independent of:", options: ["Intensity of light", "Frequency of light", "Metal", "Work function"}, answer: "Intensity of light"},
-    {q: "The energy of a photon is given by:", options: ["E = hν", "E = mc²", "E = hv²", "E = hc/λ²"}, answer: "E = hν"},
-    {q: "De Broglie wavelength is given by:", options: ["h/p", "hν", "p/h", "hc/λ"}, answer: "h/p"},
-    {q: "The value of Planck’s constant is:", options: ["6.63 × 10⁻³⁴ J·s", "1.6 × 10⁻¹⁹ C", "3 × 10⁸ m/s", "9 × 10⁹ N·m²/C²"}, answer: "6.63 × 10⁻³⁴ J·s"},
-    {q: "For a given frequency, the photoelectric current is proportional to:", options: ["Intensity of light", "Wavelength of light", "Work function", "Stopping potential"}, answer: "Intensity of light"},
-    {q: "The work function is the:", options: ["Minimum energy required to emit an electron", "Maximum energy of photon", "Frequency of threshold", "Potential difference"], answer: "Minimum energy required to emit an electron"},
-    {q: "The unit of work function is:", options: ["Joule", "Coulomb", "Volt", "Ohm"}, answer: "Joule"},
-    {q: "The de Broglie wavelength of an electron is:", options: ["h/mv", "mv/h", "hv/m", "mh/v"}, answer: "h/mv"},
-    {q: "The photoelectric effect experiment was explained by:", options: ["Einstein", "Newton", "Bohr", "Planck"}, answer: "Einstein"},
-    {q: "The wavelength of matter waves increases if:", options: ["Velocity decreases", "Velocity increases", "Mass increases", "Energy increases"}, answer: "Velocity decreases"},
-    {q: "The kinetic energy of ejected photoelectrons is maximum when:", options: ["Frequency is maximum", "Intensity is maximum", "Wavelength is maximum", "Work function is high"}, answer: "Frequency is maximum"},
-    {q: "The intensity of light affects:", options: ["Number of photoelectrons ejected", "Energy of photoelectrons", "Frequency of light", "Threshold frequency"}, answer: "Number of photoelectrons ejected"},
-    {q: "The threshold wavelength is:", options: ["Maximum wavelength to cause photoemission", "Minimum wavelength", "Any wavelength", "Zero"], answer: "Maximum wavelength to cause photoemission"}
-  ]
-},
-{
-  title: "Dual Nature of Radiation and Matter - Quiz 2",
-  questions: [
-    {q: "Which of the following does not affect photoelectric current?", options: ["Frequency of incident light", "Intensity of light", "Area of the surface", "Wavelength"], answer: "Frequency of incident light"},
-    {q: "If the frequency of incident light is less than threshold frequency, photoelectric emission:", options: ["Does not take place", "Takes place", "Depends on intensity", "Depends on work function"}, answer: "Does not take place"},
-    {q: "The velocity of photoelectrons ejected from a metal surface depends on:", options: ["Frequency of incident light", "Intensity of light", "Area of surface", "Angle of incidence"}, answer: "Frequency of incident light"},
-    {q: "The momentum of a photon is:", options: ["h/λ", "λ/h", "hv", "v/h"}, answer: "h/λ"},
-    {q: "The photoelectric effect is instantaneous because:", options: ["Energy is delivered in quanta", "Light is very fast", "Electrons are always emitted", "Current is instant"}, answer: "Energy is delivered in quanta"},
-    {q: "The minimum frequency required for photoelectric emission is called:", options: ["Threshold frequency", "Critical frequency", "Resonant frequency", "Natural frequency"}, answer: "Threshold frequency"},
-    {q: "The energy of an electron accelerated through a potential V is:", options: ["eV", "Ve", "V/e", "e/V"}, answer: "eV"},
-    {q: "The de Broglie wavelength of a particle is inversely proportional to:", options: ["Momentum", "Energy", "Mass", "Frequency"}, answer: "Momentum"},
-    {q: "The stopping potential is the potential required to:", options: ["Stop the most energetic photoelectrons", "Increase current", "Increase energy", "Increase frequency"}, answer: "Stop the most energetic photoelectrons"},
-    {q: "The kinetic energy of emitted electrons is independent of:", options: ["Intensity of light", "Frequency of light", "Work function", "Potential difference"}, answer: "Intensity of light"},
-    {q: "The photoelectric emission is not possible below:", options: ["Threshold frequency", "Threshold intensity", "Threshold energy", "Threshold voltage"}, answer: "Threshold frequency"},
-    {q: "The de Broglie wavelength of a proton and electron with same kinetic energy is:", options: ["Electron > Proton", "Proton > Electron", "Equal", "Zero"}, answer: "Electron > Proton"},
-    {q: "Photoelectrons are emitted from a metal surface when:", options: ["Energy of photon > work function", "Energy of photon < work function", "Frequency is low", "Intensity is high"}, answer: "Energy of photon > work function"},
-    {q: "The unit of Planck’s constant is:", options: ["J·s", "Joule", "Coulomb", "Watt"], answer: "J·s"},
-    {q: "Momentum of a photon is related to its energy by:", options: ["p = E/c", "E = pc", "p = cE", "E = c/p"}, answer: "p = E/c"}
-  ]
-},
-
-// Chapter 12: Atoms
-{
-  title: "Atoms - Quiz 1",
-  questions: [
-    {q: "In the Bohr model of hydrogen, the angular momentum is quantized as:", options: ["nh/2π", "nh", "n/2π", "nh/π"], answer: "nh/2π"},
-    {q: "The energy of the nth orbit in hydrogen atom is proportional to:", options: ["1/n²", "n", "n²", "1/n"], answer: "1/n²"},
-    {q: "The radius of the first Bohr orbit for hydrogen atom is:", options: ["0.53 Å", "1.06 Å", "0.26 Å", "1.06 nm"}, answer: "0.53 Å"},
-    {q: "The spectral series lying in visible region is:", options: ["Balmer", "Lyman", "Paschen", "Brackett"], answer: "Balmer"},
-    {q: "The number of spectral lines produced when electron jumps from n=4 to n=1 is:", options: ["6", "3", "4", "5"], answer: "6"},
-    {q: "The velocity of electron in the first Bohr orbit is proportional to:", options: ["1/n", "n", "n²", "1/n²"}, answer: "1/n"},
-    {q: "The energy of the electron in the nth orbit of hydrogen atom is:", options: ["Negative", "Positive", "Zero", "Infinity"}, answer: "Negative"},
-    {q: "The radius of nth Bohr orbit is proportional to:", options: ["n²", "n", "1/n", "1/n²"}, answer: "n²"},
-    {q: "The frequency of revolution of electron in nth Bohr orbit is proportional to:", options: ["1/n³", "n", "n²", "1/n"], answer: "1/n³"},
-    {q: "The ionization energy of hydrogen atom is:", options: ["13.6 eV", "3.4 eV", "1.51 eV", "0.85 eV"}, answer: "13.6 eV"},
-    {q: "The first line of Lyman series is produced when electron jumps from:", options: ["n=2 to n=1", "n=3 to n=1", "n=4 to n=1", "n=5 to n=1"}, answer: "n=2 to n=1"},
-    {q: "The energy of an electron in the first Bohr orbit is:", options: ["–13.6 eV", "–3.4 eV", "–1.51 eV", "–0.85 eV"}, answer: "–13.6 eV"},
-    {q: "The maximum number of electrons in shell with principal quantum number n is:", options: ["2n²", "n²", "n", "2n"], answer: "2n²"},
-    {q: "The spin quantum number can have values:", options: ["+½, –½", "0, 1", "1, 2", "0, 1, 2"}, answer: "+½, –½"},
-    {q: "The total number of orbitals in n=3 shell is:", options: ["9", "3", "6", "4"], answer: "9"}
-  ]
-},
-{
-  title: "Atoms - Quiz 2",
-  questions: [
-    {q: "The radius of the second Bohr orbit is:", options: ["4 times first orbit", "Twice first", "Same as first", "Half of first"}, answer: "4 times first orbit"},
-    {q: "The number of spectral lines produced when electron jumps from n=5 to n=1 is:", options: ["10", "5", "6", "4"], answer: "10"},
-    {q: "The frequency of photon emitted is given by:", options: ["ΔE/h", "E/h", "h/ΔE", "ΔE × h"}, answer: "ΔE/h"},
-    {q: "The total energy of electron in nth orbit is:", options: ["Negative", "Positive", "Zero", "Infinite"}, answer: "Negative"},
-    {q: "The angular momentum of electron in nth orbit is:", options: ["nh/2π", "nh", "h/2π", "n/2π"], answer: "nh/2π"},
-    {q: "The radius of first Bohr orbit is:", options: ["0.53 Å", "1.06 Å", "0.26 Å", "1.06 nm"}, answer: "0.53 Å"},
-    {q: "The highest energy transition appears in which series?", options: ["Lyman", "Balmer", "Paschen", "Brackett"}, answer: "Lyman"},
-    {q: "The orbital angular momentum quantum number ‘l’ for s-orbital is:", options: ["0", "1", "2", "3"}, answer: "0"},
-    {q: "The first excited state of hydrogen atom is at:", options: ["n=2", "n=1", "n=3", "n=4"}, answer: "n=2"},
-    {q: "The number of orbitals in p-subshell is:", options: ["3", "1", "5", "7"}, answer: "3"},
-    {q: "The energy required to remove an electron from the outermost shell is called:", options: ["Ionization energy", "Excitation energy", "Binding energy", "Work function"}, answer: "Ionization energy"},
-    {q: "The spectral series lying in UV region is:", options: ["Lyman", "Balmer", "Paschen", "Bracket"}, answer: "Lyman"},
-    {q: "The principal quantum number determines:", options: ["Size and energy of orbit", "Shape of orbit", "Orientation", "Spin"}, answer: "Size and energy of orbit"},
-    {q: "The velocity of electron in nth Bohr orbit is proportional to:", options: ["1/n", "n", "n²", "1/n²"}, answer: "1/n"},
-    {q: "Transition from higher orbit to lower orbit results in:", options: ["Emission of photon", "Absorption of photon", "Increase in energy", "No change"}, answer: "Emission of photon"}
-  ]
-},
-// Chapter 13: Nuclei
-{
-  title: "Nuclei - Quiz 1",
-  questions: [
-    {q: "The number of protons in ₁₇³⁵Cl is:", options: ["17", "35", "18", "19"], answer: "17"},
-    {q: "The mass number of a nucleus is:", options: ["Total number of protons and neutrons", "Only protons", "Only neutrons", "Electrons"], answer: "Total number of protons and neutrons"},
-    {q: "The binding energy per nucleon is maximum for:", options: ["Iron", "Uranium", "Hydrogen", "Helium"], answer: "Iron"},
-    {q: "The unit of radioactivity is:", options: ["Becquerel", "Joule", "Newton", "Watt"], answer: "Becquerel"},
-    {q: "Isotopes have the same:", options: ["Atomic number", "Mass number", "Number of neutrons", "Number of electrons"], answer: "Atomic number"},
-    {q: "Alpha particle consists of:", options: ["2 protons and 2 neutrons", "2 protons only", "2 neutrons only", "1 proton and 1 electron"], answer: "2 protons and 2 neutrons"},
-    {q: "Half-life is the time in which:", options: ["Half the nuclei decay", "All nuclei decay", "Nuclear mass halves", "Nuclear energy halves"], answer: "Half the nuclei decay"},
-    {q: "The energy released in nuclear fission is due to:", options: ["Mass defect", "Binding energy", "Fusion", "Decay constant"], answer: "Mass defect"},
-    {q: "The ratio of neutrons to protons in stable nuclei increases with:", options: ["Mass number", "Atomic number", "Number of electrons", "Charge"], answer: "Mass number"},
-    {q: "The process of combining two light nuclei is called:", options: ["Fusion", "Fission", "Decay", "Ionization"], answer: "Fusion"},
-    {q: "The SI unit of half-life is:", options: ["Second", "Minute", "Hour", "Becquerel"], answer: "Second"},
-    {q: "The atomic mass unit (amu) is:", options: ["1/12th mass of C-12 atom", "1/6th mass of C-12", "Mass of 1 neutron", "Mass of 1 proton"], answer: "1/12th mass of C-12 atom"},
-    {q: "The decay constant is the reciprocal of:", options: ["Mean life", "Half-life", "Binding energy", "Mass defect"], answer: "Mean life"},
-    {q: "Beta decay increases the:", options: ["Atomic number by 1", "Mass number by 1", "Atomic number by 2", "Reduces mass number by 1"], answer: "Atomic number by 1"},
-    {q: "The energy equivalent of 1 amu is:", options: ["931 MeV", "1 MeV", "13.6 eV", "1000 eV"], answer: "931 MeV"}
-  ]
-},
-{
-  title: "Nuclei - Quiz 2",
-  questions: [
-    {q: "The nucleus ₁₁²³Na contains:", options: ["11 protons and 12 neutrons", "12 protons and 11 neutrons", "23 protons", "23 neutrons"], answer: "11 protons and 12 neutrons"},
-    {q: "The number of electrons in a neutral atom is equal to:", options: ["Number of protons", "Number of neutrons", "Mass number", "Half the mass number"], answer: "Number of protons"},
-    {q: "Radioactive decay is a:", options: ["Spontaneous process", "Induced process", "Chemical reaction", "Slow process"], answer: "Spontaneous process"},
-    {q: "The product of decay constant and mean life is:", options: ["1", "0", "2", "1/2"], answer: "1"},
-    {q: "The emission of gamma rays results in:", options: ["No change in atomic or mass number", "Increase in atomic number", "Decrease in mass number", "Increase in mass number"}, answer: "No change in atomic or mass number"},
-    {q: "Which particle has highest ionizing power?", options: ["Alpha", "Beta", "Gamma", "Neutron"], answer: "Alpha"},
-    {q: "The spontaneous disintegration of heavy nucleus is called:", options: ["Radioactivity", "Fusion", "Ionization", "Excitation"], answer: "Radioactivity"},
-    {q: "The half-life of a radioactive substance does not depend on:", options: ["Initial amount", "Decay constant", "Nature of substance", "Type of decay"}, answer: "Initial amount"},
-    {q: "Nuclear fusion occurs at:", options: ["Very high temperature", "Low temperature", "Room temperature", "In solids"}, answer: "Very high temperature"},
-    {q: "The neutron-proton ratio for stability in lighter elements is:", options: ["1", "2", "3", "0.5"}, answer: "1"},
-    {q: "The process used in nuclear reactors is:", options: ["Fission", "Fusion", "Alpha decay", "Beta decay"}, answer: "Fission"},
-    {q: "Which is NOT a radioactive decay mode?", options: ["Photon emission", "Alpha decay", "Beta decay", "Gamma decay"], answer: "Photon emission"},
-    {q: "Radioactive decay law is given by:", options: ["N = N₀e^(–λt)", "N = N₀ + λt", "N = N₀/λt", "N = λt"], answer: "N = N₀e^(–λt)"},
-    {q: "The sum of masses of products in a nuclear reaction is:", options: ["Less than reactants", "More than reactants", "Equal to reactants", "Double the reactants"}, answer: "Less than reactants"},
-    {q: "Which of the following is used as a moderator in nuclear reactors?", options: ["Heavy water", "Uranium", "Plutonium", "Lead"], answer: "Heavy water"}
-  ]
-},
-
-// Chapter 14: Semiconductor Electronics – Materials, Devices and Simple Circuits
-{
-  title: "Semiconductor Electronics - Quiz 1",
-  questions: [
-    {q: "A semiconductor has conductivity:", options: ["Between conductor and insulator", "More than conductor", "Less than insulator", "Zero"], answer: "Between conductor and insulator"},
-    {q: "The energy gap in a semiconductor is of the order of:", options: ["1 eV", "10 eV", "0.1 eV", "0.01 eV"], answer: "1 eV"},
-    {q: "The majority carriers in n-type semiconductor are:", options: ["Electrons", "Holes", "Ions", "Neutrons"], answer: "Electrons"},
-    {q: "The process of adding impurity to a semiconductor is called:", options: ["Doping", "Alloying", "Annealing", "Mixing"], answer: "Doping"},
-    {q: "Silicon is a:", options: ["Intrinsic semiconductor", "Extrinsic semiconductor", "Insulator", "Conductor"], answer: "Intrinsic semiconductor"},
-    {q: "A p-n junction acts as a/an:", options: ["Diode", "Transistor", "Rectifier", "Amplifier"], answer: "Diode"},
-    {q: "The forward biasing of a p-n junction:", options: ["Decreases barrier potential", "Increases barrier potential", "Does not affect barrier", "Reverse the current"}, answer: "Decreases barrier potential"},
-    {q: "The device that converts AC to DC is called:", options: ["Rectifier", "Amplifier", "Oscillator", "Modulator"], answer: "Rectifier"},
-    {q: "The most commonly used material for solar cells is:", options: ["Silicon", "Germanium", "Copper", "Aluminium"], answer: "Silicon"},
-    {q: "A zener diode is used as:", options: ["Voltage regulator", "Rectifier", "Amplifier", "Switch"], answer: "Voltage regulator"},
-    {q: "The output of a NOT gate is:", options: ["Opposite to input", "Same as input", "Sum of inputs", "Product of inputs"], answer: "Opposite to input"},
-    {q: "The voltage gain of an amplifier is:", options: ["Output voltage/Input voltage", "Input/Output", "Input voltage × Output voltage", "Output/Input"], answer: "Output voltage/Input voltage"},
-    {q: "The current gain (β) of a transistor is:", options: ["IC/IB", "IB/IC", "IE/IC", "IC/IE"], answer: "IC/IB"},
-    {q: "The logic gate which gives high output only if all inputs are high is:", options: ["AND gate", "OR gate", "NAND gate", "NOR gate"], answer: "AND gate"},
-    {q: "The basic building block of a digital computer is:", options: ["Logic gate", "Amplifier", "Rectifier", "Diode"], answer: "Logic gate"}
-  ]
-},
-{
-  title: "Semiconductor Electronics - Quiz 2",
-  questions: [
-    {q: "The resistance of a semiconductor with increase in temperature:", options: ["Decreases", "Increases", "Remains constant", "Becomes zero"], answer: "Decreases"},
-    {q: "The minority carriers in a p-type semiconductor are:", options: ["Electrons", "Holes", "Protons", "Ions"], answer: "Electrons"},
-    {q: "A diode is used for:", options: ["Rectification", "Amplification", "Oscillation", "Modulation"], answer: "Rectification"},
-    {q: "The three regions of a transistor are:", options: ["Emitter, Base, Collector", "Cathode, Anode, Grid", "Source, Drain, Gate", "Gate, Channel, Drain"], answer: "Emitter, Base, Collector"},
-    {q: "The output of an OR gate is 1 if:", options: ["Any input is 1", "All inputs are 0", "Only first input is 1", "All inputs are 1"], answer: "Any input is 1"},
-    {q: "The output of a NAND gate is 0 only if:", options: ["All inputs are 1", "Any input is 1", "Any input is 0", "All inputs are 0"], answer: "All inputs are 1"},
-    {q: "The material used as a photo diode is:", options: ["Silicon", "Copper", "Aluminium", "Iron"], answer: "Silicon"},
-    {q: "The voltage across a forward-biased silicon diode is about:", options: ["0.7 V", "0.3 V", "1.5 V", "2.0 V"], answer: "0.7 V"},
-    {q: "The transfer characteristic of an amplifier is:", options: ["Input-output relationship", "Frequency response", "Current-voltage relation", "Gain-bandwidth product"], answer: "Input-output relationship"},
-    {q: "The output of a NOR gate is 1 only if:", options: ["All inputs are 0", "Any input is 1", "All inputs are 1", "Any input is 0"}, answer: "All inputs are 0"},
-    {q: "A logic gate that gives an output 1 only if inputs are different is:", options: ["XOR gate", "AND gate", "OR gate", "NOR gate"], answer: "XOR gate"},
-    {q: "A transistor in active region acts as:", options: ["Amplifier", "Switch", "Rectifier", "Modulator"}, answer: "Amplifier"},
-    {q: "The majority carriers in p-type semiconductor are:", options: ["Holes", "Electrons", "Protons", "Ions"], answer: "Holes"},
-    {q: "The process of electron-hole pair generation is called:", options: ["Ionization", "Recombination", "Amplification", "Rectification"}, answer: "Ionization"},
-    {q: "The Boolean expression for an AND gate is:", options: ["A·B", "A+B", "A⊕B", "A̅"], answer: "A·B"}
-  ]
-},
-
-// Chapter 15: Communication Systems
-{
-  title: "Communication Systems - Quiz 1",
-  questions: [
-    {q: "The range of audio frequency is:", options: ["20 Hz to 20 kHz", "20 kHz to 200 kHz", "20 Hz to 200 Hz", "2 kHz to 20 kHz"], answer: "20 Hz to 20 kHz"},
-    {q: "The process of superimposing a low frequency signal over a high frequency wave is called:", options: ["Modulation", "Amplification", "Detection", "Demodulation"}, answer: "Modulation"},
-    {q: "The device used for modulation is called:", options: ["Transmitter", "Receiver", "Antenna", "Repeater"], answer: "Transmitter"},
-    {q: "The frequency range of AM radio waves is:", options: ["530 kHz to 1710 kHz", "88 MHz to 108 MHz", "30 Hz to 300 Hz", "300 MHz to 3000 MHz"], answer: "530 kHz to 1710 kHz"},
-    {q: "The transmission of electrical signals without wires is called:", options: ["Wireless communication", "Wired communication", "Optical communication", "Fiber communication"}, answer: "Wireless communication"},
-    {q: "The device used to convert sound energy into electrical energy is:", options: ["Microphone", "Speaker", "Antenna", "Amplifier"], answer: "Microphone"},
-    {q: "The process of separating the modulating signal from the carrier is called:", options: ["Demodulation", "Modulation", "Amplification", "Detection"], answer: "Demodulation"},
-    {q: "The wavelength range of visible light is:", options: ["400–700 nm", "700–1000 nm", "200–400 nm", "10–100 nm"], answer: "400–700 nm"},
-    {q: "The speed of electromagnetic waves in vacuum is:", options: ["3 × 10⁸ m/s", "1.5 × 10⁸ m/s", "2 × 10⁸ m/s", "2.5 × 10⁸ m/s"}, answer: "3 × 10⁸ m/s"},
-    {q: "The function of a repeater is to:", options: ["Increase range", "Reduce noise", "Modulate signal", "Demodulate signal"}, answer: "Increase range"},
-    {q: "The process of converting digital signals to analog signals is called:", options: ["Modulation", "Demodulation", "Sampling", "Quantization"}, answer: "Modulation"},
-    {q: "The phenomenon responsible for propagation of radio waves beyond the horizon is:", options: ["Ionospheric reflection", "Refraction", "Diffraction", "Polarization"}, answer: "Ionospheric reflection"},
-    {q: "The antenna is used for:", options: ["Transmission and reception", "Modulation", "Amplification", "Detection"}, answer: "Transmission and reception"},
-    {q: "The frequency range of FM radio waves is:", options: ["88–108 MHz", "530–1710 kHz", "1–10 GHz", "30–300 MHz"}, answer: "88–108 MHz"},
-    {q: "A satellite communication uses:", options: ["Microwaves", "Infrared", "Ultraviolet", "Gamma rays"], answer: "Microwaves"}
-  ]
-},
-{
-  title: "Communication Systems - Quiz 2",
-  questions: [
-    {q: "The process of converting analog signals to digital is called:", options: ["Sampling", "Modulation", "Detection", "Demodulation"}, answer: "Sampling"},
-    {q: "The basic elements of a communication system are:", options: ["Transmitter, channel, receiver", "Modulator, antenna, speaker", "Microphone, amplifier, antenna", "Antenna, detector, modulator"}, answer: "Transmitter, channel, receiver"},
-    {q: "In amplitude modulation, the quantity that varies is:", options: ["Amplitude of carrier", "Frequency of carrier", "Phase of carrier", "Wavelength of carrier"}, answer: "Amplitude of carrier"},
-    {q: "Which is NOT used for optical communication?", options: ["AM radio waves", "Optical fiber", "Laser", "Light emitting diode"], answer: "AM radio waves"},
-    {q: "The minimum number of satellites required for global coverage is:", options: ["3", "2", "1", "5"], answer: "3"},
-    {q: "The range of microwaves is:", options: ["1–100 GHz", "10–100 Hz", "1–100 MHz", "1–100 kHz"}, answer: "1–100 GHz"},
-    {q: "The bandwidth of a signal is the difference between:", options: ["Highest and lowest frequencies", "Amplitude and frequency", "Modulated and carrier frequencies", "Carrier and modulating frequencies"}, answer: "Highest and lowest frequencies"},
-    {q: "A geostationary satellite orbits the earth in:", options: ["24 hours", "12 hours", "6 hours", "36 hours"}, answer: "24 hours"},
-    {q: "The optical fiber communication is based on:", options: ["Total internal reflection", "Diffraction", "Polarization", "Interference"}, answer: "Total internal reflection"},
-    {q: "The output of a digital communication system is:", options: ["Binary code", "Analog signal", "Sine wave", "Triangular wave"}, answer: "Binary code"},
-    {q: "The process of extracting information from a carrier wave is:", options: ["Demodulation", "Modulation", "Amplification", "Detection"}, answer: "Demodulation"},
-    {q: "The channel in a communication system is:", options: ["Medium for signal transmission", "Transmitter", "Receiver", "Antenna"}, answer: "Medium for signal transmission"},
-    {q: "The most suitable frequency for sky wave propagation is:", options: ["3–30 MHz", "300–3000 MHz", "30–300 Hz", "3–30 GHz"}, answer: "3–30 MHz"},
-    {q: "The device that increases amplitude of signal is:", options: ["Amplifier", "Modulator", "Antenna", "Detector"}, answer: "Amplifier"},
-    {q: "The process of encoding information into a wave is called:", options: ["Modulation", "Detection", "Amplification", "Sampling"}, answer: "Modulation"}
-  ]
-}
-      // ...more chapters
-    ],
-    chemistry: [
-     // Chapter 1: The Solid State
-{
-  title: "The Solid State - Quiz 1",
-  questions: [
-    {q: "Which of the following is an example of an ionic solid?", options: ["NaCl", "Diamond", "Graphite", "Ice"], answer: "NaCl"},
-    {q: "The coordination number of Na+ in NaCl crystal is:", options: ["6", "4", "8", "12"], answer: "6"},
-    {q: "A solid with high melting point, hardness and electrical conductivity is likely to be:", options: ["Metallic solid", "Ionic solid", "Covalent solid", "Molecular solid"], answer: "Metallic solid"},
-    {q: "The number of tetrahedral voids per atom in a close packed arrangement is:", options: ["2", "4", "1", "3"], answer: "2"},
-    {q: "Schottky defect is generally shown by:", options: ["Ionic solids", "Covalent solids", "Metallic solids", "Molecular solids"], answer: "Ionic solids"},
-    {q: "The fraction of total volume occupied by atoms in FCC lattice is:", options: ["0.74", "0.68", "0.52", "0.60"], answer: "0.74"},
-    {q: "Which solid is brittle and a poor conductor of electricity?", options: ["Ionic solid", "Metallic solid", "Covalent solid", "Molecular solid"], answer: "Ionic solid"},
-    {q: "The number of atoms per unit cell in a simple cubic is:", options: ["1", "2", "4", "6"], answer: "1"},
-    {q: "A point defect involving absence of an ion from its normal site is:", options: ["Vacancy defect", "Interstitial defect", "Frenkel defect", "Schottky defect"], answer: "Vacancy defect"},
-    {q: "The density of a crystal can be determined using:", options: ["Z, a³, M, Nₐ", "Only Z and a", "Only M and Nₐ", "Only Z and Nₐ"], answer: "Z, a³, M, Nₐ"},
-    {q: "In a body-centered cubic unit cell, atoms touch along the:", options: ["Body diagonal", "Edge", "Face diagonal", "None"], answer: "Body diagonal"},
-    {q: "The coordination number in hexagonal close packing is:", options: ["12", "6", "8", "4"], answer: "12"},
-    {q: "Which one is not a crystalline solid?", options: ["Glass", "NaCl", "Diamond", "Quartz"], answer: "Glass"},
-    {q: "The unit cell with a = b = c and α = β = γ ≠ 90° is:", options: ["Rhombohedral", "Cubic", "Monoclinic", "Orthorhombic"], answer: "Rhombohedral"},
-    {q: "The number of octahedral voids per atom in a cubic close packed structure is:", options: ["1", "2", "3", "4"], answer: "1"}
-  ]
-},
-{
-  title: "The Solid State - Quiz 2",
-  questions: [
-    {q: "Frenkel defect is shown by:", options: ["AgCl", "NaCl", "KCl", "CsCl"], answer: "AgCl"},
-    {q: "A crystal with constituent particles at the corners and face centers is:", options: ["FCC", "BCC", "SCC", "None"], answer: "FCC"},
-    {q: "Which type of defect increases the density of the crystal?", options: ["Interstitial", "Schottky", "Frenkel", "Vacancy"], answer: "Interstitial"},
-    {q: "How many types of unit cells are possible in crystals?", options: ["7", "14", "12", "4"], answer: "7"},
-    {q: "Which of the following is not a property of solids?", options: ["Fluidity", "Definite shape", "Definite volume", "Incompressibility"], answer: "Fluidity"},
-    {q: "Total number of atoms in a BCC unit cell is:", options: ["2", "1", "4", "8"], answer: "2"},
-    {q: "The edge length of a unit cell is called:", options: ["Lattice parameter", "Packing fraction", "Coordination number", "Unit cell volume"], answer: "Lattice parameter"},
-    {q: "Which of the following will not show electrical conductivity?", options: ["Diamond", "Copper", "Sodium", "Iron"], answer: "Diamond"},
-    {q: "The number of close-packed planes in HCP structure is:", options: ["3", "2", "1", "4"], answer: "3"},
-    {q: "The number of formula units per unit cell (Z) for NaCl is:", options: ["4", "2", "6", "8"], answer: "4"},
-    {q: "The radius ratio for tetrahedral voids is:", options: ["0.225", "0.414", "0.732", "0.155"], answer: "0.225"},
-    {q: "Which crystal defect does not change the density of the solid?", options: ["Frenkel defect", "Schottky defect", "Interstitial defect", "Vacancy defect"], answer: "Frenkel defect"},
-    {q: "Which is not a property of metallic solids?", options: ["High melting point", "High electrical conductivity", "Malleability", "Brittleness"], answer: "Brittleness"},
-    {q: "The type of bond in diamond is:", options: ["Covalent", "Ionic", "Metallic", "Van der Waals"], answer: "Covalent"},
-    {q: "The structure of graphite is:", options: ["Layered", "Tetrahedral", "Linear", "Cubic"], answer: "Layered"}
-  ]
-},
-
-// Chapter 2: Solutions
-{
-  title: "Solutions - Quiz 1",
-  questions: [
-    {q: "Which law is obeyed by a dilute solution of a non-volatile solute?", options: ["Raoult's law", "Henry's law", "Dalton's law", "Boyle's law"], answer: "Raoult's law"},
-    {q: "The unit of molality is:", options: ["mol/kg", "mol/L", "g/L", "g/kg"], answer: "mol/kg"},
-    {q: "The osmotic pressure of a solution is proportional to:", options: ["Molarity", "Molality", "Normality", "Formality"], answer: "Molarity"},
-    {q: "A solution that cannot dissolve more solute at a given temperature is:", options: ["Saturated", "Unsaturated", "Supersaturated", "Dilute"], answer: "Saturated"},
-    {q: "Elevation in boiling point is a:", options: ["Colligative property", "Constitutional property", "Intensive property", "Extensive property"], answer: "Colligative property"},
-    {q: "Which of the following will have highest boiling point?", options: ["1 M NaCl", "1 M Glucose", "1 M Urea", "1 M Sucrose"], answer: "1 M NaCl"},
-    {q: "Henry’s law constant increases with:", options: ["Increase in temperature", "Decrease in temperature", "Increase in pressure", "Decrease in pressure"], answer: "Increase in temperature"},
-    {q: "The van’t Hoff factor (i) for K₄[Fe(CN)₆] is:", options: ["5", "4", "2", "1"], answer: "5"},
-    {q: "The process used to separate solute from solvent in a solution is:", options: ["Distillation", "Filtration", "Crystallization", "Sublimation"], answer: "Distillation"},
-    {q: "Reverse osmosis is used for:", options: ["Desalination of water", "Freezing point depression", "Purification of solids", "Dilution of solution"], answer: "Desalination of water"},
-    {q: "If pressure is increased, the solubility of a gas in liquid:", options: ["Increases", "Decreases", "Remains same", "First increases then decreases"], answer: "Increases"},
-    {q: "Colligative properties depend on:", options: ["Number of particles", "Nature of solute", "Nature of solvent", "Boiling point"], answer: "Number of particles"},
-    {q: "Azeotropic mixture shows:", options: ["Constant boiling point", "Variable boiling point", "No boiling point", "Sublimation"], answer: "Constant boiling point"},
-    {q: "The freezing point depression constant is also called:", options: ["Cryoscopic constant", "Ebullioscopic constant", "Molal constant", "Van’t Hoff constant"], answer: "Cryoscopic constant"},
-    {q: "Which solution is isotonic with respect to 0.1 M NaCl?", options: ["0.1 M KCl", "0.2 M Glucose", "0.05 M CaCl₂", "0.1 M Urea"], answer: "0.1 M KCl"}
-  ]
-},
-{
-  title: "Solutions - Quiz 2",
-  questions: [
-    {q: "The sum of mole fractions of all components in a solution is:", options: ["1", "0", "2", "Infinity"], answer: "1"},
-    {q: "Which pair forms a maximum boiling azeotrope?", options: ["Water–Nitric acid", "Acetone–Chloroform", "Water–Ethanol", "Benzene–Toluene"], answer: "Water–Nitric acid"},
-    {q: "Which of the following is not a colligative property?", options: ["Viscosity", "Boiling point elevation", "Freezing point depression", "Osmotic pressure"], answer: "Viscosity"},
-    {q: "The boiling point of water increases when a solute is added because:", options: ["Vapour pressure decreases", "Vapour pressure increases", "Boiling point decreases", "Freezing point increases"], answer: "Vapour pressure decreases"},
-    {q: "The process of passing solvent from a region of lower concentration to higher concentration through a semipermeable membrane is:", options: ["Osmosis", "Reverse osmosis", "Diffusion", "Evaporation"], answer: "Osmosis"},
-    {q: "Which law relates solubility of a gas in a liquid to its partial pressure?", options: ["Henry's law", "Raoult's law", "Boyle's law", "Charles's law"], answer: "Henry's law"},
-    {q: "In a solution, if the interaction between solute and solvent is weaker than solvent-solvent, the deviation is:", options: ["Positive", "Negative", "Zero", "None"], answer: "Positive"},
-    {q: "The depression in freezing point is proportional to:", options: ["Molality", "Molarity", "Normality", "Formality"], answer: "Molality"},
-    {q: "Which property is used to determine molar mass of a non-volatile solute?", options: ["Freezing point depression", "Viscosity", "Refractive index", "Density"], answer: "Freezing point depression"},
-    {q: "Which of the following does not affect solubility of a solid in a liquid?", options: ["Pressure", "Temperature", "Nature of solute", "Nature of solvent"], answer: "Pressure"},
-    {q: "For dilute solutions, the relative lowering of vapour pressure is equal to:", options: ["Mole fraction of solute", "Mole fraction of solvent", "Molarity of solution", "Molality of solution"], answer: "Mole fraction of solute"},
-    {q: "Which of the following shows negative deviation from Raoult’s law?", options: ["Water–HCl", "Acetone–Chloroform", "Benzene–Toluene", "Water–Ethanol"], answer: "Acetone–Chloroform"},
-    {q: "Osmotic pressure is measured using:", options: ["Osmometer", "Barometer", "Manometer", "Pycnometer"], answer: "Osmometer"},
-    {q: "The value of van’t Hoff factor (i) for glucose is:", options: ["1", "2", "3", "4"], answer: "1"},
-    {q: "Which solution has highest osmotic pressure?", options: ["1 M NaCl", "1 M Urea", "1 M Glucose", "1 M Sucrose"], answer: "1 M NaCl"}
-  ]
-},
-// Chapter 3: Electrochemistry
-{
-  title: "Electrochemistry - Quiz 1",
-  questions: [
-    {q: "The unit of cell constant is:", options: ["cm⁻¹", "cm", "ohm", "S"], answer: "cm⁻¹"},
-    {q: "The standard electrode potential of hydrogen electrode is:", options: ["0 V", "1 V", "-1.1 V", "2.303 V"], answer: "0 V"},
-    {q: "The cell reaction in a galvanic cell is:", options: ["Spontaneous", "Non-spontaneous", "At equilibrium", "Redox neutral"], answer: "Spontaneous"},
-    {q: "Which law relates cell emf and concentration?", options: ["Nernst equation", "Faraday’s law", "Ohm’s law", "Raoult’s law"], answer: "Nernst equation"},
-    {q: "The cell in which electrical energy is used to drive non-spontaneous reaction is:", options: ["Electrolytic cell", "Galvanic cell", "Concentration cell", "Fuel cell"], answer: "Electrolytic cell"},
-    {q: "The process at the cathode in a galvanic cell is always:", options: ["Reduction", "Oxidation", "Neutralization", "Sublimation"], answer: "Reduction"},
-    {q: "The SI unit of molar conductivity is:", options: ["S m² mol⁻¹", "S cm² mol⁻¹", "ohm cm² mol⁻¹", "ohm m² mol⁻¹"], answer: "S m² mol⁻¹"},
-    {q: "Faraday’s first law states that amount of substance deposited is proportional to:", options: ["Charge passed", "Current only", "Time only", "Voltage"], answer: "Charge passed"},
-    {q: "The relationship between conductance and resistance is:", options: ["Inverse", "Direct", "Square", "None"], answer: "Inverse"},
-    {q: "KCl solution is used for cell constant determination because:", options: ["It has constant conductivity", "It is colored", "It is acidic", "It is basic"], answer: "It has constant conductivity"},
-    {q: "The decrease in molar conductivity with increase in concentration is least for:", options: ["Strong electrolytes", "Weak electrolytes", "Non-electrolytes", "None"], answer: "Strong electrolytes"},
-    {q: "The emf of Daniell cell is maximum when:", options: ["Freshly prepared", "After long use", "At equilibrium", "When short-circuited"}, answer: "Freshly prepared"},
-    {q: "The electrode at which oxidation takes place is called:", options: ["Anode", "Cathode", "Salt bridge", "Membrane"], answer: "Anode"},
-    {q: "The limiting molar conductivity of NaCl at 25°C is:", options: ["126 S cm² mol⁻¹", "150 S cm² mol⁻¹", "100 S cm² mol⁻¹", "75 S cm² mol⁻¹"], answer: "126 S cm² mol⁻¹"},
-    {q: "The function of salt bridge is to:", options: ["Maintain electrical neutrality", "Increase emf", "Decrease resistance", "Provide electrons"], answer: "Maintain electrical neutrality"}
-  ]
-},
-{
-  title: "Electrochemistry - Quiz 2",
-  questions: [
-    {q: "At equilibrium, the cell potential is:", options: ["Zero", "Maximum", "Minimum", "One"}, answer: "Zero"},
-    {q: "The conductance of a solution depends on:", options: ["Electrolyte concentration", "Temperature", "Nature of solvent", "All of these"], answer: "All of these"},
-    {q: "The value of Faraday’s constant is:", options: ["96500 C mol⁻¹", "1 F", "1 C mol⁻¹", "9.65 × 10⁴ F"], answer: "96500 C mol⁻¹"},
-    {q: "The cell notation for Daniell cell is:", options: ["Zn | Zn²⁺ || Cu²⁺ | Cu", "Cu | Cu²⁺ || Zn²⁺ | Zn", "Zn²⁺ | Zn || Cu | Cu²⁺", "Cu²⁺ | Cu || Zn | Zn²⁺"], answer: "Zn | Zn²⁺ || Cu²⁺ | Cu"},
-    {q: "The oxidation number of Mn in KMnO₄ is:", options: ["+7", "+2", "+4", "+6"], answer: "+7"},
-    {q: "The decrease in cell emf with time is due to:", options: ["Polarization", "Depolarization", "Electrolysis", "Salt bridge"], answer: "Polarization"},
-    {q: "The conductance of 1 cm³ solution placed between two platinum electrodes 1 cm apart is:", options: ["Specific conductance", "Molar conductance", "Equivalent conductance", "Limiting conductance"], answer: "Specific conductance"},
-    {q: "The unit of electrochemical equivalent is:", options: ["g C⁻¹", "mol C⁻¹", "kg mol⁻¹", "mol g⁻¹"], answer: "g C⁻¹"},
-    {q: "The standard emf of a cell can be calculated from:", options: ["Standard electrode potentials", "Cell constant", "Concentration", "pH"], answer: "Standard electrode potentials"},
-    {q: "The logarithm used in the Nernst equation is:", options: ["Natural", "Common", "Binary", "Decimal"], answer: "Natural"},
-    {q: "Electrolysis of brine gives:", options: ["NaOH, Cl₂, H₂", "NaCl, H₂, O₂", "Na, H₂, O₂", "NaOH, H₂O, Cl₂"], answer: "NaOH, Cl₂, H₂"},
-    {q: "The sum of oxidation numbers in a neutral compound is:", options: ["Zero", "One", "Two", "Negative"], answer: "Zero"},
-    {q: "The cathode reaction in a hydrogen fuel cell is:", options: ["O₂ + 4H⁺ + 4e⁻ → 2H₂O", "H₂ → 2H⁺ + 2e⁻", "O₂ → O₂⁻", "H⁺ + e⁻ → H"], answer: "O₂ + 4H⁺ + 4e⁻ → 2H₂O"},
-    {q: "The temperature coefficient of conductivity is:", options: ["Positive for electrolytes", "Negative for metals", "Zero for gases", "None of these"], answer: "Positive for electrolytes"},
-    {q: "The gas liberated at cathode during electrolysis of aqueous NaCl is:", options: ["Hydrogen", "Chlorine", "Oxygen", "Sodium"], answer: "Hydrogen"}
-  ]
-},
-
-// Chapter 4: Chemical Kinetics
-{
-  title: "Chemical Kinetics - Quiz 1",
-  questions: [
-    {q: "The unit of rate constant for a first order reaction is:", options: ["s⁻¹", "mol L⁻¹ s⁻¹", "L mol⁻¹ s⁻¹", "mol⁻¹ s⁻¹"], answer: "s⁻¹"},
-    {q: "The rate law for a zero order reaction is:", options: ["Rate = k", "Rate = k[A]", "Rate = k[A][B]", "Rate = k[B]"}, answer: "Rate = k"},
-    {q: "The time required for half of the reactant to be consumed is called:", options: ["Half-life", "Activation energy", "Rate constant", "Collision frequency"], answer: "Half-life"},
-    {q: "In a first order reaction, the half-life is:", options: ["Independent of initial concentration", "Proportional to initial concentration", "Depends on temperature only", "Zero"], answer: "Independent of initial concentration"},
-    {q: "The Arrhenius equation relates rate constant to:", options: ["Temperature", "Pressure", "Concentration", "Volume"], answer: "Temperature"},
-    {q: "The slope of a plot of ln k vs 1/T is:", options: ["–Ea/R", "Ea/R", "–R/Ea", "R/Ea"], answer: "–Ea/R"},
-    {q: "The order of a reaction can be determined by:", options: ["Experiment", "Stoichiometry", "Balanced equation", "None"}, answer: "Experiment"},
-    {q: "The unit of rate constant for a second order reaction is:", options: ["L mol⁻¹ s⁻¹", "mol L⁻¹ s⁻¹", "s⁻¹", "mol⁻¹ s⁻¹"}, answer: "L mol⁻¹ s⁻¹"},
-    {q: "For a reaction A → B, the rate is doubled when [A] is doubled. The order is:", options: ["1", "0", "2", "3"], answer: "1"},
-    {q: "A catalyst increases the rate of reaction by:", options: ["Lowering activation energy", "Increasing activation energy", "Increasing temperature", "Decreasing temperature"}, answer: "Lowering activation energy"},
-    {q: "The sum of powers of concentration terms in rate law is:", options: ["Order of reaction", "Molecularity", "Rate constant", "Degree of reaction"}, answer: "Order of reaction"},
-    {q: "The half-life for a zero order reaction is proportional to:", options: ["Initial concentration", "Inverse of initial concentration", "Temperature", "Rate constant"}, answer: "Initial concentration"},
-    {q: "The molecularity of a reaction is:", options: ["Number of molecules involved in elementary step", "Sum of reactants and products", "Order of reaction", "Depends on temperature"}, answer: "Number of molecules involved in elementary step"},
-    {q: "For a first order reaction, t₁/₂ =", options: ["0.693/k", "1/k", "k/0.693", "ln 2/k"}, answer: "0.693/k"},
-    {q: "The rate of reaction increases with:", options: ["Increase in temperature", "Decrease in temperature", "Decrease in concentration", "Decrease in surface area"}, answer: "Increase in temperature"}
-  ]
-},
-{
-  title: "Chemical Kinetics - Quiz 2",
-  questions: [
-    {q: "The rate of a reaction is:", options: ["Change in concentration per unit time", "Change in pressure per unit time", "Change in temperature per unit time", "Change in volume per unit time"}, answer: "Change in concentration per unit time"},
-    {q: "The activation energy of a reaction is highest for:", options: ["Slow reactions", "Fast reactions", "Both", "Zero order reactions"}, answer: "Slow reactions"},
-    {q: "The order of reaction whose rate is independent of concentration is:", options: ["Zero", "First", "Second", "Third"}, answer: "Zero"},
-    {q: "The unit of rate of reaction is:", options: ["mol L⁻¹ s⁻¹", "mol L⁻¹", "L s⁻¹", "mol s⁻¹"}, answer: "mol L⁻¹ s⁻¹"},
-    {q: "A reaction with fractional order is:", options: ["Complex reaction", "Simple reaction", "Elementary reaction", "Unimolecular reaction"}, answer: "Complex reaction"},
-    {q: "The catalyst does not change:", options: ["ΔG of reaction", "Activation energy", "Rate of reaction", "Equilibrium constant"}, answer: "ΔG of reaction"},
-    {q: "The half-life of a first order reaction is:", options: ["Independent of initial concentration", "Dependent on initial concentration", "Zero", "Infinite"}, answer: "Independent of initial concentration"},
-    {q: "For a second order reaction, the half-life is:", options: ["Inversely proportional to initial concentration", "Directly proportional", "Independent", "Zero"}, answer: "Inversely proportional to initial concentration"},
-    {q: "The slowest step in a reaction mechanism is called:", options: ["Rate-determining step", "Fast step", "Chain initiation", "Termination step"}, answer: "Rate-determining step"},
-    {q: "The rate law for 2A + B → C is Rate = k[A][B]. The order is:", options: ["2", "1", "3", "0"], answer: "2"},
-    {q: "The graph of [A] vs time for a zero order reaction is:", options: ["Straight line", "Curve", "Parabola", "Hyperbola"}, answer: "Straight line"},
-    {q: "The value of rate constant for a reaction does not depend on:", options: ["Concentration", "Temperature", "Nature of reactant", "Catalyst"}, answer: "Concentration"},
-    {q: "The sum of stoichiometric coefficients of reactants is:", options: ["Molecularity", "Order", "Rate constant", "Activation energy"}, answer: "Molecularity"},
-    {q: "The rate constant of a reaction increases by factor of 2 for every:", options: ["10°C rise in temperature", "20°C rise", "1°C rise", "5°C rise"}, answer: "10°C rise in temperature"},
-    {q: "The rate law for an elementary reaction is based on:", options: ["Stoichiometry", "Product concentration", "Catalyst", "Order of reaction"}, answer: "Stoichiometry"}
-  ]
-},
-
-// Chapter 5: Surface Chemistry
-{
-  title: "Surface Chemistry - Quiz 1",
-  questions: [
-    {q: "Colloidal solutions are:", options: ["Heterogeneous", "Homogeneous", "True solutions", "Suspensions"}, answer: "Heterogeneous"},
-    {q: "The process of settling of colloidal particles is called:", options: ["Coagulation", "Peptization", "Dialysis", "Electrophoresis"}, answer: "Coagulation"},
-    {q: "Which of the following is used as a catalyst in Haber’s process?", options: ["Fe", "Pt", "Ni", "Cu"}, answer: "Fe"},
-    {q: "The phenomenon which proves the particulate nature of matter in colloids is:", options: ["Tyndall effect", "Brownian movement", "Electrophoresis", "Coagulation"}, answer: "Brownian movement"},
-    {q: "The process of separating electrolytes from colloids using semi-permeable membrane is:", options: ["Dialysis", "Electrodialysis", "Ultrafiltration", "Peptization"}, answer: "Dialysis"},
-    {q: "Which enzyme catalyzes the hydrolysis of starch to maltose?", options: ["Diastase", "Invertase", "Zymase", "Urease"}, answer: "Diastase"},
-    {q: "In adsorption, the concentration of adsorbate is:", options: ["High at the surface", "Low at the surface", "Uniform", "Zero"}, answer: "High at the surface"},
-    {q: "The process of removing a precipitate by washing with a suitable liquid is called:", options: ["Peptization", "Coagulation", "Electrolysis", "Electrophoresis"}, answer: "Peptization"},
-    {q: "Gelatin acts as a:", options: ["Protective colloid", "Lyophilic colloid", "Lyophobic colloid", "Electrolyte"}, answer: "Protective colloid"},
-    {q: "The charge on sol particles in arsenious sulphide sol is:", options: ["Negative", "Positive", "Neutral", "Either"}, answer: "Negative"},
-    {q: "The process of migration of colloidal particles under electric field is:", options: ["Electrophoresis", "Electro-osmosis", "Electrodialysis", "Ultrafiltration"}, answer: "Electrophoresis"},
-    {q: "Which type of adsorption is multilayered?", options: ["Physical", "Chemical", "Both", "None"}, answer: "Physical"},
-    {q: "The catalyst used in contact process is:", options: ["V₂O₅", "Pt", "Fe", "Ni"}, answer: "V₂O₅"},
-    {q: "The phenomenon of scattering of light by colloidal particles is called:", options: ["Tyndall effect", "Brownian movement", "Electrophoresis", "Coagulation"}, answer: "Tyndall effect"},
-    {q: "The size range of colloidal particles is:", options: ["1–1000 nm", "0.1–1 nm", "1000–10000 nm", "1–10 nm"}, answer: "1–1000 nm"}
-  ]
-},
-{
-  title: "Surface Chemistry - Quiz 2",
-  questions: [
-    {q: "Which of the following is not a method of preparation of colloids?", options: ["Crystallisation", "Peptization", "Condensation", "Dispersion"}, answer: "Crystallisation"},
-    {q: "The process of removing dissolved substances from colloids is:", options: ["Dialysis", "Sedimentation", "Filtration", "Centrifugation"}, answer: "Dialysis"},
-    {q: "Lyophilic colloids are:", options: ["Reversible", "Irreversible", "Unstable", "Non-dispersible"}, answer: "Reversible"},
-    {q: "The process of separation of colloidal particles using centrifugal force is:", options: ["Ultracentrifugation", "Filtration", "Peptization", "Dialysis"}, answer: "Ultracentrifugation"},
-    {q: "A catalyst increases the rate of reaction by:", options: ["Lowering activation energy", "Raising activation energy", "Increasing temperature", "Changing the nature of reactants"}, answer: "Lowering activation energy"},
-    {q: "The phenomenon of precipitation of colloidal particles by addition of electrolyte is called:", options: ["Coagulation", "Peptization", "Dialysis", "Dispersion"}, answer: "Coagulation"},
-    {q: "The adsorption of gases on metal surface is:", options: ["Exothermic", "Endothermic", "Isothermal", "Isobaric"}, answer: "Exothermic"},
-    {q: "Which is not a property of colloids?", options: ["High sedimentation rate", "Tyndall effect", "Brownian motion", "Large surface area"], answer: "High sedimentation rate"},
-    {q: "The process of converting a precipitate into a colloid is:", options: ["Peptization", "Coagulation", "Dialysis", "Dispersion"}, answer: "Peptization"},
-    {q: "Which colloid is used for intravenous injection?", options: ["Gelatin", "Starch", "Chlorophyll", "Sulphur sol"}, answer: "Gelatin"},
-    {q: "The charge on sol particles in ferric hydroxide sol is:", options: ["Positive", "Negative", "Neutral", "Either"}, answer: "Positive"},
-    {q: "The Freundlich adsorption isotherm is applicable to:", options: ["Physical adsorption", "Chemical adsorption", "Both", "None"}, answer: "Physical adsorption"},
-    {q: "Which is a lyophobic colloid?", options: ["Gold sol", "Gelatin", "Starch", "Rubber"], answer: "Gold sol"},
-    {q: "The surface area per gram of a catalyst is called:", options: ["Specific surface area", "Surface energy", "Surface tension", "Molar area"}, answer: "Specific surface area"},
-    {q: "Which is not a characteristic of physical adsorption?", options: ["High heat of adsorption", "Reversible", "Multilayer", "Weak van der Waals forces"], answer: "High heat of adsorption"}
-  ]
-}'
-// Chapter 6: General Principles and Processes of Isolation of Elements
-{
-  title: "General Principles and Processes of Isolation of Elements - Quiz 1",
-  questions: [
-    {q: "The process of heating an ore in a limited supply of air is called:", options: ["Roasting", "Calcination", "Smelting", "Leaching"], answer: "Roasting"},
-    {q: "Froth flotation process is used for:", options: ["Sulphide ores", "Oxide ores", "Halide ores", "Carbonate ores"], answer: "Sulphide ores"},
-    {q: "The purpose of adding flux during smelting is to:", options: ["Remove impurities", "Increase melting point", "Reduce metal oxide", "Increase ore solubility"], answer: "Remove impurities"},
-    {q: "Zone refining is used for:", options: ["Purification of metals", "Extraction of ores", "Concentration of ores", "Reduction of ores"], answer: "Purification of metals"},
-    {q: "In electrolytic refining, the pure metal is deposited at:", options: ["Cathode", "Anode", "Electrolyte", "Solution"], answer: "Cathode"},
-    {q: "Which of the following is a gangue?", options: ["Sand", "Metal oxide", "Molten metal", "Flux"], answer: "Sand"},
-    {q: "Aluminium is extracted from:", options: ["Bauxite", "Cryolite", "Magnetite", "Haematite"], answer: "Bauxite"},
-    {q: "The method of liquation is used for:", options: ["Low melting metals", "High melting metals", "Non-metals", "Gaseous elements"], answer: "Low melting metals"},
-    {q: "Which metal is obtained by electrolytic reduction of its molten ore?", options: ["Aluminium", "Copper", "Iron", "Zinc"], answer: "Aluminium"},
-    {q: "In the extraction of gold by cyanide process, the gold is complexed as:", options: ["[Au(CN)₂]⁻", "[AuCl₄]⁻", "[Au(OH)₄]⁻", "[AuBr₄]⁻"], answer: "[Au(CN)₂]⁻"},
-    {q: "The process used to concentrate ore based on difference in wetting properties is:", options: ["Froth flotation", "Magnetic separation", "Leaching", "Liquation"], answer: "Froth flotation"},
-    {q: "The principle of extraction of metals by electrolysis is based on:", options: ["Electrochemical series", "Metal reactivity", "Ionization potential", "Atomic mass"}, answer: "Electrochemical series"},
-    {q: "Which chemical is used as a depressant in froth flotation of galena ore?", options: ["NaCN", "NaCl", "KCN", "Na₂CO₃"], answer: "NaCN"},
-    {q: "The method used for refining of nickel is:", options: ["Mond’s process", "Van Arkel process", "Poling", "Electrolytic refining"], answer: "Mond’s process"},
-    {q: "Blister copper contains about:", options: ["98-99% copper", "60-70% copper", "50% copper", "100% copper"], answer: "98-99% copper"}
-  ]
-},
-{
-  title: "General Principles and Processes of Isolation of Elements - Quiz 2",
-  questions: [
-    {q: "Which is not a method of ore concentration?", options: ["Electrolysis", "Froth flotation", "Magnetic separation", "Leaching"], answer: "Electrolysis"},
-    {q: "In electrolytic refining of copper, impure copper is made:", options: ["Anode", "Cathode", "Electrolyte", "Flux"], answer: "Anode"},
-    {q: "Cassiterite is an ore of:", options: ["Tin", "Zinc", "Lead", "Copper"], answer: "Tin"},
-    {q: "Roasting is mainly used for:", options: ["Sulphide ores", "Oxide ores", "Carbonate ores", "Halide ores"], answer: "Sulphide ores"},
-    {q: "The most abundant metal in earth’s crust is:", options: ["Aluminium", "Iron", "Copper", "Calcium"], answer: "Aluminium"},
-    {q: "Cyanide process is used for extraction of:", options: ["Gold", "Iron", "Copper", "Zinc"], answer: "Gold"},
-    {q: "The metal obtained by reduction with coke is:", options: ["Iron", "Aluminium", "Magnesium", "Potassium"}, answer: "Iron"},
-    {q: "Which of the following is used as a reducing agent in the extraction of iron?", options: ["CO", "H₂", "NH₃", "O₂"], answer: "CO"},
-    {q: "The process of heating ore in absence of air is called:", options: ["Calcination", "Roasting", "Smelting", "Leaching"], answer: "Calcination"},
-    {q: "The slag formed in the extraction of iron is:", options: ["CaSiO₃", "FeSiO₃", "Al₂O₃", "MgO"], answer: "CaSiO₃"},
-    {q: "The metal refined by Van Arkel process is:", options: ["Zirconium", "Iron", "Copper", "Lead"], answer: "Zirconium"},
-    {q: "The function of limestone in the blast furnace is:", options: ["Remove silica as slag", "Act as catalyst", "Reduce iron ore", "Increase temperature"], answer: "Remove silica as slag"},
-    {q: "Which is not a flux?", options: ["Fe₂O₃", "CaO", "SiO₂", "CaCO₃"], answer: "Fe₂O₃"},
-    {q: "The extraction of which metal uses leaching with NaOH?", options: ["Aluminium", "Iron", "Gold", "Copper"], answer: "Aluminium"},
-    {q: "In the extraction of silver by cyanide process, the reducing agent is:", options: ["Zinc", "Iron", "Copper", "Lead"], answer: "Zinc"}
-  ]
-},
-
-// Chapter 7: The p-Block Elements
-{
-  title: "The p-Block Elements - Quiz 1",
-  questions: [
-    {q: "The most electronegative element in p-block is:", options: ["Fluorine", "Oxygen", "Nitrogen", "Chlorine"], answer: "Fluorine"},
-    {q: "The formula of borax is:", options: ["Na₂B₄O₇·10H₂O", "NaBO₂", "Na₂B₄O₇", "Na₂B₂O₅"], answer: "Na₂B₄O₇·10H₂O"},
-    {q: "The oxidation state of nitrogen in HNO₃ is:", options: ["+5", "+3", "+1", "-3"], answer: "+5"},
-    {q: "The shape of SO₂ molecule is:", options: ["Angular", "Linear", "Trigonal planar", "Tetrahedral"], answer: "Angular"},
-    {q: "The gas evolved when white phosphorus reacts with NaOH is:", options: ["PH₃", "H₂", "O₂", "NO₂"], answer: "PH₃"},
-    {q: "The basicity of orthophosphoric acid is:", options: ["3", "2", "1", "4"], answer: "3"},
-    {q: "The structure of XeF₄ is:", options: ["Square planar", "Tetrahedral", "Linear", "Octahedral"], answer: "Square planar"},
-    {q: "The bleaching action of chlorine is due to:", options: ["Nascent oxygen", "Nascent chlorine", "Ozone", "HCl"}, answer: "Nascent oxygen"},
-    {q: "The strongest oxidizing agent among halogens is:", options: ["Fluorine", "Bromine", "Chlorine", "Iodine"], answer: "Fluorine"},
-    {q: "The purest form of silica is:", options: ["Quartz", "Sand", "Flint", "Opal"], answer: "Quartz"},
-    {q: "Which is used as a fluorinating agent?", options: ["SF₆", "SiF₄", "BF₃", "BCl₃"], answer: "SF₆"},
-    {q: "Which acid is called king of chemicals?", options: ["Sulphuric acid", "Nitric acid", "Hydrochloric acid", "Phosphoric acid"], answer: "Sulphuric acid"},
-    {q: "The formula of ozone is:", options: ["O₃", "O₂", "O₄", "O"], answer: "O₃"},
-    {q: "The oxidation state of chlorine in NaClO₄ is:", options: ["+7", "+5", "+3", "+1"], answer: "+7"},
-    {q: "The brown ring in nitrate test is due to:", options: ["[Fe(H₂O)₅NO]²⁺", "NO", "NO₂", "[Fe(H₂O)₄NO]²⁺"], answer: "[Fe(H₂O)₅NO]²⁺"}
-  ]
-},
-{
-  title: "The p-Block Elements - Quiz 2",
-  questions: [
-    {q: "The heaviest noble gas is:", options: ["Radon", "Xenon", "Krypton", "Argon"], answer: "Radon"},
-    {q: "The oxidation state of sulphur in H₂SO₄ is:", options: ["+6", "+4", "+2", "-2"], answer: "+6"},
-    {q: "The most basic oxide among the following is:", options: ["Na₂O", "Al₂O₃", "SiO₂", "P₂O₅"], answer: "Na₂O"},
-    {q: "Which of the following does not exist?", options: ["XeF₆", "XeF₂", "XeO₄", "XeCl₄"], answer: "XeCl₄"},
-    {q: "The strongest acid among hydrogen halides is:", options: ["HI", "HF", "HCl", "HBr"], answer: "HI"},
-    {q: "The bleaching powder is:", options: ["Ca(OCl)₂", "CaCl₂", "CaCO₃", "Ca(OH)₂"], answer: "Ca(OCl)₂"},
-    {q: "Which element shows maximum catenation in group 14?", options: ["Carbon", "Silicon", "Germanium", "Tin"], answer: "Carbon"},
-    {q: "The structure of IF₇ is:", options: ["Pentagonal bipyramidal", "Square planar", "Octahedral", "Tetrahedral"], answer: "Pentagonal bipyramidal"},
-    {q: "Which is used as a rocket propellant?", options: ["Hydrazine", "Ammonia", "Methane", "Ethane"], answer: "Hydrazine"},
-    {q: "The test for nitrate ion gives a brown ring with:", options: ["FeSO₄ and conc. H₂SO₄", "BaCl₂", "AgNO₃", "NH₄Cl"}, answer: "FeSO₄ and conc. H₂SO₄"},
-    {q: "The basicity of H₃PO₂ is:", options: ["1", "2", "3", "4"], answer: "1"},
-    {q: "The hydrolysis of XeF₄ gives:", options: ["XeO₃", "XeO₂", "XeO₄", "XeF₂"], answer: "XeO₃"},
-    {q: "The color of chlorine gas is:", options: ["Greenish yellow", "Brown", "Red", "Colorless"], answer: "Greenish yellow"},
-    {q: "Which is not a property of interhalogen compounds?", options: ["High reactivity", "Colorless", "Covalent", "Low melting point"], answer: "Colorless"},
-    {q: "The compound used in water purification is:", options: ["Cl₂", "O₂", "N₂", "CO₂"], answer: "Cl₂"}
-  ]
-},
-
-// Chapter 8: The d- and f-Block Elements
-{
-  title: "The d- and f-Block Elements - Quiz 1",
-  questions: [
-    {q: "Which transition metal is liquid at room temperature?", options: ["Mercury", "Zinc", "Copper", "Iron"], answer: "Mercury"},
-    {q: "The general electronic configuration of d-block elements is:", options: ["(n-1)d¹–¹⁰ns¹–²", "ns²np⁶", "ns²np⁶nd¹⁰", "ns²np⁶nd¹–¹⁰"}, answer: "(n-1)d¹–¹⁰ns¹–²"},
-    {q: "Which ion is colorless?", options: ["Zn²⁺", "Fe²⁺", "Cu²⁺", "Ni²⁺"], answer: "Zn²⁺"},
-    {q: "The highest oxidation state shown by osmium is:", options: ["+8", "+7", "+6", "+4"], answer: "+8"},
-    {q: "Which transition metal has the highest melting point?", options: ["Tungsten", "Iron", "Copper", "Silver"], answer: "Tungsten"},
-    {q: "Which of the following is a non-transition element?", options: ["Zn", "Cr", "Fe", "Co"], answer: "Zn"},
-    {q: "The compound KMnO₄ is used as:", options: ["Oxidizing agent", "Reducing agent", "Catalyst", "Dehydrating agent"], answer: "Oxidizing agent"},
-    {q: "The lanthanoid contraction is due to:", options: ["Poor shielding of 4f electrons", "Poor shielding of 5d electrons", "High nuclear charge", "Large atomic size"}, answer: "Poor shielding of 4f electrons"},
-    {q: "The color of aqueous solution of Ni²⁺ is:", options: ["Green", "Blue", "Pink", "Colorless"], answer: "Green"},
-    {q: "Which element does not show variable oxidation state?", options: ["Scandium", "Iron", "Copper", "Manganese"], answer: "Scandium"},
-    {q: "Which of the following is a f-block element?", options: ["Uranium", "Zinc", "Iron", "Cobalt"], answer: "Uranium"},
-    {q: "The actinoids are placed in the periodic table in the:", options: ["7th period", "6th period", "5th period", "4th period"], answer: "7th period"},
-    {q: "Which ion is pink in color?", options: ["Mn²⁺", "Co²⁺", "Fe²⁺", "Cu²⁺"], answer: "Mn²⁺"},
-    {q: "The most common oxidation state of lanthanoids is:", options: ["+3", "+2", "+4", "+1"], answer: "+3"},
-    {q: "Potassium dichromate is used as:", options: ["Oxidizing agent", "Reducing agent", "Precipitating agent", "Complexing agent"], answer: "Oxidizing agent"}
-  ]
-},
-{
-  title: "The d- and f-Block Elements - Quiz 2",
-  questions: [
-    {q: "Which metal is used in making filaments of bulbs?", options: ["Tungsten", "Iron", "Copper", "Silver"], answer: "Tungsten"},
-    {q: "Which element among d-block has the smallest atomic radius?", options: ["Nickel", "Copper", "Zinc", "Iron"], answer: "Nickel"},
-    {q: "Which among the following is not colored?", options: ["ZnSO₄", "CuSO₄", "FeSO₄", "NiSO₄"], answer: "ZnSO₄"},
-    {q: "The oxidation state of iron in Fe₂O₃ is:", options: ["+3", "+2", "+4", "+6"], answer: "+3"},
-    {q: "The complex [Fe(CN)₆]⁴⁻ is known as:", options: ["Ferrocyanide", "Ferricyanide", "Ferrocene", "Hexacyanide"}, answer: "Ferrocyanide"},
-    {q: "Which element is used as a catalyst in the manufacture of ammonia?", options: ["Iron", "Nickel", "Platinum", "Copper"], answer: "Iron"},
-    {q: "The only actinoid that occurs in nature in appreciable quantity is:", options: ["Uranium", "Thorium", "Plutonium", "Neptunium"], answer: "Uranium"},
-    {q: "The magnetic properties of d-block elements are due to:", options: ["Unpaired electrons", "Paired electrons", "Nuclear charge", "Atomic size"}, answer: "Unpaired electrons"},
-    {q: "The most stable oxidation state of manganese is:", options: ["+2", "+3", "+4", "+7"], answer: "+2"},
-    {q: "The color of Cr₂O₇²⁻ ion is:", options: ["Orange", "Green", "Blue", "Pink"], answer: "Orange"},
-    {q: "Which of the following is not a property of transition metals?", options: ["Low melting point", "High density", "Form colored ions", "Show variable oxidation states"], answer: "Low melting point"},
-    {q: "The element with highest atomic number among lanthanoids is:", options: ["Lutetium", "Lanthanum", "Ytterbium", "Samarium"], answer: "Lutetium"},
-    {q: "The actinoids are known for their:", options: ["Radioactivity", "Low density", "Colorless compounds", "Inertness"], answer: "Radioactivity"},
-    {q: "The element used in nuclear reactors as fuel is:", options: ["Uranium", "Thorium", "Plutonium", "Neptunium"], answer: "Uranium"},
-    {q: "The general oxidation state of actinoids is:", options: ["+3", "+2", "+1", "+4"], answer: "+3"}
-  ]
-},
-
-// Chapter 9: Coordination Compounds
-{
-  title: "Coordination Compounds - Quiz 1",
-  questions: [
-    {q: "The oxidation state of Co in [Co(NH₃)₆]Cl₃ is:", options: ["+3", "+2", "0", "+1"], answer: "+3"},
-    {q: "The coordination number of Fe in [Fe(CN)₆]⁴⁻ is:", options: ["6", "4", "2", "3"], answer: "6"},
-    {q: "Which of the following is a bidentate ligand?", options: ["C₂O₄²⁻", "NH₃", "CN⁻", "Cl⁻"], answer: "C₂O₄²⁻"},
-    {q: "The IUPAC name of [Pt(NH₃)₂Cl₂] is:", options: ["Diamminedichloroplatinum(II)", "Dichlorodiammineplatinum(II)", "Platinum diamminedichloride", "Dichloroplatinum(II)diammine"], answer: "Diamminedichloroplatinum(II)"},
-    {q: "Which of the following shows linkage isomerism?", options: ["[Co(NH₃)₅NO₂]Cl₂", "[Cr(H₂O)₆]Cl₃", "[Fe(CN)₆]³⁻", "[Ni(CO)₄]"], answer: "[Co(NH₃)₅NO₂]Cl₂"},
-    {q: "The charge on ethylenediamine (en) ligand is:", options: ["Zero", "–1", "+1", "–2"], answer: "Zero"},
-    {q: "Which compound gives white ppt with AgNO₃?", options: ["[Co(NH₃)₅Cl]Cl₂", "[Co(NH₃)₆]Cl₃", "[Fe(CN)₆]⁴⁻", "[Ni(CO)₄]"], answer: "[Co(NH₃)₅Cl]Cl₂"},
-    {q: "Which is the shape of [Ni(CO)₄]?", options: ["Tetrahedral", "Square planar", "Octahedral", "Trigonal bipyramidal"], answer: "Tetrahedral"},
-    {q: "The color of [Cu(NH₃)₄]²⁺ is:", options: ["Deep blue", "Green", "Yellow", "Pink"], answer: "Deep blue"},
-    {q: "Which of the following is an ambidentate ligand?", options: ["NO₂⁻", "NH₃", "H₂O", "CO"], answer: "NO₂⁻"},
-    {q: "The chelate effect is due to:", options: ["Multidentate ligands", "Monodentate ligands", "Ambidentate ligands", "None"}, answer: "Multidentate ligands"},
-    {q: "Which of the following does NOT show optical isomerism?", options: ["[Pt(NH₃)₂Cl₂]", "[Cr(en)₃]³⁺", "[Co(en)₃]³⁺", "[Cr(ox)₃]³⁻"], answer: "[Pt(NH₃)₂Cl₂]"},
-    {q: "The geometry of [Fe(CN)₆]³⁻ is:", options: ["Octahedral", "Tetrahedral", "Square planar", "Trigonal bipyramidal"], answer: "Octahedral"},
-    {q: "Which of the following is a neutral ligand?", options: ["NH₃", "CN⁻", "Cl⁻", "NO₂⁻"], answer: "NH₃"},
-    {q: "The IUPAC name of [Cr(H₂O)₄Cl₂]Cl is:", options: ["Tetraaquadichloridochromium(III) chloride", "Dichlorotetraaquachromium chloride", "Chromium tetraaquadichloride chloride", "Tetraaquadichlorochromium(III) chloride"], answer: "Tetraaquadichloridochromium(III) chloride"}
-  ]
-},
-{
-  title: "Coordination Compounds - Quiz 2",
-  questions: [
-    {q: "Which of the following shows ionization isomerism?", options: ["[Co(NH₃)₅SO₄]Br and [Co(NH₃)₅Br]SO₄", "[Fe(CN)₆]³⁻", "[Ni(CO)₄]", "[Cr(H₂O)₆]Cl₃"], answer: "[Co(NH₃)₅SO₄]Br and [Co(NH₃)₅Br]SO₄"},
-    {q: "Which ligand is NOT a chelating agent?", options: ["NH₃", "en", "C₂O₄²⁻", "EDTA"], answer: "NH₃"},
-    {q: "The oxidation state of Ni in [Ni(CO)₄] is:", options: ["0", "+2", "+4", "+1"], answer: "0"},
-    {q: "The geometry of [PtCl₄]²⁻ is:", options: ["Square planar", "Tetrahedral", "Octahedral", "Trigonal bipyramidal"], answer: "Square planar"},
-    {q: "Which is a polydentate ligand?", options: ["EDTA", "en", "NH₃", "H₂O"], answer: "EDTA"},
-    {q: "Which complex will give two isomers?", options: ["[Pt(NH₃)₂Cl₂]", "[Ni(CO)₄]", "[CrCl₆]³⁻", "[Zn(H₂O)₄]²⁺"], answer: "[Pt(NH₃)₂Cl₂]"},
-    {q: "Which of the following complexes is colorless?", options: ["[Zn(NH₃)₄]²⁺", "[Cu(NH₃)₄]²⁺", "[Co(NH₃)₆]³⁺", "[Fe(CN)₆]⁴⁻"], answer: "[Zn(NH₃)₄]²⁺"},
-    {q: "The effective atomic number (EAN) of Fe in [Fe(CN)₆]⁴⁻ is:", options: ["36", "34", "32", "38"], answer: "36"},
-    {q: "Which one is a heteroleptic complex?", options: ["[Co(NH₃)₄Cl₂]Cl", "[Co(NH₃)₆]Cl₃", "[Fe(CN)₆]⁴⁻", "[Zn(NH₃)₄]²⁺"], answer: "[Co(NH₃)₄Cl₂]Cl"},
-    {q: "The central metal atom/ion in a complex is generally a:", options: ["Lewis acid", "Lewis base", "Bronsted acid", "Bronsted base"], answer: "Lewis acid"},
-    {q: "The color of complex depends on:", options: ["Crystal field splitting", "Ligand size", "Charge on metal", "Oxidation state only"], answer: "Crystal field splitting"},
-    {q: "Which of the following does NOT exhibit geometrical isomerism?", options: ["[Co(NH₃)₆]³⁺", "[Pt(NH₃)₂Cl₂]", "[Co(en)₂Cl₂]⁺", "[Cr(H₂O)₄Cl₂]⁺"], answer: "[Co(NH₃)₆]³⁺"},
-    {q: "The chelate effect increases with:", options: ["Number of rings formed", "Number of monodentate ligands", "Number of ions", "Size of metal"}, answer: "Number of rings formed"},
-    {q: "The hybridization of central metal in [Ni(CO)₄] is:", options: ["sp³", "d²sp³", "sp²", "sp³d²"], answer: "sp³"},
-    {q: "The IUPAC name of [Fe(CN)₆]⁴⁻ is:", options: ["Hexacyanidoferrate(II) ion", "Hexacyanoferrate(III) ion", "Ferrocyanide ion", "Ferricyanide ion"], answer: "Hexacyanidoferrate(II) ion"}
-  ]
-},
-// Chapter 10: Haloalkanes and Haloarenes
-{
-  title: "Haloalkanes and Haloarenes - Quiz 1",
-  questions: [
-    {q: "Which is most reactive towards SN1 reaction?", options: ["Tertiary alkyl halide", "Primary alkyl halide", "Secondary alkyl halide", "Methyl halide"], answer: "Tertiary alkyl halide"},
-    {q: "Which of the following is NOT a nucleophile?", options: ["NO₂⁺", "OH⁻", "CN⁻", "NH₃"], answer: "NO₂⁺"},
-    {q: "The major product of chlorination of methane is:", options: ["CH₃Cl", "CH₂Cl₂", "CHCl₃", "CCl₄"], answer: "CH₃Cl"},
-    {q: "Which halide is most reactive towards SN2?", options: ["Methyl bromide", "Tertiary butyl bromide", "Ethyl chloride", "Isopropyl chloride"], answer: "Methyl bromide"},
-    {q: "The reaction of alkyl halide with aqueous KOH gives:", options: ["Alcohol", "Alkene", "Ether", "Aldehyde"], answer: "Alcohol"},
-    {q: "Which halogen is most electronegative?", options: ["Fluorine", "Chlorine", "Bromine", "Iodine"], answer: "Fluorine"},
-    {q: "Aryl halides are less reactive towards nucleophilic substitution due to:", options: ["Resonance stabilization", "Electron-withdrawing groups", "Steric hindrance", "Hyperconjugation"}, answer: "Resonance stabilization"},
-    {q: "Which compound gives white ppt with AgNO₃ instantly?", options: ["Benzyl chloride", "Chlorobenzene", "1-Chloropropane", "2-Chlorobutane"], answer: "Benzyl chloride"},
-    {q: "Which is used as an anaesthetic?", options: ["Chloroform", "Chlorobenzene", "Dichloromethane", "Bromoform"], answer: "Chloroform"},
-    {q: "The order of reactivity of halides towards SN2 is:", options: ["RI > RBr > RCl > RF", "RF > RCl > RBr > RI", "RCl > RBr > RI > RF", "RBr > RCl > RI > RF"], answer: "RI > RBr > RCl > RF"},
-    {q: "Which reaction converts alkyl halide to alkene?", options: ["Dehydrohalogenation", "Hydrolysis", "Reduction", "Oxidation"], answer: "Dehydrohalogenation"},
-    {q: "The Wurtz reaction is used to prepare:", options: ["Alkanes", "Alkenes", "Alcohols", "Ethers"], answer: "Alkanes"},
-    {q: "Which halide undergoes fastest hydrolysis?", options: ["Tert-butyl chloride", "Ethyl chloride", "Methyl chloride", "Isopropyl chloride"], answer: "Tert-butyl chloride"},
-    {q: "Which is not formed by Finkelstein reaction?", options: ["Chlorobenzene", "Iodoalkane", "Bromoalkane", "Fluoroalkane"], answer: "Chlorobenzene"},
-    {q: "Which of the following is NOT a property of aryl halides?", options: ["Undergo SN1 easily", "Insoluble in water", "Higher melting points", "Undergo electrophilic substitution"], answer: "Undergo SN1 easily"}
-  ]
-},
-{
-  title: "Haloalkanes and Haloarenes - Quiz 2",
-  questions: [
-    {q: "The Grignard reagent is:", options: ["RMgX", "RLi", "RNa", "RH"], answer: "RMgX"},
-    {q: "Chlorobenzene is less reactive than benzyl chloride towards SN1 due to:", options: ["Resonance effect", "Inductive effect", "Hyperconjugation", "Steric hindrance"], answer: "Resonance effect"},
-    {q: "Which is NOT an application of chloroform?", options: ["Sweetening agent", "Anaesthetic", "Solvent", "Laboratory reagent"], answer: "Sweetening agent"},
-    {q: "Which halogen is least reactive in nucleophilic substitution?", options: ["Fluorine", "Chlorine", "Bromine", "Iodine"], answer: "Fluorine"},
-    {q: "Alkyl halide + NaI (in acetone) gives:", options: ["Alkyl iodide", "Alkyl fluoride", "Alkyl chloride", "Alkyl bromide"], answer: "Alkyl iodide"},
-    {q: "Which reagent converts alkyl halide to primary amine?", options: ["NH₃", "KOH", "H₂O", "NaOH"], answer: "NH₃"},
-    {q: "Finkelstein reaction is best for:", options: ["SN2", "SN1", "E1", "E2"], answer: "SN2"},
-    {q: "Which is NOT aromatic?", options: ["Cyclohexyl chloride", "Chlorobenzene", "Bromobenzene", "Iodobenzene"], answer: "Cyclohexyl chloride"},
-    {q: "The reaction of bromobenzene with Mg in ether gives:", options: ["Phenyl magnesium bromide", "Benzene", "Bromobenzene", "Phenol"], answer: "Phenyl magnesium bromide"},
-    {q: "Which halide undergoes Friedel-Crafts alkylation fastest?", options: ["Benzyl chloride", "Chlorobenzene", "Ethyl chloride", "Methyl chloride"], answer: "Benzyl chloride"},
-    {q: "Which is a common solvent for SN2 reactions?", options: ["Aprotic polar", "Protic polar", "Non-polar", "Aqueous acid"], answer: "Aprotic polar"},
-    {q: "Which test distinguishes primary and tertiary alkyl halides?", options: ["Silver nitrate test", "Lucas test", "Iodoform test", "Beilstein test"], answer: "Lucas test"},
-    {q: "The hydrolysis of chlorobenzene requires:", options: ["Fused NaOH", "Dilute HCl", "Aqueous NaOH", "Alcoholic KOH"], answer: "Fused NaOH"},
-    {q: "Which reaction forms ether from alkyl halide?", options: ["Williamson synthesis", "Wurtz reaction", "Kolbe reaction", "Sandmeyer reaction"], answer: "Williamson synthesis"},
-    {q: "Which is not a property of alkyl halides?", options: ["High boiling point", "Good solubility in water", "Undergo nucleophilic substitution", "Used as solvents"], answer: "Good solubility in water"}
-  ]
-},
-
-// Chapter 11: Alcohols, Phenols, and Ethers
-{
-  title: "Alcohols, Phenols, and Ethers - Quiz 1",
-  questions: [
-    {q: "Which alcohol gives turbidity with Lucas reagent fastest?", options: ["Tert-butyl alcohol", "Ethyl alcohol", "Methyl alcohol", "Isopropyl alcohol"], answer: "Tert-butyl alcohol"},
-    {q: "The IUPAC name of CH₃CH₂OH is:", options: ["Ethanol", "Methanol", "Propanol", "Butanol"], answer: "Ethanol"},
-    {q: "Which of the following is a secondary alcohol?", options: ["Isopropyl alcohol", "Methanol", "Ethanol", "Tert-butyl alcohol"], answer: "Isopropyl alcohol"},
-    {q: "Phenol reacts with NaOH to form:", options: ["Sodium phenoxide", "Benzene", "Anisole", "Benzaldehyde"], answer: "Sodium phenoxide"},
-    {q: "Which reagent oxidizes primary alcohol to aldehyde?", options: ["PCC", "KMnO₄", "NaBH₄", "LiAlH₄"], answer: "PCC"},
-    {q: "The Williamson synthesis is used to prepare:", options: ["Ethers", "Esters", "Alcohols", "Aldehydes"], answer: "Ethers"},
-    {q: "Phenol with bromine water gives:", options: ["2,4,6-tribromophenol", "Bromobenzene", "2-bromophenol", "Bromoanisole"], answer: "2,4,6-tribromophenol"},
-    {q: "Which alcohol does not react with Lucas reagent at room temperature?", options: ["Primary alcohol", "Tertiary alcohol", "Secondary alcohol", "Benzyl alcohol"], answer: "Primary alcohol"},
-    {q: "The dehydration of alcohol gives:", options: ["Alkene", "Alkane", "Ether", "Aldehyde"], answer: "Alkene"},
-    {q: "Which reagent distinguishes primary, secondary and tertiary alcohols?", options: ["Lucas reagent", "Tollens' reagent", "Fehling's reagent", "Benedict's solution"], answer: "Lucas reagent"},
-    {q: "Phenol is less acidic than:", options: ["Carboxylic acid", "Alcohol", "Ether", "Amine"], answer: "Carboxylic acid"},
-    {q: "The product of methyl alcohol and acetic acid is:", options: ["Methyl acetate", "Ethyl acetate", "Methyl ether", "Acetic anhydride"], answer: "Methyl acetate"},
-    {q: "The boiling point of alcohol is higher than ether due to:", options: ["Hydrogen bonding", "Dipole moment", "Molecular weight", "Resonance"], answer: "Hydrogen bonding"},
-    {q: "Which is used as an antiseptic?", options: ["Phenol", "Methanol", "Ethanol", "Ether"], answer: "Phenol"},
-    {q: "Phenol with Zn dust gives:", options: ["Benzene", "Toluene", "Aniline", "Phenoxide"], answer: "Benzene"}
-  ]
-},
-{
-  title: "Alcohols, Phenols, and Ethers - Quiz 2",
-  questions: [
-    {q: "The IUPAC name of anisole is:", options: ["Methoxybenzene", "Phenylmethanol", "Benzyloxy methane", "Methoxyphenol"], answer: "Methoxybenzene"},
-    {q: "Oxidation of secondary alcohol gives:", options: ["Ketone", "Aldehyde", "Alcohol", "Carboxylic acid"], answer: "Ketone"},
-    {q: "Which reacts fastest with Lucas reagent?", options: ["Tert-butyl alcohol", "Ethyl alcohol", "Methyl alcohol", "Isopropyl alcohol"], answer: "Tert-butyl alcohol"},
-    {q: "Which is more acidic?", options: ["Phenol", "Ethanol", "Methanol", "Propanol"], answer: "Phenol"},
-    {q: "The reaction of phenol with CHCl₃ and NaOH gives:", options: ["Salicylaldehyde", "Benzaldehyde", "Anisole", "Benzoic acid"], answer: "Salicylaldehyde"},
-    {q: "Ether can be distinguished from alcohol by:", options: ["Sodium metal test", "Lucas test", "Tollens' test", "Iodoform test"], answer: "Sodium metal test"},
-    {q: "The product of phenol and NaNO₂/HCl at 273K is:", options: ["p-Nitrophenol", "Nitrobenzene", "Benzene diazonium salt", "Ortho-nitrophenol"], answer: "Benzene diazonium salt"},
-    {q: "The Williamson synthesis fails with:", options: ["Tertiary alkyl halide", "Primary alkyl halide", "Methyl halide", "Secondary alkyl halide"], answer: "Tertiary alkyl halide"},
-    {q: "Phenol turns blue litmus:", options: ["Red", "No change", "Green", "Colorless"], answer: "Red"},
-    {q: "Which compound forms iodoform on reaction with I₂/NaOH?", options: ["Ethanol", "Methanol", "n-Propanol", "Tert-butanol"], answer: "Ethanol"},
-    {q: "Which of the following is a polyhydric alcohol?", options: ["Glycerol", "Methanol", "Ethanol", "Phenol"], answer: "Glycerol"},
-    {q: "The reaction of phenol with dil. HNO₃ yields:", options: ["o- and p-nitrophenol", "Only p-nitrophenol", "m-nitrophenol", "Only o-nitrophenol"], answer: "o- and p-nitrophenol"},
-    {q: "The oxidation of primary alcohol with KMnO₄ gives:", options: ["Carboxylic acid", "Aldehyde", "Ketone", "Alcohol"], answer: "Carboxylic acid"},
-    {q: "Which ether is a common anaesthetic?", options: ["Diethyl ether", "Dimethyl ether", "Methyl ethyl ether", "Phenyl ether"], answer: "Diethyl ether"},
-    {q: "Ethanol can be converted to ethene by:", options: ["Dehydration", "Hydrogenation", "Oxidation", "Reduction"], answer: "Dehydration"}
-  ]
-},
-
-// Chapter 12: Aldehydes, Ketones and Carboxylic Acids
-{
-  title: "Aldehydes, Ketones and Carboxylic Acids - Quiz 1",
-  questions: [
-    {q: "Which reagent is used to distinguish between aldehyde and ketone?", options: ["Tollens' reagent", "Lucas reagent", "Fehling's solution", "Iodoform reagent"], answer: "Tollens' reagent"},
-    {q: "Which compound does not give silver mirror with Tollens' reagent?", options: ["Ketone", "Aldehyde", "Formaldehyde", "Acetaldehyde"], answer: "Ketone"},
-    {q: "The product of oxidation of acetaldehyde is:", options: ["Acetic acid", "Ethanol", "Methanol", "Formic acid"], answer: "Acetic acid"},
-    {q: "The IUPAC name of acetone is:", options: ["Propanone", "Propanal", "Ethanone", "Butanone"], answer: "Propanone"},
-    {q: "Which compound gives positive iodoform test?", options: ["Acetone", "Formaldehyde", "Benzaldehyde", "Methanol"], answer: "Acetone"},
-    {q: "Aldol condensation occurs in:", options: ["Aldehydes with α-H", "Aromatic aldehydes", "Ketones without α-H", "Carboxylic acids"], answer: "Aldehydes with α-H"},
-    {q: "The reaction of benzaldehyde with conc. NaOH gives:", options: ["Cannizzaro reaction", "Aldol condensation", "Haloform reaction", "Kolbe reaction"], answer: "Cannizzaro reaction"},
-    {q: "The reduction of aldehydes with NaBH₄ gives:", options: ["Primary alcohol", "Secondary alcohol", "Tertiary alcohol", "Carboxylic acid"], answer: "Primary alcohol"},
-    {q: "The reaction of carbonyl compound with hydrazine is called:", options: ["Wolff-Kishner reduction", "Clemmensen reduction", "Aldol condensation", "Cannizzaro reaction"], answer: "Wolff-Kishner reduction"},
-    {q: "The compound which gives brisk effervescence with NaHCO₃ is:", options: ["Carboxylic acid", "Aldehyde", "Alcohol", "Ketone"], answer: "Carboxylic acid"},
-    {q: "Which compound is least reactive towards nucleophilic addition?", options: ["Benzaldehyde", "Formaldehyde", "Acetaldehyde", "Propionaldehyde"], answer: "Benzaldehyde"},
-    {q: "The reaction of acetone with iodine and NaOH gives:", options: ["Yellow ppt", "Red ppt", "White ppt", "No ppt"], answer: "Yellow ppt"},
-    {q: "The reduction of acid chloride with H₂/Pd and BaSO₄ gives:", options: ["Aldehyde", "Alcohol", "Ketone", "Acid"}, answer: "Aldehyde"},
-    {q: "Which acid is known as formic acid?", options: ["Methanoic acid", "Ethanoic acid", "Propanoic acid", "Benzoic acid"], answer: "Methanoic acid"},
-    {q: "Which of the following does NOT undergo aldol condensation?", options: ["Benzaldehyde", "Acetaldehyde", "Propanal", "Butanal"], answer: "Benzaldehyde"}
-  ]
-},
-{
-  title: "Aldehydes, Ketones and Carboxylic Acids - Quiz 2",
-  questions: [
-    {q: "Which reagent is used for the oxidation of primary alcohol to carboxylic acid?", options: ["KMnO₄", "NaBH₄", "LiAlH₄", "PCC"], answer: "KMnO₄"},
-    {q: "The test for methyl ketone is:", options: ["Iodoform test", "Tollens' test", "Fehling's test", "Lucas test"], answer: "Iodoform test"},
-    {q: "The reaction of aldehyde with ammonia gives:", options: ["Imine", "Oxime", "Hydrazone", "Semicarbazone"], answer: "Imine"},
-    {q: "The product of ozonolysis of an alkene is:", options: ["Aldehyde/ketone", "Alcohol", "Acid", "Amine"], answer: "Aldehyde/ketone"},
-    {q: "The decarboxylation of sodium benzoate with soda lime gives:", options: ["Benzene", "Benzoic acid", "Toluene", "Phenol"], answer: "Benzene"},
-    {q: "Which test distinguishes benzaldehyde from acetone?", options: ["Tollens' test", "Iodoform test", "Lucas test", "Benedict's test"], answer: "Tollens' test"},
-    {q: "The reaction of formaldehyde with NH₂OH gives:", options: ["Oxime", "Imine", "Hydrazone", "Semicarbazone"], answer: "Oxime"},
-    {q: "Which gives positive Fehling's test?", options: ["Acetaldehyde", "Benzaldehyde", "Acetone", "Formic acid"], answer: "Acetaldehyde"},
-    {q: "The acid strength order is:", options: ["Formic > Acetic > Propionic", "Propionic > Acetic > Formic", "Acetic > Propionic > Formic", "Acetic > Formic > Propionic"], answer: "Formic > Acetic > Propionic"},
-    {q: "The reaction of aldehyde with 2,4-DNP gives:", options: ["Yellow/orange ppt", "Red ppt", "White ppt", "No ppt"}, answer: "Yellow/orange ppt"},
-    {q: "The main product of aldol condensation of acetaldehyde is:", options: ["3-Hydroxybutanal", "Butanone", "Butanoic acid", "Ethanol"], answer: "3-Hydroxybutanal"},
-    {q: "Which compound does NOT reduce Fehling's solution?", options: ["Benzaldehyde", "Acetaldehyde", "Formaldehyde", "Propionaldehyde"], answer: "Benzaldehyde"},
-    {q: "The reaction of acid with alcohol in presence of acid gives:", options: ["Ester", "Ether", "Aldehyde", "Ketone"], answer: "Ester"},
-    {q: "Which is a derivative of carboxylic acid?", options: ["Acid chloride", "Alcohol", "Aldehyde", "Ether"], answer: "Acid chloride"},
-    {q: "Which compound has the functional group –COOH?", options: ["Carboxylic acid", "Aldehyde", "Ketone", "Alcohol"], answer: "Carboxylic acid"}
-  ]
-},
-
-// Chapter 13: Amines
-{
-  title: "Amines - Quiz 1",
-  questions: [
-    {q: "The IUPAC name of CH₃NH₂ is:", options: ["Methanamine", "Ethanamine", "Methylamine", "Aminomethane"], answer: "Methanamine"},
-    {q: "Which test is used to distinguish between primary, secondary and tertiary amines?", options: ["Hinsberg test", "Tollens' test", "Iodoform test", "Lucas test"], answer: "Hinsberg test"},
-    {q: "The reaction of R–NO₂ with Sn/HCl gives:", options: ["R–NH₂", "R–OH", "R–Cl", "R–NO"], answer: "R–NH₂"},
-    {q: "The basicity order is:", options: ["3° > 2° > 1°", "1° > 2° > 3°", "2° > 1° > 3°", "3° > 1° > 2°"], answer: "2° > 1° > 3°"},
-    {q: "The product of reaction between RNH₂ and CH₃I in excess is:", options: ["Quaternary ammonium salt", "Primary amine", "Tertiary amine", "Secondary amine"], answer: "Quaternary ammonium salt"},
-    {q: "The Gabriel phthalimide synthesis is used for preparing:", options: ["Primary amines", "Secondary amines", "Tertiary amines", "Quaternary ammonium salts"], answer: "Primary amines"},
-    {q: "The reaction of benzene diazonium chloride with phenol gives:", options: ["Azo dye", "Aniline", "Phenoxide", "Benzene"], answer: "Azo dye"},
-    {q: "Which compound gives a positive carbylamine test?", options: ["Primary amine", "Secondary amine", "Tertiary amine", "Amide"], answer: "Primary amine"},
-    {q: "Amines can be converted to amides by reaction with:", options: ["Acyl chloride", "Alcohol", "Alkyl halide", "Carboxylic acid"}, answer: "Acyl chloride"},
-    {q: "The reduction of nitriles gives:", options: ["Primary amine", "Secondary amine", "Tertiary amine", "Amide"], answer: "Primary amine"},
-    {q: "Which amine does NOT undergo acetylation?", options: ["Tertiary amine", "Primary amine", "Secondary amine", "Aniline"], answer: "Tertiary amine"},
-    {q: "The reaction of nitrous acid with primary aromatic amine gives:", options: ["Diazonium salt", "Azo dye", "Amide", "Ammonium salt"], answer: "Diazonium salt"},
-    {q: "Which amine is least basic?", options: ["Aniline", "Methylamine", "Dimethylamine", "Ethylamine"], answer: "Aniline"},
-    {q: "The IUPAC name of aniline is:", options: ["Phenylamine", "Aminobenzene", "Benzenamine", "Amino benzene"], answer: "Benzenamine"},
-    {q: "The reaction of diazonium salt with Cu₂Cl₂/HCl is called:", options: ["Sandmeyer reaction", "Gattermann reaction", "Diazotization", "Coupling reaction"], answer: "Sandmeyer reaction"}
-  ]
-},
-{
-  title: "Amines - Quiz 2",
-  questions: [
-    {q: "The reaction of R–NH₂ with HNO₂ gives:", options: ["Alcohol", "Alkene", "Aldehyde", "Ketone"], answer: "Alcohol"},
-    {q: "The functional group in amines is:", options: ["–NH₂", "–OH", "–COOH", "–CHO"], answer: "–NH₂"},
-    {q: "The reaction of aniline with bromine water gives:", options: ["2,4,6-tribromoaniline", "Monobromoaniline", "Dibromoaniline", "No reaction"], answer: "2,4,6-tribromoaniline"},
-    {q: "The product of reaction of nitrobenzene with Sn/HCl is:", options: ["Aniline", "Benzene", "Phenol", "Benzonitrile"], answer: "Aniline"},
-    {q: "Which amine cannot be prepared by Gabriel synthesis?", options: ["Aromatic amine", "Aliphatic amine", "Primary amine", "Secondary amine"], answer: "Aromatic amine"},
-    {q: "The reaction of amine with sulphonyl chloride is used in:", options: ["Hinsberg test", "Lucas test", "Iodoform test", "Carbylamine test"], answer: "Hinsberg test"},
-    {q: "Diazonium salts are stable in:", options: ["Cold", "Heat", "Acid", "Base"], answer: "Cold"},
-    {q: "The exhaustive methylation of amines gives:", options: ["Quaternary ammonium salt", "Primary amine", "Secondary amine", "Tertiary amine"], answer: "Quaternary ammonium salt"},
-    {q: "Which of the following does NOT give carbylamine test?", options: ["Secondary amine", "Primary amine", "Aliphatic amine", "Aromatic amine"], answer: "Secondary amine"},
-    {q: "The reduction of amides gives:", options: ["Amines", "Alcohols", "Aldehydes", "Ketones"], answer: "Amines"},
-    {q: "The coupling of diazonium salt with phenol gives:", options: ["Azo dye", "Amine", "Alcohol", "Ether"], answer: "Azo dye"},
-    {q: "Which is the strongest base?", options: ["Dimethylamine", "Aniline", "Ammonia", "Ethylamine"], answer: "Dimethylamine"},
-    {q: "The reaction of nitrous acid with secondary amine gives:", options: ["N-nitrosoamine", "Diazonium salt", "Alcohol", "Azo dye"], answer: "N-nitrosoamine"},
-    {q: "Which is NOT a property of amines?", options: ["High boiling point", "Basicity", "Form hydrogen bond", "Aromaticity"], answer: "Aromaticity"},
-    {q: "The reaction of diazonium salt with phenol in alkaline medium gives:", options: ["Azo dye", "Amine", "Alcohol", "Ether"], answer: "Azo dye"}
-  ]
-},
-// Chapter 14: Biomolecules
-{
-  title: "Biomolecules - Quiz 1",
-  questions: [
-    {q: "The simplest amino acid is:", options: ["Glycine", "Alanine", "Serine", "Valine"], answer: "Glycine"},
-    {q: "Which is a disaccharide?", options: ["Sucrose", "Glucose", "Fructose", "Mannose"], answer: "Sucrose"},
-    {q: "The bond joining two amino acids is:", options: ["Peptide bond", "Glycosidic bond", "Hydrogen bond", "Phosphodiester bond"], answer: "Peptide bond"},
-    {q: "The sugar present in RNA is:", options: ["Ribose", "Deoxyribose", "Glucose", "Fructose"], answer: "Ribose"},
-    {q: "The building blocks of proteins are:", options: ["Amino acids", "Nucleotides", "Fatty acids", "Monosaccharides"], answer: "Amino acids"},
-    {q: "Which of the following is a polysaccharide?", options: ["Starch", "Lactose", "Maltose", "Sucrose"], answer: "Starch"},
-    {q: "The number of essential amino acids is:", options: ["9", "10", "8", "20"], answer: "9"},
-    {q: "Anomerism is shown by:", options: ["Glucose", "Glycine", "Adenine", "Alanine"], answer: "Glucose"},
-    {q: "Which vitamin is synthesized in skin?", options: ["Vitamin D", "Vitamin A", "Vitamin K", "Vitamin C"], answer: "Vitamin D"},
-    {q: "The deficiency of vitamin C causes:", options: ["Scurvy", "Rickets", "Beriberi", "Scabies"], answer: "Scurvy"},
-    {q: "The functional group in glucose is:", options: ["Aldehyde", "Ketone", "Alcohol", "Amine"], answer: "Aldehyde"},
-    {q: "The helical structure of proteins is stabilized by:", options: ["Hydrogen bonds", "Ionic bonds", "Disulfide bonds", "Peptide bonds"], answer: "Hydrogen bonds"},
-    {q: "Which is a non-reducing sugar?", options: ["Sucrose", "Maltose", "Lactose", "Glucose"], answer: "Sucrose"},
-    {q: "The nucleotide consists of:", options: ["Sugar, base, phosphate", "Sugar and base", "Base and phosphate", "Sugar and phosphate"], answer: "Sugar, base, phosphate"},
-    {q: "Insulin is a:", options: ["Protein", "Carbohydrate", "Vitamin", "Lipid"], answer: "Protein"}
-  ]
-},
-{
-  title: "Biomolecules - Quiz 2",
-  questions: [
-    {q: "The test for proteins is:", options: ["Biuret test", "Tollen's test", "Fehling's test", "Benedict's test"], answer: "Biuret test"},
-    {q: "The basic unit of nucleic acids is:", options: ["Nucleotide", "Amino acid", "Sugar", "Fatty acid"], answer: "Nucleotide"},
-    {q: "Which is the storage polysaccharide in animals?", options: ["Glycogen", "Starch", "Cellulose", "Inulin"], answer: "Glycogen"},
-    {q: "Which is a reducing sugar?", options: ["Glucose", "Sucrose", "Cellulose", "Inulin"], answer: "Glucose"},
-    {q: "The linkage in nucleic acids is:", options: ["Phosphodiester", "Peptide", "Glycosidic", "Hydrogen"], answer: "Phosphodiester"},
-    {q: "The vitamin required for blood clotting is:", options: ["Vitamin K", "Vitamin C", "Vitamin D", "Vitamin A"], answer: "Vitamin K"},
-    {q: "The enzyme that hydrolyzes starch is:", options: ["Amylase", "Lipase", "Protease", "Invertase"], answer: "Amylase"},
-    {q: "Which is a fibrous protein?", options: ["Keratin", "Insulin", "Hemoglobin", "Albumin"], answer: "Keratin"},
-    {q: "The deficiency of vitamin B1 causes:", options: ["Beriberi", "Rickets", "Scurvy", "Night blindness"], answer: "Beriberi"},
-    {q: "The number of carbon atoms in glucose is:", options: ["6", "5", "7", "4"], answer: "6"},
-    {q: "Which is not a component of DNA?", options: ["Uracil", "Adenine", "Thymine", "Guanine"], answer: "Uracil"},
-    {q: "Which is not a lipid?", options: ["Collagen", "Wax", "Steroid", "Fat"], answer: "Collagen"},
-    {q: "The primary structure of protein refers to:", options: ["Sequence of amino acids", "Folding of chain", "3D structure", "Function"], answer: "Sequence of amino acids"},
-    {q: "Which carbohydrate is not digested by humans?", options: ["Cellulose", "Starch", "Sucrose", "Glucose"], answer: "Cellulose"},
-    {q: "Which vitamin is water soluble?", options: ["Vitamin C", "Vitamin D", "Vitamin A", "Vitamin K"], answer: "Vitamin C"}
-  ]
-},
-
-// Chapter 15: Polymers
-{
-  title: "Polymers - Quiz 1",
-  questions: [
-    {q: "The monomer of natural rubber is:", options: ["Isoprene", "Ethylene", "Vinyl chloride", "Styrene"], answer: "Isoprene"},
-    {q: "The process of heating rubber with sulphur is called:", options: ["Vulcanization", "Polymerization", "Copolymerization", "Condensation"], answer: "Vulcanization"},
-    {q: "Bakelite is a:", options: ["Thermosetting polymer", "Elastomer", "Thermoplastic", "Fibre"], answer: "Thermosetting polymer"},
-    {q: "Terylene is a:", options: ["Polyester", "Polyamide", "Polysaccharide", "Polyalkene"], answer: "Polyester"},
-    {q: "Nylon 6,6 is prepared from:", options: ["Adipic acid and hexamethylene diamine", "Caprolactam", "Hexamethylene diamine and sebacic acid", "Phthalic acid"], answer: "Adipic acid and hexamethylene diamine"},
-    {q: "Which is a conducting polymer?", options: ["Polyaniline", "Polyvinyl chloride", "Polyethylene", "Polypropylene"], answer: "Polyaniline"},
-    {q: "Buna-S is a copolymer of:", options: ["Butadiene and styrene", "Butadiene and acrylonitrile", "Ethylene and propylene", "Vinyl chloride and vinyl acetate"], answer: "Butadiene and styrene"},
-    {q: "The monomer of teflon is:", options: ["Tetrafluoroethylene", "Chloroethene", "Propene", "Styrene"], answer: "Tetrafluoroethylene"},
-    {q: "Which is a biodegradable polymer?", options: ["PHBV", "PVC", "Bakelite", "Teflon"], answer: "PHBV"},
-    {q: "Which is not a condensation polymer?", options: ["Polythene", "Nylon 6,6", "Dacron", "Bakelite"], answer: "Polythene"},
-    {q: "The polymer used in making non-stick cookware is:", options: ["Teflon", "PVC", "Polystyrene", "Bakelite"], answer: "Teflon"},
-    {q: "Which is a homopolymer?", options: ["Polythene", "Buna-N", "Nylon 6,6", "Bakelite"], answer: "Polythene"},
-    {q: "The repeating unit in natural rubber is:", options: ["C₅H₈", "C₂H₄", "C₄H₆", "C₃H₆"}, answer: "C₅H₈"},
-    {q: "Which of the following is a fibre?", options: ["Nylon 6,6", "Polythene", "Bakelite", "Buna-S"], answer: "Nylon 6,6"},
-    {q: "The polymer used in bulletproof glass is:", options: ["Polycarbonate", "Polypropylene", "Polyvinyl chloride", "Polystyrene"], answer: "Polycarbonate"}
-  ]
-},
-{
-  title: "Polymers - Quiz 2",
-  questions: [
-    {q: "Which is an addition polymer?", options: ["Polypropylene", "Nylon 6,6", "Terylene", "Bakelite"], answer: "Polypropylene"},
-    {q: "Orlon is a polymer of:", options: ["Acrylonitrile", "Vinyl chloride", "Styrene", "Isoprene"], answer: "Acrylonitrile"},
-    {q: "Which is not a synthetic polymer?", options: ["Cellulose", "Nylon 6,6", "Bakelite", "Teflon"], answer: "Cellulose"},
-    {q: "The monomer of polystyrene is:", options: ["Styrene", "Vinyl chloride", "Ethylene", "Propylene"], answer: "Styrene"},
-    {q: "Which is a thermoplastic polymer?", options: ["PVC", "Bakelite", "Melamine", "Urea-formaldehyde"], answer: "PVC"},
-    {q: "The polymer used in electrical switches is:", options: ["Bakelite", "Polyethylene", "Teflon", "Nylon"], answer: "Bakelite"},
-    {q: "Which is a copolymer?", options: ["Buna-N", "Polypropylene", "Polythene", "Nylon 6"], answer: "Buna-N"},
-    {q: "The process of forming polymers from monomers is:", options: ["Polymerization", "Hydrolysis", "Oxidation", "Reduction"], answer: "Polymerization"},
-    {q: "Which is a condensation polymer?", options: ["Nylon 6,6", "PVC", "Polypropylene", "Teflon"], answer: "Nylon 6,6"},
-    {q: "The structure of natural rubber is:", options: ["Cis 1,4-polyisoprene", "Trans 1,4-polyisoprene", "Cis 1,2-polybutadiene", "Trans 1,2-polybutadiene"], answer: "Cis 1,4-polyisoprene"},
-    {q: "Which is used in textile industry?", options: ["Terylene", "Bakelite", "PVC", "Polystyrene"], answer: "Terylene"},
-    {q: "The polymer used for making tire cords is:", options: ["Nylon 6,6", "PVC", "Terylene", "Bakelite"], answer: "Nylon 6,6"},
-    {q: "Which is a natural polymer?", options: ["Cellulose", "Teflon", "PVC", "Nylon 6,6"], answer: "Cellulose"},
-    {q: "Which is not a property of thermosetting polymers?", options: ["Soft on heating", "Hard", "Cross-linked", "Insoluble"], answer: "Soft on heating"},
-    {q: "Which monomer forms both natural and synthetic rubber?", options: ["Isoprene", "Butadiene", "Vinyl chloride", "Styrene"], answer: "Isoprene"}
-  ]
-},
-
-// Chapter 16: Chemistry in Everyday Life
-{
-  title: "Chemistry in Everyday Life - Quiz 1",
-  questions: [
-    {q: "The drug used to lower blood pressure is:", options: ["Antihypertensive", "Analgesic", "Antibiotic", "Antacid"], answer: "Antihypertensive"},
-    {q: "Aspirin is an:", options: ["Analgesic", "Antibiotic", "Antiseptic", "Antacid"], answer: "Analgesic"},
-    {q: "Which is used as an antacid?", options: ["Magnesium hydroxide", "Sodium chloride", "Potassium nitrate", "Calcium carbonate"], answer: "Magnesium hydroxide"},
-    {q: "The preservative used in jams is:", options: ["Sodium benzoate", "Sodium chloride", "Potassium permanganate", "Boric acid"], answer: "Sodium benzoate"},
-    {q: "Bithional is used in soaps as:", options: ["Antiseptic", "Antibiotic", "Analgesic", "Antipyretic"], answer: "Antiseptic"},
-    {q: "The artificial sweetener stable at cooking temperature is:", options: ["Sucralose", "Aspartame", "Saccharin", "Alitame"], answer: "Sucralose"},
-    {q: "The first antibiotic discovered was:", options: ["Penicillin", "Streptomycin", "Tetracycline", "Chloramphenicol"], answer: "Penicillin"},
-    {q: "Which of the following is not a food preservative?", options: ["Morphine", "Sodium nitrite", "Sodium benzoate", "BHA"], answer: "Morphine"},
-    {q: "The substance used to prevent oxidation of food is:", options: ["Antioxidant", "Antiseptic", "Antihistamine", "Antacid"], answer: "Antioxidant"},
-    {q: "The drug used for depression is:", options: ["Tranquilizer", "Antacid", "Antipyretic", "Antibiotic"], answer: "Tranquilizer"},
-    {q: "The compound used in birth control pills is:", options: ["Norethindrone", "Morphine", "Penicillin", "Aspirin"], answer: "Norethindrone"},
-    {q: "The chemical used as a sweetener in soft drinks is:", options: ["Aspartame", "Chloroquine", "Morphine", "Sucralose"], answer: "Aspartame"},
-    {q: "The antiseptic used in dettol is:", options: ["Chloroxylenol", "Bithional", "Benzalkonium chloride", "Phenol"], answer: "Chloroxylenol"},
-    {q: "Which is a broad-spectrum antibiotic?", options: ["Chloramphenicol", "Penicillin G", "Morphine", "Aspirin"], answer: "Chloramphenicol"},
-    {q: "The antimalarial drug is:", options: ["Chloroquine", "Streptomycin", "Penicillin", "Aspirin"], answer: "Chloroquine"}
-  ]
-},
-{
-  title: "Chemistry in Everyday Life - Quiz 2",
-  questions: [
-    {q: "The substance used as a water disinfectant is:", options: ["Chlorine", "Iodine", "Aspirin", "Morphine"], answer: "Chlorine"},
-    {q: "The antipyretic commonly used is:", options: ["Paracetamol", "Aspirin", "Morphine", "Penicillin"], answer: "Paracetamol"},
-    {q: "The compound used as a tranquilizer is:", options: ["Equanil", "Aspirin", "Morphine", "Penicillin"], answer: "Equanil"},
-    {q: "The compound used as an artificial sweetener in diabetic patients is:", options: ["Saccharin", "Glucose", "Fructose", "Sucrose"], answer: "Saccharin"},
-    {q: "Which is an antiallergic drug?", options: ["Antihistamine", "Antibiotic", "Antacid", "Analgesic"], answer: "Antihistamine"},
-    {q: "The compound used to treat acidity in stomach is:", options: ["Antacid", "Antiseptic", "Antipyretic", "Antibiotic"], answer: "Antacid"},
-    {q: "Which is not a chemotherapeutic agent?", options: ["Aspirin", "Sulpha drugs", "Antibiotics", "Antimalarial"], answer: "Aspirin"},
-    {q: "The compound used as a mild antiseptic in mouthwash is:", options: ["Boric acid", "Benzoic acid", "Acetic acid", "Formic acid"], answer: "Boric acid"},
-    {q: "The analgesic which is narcotic is:", options: ["Morphine", "Aspirin", "Paracetamol", "Ibuprofen"], answer: "Morphine"},
-    {q: "The preservative used in pickles is:", options: ["Sodium benzoate", "Sodium nitrite", "Sugar", "Vinegar"], answer: "Sodium benzoate"},
-    {q: "The compound added to soap as an antiseptic is:", options: ["Bithional", "Glycerol", "Chloral hydrate", "Benzene"], answer: "Bithional"},
-    {q: "Which is not an artificial sweetener?", options: ["Glucose", "Saccharin", "Aspartame", "Sucralose"], answer: "Glucose"},
-    {q: "The broad-spectrum antibiotic is:", options: ["Tetracycline", "Penicillin G", "Chloroxylenol", "Morphine"], answer: "Tetracycline"},
-    {q: "The antimalarial drug is:", options: ["Chloroquine", "Penicillin", "Tetracycline", "Aspirin"], answer: "Chloroquine"},
-    {q: "Which preservative is added to meat products?", options: ["Sodium nitrite", "Vinegar", "Sugar", "Boric acid"], answer: "Sodium nitrite"}
-  ]
-}
-      // ...more chapters
-    ],
-    mathematics: [
-    // Chapter 1: Relations and Functions
-{
-  title: "Relations and Functions - Quiz 1",
-  questions: [
-    {q: "A relation R on set A is called reflexive if:", options: ["(a, a) ∈ R ∀ a ∈ A", "(a, b) ∈ R ∀ a, b ∈ A", "(a, b) ∉ R ∀ a, b ∈ A", "(b, a) ∈ R ∀ a, b ∈ A"], answer: "(a, a) ∈ R ∀ a ∈ A"},
-    {q: "If f: R → R, f(x) = x², then f is:", options: ["Neither one-one nor onto", "One-one and onto", "One-one but not onto", "Onto but not one-one"], answer: "Neither one-one nor onto"},
-    {q: "The range of the function f(x) = sin(x) is:", options: ["[–1, 1]", "[0, 1]", "R", "[0, ∞)"], answer: "[–1, 1]"},
-    {q: "If f(x) = 2x + 3 and g(x) = x – 1, then (f ∘ g)(x) =", options: ["2x + 1", "2x + 5", "x + 2", "2x – 2"], answer: "2x + 1"},
-    {q: "The inverse of a function exists if and only if the function is:", options: ["One-one and onto", "Only one-one", "Only onto", "Neither one-one nor onto"], answer: "One-one and onto"},
-    {q: "If A has 4 elements and B has 3 elements, then the number of functions from A to B is:", options: ["81", "12", "64", "24"], answer: "81"},
-    {q: "If f: R → R, f(x) = 2x – 5, then f⁻¹(y) is:", options: ["(y + 5)/2", "(y – 5)/2", "2y – 5", "2y + 5"], answer: "(y + 5)/2"},
-    {q: "The number of equivalence relations on a set with 2 elements is:", options: ["2", "3", "4", "1"], answer: "2"},
-    {q: "If f(x) = x³ then f⁻¹(x) is:", options: ["x^(1/3)", "x³", "x²", "1/x³"], answer: "x^(1/3)"},
-    {q: "If f: A → B and g: B → C are both one-one, then g ∘ f is:", options: ["One-one", "Onto", "Both", "Neither"], answer: "One-one"},
-    {q: "If f(x) = |x|, then domain and range are:", options: ["R, [0, ∞)", "R, R", "[0, ∞), R", "R, (–∞, ∞)"], answer: "R, [0, ∞)"},
-    {q: "A function f: R → R is defined by f(x) = x + 1. Then f is:", options: ["Bijective", "Only injective", "Only surjective", "Neither"], answer: "Bijective"},
-    {q: "If f(x) = sin²x + cos²x, then f(x) =", options: ["1", "0", "sin x", "cos x"], answer: "1"},
-    {q: "If A has m elements and B has n elements, then number of relations from A to B is:", options: ["2^(mn)", "m × n", "m^n", "n^m"], answer: "2^(mn)"},
-    {q: "If f(x) = ln(x), then domain of f is:", options: ["(0, ∞)", "R", "[0, ∞)", "(–∞, 0)"], answer: "(0, ∞)"}
-  ]
-},
-{
-  title: "Relations and Functions - Quiz 2",
-  questions: [
-    {q: "If f(x) = 1/x, then domain is:", options: ["R – {0}", "R", "[0, ∞)", "(0, 1)"], answer: "R – {0}"},
-    {q: "The number of reflexive relations on a set with n elements is:", options: ["2^(n²–n)", "2^n", "n!", "n^n"], answer: "2^(n²–n)"},
-    {q: "If f(x) = e^x, then range of f is:", options: ["(0, ∞)", "R", "R+", "[–1, 1]"], answer: "(0, ∞)"},
-    {q: "A function f: R → R is even if:", options: ["f(x) = f(–x)", "f(x) = –f(–x)", "f(x) = x", "f(x) = –x"], answer: "f(x) = f(–x)"},
-    {q: "If f: R → R is defined by f(x) = x², then f is:", options: ["Neither one-one nor onto", "One-one", "Onto", "Bijective"], answer: "Neither one-one nor onto"},
-    {q: "If f(x) = 1/(x² + 1), range is:", options: ["(0, 1]", "[0, 1]", "R", "R+"], answer: "(0, 1]"},
-    {q: "If f(x) = tan x, domain is:", options: ["R – {(2n+1)π/2}", "R", "[0, π]", "R – {nπ}"], answer: "R – {(2n+1)π/2}"},
-    {q: "The number of surjective functions from A (size 2) to B (size 2) is:", options: ["2", "4", "1", "0"], answer: "2"},
-    {q: "If f(x) = x³ – 2, f⁻¹(x) =", options: ["(x + 2)^(1/3)", "(x – 2)^(1/3)", "(x + 2)³", "None"], answer: "(x + 2)^(1/3)"},
-    {q: "If f: A → B is bijective, then |A| = |B| means:", options: ["f is invertible", "f is constant", "f is not invertible", "f is not injective"], answer: "f is invertible"},
-    {q: "Let A = {1,2,3}, number of relations on A is:", options: ["512", "27", "9", "81"], answer: "512"},
-    {q: "If f(x) = x² and g(x) = x + 1, then (f ∘ g)(2) =", options: ["9", "16", "6", "5"], answer: "9"},
-    {q: "If f(x) = e^(–x), then range is:", options: ["(0, ∞)", "R", "[0, 1]", "R+"], answer: "(0, ∞)"},
-    {q: "If f: N → N, f(x) = 2x, then f is:", options: ["Injective", "Surjective", "Bijective", "None"], answer: "Injective"},
-    {q: "If f(x) is odd, then f(–x) =", options: ["–f(x)", "f(x)", "0", "1"], answer: "–f(x)"}
-  ]
-},
-
-// Chapter 2: Inverse Trigonometric Functions
-{
-  title: "Inverse Trigonometric Functions - Quiz 1",
-  questions: [
-    {q: "Principal value branch of sin⁻¹x is:", options: ["[–π/2, π/2]", "[0, π]", "[–π, π]", "[0, 2π]"], answer: "[–π/2, π/2]"},
-    {q: "The value of cos⁻¹(1/2) is:", options: ["π/3", "π/2", "π/6", "π"], answer: "π/3"},
-    {q: "The value of tan⁻¹(1) is:", options: ["π/4", "π/2", "π/6", "π/3"], answer: "π/4"},
-    {q: "The domain of sin⁻¹x is:", options: ["[–1, 1]", "R", "[0, 1]", "(–∞, ∞)"], answer: "[–1, 1]"},
-    {q: "The range of tan⁻¹x is:", options: ["(–π/2, π/2)", "(0, π)", "(–π, π)", "(0, π/2)"], answer: "(–π/2, π/2)"},
-    {q: "If sin⁻¹x + cos⁻¹x =", options: ["π/2", "π", "0", "π/4"], answer: "π/2"},
-    {q: "The value of sin⁻¹(–1/2) is:", options: ["–π/6", "π/6", "–π/3", "π/3"], answer: "–π/6"},
-    {q: "The principal value of cot⁻¹(–√3) is:", options: ["5π/6", "π/6", "π/3", "2π/3"], answer: "5π/6"},
-    {q: "If cos⁻¹x + cos⁻¹y = π, then x + y =", options: ["0", "1", "–1", "2"], answer: "0"},
-    {q: "The value of tan⁻¹(1) + tan⁻¹(2) + tan⁻¹(3) is:", options: ["π", "π/2", "0", "π/4"], answer: "π"},
-    {q: "If sin⁻¹x = θ, then x =", options: ["sin θ", "cos θ", "tan θ", "cot θ"], answer: "sin θ"},
-    {q: "The domain of sec⁻¹x is:", options: ["(–∞, –1] ∪ [1, ∞)", "R", "[–1, 1]", "[0, ∞)"], answer: "(–∞, –1] ∪ [1, ∞)"},
-    {q: "The value of sin⁻¹(sin 2π/3) is:", options: ["π/3", "2π/3", "π", "–π/3"], answer: "π/3"},
-    {q: "The value of cos⁻¹(–1) is:", options: ["π", "0", "π/2", "–π/2"], answer: "π"},
-    {q: "The value of tan⁻¹(0) is:", options: ["0", "π", "π/2", "–π/2"], answer: "0"}
-  ]
-},
-{
-  title: "Inverse Trigonometric Functions - Quiz 2",
-  questions: [
-    {q: "Range of sin⁻¹x is:", options: ["[–π/2, π/2]", "[0, π]", "[–π, π]", "[0, 2π]"], answer: "[–π/2, π/2]"},
-    {q: "Principal value branch of tan⁻¹x is:", options: ["(–π/2, π/2)", "(0, π)", "[–π, π]", "[0, 2π]"], answer: "(–π/2, π/2)"},
-    {q: "If cos⁻¹x = θ, then x =", options: ["cos θ", "sin θ", "tan θ", "cot θ"], answer: "cos θ"},
-    {q: "sin⁻¹x + sin⁻¹y = ?", options: ["Not always defined", "π/2", "π", "0"], answer: "Not always defined"},
-    {q: "tan⁻¹(–1) =", options: ["–π/4", "π/4", "0", "π"], answer: "–π/4"},
-    {q: "The value of cos⁻¹(0) is:", options: ["π/2", "0", "π", "–π/2"], answer: "π/2"},
-    {q: "If sin⁻¹x + sin⁻¹y = π/2 then x² + y² =", options: ["1", "0", "2", "–1"], answer: "1"},
-    {q: "The domain of cot⁻¹x is:", options: ["R", "[–1, 1]", "[0, π]", "(–π/2, π/2)"], answer: "R"},
-    {q: "If tan⁻¹x = y, then x =", options: ["tan y", "cot y", "sin y", "cos y"], answer: "tan y"},
-    {q: "sec⁻¹(2) =", options: ["π/3", "π/2", "π/6", "π"], answer: "π/3"},
-    {q: "The value of cos⁻¹(1/2) + cos⁻¹(–1/2) is:", options: ["π", "π/2", "0", "2π"], answer: "π"},
-    {q: "If sin⁻¹x = cos⁻¹y, then x + y =", options: ["1", "0", "–1", "2"], answer: "1"},
-    {q: "tan⁻¹(√3) =", options: ["π/3", "π/4", "π/6", "π/2"], answer: "π/3"},
-    {q: "cos⁻¹(cos(5π/6)) =", options: ["5π/6", "π/6", "π/3", "π/2"], answer: "5π/6"},
-    {q: "If cos⁻¹x = θ, then θ ∈ ?", options: ["[0, π]", "[–π/2, π/2]", "[0, 2π]", "[–π, π]"], answer: "[0, π]"}
-  ]
-},
-// Chapter 3: Matrices
-{
-  title: "Matrices - Quiz 1",
-  questions: [
-    {q: "If A is a 2×3 matrix, then the order of its transpose Aᵗ is:", options: ["3×2", "2×2", "3×3", "2×3"], answer: "3×2"},
-    {q: "If A is a square matrix, then |A| denotes:", options: ["Determinant of A", "Inverse of A", "Adjoint of A", "Transpose of A"], answer: "Determinant of A"},
-    {q: "The matrix [[1,2],[3,4]] is:", options: ["Square", "Rectangular", "Diagonal", "Scalar"], answer: "Square"},
-    {q: "The product of two 2×2 matrices is:", options: ["2×2 matrix", "4×4 matrix", "2×4 matrix", "4×2 matrix"], answer: "2×2 matrix"},
-    {q: "If AB = BA, matrices A and B are said to be:", options: ["Commutative", "Associative", "Distributive", "Inverse"], answer: "Commutative"},
-    {q: "A matrix with only one row is called:", options: ["Row matrix", "Column matrix", "Square matrix", "Null matrix"], answer: "Row matrix"},
-    {q: "The identity matrix of order 3 is:", options: ["Diagonal with all 1s", "All elements 1", "Diagonal with all 0s", "All elements 0"], answer: "Diagonal with all 1s"},
-    {q: "If AA⁻¹ = I, then A⁻¹ is called:", options: ["Inverse of A", "Transpose of A", "Adjoint of A", "Determinant of A"], answer: "Inverse of A"},
-    {q: "If A = –Aᵗ, A is:", options: ["Skew-symmetric", "Symmetric", "Orthogonal", "Diagonal"], answer: "Skew-symmetric"},
-    {q: "The sum of a matrix and its transpose is always:", options: ["Symmetric", "Skew-symmetric", "Diagonal", "Null"], answer: "Symmetric"},
-    {q: "If A is a diagonal matrix, then AT is:", options: ["Diagonal", "Symmetric", "Skew-symmetric", "Row"], answer: "Diagonal"},
-    {q: "The null matrix is a matrix with:", options: ["All elements zero", "All elements one", "Only diagonal elements zero", "None"}, answer: "All elements zero"},
-    {q: "If A and B are both 2×2 matrices, which is not always defined?", options: ["AB", "BA", "A+B", "A–B"], answer: "None, all are defined"},
-    {q: "If A is 2×3 and B is 3×2, what is the order of AB?", options: ["2×2", "3×3", "2×3", "3×2"], answer: "2×2"},
-    {q: "The element a₁₃ refers to:", options: ["Row 1, Column 3", "Row 3, Column 1", "Row 1, Column 1", "Row 3, Column 3"], answer: "Row 1, Column 3"}
-  ]
-},
-{
-  title: "Matrices - Quiz 2",
-  questions: [
-    {q: "A matrix with only one column is called:", options: ["Column matrix", "Row matrix", "Null matrix", "Identity matrix"], answer: "Column matrix"},
-    {q: "If A is a symmetric matrix, then Aᵗ is:", options: ["A", "–A", "A⁻¹", "A²"], answer: "A"},
-    {q: "If A = [[0,1],[–1,0]], then A is:", options: ["Skew-symmetric", "Symmetric", "Diagonal", "Scalar"], answer: "Skew-symmetric"},
-    {q: "If A is invertible, then (A⁻¹)⁻¹ is:", options: ["A", "A⁻¹", "A²", "I"], answer: "A"},
-    {q: "The order of identity matrix I₄ is:", options: ["4×4", "2×2", "1×4", "4×1"], answer: "4×4"},
-    {q: "If AB = I, then B is:", options: ["Inverse of A", "Transpose of A", "Adjoint of A", "Null matrix"], answer: "Inverse of A"},
-    {q: "If A is a scalar matrix, all diagonal elements are:", options: ["Equal", "Zero", "Different", "Negative"], answer: "Equal"},
-    {q: "The sum of a matrix and its skew-symmetric part is:", options: ["Original matrix", "Zero", "Symmetric matrix", "Diagonal matrix"], answer: "Original matrix"},
-    {q: "If A is diagonal, then det(A) is:", options: ["Product of diagonal entries", "Sum of diagonal entries", "Zero", "One"], answer: "Product of diagonal entries"},
-    {q: "If (A+B)ᵗ =", options: ["Aᵗ+Bᵗ", "A+B", "AB", "None"}, answer: "Aᵗ+Bᵗ"},
-    {q: "The trace of a matrix is:", options: ["Sum of diagonal elements", "Product of diagonal elements", "Sum of all elements", "Difference of diagonal elements"], answer: "Sum of diagonal elements"},
-    {q: "A square matrix whose determinant is 0 is:", options: ["Singular", "Non-singular", "Identity", "Null"], answer: "Singular"},
-    {q: "If A is 2×3 and B is 3×1, what is the order of AB?", options: ["2×1", "3×2", "3×1", "2×3"], answer: "2×1"},
-    {q: "If all off-diagonal elements are zero, matrix is:", options: ["Diagonal", "Scalar", "Identity", "Null"], answer: "Diagonal"},
-    {q: "If A is symmetric, then (A+Aᵗ) is:", options: ["Symmetric", "Skew-symmetric", "Zero", "Identity"], answer: "Symmetric"}
-  ]
-},
-
-// Chapter 4: Determinants
-{
-  title: "Determinants - Quiz 1",
-  questions: [
-    {q: "The value of determinant |1 2| |3 4| is:", options: ["–2", "2", "10", "–10"], answer: "–2"},
-    {q: "If the determinant of a matrix is 0, the matrix is:", options: ["Singular", "Non-singular", "Diagonal", "Identity"], answer: "Singular"},
-    {q: "If two rows of a determinant are identical, its value is:", options: ["Zero", "One", "Infinity", "Nonzero"], answer: "Zero"},
-    {q: "The value of the determinant remains unchanged if:", options: ["A multiple of one row is added to another", "Two rows are interchanged", "One row is multiplied by a scalar", "All elements are squared"], answer: "A multiple of one row is added to another"},
-    {q: "Cramer's rule is used to solve:", options: ["Linear equations", "Quadratic equations", "Inequations", "Simultaneous inequalities"], answer: "Linear equations"},
-    {q: "The determinant of identity matrix of order n is:", options: ["1", "0", "n", "n!"], answer: "1"},
-    {q: "If determinant |a b| |c d| = 0, then ad–bc is:", options: ["0", "1", "2", "–1"], answer: "0"},
-    {q: "The value of determinant is not changed by:", options: ["Adding a multiple of one row to another", "Interchanging two rows", "Multiplying a row by a nonzero scalar", "All elements doubled"], answer: "Adding a multiple of one row to another"},
-    {q: "The minor of an element is:", options: ["Determinant of submatrix after removing its row and column", "Sum of elements in its row", "Product of diagonal elements", "Determinant itself"], answer: "Determinant of submatrix after removing its row and column"},
-    {q: "If a square matrix has all elements 0 except main diagonal, it is:", options: ["Diagonal matrix", "Scalar matrix", "Identity matrix", "Null matrix"], answer: "Diagonal matrix"},
-    {q: "If |A| ≠ 0, then A is:", options: ["Invertible", "Singular", "Null", "Skew-symmetric"], answer: "Invertible"},
-    {q: "The adjoint of a matrix A is:", options: ["Transpose of cofactor matrix", "Inverse of A", "Determinant of A", "A itself"], answer: "Transpose of cofactor matrix"},
-    {q: "The value of a determinant is unchanged when:", options: ["A multiple of one row is added to another", "Rows are multiplied by scalar", "Two rows are interchanged", "A row is reversed"}, answer: "A multiple of one row is added to another"},
-    {q: "If A is a 3×3 matrix, number of elements in A is:", options: ["9", "6", "3", "12"], answer: "9"},
-    {q: "If det(A) = 0, then system AX = B has:", options: ["No unique solution", "Unique solution", "Infinite solutions always", "No solution"], answer: "No unique solution"}
-  ]
-},
-{
-  title: "Determinants - Quiz 2",
-  questions: [
-    {q: "The determinant of a 2×2 matrix A = [[a, b], [c, d]] is:", options: ["ad–bc", "ab–cd", "ac–bd", "ab+cd"], answer: "ad–bc"},
-    {q: "The value of determinant |2 0| |0 2| is:", options: ["4", "0", "2", "8"], answer: "4"},
-    {q: "If all elements of a row or column are zero, determinant is:", options: ["Zero", "One", "Nonzero", "Negative"], answer: "Zero"},
-    {q: "If two rows of a determinant are interchanged, its value:", options: ["Changes sign", "Remains same", "Becomes zero", "Doubles"], answer: "Changes sign"},
-    {q: "The determinant of a scalar multiple kA is:", options: ["kⁿ|A|", "k|A|", "k²|A|", "k+|A|"], answer: "kⁿ|A|"},
-    {q: "If A is invertible, then A⁻¹ =", options: ["adj(A)/|A|", "|A|/adj(A)", "adj(A)", "A itself"], answer: "adj(A)/|A|"},
-    {q: "Cramer's rule applies to:", options: ["Non-singular matrices", "Singular matrices", "Null matrices", "Skew-symmetric matrices"], answer: "Non-singular matrices"},
-    {q: "If a determinant has two proportional rows, its value is:", options: ["Zero", "One", "Nonzero", "Undefined"], answer: "Zero"},
-    {q: "The cofactor of diagonal element in 2×2 matrix is:", options: ["Other diagonal element", "Zero", "Itself", "Sum of off-diagonal elements"], answer: "Other diagonal element"},
-    {q: "If det(A) = 5, then det(2A) for 2×2 matrix is:", options: ["20", "40", "10", "25"], answer: "20"},
-    {q: "If the rows and columns of a determinant are interchanged, value:", options: ["Unchanged", "Changes sign", "Zero", "Doubles"], answer: "Unchanged"},
-    {q: "The determinant of a triangular matrix is:", options: ["Product of diagonal elements", "Zero", "Sum of diagonal elements", "One"], answer: "Product of diagonal elements"},
-    {q: "If A is orthogonal, then det(A) is:", options: ["±1", "0", "1", "–1"], answer: "±1"},
-    {q: "If A is 3×3 with |A| = 2, then |A⁻¹| =", options: ["1/2", "2", "0", "–2"], answer: "1/2"},
-    {q: "If det(A) = 0, then A is:", options: ["Singular", "Non-singular", "Orthogonal", "Symmetric"], answer: "Singular"}
-  ]
-},
-// Chapter 5: Continuity and Differentiability
-{
-  title: "Continuity and Differentiability - Quiz 1",
-  questions: [
-    {q: "A function f(x) is continuous at x = a if:", options: ["limₓ→ₐ f(x) = f(a)", "limₓ→ₐ f(x) ≠ f(a)", "f(a) = 0", "limₓ→ₐ f(x) does not exist"], answer: "limₓ→ₐ f(x) = f(a)"},
-    {q: "The derivative of sin(x) is:", options: ["cos(x)", "–sin(x)", "–cos(x)", "sin(x)"], answer: "cos(x)"},
-    {q: "If f(x) = x², then f'(x) at x = 2 is:", options: ["4", "2", "8", "1"], answer: "4"},
-    {q: "The function f(x) = |x| is:", options: ["Continuous everywhere", "Differentiable everywhere", "Discontinuous at x=0", "None"], answer: "Continuous everywhere"},
-    {q: "If f(x) = e^x, then d/dx[f(x)] =", options: ["e^x", "e^(2x)", "x·e^x", "e^(–x)"], answer: "e^x"},
-    {q: "If f(x) = tan(x), then f'(x) =", options: ["sec²x", "tan(x)", "cot(x)", "sin(x)"], answer: "sec²x"},
-    {q: "The function f(x) = 1/x is not continuous at:", options: ["x = 0", "x = 1", "x = –1", "x = 2"], answer: "x = 0"},
-    {q: "If f(x) = ln(x), then f'(x) =", options: ["1/x", "x", "ln(x)", "e^x"], answer: "1/x"},
-    {q: "If f(x) = x³, then d²f/dx² =", options: ["6x", "3x", "2x", "0"], answer: "6x"},
-    {q: "The chain rule for differentiation is:", options: ["d/dx f(g(x)) = f'(g(x))·g'(x)", "f'(x)g(x)", "f(x)g'(x)", "None"], answer: "d/dx f(g(x)) = f'(g(x))·g'(x)"},
-    {q: "The function f(x) = |x| is not differentiable at:", options: ["x = 0", "x = 1", "x = –1", "x = 2"], answer: "x = 0"},
-    {q: "If f(x) = e^(sin x), then f'(x) =", options: ["e^(sin x)·cos x", "e^(cos x)", "e^x", "cos x"], answer: "e^(sin x)·cos x"},
-    {q: "If y = x^n, then dy/dx =", options: ["n·x^(n–1)", "n·x^n", "x^n", "n·x^(n+1)"], answer: "n·x^(n–1)"},
-    {q: "Which of the following is not differentiable at x = 0?", options: ["|x|", "x²", "sin x", "e^x"], answer: "|x|"},
-    {q: "If f(x) = cos(x), then f'(x) =", options: ["–sin(x)", "sin(x)", "cos(x)", "–cos(x)"], answer: "–sin(x)"}
-  ]
-},
-{
-  title: "Continuity and Differentiability - Quiz 2",
-  questions: [
-    {q: "If f(x) = x³ + 2x, then f'(x) =", options: ["3x² + 2", "3x² – 2", "x² + 2x", "x²"], answer: "3x² + 2"},
-    {q: "The function f(x) = 1/|x| is not continuous at:", options: ["x = 0", "x = 1", "x = –1", "x = 2"], answer: "x = 0"},
-    {q: "The derivative of ln(sin x) is:", options: ["cot x", "tan x", "sin x", "sec x"], answer: "cot x"},
-    {q: "d/dx [f(x)/g(x)] =", options: ["[g(x)f'(x) – f(x)g'(x)]/[g(x)]²", "[f'(x)/g'(x)]", "[f(x)g'(x)]", "[f'(x)/g(x)]"], answer: "[g(x)f'(x) – f(x)g'(x)]/[g(x)]²"},
-    {q: "If f(x) = sin⁻¹x, then f'(x) =", options: ["1/√(1–x²)", "sin x", "cos x", "1/x"], answer: "1/√(1–x²)"},
-    {q: "If y = e^(ax), dy/dx =", options: ["a·e^(ax)", "e^(a/x)", "a·e^x", "e^(a+x)"], answer: "a·e^(ax)"},
-    {q: "If f(x) = x² + 1, then f is:", options: ["Continuous everywhere", "Not continuous", "Differentiable nowhere", "None"], answer: "Continuous everywhere"},
-    {q: "If f(x) is continuous at x = a, then:", options: ["limₓ→ₐ f(x) = f(a)", "f(a) = 0", "f(x) is not defined at a", "limₓ→ₐ f(x) does not exist"], answer: "limₓ→ₐ f(x) = f(a)"},
-    {q: "The function f(x) = |x – 1| is not differentiable at:", options: ["x = 1", "x = 0", "x = 2", "x = –1"], answer: "x = 1"},
-    {q: "If y = log(x²), dy/dx =", options: ["2/x", "1/x²", "2x", "x"], answer: "2/x"},
-    {q: "If y = cos⁻¹x, dy/dx =", options: ["–1/√(1–x²)", "1/√(1–x²)", "–x/√(1–x²)", "1/x"], answer: "–1/√(1–x²)"},
-    {q: "If f(x) is differentiable at x = a, then it is:", options: ["Continuous at x = a", "Discontinuous at x = a", "Not defined at x = a", "None"}, answer: "Continuous at x = a"},
-    {q: "If f(x) = exp(x), then f'(x) =", options: ["exp(x)", "x·exp(x)", "exp(2x)", "1/exp(x)"], answer: "exp(x)"},
-    {q: "If f(x) is differentiable everywhere, then f(x) is:", options: ["Continuous everywhere", "Discontinuous everywhere", "Continuous at a point only", "None"}, answer: "Continuous everywhere"},
-    {q: "The derivative of tan⁻¹x is:", options: ["1/(1 + x²)", "1/x", "tan x", "cot x"], answer: "1/(1 + x²)"}
-  ]
-},
-
-// Chapter 6: Application of Derivatives
-{
-  title: "Application of Derivatives - Quiz 1",
-  questions: [
-    {q: "If f'(x) > 0 for all x in (a, b), then f(x) is:", options: ["Increasing in (a, b)", "Decreasing in (a, b)", "Constant in (a, b)", "None"}, answer: "Increasing in (a, b)"},
-    {q: "The maximum value of f(x) in a closed interval is called:", options: ["Absolute maximum", "Absolute minimum", "Local maximum", "Local minimum"], answer: "Absolute maximum"},
-    {q: "If f''(x) > 0, then f(x) is:", options: ["Convex", "Concave", "Decreasing", "Constant"}, answer: "Convex"},
-    {q: "The slope of the tangent to the curve y = x² at x = 1 is:", options: ["2", "1", "4", "0"], answer: "2"},
-    {q: "If the rate of change of y with respect to x is constant, y is a function of:", options: ["x", "x²", "e^x", "sin x"}, answer: "x"},
-    {q: "The point where the tangent is parallel to x-axis is where:", options: ["dy/dx = 0", "dy/dx = 1", "dy/dx = ∞", "dy/dx = x"}, answer: "dy/dx = 0"},
-    {q: "The normal to the curve at a point is:", options: ["Perpendicular to tangent", "Parallel to tangent", "On the curve", "None"}, answer: "Perpendicular to tangent"},
-    {q: "If f''(x) < 0 at x = c, then f(x) has:", options: ["Local maximum at x = c", "Local minimum at x = c", "Point of inflection at x = c", "None"}, answer: "Local maximum at x = c"},
-    {q: "The minimum value of y = x² + 1 is at x =", options: ["0", "1", "–1", "2"], answer: "0"},
-    {q: "If f(x) = x³, then the inflection point is at:", options: ["x = 0", "x = 1", "x = –1", "x = 2"}, answer: "x = 0"},
-    {q: "The maximum or minimum of a function can be found using:", options: ["First derivative test", "Second derivative test", "Both", "None"}, answer: "Both"},
-    {q: "The tangent to the curve y = x² at x = 1 cuts y-axis at:", options: ["–1", "1", "0", "2"], answer: "–1"},
-    {q: "If f(x) is decreasing, then f'(x) is:", options: ["Negative", "Positive", "Zero", "Constant"}, answer: "Negative"},
-    {q: "The maximum area of a rectangle inscribed in a circle of radius r is:", options: ["2r²", "r²", "r", "4r²"], answer: "2r²"},
-    {q: "The rate of change of the area of a circle with respect to its radius is:", options: ["2πr", "πr²", "πr", "2π"], answer: "2πr"}
-  ]
-},
-{
-  title: "Application of Derivatives - Quiz 2",
-  questions: [
-    {q: "If f'(a) = 0 and f''(a) > 0, then f(x) has:", options: ["Local minimum at x = a", "Local maximum at x = a", "Point of inflection", "None"}, answer: "Local minimum at x = a"},
-    {q: "The tangent to y = x³ at x = 1 is:", options: ["y = 3x – 2", "y = 3x + 2", "y = 2x – 3", "y = x + 2"}, answer: "y = 3x – 2"},
-    {q: "If f'(x) < 0, then f(x) is:", options: ["Decreasing", "Increasing", "Constant", "None"}, answer: "Decreasing"},
-    {q: "If y = 1/x, the slope of tangent at x = 2 is:", options: ["–1/4", "1/4", "2", "–2"}, answer: "–1/4"},
-    {q: "If f(x) = x⁴, then inflection point is at:", options: ["x = 0", "No inflection point", "x = 1", "x = –1"}, answer: "No inflection point"},
-    {q: "The equation of the tangent to y = ln x at x = 1 is:", options: ["y = x – 1", "y = 1", "y = x", "y = 2x"}, answer: "y = x – 1"},
-    {q: "Rate of change of volume of a sphere with respect to its radius is:", options: ["4πr²", "4/3πr³", "2πr", "πr²"}, answer: "4πr²"},
-    {q: "If f''(c) = 0, then x = c may be:", options: ["Point of inflection", "Maximum", "Minimum", "Any of these"}, answer: "Any of these"},
-    {q: "If f(x) = |x|, f'(0) =", options: ["Not defined", "0", "1", "–1"}, answer: "Not defined"},
-    {q: "The normal to y = x² at (1,1) is:", options: ["y = –0.5x + 1.5", "y = 2x", "y = 0.5x + 1", "y = –2x + 3"}, answer: "y = –0.5x + 1.5"},
-    {q: "If f'(c) = 0 and f''(c) < 0, then:", options: ["f(x) has local maximum at c", "f(x) has local minimum at c", "c is point of inflection", "None"}, answer: "f(x) has local maximum at c"},
-    {q: "If f'(x) changes sign at x = a, x = a is:", options: ["Extremum", "Inflection point", "Intercept", "None"}, answer: "Extremum"},
-    {q: "If f(x) = cos x, maximum value is at:", options: ["x = 0", "x = π", "x = π/2", "x = 2π"}, answer: "x = 0"},
-    {q: "The tangent to y = x² at x = –1 meets y-axis at:", options: ["y = 2x + 1", "y = –2x – 1", "y = –2x + 1", "y = 2x – 1"}, answer: "y = 2x + 1"},
-    {q: "If f(x) = x³ – 3x² + 4, then local minimum is at:", options: ["x = 2", "x = 1", "x = 3", "x = 0"}, answer: "x = 2"}
-  ]
-},
-// Chapter 7: Integrals
-{
-  title: "Integrals - Quiz 1",
-  questions: [
-    {q: "The integral ∫x dx is:", options: ["x²/2 + C", "ln|x| + C", "e^x + C", "1/x + C"], answer: "x²/2 + C"},
-    {q: "The value of ∫cos x dx is:", options: ["sin x + C", "–sin x + C", "cos x + C", "tan x + C"], answer: "sin x + C"},
-    {q: "The value of ∫e^x dx is:", options: ["e^x + C", "e^(2x) + C", "x·e^x + C", "ln|x| + C"], answer: "e^x + C"},
-    {q: "The integral ∫1/x dx is:", options: ["ln|x| + C", "x + C", "e^x + C", "1/x + C"], answer: "ln|x| + C"},
-    {q: "The integration by parts formula is:", options: ["∫u dv = u∫dv – ∫(du/dx)∫dv dx", "∫u dv = uv – ∫v du", "∫u dv = u + v", "∫u dv = ∫u + ∫dv"], answer: "∫u dv = uv – ∫v du"},
-    {q: "The value of ∫tan x dx is:", options: ["–ln|cos x| + C", "ln|sin x| + C", "tan x + C", "sec x + C"], answer: "–ln|cos x| + C"},
-    {q: "If F(x) is an antiderivative of f(x), then F'(x) =", options: ["f(x)", "F(x)", "0", "1"], answer: "f(x)"},
-    {q: "The value of ∫0^π sin x dx is:", options: ["2", "0", "1", "–2"], answer: "2"},
-    {q: "The substitution x = a sin θ is useful in:", options: ["√(a²–x²)", "√(a²+x²)", "√(x²–a²)", "ln x"], answer: "√(a²–x²)"},
-    {q: "The value of ∫1/(1+x²) dx is:", options: ["tan⁻¹x + C", "sin⁻¹x + C", "ln|x| + C", "sec⁻¹x + C"], answer: "tan⁻¹x + C"},
-    {q: "The integration of 2x e^(x²) dx is:", options: ["e^(x²) + C", "x²e^x + C", "e^(2x) + C", "x e^(x²) + C"], answer: "e^(x²) + C"},
-    {q: "The value of ∫sec²x dx is:", options: ["tan x + C", "sec x + C", "cot x + C", "–tan x + C"], answer: "tan x + C"},
-    {q: "The value of definite integral ∫₀¹ x dx is:", options: ["1/2", "1", "0", "2"], answer: "1/2"},
-    {q: "The area under y = x from x = 0 to x = 2 is:", options: ["2", "1", "4", "0"], answer: "2"},
-    {q: "If ∫f(x) dx = F(x) + C, then d/dx[F(x)] is:", options: ["f(x)", "F(x)", "C", "x"], answer: "f(x)"}
-  ]
-},
-{
-  title: "Integrals - Quiz 2",
-  questions: [
-    {q: "The value of ∫sin x cos x dx is:", options: ["(1/2) sin²x + C", "(1/2) sin 2x + C", "–cos x + C", "tan x + C"], answer: "(1/2) sin 2x + C"},
-    {q: "The value of ∫dx/√(1–x²) is:", options: ["sin⁻¹x + C", "cos⁻¹x + C", "tan⁻¹x + C", "sec⁻¹x + C"], answer: "sin⁻¹x + C"},
-    {q: "The value of ∫sec x dx is:", options: ["ln|sec x + tan x| + C", "ln|sin x| + C", "tan x + C", "sec x + tan x + C"], answer: "ln|sec x + tan x| + C"},
-    {q: "The value of ∫e^(2x) dx is:", options: ["(1/2)e^(2x) + C", "e^(2x) + C", "2e^x + C", "e^x + C"], answer: "(1/2)e^(2x) + C"},
-    {q: "The value of ∫x/(x²+1) dx is:", options: ["(1/2)ln|x²+1| + C", "ln|x+1| + C", "tan⁻¹x + C", "ln|x| + C"], answer: "(1/2)ln|x²+1| + C"},
-    {q: "The value of ∫dx/(x²+1)² is:", options: ["(1/2)[tan⁻¹x/(x²+1)] + C", "(1/2)tan⁻¹x + C", "tan⁻¹x + C", "x/(x²+1) + C"], answer: "x/(2(x²+1)) + (1/2)tan⁻¹x + C"},
-    {q: "The value of ∫dx/(√(x)) is:", options: ["2√x + C", "√x + C", "x + C", "1/√x + C"], answer: "2√x + C"},
-    {q: "The value of ∫₀^a x dx is:", options: ["a²/2", "a", "a²", "0"], answer: "a²/2"},
-    {q: "The value of ∫₀^π sin x dx is:", options: ["2", "0", "1", "–2"], answer: "2"},
-    {q: "The value of ∫dx/(1–x²) is:", options: ["(1/2)ln|(1+x)/(1–x)| + C", "tan⁻¹x + C", "sin⁻¹x + C", "ln|x| + C"], answer: "(1/2)ln|(1+x)/(1–x)| + C"},
-    {q: "The value of ∫cot x dx is:", options: ["ln|sin x| + C", "ln|cos x| + C", "tan x + C", "sin x + C"], answer: "ln|sin x| + C"},
-    {q: "The integral of zero is:", options: ["Constant", "Zero", "One", "x"], answer: "Constant"},
-    {q: "∫₀¹ x² dx =", options: ["1/3", "1/2", "1", "2/3"], answer: "1/3"},
-    {q: "The value of ∫(x² + 1) dx is:", options: ["x³/3 + x + C", "x² + x + C", "x³ + x + C", "x²/2 + x + C"], answer: "x³/3 + x + C"},
-    {q: "The value of ∫₀^1 e^x dx is:", options: ["e – 1", "e", "1", "0"], answer: "e – 1"}
-  ]
-},
-
-// Chapter 8: Application of Integrals
-{
-  title: "Application of Integrals - Quiz 1",
-  questions: [
-    {q: "Area under y = x² between x = 0 and x = 1 is:", options: ["1/3", "1/2", "1", "2/3"], answer: "1/3"},
-    {q: "The area bounded by y = x and y = x² for x in [0,1] is:", options: ["1/6", "1/3", "1/2", "1/4"], answer: "1/6"},
-    {q: "Area under x-axis is taken as:", options: ["Negative", "Positive", "Zero", "Complex"], answer: "Negative"},
-    {q: "The area between y = x and y = 0 from x = 0 to x = 2 is:", options: ["2", "1", "4", "0"], answer: "2"},
-    {q: "If two curves do not intersect, the area between them is:", options: ["0", "Area under the upper curve minus lower curve", "Infinity", "Area under lower curve"], answer: "Area under the upper curve minus lower curve"},
-    {q: "The area enclosed by y = sin x and x-axis from 0 to π is:", options: ["2", "0", "1", "–2"], answer: "2"},
-    {q: "The area between y = x² and y = 2x for x in [0,2] is:", options: ["4/3", "2", "8/3", "1"], answer: "4/3"},
-    {q: "The area between y = x² and y = x for x in [0,1] is:", options: ["1/6", "1/3", "1/2", "1/4"], answer: "1/6"},
-    {q: "Area bounded by y = |x| and x = 1, x = –1, y = 0 is:", options: ["1", "2", "3", "4"], answer: "1"},
-    {q: "Area enclosed between y = x and y = –x from x = –1 to x = 1 is:", options: ["2", "1", "0", "4"], answer: "2"},
-    {q: "Area under y = x³ from x = 0 to x = 1 is:", options: ["1/4", "1/3", "1/2", "1"], answer: "1/4"},
-    {q: "Area between y = eˣ and y = 0 from x = 0 to x = 1 is:", options: ["e – 1", "e", "1", "0"], answer: "e – 1"},
-    {q: "Area between y = cos x and x-axis from x = 0 to x = π/2 is:", options: ["1", "0", "π/2", "2"], answer: "1"},
-    {q: "If a region lies above x-axis, its area is:", options: ["Positive", "Negative", "Zero", "Complex"], answer: "Positive"},
-    {q: "Area bounded by y = x² and y = 4 is:", options: ["8/3", "4/3", "2/3", "2"], answer: "8/3"}
-  ]
-},
-{
-  title: "Application of Integrals - Quiz 2",
-  questions: [
-    {q: "Area between y = x² and y = 4 from x = –2 to x = 2 is:", options: ["32/3", "16/3", "8/3", "4"], answer: "32/3"},
-    {q: "Area under y = 1/x from x = 1 to x = e is:", options: ["1", "e", "0", "e–1"], answer: "1"},
-    {q: "Area between y = sin x and x-axis from x = 0 to x = π is:", options: ["2", "1", "π", "0"], answer: "2"},
-    {q: "Area between y = x and y = 0 from x = 0 to x = a is:", options: ["a²/2", "a²", "a", "2a"], answer: "a²/2"},
-    {q: "Area between y = x² and y = 0 from x = 0 to x = a is:", options: ["a³/3", "a²/2", "a³/2", "a³"], answer: "a³/3"},
-    {q: "Area between y = x³ and y = 0 from x = 0 to x = 2 is:", options: ["4", "2", "8", "8/3"], answer: "4"},
-    {q: "Area enclosed between y = x and y = x² from x = 0 to x = 1 is:", options: ["1/6", "1/3", "1/2", "1/4"], answer: "1/6"},
-    {q: "Area under y = cos x from x = 0 to x = π is:", options: ["0", "1", "–1", "π"], answer: "0"},
-    {q: "Area between y = e^x and y = 0 from x = 0 to x = ln 2 is:", options: ["1", "2", "e", "ln 2"], answer: "1"},
-    {q: "Area under y = |x| from x = –1 to x = 1 is:", options: ["1", "2", "0", "1/2"], answer: "1"},
-    {q: "Area bounded by y = x, x = 1, x = 0, y = 0 is:", options: ["1/2", "1", "2", "1/4"], answer: "1/2"},
-    {q: "Area under y = ln x from x = 1 to x = e is:", options: ["1", "e", "0", "e–1"], answer: "1"},
-    {q: "Area between y = tan x and x-axis from x = 0 to x = π/4 is:", options: ["ln√2", "1", "π/4", "0"], answer: "ln√2"},
-    {q: "Area between y = x and y = 2x for x in [0, 1] is:", options: ["1/2", "1", "0", "2"], answer: "1/2"},
-    {q: "Area between y = 4 – x² and x-axis is:", options: ["16/3", "16", "8/3", "4"], answer: "16/3"}
-  ]
-},
-
-// Chapter 9: Differential Equations
-{
-  title: "Differential Equations - Quiz 1",
-  questions: [
-    {q: "Order of the differential equation d²y/dx² + 3dy/dx + 2y = 0 is:", options: ["2", "1", "3", "0"], answer: "2"},
-    {q: "Degree of dy/dx + y = 0 is:", options: ["1", "0", "2", "3"], answer: "1"},
-    {q: "General solution of dy/dx = 0 is:", options: ["y = C", "y = x", "y = 0", "y = 1"], answer: "y = C"},
-    {q: "A solution containing no arbitrary constant is called:", options: ["Particular solution", "General solution", "Singular solution", "None"], answer: "Particular solution"},
-    {q: "If dy/dx = x, then y =", options: ["x²/2 + C", "x + C", "e^x + C", "C"], answer: "x²/2 + C"},
-    {q: "The integrating factor of dy/dx + y = eˣ is:", options: ["eˣ", "e^(–x)", "x", "1"], answer: "eˣ"},
-    {q: "The solution of dy/dx = ky is:", options: ["y = Ce^{kx}", "y = Cx", "y = kx", "y = e^k"], answer: "y = Ce^{kx}"},
-    {q: "The order of d³y/dx³ + 2(dy/dx) + y = 0 is:", options: ["3", "1", "2", "0"], answer: "3"},
-    {q: "The equation dy/dx + P(x)y = Q(x) is:", options: ["Linear", "Nonlinear", "Homogeneous", "None"], answer: "Linear"},
-    {q: "If d²y/dx² = 0, then y =", options: ["Ax + B", "A + Bx", "A", "Bx"], answer: "Ax + B"},
-    {q: "The solution of dy/dx = y is:", options: ["y = Ce^x", "y = x", "y = e^y", "y = Cx"], answer: "y = Ce^x"},
-    {q: "The solution of dx/dy = y/x is:", options: ["x² – y² = C", "x + y = C", "x² + y² = C", "x – y = C"], answer: "x² – y² = C"},
-    {q: "The degree of d²y/dx² + (dy/dx)² = 0 is:", options: ["2", "1", "3", "0"], answer: "2"},
-    {q: "The integrating factor for dy/dx + 2y = 0 is:", options: ["e^{2x}", "e^{–2x}", "e^x", "e^{–x}" ], answer: "e^{2x}"},
-    {q: "The general solution of dy/dx = 3x² is:", options: ["x³ + C", "x² + C", "3x + C", "3x² + C"], answer: "x³ + C"}
-  ]
-},
-{
-  title: "Differential Equations - Quiz 2",
-  questions: [
-    {q: "Degree of d²y/dx² + (dy/dx)² = 0 is:", options: ["2", "1", "0", "3"], answer: "2"},
-    {q: "The solution of dy/dx = –y is:", options: ["y = Ce^{–x}", "y = Cx", "y = –Ce^x", "y = C/x"], answer: "y = Ce^{–x}"},
-    {q: "The equation dy/dx = x + y is:", options: ["Linear", "Nonlinear", "Homogeneous", "None"], answer: "Linear"},
-    {q: "The integrating factor of dy/dx + 4y = 0 is:", options: ["e^{4x}", "e^{–4x}", "e^x", "e^{–x}" ], answer: "e^{4x}"},
-    {q: "If dy/dx = x², y(0) = 1, then y =", options: ["x³/3 + 1", "x² + 1", "x³/3", "1"], answer: "x³/3 + 1"},
-    {q: "The order of d³y/dx³ + y = 0 is:", options: ["3", "1", "2", "0"], answer: "3"},
-    {q: "The degree of (d²y/dx²)³ + (dy/dx)² = 0 is:", options: ["3", "2", "1", "0"], answer: "3"},
-    {q: "The integrating factor for dy/dx + y = sin x is:", options: ["e^x", "e^{–x}", "e^y", "e^{–y}"], answer: "e^x"},
-    {q: "If d²y/dx² = 0, y(0) = 1, y(1) = 2, then y =", options: ["x + 1", "2x + 1", "x² + 1", "x + 2"], answer: "x + 1"},
-    {q: "The general solution of dy/dx = y/x is:", options: ["y = Cx", "y = x + C", "y = Ce^x", "y = x/C"], answer: "y = Cx"},
-    {q: "The solution of dy/dx = cos x is:", options: ["sin x + C", "cos x + C", "tan x + C", "sec x + C"], answer: "sin x + C"},
-    {q: "The order of d²y/dx² + 3(dy/dx) + 2y = 0 is:", options: ["2", "1", "0", "3"], answer: "2"},
-    {q: "The integrating factor for dy/dx + y = e^x is:", options: ["e^x", "e^{–x}", "e^y", "e^{–y}"], answer: "e^x"},
-    {q: "If dy/dx = 2x, y(0) = 3, then y =", options: ["x² + 3", "2x + 3", "x + 3", "2x² + 3"], answer: "x² + 3"},
-    {q: "The general solution of dy/dx = e^x is:", options: ["e^x + C", "x + C", "e^{x + C}", "x·e^x + C"], answer: "e^x + C"}
-  ]
-},
-// Chapter 10: Vectors
-{
-  title: "Vectors - Quiz 1",
-  questions: [
-    {q: "A vector with magnitude 1 is called:", options: ["Unit vector", "Null vector", "Equal vector", "Negative vector"], answer: "Unit vector"},
-    {q: "The position vector of the origin is:", options: ["0", "1", "i", "j"], answer: "0"},
-    {q: "The dot product of two perpendicular vectors is:", options: ["0", "1", "–1", "2"], answer: "0"},
-    {q: "If |a| = 2, |b| = 3, and angle between a and b is 90°, then |a × b| =", options: ["6", "1", "0", "5"], answer: "6"},
-    {q: "The cross product of two parallel vectors is:", options: ["0", "1", "–1", "2"], answer: "0"},
-    {q: "The component of vector a along b is given by:", options: ["a·b/|b|", "a×b", "a·b", "|a||b|sinθ"], answer: "a·b/|b|"},
-    {q: "The direction cosines of x-axis are:", options: ["1, 0, 0", "0, 1, 0", "0, 0, 1", "1, 1, 1"], answer: "1, 0, 0"},
-    {q: "The magnitude of vector 3i + 4j is:", options: ["5", "7", "1", "12"], answer: "5"},
-    {q: "If a·b = 0, then vectors a and b are:", options: ["Perpendicular", "Parallel", "Equal", "Collinear"], answer: "Perpendicular"},
-    {q: "If a = i + 2j, b = 2i + j, then a·b =", options: ["4", "5", "3", "2"], answer: "4"},
-    {q: "The cross product of two vectors is a:", options: ["Vector", "Scalar", "Number", "Zero"], answer: "Vector"},
-    {q: "The scalar triple product a·(b×c) is zero if:", options: ["Vectors are coplanar", "Vectors are parallel", "Vectors are equal", "Vectors are collinear"], answer: "Vectors are coplanar"},
-    {q: "If a = i + j + k, then |a| =", options: ["√3", "3", "1", "2"], answer: "√3"},
-    {q: "The direction ratios of a vector are proportional to:", options: ["Direction cosines", "Magnitude", "Zero", "None"}, answer: "Direction cosines"},
-    {q: "The unit vector in the direction of 4i + 3j is:", options: ["(4i+3j)/5", "(3i+4j)/5", "(i+j)/2", "(4i–3j)/5"], answer: "(4i+3j)/5"}
-  ]
-},
-{
-  title: "Vectors - Quiz 2",
-  questions: [
-    {q: "The value of i·j is:", options: ["0", "1", "–1", "2"], answer: "0"},
-    {q: "i × j equals:", options: ["k", "–k", "i", "j"], answer: "k"},
-    {q: "The magnitude of vector 2i – 2j + k is:", options: ["3", "4", "2", "1"], answer: "3"},
-    {q: "The projection of a on b is:", options: ["a·b/|b|", "a·b", "a×b", "a/b"], answer: "a·b/|b|"},
-    {q: "The value of (a × a) is:", options: ["0", "a", "1", "a²"], answer: "0"},
-    {q: "If θ is the angle between a and b, then a·b =", options: ["|a||b|cosθ", "|a||b|sinθ", "|a||b|", "0"], answer: "|a||b|cosθ"},
-    {q: "The vector perpendicular to both i and j is:", options: ["k", "i", "j", "–k"], answer: "k"},
-    {q: "The area of a parallelogram with adjacent sides a and b is:", options: ["|a × b|", "|a·b|", "|a|+|b|", "|a|–|b|"], answer: "|a × b|"},
-    {q: "The value of i × i is:", options: ["0", "i", "1", "–i"], answer: "0"},
-    {q: "If a = 2i + j, b = i – j, then a × b =", options: ["–k", "k", "2k", "–2k"], answer: "–k"},
-    {q: "The scalar triple product is:", options: ["a·(b×c)", "(a×b)·c", "a·b·c", "a·b+c"], answer: "a·(b×c)"},
-    {q: "If a, b, c are coplanar, then a·(b×c) =", options: ["0", "1", "a", "b"], answer: "0"},
-    {q: "The value of (i + j + k)·(i + j – k) is:", options: ["1", "2", "3", "0"], answer: "1"},
-    {q: "The unit vector perpendicular to both i + j and j + k is:", options: ["(i – j + k)/√3", "(i + j – k)/√3", "(i + j + k)/√3", "(i – j – k)/√3"], answer: "(i – j + k)/√3"},
-    {q: "If a = i + 2j + 2k, the unit vector in its direction is:", options: ["(i+2j+2k)/3", "(i+j+k)/3", "(2i+j+2k)/3", "(i+2j+2k)/7"], answer: "(i+2j+2k)/3"}
-  ]
-},
-
-// Chapter 11: Three Dimensional Geometry
-{
-  title: "Three Dimensional Geometry - Quiz 1",
-  questions: [
-    {q: "The equation of x-axis is:", options: ["y=0, z=0", "x=0, y=0", "x=0, z=0", "y=0, x=0"], answer: "y=0, z=0"},
-    {q: "The direction cosines of the z-axis are:", options: ["0, 0, 1", "1, 0, 0", "0, 1, 0", "1, 1, 1"], answer: "0, 0, 1"},
-    {q: "The distance between the points (0,0,0) and (1,1,1) is:", options: ["√3", "1", "3", "0"], answer: "√3"},
-    {q: "The angle between two vectors with direction cosines l₁, m₁, n₁ and l₂, m₂, n₂ is:", options: ["cos⁻¹(l₁l₂ + m₁m₂ + n₁n₂)", "sin⁻¹(l₁l₂ + m₁m₂ + n₁n₂)", "tan⁻¹(l₁l₂ + m₁m₂ + n₁n₂)", "cos⁻¹(l₁ + l₂ + m₁ + m₂ + n₁ + n₂)"], answer: "cos⁻¹(l₁l₂ + m₁m₂ + n₁n₂)"},
-    {q: "The equation of a plane passing through origin is:", options: ["ax + by + cz = 0", "ax + by + cz = d", "x + y + z = 1", "x + y + z = 0"], answer: "ax + by + cz = 0"},
-    {q: "The equation of a line passing through (1,2,3) and parallel to vector i + 2j + 3k is:", options: ["r = (1,2,3) + λ(1,2,3)", "r = (1,2,3) + λ(i+2j+3k)", "r = (1,2,3) – λ(i+2j+3k)", "r = (1,2,3) + (i+2j+3k)"], answer: "r = (1,2,3) + λ(i+2j+3k)"},
-    {q: "The direction ratios of the line passing through (2,3,4) and (5,6,7) are:", options: ["3,3,3", "2,3,4", "1,1,1", "5,3,2"], answer: "3,3,3"},
-    {q: "The equation x = 1, y = 2, z = 3 represents a:", options: ["Point", "Line", "Plane", "Circle"], answer: "Point"},
-    {q: "The distance from (1,2,3) to xy-plane is:", options: ["3", "2", "1", "√14"], answer: "3"},
-    {q: "The equation of a plane with normal vector n = ai + bj + ck is:", options: ["ax + by + cz = d", "x + y + z = d", "a + b + c = 0", "ax + by + c = d"], answer: "ax + by + cz = d"},
-    {q: "The shortest distance between two skew lines is:", options: ["Length of common perpendicular", "Sum of their lengths", "Zero", "Product of their lengths"], answer: "Length of common perpendicular"},
-    {q: "The direction cosines satisfy:", options: ["l² + m² + n² = 1", "l + m + n = 1", "l² + m² + n² = 0", "l² + m² + n² = 2"], answer: "l² + m² + n² = 1"},
-    {q: "The equation of y–z plane is:", options: ["x=0", "y=0", "z=0", "y=z"], answer: "x=0"},
-    {q: "If a line has direction ratios 2, –1, 2, its direction cosines are:", options: ["2/3, –1/3, 2/3", "1, –1, 1", "1, 0, 0", "2, –1, 2"], answer: "2/3, –1/3, 2/3"},
-    {q: "The equation of a sphere with center (a,b,c) and radius r is:", options: ["(x–a)² + (y–b)² + (z–c)² = r²", "x² + y² + z² = r²", "x + y + z = r", "x² + y² + z² = 0"], answer: "(x–a)² + (y–b)² + (z–c)² = r²"}
-  ]
-},
-{
-  title: "Three Dimensional Geometry - Quiz 2",
-  questions: [
-    {q: "The line x–1/2 = y–2/3 = z–3/4 is parallel to:", options: ["2,3,4", "1,2,3", "1,0,0", "0,1,0"], answer: "2,3,4"},
-    {q: "Direction cosines of y-axis are:", options: ["0,1,0", "1,0,0", "0,0,1", "1,1,1"], answer: "0,1,0"},
-    {q: "The equation of z–axis is:", options: ["x=0, y=0", "z=0, x=0", "y=0, z=0", "x=0, y=1"], answer: "x=0, y=0"},
-    {q: "The length of the perpendicular from (x₁,y₁,z₁) to ax+by+cz+d=0 is:", options: ["|ax₁+by₁+cz₁+d|/√(a²+b²+c²)", "|x₁+y₁+z₁|", "a+b+c", "a²+b²+c²"], answer: "|ax₁+by₁+cz₁+d|/√(a²+b²+c²)"},
-    {q: "The foot of the perpendicular from (1,2,3) to x=0 is:", options: ["(0,2,3)", "(1,0,3)", "(1,2,0)", "(0,0,0)"], answer: "(0,2,3)"},
-    {q: "The equation of plane passing through (1,1,1) and normal to i+j+k is:", options: ["x+y+z=3", "x+y+z=1", "x–y+z=1", "x+y–z=1"], answer: "x+y+z=3"},
-    {q: "If a line has direction ratios l, m, n, then l² + m² + n² =", options: ["1", "0", "2", "3"], answer: "1"},
-    {q: "The distance between (a,b,c) and (0,0,0) is:", options: ["√(a²+b²+c²)", "a+b+c", "abc", "a²+b²+c²"], answer: "√(a²+b²+c²)"},
-    {q: "The plane x=2 is parallel to:", options: ["yz-plane", "xy-plane", "xz-plane", "None"}, answer: "yz-plane"},
-    {q: "Equation of plane passing through three points can be found using:", options: ["Determinant", "Matrix", "Dot product", "Cross product"], answer: "Determinant"},
-    {q: "Equation of a line passing through A(1,0,0) and B(0,1,0) is:", options: ["r = (1,0,0) + λ(–1,1,0)", "r = (0,1,0) + λ(1,–1,0)", "r = (1,0,0) + λ(1,1,0)", "r = (0,0,1) + λ(1,1,0)"], answer: "r = (1,0,0) + λ(–1,1,0)"},
-    {q: "The equation of xy-plane is:", options: ["z=0", "x=0", "y=0", "x=y"}, answer: "z=0"},
-    {q: "If a sphere has center (0,0,0) and radius r, its equation is:", options: ["x²+y²+z²=r²", "x²+y²=r²", "x²=z²", "y²+z²=r²"], answer: "x²+y²+z²=r²"},
-    {q: "The angle between two lines with direction ratios l₁, m₁, n₁ and l₂, m₂, n₂ is:", options: ["cos⁻¹((l₁l₂+m₁m₂+n₁n₂)/(|a||b|))", "sin⁻¹(l₁l₂+m₁m₂+n₁n₂)", "tan⁻¹(l₁l₂+m₁m₂+n₁n₂)", "cos⁻¹(l₁+l₂+m₁+m₂+n₁+n₂)"], answer: "cos⁻¹((l₁l₂+m₁m₂+n₁n₂)/(|a||b|))"},
-    {q: "The equation of a plane perpendicular to the x-axis is:", options: ["x=a", "y=a", "z=a", "x+y=a"], answer: "x=a"}
-  ]
-},
-
-// Chapter 12: Linear Programming
-{
-  title: "Linear Programming - Quiz 1",
-  questions: [
-    {q: "The objective function in LPP is usually:", options: ["Maximized or minimized", "Always maximized", "Always minimized", "Neither"}, answer: "Maximized or minimized"},
-    {q: "A feasible region of an LPP is:", options: ["Set of all possible solutions", "Objective function", "A constraint", "None"}, answer: "Set of all possible solutions"},
-    {q: "If an LPP has more than one optimal solution, it is called:", options: ["Multiple solution", "Unique solution", "No solution", "Feasible solution"], answer: "Multiple solution"},
-    {q: "The solution which satisfies all constraints is:", options: ["Feasible solution", "Optimal solution", "Basic solution", "None"}, answer: "Feasible solution"},
-    {q: "A solution which optimizes the objective function is called:", options: ["Optimal solution", "Basic solution", "Feasible solution", "None"}, answer: "Optimal solution"},
-    {q: "The graphical method of LPP is used when there are:", options: ["Two variables", "Three variables", "One variable", "None"}, answer: "Two variables"},
-    {q: "A constraint in LPP is of the form:", options: ["Linear inequality", "Nonlinear equation", "Logarithmic", "Exponential"], answer: "Linear inequality"},
-    {q: "The corner points of the feasible region are called:", options: ["Vertices", "Edges", "Faces", "Centers"], answer: "Vertices"},
-    {q: "The region that satisfies all constraints and non-negativity is:", options: ["Feasible region", "Empty set", "Infeasible region", "None"], answer: "Feasible region"},
-    {q: "If the feasible region is unbounded, the optimal solution may:", options: ["Not exist", "Always exist", "Be unique", "Be zero"], answer: "Not exist"},
-    {q: "A solution that does not satisfy at least one constraint is:", options: ["Infeasible", "Feasible", "Optimal", "Basic"], answer: "Infeasible"},
-    {q: "The constraints x ≥ 0, y ≥ 0 are called:", options: ["Non-negativity", "Redundant", "Basic", "None"}, answer: "Non-negativity"},
-    {q: "The graphical solution lies at:", options: ["Corner points", "Midpoints", "Edges", "Centers"], answer: "Corner points"},
-    {q: "The region of intersection of all constraints is:", options: ["Feasible region", "Solution space", "Optimal region", "None"], answer: "Feasible region"},
-    {q: "If two constraints are parallel, the feasible region is:", options: ["Unbounded or zero", "Always bounded", "Always unbounded", "Rectangular"], answer: "Unbounded or zero"}
-  ]
-},
-{
-  title: "Linear Programming - Quiz 2",
-  questions: [
-    {q: "The number of corner points of a bounded feasible region is:", options: ["Finite", "Infinite", "Zero", "One"], answer: "Finite"},
-    {q: "The solution to an LPP is always at:", options: ["Corner point", "Midpoint", "Edge", "Face"], answer: "Corner point"},
-    {q: "If the feasible region is empty, the LPP has:", options: ["No solution", "Unique solution", "Infinite solutions", "Multiple solutions"], answer: "No solution"},
-    {q: "If the constraints are inconsistent, the LPP is:", options: ["Infeasible", "Feasible", "Unbounded", "Bounded"], answer: "Infeasible"},
-    {q: "If the feasible region is unbounded and the objective function is maximized, the value may be:", options: ["Infinite", "Finite", "Zero", "Negative"], answer: "Infinite"},
-    {q: "A redundant constraint does not affect:", options: ["Feasible region", "Objective function", "Corner points", "None"}, answer: "Feasible region"},
-    {q: "If all constraints are linear, the problem is a:", options: ["Linear programming problem", "Nonlinear programming problem", "Quadratic programming", "None"], answer: "Linear programming problem"},
-    {q: "If the feasible region is a single point, the LPP has:", options: ["Unique solution", "No solution", "Infinite solutions", "Multiple solutions"], answer: "Unique solution"},
-    {q: "The feasible region for an LPP is always:", options: ["Convex", "Concave", "Non-convex", "Empty"], answer: "Convex"},
-    {q: "If the objective function is parallel to a constraint, then:", options: ["Multiple optima may exist", "Unique optimum", "No optimum", "None"}, answer: "Multiple optima may exist"},
-    {q: "If x ≥ 0 and y ≥ 0, the feasible region lies:", options: ["First quadrant", "Second quadrant", "Third quadrant", "Fourth quadrant"], answer: "First quadrant"},
-    {q: "If the feasible region is unbounded, there may be:", options: ["No optimum", "Unique optimum", "Multiple optima", "None"}, answer: "No optimum"},
-    {q: "The value of the objective function at the optimum point is called:", options: ["Optimal value", "Basic value", "Feasible value", "None"}, answer: "Optimal value"},
-    {q: "An optimal solution may occur at:", options: ["More than one corner", "No corner", "Only one corner", "None"}, answer: "More than one corner"},
-    {q: "If the constraints are all satisfied, the point is:", options: ["Feasible", "Infeasible", "Optimal", "None"}, answer: "Feasible"}
-  ]
-},
-
-// Chapter 13: Probability
-{
-  title: "Probability - Quiz 1",
-  questions: [
-    {q: "The probability of a sure event is:", options: ["1", "0", "0.5", "Infinite"], answer: "1"},
-    {q: "The probability of an impossible event is:", options: ["0", "1", "0.5", "Infinite"], answer: "0"},
-    {q: "If A and B are mutually exclusive, then P(A ∩ B) =", options: ["0", "1", "P(A)", "P(B)"], answer: "0"},
-    {q: "If two events are independent, P(A ∩ B) =", options: ["P(A)·P(B)", "P(A)+P(B)", "P(A)–P(B)", "P(A)/P(B)"], answer: "P(A)·P(B)"},
-    {q: "The probability of getting a head when tossing a fair coin is:", options: ["1/2", "1/3", "1/4", "1"], answer: "1/2"},
-    {q: "If a die is thrown once, probability of getting 2 is:", options: ["1/6", "1/2", "2/6", "1/3"], answer: "1/6"},
-    {q: "If P(A) = 0.7, P(B) = 0.5, P(A ∩ B) = 0.2, then P(A ∪ B) =", options: ["1.0", "0.7", "0.5", "0.9"], answer: "1.0"},
-    {q: "If A and B are independent, then:", options: ["P(A ∩ B) = P(A)·P(B)", "P(A ∪ B) = P(A)·P(B)", "P(A) = P(B)", "P(A) = 1–P(B)"], answer: "P(A ∩ B) = P(A)·P(B)"},
-    {q: "The sum of probabilities of all possible outcomes is:", options: ["1", "0", "Infinite", "0.5"], answer: "1"},
-    {q: "Conditional probability P(A|B) is:", options: ["P(A ∩ B)/P(B)", "P(A)/P(B)", "P(A ∪ B)/P(B)", "P(B)/P(A)"], answer: "P(A ∩ B)/P(B)"},
-    {q: "If a card is drawn from a deck, probability of ace is:", options: ["1/13", "1/52", "4/13", "1/4"], answer: "1/13"},
-    {q: "The probability of an event E lies between:", options: ["0 and 1", "1 and 2", "–1 and 1", "0 and 2"], answer: "0 and 1"},
-    {q: "If P(A) = 0.4, P(B) = 0.6, P(A ∩ B) = 0.1, then P(A ∪ B) =", options: ["0.9", "0.7", "0.6", "1"], answer: "0.9"},
-    {q: "If a die is thrown, probability of getting an even number is:", options: ["1/2", "1/3", "1/6", "2/3"], answer: "1/2"},
-    {q: "The probability of at least one head in two coin tosses is:", options: ["3/4", "1/2", "1/4", "1"], answer: "3/4"}
-  ]
-},
-{
-  title: "Probability - Quiz 2",
-  questions: [
-    {q: "If a number is selected from 1 to 10, probability it is even is:", options: ["1/2", "2/5", "1/3", "3/5"], answer: "1/2"},
-    {q: "If A and B are independent, then P(A|B) =", options: ["P(A)", "P(B)", "0", "1"], answer: "P(A)"},
-    {q: "If two dice are thrown, probability that sum is 7 is:", options: ["1/6", "1/12", "1/36", "1/18"], answer: "1/6"},
-    {q: "If P(A) = 1, then event A is:", options: ["Certain", "Impossible", "Likely", "Unlikely"], answer: "Certain"},
-    {q: "If a card is drawn, probability of king or queen is:", options: ["2/13", "1/13", "1/26", "4/13"], answer: "2/13"},
-    {q: "Probability of drawing a red card from a deck is:", options: ["1/2", "1/4", "1/13", "1/26"], answer: "1/2"},
-    {q: "If events are equally likely, the probability of each is:", options: ["1/n", "n", "1", "0"], answer: "1/n"},
-    {q: "If P(A) = 0, then event A is:", options: ["Impossible", "Certain", "Likely", "Independent"], answer: "Impossible"},
-    {q: "If a die is thrown, probability of number greater than 4 is:", options: ["1/3", "1/2", "1/6", "2/3"], answer: "1/3"},
-    {q: "Probability of at least one tail in two coin tosses is:", options: ["3/4", "1/2", "1/4", "1"], answer: "3/4"},
-    {q: "Probability that a randomly chosen day is a Sunday is:", options: ["1/7", "1/30", "1/12", "1/365"], answer: "1/7"},
-    {q: "If P(A) = 0.3, P(B) = 0.5, and A, B mutually exclusive, P(A ∪ B) =", options: ["0.8", "0.15", "0.3", "0.5"], answer: "0.8"},
-    {q: "If a card is drawn, probability it is not a spade is:", options: ["3/4", "1/4", "1/2", "1/3"], answer: "3/4"},
-    {q: "If P(A) = 0.6, P(B) = 0.7, P(A ∩ B) = 0.5, then P(A ∪ B) =", options: ["0.8", "1.3", "1.1", "0.9"], answer: "0.8"},
-    {q: "Probability of getting a multiple of 3 when rolling a die is:", options: ["1/3", "1/2", "1/6", "2/3"], answer: "1/3"}
-  ]
-}
-],
-biology: [
-// Chapter 1: Reproduction in Organisms
+   }
+ ],
+Biology: [
 {
   title: "Reproduction in Organisms - Quiz 1",
   questions: [
@@ -17593,8 +14824,6 @@ biology: [
     {q: "Which animal shows budding?", options: ["Hydra", "Amoeba", "Frog", "Earthworm"], answer: "Hydra"}
   ]
 },
-
-// Chapter 2: Sexual Reproduction in Flowering Plants
 {
   title: "Sexual Reproduction in Flowering Plants - Quiz 1",
   questions: [
@@ -17635,7 +14864,6 @@ biology: [
     {q: "The fusion of male gamete with secondary nucleus is called:", options: ["Triple fusion", "Syngamy", "Autogamy", "Geitonogamy"], answer: "Triple fusion"}
   ]
 },
-// Chapter 3: Human Reproduction
 {
   title: "Human Reproduction - Quiz 1",
   questions: [
@@ -17676,8 +14904,6 @@ biology: [
     {q: "The hormone required for parturition is:", options: ["Oxytocin", "Prolactin", "FSH", "LH"], answer: "Oxytocin"}
   ]
 },
-
-// Chapter 4: Reproductive Health
 {
   title: "Reproductive Health - Quiz 1",
   questions: [
@@ -17718,7 +14944,6 @@ biology: [
     {q: "A couple is said to be infertile if they cannot conceive after:", options: ["One year", "Six months", "Two years", "Three years"], answer: "One year"}
   ]
 },
-// Chapter 5: Principles of Inheritance and Variation
 {
   title: "Principles of Inheritance and Variation - Quiz 1",
   questions: [
@@ -17759,8 +14984,6 @@ biology: [
     {q: "The process by which mRNA is formed from DNA is called:", options: ["Transcription", "Translation", "Replication", "Transformation"], answer: "Transcription"}
   ]
 },
-
-// Chapter 6: Molecular Basis of Inheritance
 {
   title: "Molecular Basis of Inheritance - Quiz 1",
   questions: [
@@ -17801,7 +15024,6 @@ biology: [
     {q: "The process by which mRNA is formed is:", options: ["Transcription", "Translation", "Replication", "Transduction"], answer: "Transcription"}
   ]
 },
-// Chapter 7: Evolution
 {
   title: "Evolution - Quiz 1",
   questions: [
@@ -17842,8 +15064,6 @@ biology: [
     {q: "The first amphibians evolved from:", options: ["Fishes", "Reptiles", "Birds", "Mammals"], answer: "Fishes"}
   ]
 },
-
-// Chapter 8: Human Health and Disease
 {
   title: "Human Health and Disease - Quiz 1",
   questions: [
@@ -17884,7 +15104,6 @@ biology: [
     {q: "Which is not a vector-borne disease?", options: ["Tetanus", "Malaria", "Filariasis", "Kala-azar"], answer: "Tetanus"}
   ]
 },
-// Chapter 9: Microbes in Human Welfare
 {
   title: "Microbes in Human Welfare - Quiz 1",
   questions: [
@@ -17925,8 +15144,6 @@ biology: [
     {q: "Which is not a use of microbes?", options: ["Plastic production", "Food industry", "Medicine", "Waste treatment"], answer: "Plastic production"}
   ]
 },
-
-// Chapter 10: Biotechnology: Principles and Processes
 {
   title: "Biotechnology: Principles and Processes - Quiz 1",
   questions: [
@@ -17967,50 +15184,116 @@ biology: [
     {q: "In PCR, the region to be amplified is specified by:", options: ["Primers", "Enzymes", "Ligase", "dNTPs"], answer: "Primers"}
   ]
 },
-// Chapter 11: Biotechnology and Its Applications
 {
-  title: "Biotechnology and Its Applications - Quiz 1",
-  questions: [
-    {q: "Golden rice is rich in:", options: ["Vitamin A", "Vitamin C", "Iron", "Protein"], answer: "Vitamin A"},
-    {q: "Bt cotton is resistant to:", options: ["Insect pests", "Fungal diseases", "Herbicides", "Viral diseases"], answer: "Insect pests"},
-    {q: "Insulin produced by recombinant DNA technology is called:", options: ["Humulin", "Humin", "Humalog", "Insogen"], answer: "Humulin"},
-    {q: "The first transgenic animal produced was:", options: ["Mouse", "Cow", "Sheep", "Goat"], answer: "Mouse"},
-    {q: "Gene therapy is used to treat:", options: ["Genetic disorders", "Cancer", "Infections", "Malnutrition"], answer: "Genetic disorders"},
-    {q: "The technique of inserting a gene into an organism is called:", options: ["Genetic engineering", "Tissue culture", "Hybridization", "Mutation breeding"], answer: "Genetic engineering"},
-    {q: "Herbicide resistant plants are produced by:", options: ["Genetic modification", "Cloning", "Mutation", "Crossing"], answer: "Genetic modification"},
-    {q: "Cry genes are obtained from:", options: ["Bacillus thuringiensis", "Agrobacterium", "E. coli", "Rhizobium"], answer: "Bacillus thuringiensis"},
-    {q: "Transgenic animals are used for:", options: ["All of these", "Vaccine safety", "Biological products", "Disease models"], answer: "All of these"},
-    {q: "The first clinical gene therapy was given for:", options: ["ADA deficiency", "Sickle cell anemia", "Cystic fibrosis", "Haemophilia"], answer: "ADA deficiency"},
-    {q: "The process of making a genetically identical copy is called:", options: ["Cloning", "Mutation", "Selection", "Recombination"], answer: "Cloning"},
-    {q: "Which is an example of a genetically modified crop?", options: ["Bt cotton", "Wheat", "Rice", "Tomato"}, answer: "Bt cotton"},
-    {q: "Which enzyme is used to cut DNA at specific sites?", options: ["Restriction enzyme", "Ligase", "Polymerase", "Transcriptase"], answer: "Restriction enzyme"},
-    {q: "The term 'biopiracy' refers to:", options: ["Exploitation of biological resources", "Genetic modification", "Gene therapy", "Tissue culture"], answer: "Exploitation of biological resources"},
-    {q: "Transgenic cows produce milk containing:", options: ["Human proteins", "Only cow proteins", "Vitamins", "Insulin"], answer: "Human proteins"}
-  ]
-},
-{
-  title: "Biotechnology and Its Applications - Quiz 2",
-  questions: [
-    {q: "Which is not a transgenic plant?", options: ["Wheat", "Golden rice", "Bt cotton", "Flavr Savr tomato"], answer: "Wheat"},
-    {q: "Flavr Savr tomato was genetically engineered for:", options: ["Delayed ripening", "High vitamin A", "Drought resistance", "Salt tolerance"], answer: "Delayed ripening"},
-    {q: "Which protein is produced in transgenic sheep Rosie?", options: ["Alpha-1-antitrypsin", "Insulin", "Interferon", "Factor VIII"], answer: "Alpha-1-antitrypsin"},
-    {q: "RNA interference (RNAi) is used for:", options: ["Gene silencing", "Gene amplification", "Gene expression", "Gene mutation"], answer: "Gene silencing"},
-    {q: "Which vector is used to create transgenic plants?", options: ["Ti plasmid", "F factor", "Lambda phage", "Cosmid"], answer: "Ti plasmid"},
-    {q: "Golden rice helps to prevent:", options: ["Night blindness", "Diabetes", "Goiter", "Scurvy"], answer: "Night blindness"},
-    {q: "Bt toxin is not toxic to humans because:", options: ["Activated only in alkaline gut of insects", "Humans have acidic stomach", "Humans lack the receptor", "All of these"], answer: "All of these"},
-    {q: "Gene therapy is used to treat:", options: ["Genetic disorders", "Viral infections", "Bacterial infections", "Fungal diseases"], answer: "Genetic disorders"},
-    {q: "Transgenic animals can be used to produce:", options: ["All of these", "Medicines", "Vaccines", "Nutritional supplements"], answer: "All of these"},
-    {q: "The first genetically engineered insulin was produced in:", options: ["1983", "1973", "1990", "2000"], answer: "1983"},
-    {q: "Transgenic rats are used for:", options: ["Studying diseases", "Producing milk", "Producing eggs", "Producing wool"], answer: "Studying diseases"},
-    {q: "Which of the following is a biopesticide?", options: ["Bt toxin", "Penicillin", "Streptomycin", "Cyclosporin"], answer: "Bt toxin"},
-    {q: "Gene knockout technique is used for:", options: ["Studying gene function", "Gene cloning", "Gene therapy", "Gene expression"], answer: "Studying gene function"},
-    {q: "Which is not a benefit of GM crops?", options: ["Increase in genetic diversity", "Pest resistance", "Increased yield", "Reduced chemical use"], answer: "Increase in genetic diversity"},
-    {q: "Which country was the first to approve GM crops for commercial use?", options: ["USA", "India", "China", "Brazil"], answer: "USA"}
-  ]
-},
+    title: "Biotechnology and its Applications",
+    questions: [
+        { q: "What is biotechnology?", options: [
+            "Use of living organisms to make products",
+            "Study of plants only",
+            "Study of computers",
+            "Use of chemicals in farming"
+        ], answer: "Use of living organisms to make products" },
 
-// Chapter 12: Organisms and Populations
-{
+        { q: "Who is considered the father of genetic engineering?", options: [
+            "Paul Berg",
+            "Gregor Mendel",
+            "Charles Darwin",
+            "Louis Pasteur"
+        ], answer: "Paul Berg" },
+
+        { q: "Bt cotton is an example of:", options: [
+            "Genetically modified crop",
+            "Hybrid variety",
+            "Organic crop",
+            "Medicinal plant"
+        ], answer: "Genetically modified crop" },
+
+        { q: "Golden rice is rich in:", options: [
+            "Vitamin A",
+            "Vitamin B",
+            "Iron",
+            "Protein"
+        ], answer: "Vitamin A" },
+
+        { q: "Which enzyme is used to cut DNA at specific sites?", options: [
+            "Restriction enzyme",
+            "DNA polymerase",
+            "Ligase",
+            "Helicase"
+        ], answer: "Restriction enzyme" },
+
+        { q: "The first transgenic animal was a:", options: [
+            "Mouse",
+            "Cow",
+            "Dog",
+            "Sheep"
+        ], answer: "Mouse" },
+
+        { q: "What is gene therapy?", options: [
+            "Treatment of genetic disorders by introducing genes",
+            "Gene cloning",
+            "Gene deletion",
+            "Gene mutation"
+        ], answer: "Treatment of genetic disorders by introducing genes" },
+
+        { q: "Insulin produced using recombinant DNA technology is called:", options: [
+            "Humulin",
+            "Insogen",
+            "Biosulin",
+            "Novolin"
+        ], answer: "Humulin" },
+
+        { q: "Which organism is the source of Bt toxin gene?", options: [
+            "Bacillus thuringiensis",
+            "Agrobacterium tumefaciens",
+            "Rhizobium",
+            "Clostridium"
+        ], answer: "Bacillus thuringiensis" },
+
+        { q: "The process of making copies of a gene is called:", options: [
+            "Gene cloning",
+            "Gene mapping",
+            "Gene therapy",
+            "Gene sequencing"
+        ], answer: "Gene cloning" },
+
+        { q: "RNA interference (RNAi) is used for:", options: [
+            "Gene silencing",
+            "Gene amplification",
+            "Gene duplication",
+            "Gene expression"
+        ], answer: "Gene silencing" },
+
+        { q: "Which protein is produced by transgenic sheep Rosie?", options: [
+            "Alpha-1-antitrypsin",
+            "Insulin",
+            "Interferon",
+            "Hemoglobin"
+        ], answer: "Alpha-1-antitrypsin" },
+
+        { q: "The term 'biopiracy' refers to:", options: [
+            "Exploitation of biological resources without permission",
+            "Piracy in biological data",
+            "Illegal fishing",
+            "Biological warfare"
+        ], answer: "Exploitation of biological resources without permission" },
+
+        { q: "Which of the following is not a genetically modified organism?", options: [
+            "Wheat",
+            "Bt cotton",
+            "Golden rice",
+            "Flavr Savr tomato"
+        ], answer: "Wheat" },
+
+        { q: "Which Indian committee regulates GMOs?", options: [
+            "GEAC",
+            "WHO",
+            "FAO",
+            "UNESCO"
+        ], answer: "GEAC" }
+    ]
+},
+ {
   title: "Organisms and Populations - Quiz 1",
   questions: [
     {q: "The study of interactions among organisms and their environment is:", options: ["Ecology", "Taxonomy", "Genetics", "Evolution"], answer: "Ecology"},
@@ -18050,131 +15333,1976 @@ biology: [
     {q: "In a food chain, the population at the top is:", options: ["Least", "Greatest", "Equal to producers", "Equal to herbivores"], answer: "Least"}
   ]
 },
-// Chapter 13: Ecosystem
 {
-  title: "Ecosystem - Quiz 1",
-  questions: [
-    {q: "The functional unit of nature is:", options: ["Ecosystem", "Population", "Community", "Biome"], answer: "Ecosystem"},
-    {q: "Energy flow in an ecosystem is:", options: ["Unidirectional", "Cyclic", "Bidirectional", "None"}, answer: "Unidirectional"},
-    {q: "The rate of formation of new organic matter by producers is:", options: ["Primary productivity", "Secondary productivity", "Gross productivity", "Net productivity"], answer: "Primary productivity"},
-    {q: "Pyramid of energy is always:", options: ["Upright", "Inverted", "Linear", "Irregular"], answer: "Upright"},
-    {q: "Which is an example of a detritivore?", options: ["Earthworm", "Cow", "Tiger", "Eagle"], answer: "Earthworm"},
-    {q: "The reservoir of nitrogen is:", options: ["Atmosphere", "Ocean", "Soil", "Living organisms"], answer: "Atmosphere"},
-    {q: "The process of conversion of ammonia to nitrate is:", options: ["Nitrification", "Ammonification", "Assimilation", "Denitrification"], answer: "Nitrification"},
-    {q: "The major source of energy in an ecosystem is:", options: ["Sun", "Moon", "Wind", "Soil"], answer: "Sun"},
-    {q: "Which of the following is a secondary consumer?", options: ["Frog", "Grass", "Grasshopper", "Snake"], answer: "Frog"},
-    {q: "The process of decomposition is fastest in:", options: ["Tropical rainforest", "Desert", "Tundra", "Ocean"], answer: "Tropical rainforest"},
-    {q: "The pyramid of biomass in sea is:", options: ["Inverted", "Upright", "Linear", "Irregular"], answer: "Inverted"},
-    {q: "The percentage of energy transferred from one trophic level to the next is approximately:", options: ["10%", "1%", "50%", "90%"], answer: "10%"},
-    {q: "The total amount of living material in an area at a given time is:", options: ["Standing crop", "Primary production", "Net production", "Biomass"], answer: "Standing crop"},
-    {q: "Which is not a pathway of the carbon cycle?", options: ["Denitrification", "Photosynthesis", "Respiration", "Decomposition"], answer: "Denitrification"},
-    {q: "The main decomposers in an ecosystem are:", options: ["Bacteria and fungi", "Plants", "Animals", "Protozoa"], answer: "Bacteria and fungi"}
-  ]
+    title: "Ecosystem - Quiz 1",
+    questions: [
+        { q: "The functional unit of nature is:", options: ["Ecosystem", "Population", "Community", "Biome"], answer: "Ecosystem" },
+        { q: "Energy flow in an ecosystem is:", options: ["Unidirectional", "Cyclic", "Bidirectional", "None"], answer: "Unidirectional" },
+        { q: "The rate of formation of new organic matter by producers is:", options: ["Primary productivity", "Secondary productivity", "Gross productivity", "Net productivity"], answer: "Primary productivity" },
+        { q: "Pyramid of energy is always:", options: ["Upright", "Inverted", "Linear", "Irregular"], answer: "Upright" },
+        { q: "Which is an example of a detritivore?", options: ["Earthworm", "Cow", "Tiger", "Eagle"], answer: "Earthworm" },
+        { q: "The reservoir of nitrogen is:", options: ["Atmosphere", "Ocean", "Soil", "Living organisms"], answer: "Atmosphere" },
+        { q: "The process of conversion of ammonia to nitrate is:", options: ["Nitrification", "Ammonification", "Assimilation", "Denitrification"], answer: "Nitrification" },
+        { q: "The major source of energy in an ecosystem is:", options: ["Sun", "Moon", "Wind", "Soil"], answer: "Sun" },
+        { q: "Which of the following is a secondary consumer?", options: ["Frog", "Grass", "Grasshopper", "Snake"], answer: "Frog" },
+        { q: "The process of decomposition is fastest in:", options: ["Tropical rainforest", "Desert", "Tundra", "Ocean"], answer: "Tropical rainforest" },
+        { q: "The pyramid of biomass in sea is:", options: ["Inverted", "Upright", "Linear", "Irregular"], answer: "Inverted" },
+        { q: "The percentage of energy transferred from one trophic level to the next is approximately:", options: ["10%", "1%", "50%", "90%"], answer: "10%" },
+        { q: "The total amount of living material in an area at a given time is:", options: ["Standing crop", "Primary production", "Net production", "Biomass"], answer: "Standing crop" },
+        { q: "Which is not a pathway of the carbon cycle?", options: ["Denitrification", "Photosynthesis", "Respiration", "Decomposition"], answer: "Denitrification" },
+        { q: "The main decomposers in an ecosystem are:", options: ["Bacteria and fungi", "Plants", "Animals", "Protozoa"], answer: "Bacteria and fungi" }
+    ]
 },
 {
-  title: "Ecosystem - Quiz 2",
-  questions: [
-    {q: "The largest reservoir of carbon is:", options: ["Oceans", "Atmosphere", "Forest", "Soil"], answer: "Oceans"},
-    {q: "Which is not a biotic component?", options: ["Water", "Plants", "Animals", "Decomposers"], answer: "Water"},
-    {q: "The pyramid of numbers in grassland ecosystem is:", options: ["Upright", "Inverted", "Linear", "Irregular"], answer: "Upright"},
-    {q: "Which process adds carbon dioxide to the atmosphere?", options: ["Respiration", "Photosynthesis", "Transpiration", "Assimilation"], answer: "Respiration"},
-    {q: "The organisms at the base of the food chain are:", options: ["Producers", "Primary consumers", "Secondary consumers", "Decomposers"], answer: "Producers"},
-    {q: "The breakdown of detritus into smaller particles by detritivores is called:", options: ["Fragmentation", "Mineralization", "Leaching", "Catabolism"], answer: "Fragmentation"},
-    {q: "Which is not a function of ecosystem?", options: ["Photosynthesis", "Respiration", "Vision", "Decomposition"], answer: "Vision"},
-    {q: "The primary consumers in a pond ecosystem are:", options: ["Zooplankton", "Phytoplankton", "Fish", "Benthos"], answer: "Zooplankton"},
-    {q: "In an aquatic ecosystem, the biomass pyramid is:", options: ["Inverted", "Upright", "Linear", "Irregular"], answer: "Inverted"},
-    {q: "The decomposers convert organic matter into:", options: ["Inorganic nutrients", "Energy", "Proteins", "Carbohydrates"], answer: "Inorganic nutrients"},
-    {q: "The biotic component which feeds on both plants and animals is:", options: ["Omnivore", "Herbivore", "Carnivore", "Producer"], answer: "Omnivore"},
-    {q: "The process by which water returns to the atmosphere from plants is:", options: ["Transpiration", "Evaporation", "Precipitation", "Condensation"], answer: "Transpiration"},
-    {q: "The transfer of energy from one trophic level to the next is called:", options: ["Energy flow", "Biomass transfer", "Biochemical cycling", "Food web"], answer: "Energy flow"},
-    {q: "The amount of energy trapped by producers is called:", options: ["Gross primary productivity", "Net primary productivity", "Secondary productivity", "Standing crop"], answer: "Gross primary productivity"},
-    {q: "The main source of energy for ecosystem is:", options: ["Sunlight", "Wind", "Water", "Coal"], answer: "Sunlight"}
-  ]
-},
-
-// Chapter 14: Biodiversity and Conservation
-{
-  title: "Biodiversity and Conservation - Quiz 1",
-  questions: [
-    {q: "The term biodiversity was coined by:", options: ["Walter G. Rosen", "Charles Darwin", "E.O. Wilson", "Linnaeus"], answer: "Walter G. Rosen"},
-    {q: "India is a mega diversity center because of:", options: ["High species richness", "Low rainfall", "Large size", "None"}, answer: "High species richness"},
-    {q: "The most species-rich taxonomic group is:", options: ["Insects", "Mammals", "Birds", "Reptiles"], answer: "Insects"},
-    {q: "The number of biodiversity hotspots in the world is:", options: ["36", "10", "8", "25"], answer: "36"},
-    {q: "Sacred groves are important for:", options: ["Conservation of biodiversity", "Deforestation", "Mining", "Agriculture"], answer: "Conservation of biodiversity"},
-    {q: "The Red Data Book is published by:", options: ["IUCN", "WHO", "UNEP", "WWF"], answer: "IUCN"},
-    {q: "Ex situ conservation involves:", options: ["Conservation outside natural habitat", "In natural habitat", "Forest reserves", "Sacred groves"], answer: "Conservation outside natural habitat"},
-    {q: "The biosphere reserve is a type of:", options: ["Protected area", "Agricultural land", "Urban area", "Industrial area"], answer: "Protected area"},
-    {q: "The main cause of extinction of species is:", options: ["Habitat loss", "Overgrazing", "Pollution", "Flood"], answer: "Habitat loss"},
-    {q: "The largest tiger reserve in India is:", options: ["Nagarjunsagar Srisailam", "Jim Corbett", "Kanha", "Sundarbans"], answer: "Nagarjunsagar Srisailam"},
-    {q: "The Western Ghats is a:", options: ["Biodiversity hotspot", "Desert", "Wetland", "Grassland"], answer: "Biodiversity hotspot"},
-    {q: "Which is not an ex situ conservation method?", options: ["National parks", "Botanical gardens", "Seed banks", "Zoological parks"], answer: "National parks"},
-    {q: "Hotspot concept was given by:", options: ["Norman Myers", "Walter Rosen", "E.O. Wilson", "Linnaeus"], answer: "Norman Myers"},
-    {q: "Chipko movement is related to:", options: ["Forest conservation", "River cleaning", "Air pollution", "Soil conservation"], answer: "Forest conservation"},
-    {q: "The World Wildlife Fund (WWF) is headquartered in:", options: ["Switzerland", "India", "USA", "France"], answer: "Switzerland"}
-  ]
+    title: "Ecosystem - Quiz 2",
+    questions: [
+        { q: "The largest reservoir of carbon is:", options: ["Oceans", "Atmosphere", "Forest", "Soil"], answer: "Oceans" },
+        { q: "Which is not a biotic component?", options: ["Water", "Plants", "Animals", "Decomposers"], answer: "Water" },
+        { q: "The pyramid of numbers in grassland ecosystem is:", options: ["Upright", "Inverted", "Linear", "Irregular"], answer: "Upright" },
+        { q: "Which process adds carbon dioxide to the atmosphere?", options: ["Respiration", "Photosynthesis", "Transpiration", "Assimilation"], answer: "Respiration" },
+        { q: "The organisms at the base of the food chain are:", options: ["Producers", "Primary consumers", "Secondary consumers", "Decomposers"], answer: "Producers" },
+        { q: "The breakdown of detritus into smaller particles by detritivores is called:", options: ["Fragmentation", "Mineralization", "Leaching", "Catabolism"], answer: "Fragmentation" },
+        { q: "Which is not a function of ecosystem?", options: ["Photosynthesis", "Respiration", "Vision", "Decomposition"], answer: "Vision" },
+        { q: "The primary consumers in a pond ecosystem are:", options: ["Zooplankton", "Phytoplankton", "Fish", "Benthos"], answer: "Zooplankton" },
+        { q: "In an aquatic ecosystem, the biomass pyramid is:", options: ["Inverted", "Upright", "Linear", "Irregular"], answer: "Inverted" },
+        { q: "The decomposers convert organic matter into:", options: ["Inorganic nutrients", "Energy", "Proteins", "Carbohydrates"], answer: "Inorganic nutrients" },
+        { q: "The biotic component which feeds on both plants and animals is:", options: ["Omnivore", "Herbivore", "Carnivore", "Producer"], answer: "Omnivore" },
+        { q: "The process by which water returns to the atmosphere from plants is:", options: ["Transpiration", "Evaporation", "Precipitation", "Condensation"], answer: "Transpiration" },
+        { q: "The transfer of energy from one trophic level to the next is called:", options: ["Energy flow", "Biomass transfer", "Biochemical cycling", "Food web"], answer: "Energy flow" },
+        { q: "The amount of energy trapped by producers is called:", options: ["Gross primary productivity", "Net primary productivity", "Secondary productivity", "Standing crop"], answer: "Gross primary productivity" },
+        { q: "The main source of energy for ecosystem is:", options: ["Sunlight", "Wind", "Water", "Coal"], answer: "Sunlight" }
+    ]
 },
 {
-  title: "Biodiversity and Conservation - Quiz 2",
-  questions: [
-    {q: "Which is not a type of protected area?", options: ["Agricultural field", "Biosphere reserve", "National park", "Wildlife sanctuary"], answer: "Agricultural field"},
-    {q: "The largest biodiversity hotspot in India is:", options: ["Eastern Himalayas", "Western Ghats", "Sundarbans", "Thar Desert"], answer: "Western Ghats"},
-    {q: "In situ conservation means:", options: ["On site conservation", "Off site conservation", "Seed bank", "Gene bank"], answer: "On site conservation"},
-    {q: "Which is not a cause of biodiversity loss?", options: ["Afforestation", "Habitat loss", "Pollution", "Over-exploitation"], answer: "Afforestation"},
-    {q: "Sacred groves are found in:", options: ["India", "Africa", "Australia", "USA"], answer: "India"},
-    {q: "Biodiversity hotspot is characterized by:", options: ["High endemism and high threat", "Low endemism", "No threat", "Low species richness"], answer: "High endemism and high threat"},
-    {q: "The Red Data Book provides information on:", options: ["Endangered species", "Medicinal plants", "Agricultural crops", "Pesticides"], answer: "Endangered species"},
-    {q: "Which is not an ex situ conservation site?", options: ["Wildlife sanctuary", "Seed bank", "Zoological park", "Botanical garden"], answer: "Wildlife sanctuary"},
-    {q: "Which is a global strategy for conservation?", options: ["Biosphere reserves", "Home gardens", "Kitchen gardens", "Farm ponds"], answer: "Biosphere reserves"},
-    {q: "The first biosphere reserve in India was:", options: ["Nilgiri", "Sundarbans", "Nanda Devi", "Gulf of Mannar"], answer: "Nilgiri"},
-    {q: "Which plant is protected in the Sunderbans?", options: ["Mangroves", "Teak", "Pine", "Neem"], answer: "Mangroves"},
-    {q: "The International Union for Conservation of Nature is abbreviated as:", options: ["IUCN", "UNEP", "WHO", "WWF"], answer: "IUCN"},
-    {q: "Which is not a mega diversity country?", options: ["Germany", "India", "Brazil", "Australia"], answer: "Germany"},
-    {q: "Which is an in situ conservation method?", options: ["National park", "Gene bank", "Seed bank", "Botanical garden"], answer: "National park"},
-    {q: "What does the Red Data Book list?", options: ["Endangered species", "Medicinal plants", "Crop plants", "Fungi"], answer: "Endangered species"}
-  ]
-},
-
-// Chapter 15: Environmental Issues
-{
-  title: "Environmental Issues - Quiz 1",
-  questions: [
-    {q: "Ozone layer is present in:", options: ["Stratosphere", "Troposphere", "Mesosphere", "Ionosphere"], answer: "Stratosphere"},
-    {q: "Acid rain is caused by:", options: ["SO2 and NOx", "CO2", "O2", "CH4"], answer: "SO2 and NOx"},
-    {q: "Greenhouse effect is due to increase in:", options: ["CO2", "O2", "N2", "SO2"], answer: "CO2"},
-    {q: "The major pollutant of Ganga river is:", options: ["Sewage", "Oil", "Plastic", "Heavy metals"], answer: "Sewage"},
-    {q: "The main cause of global warming is:", options: ["Increase in greenhouse gases", "Decrease in rainfall", "Deforestation", "Increase in population"], answer: "Increase in greenhouse gases"},
-    {q: "DDT is an example of:", options: ["Non-biodegradable pollutant", "Biodegradable pollutant", "Fertilizer", "Fungicide"], answer: "Non-biodegradable pollutant"},
-    {q: "Eutrophication is caused by:", options: ["Excess nutrients in water", "Acid rain", "Heavy metals", "Oil spills"], answer: "Excess nutrients in water"},
-    {q: "The main source of air pollution in cities is:", options: ["Automobiles", "Agriculture", "Forests", "Oceans"], answer: "Automobiles"},
-    {q: "The Montreal Protocol is associated with:", options: ["Ozone layer protection", "Global warming", "Acid rain", "Nuclear pollution"], answer: "Ozone layer protection"},
-    {q: "Which is not a greenhouse gas?", options: ["Oxygen", "Carbon dioxide", "Methane", "Nitrous oxide"], answer: "Oxygen"},
-    {q: "The main aim of Ganga Action Plan is:", options: ["Pollution control", "Irrigation", "Flood control", "Navigation"], answer: "Pollution control"},
-    {q: "The process of breaking down pollutants by living organisms is called:", options: ["Bioremediation", "Eutrophication", "Incineration", "Sedimentation"], answer: "Bioremediation"},
-    {q: "The pollutant responsible for Minamata disease is:", options: ["Mercury", "Lead", "Cadmium", "Arsenic"], answer: "Mercury"},
-    {q: "The gas responsible for Bhopal gas tragedy was:", options: ["Methyl isocyanate", "Chlorine", "Ammonia", "Sulphur dioxide"], answer: "Methyl isocyanate"},
-    {q: "The excessive use of fertilizers causes:", options: ["Water pollution", "Air pollution", "Noise pollution", "Thermal pollution"], answer: "Water pollution"}
-  ]
+    title: "Biodiversity and Conservation - Quiz 1",
+    questions: [
+        { q: "Who coined the term 'biodiversity'?", options: ["Walter G. Rosen", "Charles Darwin", "E.O. Wilson", "Linnaeus"], answer: "Walter G. Rosen" },
+        { q: "India is a mega diversity center because of:", options: ["High species richness", "Low rainfall", "Large size", "None"], answer: "High species richness" },
+        { q: "The most species-rich taxonomic group is:", options: ["Insects", "Mammals", "Birds", "Reptiles"], answer: "Insects" },
+        { q: "How many biodiversity hotspots are there in the world?", options: ["36", "10", "8", "25"], answer: "36" },
+        { q: "Sacred groves are important for:", options: ["Conservation of biodiversity", "Deforestation", "Mining", "Agriculture"], answer: "Conservation of biodiversity" },
+        { q: "The Red Data Book is published by:", options: ["IUCN", "WHO", "UNEP", "WWF"], answer: "IUCN" },
+        { q: "Ex situ conservation means:", options: ["Conservation outside natural habitat", "In natural habitat", "Forest reserves", "Sacred groves"], answer: "Conservation outside natural habitat" },
+        { q: "The biosphere reserve is a type of:", options: ["Protected area", "Agricultural land", "Urban area", "Industrial area"], answer: "Protected area" },
+        { q: "The main cause of extinction of species is:", options: ["Habitat loss", "Overgrazing", "Pollution", "Flood"], answer: "Habitat loss" },
+        { q: "The largest tiger reserve in India is:", options: ["Nagarjunsagar Srisailam", "Jim Corbett", "Kanha", "Sundarbans"], answer: "Nagarjunsagar Srisailam" },
+        { q: "The Western Ghats is a:", options: ["Biodiversity hotspot", "Desert", "Wetland", "Grassland"], answer: "Biodiversity hotspot" },
+        { q: "Which is not an ex situ conservation method?", options: ["National parks", "Botanical gardens", "Seed banks", "Zoological parks"], answer: "National parks" },
+        { q: "Hotspot concept was given by:", options: ["Norman Myers", "Walter Rosen", "E.O. Wilson", "Linnaeus"], answer: "Norman Myers" },
+        { q: "Chipko movement is related to:", options: ["Forest conservation", "River cleaning", "Air pollution", "Soil conservation"], answer: "Forest conservation" },
+        { q: "The World Wildlife Fund (WWF) is headquartered in:", options: ["Switzerland", "India", "USA", "France"], answer: "Switzerland" }
+    ]
 },
 {
-  title: "Environmental Issues - Quiz 2",
-  questions: [
-    {q: "Which is not a consequence of global warming?", options: ["Increase in rainfall", "Melting of polar ice", "Sea level rise", "Climate change"], answer: "Increase in rainfall"},
-    {q: "The main pollutant of thermal power plants is:", options: ["Fly ash", "Mercury", "Lead", "Oil"], answer: "Fly ash"},
-    {q: "The most abundant greenhouse gas is:", options: ["Carbon dioxide", "Methane", "Nitrous oxide", "Ozone"], answer: "Carbon dioxide"},
-    {q: "The process of removing particulate matter from exhaust gases is:", options: ["Electrostatic precipitator", "Incineration", "Filtration", "Sedimentation"], answer: "Electrostatic precipitator"},
-    {q: "The main cause of ozone depletion is:", options: ["CFCs", "CO2", "SO2", "NOx"], answer: "CFCs"},
-    {q: "Biomagnification is:", options: ["Increase in concentration of non-biodegradable substances", "Decrease in pollutants", "Increase in biodiversity", "Increase in oxygen"], answer: "Increase in concentration of non-biodegradable substances"},
-    {q: "The process of growing plants without soil is called:", options: ["Hydroponics", "Aeroponics", "Aquaponics", "Terracing"], answer: "Hydroponics"},
-    {q: "The main source of noise pollution in cities is:", options: ["Traffic", "Forests", "Rivers", "Mountains"], answer: "Traffic"},
-    {q: "The gas responsible for acid rain is:", options: ["Sulphur dioxide", "Oxygen", "Nitrogen", "Methane"], answer: "Sulphur dioxide"},
-    {q: "Which is a biodegradable pollutant?", options: ["Sewage", "DDT", "Plastic", "Lead"], answer: "Sewage"},
-    {q: "Ozone hole is maximum over:", options: ["Antarctica", "Arctic", "India", "Africa"], answer: "Antarctica"},
-    {q: "Which is not a water-borne disease?", options: ["Tuberculosis", "Cholera", "Typhoid", "Dysentery"], answer: "Tuberculosis"},
-    {q: "Noise pollution is measured in:", options: ["Decibels", "Hertz", "Watts", "Volts"], answer: "Decibels"},
-    {q: "Which is a renewable resource?", options: ["Solar energy", "Coal", "Petroleum", "Natural gas"], answer: "Solar energy"},
-    {q: "The main source of marine pollution is:", options: ["Oil spills", "Agriculture", "Mining", "Forestry"], answer: "Oil spills"}
-  ]
+    title: "Biodiversity and Conservation - Quiz 2",
+    questions: [
+        { q: "Which is not a type of protected area?", options: ["Agricultural field", "Biosphere reserve", "National park", "Wildlife sanctuary"], answer: "Agricultural field" },
+        { q: "The largest biodiversity hotspot in India is:", options: ["Eastern Himalayas", "Western Ghats", "Sundarbans", "Thar Desert"], answer: "Western Ghats" },
+        { q: "In situ conservation means:", options: ["On site conservation", "Off site conservation", "Seed bank", "Gene bank"], answer: "On site conservation" },
+        { q: "Which is not a cause of biodiversity loss?", options: ["Afforestation", "Habitat loss", "Pollution", "Over-exploitation"], answer: "Afforestation" },
+        { q: "Sacred groves are found in:", options: ["India", "Africa", "Australia", "USA"], answer: "India" },
+        { q: "Biodiversity hotspot is characterized by:", options: ["High endemism and high threat", "Low endemism", "No threat", "Low species richness"], answer: "High endemism and high threat" },
+        { q: "The Red Data Book provides information on:", options: ["Endangered species", "Medicinal plants", "Agricultural crops", "Pesticides"], answer: "Endangered species" },
+        { q: "Which is not an ex situ conservation site?", options: ["Wildlife sanctuary", "Seed bank", "Zoological park", "Botanical garden"], answer: "Wildlife sanctuary" },
+        { q: "Which is a global strategy for conservation?", options: ["Biosphere reserves", "Home gardens", "Kitchen gardens", "Farm ponds"], answer: "Biosphere reserves" },
+        { q: "The first biosphere reserve in India was:", options: ["Nilgiri", "Sundarbans", "Nanda Devi", "Gulf of Mannar"], answer: "Nilgiri" },
+        { q: "Which plant is protected in the Sunderbans?", options: ["Mangroves", "Teak", "Pine", "Neem"], answer: "Mangroves" },
+        { q: "The International Union for Conservation of Nature is abbreviated as:", options: ["IUCN", "UNEP", "WHO", "WWF"], answer: "IUCN" },
+        { q: "Which is not a mega diversity country?", options: ["Germany", "India", "Brazil", "Australia"], answer: "Germany" },
+        { q: "Which is an in situ conservation method?", options: ["National park", "Gene bank", "Seed bank", "Botanical garden"], answer: "National park" },
+        { q: "What does the Red Data Book list?", options: ["Endangered species", "Medicinal plants", "Crop plants", "Fungi"], answer: "Endangered species" }
+    ]
+},
+{
+    title: "Environmental Issues - Quiz 1",
+    questions: [
+        { q: "Ozone layer is present in:", options: ["Stratosphere", "Troposphere", "Mesosphere", "Ionosphere"], answer: "Stratosphere" },
+        { q: "Acid rain is caused by:", options: ["SO2 and NOx", "CO2", "O2", "CH4"], answer: "SO2 and NOx" },
+        { q: "Greenhouse effect is due to increase in:", options: ["CO2", "O2", "N2", "SO2"], answer: "CO2" },
+        { q: "The major pollutant of Ganga river is:", options: ["Sewage", "Oil", "Plastic", "Heavy metals"], answer: "Sewage" },
+        { q: "The main cause of global warming is:", options: ["Increase in greenhouse gases", "Decrease in rainfall", "Deforestation", "Increase in population"], answer: "Increase in greenhouse gases" },
+        { q: "DDT is an example of:", options: ["Non-biodegradable pollutant", "Biodegradable pollutant", "Fertilizer", "Fungicide"], answer: "Non-biodegradable pollutant" },
+        { q: "Eutrophication is caused by:", options: ["Excess nutrients in water", "Acid rain", "Heavy metals", "Oil spills"], answer: "Excess nutrients in water" },
+        { q: "The main source of air pollution in cities is:", options: ["Automobiles", "Agriculture", "Forests", "Oceans"], answer: "Automobiles" },
+        { q: "The Montreal Protocol is associated with:", options: ["Ozone layer protection", "Global warming", "Acid rain", "Nuclear pollution"], answer: "Ozone layer protection" },
+        { q: "Which is not a greenhouse gas?", options: ["Oxygen", "Carbon dioxide", "Methane", "Nitrous oxide"], answer: "Oxygen" },
+        { q: "The main aim of Ganga Action Plan is:", options: ["Pollution control", "Irrigation", "Flood control", "Navigation"], answer: "Pollution control" },
+        { q: "The process of breaking down pollutants by living organisms is called:", options: ["Bioremediation", "Eutrophication", "Incineration", "Sedimentation"], answer: "Bioremediation" },
+        { q: "The pollutant responsible for Minamata disease is:", options: ["Mercury", "Lead", "Cadmium", "Arsenic"], answer: "Mercury" },
+        { q: "The gas responsible for Bhopal gas tragedy was:", options: ["Methyl isocyanate", "Chlorine", "Ammonia", "Sulphur dioxide"], answer: "Methyl isocyanate" },
+        { q: "The excessive use of fertilizers causes:", options: ["Water pollution", "Air pollution", "Noise pollution", "Thermal pollution"], answer: "Water pollution" }
+    ]
+},
+{
+    title: "Environmental Issues - Quiz 2",
+    questions: [
+        { q: "Which is not a consequence of global warming?", options: ["Increase in rainfall", "Melting of polar ice", "Sea level rise", "Climate change"], answer: "Increase in rainfall" },
+        { q: "The main pollutant of thermal power plants is:", options: ["Fly ash", "Mercury", "Lead", "Oil"], answer: "Fly ash" },
+        { q: "The most abundant greenhouse gas is:", options: ["Carbon dioxide", "Methane", "Nitrous oxide", "Ozone"], answer: "Carbon dioxide" },
+        { q: "The process of removing particulate matter from exhaust gases is:", options: ["Electrostatic precipitator", "Incineration", "Filtration", "Sedimentation"], answer: "Electrostatic precipitator" },
+        { q: "The main cause of ozone depletion is:", options: ["CFCs", "CO2", "SO2", "NOx"], answer: "CFCs" },
+        { q: "Biomagnification is:", options: ["Increase in concentration of non-biodegradable substances", "Decrease in pollutants", "Increase in biodiversity", "Increase in oxygen"], answer: "Increase in concentration of non-biodegradable substances" },
+        { q: "The process of growing plants without soil is called:", options: ["Hydroponics", "Aeroponics", "Aquaponics", "Terracing"], answer: "Hydroponics" },
+        { q: "The main source of noise pollution in cities is:", options: ["Traffic", "Forests", "Rivers", "Mountains"], answer: "Traffic" },
+        { q: "The gas responsible for acid rain is:", options: ["Sulphur dioxide", "Oxygen", "Nitrogen", "Methane"], answer: "Sulphur dioxide" },
+        { q: "Which is a biodegradable pollutant?", options: ["Sewage", "DDT", "Plastic", "Lead"], answer: "Sewage" },
+        { q: "Ozone hole is maximum over:", options: ["Antarctica", "Arctic", "India", "Africa"], answer: "Antarctica" },
+        { q: "Which is not a water-borne disease?", options: ["Tuberculosis", "Cholera", "Typhoid", "Dysentery"], answer: "Tuberculosis" },
+        { q: "Noise pollution is measured in:", options: ["Decibels", "Hertz", "Watts", "Volts"], answer: "Decibels" },
+        { q: "Which is a renewable resource?", options: ["Solar energy", "Coal", "Petroleum", "Natural gas"], answer: "Solar energy" },
+        { q: "The main source of marine pollution is:", options: ["Oil spills", "Agriculture", "Mining", "Forestry"], answer: "Oil spills" }
+    ]
 }
-]      
+]
+},
+ 12: {
+ Physics: [
+{
+    title: "Electric Charges and Fields - Quiz 1",
+    questions: [
+        { q: "SI unit of charge is:", options: ["Coulomb", "Ampere", "Volt", "Farad"], answer: "Coulomb" },
+        { q: "Coulomb’s law deals with:", options: ["Electric force between charges", "Magnetic force", "Gravitational force", "Nuclear force"], answer: "Electric force between charges" },
+        { q: "Value of elementary charge is:", options: ["1.6 × 10⁻¹⁹ C", "3 × 10⁸ C", "9.8 × 10⁻¹⁹ C", "1 C"], answer: "1.6 × 10⁻¹⁹ C" },
+        { q: "Unit of permittivity of free space (ε₀):", options: ["C²/(N·m²)", "N·m²/C", "N/C²", "C/N·m²"], answer: "C²/(N·m²)" },
+        { q: "Electrostatic force is:", options: ["Inversely proportional to r²", "Directly proportional to r", "Independent of r", "Proportional to r³"], answer: "Inversely proportional to r²" },
+        { q: "Like charges:", options: ["Repel", "Attract", "No effect", "Combine"], answer: "Repel" },
+        { q: "Test charge is:", options: ["Small positive charge", "Large charge", "Negative charge", "No charge"], answer: "Small positive charge" },
+        { q: "What is quantization of charge?", options: ["Charge exists in integral multiples of e", "Any value is possible", "Charge is always zero", "Charge cannot be measured"], answer: "Charge exists in integral multiples of e" },
+        { q: "Electric field is a:", options: ["Vector", "Scalar", "Tensor", "None"], answer: "Vector" },
+        { q: "Field due to a point charge at distance r is:", options: ["kQ/r²", "kQ/r", "kQ/r³", "kQ²/r"], answer: "kQ/r²" },
+        { q: "Electric lines of force never:", options: ["Intersect", "Start", "End", "Curve"], answer: "Intersect" },
+        { q: "What is the direction of electric field?", options: ["Positive to negative", "Negative to positive", "Random", "Circular"], answer: "Positive to negative" },
+        { q: "Unit of electric field:", options: ["N/C", "C/N", "J/C", "V/m"], answer: "N/C" },
+        { q: "Force between two point charges is zero when:", options: ["They are infinitely apart", "They are at same point", "They are perpendicular", "They are parallel"], answer: "They are infinitely apart" },
+        { q: "The value of k in SI units is:", options: ["9 × 10⁹ Nm²/C²", "1.6 × 10⁻¹⁹ Nm²/C²", "10 Nm²/C²", "8.85 × 10⁻¹² Nm²/C²"], answer: "9 × 10⁹ Nm²/C²" }
+    ]
+},
+{
+    title: "Electric Charges and Fields - Quiz 2",
+    questions: [
+        { q: "Electric dipole consists of:", options: ["Equal & opposite charges", "Equal charges", "Opposite charges at same point", "Neutral charges"], answer: "Equal & opposite charges" },
+        { q: "SI unit of dipole moment is:", options: ["C·m", "N·m", "J", "C·m²"], answer: "C·m" },
+        { q: "Direction of dipole moment is from:", options: ["Negative to positive", "Positive to negative", "Random", "Both"], answer: "Negative to positive" },
+        { q: "Gauss’s Law relates electric flux to:", options: ["Enclosed charge", "Distance", "Area", "Potential"], answer: "Enclosed charge" },
+        { q: "Unit of electric flux is:", options: ["Nm²/C", "C/m²", "J/C", "V"], answer: "Nm²/C" },
+        { q: "Flux through a closed surface with no enclosed charge is:", options: ["Zero", "Maximum", "Minimum", "Infinite"], answer: "Zero" },
+        { q: "Field inside a conductor is:", options: ["Zero", "Nonzero", "Maximum", "Infinite"], answer: "Zero" },
+        { q: "Coulomb’s law is valid for:", options: ["Point charges", "Large bodies", "Current carrying wires", "All"], answer: "Point charges" },
+        { q: "Electric field at center of a uniformly charged ring is:", options: ["Zero", "Maximum", "Minimum", "Infinite"], answer: "Zero" },
+        { q: "Which has highest charge density?", options: ["Point", "Sphere", "Rod", "Sheet"], answer: "Point" },
+        { q: "Electric field outside a charged conducting sphere is:", options: ["As if all charge at center", "Zero", "Infinite", "Half"], answer: "As if all charge at center" },
+        { q: "What is principle of superposition?", options: ["Sum of individual fields", "Difference of fields", "Product of fields", "None"], answer: "Sum of individual fields" },
+        { q: "The value of e (electronic charge) is:", options: ["1.6 × 10⁻¹⁹ C", "9 × 10⁹ C", "6.02 × 10²³ C", "1.67 × 10⁻²⁷ C"], answer: "1.6 × 10⁻¹⁹ C" },
+        { q: "Which is not a property of electric field lines?", options: ["Do not intersect", "Start at positive", "End at negative", "Form closed loops"], answer: "Form closed loops" },
+        { q: "Unit vector in field direction is called:", options: ["Unit vector", "Scalar", "Dipole", "None"], answer: "Unit vector" }
+    ]
+},
+{
+    title: "Electrostatic Potential and Capacitance - Quiz 1",
+    questions: [
+        { q: "SI unit of potential is:", options: ["Volt", "Ampere", "Farad", "Joule"], answer: "Volt" },
+        { q: "Potential at a point is work done to bring:", options: ["Unit positive charge", "Unit negative charge", "Two charges", "None"], answer: "Unit positive charge" },
+        { q: "Potential due to a point charge at distance r:", options: ["kQ/r", "kQ/r²", "kQ²/r", "kQ/r³"], answer: "kQ/r" },
+        { q: "Potential energy between two charges is:", options: ["kQq/r", "kQq/r²", "kQ²/r", "kQq/r³"], answer: "kQq/r" },
+        { q: "Potential at infinity is:", options: ["Zero", "One", "Infinite", "Negative"], answer: "Zero" },
+        { q: "Unit of capacitance is:", options: ["Farad", "Coulomb", "Henry", "Joule"], answer: "Farad" },
+        { q: "Capacitance of a parallel plate capacitor is proportional to:", options: ["Area", "Distance", "Volume", "Density"], answer: "Area" },
+        { q: "Capacitance increases if:", options: ["Area increases", "Distance increases", "Dielectric decreases", "None"], answer: "Area increases" },
+        { q: "Work done in moving charge q through potential V:", options: ["qV", "V/q", "q/V", "q+V"], answer: "qV" },
+        { q: "A conductor is always at:", options: ["Same potential", "Different potential", "Zero potential", "Infinite"], answer: "Same potential" },
+        { q: "SI unit of electric potential energy is:", options: ["Joule", "Watt", "Volt", "Farad"], answer: "Joule" },
+        { q: "Potential inside a conductor is:", options: ["Constant", "Variable", "Zero", "Infinite"], answer: "Constant" },
+        { q: "A farad is equal to:", options: ["C/V", "C·V", "V/C", "C²/V"], answer: "C/V" },
+        { q: "Dielectric constant of vacuum is:", options: ["1", "0", "∞", "10"], answer: "1" },
+        { q: "When a dielectric is inserted, capacitance:", options: ["Increases", "Decreases", "Remains same", "Becomes zero"], answer: "Increases" }
+    ]
+},
+{
+    title: "Electrostatic Potential and Capacitance - Quiz 2",
+    questions: [
+        { q: "Energy stored in a capacitor is:", options: ["½CV²", "CV", "C/V", "V²/C"], answer: "½CV²" },
+        { q: "Potential gradient is:", options: ["dV/dr", "dr/dV", "dV·dr", "V/r"], answer: "dV/dr" },
+        { q: "Capacitors in series have:", options: ["Same charge", "Same voltage", "Sum of capacitances", "None"], answer: "Same charge" },
+        { q: "Capacitors in parallel have:", options: ["Same voltage", "Same charge", "Product of capacitances", "None"], answer: "Same voltage" },
+        { q: "Potential at the center of a charged shell is:", options: ["Constant", "Zero", "Variable", "Infinite"], answer: "Constant" },
+        { q: "A parallel plate capacitor is filled with dielectric, energy stored:", options: ["Increases", "Decreases", "Remains same", "Zero"], answer: "Increases" },
+        { q: "If distance between plates increases, capacitance:", options: ["Decreases", "Increases", "Unchanged", "Zero"], answer: "Decreases" },
+        { q: "SI unit of permittivity is:", options: ["F/m", "F", "C", "V"], answer: "F/m" },
+        { q: "The reciprocal of capacitance is:", options: ["Elastance", "Resistance", "Conductance", "Inductance"], answer: "Elastance" },
+        { q: "Potential due to dipole at axial point is proportional to:", options: ["1/r²", "1/r", "1/r³", "r"], answer: "1/r²" },
+        { q: "Potential at equatorial point of dipole:", options: ["Zero", "Maximum", "Negative", "Positive"], answer: "Zero" },
+        { q: "If two capacitors C₁ and C₂ are in series, equivalent C is:", options: ["(C₁·C₂)/(C₁+C₂)", "C₁+C₂", "C₁-C₂", "C₁/C₂"], answer: "(C₁·C₂)/(C₁+C₂)" },
+        { q: "A capacitor blocks:", options: ["DC", "AC", "Both", "None"], answer: "DC" },
+        { q: "Unit of electric field is:", options: ["N/C", "C/N", "J/C", "V/m"], answer: "N/C" },
+        { q: "Polarization in a dielectric means:", options: ["Alignment of dipoles", "Breaking of dipoles", "No effect", "Heating"], answer: "Alignment of dipoles" }
+    ]
+},
+{
+    title: "Current Electricity - Quiz 1",
+    questions: [
+        { q: "SI unit of current is:", options: ["Ampere", "Volt", "Ohm", "Coulomb"], answer: "Ampere" },
+        { q: "Ohm’s law is:", options: ["V = IR", "I = VR", "R = VI", "V = I/R"], answer: "V = IR" },
+        { q: "Ammeter measures:", options: ["Current", "Voltage", "Resistance", "Power"], answer: "Current" },
+        { q: "Voltmeter is always connected:", options: ["In parallel", "In series", "In both", "None"], answer: "In parallel" },
+        { q: "Unit of resistance is:", options: ["Ohm", "Ampere", "Volt", "Farad"], answer: "Ohm" },
+        { q: "Drift velocity is:", options: ["Average velocity of electrons", "Speed of sound", "Light speed", "None"], answer: "Average velocity of electrons" },
+        { q: "Kirchhoff’s first law is based on:", options: ["Conservation of charge", "Conservation of energy", "Mass", "Momentum"], answer: "Conservation of charge" },
+        { q: "Resistivity depends on:", options: ["Material", "Length", "Area", "Current"], answer: "Material" },
+        { q: "Potentiometer measures:", options: ["EMF", "Current", "Power", "Capacitance"], answer: "EMF" },
+        { q: "SI unit of power is:", options: ["Watt", "Joule", "Volt", "Ampere"], answer: "Watt" },
+        { q: "Superconductor has:", options: ["Zero resistance", "High resistance", "No current", "Infinite voltage"], answer: "Zero resistance" },
+        { q: "Reciprocal of resistance is:", options: ["Conductance", "Capacitance", "Inductance", "Impedance"], answer: "Conductance" },
+        { q: "SI unit of conductance is:", options: ["Siemens", "Ohm", "Farad", "Ampere"], answer: "Siemens" },
+        { q: "What is the charge of 1 electron?", options: ["-1.6 × 10⁻¹⁹ C", "+1.6 × 10⁻¹⁹ C", "1 C", "0"], answer: "-1.6 × 10⁻¹⁹ C" },
+        { q: "What is the direction of conventional current?", options: ["Positive to negative", "Negative to positive", "Random", "None"], answer: "Positive to negative" }
+    ]
+},
+{
+    title: "Current Electricity - Quiz 2",
+    questions: [
+        { q: "Kirchhoff’s second law is based on:", options: ["Conservation of energy", "Conservation of charge", "Mass", "Momentum"], answer: "Conservation of energy" },
+        { q: "A fuse wire is made of:", options: ["Low melting point", "High melting point", "Iron", "Copper"], answer: "Low melting point" },
+        { q: "In series connection, current is:", options: ["Same", "Divided", "Zero", "Infinite"], answer: "Same" },
+        { q: "In parallel connection, voltage is:", options: ["Same", "Divided", "Zero", "Infinite"], answer: "Same" },
+        { q: "SI unit of EMF is:", options: ["Volt", "Ampere", "Ohm", "Watt"], answer: "Volt" },
+        { q: "Heating effect of current is given by:", options: ["I²Rt", "VI", "IR", "V²/R"], answer: "I²Rt" },
+        { q: "Specific resistance is also called:", options: ["Resistivity", "Conductivity", "Impedance", "None"], answer: "Resistivity" },
+        { q: "A good conductor has:", options: ["Low resistivity", "High resistivity", "Zero conductivity", "High voltage"], answer: "Low resistivity" },
+        { q: "Ohm’s law is not valid for:", options: ["Diodes", "Resistors", "Metals", "Wires"], answer: "Diodes" },
+        { q: "The unit of resistivity is:", options: ["Ohm·meter", "Ohm", "Ohm/meter", "Meter"], answer: "Ohm·meter" },
+        { q: "What is the effect of increasing temperature on resistance of metals?", options: ["Increases", "Decreases", "No change", "Becomes zero"], answer: "Increases" },
+        { q: "The resistance of a wire is doubled when:", options: ["Length is doubled", "Area is doubled", "Area is halved", "Material is changed"], answer: "Length is doubled" },
+        { q: "The drift velocity of electrons in a conductor is of the order of:", options: ["mm/s", "km/s", "m/s", "cm/s"], answer: "mm/s" },
+        { q: "A potentiometer measures potential difference more accurately than a voltmeter because:", options: ["No current flows through it", "It is cheap", "It is simple", "It is portable"], answer: "No current flows through it" },
+        { q: "The resistance of a wire depends on:", options: ["Length, area, material, temperature", "Only length", "Only area", "Only temperature"], answer: "Length, area, material, temperature" }
+    ]
+},
+{
+    title: "Moving Charges and Magnetism - Quiz 1",
+    questions: [
+        { q: "Unit of magnetic field is:", options: ["Tesla", "Henry", "Weber", "Farad"], answer: "Tesla" },
+        { q: "Who discovered relation between electricity and magnetism?", options: ["Oersted", "Faraday", "Ampere", "Maxwell"], answer: "Oersted" },
+        { q: "Force on a moving charge in magnetic field is:", options: ["q(v × B)", "qE", "qB", "qV"], answer: "q(v × B)" },
+        { q: "SI unit of magnetic flux is:", options: ["Weber", "Tesla", "Henry", "Farad"], answer: "Weber" },
+        { q: "Ampere’s law is related to:", options: ["Magnetic field", "Electric field", "Current", "Charge"], answer: "Magnetic field" },
+        { q: "Field inside a solenoid is:", options: ["Uniform", "Zero", "Maximum at ends", "Variable"], answer: "Uniform" },
+        { q: "Right-hand thumb rule is used to find:", options: ["Direction of field", "Magnitude", "Resistance", "Current"], answer: "Direction of field" },
+        { q: "Magnetic force is maximum when angle between v and B is:", options: ["90°", "0°", "45°", "180°"], answer: "90°" },
+        { q: "Magnetic field at center of circular loop of radius r is proportional to:", options: ["1/r", "1/r²", "r", "r²"], answer: "1/r" },
+        { q: "Magnetic permeability of free space (μ₀) is:", options: ["4π × 10⁻⁷ H/m", "9 × 10⁹ H/m", "1.6 × 10⁻¹⁹ H/m", "8.85 × 10⁻¹² H/m"], answer: "4π × 10⁻⁷ H/m" },
+        { q: "A moving coil galvanometer works on:", options: ["Magnetic effect of current", "Heating effect", "Chemical effect", "None"], answer: "Magnetic effect of current" },
+        { q: "Earth’s magnetic field is due to:", options: ["Molten iron core", "Atmosphere", "Water", "Wind"], answer: "Molten iron core" },
+        { q: "A charged particle moving parallel to magnetic field:", options: ["No force acts", "Maximum force", "Minimum force", "Infinite force"], answer: "No force acts" },
+        { q: "Magnetic field lines never:", options: ["Intersect", "Start", "End", "Form loops"], answer: "Intersect" },
+        { q: "The force between two parallel current-carrying wires is:", options: ["Attractive if same direction", "Repulsive if same direction", "Zero", "None"], answer: "Attractive if same direction" }
+    ]
+},
+{
+    title: "Moving Charges and Magnetism - Quiz 2",
+    questions: [
+        { q: "Magnetic moment of a current loop is:", options: ["I × Area", "I/A", "I × r", "I × 2πr"], answer: "I × Area" },
+        { q: "SI unit of magnetic moment:", options: ["A·m²", "A/m", "Weber", "Tesla"], answer: "A·m²" },
+        { q: "Cyclotron is used to accelerate:", options: ["Charged particles", "Neutrons", "Photons", "Atoms"], answer: "Charged particles" },
+        { q: "A current carrying wire produces:", options: ["Magnetic field", "Electric field", "Sound", "Light"], answer: "Magnetic field" },
+        { q: "Force on a current carrying conductor in magnetic field is:", options: ["BIL sinθ", "BIL cosθ", "BIL tanθ", "BIL"], answer: "BIL sinθ" },
+        { q: "Unit of magnetic induction is:", options: ["Tesla", "Weber", "Henry", "Farad"], answer: "Tesla" },
+        { q: "The direction of force is given by:", options: ["Fleming’s left hand rule", "Fleming’s right hand rule", "Maxwell’s rule", "Lenz’s law"], answer: "Fleming’s left hand rule" },
+        { q: "A solenoid with more turns produces:", options: ["Stronger field", "Weaker field", "No field", "Random field"], answer: "Stronger field" },
+        { q: "Field at center of a solenoid is proportional to:", options: ["Number of turns", "Length", "Area", "None"], answer: "Number of turns" },
+        { q: "A galvanometer can be converted into ammeter by:", options: ["Low resistance in parallel", "High resistance in series", "Low resistance in series", "High resistance in parallel"], answer: "Low resistance in parallel" },
+        { q: "A galvanometer can be converted into voltmeter by:", options: ["High resistance in series", "Low resistance in parallel", "Low resistance in series", "High resistance in parallel"], answer: "High resistance in series" },
+        { q: "The net force on a closed current loop in uniform magnetic field is:", options: ["Zero", "Maximum", "Minimum", "Infinite"], answer: "Zero" },
+        { q: "Unit of permeability is:", options: ["H/m", "A/m", "T·m/A", "J/T"], answer: "H/m" },
+        { q: "Magnetic field inside a toroid is:", options: ["Uniform", "Zero", "Maximum at ends", "Variable"], answer: "Uniform" },
+        { q: "A moving charged particle in a magnetic field traces:", options: ["Circle/helix", "Straight line", "Random", "Parabola"], answer: "Circle/helix" }
+    ]
+},
+ {  title: "Electromagnetic Waves - Quiz 1",
+          questions: [
+            { q: "What is the speed of electromagnetic waves in a vacuum?", options: ["3 × 10^6 m/s", "3 × 10^8 m/s", "3 × 10^10 m/s", "3 × 10^12 m/s"], answer: "3 × 10^8 m/s" },
+            { q: "Which is not a property of electromagnetic waves?", options: ["Transverse waves", "Require a medium", "Can be polarized", "Carry energy"], answer: "Require a medium" },
+            { q: "The direction of propagation of an electromagnetic wave is given by:", options: ["E × B", "E · B", "B × E", "E / B"], answer: "E × B" },
+            { q: "Which electromagnetic wave has the highest frequency?", options: ["Radio waves", "Microwaves", "X-rays", "Infrared"], answer: "X-rays" },
+            { q: "Relation between amplitudes of electric and magnetic fields in an EM wave:", options: ["E = B", "E = cB", "B = cE", "E = B/c"], answer: "E = cB" },
+            { q: "Energy in an electromagnetic wave is carried by:", options: ["Electric field only", "Magnetic field only", "Both fields", "Neither field"], answer: "Both fields" },
+            { q: "Which wave is used in communication?", options: ["Ultraviolet", "Gamma rays", "Radio waves", "X-rays"], answer: "Radio waves" },
+            { q: "The electromagnetic spectrum is arranged in order of:", options: ["Increasing wavelength", "Increasing frequency", "Decreasing speed", "Decreasing energy"], answer: "Increasing frequency" },
+            { q: "Primary source of electromagnetic waves on Earth is:", options: ["The Moon", "The Sun", "Earth’s core", "The atmosphere"], answer: "The Sun" },
+            { q: "Property used in polaroid sunglasses:", options: ["Reflection", "Refraction", "Polarization", "Diffraction"], answer: "Polarization" },
+            { q: "Frequency range of visible light is approximately:", options: ["10^12 to 10^14 Hz", "10^14 to 10^15 Hz", "10^9 to 10^11 Hz", "10^6 to 10^8 Hz"], answer: "10^14 to 10^15 Hz" },
+            { q: "Role of displacement current in EM waves:", options: ["Generates electric fields", "Generates magnetic fields", "Sustains wave propagation", "Absorbs energy"], answer: "Sustains wave propagation" },
+            { q: "Who formulated the theory of electromagnetic waves?", options: ["Maxwell", "Hertz", "Faraday", "Tesla"], answer: "Maxwell" },
+            { q: "Which wave is used in microwave ovens?", options: ["Radio waves", "Microwaves", "Infrared", "Ultraviolet"], answer: "Microwaves" },
+            { q: "Intensity of an EM wave is proportional to:", options: ["Wavelength", "Frequency", "Square of amplitude", "Speed"], answer: "Square of amplitude" }
+          ]
+        },
+        {
+          title: "Electromagnetic Waves - Quiz 2",
+          questions: [
+            { q: "Electromagnetic waves are produced by:", options: ["Stationary charges", "Accelerating charges", "Constant currents", "Static magnetic fields"], answer: "Accelerating charges" },
+            { q: "Wavelength range of ultraviolet rays is:", options: ["10^-8 to 10^-7 m", "10^-6 to 10^-4 m", "10^-10 to 10^-8 m", "10^-3 to 10^-1 m"], answer: "10^-8 to 10^-7 m" },
+            { q: "Which EM wave has the lowest wavelength?", options: ["Gamma rays", "X-rays", "Ultraviolet", "Visible light"], answer: "Gamma rays" },
+            { q: "The Poynting vector represents:", options: ["Energy flow direction", "Wave speed", "Frequency", "Wavelength"], answer: "Energy flow direction" },
+            { q: "Which is true for EM waves?", options: ["Longitudinal", "Slower in vacuum", "Transverse", "Cannot be polarized"], answer: "Transverse" },
+            { q: "Primary use of infrared waves is in:", options: ["Medical imaging", "Remote controls", "Radio broadcasting", "Cancer treatment"], answer: "Remote controls" },
+            { q: "Relation between frequency (f) and wavelength (λ):", options: ["c = fλ", "c = f/λ", "c = λ/f", "f = cλ"], answer: "c = fλ" },
+            { q: "Who discovered radio waves?", options: ["Maxwell", "Hertz", "Faraday", "Edison"], answer: "Hertz" },
+            { q: "Electric and magnetic fields in an EM wave are:", options: ["Parallel", "Perpendicular", "Random", "Same direction as propagation"], answer: "Perpendicular" },
+            { q: "Which wave is used in night vision goggles?", options: ["Radio waves", "Microwaves", "Infrared", "Ultraviolet"], answer: "Infrared" },
+            { q: "Energy of an EM wave is proportional to:", options: ["Wavelength", "Frequency", "Speed", "Amplitude"], answer: "Frequency" },
+            { q: "Typical use of gamma rays:", options: ["Communication", "Sterilization", "Heating", "Lighting"], answer: "Sterilization" },
+            { q: "EM wave used in MRI:", options: ["Radio waves", "Microwaves", "X-rays", "Gamma rays"], answer: "Radio waves" },
+            { q: "Polarization refers to the orientation of:", options: ["Magnetic field", "Electric field", "Propagation direction", "Energy flow"], answer: "Electric field" },
+            { q: "Unit of frequency is:", options: ["Meter", "Joule", "Hertz", "Watt"], answer: "Hertz" }
+          ]
+        },
+           {
+          title: "Optics - Quiz 1",
+          questions: [
+            { q: "Bending of light around obstacles is called:", options: ["Reflection", "Refraction", "Diffraction", "Polarization"], answer: "Diffraction" },
+            { q: "Angle of incidence equals angle of reflection per:", options: ["Snell’s Law", "Law of Reflection", "Huygens’ Principle", "Fermat’s Principle"], answer: "Law of Reflection" },
+            { q: "Refractive index of a medium is:", options: ["Speed in vacuum / Speed in medium", "Speed in medium / Speed in vacuum", "Wavelength in vacuum / Wavelength in medium", "Frequency in vacuum / Frequency in medium"], answer: "Speed in vacuum / Speed in medium" },
+            { q: "A convex lens is also known as:", options: ["Diverging lens", "Converging lens", "Plano-concave lens", "Biconcave lens"], answer: "Converging lens" },
+            { q: "Focal length of a lens is determined by:", options: ["Lensmaker’s formula", "Snell’s law", "Huygens’ principle", "Fermat’s principle"], answer: "Lensmaker’s formula" },
+            { q: "Total internal reflection occurs when:", options: ["Rarer to denser medium", "Angle of incidence < critical angle", "Angle of incidence > critical angle", "Light is polarized"], answer: "Angle of incidence > critical angle" },
+            { q: "Image formed by a plane mirror is:", options: ["Real and inverted", "Virtual and upright", "Real and upright", "Virtual and inverted"], answer: "Virtual and upright" },
+            { q: "Power of a lens is measured in:", options: ["Watts", "Dioptres", "Joules", "Hertz"], answer: "Dioptres" },
+            { q: "Which causes dispersion of light?", options: ["Reflection", "Refraction", "Diffraction", "Polarization"], answer: "Refraction" },
+            { q: "Critical angle is related to:", options: ["Reflection", "Refraction", "Diffraction", "Polarization"], answer: "Refraction" },
+            { q: "A concave mirror can form:", options: ["Only virtual images", "Only real images", "Both real and virtual images", "No images"], answer: "Both real and virtual images" },
+            { q: "Magnification of a lens is given by:", options: ["v/u", "u/v", "f/v", "v/f"], answer: "v/u" },
+            { q: "Which phenomenon explains the rainbow?", options: ["Reflection", "Refraction", "Dispersion", "Diffraction"], answer: "Dispersion" },
+            { q: "Focal length of a convex mirror is:", options: ["Positive", "Negative", "Zero", "Infinite"], answer: "Negative" },
+            { q: "Snell’s law relates angles to:", options: ["Wavelength", "Frequency", "Refractive indices", "Speed of light"], answer: "Refractive indices" }
+          ]
+        },
+        {
+          title: "Optics - Quiz 2",
+          questions: [
+            { q: "Image formed by a convex lens when object is at infinity:", options: ["At focal point", "At twice focal length", "At infinity", "Virtual"], answer: "At focal point" },
+            { q: "Phenomenon of mirage is caused by:", options: ["Reflection", "Refraction", "Total internal reflection", "Diffraction"], answer: "Total internal reflection" },
+            { q: "Lens formula is:", options: ["1/f = 1/v + 1/u", "1/f = 1/v - 1/u", "f = v + u", "f = v/u"], answer: "1/f = 1/v + 1/u" },
+            { q: "A diverging lens always forms:", options: ["Real images", "Virtual images", "Inverted images", "Magnified images"], answer: "Virtual images" },
+            { q: "Splitting of white light by a prism is due to:", options: ["Reflection", "Refraction", "Diffraction", "Polarization"], answer: "Refraction" },
+            { q: "Minimum angle of deviation in a prism occurs when:", options: ["Angle of incidence = angle of emergence", "Angle of incidence = 90°", "Angle of refraction = 90°", "Light passes straight"], answer: "Angle of incidence = angle of emergence" },
+            { q: "Focal length of a lens depends on:", options: ["Wavelength of light", "Object distance", "Image distance", "Speed of light"], answer: "Wavelength of light" },
+            { q: "A convex mirror always forms images that are:", options: ["Real and inverted", "Virtual and upright", "Real and upright", "Virtual and inverted"], answer: "Virtual and upright" },
+            { q: "Interference is associated with:", options: ["Reflection", "Refraction", "Diffraction", "Polarization"], answer: "Diffraction" },
+            { q: "Power of a lens is positive for:", options: ["Concave lens", "Convex lens", "Plano-concave lens", "Biconcave lens"], answer: "Convex lens" },
+            { q: "Image distance in a convex lens is positive when image is:", options: ["Virtual", "Real", "At infinity", "At focal point"], answer: "Real" },
+            { q: "Polarization is possible only with:", options: ["Longitudinal waves", "Transverse waves", "Mechanical waves", "Stationary waves"], answer: "Transverse waves" },
+            { q: "Magnification of a plane mirror is:", options: ["Less than 1", "Equal to 1", "Greater than 1", "Zero"], answer: "Equal to 1" },
+            { q: "Critical angle is smallest when other medium is:", options: ["Air", "Water", "Glass", "Vacuum"], answer: "Vacuum" },
+            { q: "Huygens’ principle explains:", options: ["Reflection", "Refraction", "Diffraction", "All of the above"], answer: "All of the above" }
+          ]
+        },
+         {
+          title: "Dual Nature of Radiation and Matter - Quiz 1",
+          questions: [
+            { q: "Wave-particle duality applies to:", options: ["Light only", "Matter only", "Both light and matter", "Neither"], answer: "Both light and matter" },
+            { q: "Photoelectric effect demonstrates:", options: ["Wave nature of light", "Particle nature of light", "Dual nature of matter", "Electromagnetic nature"], answer: "Particle nature of light" },
+            { q: "Energy of a photon is given by:", options: ["E = mc²", "E = hf", "E = λf", "E = h/λ"], answer: "E = hf" },
+            { q: "De Broglie wavelength of a particle is:", options: ["λ = h/p", "λ = p/h", "λ = hν", "λ = pν"], answer: "λ = h/p" },
+            { q: "Threshold frequency in photoelectric effect is:", options: ["Maximum frequency", "Minimum frequency to eject electrons", "Frequency of max intensity", "Frequency of min intensity"], answer: "Minimum frequency to eject electrons" },
+            { q: "Work function of a metal is:", options: ["Energy to eject an electron", "Energy of a photon", "Max kinetic energy", "Threshold energy of light"], answer: "Energy to eject an electron" },
+            { q: "Who proposed wave-particle duality of matter?", options: ["Einstein", "de Broglie", "Planck", "Bohr"], answer: "de Broglie" },
+            { q: "Compton effect demonstrates:", options: ["Wave nature of light", "Particle nature of light", "Dual nature of matter", "Interference"], answer: "Particle nature of light" },
+            { q: "Momentum of a photon is:", options: ["p = h/λ", "p = λ/h", "p = hf", "p = f/h"], answer: "p = h/λ" },
+            { q: "Max kinetic energy of photoelectrons depends on:", options: ["Wavelength", "Intensity", "Frequency", "Speed of light"], answer: "Frequency" },
+            { q: "De Broglie wavelength of an electron increases when:", options: ["Speed increases", "Speed decreases", "Mass increases", "Charge increases"], answer: "Speed decreases" },
+            { q: "Photoelectric equation is:", options: ["hf = φ + KEmax", "hf = φ - KEmax", "hλ = φ + KEmax", "hf = KEmax/φ"], answer: "hf = φ + KEmax" },
+            { q: "Wave nature of electrons is shown by:", options: ["Photoelectric effect", "Compton effect", "Electron diffraction", "Blackbody radiation"], answer: "Electron diffraction" },
+            { q: "Planck’s constant has the unit:", options: ["Joule", "Joule-second", "Newton-meter", "Watt"], answer: "Joule-second" },
+            { q: "Intensity of light affects the:", options: ["Energy of photoelectrons", "Number of photoelectrons", "Wavelength", "Frequency"], answer: "Number of photoelectrons" }
+          ]
+        },
+        {
+          title: "Dual Nature of Radiation and Matter - Quiz 2",
+          questions: [
+            { q: "De Broglie wavelength depends on:", options: ["Charge", "Mass", "Momentum", "Energy"], answer: "Momentum" },
+            { q: "Photoelectric effect cannot be explained by:", options: ["Wave theory", "Particle theory", "Quantum theory", "Electromagnetic theory"], answer: "Wave theory" },
+            { q: "Energy of a photon depends on:", options: ["Wavelength", "Frequency", "Amplitude", "Speed"], answer: "Frequency" },
+            { q: "Compton wavelength is associated with:", options: ["Electrons", "Photons", "Protons", "Neutrons"], answer: "Photons" },
+            { q: "Wave nature of matter is significant for particles with:", options: ["High mass", "Low mass", "High charge", "Low charge"], answer: "Low mass" },
+            { q: "Stopping potential in photoelectric effect is proportional to:", options: ["Work function", "Frequency of light", "Intensity", "Wavelength"], answer: "Frequency of light" },
+            { q: "Who proposed quantum theory of light?", options: ["Einstein", "Planck", "de Broglie", "Bohr"], answer: "Planck" },
+            { q: "De Broglie wavelength is inversely proportional to:", options: ["Energy", "Momentum", "Frequency", "Wavelength"], answer: "Momentum" },
+            { q: "Photoelectric effect occurs instantly because:", options: ["Light is a wave", "Photons transfer energy instantly", "Electrons have no mass", "Light has no wavelength"], answer: "Photons transfer energy instantly" },
+            { q: "Compton effect involves scattering of:", options: ["Electrons", "Photons", "Protons", "Neutrons"], answer: "Photons" },
+            { q: "Threshold wavelength is the:", options: ["Min wavelength to eject electrons", "Max wavelength to eject electrons", "Wavelength of max intensity", "Wavelength of min intensity"], answer: "Max wavelength to eject electrons" },
+            { q: "De Broglie wavelength of a macroscopic object is:", options: ["Very large", "Very small", "Zero", "Infinite"], answer: "Very small" },
+            { q: "Energy of photoelectrons is independent of:", options: ["Frequency", "Work function", "Intensity", "Photon energy"], answer: "Intensity" },
+            { q: "Davisson-Germer experiment confirmed:", options: ["Photoelectric effect", "Compton effect", "Wave nature of electrons", "Particle nature of light"], answer: "Wave nature of electrons" },
+            { q: "Value of Planck’s constant is approximately:", options: ["6.626 × 10^-34 J·s", "6.626 × 10^-31 J·s", "6.626 × 10^-28 J·s", "6.626 × 10^-37 J·s"], answer: "6.626 × 10^-34 J·s" }
+          ]
+        },
+        {
+          title: "Atoms and Nuclei - Quiz 1",
+          questions: [
+            { q: "Bohr model explains the structure of:", options: ["Molecules", "Atoms", "Nuclei", "Crystals"], answer: "Atoms" },
+            { q: "Atomic number of an element is the number of:", options: ["Neutrons", "Protons", "Electrons", "Nucleons"], answer: "Protons" },
+            { q: "Mass number of an atom is the total number of:", options: ["Protons and electrons", "Protons and neutrons", "Neutrons and electrons", "All three"], answer: "Protons and neutrons" },
+            { q: "Energy levels of an electron in an atom are:", options: ["Continuous", "Quantized", "Infinite", "Random"], answer: "Quantized" },
+            { q: "Nucleus of an atom is composed of:", options: ["Electrons and protons", "Protons and neutrons", "Electrons and neutrons", "All three"], answer: "Protons and neutrons" },
+            { q: "Binding energy of a nucleus is the energy to:", options: ["Add an electron", "Remove an electron", "Break the nucleus apart", "Fuse nuclei"], answer: "Break the nucleus apart" },
+            { q: "Radioactive decay involves emission of:", options: ["Alpha, beta, or gamma", "Infrared", "Ultraviolet", "Microwaves"], answer: "Alpha, beta, or gamma" },
+            { q: "Half-life of a radioactive substance is the time for:", options: ["All nuclei to decay", "Half the nuclei to decay", "One nucleus to decay", "Nucleus to double"], answer: "Half the nuclei to decay" },
+            { q: "Alpha particles are:", options: ["Electrons", "Helium nuclei", "Protons", "Neutrons"], answer: "Helium nuclei" },
+            { q: "Beta decay involves emission of:", options: ["Protons", "Neutrons", "Electrons or positrons", "Photons"], answer: "Electrons or positrons" },
+            { q: "Gamma rays are:", options: ["High-energy electrons", "High-energy photons", "Helium nuclei", "Neutrons"], answer: "High-energy photons" },
+            { q: "Bohr radius is the radius of:", options: ["Nucleus", "First electron orbit", "Atom", "Proton"], answer: "First electron orbit" },
+            { q: "Energy of an electron in nth orbit is proportional to:", options: ["n", "1/n", "n²", "1/n²"], answer: "1/n²" },
+            { q: "Nuclear force is:", options: ["Long-range, repulsive", "Short-range, attractive", "Long-range, attractive", "Short-range, repulsive"], answer: "Short-range, attractive" },
+            { q: "Isotopes of an element have the same number of:", options: ["Neutrons", "Protons", "Electrons", "Nucleons"], answer: "Protons" }
+          ]
+        },
+        {
+          title: "Atoms and Nuclei - Quiz 2",
+          questions: [
+            { q: "Spectral lines of hydrogen are explained by:", options: ["Rutherford’s model", "Bohr’s model", "Thomson’s model", "Quantum model"], answer: "Bohr’s model" },
+            { q: "Nuclear fission involves:", options: ["Combining nuclei", "Splitting a nucleus", "Emitting electrons", "Absorbing photons"], answer: "Splitting a nucleus" },
+            { q: "Nuclear fusion is the process of:", options: ["Splitting a nucleus", "Combining nuclei", "Emitting gamma rays", "Absorbing electrons"], answer: "Combining nuclei" },
+            { q: "Energy in nuclear reactions comes from:", options: ["Electron transitions", "Mass defect", "Photon absorption", "Neutron emission"], answer: "Mass defect" },
+            { q: "Most stable nucleus is:", options: ["Iron-56", "Uranium-238", "Hydrogen-1", "Carbon-12"], answer: "Iron-56" },
+            { q: "Unit of radioactivity is:", options: ["Joule", "Becquerel", "Watt", "Newton"], answer: "Becquerel" },
+            { q: "Primary source of energy in the Sun is:", options: ["Fission", "Fusion", "Radioactive decay", "Chemical reactions"], answer: "Fusion" },
+            { q: "Rydberg formula calculates:", options: ["Nuclear binding energy", "Spectral lines of hydrogen", "Electron orbits", "Photon energy"], answer: "Spectral lines of hydrogen" },
+            { q: "Atomic mass unit (amu) is based on:", options: ["Carbon-12", "Hydrogen-1", "Oxygen-16", "Uranium-238"], answer: "Carbon-12" },
+            { q: "Nuclear radius is proportional to:", options: ["A", "A^(1/3)", "A²", "1/A"], answer: "A^(1/3)" },
+            { q: "Beta minus decay increases atomic number by:", options: ["0", "1", "2", "-1"], answer: "1" },
+            { q: "Electron energy levels are negative because:", options: ["Unbound", "Bound to nucleus", "No energy", "In nucleus"], answer: "Bound to nucleus" },
+            { q: "Emitting an alpha particle reduces atomic number by:", options: ["1", "2", "3", "4"], answer: "2" },
+            { q: "Nuclear force is stronger than electromagnetic force at:", options: ["Long ranges", "Short ranges", "All ranges", "Infinite ranges"], answer: "Short ranges" },
+            { q: "Bohr model is most accurate for:", options: ["Heavy atoms", "Hydrogen-like atoms", "Molecules", "Nuclei"], answer: "Hydrogen-like atoms" }
+          ]
+        },
+        {
+          title: "Electronic Devices - Quiz 1",
+          questions: [
+            { q: "Semiconductor band gap is:", options: ["Very large", "Very small", "Zero", "Infinite"], answer: "Very small" },
+            { q: "P-type semiconductor is doped with:", options: ["Pentavalent impurities", "Trivalent impurities", "Tetravalent impurities", "Monovalent impurities"], answer: "Trivalent impurities" },
+            { q: "N-type semiconductor majority charge carriers are:", options: ["Holes", "Electrons", "Protons", "Neutrons"], answer: "Electrons" },
+            { q: "A diode allows current to flow in:", options: ["One direction", "Two directions", "No direction", "Random directions"], answer: "One direction" },
+            { q: "Zener diode is used for:", options: ["Amplification", "Rectification", "Voltage regulation", "Oscillation"], answer: "Voltage regulation" },
+            { q: "Transistor acts as:", options: ["Resistor", "Capacitor", "Amplifier or switch", "Conductor"], answer: "Amplifier or switch" },
+            { q: "In a p-n junction, depletion region is formed due to:", options: ["Recombination", "Diffusion", "Ionization", "Excitation"], answer: "Diffusion" },
+            { q: "Forward bias in a diode:", options: ["Increases resistance", "Decreases resistance", "Blocks current", "Increases depletion width"], answer: "Decreases resistance" },
+            { q: "Silicon is preferred in semiconductors because:", options: ["High cost", "Abundance and stability", "Low melting point", "High band gap"], answer: "Abundance and stability" },
+            { q: "A transistor has how many terminals?", options: ["1", "2", "3", "4"], answer: "3" },
+            { q: "Logic gates are building blocks of:", options: ["Analog circuits", "Digital circuits", "Power supplies", "Amplifiers"], answer: "Digital circuits" },
+            { q: "NOT gate output is:", options: ["Same as input", "Opposite of input", "Sum of inputs", "Product of inputs"], answer: "Opposite of input" },
+            { q: "Energy gap of an insulator is:", options: ["Very small", "Moderate", "Very large", "Zero"], answer: "Very large" },
+            { q: "A rectifier converts:", options: ["AC to DC", "DC to AC", "High to low voltage", "Low to high voltage"], answer: "AC to DC" },
+            { q: "Common emitter configuration is used for:", options: ["Voltage amplification", "Current amplification", "Both voltage and current amplification", "No amplification"], answer: "Both voltage and current amplification" }
+          ]
+        },
+        {
+          title: "Electronic Devices - Quiz 2",
+          questions: [
+            { q: "Intrinsic semiconductor has:", options: ["No impurities", "Trivalent impurities", "Pentavalent impurities", "Both tri and pentavalent"], answer: "No impurities" },
+            { q: "Hole in a semiconductor is:", options: ["An electron", "Absence of an electron", "A proton", "A neutron"], answer: "Absence of an electron" },
+            { q: "A p-n junction diode in reverse bias acts as:", options: ["Conductor", "Insulator", "Amplifier", "Oscillator"], answer: "Insulator" },
+            { q: "LED emits light when:", options: ["Forward biased", "Reverse biased", "Unbiased", "Short-circuited"], answer: "Forward biased" },
+            { q: "Transistor biasing is done to:", options: ["Increase power", "Set operating condition", "Reduce noise", "Increase frequency"], answer: "Set operating condition" },
+            { q: "AND gate output is high when:", options: ["All inputs are high", "Any input is high", "All inputs are low", "Any input is low"], answer: "All inputs are high" },
+            { q: "OR gate output is high when:", options: ["All inputs are high", "Any input is high", "All inputs are low", "No inputs"], answer: "Any input is high" },
+            { q: "Common base configuration has high:", options: ["Voltage gain", "Current gain", "Power gain", "No gain"], answer: "Voltage gain" },
+            { q: "Photodiode operates in:", options: ["Forward bias", "Reverse bias", "No bias", "Both biases"], answer: "Reverse bias" },
+            { q: "Semiconductor material commonly used is:", options: ["Copper", "Silicon", "Aluminum", "Iron"], answer: "Silicon" },
+            { q: "Breakdown voltage in a Zener diode is:", options: ["High in forward bias", "Low in reverse bias", "High in reverse bias", "Low in forward bias"], answer: "Low in reverse bias" },
+            { q: "NAND gate is a combination of:", options: ["AND and OR", "AND and NOT", "OR and NOT", "NOR and AND"], answer: "AND and NOT" },
+            { q: "Transistor is made of:", options: ["Insulator", "Conductor", "Semiconductor", "Superconductor"], answer: "Semiconductor" },
+            { q: "A full-wave rectifier uses:", options: ["One diode", "Two diodes", "Three diodes", "Four diodes"], answer: "Two diodes" },
+            { q: "The band gap of germanium is approximately:", options: ["1.1 eV", "0.67 eV", "5 eV", "0 eV"], answer: "0.67 eV" }
+          ]
+        },
+         {
+          title: "Communication Systems - Quiz 1",
+          questions: [
+            { q: "Basic elements of a communication system are:", options: ["Transmitter, channel, receiver", "Transmitter, modulator, receiver", "Source, amplifier, sink", "Antenna, cable, speaker"], answer: "Transmitter, channel, receiver" },
+            { q: "Modulation is the process of:", options: ["Amplifying signals", "Mixing low and high frequency signals", "Reducing noise", "Converting analog to digital"], answer: "Mixing low and high frequency signals" },
+            { q: "AM stands for:", options: ["Amplitude Modulation", "Angle Modulation", "Analog Modulation", "Audio Modulation"], answer: "Amplitude Modulation" },
+            { q: "FM stands for:", options: ["Frequency Modulation", "Field Modulation", "Fast Modulation", "Filter Modulation"], answer: "Frequency Modulation" },
+            { q: "Bandwidth of a signal is:", options: ["Range of frequencies", "Single frequency", "Amplitude range", "Power range"], answer: "Range of frequencies" },
+            { q: "The medium for satellite communication is:", options: ["Copper cable", "Optical fiber", "Free space", "Coaxial cable"], answer: "Free space" },
+            { q: "Noise in a communication system is:", options: ["Desired signal", "Unwanted signal", "Amplified signal", "Modulated signal"], answer: "Unwanted signal" },
+            { q: "Antenna converts:", options: ["Electrical signals to EM waves", "Sound to EM waves", "Light to EM waves", "Heat to EM waves"], answer: "Electrical signals to EM waves" },
+            { q: "The purpose of a modulator is to:", options: ["Amplify signals", "Mix signals", "Filter noise", "Convert digital to analog"], answer: "Mix signals" },
+            { q: "Which wave is used in mobile communication?", options: ["Radio waves", "Microwaves", "Infrared", "Ultraviolet"], answer: "Microwaves" },
+            { q: "Attenuation in a communication channel refers to:", options: ["Signal amplification", "Signal loss", "Signal modulation", "Signal distortion"], answer: "Signal loss" },
+            { q: "The ionosphere reflects:", options: ["Microwaves", "Radio waves", "X-rays", "Gamma rays"], answer: "Radio waves" },
+            { q: "Optical fibers use:", options: ["Total internal reflection", "Refraction", "Diffraction", "Polarization"], answer: "Total internal reflection" },
+            { q: "A repeater in communication is used to:", options: ["Amplify signals", "Modulate signals", "Filter signals", "Demodulate signals"], answer: "Amplify signals" },
+            { q: "Pulse code modulation (PCM) is a:", options: ["Analog modulation", "Digital modulation", "Frequency modulation", "Phase modulation"], answer: "Digital modulation" }
+          ]
+        },
+        {
+          title: "Communication Systems - Quiz 2",
+          questions: [
+            { q: "Demodulation is the process of:", options: ["Extracting original signal", "Amplifying signal", "Mixing signals", "Filtering noise"], answer: "Extracting original signal" },
+            { q: "Sky wave propagation is used for:", options: ["Short distances", "Long distances", "Line-of-sight", "Satellite communication"], answer: "Long distances" },
+            { q: "Line-of-sight communication uses:", options: ["Radio waves", "Microwaves", "Infrared", "Ultraviolet"], answer: "Microwaves" },
+            { q: "The carrier wave has:", options: ["Low frequency", "High frequency", "Same frequency as signal", "No frequency"], answer: "High frequency" },
+            { q: "Signal-to-noise ratio should be:", options: ["Low", "High", "Zero", "Infinite"], answer: "High" },
+            { q: "Optical communication uses:", options: ["Radio waves", "Microwaves", "Light waves", "Sound waves"], answer: "Light waves" },
+            { q: "Ground wave propagation is effective for:", options: ["High frequencies", "Low frequencies", "Microwaves", "Infrared"], answer: "Low frequencies" },
+            { q: "The function of a detector in a receiver is:", options: ["Amplify signal", "Modulate signal", "Demodulate signal", "Filter noise"], answer: "Demodulate signal" },
+            { q: "Bluetooth uses:", options: ["Radio waves", "Microwaves", "Infrared", "Ultraviolet"], answer: "Radio waves" },
+            { q: "The main advantage of digital communication is:", options: ["High power", "Low noise", "High bandwidth", "Low cost"], answer: "Low noise" },
+            { q: "Frequency modulation has better:", options: ["Bandwidth", "Noise immunity", "Power efficiency", "Signal strength"], answer: "Noise immunity" },
+            { q: "The range of AM radio broadcast is:", options: ["10-100 kHz", "100-1000 kHz", "1-10 MHz", "10-100 MHz"], answer: "100-1000 kHz" },
+            { q: "A modem converts:", options: ["Analog to digital and vice versa", "High to low frequency", "AC to DC", "Low to high voltage"], answer: "Analog to digital and vice versa" },
+            { q: "Fading in communication refers to:", options: ["Signal loss", "Signal amplification", "Signal modulation", "Signal distortion"], answer: "Signal loss" },
+            { q: "The main disadvantage of optical fiber is:", options: ["High cost", "Low bandwidth", "High noise", "Low security"], answer: "High cost" }
+          ]
+        }
+],
+Chemistry: [
+        {
+          title: "Solutions - Quiz 1",
+          questions: [
+            { q: "The component present in larger amount in a solution is:", options: ["Solute", "Solvent", "Mixture", "Colloid"], answer: "Solvent" },
+            { q: "Molarity is defined as:", options: ["Moles of solute per liter of solution", "Moles of solute per kg of solvent", "Moles of solvent per liter of solution", "Moles of solute per liter of solvent"], answer: "Moles of solute per liter of solution" },
+            { q: "Which is a colligative property?", options: ["Viscosity", "Boiling point elevation", "Density", "Refractive index"], answer: "Boiling point elevation" },
+            { q: "Raoult’s law is applicable to:", options: ["Ideal solutions", "Non-ideal solutions", "Colloids", "Suspensions"], answer: "Ideal solutions" },
+            { q: "Henry’s law relates to:", options: ["Solubility of gases", "Boiling point", "Freezing point", "Vapour pressure"], answer: "Solubility of gases" },
+            { q: "A solution with uniform composition is called:", options: ["Heterogeneous", "Homogeneous", "Colloidal", "Suspension"], answer: "Homogeneous" },
+            { q: "Molality is independent of:", options: ["Temperature", "Pressure", "Volume", "Concentration"], answer: "Temperature" },
+            { q: "The unit of molality is:", options: ["mol/L", "mol/kg", "g/L", "kg/mol"], answer: "mol/kg" },
+            { q: "Azeotropes are:", options: ["Constant boiling mixtures", "Non-ideal solutions", "Colloids", "Suspensions"], answer: "Constant boiling mixtures" },
+            { q: "Relative lowering of vapour pressure depends on:", options: ["Mole fraction of solute", "Mole fraction of solvent", "Temperature", "Pressure"], answer: "Mole fraction of solute" },
+            { q: "Osmotic pressure is proportional to:", options: ["Temperature", "Pressure", "Volume", "Density"], answer: "Temperature" },
+            { q: "Van’t Hoff factor for NaCl in water is:", options: ["1", "2", "3", "0"], answer: "2" },
+            { q: "Which solution has the highest boiling point?", options: ["1 M NaCl", "1 M Glucose", "1 M Urea", "1 M Sucrose"], answer: "1 M NaCl" },
+            { q: "Colligative properties depend on:", options: ["Nature of solute", "Number of solute particles", "Nature of solvent", "Volume of solution"], answer: "Number of solute particles" },
+            { q: "A solution that disobeys Raoult’s law shows:", options: ["Positive deviation", "Negative deviation", "Both deviations", "No deviation"], answer: "Both deviations" }
+          ]
+        },
+        {
+          title: "Solutions - Quiz 2",
+          questions: [
+            { q: "Mass percentage is defined as:", options: ["Mass of solute / Mass of solution × 100", "Mass of solvent / Mass of solution × 100", "Mass of solute / Volume of solution", "Mass of solvent / Volume of solution"], answer: "Mass of solute / Mass of solution × 100" },
+            { q: "Mole fraction of a component is:", options: ["Moles of component / Total moles", "Moles of component / Total volume", "Mass of component / Total mass", "Volume of component / Total volume"], answer: "Moles of component / Total moles" },
+            { q: "Which is not a colligative property?", options: ["Osmotic pressure", "Boiling point elevation", "Surface tension", "Freezing point depression"], answer: "Surface tension" },
+            { q: "Ideal solutions have:", options: ["No heat change on mixing", "Heat absorbed on mixing", "Heat released on mixing", "High viscosity"], answer: "No heat change on mixing" },
+            { q: "Henry’s law constant depends on:", options: ["Temperature", "Pressure", "Volume", "Density"], answer: "Temperature" },
+            { q: "A 1 M solution contains:", options: ["1 mole of solute per liter of solution", "1 mole of solute per kg of solvent", "1 mole of solvent per liter", "1 mole of solute per kg of solution"], answer: "1 mole of solute per liter of solution" },
+            { q: "Freezing point depression is proportional to:", options: ["Molality", "Molarity", "Mass percentage", "Mole fraction"], answer: "Molality" },
+            { q: "Which solution shows positive deviation from Raoult’s law?", options: ["Acetone + Ethanol", "Acetone + Chloroform", "Water + HCl", "Benzene + Toluene"], answer: "Acetone + Ethanol" },
+            { q: "Osmosis involves movement of:", options: ["Solute", "Solvent", "Solution", "Colloid"], answer: "Solvent" },
+            { q: "Van’t Hoff factor for CaCl₂ is:", options: ["1", "2", "3", "4"], answer: "3" },
+            { q: "Which has the lowest freezing point?", options: ["1 M Glucose", "1 M NaCl", "1 M CaCl₂", "1 M Urea"], answer: "1 M CaCl₂" },
+            { q: "Maximum boiling azeotropes show:", options: ["Positive deviation", "Negative deviation", "No deviation", "Random deviation"], answer: "Negative deviation" },
+            { q: "The unit of osmotic pressure is:", options: ["Pascal", "Joule", "Watt", "Newton"], answer: "Pascal" },
+            { q: "Colligative properties are used to determine:", options: ["Molar mass of solute", "Density of solution", "Viscosity", "Surface tension"], answer: "Molar mass of solute" },
+            { q: "A solution of sugar in water is:", options: ["Ideal", "Non-ideal", "Colloidal", "Suspension"], answer: "Non-ideal" }
+          ]
+        },
+         {
+          title: "Electrochemistry - Quiz 1",
+          questions: [
+            { q: "The device that converts chemical energy to electrical energy is:", options: ["Electrolytic cell", "Galvanic cell", "Fuel cell", "Battery"], answer: "Galvanic cell" },
+            { q: "The SI unit of conductance is:", options: ["Ohm", "Siemens", "Volt", "Ampere"], answer: "Siemens" },
+            { q: "Standard electrode potential is measured at:", options: ["0 K", "273 K", "298 K", "373 K"], answer: "298 K" },
+            { q: "The electrode where oxidation occurs is:", options: ["Cathode", "Anode", "Electrolyte", "Salt bridge"], answer: "Anode" },
+            { q: "Nernst equation relates EMF to:", options: ["Concentration", "Temperature", "Pressure", "Both concentration and temperature"], answer: "Both concentration and temperature" },
+            { q: "Faraday’s first law relates to:", options: ["EMF of cell", "Mass deposited during electrolysis", "Conductance", "Resistance"], answer: "Mass deposited during electrolysis" },
+            { q: "The unit of cell constant is:", options: ["cm", "cm⁻¹", "S cm", "S cm⁻¹"], answer: "cm⁻¹" },
+            { q: "A salt bridge maintains:", options: ["Electrical neutrality", "High voltage", "Low resistance", "High conductance"], answer: "Electrical neutrality" },
+            { q: "Standard hydrogen electrode has a potential of:", options: ["0 V", "1 V", "-1 V", "0.5 V"], answer: "0 V" },
+            { q: "Conductivity of a solution depends on:", options: ["Temperature", "Pressure", "Volume", "Density"], answer: "Temperature" },
+            { q: "The electrolyte in a lead-acid battery is:", options: ["HCl", "H₂SO₄", "NaCl", "KOH"], answer: "H₂SO₄" },
+            { q: "Kohlrausch’s law is used to determine:", options: ["EMF of cell", "Molar conductivity", "Resistance", "Electrode potential"], answer: "Molar conductivity" },
+            { q: "The strongest oxidizing agent is:", options: ["Li⁺", "F₂", "Cl₂", "Na⁺"], answer: "F₂" },
+            { q: "In electrolysis, reduction occurs at:", options: ["Anode", "Cathode", "Salt bridge", "Electrolyte"], answer: "Cathode" },
+            { q: "Gibbs free energy change is related to EMF by:", options: ["ΔG = -nFE", "ΔG = nFE", "ΔG = -nF/E", "ΔG = nF/E"], answer: "ΔG = -nFE" }
+          ]
+        },
+        {
+          title: "Electrochemistry - Quiz 2",
+          questions: [
+            { q: "The unit of molar conductivity is:", options: ["S cm² mol⁻¹", "S cm⁻¹", "S m", "Ohm cm"], answer: "S cm² mol⁻¹" },
+            { q: "A galvanic cell operates spontaneously when EMF is:", options: ["Zero", "Positive", "Negative", "Infinite"], answer: "Positive" },
+            { q: "Faraday’s second law relates to:", options: ["EMF of cell", "Ratio of masses deposited", "Conductance", "Resistance"], answer: "Ratio of masses deposited" },
+            { q: "The role of a salt bridge is to:", options: ["Increase voltage", "Allow ion flow", "Prevent ion flow", "Increase resistance"], answer: "Allow ion flow" },
+            { q: "The strongest reducing agent is:", options: ["Li", "F₂", "Cl₂", "Na"], answer: "Li" },
+            { q: "Specific conductivity decreases with:", options: ["Dilution", "Concentration", "Temperature", "Pressure"], answer: "Dilution" },
+            { q: "A fuel cell uses:", options: ["H₂ and O₂", "NaCl", "HCl", "KOH"], answer: "H₂ and O₂" },
+            { q: "The cell constant is determined by:", options: ["Area of electrodes", "Distance between electrodes", "Both area and distance", "Electrolyte concentration"], answer: "Both area and distance" },
+            { q: "The EMF of a standard cell is:", options: ["Constant", "Variable", "Zero", "Infinite"], answer: "Constant" },
+            { q: "Conductance is the reciprocal of:", options: ["Resistance", "EMF", "Current", "Voltage"], answer: "Resistance" },
+            { q: "The electrolyte in a dry cell is:", options: ["NH₄Cl", "H₂SO₄", "KOH", "NaCl"], answer: "NH₄Cl" },
+            { q: "Molar conductivity increases with:", options: ["Concentration", "Dilution", "Pressure", "Temperature"], answer: "Dilution" },
+            { q: "The standard reduction potential of Cu²⁺/Cu is:", options: ["+0.34 V", "-0.34 V", "0 V", "+1.0 V"], answer: "+0.34 V" },
+            { q: "In a galvanic cell, electrons flow from:", options: ["Cathode to anode", "Anode to cathode", "Salt bridge to anode", "Electrolyte to cathode"], answer: "Anode to cathode" },
+            { q: "The Nernst equation involves:", options: ["ln Q", "log Q", "Q²", "1/Q"], answer: "ln Q" }
+          ]
+        },
+        {
+          title: "Chemical Kinetics - Quiz 1",
+          questions: [
+            { q: "The rate of a reaction is defined as:", options: ["Change in concentration per unit time", "Change in volume per unit time", "Change in temperature", "Change in pressure"], answer: "Change in concentration per unit time" },
+            { q: "The unit of rate constant for a first-order reaction is:", options: ["mol L⁻¹ s⁻¹", "s⁻¹", "L mol⁻¹ s⁻¹", "L² mol⁻² s⁻¹"], answer: "s⁻¹" },
+            { q: "Order of a reaction is determined:", options: ["Theoretically", "Experimentally", "By stoichiometry", "By equilibrium"], answer: "Experimentally" },
+            { q: "Half-life of a first-order reaction is:", options: ["Dependent on concentration", "Independent of concentration", "Proportional to concentration", "Inversely proportional to rate constant"], answer: "Independent of concentration" },
+            { q: "The Arrhenius equation relates rate constant to:", options: ["Temperature", "Pressure", "Volume", "Concentration"], answer: "Temperature" },
+            { q: "Activation energy is:", options: ["Energy released in reaction", "Energy barrier to reaction", "Total energy of reactants", "Energy of products"], answer: "Energy barrier to reaction" },
+            { q: "A catalyst affects:", options: ["Equilibrium constant", "Activation energy", "Reaction order", "Concentration"], answer: "Activation energy" },
+            { q: "Rate law for a reaction is given by:", options: ["Rate = k[A][B]", "Rate = k[A] + [B]", "Rate = k[A]/[B]", "Rate = k[A] - [B]"], answer: "Rate = k[A][B]" },
+            { q: "Molecularity of a reaction is:", options: ["Sum of orders", "Number of molecules in rate-determining step", "Total reactants", "Total products"], answer: "Number of molecules in rate-determining step" },
+            { q: "The unit of rate constant for a zero-order reaction is:", options: ["mol L⁻¹ s⁻¹", "s⁻¹", "L mol⁻¹ s⁻¹", "L² mol⁻² s⁻¹"], answer: "mol L⁻¹ s⁻¹" },
+            { q: "A first-order reaction has a constant:", options: ["Half-life", "Rate", "Concentration", "Volume"], answer: "Half-life" },
+            { q: "The rate of a reaction increases with:", options: ["Decrease in temperature", "Increase in temperature", "Decrease in concentration", "Decrease in surface area"], answer: "Increase in temperature" },
+            { q: "The term ‘k’ in rate law represents:", options: ["Equilibrium constant", "Rate constant", "Order of reaction", "Molecularity"], answer: "Rate constant" },
+            { q: "A zero-order reaction completes in:", options: ["Infinite time", "Finite time", "No time", "Variable time"], answer: "Finite time" },
+            { q: "Collision theory explains:", options: ["Rate of reaction", "Equilibrium", "Thermodynamics", "Bond formation"], answer: "Rate of reaction" }
+          ]
+        },
+        {
+          title: "Chemical Kinetics - Quiz 2",
+          questions: [
+            { q: "The rate constant depends on:", options: ["Concentration", "Temperature", "Volume", "Pressure"], answer: "Temperature" },
+            { q: "Half-life of a second-order reaction is proportional to:", options: ["1/[A]₀", "[A]₀", "k", "1/k"], answer: "1/[A]₀" },
+            { q: "The order of a reaction can be:", options: ["Fractional", "Only integer", "Only zero", "Always positive"], answer: "Fractional" },
+            { q: "A catalyst provides:", options: ["Higher energy path", "Lower energy path", "No energy change", "Higher concentration"], answer: "Lower energy path" },
+            { q: "The unit of rate constant for a second-order reaction is:", options: ["mol L⁻¹ s⁻¹", "s⁻¹", "L mol⁻¹ s⁻¹", "L² mol⁻² s⁻¹"], answer: "L mol⁻¹ s⁻¹" },
+            { q: "Molecularity cannot be:", options: ["Zero", "One", "Two", "Fractional"], answer: "Fractional" },
+            { q: "The slope of ln[A] vs time for a first-order reaction is:", options: ["k", "-k", "1/k", "-1/k"], answer: "-k" },
+            { q: "A reaction with high activation energy is:", options: ["Fast", "Slow", "Spontaneous", "Equilibrium"], answer: "Slow" },
+            { q: "Rate of reaction is affected by:", options: ["Surface area", "Volume", "Density", "Viscosity"], answer: "Surface area" },
+            { q: "The Arrhenius equation includes:", options: ["Activation energy", "Equilibrium constant", "Concentration", "Pressure"], answer: "Activation energy" },
+            { q: "Pseudo-first-order reaction is:", options: ["First-order in appearance", "Second-order in reality", "Zero-order", "Third-order"], answer: "First-order in appearance" },
+            { q: "The rate of a gaseous reaction increases with:", options: ["Decrease in pressure", "Increase in pressure", "No pressure change", "Decrease in temperature"], answer: "Increase in pressure" },
+            { q: "The integrated rate law for a zero-order reaction is:", options: ["[A] = -kt + [A]₀", "ln[A] = -kt + ln[A]₀", "1/[A] = kt + 1/[A]₀", "[A] = kt + [A]₀"], answer: "[A] = -kt + [A]₀" },
+            { q: "A reaction’s rate doubles when temperature increases by:", options: ["10 K", "20 K", "30 K", "40 K"], answer: "10 K" },
+            { q: "The term ‘A’ in the Arrhenius equation is:", options: ["Rate constant", "Activation energy", "Pre-exponential factor", "Concentration"], answer: "Pre-exponential factor" }
+          ]
+        },
+        {
+          title: "The d- and f-Block Elements - Quiz 1",
+          questions: [
+            { q: "d-block elements are also called:", options: ["Alkali metals", "Transition elements", "Halogens", "Noble gases"], answer: "Transition elements" },
+            { q: "The general electronic configuration of d-block elements is:", options: ["ns² np³", "(n-1)d¹⁻¹⁰ ns¹⁻²", "ns² np⁵", "(n-1)d¹⁰ ns²"], answer: "(n-1)d¹⁻¹⁰ ns¹⁻²" },
+            { q: "f-block elements leveren:", options: ["Lanthanoids and actinoids", "Alkali and alkaline earth metals", "Halogens", "Chalcogens"], answer: "Lanthanoids and actinoids" },
+            { q: "The maximum oxidation state of Mn is:", options: ["+2", "+4", "+7", "+5"], answer: "+7" },
+            { q: "Lanthanoid contraction is due to:", options: ["Poor shielding of f-electrons", "High shielding of d-electrons", "High charge of nucleus", "Low electronegativity"], answer: "Poor shielding of f-electrons" },
+            { q: "Which is a transition element?", options: ["Na", "Cu", "Cl", "Xe"], answer: "Cu" },
+            { q: "The color of transition metal ions is due to:", options: ["d-d transitions", "s-s transitions", "p-p transitions", "f-f transitions"], answer: "d-d transitions" },
+            { q: "Actinoids are:", options: ["Radioactive", "Non-radioactive", "Inert", "Gaseous"], answer: "Radioactive" },
+            { q: "Which element forms a blue solution with water?", options: ["Fe²⁺", "Cu²⁺", "Zn²⁺", "Ni²⁺"], answer: "Cu²⁺" },
+            { q: "The most common oxidation state of lanthanoids is:", options: ["+2", "+3", "+4", "+5"], answer: "+3" },
+            { q: "Magnetic properties of transition metals are due to:", options: ["Paired electrons", "Unpaired d-electrons", "s-electrons", "p-electrons"], answer: "Unpaired d-electrons" },
+            { q: "KMnO₄ is used as:", options: ["Reducing agent", "Oxidizing agent", "Catalyst", "Indicator"], answer: "Oxidizing agent" },
+            { q: "The atomic radii of d-block elements:", options: ["Increase across period", "Decrease across period", "Remain constant", "Vary randomly"], answer: "Decrease across period" },
+            { q: "Which is not a property of transition metals?", options: ["High melting point", "Variable oxidation states", "Low density", "Catalytic activity"], answer: "Low density" },
+            { q: "f-block elements are found in:", options: ["s-block", "p-block", "d-block", "f-block"], answer: "f-block" }
+          ]
+        },
+        {
+          title: "The d- and f-Block Elements - Quiz 2",
+          questions: [
+            { q: "The general electronic configuration of f-block elements is:", options: ["(n-2)f¹⁻¹⁴ (n-1)d⁰⁻¹ ns²", "(n-1)d¹⁻¹⁰ ns¹⁻²", "ns² np³", "ns² np⁵"], answer: "(n-2)f¹⁻¹⁴ (n-1)d⁰⁻¹ ns²" },
+            { q: "Which element is used in stainless steel?", options: ["Cr", "Zn", "Cu", "Ni"], answer: "Cr" },
+            { q: "Lanthanoids are used in:", options: ["Glass industry", "Textile industry", "Food industry", "Paper industry"], answer: "Glass industry" },
+            { q: "The oxidation state of Fe in Fe₂O₃ is:", options: ["+2", "+3", "+4", "+5"], answer: "+3" },
+            { q: "Zinc is not a transition element because:", options: ["It has no d-electrons", "It has completely filled d-orbitals", "It is a metal", "It has high melting point"], answer: "It has completely filled d-orbitals" },
+            { q: "K₂Cr₂O₇ is used as:", options: ["Reducing agent", "Oxidizing agent", "Catalyst", "Indicator"], answer: "Oxidizing agent" },
+            { q: "The lanthanoid contraction affects:", options: ["Atomic radii", "Boiling point", "Density", "Electronegativity"], answer: "Atomic radii" },
+            { q: "Which ion is colorless?", options: ["Cu²⁺", "Ni²⁺", "Zn²⁺", "Fe²⁺"], answer: "Zn²⁺" },
+            { q: "Actinoids show more oxidation states than lanthanoids due to:", options: ["Smaller size", "Better shielding", "Higher nuclear charge", "Lower ionization energy"], answer: "Lower ionization energy" },
+            { q: "The catalyst in Haber’s process is:", options: ["Fe", "Cu", "Zn", "Ni"], answer: "Fe" },
+            { q: "Which element has the highest melting point?", options: ["Cu", "W", "Zn", "Ag"], answer: "W" },
+            { q: "The magnetic moment depends on:", options: ["Number of paired electrons", "Number of unpaired electrons", "Atomic mass", "Nuclear charge"], answer: "Number of unpaired electrons" },
+            { q: "Which is a lanthanoid?", options: ["Uranium", "Cerium", "Thorium", "Plutonium"], answer: "Cerium" },
+            { q: "Transition metals form complexes due to:", options: ["High charge and small size", "Low charge", "Large size", "No d-electrons"], answer: "High charge and small size" },
+            { q: "The color of KMnO₄ is due to:", options: ["Charge transfer", "d-d transition", "f-f transition", "s-s transition"], answer: "Charge transfer" }
+          ]
+        },
+         {
+          title: "Coordination Compounds - Quiz 1",
+          questions: [
+            { q: "The central atom in a coordination compound is:", options: ["Ligand", "Metal ion", "Anion", "Cation"], answer: "Metal ion" },
+            { q: "Ligands are:", options: ["Electron donors", "Electron acceptors", "Neutral molecules only", "Cations"], answer: "Electron donors" },
+            { q: "Coordination number is the number of:", options: ["Ligands around metal", "Electrons in ligand", "Bonds in molecule", "Metal ions"], answer: "Ligands around metal" },
+            { q: "The oxidation state of Co in [Co(NH₃)₆]³⁺ is:", options: ["+2", "+3", "+4", "+5"], answer: "+3" },
+            { q: "EDTA is a:", options: ["Monodentate ligand", "Bidentate ligand", "Hexadentate ligand", "Tridentate ligand"], answer: "Hexadentate ligand" },
+            { q: "Isomerism in coordination compounds includes:", options: ["Geometrical isomerism", "Structural isomerism", "Both geometrical and structural", "No isomerism"], answer: "Both geometrical and structural" },
+            { q: "The IUPAC name of [CoCl₂(en)₂]Cl is:", options: ["Dichlorobis(ethylenediamine)cobalt(III) chloride", "Dichlorobis(ethylenediamine)cobalt(II) chloride", "Chlorobis(ethylenediamine)cobalt(III) chloride", "Dichlorobis(ethane)cobalt(III) chloride"], answer: "Dichlorobis(ethylenediamine)cobalt(III) chloride" },
+            { q: "Crystal field theory explains:", options: ["Color and magnetic properties", "Boiling point", "Solubility", "Density"], answer: "Color and magnetic properties" },
+            { q: "A strong field ligand causes:", options: ["Low spin complex", "High spin complex", "No spin", "Random spin"], answer: "Low spin complex" },
+            { q: "The geometry of [Ni(CN)₄]²⁻ is:", options: ["Tetrahedral", "Square planar", "Octahedral", "Linear"], answer: "Square planar" },
+            { q: "Werner’s theory explains:", options: ["Structure of coordination compounds", "Bond energy", "Solubility", "Reactivity"], answer: "Structure of coordination compounds" },
+            { q: "A bidentate ligand has:", options: ["One donor atom", "Two donor atoms", "Three donor atoms", "Four donor atoms"], answer: "Two donor atoms" },
+            { q: "The color of coordination compounds is due to:", options: ["d-d transitions", "s-s transitions", "p-p transitions", "f-f transitions"], answer: "d-d transitions" },
+            { q: "The coordination number of [PtCl₆]²⁻ is:", options: ["4", "6", "8", "2"], answer: "6" },
+            { q: "Ambidentate ligands can bind through:", options: ["One atom", "Two different atoms", "Three atoms", "No atoms"], answer: "Two different atoms" }
+          ]
+        },
+        {
+          title: "Coordination Compounds - Quiz 2",
+          questions: [
+            { q: "The primary valence in Werner’s theory refers to:", options: ["Coordination number", "Oxidation state", "Ligand charge", "Metal charge"], answer: "Oxidation state" },
+            { q: "The geometry of [CoF₆]³⁻ is:", options: ["Tetrahedral", "Square planar", "Octahedral", "Linear"], answer: "Octahedral" },
+            { q: "Which is a monodentate ligand?", options: ["NH₃", "en", "EDTA", "ox"], answer: "NH₃" },
+            { q: "Linkage isomerism occurs due to:", options: ["Different ligands", "Ambidentate ligands", "Geometrical arrangement", "Ionization"], answer: "Ambidentate ligands" },
+            { q: "The crystal field splitting in octahedral complexes is denoted by:", options: ["Δt", "Δo", "Δsp", "Δ"], answer: "Δo" },
+            { q: "A weak field ligand causes:", options: ["Low spin complex", "High spin complex", "No spin", "Neutral spin"], answer: "High spin complex" },
+            { q: "The oxidation state of Fe in [Fe(CN)₆]⁴⁻ is:", options: ["+2", "+3", "+4", "+5"], answer: "+2" },
+            { q: "Which complex shows geometrical isomerism?", options: ["[Co(NH₃)₆]³⁺", "[Co(en)₃]³⁺", "[Ma₂b₂]", "[Mabcd]"], answer: "[Ma₂b₂]" },
+            { q: "The spectrochemical series arranges ligands by:", options: ["Charge", "Field strength", "Size", "Electronegativity"], answer: "Field strength" },
+            { q: "The magnetic moment of a complex depends on:", options: ["Number of unpaired electrons", "Number of ligands", "Oxidation state", "Coordination number"], answer: "Number of unpaired electrons" },
+            { q: "The IUPAC name of K₃[Fe(CN)₆] is:", options: ["Potassium hexacyanoferrate(II)", "Potassium hexacyanoferrate(III)", "Potassium ferrocyanide", "Potassium ferricyanide"], answer: "Potassium hexacyanoferrate(III)" },
+            { q: "Coordination compounds are used as:", options: ["Catalysts", "Insulators", "Conductors", "Semiconductors"], answer: "Catalysts" },
+            { q: "The geometry of [NiCl₄]²⁻ is:", options: ["Tetrahedral", "Square planar", "Octahedral", "Linear"], answer: "Tetrahedral" },
+            { q: "Ionization isomerism occurs in:", options: ["[Co(NH₃)₅Cl]SO₄", "[Co(en)₃]³⁺", "[Co(NH₃)₆]³⁺", "[Ni(CN)₄]²⁻"], answer: "[Co(NH₃)₅Cl]SO₄" },
+            { q: "The crystal field splitting in tetrahedral complexes is:", options: ["Greater than octahedral", "Less than octahedral", "Equal to octahedral", "Zero"], answer: "Less than octahedral" }
+          ]
+        },
+        {
+          title: "Haloalkanes and Haloarenes - Quiz 1",
+          questions: [
+            { q: "Haloalkanes are also called:", options: ["Alkyl halides", "Aryl halides", "Alkenyl halides", "Alkynyl halides"], answer: "Alkyl halides" },
+            { q: "The general formula of haloalkanes is:", options: ["CₙH₂ₙ₊₁X", "CₙH₂ₙX", "CₙH₂ₙ₋₁X", "CₙH₂ₙ₊₂X"], answer: "CₙH₂ₙ₊₁X" },
+            { q: "Haloarenes are formed by replacing hydrogen in:", options: ["Alkanes", "Alkenes", "Aromatic rings", "Alkynes"], answer: "Aromatic rings" },
+            { q: "Chloromethane is prepared by:", options: ["Wurtz reaction", "Sandmeyer’s reaction", "Halogenation of methane", "Friedel-Crafts reaction"], answer: "Halogenation of methane" },
+            { q: "SN₁ reactions proceed via:", options: ["Carbocation intermediate", "Carbanion intermediate", "Free radical", "Concerted mechanism"], answer: "Carbocation intermediate" },
+            { q: "SN₂ reactions are favored by:", options: ["Polar protic solvents", "Polar aprotic solvents", "Non-polar solvents", "Water"], answer: "Polar aprotic solvents" },
+            { q: "Chloroform is used as:", options: ["Anesthetic", "Catalyst", "Solvent", "Polymer"], answer: "Anesthetic" },
+            { q: "The reactivity order of alkyl halides in SN₂ is:", options: ["R-I > R-Br > R-Cl", "R-Cl > R-Br > R-I", "R-Br > R-I > R-Cl", "R-Cl > R-I > R-Br"], answer: "R-I > R-Br > R-Cl" },
+            { q: "Aryl halides are less reactive due to:", options: ["C-X bond strength", "Steric hindrance", "Resonance", "Low electronegativity"], answer: "Resonance" },
+            { q: "The product of Wurtz reaction is:", options: ["Alkane", "Alkene", "Alkyne", "Aryl halide"], answer: "Alkane" },
+            { q: "DDT is used as:", options: ["Insecticide", "Anesthetic", "Solvent", "Catalyst"], answer: "Insecticide" },
+            { q: "The C-X bond in haloarenes is:", options: ["Longer than in haloalkanes", "Shorter than in haloalkanes", "Same as haloalkanes", "Non-polar"], answer: "Shorter than in haloalkanes" },
+            { q: "Finkelstein reaction converts:", options: ["R-Cl to R-I", "R-I to R-Cl", "R-Br to R-Cl", "R-Cl to R-Br"], answer: "R-Cl to R-I" },
+            { q: "Chirality in haloalkanes occurs when:", options: ["Carbon has four different groups", "Carbon has two halogens", "Carbon is sp² hybridized", "Carbon is sp hybridized"], answer: "Carbon has four different groups" },
+            { q: "The solvent in SN₁ reactions is:", options: ["Non-polar", "Polar protic", "Polar aprotic", "Neutral"], answer: "Polar protic" }
+          ]
+        },
+        {
+          title: "Haloalkanes and Haloarenes - Quiz 2",
+          questions: [
+            { q: "The general formula of haloarenes is:", options: ["C₆H₅X", "CₙH₂ₙX", "CₙH₂ₙ₊₁X", "CₙH₂ₙ₋₁X"], answer: "C₆H₅X" },
+            { q: "Which is a polyhalogen compound?", options: ["CH₃Cl", "CHCl₃", "C₆H₅Cl", "CH₂Cl₂"], answer: "CHCl₃" },
+            { q: "SN₁ reactions are favored by:", options: ["Primary alkyl halides", "Secondary alkyl halides", "Tertiary alkyl halides", "Aryl halides"], answer: "Tertiary alkyl halides" },
+            { q: "The product of Sandmeyer’s reaction is:", options: ["Aryl halide", "Alkyl halide", "Alkane", "Alkene"], answer: "Aryl halide" },
+            { q: "The C-X bond in alkyl halides is:", options: ["Ionic", "Covalent", "Metallic", "Hydrogen bond"], answer: "Covalent" },
+            { q: "Iodoform is used as:", options: ["Antiseptic", "Insecticide", "Anesthetic", "Solvent"], answer: "Antiseptic" },
+            { q: "The reactivity order of alkyl halides in SN₁ is:", options: ["R-I > R-Br > R-Cl", "R-Cl > R-Br > R-I", "R-Cl > R-I > R-Br", "R-I > R-Cl > R-Br"], answer: "R-I > R-Br > R-Cl" },
+            { q: "Aryl halides undergo:", options: ["Nucleophilic substitution easily", "Electrophilic substitution", "No substitution", "Radical substitution"], answer: "Electrophilic substitution" },
+            { q: "The product of haloalkane with Na in dry ether is:", options: ["Alkene", "Alkyne", "Alkane", "Aryl halide"], answer: "Alkane" },
+            { q: "Freons are used as:", options: ["Refrigerants", "Insecticides", "Anesthetics", "Catalysts"], answer: "Refrigerants" },
+            { q: "The mechanism of SN₂ reaction is:", options: ["Single step", "Two steps", "Three steps", "No steps"], answer: "Single step" },
+            { q: "The product of haloalkane with alcoholic KOH is:", options: ["Alkane", "Alkene", "Alkyne", "Alcohol"], answer: "Alkene" },
+            { q: "The boiling point of alkyl halides increases with:", options: ["Decrease in molecular weight", "Increase in molecular weight", "Decrease in halogen size", "Increase in carbon chain"], answer: "Increase in molecular weight" },
+            { q: "Swarts reaction produces:", options: ["R-F", "R-Cl", "R-Br", "R-I"], answer: "R-F" },
+            { q: "The dipole moment of CH₃Cl is:", options: ["Zero", "High", "Low", "Infinite"], answer: "High" }
+          ]
+        },
+        {
+          title: "Alcohols, Phenols, and Ethers - Quiz 1",
+          questions: [
+            { q: "The general formula of alcohols is:", options: ["CₙH₂ₙ₊₁OH", "CₙH₂ₙOH", "CₙH₂ₙ₋₁OH", "CₙH₂ₙ₊₂OH"], answer: "CₙH₂ₙ₊₁OH" },
+            { q: "Phenols have a hydroxyl group attached to:", options: ["Alkyl chain", "Aromatic ring", "Alkene", "Alkyne"], answer: "Aromatic ring" },
+            { q: "Ethers have the general formula:", options: ["R-OH", "R-OR'", "R-CO-R'", "R-COOH"], answer: "R-OR'" },
+            { q: "Methanol is prepared industrially by:", options: ["Hydration of ethene", "Catalytic reduction of CO", "Oxidation of methane", "Fermentation"], answer: "Catalytic reduction of CO" },
+            { q: "The acidity of phenol is due to:", options: ["Resonance stabilization of phenoxide ion", "High electronegativity", "Hydrogen bonding", "Steric hindrance"], answer: "Resonance stabilization of phenoxide ion" },
+            { q: "Lucas test is used to distinguish:", options: ["Primary, secondary, tertiary alcohols", "Alcohols and phenols", "Ethers and alcohols", "Phenols and ethers"], answer: "Primary, secondary, tertiary alcohols" },
+            { q: "Williamson’s synthesis produces:", options: ["Alcohols", "Ethers", "Aldehydes", "Ketones"], answer: "Ethers" },
+            { q: "The boiling point of alcohols is higher than alkanes due to:", options: ["Hydrogen bonding", "Covalent bonding", "Ionic bonding", "Van der Waals forces"], answer: "Hydrogen bonding" },
+            { q: "Phenol reacts with Br₂ to form:", options: ["Monobromophenol", "2,4,6-Tribromophenol", "Dibromophenol", "No reaction"], answer: "2,4,6-Tribromophenol" },
+            { q: "Ethanol is used as:", options: ["Solvent", "Insecticide", "Catalyst", "Polymer"], answer: "Solvent" },
+            { q: "The product of dehydration of ethanol is:", options: ["Ethene", "Ethyne", "Ether", "Aldehyde"], answer: "Ethene" },
+            { q: "The IUPAC name of CH₃OCH₃ is:", options: ["Methanol", "Dimethyl ether", "Methyl ethyl ether", "Ethanol"], answer: "Dimethyl ether" },
+            { q: "Primary alcohols are oxidized to:", options: ["Aldehydes", "Ketones", "Carboxylic acids", "Ethers"], answer: "Aldehydes" },
+            { q: "Phenol is more acidic than:", options: ["Ethanol", "Acetic acid", "HCl", "H₂SO₄"], answer: "Ethanol" },
+            { q: "The reagent used in Lucas test is:", options: ["ZnCl₂/HCl", "NaOH", "Br₂", "H₂SO₄"], answer: "ZnCl₂/HCl" }
+          ]
+        },
+        {
+          title: "Alcohols, Phenols, and Ethers - Quiz 2",
+          questions: [
+            { q: "The general formula of phenols is:", options: ["C₆H₅OH", "CₙH₂ₙ₊₁OH", "CₙH₂ₙOH", "R-OR'"], answer: "C₆H₅OH" },
+            { q: "Secondary alcohols are oxidized to:", options: ["Aldehydes", "Ketones", "Carboxylic acids", "Ethers"], answer: "Ketones" },
+            { q: "Ethers are cleaved by:", options: ["H₂O", "HI", "NaOH", "HCl"], answer: "HI" },
+            { q: "The product of phenol with conc. HNO₃ is:", options: ["Nitrophenol", "Picric acid", "Nitrobenzene", "No reaction"], answer: "Picric acid" },
+            { q: "The IUPAC name of CH₃CH₂OCH₃ is:", options: ["Ethyl methyl ether", "Methyl ethyl ether", "Ethanol", "Dimethyl ether"], answer: "Ethyl methyl ether" },
+            { q: "Dehydration of alcohols is catalyzed by:", options: ["H₂SO₄", "NaOH", "HCl", "KOH"], answer: "H₂SO₄" },
+            { q: "The solubility of alcohols in water is due to:", options: ["Hydrogen bonding", "Covalent bonding", "Ionic bonding", "Van der Waals forces"], answer: "Hydrogen bonding" },
+            { q: "Phenol does not undergo:", options: ["Electrophilic substitution", "Nucleophilic substitution", "Oxidation", "Reduction"], answer: "Nucleophilic substitution" },
+            { q: "The product of ethanol with Na is:", options: ["Sodium ethoxide", "Ethyl chloride", "Ethene", "Ether"], answer: "Sodium ethoxide" },
+            { q: "Tertiary alcohols are resistant to:", options: ["Oxidation", "Reduction", "Dehydration", "Substitution"], answer: "Oxidation" },
+            { q: "Reimer-Tiemann reaction produces:", options: ["Salicylic acid", "Salicylaldehyde", "Phenol", "Benzene"], answer: "Salicylaldehyde" },
+            { q: "Ethers are less reactive due to:", options: ["Absence of polar bond", "Presence of C-O-C bond", "High electronegativity", "Low boiling point"], answer: "Presence of C-O-C bond" },
+            { q: "The boiling point of ethers is:", options: ["Higher than alcohols", "Lower than alcohols", "Same as alcohols", "Higher than phenols"], answer: "Lower than alcohols" },
+            { q: "Phenol is prepared industrially by:", options: ["Dow’s process", "Wurtz reaction", "Sandmeyer’s reaction", "Friedel-Crafts reaction"], answer: "Dow’s process" },
+            { q: "The product of tertiary alcohol with conc. HCl is:", options: ["Alkyl chloride", "Alkene", "Ether", "Aldehyde"], answer: "Alkyl chloride" }
+          ]
+        },
+        {
+          title: "Aldehydes, Ketones, and Carboxylic Acids - Quiz 1",
+          questions: [
+            { q: "The general formula of aldehydes is:", options: ["R-CHO", "R-CO-R'", "R-COOH", "R-OH"], answer: "R-CHO" },
+            { q: "Ketones have the general formula:", options: ["R-CHO", "R-CO-R'", "R-COOH", "R-OR'"], answer: "R-CO-R'" },
+            { q: "Carboxylic acids have the functional group:", options: ["-CHO", "-COOH", "-CO-R", "-OH"], answer: "-COOH" },
+            { q: "Formaldehyde is prepared by:", options: ["Oxidation of methanol", "Reduction of CO", "Dehydration of ethanol", "Hydrolysis of alkene"], answer: "Oxidation of methanol" },
+            { q: "The carbonyl group consists of:", options: ["C=O", "C-OH", "C-O-C", "C=C"], answer: "C=O" },
+            { q: "Aldehydes are reduced to:", options: ["Primary alcohols", "Secondary alcohols", "Carboxylic acids", "Ethers"], answer: "Primary alcohols" },
+            { q: "Ketones are reduced to:", options: ["Primary alcohols", "Secondary alcohols", "Carboxylic acids", "Aldehydes"], answer: "Secondary alcohols" },
+            { q: "Cannizzaro reaction occurs in aldehydes with:", options: ["Alpha hydrogen", "No alpha hydrogen", "Beta hydrogen", "No hydrogen"], answer: "No alpha hydrogen" },
+            { q: "The IUPAC name of CH₃CHO is:", options: ["Methanal", "Ethanal", "Propanone", "Methanoic acid"], answer: "Ethanal" },
+            { q: "Carboxylic acids are more acidic than phenols due to:", options: ["Resonance stabilization", "Hydrogen bonding", "Steric hindrance", "Electronegativity"], answer: "Resonance stabilization" },
+            { q: "Fehling’s test is used to detect:", options: ["Ketones", "Aldehydes", "Carboxylic acids", "Ethers"], answer: "Aldehydes" },
+            { q: "The product of aldehyde with Grignard reagent is:", options: ["Primary alcohol", "Secondary alcohol", "Tertiary alcohol", "Carboxylic acid"], answer: "Secondary alcohol" },
+            { q: "The boiling point of carboxylic acids is high due to:", options: ["Hydrogen bonding", "Covalent bonding", "Ionic bonding", "Van der Waals forces"], answer: "Hydrogen bonding" },
+            { q: "The IUPAC name of CH₃COOH is:", options: ["Methanoic acid", "Ethanoic acid", "Propanone", "Ethanal"], answer: "Ethanoic acid" },
+            { q: "Aldol condensation produces:", options: ["β-Hydroxy aldehyde", "Carboxylic acid", "Ether", "Alkene"], answer: "β-Hydroxy aldehyde" }
+          ]
+        },
+        {
+          title: "Aldehydes, Ketones, and Carboxylic Acids - Quiz 2",
+          questions: [
+            { q: "The product of ketone with Grignard reagent is:", options: ["Primary alcohol", "Secondary alcohol", "Tertiary alcohol", "Aldehyde"], answer: "Tertiary alcohol" },
+            { q: "Tollens’ test detects:", options: ["Ketones", "Aldehydes", "Carboxylic acids", "Ethers"], answer: "Aldehydes" },
+            { q: "The general formula of carboxylic acids is:", options: ["R-CHO", "R-CO-R'", "R-COOH", "R-OH"], answer: "R-COOH" },
+            { q: "The product of carboxylic acid with alcohol is:", options: ["Ester", "Ether", "Aldehyde", "Ketone"], answer: "Ester" },
+            { q: "Clemmensen reduction converts ketones to:", options: ["Alkanes", "Alkenes", "Alcohols", "Aldehydes"], answer: "Alkanes" },
+            { q: "The IUPAC name of CH₃COCH₃ is:", options: ["Methanal", "Ethanal", "Propanone", "Ethanoic acid"], answer: "Propanone" },
+            { q: "Carboxylic acids react with NaHCO₃ to produce:", options: ["CO₂", "H₂", "O₂", "N₂"], answer: "CO₂" },
+            { q: "The product of Cannizzaro reaction is:", options: ["Alcohol and carboxylic acid", "Aldehyde and ketone", "Ester and alcohol", "Alkene and alcohol"], answer: "Alcohol and carboxylic acid" },
+            { q: "The acidity of carboxylic acids increases with:", options: ["Electron-withdrawing groups", "Electron-donating groups", "Longer alkyl chain", "Hydrogen bonding"], answer: "Electron-withdrawing groups" },
+            { q: "The reagent for Wolff-Kishner reduction is:", options: ["Zn/HCl", "NH₂NH₂/KOH", "LiAlH₄", "NaBH₄"], answer: "NH₂NH₂/KOH" },
+            { q: "The product of ester hydrolysis is:", options: ["Alcohol and carboxylic acid", "Aldehyde and alcohol", "Ketone and alcohol", "Ether and alcohol"], answer: "Alcohol and carboxylic acid" },
+            { q: "Benedict’s test is positive for:", options: ["Ketones", "Aldehydes", "Carboxylic acids", "Ethers"], answer: "Aldehydes" },
+            { q: "The boiling point of aldehydes is:", options: ["Higher than alcohols", "Lower than alcohols", "Same as alcohols", "Higher than carboxylic acids"], answer: "Lower than alcohols" },
+            { q: "The product of oxidation of acetaldehyde is:", options: ["Ethanol", "Ethanoic acid", "Propanone", "Ether"], answer: "Ethanoic acid" },
+            { q: "Hell-Volhard-Zelinsky reaction is used for:", options: ["Aldehydes", "Ketones", "Carboxylic acids", "Ethers"], answer: "Carboxylic acids" }
+          ]
+        },
+        {
+          title: "Amines - Quiz 1",
+          questions: [
+            { q: "The general formula of primary amines is:", options: ["R-NH₂", "R₂NH", "R₃N", "R-NH-R'"], answer: "R-NH₂" },
+            { q: "Amines are derivatives of:", options: ["Ammonia", "Alcohol", "Ether", "Carboxylic acid"], answer: "Ammonia" },
+            { q: "The IUPAC name of CH₃NH₂ is:", options: ["Methanamine", "Ethanamine", "Methylamine", "Aminomethane"], answer: "Methanamine" },
+            { q: "Primary amines react with HNO₂ to form:", options: ["Alcohols", "Nitrosoamines", "Diazonium salts", "Nitriles"], answer: "Alcohols" },
+            { q: "The basicity of amines is due to:", options: ["Lone pair on nitrogen", "Hydrogen bonding", "Resonance", "Electronegativity"], answer: "Lone pair on nitrogen" },
+            { q: "Hinsberg’s test distinguishes:", options: ["Primary, secondary, tertiary amines", "Alcohols and amines", "Aldehydes and ketones", "Phenols and amines"], answer: "Primary, secondary, tertiary amines" },
+            { q: "The product of primary amine with CHCl₃ and KOH is:", options: ["Isocyanide", "Nitrile", "Amide", "Alcohol"], answer: "Isocyanide" },
+            { q: "Tertiary amines do not undergo:", options: ["Acylation", "Alkylation", "Oxidation", "Reduction"], answer: "Acylation" },
+            { q: "The boiling point of amines is:", options: ["Higher than alcohols", "Lower than alcohols", "Same as alcohols", "Higher than ethers"], answer: "Lower than alcohols" },
+            { q: "Aniline is prepared by:", options: ["Reduction of nitrobenzene", "Oxidation of benzene", "Hydrolysis of benzoic acid", "Dehydration of phenol"], answer: "Reduction of nitrobenzene" },
+            { q: "Diazonium salts are formed from:", options: ["Primary aliphatic amines", "Primary aromatic amines", "Secondary amines", "Tertiary amines"], answer: "Primary aromatic amines" },
+            { q: "The product of aniline with Br₂ is:", options: ["Monobromobenzene", "2,4,6-Tribromoaniline", "Dibromobenzene", "No reaction"], answer: "2,4,6-Tribromoaniline" },
+            { q: "Carbylamine test is given by:", options: ["Primary amines", "Secondary amines", "Tertiary amines", "All amines"], answer: "Primary amines" },
+            { q: "Amines are more basic than:", options: ["Alcohols", "Carboxylic acids", "Phenols", "Ethers"], answer: "Alcohols" },
+            { q: "The reagent used in Hinsberg’s test is:", options: ["C₆H₅SO₂Cl", "CHCl₃", "HNO₂", "NaNO₂"], answer: "C₆H₅SO₂Cl" }
+          ]
+        },
+        {
+          title: "Amines - Quiz 2",
+          questions: [
+            { q: "The general formula of secondary amines is:", options: ["R-NH₂", "R₂NH", "R₃N", "R-NH-R'"], answer: "R₂NH" },
+            { q: "The product of secondary amine with HNO₂ is:", options: ["Alcohol", "Nitrosoamine", "Diazonium salt", "Nitrile"], answer: "Nitrosoamine" },
+            { q: "The IUPAC name of (CH₃)₂NH is:", options: ["Methanamine", "Dimethylamine", "N-Methylmethanamine", "Ethanamine"], answer: "N-Methylmethanamine" },
+            { q: "Amines are soluble in water due to:", options: ["Hydrogen bonding", "Covalent bonding", "Ionic bonding", "Van der Waals forces"], answer: "Hydrogen bonding" },
+            { q: "The product of tertiary amine with HNO₂ is:", options: ["Alcohol", "Nitrosoamine", "Ammonium salt", "No reaction"], answer: "Ammonium salt" },
+            { q: "Aniline is less basic than aliphatic amines due to:", options: ["Resonance", "Steric hindrance", "Electronegativity", "Hydrogen bonding"], answer: "Resonance" },
+            { q: "The coupling reaction of diazonium salts produces:", options: ["Azo dyes", "Nitriles", "Alcohols", "Ethers"], answer: "Azo dyes" },
+            { q: "The product of primary amine with acid chloride is:", options: ["Amide", "Ester", "Nitrile", "Isocyanide"], answer: "Amide" },
+            { q: "The basicity order of amines in aqueous solution is:", options: ["1° > 2° > 3°", "2° > 1° > 3°", "3° > 2° > 1°", "1° > 3° > 2°"], answer: "2° > 1° > 3°" },
+            { q: "Hoffmann bromamide reaction produces:", options: ["Primary amine", "Secondary amine", "Tertiary amine", "Nitrile"], answer: "Primary amine" },
+            { q: "The reagent for Gabriel phthalimide synthesis is:", options: ["Phthalimide", "Benzamide", "Nitrobenzene", "Aniline"], answer: "Phthalimide" },
+            { q: "The product of aniline with acetic anhydride is:", options: ["Acetanilide", "Acetamide", "Ethanoic acid", "Ethanol"], answer: "Acetanilide" },
+            { q: "Tertiary amines are used as:", options: ["Solvents", "Catalysts", "Fuel", "Polymers"], answer: "Solvents" },
+            { q: "The smell of isocyanides is:", options: ["Pleasant", "Pungent", "Fruity", "Odorless"], answer: "Pungent" },
+            { q: "Diazonium salts are stable at:", options: ["High temperature", "Low temperature", "Room temperature", "No temperature"], answer: "Low temperature" }
+          ]
+        },
+        {
+          title: "Biomolecules - Quiz 1",
+          questions: [
+            { q: "Carbohydrates are:", options: ["Polyhydroxy aldehydes or ketones", "Polyhydroxy acids", "Polyhydroxy ethers", "Polyhydroxy amines"], answer: "Polyhydroxy aldehydes or ketones" },
+            { q: "Glucose is a:", options: ["Monosaccharide", "Disaccharide", "Polysaccharide", "Oligosaccharide"], answer: "Monosaccharide" },
+            { q: "The linkage in proteins is:", options: ["Glycosidic bond", "Peptide bond", "Ester bond", "Ether bond"], answer: "Peptide bond" },
+            { q: "Amino acids are the building blocks of:", options: ["Carbohydrates", "Proteins", "Lipids", "Nucleic acids"], answer: "Proteins" },
+            { q: "The number of essential amino acids in humans is:", options: ["10", "20", "9", "15"], answer: "9" },
+            { q: "DNA contains:", options: ["Deoxyribose sugar", "Ribose sugar", "Glucose", "Fructose"], answer: "Deoxyribose sugar" },
+            { q: "Starch is a:", options: ["Monosaccharide", "Disaccharide", "Polysaccharide", "Oligosaccharide"], answer: "Polysaccharide" },
+            { q: "The primary structure of a protein refers to:", options: ["Sequence of amino acids", "Alpha helix", "Beta sheet", "3D structure"], answer: "Sequence of amino acids" },
+            { q: "The sugar in RNA is:", options: ["Deoxyribose", "Ribose", "Glucose", "Fructose"], answer: "Ribose" },
+            { q: "Enzymes are:", options: ["Carbohydrates", "Proteins", "Lipids", "Nucleic acids"], answer: "Proteins" },
+            { q: "The glycosidic bond in sucrose is between:", options: ["Glucose and fructose", "Glucose and glucose", "Fructose and fructose", "Galactose and glucose"], answer: "Glucose and fructose" },
+            { q: "Vitamins are:", options: ["Inorganic compounds", "Organic compounds", "Metals", "Gases"], answer: "Organic compounds" },
+            { q: "The base not found in DNA is:", options: ["Adenine", "Thymine", "Uracil", "Cytosine"], answer: "Uracil" },
+            { q: "Cellulose is a:", options: ["Monosaccharide", "Disaccharide", "Polysaccharide", "Oligosaccharide"], answer: "Polysaccharide" },
+            { q: "The secondary structure of proteins includes:", options: ["Alpha helix", "Peptide bond", "Disulfide bond", "Sequence of amino acids"], answer: "Alpha helix" }
+          ]
+        },
+        {
+          title: "Biomolecules - Quiz 2",
+          questions: [
+            { q: "The general formula of monosaccharides is:", options: ["CₙH₂ₙOₙ", "CₙH₂ₙ₊₁Oₙ", "CₙH₂ₙ₋₁Oₙ", "CₙH₂ₙOₙ₊₁"], answer: "CₙH₂ₙOₙ" },
+            { q: "The linkage in DNA is:", options: ["Glycosidic bond", "Peptide bond", "Phosphodiester bond", "Ester bond"], answer: "Phosphodiester bond" },
+            { q: "The most abundant biomolecule in living organisms is:", options: ["Proteins", "Carbohydrates", "Lipids", "Nucleic acids"], answer: "Proteins" },
+            { q: "The base pairing in DNA is:", options: ["A-T, G-C", "A-G, T-C", "A-C, G-T", "A-U, G-C"], answer: "A-T, G-C" },
+            { q: "Maltose is a:", options: ["Monosaccharide", "Disaccharide", "Polysaccharide", "Oligosaccharide"], answer: "Disaccharide" },
+            { q: "Denaturation of proteins affects:", options: ["Primary structure", "Secondary and tertiary structure", "Peptide bonds", "Amino acid sequence"], answer: "Secondary and tertiary structure" },
+            { q: "The function of enzymes is to:", options: ["Store energy", "Catalyze reactions", "Transport oxygen", "Form structure"], answer: "Catalyze reactions" },
+            { q: "The sugar in starch is:", options: ["Glucose", "Fructose", "Galactose", "Ribose"], answer: "Glucose" },
+            { q: "The vitamin soluble in water is:", options: ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"], answer: "Vitamin C" },
+            { q: "The structure of DNA is:", options: ["Single helix", "Double helix", "Triple helix", "Linear"], answer: "Double helix" },
+            { q: "The product of starch hydrolysis is:", options: ["Glucose", "Fructose", "Sucrose", "Lactose"], answer: "Glucose" },
+            { q: "The tertiary structure of proteins is stabilized by:", options: ["Peptide bonds", "Disulfide bonds", "Glycosidic bonds", "Phosphodiester bonds"], answer: "Disulfide bonds" },
+            { q: "The base not found in RNA is:", options: ["Adenine", "Thymine", "Uracil", "Cytosine"], answer: "Thymine" },
+            { q: "Glycogen is stored in:", options: ["Liver", "Brain", "Kidney", "Heart"], answer: "Liver" },
+            { q: "The deficiency of vitamin D causes:", options: ["Scurvy", "Rickets", "Beriberi", "Pellagra"], answer: "Rickets" }
+          ]
+        }
+  ],
+Mathematics:[
+       {
+          title: "Relations and Functions - Quiz 1",
+          questions: [
+            { q: "A relation R from set A to set B is a subset of:", options: ["A × B", "B × A", "A ∪ B", "A ∩ B"], answer: "A × B" },
+            { q: "A function f: A → B is one-one if:", options: ["f(x₁) = f(x₂) implies x₁ = x₂", "f(x₁) ≠ f(x₂) for all x₁, x₂", "f(x) = 0 for all x", "f(x) ≠ 0 for all x"], answer: "f(x₁) = f(x₂) implies x₁ = x₂" },
+            { q: "A function is onto if every element in the codomain has:", options: ["No pre-image", "At least one pre-image", "Exactly one pre-image", "Multiple pre-images"], answer: "At least one pre-image" },
+            { q: "The domain of the function f(x) = √x is:", options: ["x < 0", "x ≥ 0", "x ≠ 0", "All real numbers"], answer: "x ≥ 0" },
+            { q: "Which of the following is not a function?", options: ["y = x²", "y = ±√x", "y = sin x", "y = |x|"], answer: "y = ±√x" },
+            { q: "The composition of functions f and g, (f o g)(x), is defined as:", options: ["f(g(x))", "g(f(x))", "f(x) + g(x)", "f(x) · g(x)"], answer: "f(g(x))" },
+            { q: "A function f is bijective if it is:", options: ["One-one only", "Onto only", "Both one-one and onto", "Neither one-one nor onto"], answer: "Both one-one and onto" },
+            { q: "The range of the function f(x) = x² for x ∈ ℝ is:", options: ["All real numbers", "x ≥ 0", "x ≤ 0", "x ≠ 0"], answer: "x ≥ 0" },
+            { q: "If f(x) = 2x + 3, then f⁻¹(x) is:", options: ["(x - 3)/2", "(x + 3)/2", "2x - 3", "2/(x - 3)"], answer: "(x - 3)/2" },
+            { q: "A relation is reflexive if:", options: ["(a, b) ∈ R implies (b, a) ∈ R", "(a, a) ∈ R for all a", "(a, b) ∈ R and (b, c) ∈ R implies (a, c) ∈ R", "(a, b) ∈ R implies (b, a) ∉ R"], answer: "(a, a) ∈ R for all a" },
+            { q: "A relation is symmetric if:", options: ["(a, b) ∈ R implies (b, a) ∈ R", "(a, a) ∈ R", "(a, b) ∈ R implies (a, c) ∈ R", "(a, b) ∈ R implies (b, a) ∉ R"], answer: "(a, b) ∈ R implies (b, a) ∈ R" },
+            { q: "The number of elements in A × A for a set A with n elements is:", options: ["n", "n²", "2n", "n!"], answer: "n²" },
+            { q: "A function f: ℝ → ℝ, f(x) = x³ is:", options: ["One-one but not onto", "Onto but not one-one", "Both one-one and onto", "Neither one-one nor onto"], answer: "Both one-one and onto" },
+            { q: "The domain of f(x) = 1/(x - 2) is:", options: ["x ≠ 2", "x > 2", "x < 2", "All real numbers"], answer: "x ≠ 2" },
+            { q: "If f(x) = x + 1 and g(x) = x - 1, then (f o g)(x) is:", options: ["x", "x + 2", "x - 2", "2x"], answer: "x" }
+          ]
+        },
+        {
+          title: "Relations and Functions - Quiz 2",
+          questions: [
+            { q: "A relation is transitive if:", options: ["(a, b) ∈ R implies (b, a) ∈ R", "(a, a) ∈ R", "(a, b) ∈ R and (b, c) ∈ R implies (a, c) ∈ R", "(a, b) ∈ R implies (b, a) ∉ R"], answer: "(a, b) ∈ R and (b, c) ∈ R implies (a, c) ∈ R" },
+            { q: "An equivalence relation is:", options: ["Reflexive only", "Symmetric only", "Transitive only", "Reflexive, symmetric, and transitive"], answer: "Reflexive, symmetric, and transitive" },
+            { q: "The range of f(x) = sin x is:", options: ["[-1, 1]", "[0, 1]", "[-∞, ∞]", "[-π/2, π/2]"], answer: "[-1, 1]" },
+            { q: "If f(x) = 2x, then f⁻¹(x) is:", options: ["x/2", "2x", "x²", "1/(2x)"], answer: "x/2" },
+            { q: "The function f(x) = |x| is:", options: ["One-one and onto", "One-one but not onto", "Onto but not one-one", "Neither one-one nor onto"], answer: "Neither one-one nor onto" },
+            { q: "The domain of f(x) = log(x) is:", options: ["x > 0", "x < 0", "x ≠ 0", "All real numbers"], answer: "x > 0" },
+            { q: "A function f is invertible if it is:", options: ["One-one only", "Onto only", "Bijective", "Surjective"], answer: "Bijective" },
+            { q: "If f(x) = x² and g(x) = √x, then (g o f)(x) is:", options: ["x", "|x|", "x²", "√x"], answer: "|x|" },
+            { q: "The number of relations from a set with 3 elements to a set with 2 elements is:", options: ["8", "16", "32", "64"], answer: "64" },
+            { q: "The function f(x) = e^x is:", options: ["One-one and onto", "One-one but not onto", "Onto but not one-one", "Neither one-one nor onto"], answer: "One-one but not onto" },
+            { q: "The codomain of a function is:", options: ["Set of inputs", "Set of outputs", "Set of all possible outputs", "Set of all inputs"], answer: "Set of all possible outputs" },
+            { q: "If f(x) = 3x - 2, then f(f(x)) is:", options: ["9x - 8", "9x - 6", "6x - 4", "3x - 2"], answer: "9x - 8" },
+            { q: "A relation R on set A is antisymmetric if:", options: ["(a, b) ∈ R implies (b, a) ∈ R", "(a, b) ∈ R and (b, a) ∈ R implies a = b", "(a, a) ∈ R", "(a, b) ∈ R implies (a, c) ∈ R"], answer: "(a, b) ∈ R and (b, a) ∈ R implies a = b" },
+            { q: "The range of f(x) = cos x is:", options: ["[-1, 1]", "[0, 1]", "[-∞, ∞]", "[-π/2, π/2]"], answer: "[-1, 1]" },
+            { q: "If f(x) = x - 1 and g(x) = x + 1, then (g o f)(x) is:", options: ["x", "x + 2", "x - 2", "2x"], answer: "x" }
+          ]
+        },
+        {
+          title: "Inverse Trigonometric Functions - Quiz 1",
+          questions: [
+            { q: "The domain of sin⁻¹(x) is:", options: ["[-1, 1]", "[-π/2, π/2]", "[0, π]", "All real numbers"], answer: "[-1, 1]" },
+            { q: "The range of cos⁻¹(x) is:", options: ["[-π/2, π/2]", "[0, π]", "[-1, 1]", "[0, 2π]"], answer: "[0, π]" },
+            { q: "The value of sin⁻¹(1) is:", options: ["0", "π/4", "π/2", "π"], answer: "π/2" },
+            { q: "tan⁻¹(x) is defined for:", options: ["x > 0", "x < 0", "All real numbers", "x ≠ 0"], answer: "All real numbers" },
+            { q: "The principal value of cos⁻¹(-1) is:", options: ["0", "π/2", "π", "3π/2"], answer: "π" },
+            { q: "sin⁻¹(x) + cos⁻¹(x) equals:", options: ["0", "π/2", "π", "2π"], answer: "π/2" },
+            { q: "The range of tan⁻¹(x) is:", options: ["[-π/2, π/2]", "(0, π)", "(-π/2, π/2)", "[0, π]"], answer: "(-π/2, π/2)" },
+            { q: "The value of tan⁻¹(1) is:", options: ["0", "π/4", "π/2", "π"], answer: "π/4" },
+            { q: "cos⁻¹(x) is equal to:", options: ["sin⁻¹(x)", "π/2 - sin⁻¹(x)", "π - sin⁻¹(x)", "2π - sin⁻¹(x)"], answer: "π/2 - sin⁻¹(x)" },
+            { q: "The domain of cot⁻¹(x) is:", options: ["[-1, 1]", "All real numbers", "[0, π]", "(-1, 1)"], answer: "All real numbers" },
+            { q: "The value of sin⁻¹(-1/2) is:", options: ["-π/6", "π/6", "-π/3", "π/3"], answer: "-π/6" },
+            { q: "The range of sec⁻¹(x) is:", options: ["[0, π]", "[-π/2, π/2]", "[0, π/2)", "[0, π] \\ {π/2}"], answer: "[0, π] \\ {π/2}" },
+            { q: "tan⁻¹(1/√3) equals:", options: ["π/6", "π/4", "π/3", "π/2"], answer: "π/6" },
+            { q: "The property sin⁻¹(-x) = -sin⁻¹(x) holds for:", options: ["x > 0", "x ∈ [-1, 1]", "x < 0", "All real numbers"], answer: "x ∈ [-1, 1]" },
+            { q: "The value of cos⁻¹(1/2) is:", options: ["π/6", "π/4", "π/3", "π/2"], answer: "π/3" }
+          ]
+        },
+        {
+          title: "Inverse Trigonometric Functions - Quiz 2",
+          questions: [
+            { q: "The range of sin⁻¹(x) is:", options: ["[-π/2, π/2]", "[0, π]", "[-1, 1]", "[0, 2π]"], answer: "[-π/2, π/2]" },
+            { q: "The domain of sec⁻¹(x) is:", options: ["[-1, 1]", "|x| ≥ 1", "|x| ≤ 1", "All real numbers"], answer: "|x| ≥ 1" },
+            { q: "The value of cot⁻¹(1) is:", options: ["0", "π/4", "π/2", "π"], answer: "π/4" },
+            { q: "sin⁻¹(√3/2) equals:", options: ["π/6", "π/4", "π/3", "π/2"], answer: "π/3" },
+            { q: "The range of cot⁻¹(x) is:", options: ["(0, π)", "[-π/2, π/2]", "[0, π/2]", "[-1, 1]"], answer: "(0, π)" },
+            { q: "The property tan⁻¹(-x) = -tan⁻¹(x) holds for:", options: ["x > 0", "All real numbers", "x < 0", "x ≠ 0"], answer: "All real numbers" },
+            { q: "The value of cos⁻¹(-1/2) is:", options: ["π/6", "π/3", "2π/3", "π/2"], answer: "2π/3" },
+            { q: "The domain of cosec⁻¹(x) is:", options: ["[-1, 1]", "|x| ≥ 1", "|x| ≤ 1", "All real numbers"], answer: "|x| ≥ 1" },
+            { q: "The value of tan⁻¹(-1) is:", options: ["-π/4", "π/4", "π/2", "-π/2"], answer: "-π/4" },
+            { q: "sin⁻¹(x) is an odd function because:", options: ["sin⁻¹(-x) = sin⁻¹(x)", "sin⁻¹(-x) = -sin⁻¹(x)", "sin⁻¹(x) = 0", "sin⁻¹(x) = π/2"], answer: "sin⁻¹(-x) = -sin⁻¹(x)" },
+            { q: "The value of sec⁻¹(2) is:", options: ["π/6", "π/4", "π/3", "π/2"], answer: "π/3" },
+            { q: "cos⁻¹(x) + cos⁻¹(-x) equals:", options: ["0", "π/2", "π", "2π"], answer: "π" },
+            { q: "The range of cosec⁻¹(x) is:", options: ["[-π/2, π/2]", "[0, π]", "[-π/2, π/2] \\ {0}", "[0, π/2]"], answer: "[-π/2, π/2] \\ {0}" },
+            { q: "The value of cot⁻¹(-√3) is:", options: ["π/6", "π/3", "2π/3", "5π/6"], answer: "5π/6" },
+            { q: "tan⁻¹(x) + tan⁻¹(1/x) equals:", options: ["0", "π/2", "π", "2π"], answer: "π/2" }
+          ]
+        },
+        {
+          title: "Matrices - Quiz 1",
+          questions: [
+            { q: "A matrix with m rows and n columns is of order:", options: ["m × n", "n × m", "m + n", "m - n"], answer: "m × n" },
+            { q: "The transpose of a matrix A is denoted by:", options: ["A'", "A⁻¹", "A*", "A"], answer: "A'" },
+            { q: "A square matrix A is symmetric if:", options: ["A = A'", "A = -A'", "A = A⁻¹", "A = -A⁻¹"], answer: "A = A'" },
+            { q: "The determinant of a 1 × 1 matrix [a] is:", options: ["a", "a²", "1/a", "0"], answer: "a" },
+            { q: "Two matrices can be multiplied if:", options: ["Rows of first = Columns of second", "Columns of first = Rows of second", "Both are square", "Both have same order"], answer: "Columns of first = Rows of second" },
+            { q: "The identity matrix of order n has:", options: ["All elements 0", "All elements 1", "Diagonal elements 1, others 0", "Diagonal elements 0, others 1"], answer: "Diagonal elements 1, others 0" },
+            { q: "A matrix is invertible if its determinant is:", options: ["Zero", "Non-zero", "Negative", "Positive"], answer: "Non-zero" },
+            { q: "The order of the product of a 2 × 3 matrix and a 3 × 4 matrix is:", options: ["2 × 4", "4 × 2", "3 × 3", "2 × 3"], answer: "2 × 4" },
+            { q: "A matrix A is skew-symmetric if:", options: ["A = A'", "A = -A'", "A = A⁻¹", "A = -A⁻¹"], answer: "A = -A'" },
+            { q: "The trace of a square matrix is the sum of:", options: ["All elements", "Diagonal elements", "First row elements", "First column elements"], answer: "Diagonal elements" },
+            { q: "A diagonal matrix has non-zero elements only on:", options: ["Main diagonal", "First row", "First column", "All positions"], answer: "Main diagonal" },
+            { q: "The inverse of a matrix A satisfies:", options: ["A × A⁻¹ = I", "A + A⁻¹ = I", "A - A⁻¹ = I", "A ÷ A⁻¹ = I"], answer: "A × A⁻¹ = I" },
+            { q: "A zero matrix has:", options: ["All elements 0", "All elements 1", "Diagonal elements 0", "Diagonal elements 1"], answer: "All elements 0" },
+            { q: "The transpose of a 3 × 2 matrix is of order:", options: ["3 × 2", "2 × 3", "3 × 3", "2 × 2"], answer: "2 × 3" },
+            { q: "If A is a square matrix, then (A')' equals:", options: ["A", "-A", "A⁻¹", "-A⁻¹"], answer: "A" }
+          ]
+        },
+        {
+          title: "Matrices - Quiz 2",
+          questions: [
+            { q: "A square matrix A is orthogonal if:", options: ["A = A'", "A × A' = I", "A = -A'", "A = A⁻¹"], answer: "A × A' = I" },
+            { q: "The determinant of an identity matrix is:", options: ["0", "1", "-1", "n"], answer: "1" },
+            { q: "The number of elements in a 2 × 3 matrix is:", options: ["5", "6", "4", "8"], answer: "6" },
+            { q: "A matrix is singular if its determinant is:", options: ["Zero", "Non-zero", "Positive", "Negative"], answer: "Zero" },
+            { q: "The product of two matrices A and B is defined if:", options: ["Rows of A = Rows of B", "Columns of A = Columns of B", "Columns of A = Rows of B", "Rows of A = Columns of A"], answer: "Columns of A = Rows of B" },
+            { q: "The inverse of a 2 × 2 matrix exists if:", options: ["ad - bc = 0", "ad - bc ≠ 0", "a + b = c + d", "a - b = c - d"], answer: "ad - bc ≠ 0" },
+            { q: "A matrix with only one row is called:", options: ["Column matrix", "Row matrix", "Square matrix", "Diagonal matrix"], answer: "Row matrix" },
+            { q: "The scalar multiplication kA affects:", options: ["Only first row", "Only first column", "All elements", "Diagonal elements"], answer: "All elements" },
+            { q: "If A is a 3 × 3 matrix, then A(adj A) equals:", options: ["|A|I", "A²", "|A|", "I"], answer: "|A|I" },
+            { q: "A matrix with only one column is called:", options: ["Row matrix", "Column matrix", "Square matrix", "Diagonal matrix"], answer: "Column matrix" },
+            { q: "The determinant of a triangular matrix is the product of:", options: ["All elements", "Diagonal elements", "First row elements", "First column elements"], answer: "Diagonal elements" },
+            { q: "If A = A', then A is:", options: ["Symmetric", "Skew-symmetric", "Orthogonal", "Singular"], answer: "Symmetric" },
+            { q: "The order of adj(A) for a 3 × 3 matrix A is:", options: ["2 × 2", "3 × 3", "4 × 4", "3 × 2"], answer: "3 × 3" },
+            { q: "The property (AB)' equals:", options: ["A'B'", "B'A'", "AB", "BA"], answer: "B'A'" },
+            { q: "If A is invertible, then (A⁻¹)⁻¹ equals:", options: ["A", "-A", "A'", "-A'"], answer: "A" }
+          ]
+        },
+        {
+          title: "Determinants - Quiz 1",
+          questions: [
+            { q: "The determinant of a 2 × 2 matrix [a b; c d] is:", options: ["ad - bc", "ac - bd", "ad + bc", "ab - cd"], answer: "ad - bc" },
+            { q: "The determinant of a 3 × 3 matrix is found using:", options: ["Row operations", "Column operations", "Cofactor expansion", "Matrix multiplication"], answer: "Cofactor expansion" },
+            { q: "A matrix is invertible if its determinant is:", options: ["Zero", "Non-zero", "Positive", "Negative"], answer: "Non-zero" },
+            { q: "The value of the determinant of an identity matrix is:", options: ["0", "1", "-1", "n"], answer: "1" },
+            { q: "The minor of an element is the determinant of:", options: ["The entire matrix", "Matrix after removing row and column of element", "First row", "First column"], answer: "Matrix after removing row and column of element" },
+            { q: "The cofactor of an element is:", options: ["Minor", "(-1)^(i+j) × Minor", "Element itself", "Determinant of matrix"], answer: "(-1)^(i+j) × Minor" },
+            { q: "The adjoint of a matrix A is:", options: ["Transpose of cofactor matrix", "Inverse of A", "Determinant of A", "Transpose of A"], answer: "Transpose of cofactor matrix" },
+            { q: "For a 3 × 3 matrix A, A × adj(A) equals:", options: ["|A|I", "A²", "|A|", "I"], answer: "|A|I" },
+            { q: "The determinant of a diagonal matrix is:", options: ["Sum of diagonal elements", "Product of diagonal elements", "Sum of all elements", "Product of all elements"], answer: "Product of diagonal elements" },
+            { q: "If det(A) = 0, then A is:", options: ["Invertible", "Singular", "Symmetric", "Orthogonal"], answer: "Singular" },
+            { q: "The determinant of A' equals:", options: ["det(A)", "-det(A)", "1/det(A)", "0"], answer: "det(A)" },
+            { q: "The determinant of kA for a 3 × 3 matrix A is:", options: ["k det(A)", "k² det(A)", "k³ det(A)", "det(A)/k"], answer: "k³ det(A)" },
+            { q: "The area of a triangle with vertices (x₁, y₁), (x₂, y₂), (x₃, y₃) is given by:", options: ["1/2 |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|", "x₁y₂ - x₂y₁", "|x₁y₂ + x₂y₃ + x₃y₁|", "1/2 (x₁y₂ + x₂y₃)"], answer: "1/2 |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|" },
+            { q: "The determinant of a skew-symmetric matrix of odd order is:", options: ["0", "1", "-1", "Positive"], answer: "0" },
+            { q: "If det(AB) = det(A) × det(B), then A and B are:", options: ["Square matrices", "Rectangular matrices", "Row matrices", "Column matrices"], answer: "Square matrices" }
+          ]
+        },
+        {
+          title: "Determinants - Quiz 2",
+          questions: [
+            { q: "The inverse of a matrix A is given by:", options: ["adj(A)/det(A)", "det(A)/adj(A)", "A/det(A)", "adj(A) × det(A)"], answer: "adj(A)/det(A)" },
+            { q: "The determinant of a triangular matrix is:", options: ["Sum of diagonal elements", "Product of diagonal elements", "Sum of all elements", "Product of all elements"], answer: "Product of diagonal elements" },
+            { q: "If det(A) = 2 for a 2 × 2 matrix, then det(2A) is:", options: ["4", "8", "2", "16"], answer: "8" },
+            { q: "The determinant of a 1 × 1 matrix [a] is:", options: ["a", "a²", "1/a", "0"], answer: "a" },
+            { q: "A system of linear equations has a unique solution if:", options: ["det(A) = 0", "det(A) ≠ 0", "A = 0", "adj(A) = 0"], answer: "det(A) ≠ 0" },
+            { q: "The value of det(A⁻¹) is:", options: ["det(A)", "1/det(A)", "-det(A)", "-1/det(A)"], answer: "1/det(A)" },
+            { q: "The determinant of an orthogonal matrix is:", options: ["0", "1 or -1", "Positive", "Negative"], answer: "1 or -1" },
+            { q: "The minor of element a₁₁ in a 3 × 3 matrix is found by deleting:", options: ["First row and first column", "First row only", "First column only", "Entire matrix"], answer: "First row and first column" },
+            { q: "The determinant of a matrix remains unchanged if:", options: ["Rows are interchanged", "Rows are multiplied", "Rows are added", "Columns are multiplied"], answer: "Rows are interchanged" },
+            { q: "The system AX = B has no solution if:", options: ["det(A) ≠ 0", "det(A) = 0 and adj(A)B ≠ 0", "det(A) = 0 and adj(A)B = 0", "det(A) ≠ 0 and adj(A)B = 0"], answer: "det(A) = 0 and adj(A)B ≠ 0" },
+            { q: "The determinant of a 4 × 4 matrix is expanded using:", options: ["2 minors", "3 minors", "4 minors", "5 minors"], answer: "4 minors" },
+            { q: "If det(A) = 3 for a 3 × 3 matrix, then det(adj(A)) is:", options: ["3", "9", "27", "81"], answer: "9" },
+            { q: "The area of a parallelogram can be found using:", options: ["Determinant of a 2 × 2 matrix", "Determinant of a 3 × 3 matrix", "Sum of elements", "Product of elements"], answer: "Determinant of a 2 × 2 matrix" },
+            { q: "The determinant changes sign if:", options: ["Two rows are interchanged", "A row is multiplied by k", "A row is added to another", "A row is zero"], answer: "Two rows are interchanged" },
+            { q: "The system AX = 0 has a non-trivial solution if:", options: ["det(A) ≠ 0", "det(A) = 0", "A = I", "adj(A) = 0"], answer: "det(A) = 0" }
+          ]
+        },
+        {
+          title: "Continuity and Differentiability - Quiz 1",
+          questions: [
+            { q: "A function f(x) is continuous at x = a if:", options: ["f(a) exists", "lim(x→a) f(x) exists", "lim(x→a) f(x) = f(a)", "All of these"], answer: "All of these" },
+            { q: "The function f(x) = |x| is continuous at:", options: ["x = 0", "x ≠ 0", "All real numbers", "No point"], answer: "All real numbers" },
+            { q: "A function is differentiable at x = a if:", options: ["lim(h→0) [f(a+h) - f(a)]/h exists", "f(a) exists", "lim(x→a) f(x) exists", "f(a) = 0"], answer: "lim(h→0) [f(a+h) - f(a)]/h exists" },
+            { q: "The derivative of f(x) = x² at x = 1 is:", options: ["1", "2", "3", "4"], answer: "2" },
+            { q: "The function f(x) = 1/x is continuous at:", options: ["x = 0", "x ≠ 0", "x > 0", "x < 0"], answer: "x ≠ 0" },
+            { q: "The derivative of sin x is:", options: ["cos x", "-sin x", "-cos x", "sin x"], answer: "cos x" },
+            { q: "A function is differentiable at x = a implies it is:", options: ["Continuous at x = a", "Discontinuous at x = a", "Not continuous", "Constant"], answer: "Continuous at x = a" },
+            { q: "The derivative of e^x is:", options: ["e^x", "x e^x", "e^x / x", "1/e^x"], answer: "e^x" },
+            { q: "The function f(x) = [x] (greatest integer function) is continuous at:", options: ["All integers", "Non-integers", "All real numbers", "No point"], answer: "Non-integers" },
+            { q: "The derivative of ln x is:", options: ["1/x", "x", "ln x", "1/ln x"], answer: "1/x" },
+            { q: "The chain rule states that d/dx[f(g(x))] is:", options: ["f'(g(x))", "f'(g(x)) · g'(x)", "f(g'(x))", "f'(x) · g'(x)"], answer: "f'(g(x)) · g'(x)" },
+            { q: "The derivative of x³ is:", options: ["3x²", "2x³", "x²", "3x"], answer: "3x²" },
+            { q: "The function f(x) = |x - 1| is differentiable at:", options: ["x = 1", "x ≠ 1", "x > 1", "x < 1"], answer: "x ≠ 1" },
+            { q: "The derivative of cos x is:", options: ["sin x", "-sin x", "cos x", "-cos x"], answer: "-sin x" },
+            { q: "The second derivative of f(x) = x⁴ is:", options: ["12x²", "4x³", "12x³", "24x²"], answer: "12x²" }
+          ]
+        },
+        {
+          title: "Continuity and Differentiability - Quiz 2",
+          questions: [
+            { q: "The function f(x) = x³ is continuous at:", options: ["x = 0", "x ≠ 0", "All real numbers", "No point"], answer: "All real numbers" },
+            { q: "The derivative of tan x is:", options: ["sec² x", "cosec² x", "-sec² x", "-cosec² x"], answer: "sec² x" },
+            { q: "A function is not differentiable at a point if:", options: ["It is continuous", "It has a corner", "It is smooth", "It is constant"], answer: "It has a corner" },
+            { q: "The derivative of f(x) = e^(2x) is:", options: ["2e^(2x)", "e^(2x)", "2e^x", "e^x"], answer: "2e^(2x)" },
+            { q: "The function f(x) = √x is differentiable for:", options: ["x ≥ 0", "x > 0", "x ≤ 0", "x < 0"], answer: "x > 0" },
+            { q: "The product rule for derivatives is:", options: ["(uv)' = u'v + uv'", "(uv)' = u'v - uv'", "(uv)' = u'v'", "(uv)' = uv"], answer: "(uv)' = u'v + uv'" },
+            { q: "The derivative of 1/x² is:", options: ["-2/x³", "2/x³", "-1/x²", "1/x²"], answer: "-2/x³" },
+            { q: "The function f(x) = sin x is continuous for:", options: ["x = 0", "x = π/2", "All real numbers", "x ≠ 0"], answer: "All real numbers" },
+            { q: "The quotient rule for derivatives is:", options: ["(u/v)' = (u'v - uv')/v²", "(u/v)' = (u'v + uv')/v²", "(u/v)' = u'v/v²", "(u/v)' = uv'/v²"], answer: "(u/v)' = (u'v - uv')/v²" },
+            { q: "The derivative of ln(x²) is:", options: ["2/x", "1/x²", "2x", "1/x"], answer: "2/x" },
+            { q: "The function f(x) = [x] is differentiable at:", options: ["All integers", "Non-integers", "All real numbers", "No point"], answer: "Non-integers" },
+            { q: "The derivative of sec x is:", options: ["sec x tan x", "-sec x tan x", "cosec x cot x", "-cosec x cot x"], answer: "sec x tan x" },
+            { q: "The second derivative of f(x) = sin x is:", options: ["sin x", "-sin x", "cos x", "-cos x"], answer: "-sin x" },
+            { q: "The function f(x) = x|x| is differentiable at:", options: ["x = 0", "x ≠ 0", "x > 0", "x < 0"], answer: "x ≠ 0" },
+            { q: "The derivative of x e^x is:", options: ["e^x", "x e^x", "e^x + x e^x", "x e^(x-1)"], answer: "e^x + x e^x" }
+          ]
+        },
+        {
+          title: "Application of Derivatives - Quiz 1",
+          questions: [
+            { q: "The rate of change of a function f(x) is given by:", options: ["f(x)", "f'(x)", "f''(x)", "∫f(x) dx"], answer: "f'(x)" },
+            { q: "A function is increasing if its derivative is:", options: ["Positive", "Negative", "Zero", "Undefined"], answer: "Positive" },
+            { q: "A function has a local maximum at x = a if:", options: ["f'(a) = 0, f''(a) > 0", "f'(a) = 0, f''(a) < 0", "f'(a) ≠ 0", "f''(a) = 0"], answer: "f'(a) = 0, f''(a) < 0" },
+            { q: "The slope of the tangent to the curve y = x² at x = 1 is:", options: ["1", "2", "3", "4"], answer: "2" },
+            { q: "A point of inflection occurs where:", options: ["f'(x) = 0", "f''(x) = 0", "f(x) = 0", "f'(x) ≠ 0"], answer: "f''(x) = 0" },
+            { q: "The equation of the tangent to y = x³ at x = 1 is:", options: ["y = 3x - 2", "y = 3x + 2", "y = x - 1", "y = x + 1"], answer: "y = 3x - 2" },
+            { q: "A function is decreasing if its derivative is:", options: ["Positive", "Negative", "Zero", "Undefined"], answer: "Negative" },
+            { q: "The second derivative test determines:", options: ["Continuity", "Differentiability", "Extrema", "Concavity"], answer: "Extrema" },
+            { q: "The normal to a curve is perpendicular to:", options: ["The curve", "The tangent", "The x-axis", "The y-axis"], answer: "The tangent" },
+            { q: "The derivative of distance with respect to time gives:", options: ["Speed", "Acceleration", "Velocity", "Displacement"], answer: "Velocity" },
+            { q: "For f(x) = x³ - 3x, the critical points are at:", options: ["x = ±1", "x = ±√3", "x = 0", "x = ±2"], answer: "x = ±1" },
+            { q: "The slope of the normal to y = x² at x = 2 is:", options: ["-1/4", "1/4", "-4", "4"], answer: "-1/4" },
+            { q: "A function is concave up if:", options: ["f''(x) > 0", "f''(x) < 0", "f'(x) > 0", "f'(x) < 0"], answer: "f''(x) > 0" },
+            { q: "The maximum value of f(x) = -x² + 2x + 3 is:", options: ["3", "4", "5", "6"], answer: "4" },
+            { q: "The rate of change of volume of a sphere with respect to radius is:", options: ["4πr²", "4/3 πr³", "4πr", "πr²"], answer: "4πr²" }
+          ]
+        },
+        {
+          title: "Application of Derivatives - Quiz 2",
+          questions: [
+            { q: "A function has a local minimum at x = a if:", options: ["f'(a) = 0, f''(a) > 0", "f'(a) = 0, f''(a) < 0", "f'(a) ≠ 0", "f''(a) = 0"], answer: "f'(a) = 0, f''(a) > 0" },
+            { q: "The derivative of velocity with respect to time is:", options: ["Speed", "Acceleration", "Distance", "Displacement"], answer: "Acceleration" },
+            { q: "The equation of the normal to y = x² at x = 1 is:", options: ["y = -x/2 + 3/2", "y = x/2 + 1/2", "y = 2x - 1", "y = -2x + 1"], answer: "y = -x/2 + 3/2" },
+            { q: "A function is concave down if:", options: ["f''(x) > 0", "f''(x) < 0", "f'(x) > 0", "f'(x) < 0"], answer: "f''(x) < 0" },
+            { q: "The critical points of f(x) = x⁴ - 4x² are at:", options: ["x = 0, ±√2", "x = ±1", "x = ±2", "x = 0, ±1"], answer: "x = 0, ±√2" },
+            { q: "The slope of the tangent to y = sin x at x = π/2 is:", options: ["0", "1", "-1", "π/2"], answer: "0" },
+            { q: "The function f(x) = x³ - 3x has a local maximum at:", options: ["x = -1", "x = 1", "x = 0", "x = 2"], answer: "x = -1" },
+            { q: "The rate of change of area of a circle with respect to radius is:", options: ["2πr", "πr²", "2π", "πr"], answer: "2πr" },
+            { q: "A point of inflection for f(x) = x³ is at:", options: ["x = 0", "x = 1", "x = -1", "No inflection point"], answer: "x = 0" },
+            { q: "The maximum value of f(x) = 2x - x² is:", options: ["1", "2", "3", "4"], answer: "1" },
+            { q: "The tangent to y = e^x at x = 0 has slope:", options: ["0", "1", "e", "-1"], answer: "1" },
+            { q: "The function f(x) = x² + 2x + 1 has a minimum at:", options: ["x = -1", "x = 0", "x = 1", "x = 2"], answer: "x = -1" },
+            { q: "The normal to a curve has slope:", options: ["Same as tangent", "Reciprocal of tangent", "Negative reciprocal of tangent", "Zero"], answer: "Negative reciprocal of tangent" },
+            { q: "The derivative of f(x) = x ln x at x = 1 is:", options: ["0", "1", "ln 1", "2"], answer: "1" },
+            { q: "The function f(x) = x³ - 6x² + 9x + 1 is increasing in:", options: ["(1, 3)", "(0, 1)", "(3, ∞)", "(-∞, 1)"], answer: "(1, 3)" }
+          ]
+        },
+        {
+          title: "Integrals - Quiz 1",
+          questions: [
+            { q: "The integral of x² dx is:", options: ["x³/3 + C", "x³ + C", "2x + C", "x²/2 + C"], answer: "x³/3 + C" },
+            { q: "The integral of sin x dx is:", options: ["cos x + C", "-cos x + C", "sin x + C", "-sin x + C"], answer: "-cos x + C" },
+            { q: "The integral of 1/x dx is:", options: ["ln x + C", "1/x² + C", "x + C", "ln|x| + C"], answer: "ln|x| + C" },
+            { q: "The integral of e^x dx is:", options: ["e^x + C", "x e^x + C", "e^(x+1) + C", "1/e^x + C"], answer: "e^x + C" },
+            { q: "The method of integration by parts is used for:", options: ["∫u dv = uv - ∫v du", "∫u dv = uv + ∫v du", "∫u dv = u/v + C", "∫u dv = u + v"], answer: "∫u dv = uv - ∫v du" },
+            { q: "The integral of cos x dx is:", options: ["sin x + C", "-sin x + C", "cos x + C", "-cos x + C"], answer: "sin x + C" },
+            { q: "The integral of x e^x dx is:", options: ["x e^x + C", "e^x + C", "x e^x - e^x + C", "e^x/x + C"], answer: "x e^x - e^x + C" },
+            { q: "The integral of 1/(1 + x²) dx is:", options: ["tan⁻¹ x + C", "sin⁻¹ x + C", "ln(1 + x²) + C", "1/x + C"], answer: "tan⁻¹ x + C" },
+            { q: "The integral of sec² x dx is:", options: ["tan x + C", "sec x + C", "-tan x + C", "-sec x + C"], answer: "tan x + C" },
+            { q: "The substitution method is used when the integrand is:", options: ["A product", "A composite function", "A sum", "A constant"], answer: "A composite function" },
+            { q: "The integral of 1/√(1 - x²) dx is:", options: ["sin⁻¹ x + C", "cos⁻¹ x + C", "tan⁻¹ x + C", "ln x + C"], answer: "sin⁻¹ x + C" },
+            { q: "The integral of x³ dx is:", options: ["x⁴/4 + C", "x⁴ + C", "x³/3 + C", "4x³ + C"], answer: "x⁴/4 + C" },
+            { q: "The integral of tan x dx is:", options: ["ln|sec x| + C", "ln|cos x| + C", "sec x + C", "-ln|cos x| + C"], answer: "ln|sec x| + C" },
+            { q: "The integral of 2x dx is:", options: ["x² + C", "2x² + C", "x + C", "2/x + C"], answer: "x² + C" },
+            { q: "The integral of e^(2x) dx is:", options: ["e^(2x)/2 + C", "e^(2x) + C", "2e^(2x) + C", "e^x + C"], answer: "e^(2x)/2 + C" }
+          ]
+        },
+        {
+          title: "Integrals - Quiz 2",
+          questions: [
+            { q: "The integral of cosec² x dx is:", options: ["-cot x + C", "cot x + C", "-tan x + C", "tan x + C"], answer: "-cot x + C" },
+            { q: "The integral of x ln x dx is:", options: ["x² ln x/2 - x²/4 + C", "x ln x + C", "ln x + C", "x²/2 + C"], answer: "x² ln x/2 - x²/4 + C" },
+            { q: "The integral of 1/(x² + a²) dx is:", options: ["1/a tan⁻¹(x/a) + C", "ln(x² + a²) + C", "1/a sin⁻¹(x/a) + C", "1/a cos⁻¹(x/a) + C"], answer: "1/a tan⁻¹(x/a) + C" },
+            { q: "The integral of sec x tan x dx is:", options: ["sec x + C", "tan x + C", "-sec x + C", "-tan x + C"], answer: "sec x + C" },
+            { q: "The integral of √x dx is:", options: ["2x^(3/2)/3 + C", "x^(3/2)/3 + C", "x^(1/2) + C", "2x + C"], answer: "2x^(3/2)/3 + C" },
+            { q: "The integral of sin² x dx is:", options: ["x/2 - sin 2x/4 + C", "x/2 + sin 2x/4 + C", "sin x + C", "cos x + C"], answer: "x/2 - sin 2x/4 + C" },
+            { q: "The integral of 1/√(a² - x²) dx is:", options: ["sin⁻¹(x/a) + C", "cos⁻¹(x/a) + C", "tan⁻¹(x/a) + C", "ln|x| + C"], answer: "sin⁻¹(x/a) + C" },
+            { q: "The integral of x² e^x dx is:", options: ["x² e^x - 2x e^x + 2e^x + C", "x² e^x + C", "e^x + C", "x e^x + C"], answer: "x² e^x - 2x e^x + 2e^x + C" },
+            { q: "The integral of cot x dx is:", options: ["ln|sin x| + C", "ln|cos x| + C", "-ln|sin x| + C", "-ln|cos x| + C"], answer: "ln|sin x| + C" },
+            { q: "The integral of 1/(x ln x) dx is:", options: ["ln|ln x| + C", "1/ln x + C", "ln x + C", "1/x + C"], answer: "ln|ln x| + C" },
+            { q: "The integral of e^x sin x dx is:", options: ["e^x (sin x - cos x)/2 + C", "e^x sin x + C", "e^x cos x + C", "e^x (sin x + cos x)/2 + C"], answer: "e^x (sin x - cos x)/2 + C" },
+            { q: "The integral of 1/(x² - a²) dx is:", options: ["1/(2a) ln|(x-a)/(x+a)| + C", "ln|x² - a²| + C", "1/a tan⁻¹(x/a) + C", "1/a sin⁻¹(x/a) + C"], answer: "1/(2a) ln|(x-a)/(x+a)| + C" },
+            { q: "The integral of cos² x dx is:", options: ["x/2 + sin 2x/4 + C", "x/2 - sin 2x/4 + C", "sin x + C", "cos x + C"], answer: "x/2 + sin 2x/4 + C" },
+            { q: "The integral of x/(1 + x²) dx is:", options: ["1/2 ln(1 + x²) + C", "tan⁻¹ x + C", "ln x + C", "1/(1 + x²) + C"], answer: "1/2 ln(1 + x²) + C" },
+            { q: "The integral of sec x dx is:", options: ["ln|sec x + tan x| + C", "ln|sec x - tan x| + C", "tan x + C", "sec x + C"], answer: "ln|sec x + tan x| + C" }
+          ]
+        },
+        {
+          title: "Application of Integrals - Quiz 1",
+          questions: [
+            { q: "The area under the curve y = f(x) from x = a to x = b is given by:", options: ["∫(a to b) f(x) dx", "∫(b to a) f(x) dx", "f(b) - f(a)", "f(a) - f(b)"], answer: "∫(a to b) f(x) dx" },
+            { q: "The area between the curves y = x² and y = x from x = 0 to x = 1 is:", options: ["1/6", "1/3", "1/2", "1"], answer: "1/6" },
+            { q: "The area enclosed by y = x² and the x-axis from x = 0 to x = 2 is:", options: ["8/3", "4/3", "2/3", "1/3"], answer: "8/3" },
+            { q: "The area between two curves y₁ and y₂ is given by:", options: ["∫|y₁ - y₂| dx", "∫(y₁ + y₂) dx", "∫y₁ dx - ∫y₂ dx", "∫(y₁/y₂) dx"], answer: "∫|y₁ - y₂| dx" },
+            { q: "The area under y = sin x from x = 0 to x = π is:", options: ["1", "2", "0", "π"], answer: "2" },
+            { q: "The area enclosed by y = x² and y = 4 is:", options: ["16/3", "8/3", "32/3", "4/3"], answer: "32/3" },
+            { q: "The area under y = e^x from x = 0 to x = 1 is:", options: ["e - 1", "e + 1", "e", "1/e"], answer: "e - 1" },
+            { q: "The area between y = x² and y = x³ from x = 0 to x = 1 is:", options: ["1/12", "1/6", "1/4", "1/3"], answer: "1/12" },
+            { q: "The area under y = 1/x from x = 1 to x = e is:", options: ["1", "ln 2", "ln e", "e"], answer: "1" },
+            { q: "The area enclosed by y = x and y = x² is:", options: ["1/6", "1/3", "1/2", "1"], answer: "1/6" },
+            { q: "The area under y = cos x from x = 0 to x = π/2 is:", options: ["1", "2", "0", "π/2"], answer: "1" },
+            { q: "The area between y = x² and y = 2x - x² is:", options: ["1/3Gymnasium", "2/3", "1/6", "1/2"], answer: "1/6" },
+            { q: "The area under y = x³ from x = 0 to x = 1 is:", options: ["1/4", "1/3", "1/2", "1"], answer: "1/4" },
+            { q: "The area enclosed by y = |x| and y = 1 from x = -1 to x = 1 is:", options: ["1", "2", "1/2", "3/2"], answer: "1" },
+            { q: "The area under y = x² + 1 from x = 0 to x = 2 is:", options: ["14/3", "8/3", "10/3", "4/3"], answer: "14/3" }
+          ]
+        },
+        {
+          title: "Application of Integrals - Quiz 2",
+          questions: [
+            { q: "The area between y = sin x and y = cos x from x = 0 to x = π/4 is:", options: ["√2 - 1", "1 - √2", "2√2 - 2", "√2"], answer: "2√2 - 2" },
+            { q: "The area under y = x from x = 0 to x = 2 is:", options: ["2", "4", "1", "3"], answer: "2" },
+            { q: "The area enclosed by y² = x and x = 4 is:", options: ["32/3", "16/3", "8/3", "4/3"], answer: "32/3" },
+            { q: "The area under y = e^(-x) from x = 0 to x = ∞ is:", options: ["1", "e", "1/e", "∞"], answer: "1" },
+            { q: "The area between y = x² and y = x + 2 is:", options: ["9/2", "4/3", "5/6", "3/2"], answer: "9/2" },
+            { q: "The area under y = 1/(1 + x²) from x = 0 to x = 1 is:", options: ["π/4", "π/2", "1", "ln 2"], answer: "π/4" },
+            { q: "The area enclosed by y = x² and y = √x from x = 0 to x = 1 is:", options: ["1/6", "1/3", "2/3", "1/2"], answer: "1/6" },
+            { q: "The area under y = x² from x = -1 to x = 1 is:", options: ["2/3", "1/3", "4/3", "1"], answer: "2/3" },
+            { q: "The area between y = x and y = x³ is:", options: ["1/12", "1/6", "1/4", "1/3"], answer: "1/12" },
+            { q: "The area under y = sin x from x = 0 to x = 2π is:", options: ["0", "1", "2", "4"], answer: "0" },
+            { q: "The area enclosed by x² + y² = 1 is:", options: ["π", "2π", "π/2", "4π"], answer: "π" },
+            { q: "The area under y = x e^x from x = 0 to x = 1 is:", options: ["e - 1", "e", "1", "2e"], answer: "e - 1" },
+            { q: "The area between y = x² and y = 4 - x² is:", options: ["16/3", "8/3", "32/3", "4/3"], answer: "16/3" },
+            { q: "The area under y = |x| from x = -2 to x = 2 is:", options: ["4", "2", "8", "1"], answer: "4" },
+            { q: "The area enclosed by y = x² and y = 2x is:", options: ["4/3", "2/3", "8/3", "1/3"], answer: "4/3" }
+          ]
+        },
+        {
+          title: "Differential Equations - Quiz 1",
+          questions: [
+            { q: "A differential equation involves:", options: ["Derivatives", "Integrals", "Constants", "Exponentials"], answer: "Derivatives" },
+            { q: "The order of a differential equation is the:", options: ["Highest derivative", "Lowest derivative", "Number of terms", "Degree of polynomial"], answer: "Highest derivative" },
+            { q: "The degree of a differential equation is the:", options: ["Power of highest derivative", "Order of equation", "Number of solutions", "Constant term"], answer: "Power of highest derivative" },
+            { q: "The general solution of dy/dx = x is:", options: ["x²/2 + C", "x² + C", "x + C", "x³/3 + C"], answer: "x²/2 + C" },
+            { q: "A first-order differential equation has:", options: ["One derivative", "Two derivatives", "No derivatives", "Three derivatives"], answer: "One derivative" },
+            { q: "The solution of dy/dx = y is:", options: ["y = e^x + C", "y = Ce^x", "y = ln x + C", "y = x + C"], answer: "y = Ce^x" },
+            { q: "The integrating factor of dy/dx + Py = Q is:", options: ["e^∫P dx", "e^-∫P dx", "∫P dx", "P e^x"], answer: "e^∫P dx" },
+            { q: "The differential equation dy/dx = x/y is:", options: ["Homogeneous", "Linear", "Exact", "Non-linear"], answer: "Homogeneous" },
+            { q: "The solution of d²y/dx² = 0 is:", options: ["y = ax + b", "y = ax² + b", "y = a", "y = e^x"], answer: "y = ax + b" },
+            { q: "The differential equation y dx + x dy = 0 is:", options: ["Exact", "Non-exact", "Linear", "Homogeneous"], answer: "Exact" },
+            { q: "The general solution of d²y/dx² + y = 0 is:", options: ["y = A cos x + B sin x", "y = A e^x + B e^-x", "y = Ax + B", "y = Ax² + B"], answer: "y = A cos x + B sin x" },
+            { q: "The differential equation dy/dx = x² is solved by:", options: ["Integration", "Separation of variables", "Substitution", "Partial fractions"], answer: "Integration" },
+            { q: "The solution of dy/dx + y = 1 is:", options: ["y = 1 + Ce^-x", "y = 1 + Ce^x", "y = Ce^x", "y = x + C"], answer: "y = 1 + Ce^-x" },
+            { q: "A linear differential equation is of the form:", options: ["dy/dx + Py = Q", "dy/dx = y/x", "d²y/dx² = y", "dy/dx = x + y"], answer: "dy/dx + Py = Q" },
+            { q: "The order of d³y/dx³ + 2 d²y/dx² + dy/dx = 0 is:", options: ["1", "2", "3", "4"], answer: "3" }
+          ]
+        },
+        {
+          title: "Differential Equations - Quiz 2",
+          questions: [
+            { q: "The solution of dy/dx = e^x is:", options: ["e^x + C", "e^-x + C", "x e^x + C", "ln x + C"], answer: "e^x + C" },
+            { q: "The differential equation x dy/dx = y is:", options: ["Linear", "Homogeneous", "Exact", "Non-linear"], answer: "Homogeneous" },
+            { q: "The integrating factor of dy/dx + 2y = x is:", options: ["e^(2x)", "e^(-2x)", "2x", "x²"], answer: "e^(2x)" },
+            { q: "The solution of d²y/dx² - y = 0 is:", options: ["y = A e^x + B e^-x", "y = A cos x + B sin x", "y = Ax + B", "y = Ax² + B"], answer: "y = A e^x + B e^-x" },
+            { q: "The degree of (d²y/dx²)² + dy/dx = 0 is:", options: ["1", "2", "3", "4"], answer: "2" },
+            { q: "The solution of dy/dx = x + y is solved by:", options: ["Integration", "Separation of variables", "Substitution", "Exact method"], answer: "Substitution" },
+            { q: "The solution of dy/dx = sin x is:", options: ["-cos x + C", "cos x + C", "sin x + C", "-sin x + C"], answer: "-cos x + C" },
+            { q: "The differential equation (x + y) dx + x dy = 0 is:", options: ["Exact", "Non-exact", "Linear", "Homogeneous"], answer: "Exact" },
+            { q: "The solution of dy/dx + y/x = 1/x is:", options: ["y = 1 + C/x", "y = x + C", "y = ln x + C", "y = x ln x + C"], answer: "y = 1 + C/x" },
+            { q: "A homogeneous differential equation has the form:", options: ["dy/dx = f(x, y)", "dy/dx = f(y/x)", "dy/dx + Py = Q", "d²y/dx² = y"], answer: "dy/dx = f(y/x)" },
+            { q: "The solution of d²y/dx² + 4y = 0 is:", options: ["y = A cos 2x + B sin 2x", "y = A e^(2x) + B e^(-2x)", "y = Ax + B", "y = Ax² + B"], answer: "y = A cos 2x + B sin 2x" },
+            { q: "The integrating factor of dy/dx - y = e^x is:", options: ["e^x", "e^-x", "x", "1/x"], answer: "e^-x" },
+            { q: "The solution of dy/dx = 1/x is:", options: ["ln|x| + C", "x + C", "1/x + C", "x²/2 + C"], answer: "ln|x| + C" },
+            { q: "The order of (dy/dx)² + y = 0 is:", options: ["1", "2", "3", "4"], answer: "1" },
+            { q: "The solution of dy/dx + 2xy = 0 is:", options: ["y = Ce^(-x²)", "y = Ce^(x²)", "y = C/x", "y = C e^x"], answer: "y = Ce^(-x²)" }
+          ]
+        },
+        {
+          title: "Vector Algebra - Quiz 1",
+          questions: [
+            { q: "The magnitude of a vector a = (a₁, a₂, a₃) is:", options: ["√(a₁² + a₂² + a₃²)", "a₁ + a₂ + a₃", "a₁² + a₂² + a₃²", "√(a₁ + a₂ + a₃)"], answer: "√(a₁² + a₂² + a₃²)" },
+            { q: "The dot product of two vectors a and b is:", options: ["Scalar", "Vector", "Zero", "Matrix"], answer: "Scalar" },
+            { q: "The cross product of two vectors a and b is:", options: ["Scalar", "Vector", "Zero", "Matrix"], answer: "Vector" },
+            { q: "If a · b = 0, then a and b are:", options: ["Parallel", "Perpendicular", "Equal", "Opposite"], answer: "Perpendicular" },
+            { q: "If a × b = 0, then a and b are:", options: ["Parallel", "Perpendicular", "Equal", "Opposite"], answer: "Parallel" },
+            { q: "The unit vector in the direction of a is:", options: ["a/|a|", "|a|/a", "a²", "1/a"], answer: "a/|a|" },
+            { q: "The dot product of a = (1, 2, 3) and b = (2, -1, 1) is:", options: ["3", "6", "9", "12"], answer: "3" },
+            { q: "The angle between vectors a and b is given by:", options: ["cos⁻¹(a · b / |a||b|)", "sin⁻¹(a · b / |a||b|)", "tan⁻¹(a · b / |a||b|)", "a · b"], answer: "cos⁻¹(a · b / |a||b|)" },
+            { q: "The cross product a × b is perpendicular to:", options: ["a only", "b only", "Both a and b", "Neither a nor b"], answer: "Both a and b" },
+            { q: "The magnitude of a = (3, 4, 0) is:", options: ["5", "7", "9", "12"], answer: "5" },
+            { q: "The scalar triple product a · (b × c) gives:", options: ["Volume of parallelepiped", "Area of triangle", "Length of vector", "Angle between vectors"], answer: "Volume of parallelepiped" },
+            { q: "The position vector of point (1, 2, 3) is:", options: ["i + 2j + 3k", "i + j + k", "2i + 3j + k", "i - 2j - 3k"], answer: "i + 2j + 3k" },
+            { q: "The direction cosines of a vector satisfy:", options: ["l² + m² + n² = 1", "l + m + n = 1", "l² + m² + n² = 0", "l + m + n = 0"], answer: "l² + m² + n² = 1" },
+            { q: "The projection of a on b is:", options: ["(a · b)/|b|", "(a · b)/|a|", "a · b", "|a|/|b|"], answer: "(a · b)/|b|" },
+            { q: "The cross product of a = (1, 0, 0) and b = (0, 1, 0) is:", options: ["(0, 0, 1)", "(0, 0, -1)", "(1, 1, 0)", "(0, 1, 1)"], answer: "(0, 0, 1)" }
+          ]
+        },
+        {
+          title: "Vector Algebra - Quiz 2",
+          questions: [
+            { q: "The vector a + b represents:", options: ["Sum of magnitudes", "Resultant vector", "Difference of vectors", "Product of vectors"], answer: "Resultant vector" },
+            { q: "The magnitude of the cross product |a × b| equals:", options: ["|a||b| sin θ", "|a||b| cos θ", "|a||b|", "a · b"], answer: "|a||b| sin θ" },
+            { q: "The direction cosines of a = (1, 1, 1) are:", options: ["(1/√3, 1/√3, 1/√3)", "(1, 1, 1)", "(1/3, 1/3, 1/3)", "(√3, √3, √3)"], answer: "(1/√3, 1/√3, 1/√3)" },
+            { q: "The scalar triple product is zero if vectors are:", options: ["Parallel", "Perpendicular", "Coplanar", "Non-coplanar"], answer: "Coplanar" },
+            { q: "The dot product a · a equals:", options: ["|a|", "|a|²", "0", "1"], answer: "|a|²" },
+            { q: "The vector projection of a on b is:", options: ["(a · b)/|b|² b", "(a · b)/|a|² a", "a · b", "|a|/|b|"], answer: "(a · b)/|b|² b" },
+            { q: "The cross product is:", options: ["Commutative", "Associative", "Anti-commutative", "Distributive"], answer: "Anti-commutative" },
+            { q: "The magnitude of a = (0, 5, 12) is:", options: ["13", "17", "10", "15"], answer: "13" },
+            { q: "The angle between a = (1, 0, 0) and b = (0, 1, 0) is:", options: ["0°", "90°", "45°", "180°"], answer: "90°" },
+            { q: "The area of the parallelogram formed by a and b is:", options: ["|a × b|", "a · b", "|a + b|", "|a - b|"], answer: "|a × b|" },
+            { q: "The dot product of unit vectors i and j is:", options: ["0", "1", "-1", "2"], answer: "0" },
+            { q: "If a = 2i + 3j - k and b = i - 2j + k, then a · b is:", options: ["-3", "3", "5", "7"], answer: "-3" },
+            { q: "The cross product a × a equals:", options: ["0", "a", "|a|", "|a|²"], answer: "0" },
+            { q: "The unit vector perpendicular to a = (1, 0, 0) and b = (0, 1, 0) is:", options: ["(0, 0, 1)", "(1, 0, 0)", "(0, 1, 0)", "(1, 1, 1)"], answer: "(0, 0, 1)" },
+            { q: "The scalar triple product a · (b × c) is:", options: ["Scalar", "Vector", "Zero", "Matrix"], answer: "Scalar" }
+          ]
+        },
+        {
+          title: "Three Dimensional Geometry - Quiz 1",
+          questions: [
+            { q: "The distance between points (x₁, y₁, z₁) and (x₂, y₂, z₂) is:", options: ["√((x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²)", "(x₂-x₁) + (y₂-y₁) + (z₂-z₁)", "(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²", "√(x₂ + x₁)²"], answer: "√((x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²)" },
+            { q: "The direction cosines of a line satisfy:", options: ["l² + m² + n² = 1", "l + m + n = 1", "l² + m² + n² = 0", "l + m + n = 0"], answer: "l² + m² + n² = 1" },
+            { q: "The equation of the xy-plane is:", options: ["z = 0", "x = 0", "y = 0", "x + y + z = 0"], answer: "z = 0" },
+            { q: "The angle between two lines with direction ratios (a₁, b₁, c₁) and (a₂, b₂, c₂) is:", options: ["cos⁻¹((a₁a₂ + b₁b₂ + c₁c₂)/(√(a₁² + b₁² + c₁²)√(a₂² + b₂² + c₂²)))", "sin⁻¹(a₁a₂ + b₁b₂ + c₁c₂)", "tan⁻¹(a₁a₂ + b₁b₂ + c₁c₂)", "a₁a₂ + b₁b₂ + c₁c₂"], answer: "cos⁻¹((a₁a₂ + b₁b₂ + c₁c₂)/(√(a₁² + b₁² + c₁²)√(a₂² + b₂² + c₂²)))" },
+            { q: "The equation of a plane through (x₁, y₁, z₁) with normal vector (a, b, c) is:", options: ["a(x - x₁) + b(y - y₁) + c(z - z₁) = 0", "ax + by + cz = 0", "x/a + y/b + z/c = 1", "ax₁ + by₁ + cz₁ = 0"], answer: "a(x - x₁) + b(y - y₁) + c(z - z₁) = 0" },
+            { q: "The distance of point (x₁, y₁, z₁) from the plane ax + by + cz + d = 0 is:", options: ["|ax₁ + by₁ + cz₁ + d|/√(a² + b² + c²)", "ax₁ + by₁ + cz₁ + d", "|ax₁ + by₁ + cz₁|/√(a² + b² + c²)", "ax₁ + by₁ + cz₁"], answer: "|ax₁ + by₁ + cz₁ + d|/√(a² + b² + c²)" },
+            { q: "Two lines are coplanar if:", options: ["They intersect", "They are parallel", "They satisfy a specific condition", "They are perpendicular"], answer: "They satisfy a specific condition" },
+            { q: "The direction ratios of the line joining (1, 2, 3) and (4, 5, 6) are:", options: ["(3, 3, 3)", "(4, 5, 6)", "(1, 2, 3)", "(3, -3, -3)"], answer: "(3, 3, 3)" },
+            { q: "The equation of a line through (x₁, y₁, z₁) with direction ratios (a, b, c) is:", options: ["(x-x₁)/a = (y-y₁)/b = (z-z₁)/c", "x/a + y/b + z/c = 1", "ax + by + cz = 0", "(x+x₁)/a = (y+y₁)/b = (z+z₁)/c"], answer: "(x-x₁)/a = (y-y₁)/b = (z-z₁)/c" },
+            { q: "The angle between a line and a plane is:", options: ["90° - angle between line and normal", "Angle between line and plane", "Angle between line and normal", "Always 90°"], answer: "90° - angle between line and normal" },
+            { q: "The distance between parallel planes ax + by + cz + d₁ = 0 and ax + by + cz + d₂ = 0 is:", options: ["|d₂ - d₁|/√(a² + b² + c²)", "|d₂ + d₁|/√(a² + b² + c²)", "d₂ - d₁", "√(a² + b² + c²)"], answer: "|d₂ - d₁|/√(a² + b² + c²)" },
+            { q: "The equation of the yz-plane is:", options: ["x = 0", "y = 0", "z = 0", "x + y = 0"], answer: "x = 0" },
+            { q: "Two planes are perpendicular if their normals are:", options: ["Parallel", "Perpendicular", "Equal", "Opposite"], answer: "Perpendicular" },
+            { q: "The direction cosines of the z-axis are:", options: ["(0, 0, 1)", "(1, 0, 0)", "(0, 1, 0)", "(1, 1, 1)"], answer: "(0, 0, 1)" },
+            { q: "The distance between (1, 2, 3) and (4, 5, 6) is:", options: ["3√3", "√3", "9", "6"], answer: "3√3" }
+          ]
+        },
+        {
+          title: "Three Dimensional Geometry - Quiz 2",
+          questions: [
+            { q: "The equation of a plane through origin with normal (a, b, c) is:", options: ["ax + by + cz = 0", "x/a + y/b + z/c = 1", "a(x-1) + b(y-1) + c(z-1) = 0", "ax + by + cz = 1"], answer: "ax + by + cz = 0" },
+            { q: "The angle between two planes is the angle between their:", options: ["Normals", "Lines", "Points", "Intercepts"], answer: "Normals" },
+            { q: "The line (x-1)/2 = (y-2)/3 = (z-3)/4 is in direction:", options: ["(2, 3, 4)", "(1, 2, 3)", "(3, 4, 5)", "(1, 1, 1)"], answer: "(2, 3, 4)" },
+            { q: "Two lines are perpendicular if their direction ratios satisfy:", options: ["a₁a₂ + b₁b₂ + c₁c₂ = 0", "a₁a₂ + b₁b₂ + c₁c₂ = 1", "a₁/a₂ = b₁/b₂ = c₁/c₂", "a₁ + b₁ + c₁ = 0"], answer: "a₁a₂ + b₁b₂ + c₁c₂ = 0" },
+            { q: "The distance of (2, 3, 4) from the plane x + y + z - 6 = 0 is:", options: ["1/√3", "2/√3", "3/√3", "4/√3"], answer: "3/√3" },
+            { q: "The equation of a line through (0, 0, 0) and (1, 1, 1) is:", options: ["x/1 = y/1 = z/1", "x/1 = y/2 = z/3", "x + y + z = 0", "x = y = z = 0"], answer: "x/1 = y/1 = z/1" },
+            { q: "The condition for two lines to be coplanar involves:", options: ["Dot product", "Cross product", "Determinant", "Addition"], answer: "Determinant" },
+            { q: "The angle between the planes x + y + z = 1 and x - y + z = 1 is:", options: ["60°", "90°", "45°", "30°"], answer: "60°" },
+            { q: "The equation of a plane parallel to x + 2y + 3z = 0 through (1, 1, 1) is:", options: ["x + 2y + 3z = 6", "x + 2y + 3z = 0", "x + y + z = 3", "2x + y + z = 4"], answer: "x + 2y + 3z = 6" },
+            { q: "The direction ratios of a line perpendicular to two lines with direction ratios (1, 0, 0) and (0, 1, 0) are:", options: ["(0, 0, 1)", "(1, 1, 0)", "(0, 1, 1)", "(1, 0, 1)"], answer: "(0, 0, 1)" },
+            { q: "The distance between parallel lines is found using:", options: ["Cross product", "Dot product", "Projection", "Determinant"], answer: "Cross product" },
+            { q: "The equation of the zx-plane is:", options: ["y = 0", "x = 0", "z = 0", "x + z = 0"], answer: "y = 0" },
+            { q: "The shortest distance between skew lines is found using:", options: ["Dot product", "Cross product", "Projection formula", "Distance formula"], answer: "Cross product" },
+            { q: "The plane x + y + z = 0 is perpendicular to the line:", options: ["x/1 = y/1 = z/1", "x/1 = y/2 = z/3", "x/2 = y/1 = z/0", "x/0 = y/1 = z/1"], answer: "x/1 = y/1 = z/1" },
+            { q: "The intercept form of a plane is:", options: ["x/a + y/b + z/c = 1", "ax + by + cz = d", "x + y + z = 1", "(x-x₁)/a = (y-y₁)/b = (z-z₁)/c"], answer: "x/a + y/b + z/c = 1" }
+          ]
+        },
+        {
+          title: "Linear Programming - Quiz 1",
+          questions: [
+            { q: "A linear programming problem involves:", options: ["Maximizing/minimizing a linear function", "Solving quadratic equations", "Finding derivatives", "Integrating functions"], answer: "Maximizing/minimizing a linear function" },
+            { q: "The constraints in a linear programming problem are:", options: ["Linear inequalities", "Quadratic equations", "Non-linear inequalities", "Equalities only"], answer: "Linear inequalities" },
+            { q: "The feasible region is:", options: ["Region satisfying all constraints", "Region outside constraints", "Single point", "Entire plane"], answer: "Region satisfying all constraints" },
+            { q: "The optimal solution occurs at:", options: ["A vertex of the feasible region", "Center of feasible region", "Any point in feasible region", "Outside feasible region"], answer: "A vertex of the feasible region" },
+            { q: "The objective function is of the form:", options: ["ax + by", "ax² + by²", "a/x + b/y", "ax + b"], answer: "ax + by" },
+            { q: "A feasible region is convex if it is:", options: ["Bounded", "Unbounded", "Non-empty", "Polygonal"], answer: "Polygonal" },
+            { q: "The graphical method is used for problems with:", options: ["Two variables", "Three variables", "Four variables", "Any number of variables"], answer: "Two variables" },
+            { q: "A linear programming problem may have:", options: ["No solution", "Unique solution", "Multiple solutions", "All of these"], answer: "All of these" },
+            { q: "The feasible region for x ≥ 0, y ≥ 0 is:", options: ["First quadrant", "Second quadrant", "Third quadrant", "Fourth quadrant"], answer: "First quadrant" },
+            { q: "The corner points of the feasible region are found by:", options: ["Solving constraints as equalities", "Differentiating constraints", "Integrating constraints", "Adding constraints"], answer: "Solving constraints as equalities" },
+            { q: "If the feasible region is empty, the problem has:", options: ["No solution", "Unique solution", "Infinite solutions", "One solution"], answer: "No solution" },
+            { q: "The objective function z = 2x + 3y is maximized at (2, 3) with value:", options: ["13", "12", "15", "10"], answer: "13" },
+            { q: "A constraint of the form ax + by ≤ c represents:", options: ["Half-plane", "Line", "Point", "Circle"], answer: "Half-plane" },
+            { q: "The feasible region is unbounded if:", options: ["It extends infinitely", "It is a single point", "It is bounded", "It is empty"], answer: "It extends infinitely" },
+            { q: "The solution to a linear programming problem is optimal if it:", options: ["Satisfies all constraints", "Maximizes/minimizes objective function", "Is a corner point", "All of these"], answer: "All of these" }
+          ]
+        },
+        {
+          title: "Linear Programming - Quiz 2",
+          questions: [
+            { q: "The objective function z = 3x + 4y at (1, 2) has value:", options: ["11", "10", "12", "14"], answer: "11" },
+            { q: "A bounded feasible region has:", options: ["Finite area", "Infinite area", "No area", "Single point"], answer: "Finite area" },
+            { q: "The constraint x + y ≤ 5 represents:", options: ["Region below line x + y = 5", "Region above line x + y = 5", "Line x + y = 5", "Point (5, 5)"], answer: "Region below line x + y = 5" },
+            { q: "The graphical method involves:", options: ["Plotting constraints", "Solving derivatives", "Integrating functions", "Matrix operations"], answer: "Plotting constraints" },
+            { q: "The optimal value of z = x + y subject to x + y ≤ 2, x ≥ 0, y ≥ 0 is:", options: ["2", "1", "3", "0"], answer: "2" },
+            { q: "A linear programming problem is infeasible if:", options: ["Feasible region is empty", "Objective function is zero", "Constraints are non-linear", "Solution is infinite"], answer: "Feasible region is empty" },
+            { q: "The constraint 2x + 3y ≥ 6 represents:", options: ["Region above line 2x + 3y = 6", "Region below line 2x + 3y = 6", "Line 2x + 3y = 6", "Point (3, 2)"], answer: "Region above line 2x + 3y = 6" },
+            { q: "The number of variables in a standard linear programming problem is:", options: ["Any number", "Two only", "Three only", "Four only"], answer: "Any number" },
+            { q: "The feasible region for x ≥ 0, y ≥ 0, x + y ≥ 1 is:", options: ["First quadrant above x + y = 1", "First quadrant below x + y = 1", "Entire plane", "Line x + y = 1"], answer: "First quadrant above x + y = 1" },
+            { q: "The corner point of x + y ≤ 4, x ≥ 0, y ≥ 0 includes:", options: ["(0, 0)", "(5, 5)", "(1, 2)", "(3, 3)"], answer: "(0, 0)" },
+            { q: "The optimal solution is found by evaluating the objective function at:", options: ["All points", "Corner points", "Midpoints", "Random points"], answer: "Corner points" },
+            { q: "If z = 5x + 7y is minimized at (0, 0), the value is:", options: ["0", "5", "7", "12"], answer: "0" },
+            { q: "A linear programming problem may have multiple optimal solutions if:", options: ["Objective function is parallel to a constraint", "Feasible region is empty", "Constraints are non-linear", "Solution is unique"], answer: "Objective function is parallel to a constraint" },
+            { q: "The constraint x - y ≤ 1 represents:", options: ["Region below x - y = 1", "Region above x - y = 1", "Line x - y = 1", "Point (1, 1)"], answer: "Region below x - y = 1" },
+            { q: "The feasible region for x ≥ 0, y ≥ 0, x ≤ 2, y ≤ 3 is:", options: ["Rectangle", "Triangle", "Circle", "Line"], answer: "Rectangle" }
+          ]
+        },
+        {
+          title: "Probability - Quiz 1",
+          questions: [
+            { q: "The probability of an event lies between:", options: ["0 and 1", "-1 and 1", "0 and ∞", "-∞ and ∞"], answer: "0 and 1" },
+            { q: "If P(A) = 0.4 and P(B) = 0.3, and A and B are independent, then P(A ∩ B) is:", options: ["0.12", "0.7", "0.1", "0.5"], answer: "0.12" },
+            { q: "The formula for conditional probability is:", options: ["P(A|B) = P(A ∩ B)/P(B)", "P(A|B) = P(A ∪ B)/P(B)", "P(A|B) = P(A)/P(B)", "P(A|B) = P(B)/P(A)"], answer: "P(A|B) = P(A ∩ B)/P(B)" },
+            { q: "If P(A) = 0.5 and P(A ∪ B) = 0.8, and P(B) = 0.4, then P(A ∩ B) is:", options: ["0.1", "0.2", "0.3", "0.4"], answer: "0.1" },
+            { q: "Two events are mutually exclusive if:", options: ["P(A ∩ B) = 0", "P(A ∩ B) = 1", "P(A ∪ B) = 0", "P(A ∪ B) = 1"], answer: "P(A ∩ B) = 0" },
+            { q: "The probability of the sample space is:", options: ["0", "1", "0.5", "∞"], answer: "1" },
+            { q: "If A and B are independent events, then P(A ∪ B) is:", options: ["P(A) + P(B) - P(A)P(B)", "P(A) + P(B)", "P(A)P(B)", "P(A) + P(B) + P(A)P(B)"], answer: "P(A) + P(B) - P(A)P(B)" },
+            { q: "The expected value of a random variable is:", options: ["Mean", "Variance", "Standard deviation", "Median"], answer: "Mean" },
+            { q: "The variance of a random variable X is:", options: ["E(X²) - [E(X)]²", "E(X) - [E(X)]²", "E(X²)", "[E(X)]²"], answer: "E(X²) - [E(X)]²" },
+            { q: "A die is rolled. The probability of getting an even number is:", options: ["1/2", "1/3", "1/4", "1/6"], answer: "1/2" },
+            { q: "If P(A) = 0.6 and P(A ∩ B) = 0.3, then P(B|A) is:", options: ["0.5", "0.3", "0.6", "0.2"], answer: "0.5" },
+            { q: "The probability of getting a head when tossing a coin is:", options: ["1/2", "1", "0", "1/4"], answer: "1/2" },
+            { q: "Bayes' theorem relates:", options: ["Conditional probabilities", "Independent events", "Mutually exclusive events", "Sample spaces"], answer: "Conditional probabilities" },
+            { q: "If P(A) = 0.7 and P(B) = 0.4, then P(A ∪ B) is at least:", options: ["0.7", "0.4", "0.1", "1"], answer: "0.7" },
+            { q: "The probability of two independent events occurring together is:", options: ["P(A)P(B)", "P(A) + P(B)", "P(A)/P(B)", "P(A ∪ B)"], answer: "P(A)P(B)" }
+          ]
+        },
+        {
+          title: "Probability - Quiz 2",
+          questions: [
+            { q: "If P(A) = 0.5 and P(B) = 0.5, and P(A ∩ B) = 0.25, then A and B are:", options: ["Independent", "Mutually exclusive", "Dependent", "Complementary"], answer: "Independent" },
+            { q: "The standard deviation of a random variable is:", options: ["√Variance", "Variance", "E(X)", "E(X²)"], answer: "√Variance" },
+            { q: "The probability of getting a 6 on a die is:", options: ["1/6", "1/3", "1/2", "1/4"], answer: "1/6" },
+            { q: "If P(A|B) = P(A), then A and B are:", options: ["Independent", "Mutually exclusive", "Dependent", "Complementary"], answer: "Independent" },
+            { q: "The probability of A or B occurring is given by:", options: ["P(A ∪ B) = P(A) + P(B) - P(A ∩ B)", "P(A ∪ B) = P(A) + P(B)", "P(A ∪ B) = P(A)P(B)", "P(A ∪ B) = P(A)/P(B)"], answer: "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)" },
+            { q: "The expected value of rolling a fair die is:", options: ["3.5", "3", "4", "6"], answer: "3.5" },
+            { q: "If P(A ∩ B) = 0.2 and P(B) = 0.5, then P(A|B) is:", options: ["0.4", "0.2", "0.5", "0.3"], answer: "0.4" },
+            { q: "Two events are complementary if:", options: ["P(A) + P(A') = 1", "P(A) + P(A') = 0", "P(A)P(A') = 1", "P(A) - P(A') = 1"], answer: "P(A) + P(A') = 1" },
+            { q: "The variance of a fair coin toss (H=1, T=0) is:", options: ["1/4", "1/2", "1", "0"], answer: "1/4" },
+            { q: "The probability of drawing a red card from a deck is:", options: ["1/2", "1/4", "1/13", "1/26"], answer: "1/2" },
+            { q: "If P(A) = 0.3 and P(B|A) = 0.4, then P(A ∩ B) is:", options: ["0.12", "0.7", "0.4", "0.3"], answer: "0.12" },
+            { q: "The number of ways to choose 2 cards from 52 is:", options: ["C(52, 2)", "P(52, 2)", "52!", "2/52"], answer: "C(52, 2)" },
+            { q: "If P(A ∪ B) = 0.9, P(A) = 0.6, P(B) = 0.5, then P(A ∩ B) is:", options: ["0.2", "0.3", "0.4", "0.1"], answer: "0.2" },
+            { q: "The probability of at least one head in two coin tosses is:", options: ["3/4", "1/2", "1/4", "1"], answer: "3/4" },
+            { q: "The expected value of a random variable X with P(X=1) = 0.5, P(X=2) = 0.5 is:", options: ["1.5", "1", "2", "0.5"], answer: "1.5" }
+          ]
+        }
+      ], 
+Biology: [
+        {
+          title: "Sexual Reproduction in Flowering Plants - Quiz 1",
+          questions: [
+            { q: "The transfer of pollen grains from anther to stigma is called:", options: ["Fertilization", "Pollination", "Emasculation", "Hybridization"], answer: "Pollination" },
+            { q: "The male reproductive part of a flower is:", options: ["Pistil", "Stamen", "Ovary", "Sepal"], answer: "Stamen" },
+            { q: "The process of removal of anthers from a flower is:", options: ["Emasculation", "Pollination", "Fertilization", "Parthenogenesis"], answer: "Emasculation" },
+            { q: "Double fertilization occurs in:", options: ["Gymnosperms", "Angiosperms", "Bryophytes", "Pteridophytes"], answer: "Angiosperms" },
+            { q: "The pollen grain represents the:", options: ["Male gametophyte", "Female gametophyte", "Sporophyte", "Zygote"], answer: "Male gametophyte" },
+            { q: "The female reproductive part of a flower is:", options: ["Stamen", "Pistil", "Petal", "Anther"], answer: "Pistil" },
+            { q: "The fusion of male and female gametes is called:", options: ["Pollination", "Fertilization", "Emasculation", "Hybridization"], answer: "Fertilization" },
+            { q: "The endosperm in angiosperms is:", options: ["Haploid", "Diploid", "Triploid", "Tetraploid"], answer: "Triploid" },
+            { q: "The process of pollination by wind is called:", options: ["Anemophily", "Hydrophily", "Entomophily", "Ornithophily"], answer: "Anemophily" },
+            { q: "The ovule develops into a:", options: ["Seed", "Fruit", "Flower", "Pollen"], answer: "Seed" },
+            { q: "The ovary develops into a:", options: ["Seed", "Fruit", "Pollen", "Anther"], answer: "Fruit" },
+            { q: "The pollen tube enters the ovule through:", options: ["Micropyle", "Chalaza", "Funicle", "Hilum"], answer: "Micropyle" },
+            { q: "The number of microsporangia in an anther is:", options: ["Two", "Four", "Six", "Eight"], answer: "Four" },
+            { q: "The embryo sac in angiosperms is:", options: ["Male gametophyte", "Female gametophyte", "Sporophyte", "Zygote"], answer: "Female gametophyte" },
+            { q: "Cross-pollination is also known as:", options: ["Autogamy", "Geitonogamy", "Xenogamy", "Cleistogamy"], answer: "Xenogamy" }
+          ]
+        },
+        {
+          title: "Sexual Reproduction in Flowering Plants - Quiz 2",
+          questions: [
+            { q: "The process of pollination by insects is called:", options: ["Anemophily", "Hydrophily", "Entomophily", "Ornithophily"], answer: "Entomophily" },
+            { q: "The outermost layer of the anther wall is:", options: ["Epidermis", "Endothecium", "Tapetum", "Middle layer"], answer: "Epidermis" },
+            { q: "The nutritive layer of the anther is:", options: ["Tapetum", "Endothecium", "Epidermis", "Middle layer"], answer: "Tapetum" },
+            { q: "The embryo sac typically contains:", options: ["7 cells, 8 nuclei", "8 cells, 8 nuclei", "7 cells, 7 nuclei", "6 cells, 6 nuclei"], answer: "7 cells, 8 nuclei" },
+            { q: "The fusion of one male gamete with the egg forms:", options: ["Zygote", "Endosperm", "Embryo sac", "Pollen tube"], answer: "Zygote" },
+            { q: "Self-pollination within the same flower is called:", options: ["Autogamy", "Geitonogamy", "Xenogamy", "Allogamy"], answer: "Autogamy" },
+            { q: "The structure that connects the ovule to the placenta is:", options: ["Funicle", "Micropyle", "Chalaza", "Hilum"], answer: "Funicle" },
+            { q: "The process of development of an embryo without fertilization is:", options: ["Apomixis", "Parthenogenesis", "Polyembryony", "Emasculation"], answer: "Parthenogenesis" },
+            { q: "The pollen grains are shed at the:", options: ["2-celled stage", "3-celled stage", "4-celled stage", "1-celled stage"], answer: "2-celled stage" },
+            { q: "The primary endosperm nucleus is formed by:", options: ["Fusion of two polar nuclei", "Fusion of male gamete with egg", "Fusion of male gamete with polar nuclei", "Fusion of two eggs"], answer: "Fusion of male gamete with polar nuclei" },
+            { q: "The part of the ovule opposite to the micropyle is:", options: ["Chalaza", "Funicle", "Hilum", "Nucellus"], answer: "Chalaza" },
+            { q: "Pollination by water is called:", options: ["Anemophily", "Hydrophily", "Entomophily", "Ornithophily"], answer: "Hydrophily" },
+            { q: "The mature embryo sac is also called:", options: ["Megaspore", "Microspore", "Female gametophyte", "Sporophyte"], answer: "Female gametophyte" },
+            { q: "The anther is attached to the filament by:", options: ["Connective", "Tapetum", "Endothecium", "Epidermis"], answer: "Connective" },
+            { q: "The formation of seeds without fertilization is called:", options: ["Apomixis", "Parthenogenesis", "Polyembryony", "Hybridization"], answer: "Apomixis" }
+          ]
+        },
+        {
+          title: "Human Reproduction - Quiz 1",
+          questions: [
+            { q: "The male reproductive system includes:", options: ["Testes", "Ovaries", "Uterus", "Fallopian tubes"], answer: "Testes" },
+            { q: "Spermatogenesis occurs in:", options: ["Seminiferous tubules", "Epididymis", "Vas deferens", "Prostate gland"], answer: "Seminiferous tubules" },
+            { q: "The female reproductive system includes:", options: ["Testes", "Ovaries", "Prostate", "Seminal vesicles"], answer: "Ovaries" },
+            { q: "The process of formation of eggs is called:", options: ["Spermatogenesis", "Oogenesis", "Fertilization", "Implantation"], answer: "Oogenesis" },
+            { q: "The site of fertilization in humans is:", options: ["Uterus", "Ovary", "Fallopian tube", "Cervix"], answer: "Fallopian tube" },
+            { q: "The hormone responsible for ovulation is:", options: ["FSH", "LH", "Estrogen", "Progesterone"], answer: "LH" },
+            { q: "The structure that nourishes the developing embryo is:", options: ["Placenta", "Umbilical cord", "Amnion", "Chorion"], answer: "Placenta" },
+            { q: "The primary sex organ in males is:", options: ["Testis", "Penis", "Vas deferens", "Prostate gland"], answer: "Testis" },
+            { q: "The menstrual cycle is controlled by:", options: ["Pituitary gland", "Thyroid gland", "Adrenal gland", "Pancreas"], answer: "Pituitary gland" },
+            { q: "The process of sperm release is called:", options: ["Ovulation", "Ejaculation", "Implantation", "Fertilization"], answer: "Ejaculation" },
+            { q: "The layer of the uterus that thickens during the menstrual cycle is:", options: ["Endometrium", "Myometrium", "Perimetrium", "Cervix"], answer: "Endometrium" },
+            { q: "The hormone that maintains pregnancy is:", options: ["Estrogen", "Progesterone", "FSH", "LH"], answer: "Progesterone" },
+            { q: "The number of chromosomes in a human sperm is:", options: ["23", "46", "22", "44"], answer: "23" },
+            { q: "The process of embryo implantation occurs in:", options: ["Fallopian tube", "Uterus", "Ovary", "Cervix"], answer: "Uterus" },
+            { q: "The male gametes are produced by:", options: ["Sertoli cells", "Leydig cells", "Seminiferous tubules", "Epididymis"], answer: "Seminiferous tubules" }
+          ]
+        },
+        {
+          title: "Human Reproduction - Quiz 2",
+          questions: [
+            { q: "The female gametes are produced in:", options: ["Ovaries", "Fallopian tubes", "Uterus", "Cervix"], answer: "Ovaries" },
+            { q: "The hormone secreted by Leydig cells is:", options: ["Testosterone", "Estrogen", "Progesterone", "FSH"], answer: "Testosterone" },
+            { q: "The structure that protects the fetus is:", options: ["Amnion", "Placenta", "Umbilical cord", "Endometrium"], answer: "Amnion" },
+            { q: "The first polar body is formed during:", options: ["Spermatogenesis", "Oogenesis", "Fertilization", "Implantation"], answer: "Oogenesis" },
+            { q: "The site of sperm maturation is:", options: ["Epididymis", "Seminiferous tubules", "Vas deferens", "Prostate gland"], answer: "Epididymis" },
+            { q: "The menstrual cycle lasts approximately:", options: ["28 days", "14 days", "21 days", "35 days"], answer: "28 days" },
+            { q: "The hormone that stimulates sperm production is:", options: ["FSH", "LH", "Testosterone", "Progesterone"], answer: "FSH" },
+            { q: "The embryo develops into a fetus by the end of:", options: ["First trimester", "Second trimester", "Third trimester", "Fourth week"], answer: "First trimester" },
+            { q: "The structure that connects the fetus to the placenta is:", options: ["Umbilical cord", "Amnion", "Chorion", "Endometrium"], answer: "Umbilical cord" },
+            { q: "The release of the egg from the ovary is called:", options: ["Ovulation", "Fertilization", "Implantation", "Menstruation"], answer: "Ovulation" },
+            { q: "The number of polar bodies formed during oogenesis is:", options: ["1", "2", "3", "4"], answer: "2" },
+            { q: "The hormone that prepares the uterus for pregnancy is:", options: ["Estrogen", "Progesterone", "FSH", "LH"], answer: "Progesterone" },
+            { q: "The process of childbirth is called:", options: ["Parturition", "Ovulation", "Implantation", "Fertilization"], answer: "Parturition" },
+            { q: "The cells that nourish developing sperms are:", options: ["Sertoli cells", "Leydig cells", "Spermatogonia", "Interstitial cells"], answer: "Sertoli cells" },
+            { q: "The structure that secretes seminal fluid is:", options: ["Prostate gland", "Testis", "Epididymis", "Vas deferens"], answer: "Prostate gland" }
+          ]
+        },
+        {
+          title: "Reproductive Health - Quiz 1",
+          questions: [
+            { q: "The method of preventing pregnancy by using barriers is called:", options: ["Contraception", "Sterilization", "Hormonal method", "Natural method"], answer: "Contraception" },
+            { q: "An example of a barrier method of contraception is:", options: ["Condom", "IUD", "Oral pill", "Tubectomy"], answer: "Condom" },
+            { q: "The full form of STD is:", options: ["Sexually Transmitted Disease", "Standard Treatment Disease", "Sexual Transmission Disorder", "Systemic Transmitted Disease"], answer: "Sexually Transmitted Disease" },
+            { q: "An example of a sexually transmitted disease is:", options: ["HIV/AIDS", "Diabetes", "Hypertension", "Asthma"], answer: "HIV/AIDS" },
+            { q: "The surgical method of contraception in males is:", options: ["Vasectomy", "Tubectomy", "Hysterectomy", "Oophorectomy"], answer: "Vasectomy" },
+            { q: "The device inserted into the uterus for contraception is:", options: ["IUD", "Condom", "Diaphragm", "Oral pill"], answer: "IUD" },
+            { q: "The hormonal method of contraception involves:", options: ["Oral pills", "Condoms", "Diaphragms", "Spermicides"], answer: "Oral pills" },
+            { q: "The permanent method of contraception in females is:", options: ["Tubectomy", "Vasectomy", "IUD", "Oral pill"], answer: "Tubectomy" },
+            { q: "The ideal age for marriage in India to promote reproductive health is:", options: ["21 for males, 18 for females", "18 for males, 21 for females", "25 for both", "16 for both"], answer: "21 for males, 18 for females" },
+            { q: "The technique used to assist infertile couples is:", options: ["IVF", "IUD", "STD", "ART"], answer: "ART" },
+            { q: "The full form of IVF is:", options: ["In Vitro Fertilization", "In Vivo Fertilization", "Intra Uterine Fertilization", "In Vitro Fusion"], answer: "In Vitro Fertilization" },
+            { q: "The method of contraception that prevents ovulation is:", options: ["Oral pill", "Condom", "IUD", "Diaphragm"], answer: "Oral pill" },
+            { q: "The disease caused by Treponema pallidum is:", options: ["Syphilis", "Gonorrhea", "HIV", "Hepatitis B"], answer: "Syphilis" },
+            { q: "The awareness program for reproductive health in India is:", options: ["RCH", "ICMR", "WHO", "UNICEF"], answer: "RCH" },
+            { q: "The method of contraception that involves abstaining during fertile days is:", options: ["Natural method", "Hormonal method", "Barrier method", "Surgical method"], answer: "Natural method" }
+          ]
+        },
+        {
+          title: "Reproductive Health - Quiz 2",
+          questions: [
+            { q: "The virus responsible for AIDS is:", options: ["HIV", "HBV", "HCV", "HPV"], answer: "HIV" },
+            { q: "The method of contraception that blocks sperm entry is:", options: ["Diaphragm", "Oral pill", "IUD", "Vasectomy"], answer: "Diaphragm" },
+            { q: "The technique of transferring an embryo into the uterus is called:", options: ["ET", "IVF", "IUI", "GIFT"], answer: "ET" },
+            { q: "The full form of GIFT is:", options: ["Gamete Intra Fallopian Transfer", "Gamete In Vitro Fertilization Transfer", "Gamete Intra Uterine Transfer", "Gamete Internal Fertilization Transfer"], answer: "Gamete Intra Fallopian Transfer" },
+            { q: "The disease caused by Neisseria gonorrhoeae is:", options: ["Gonorrhea", "Syphilis", "HIV", "Hepatitis"], answer: "Gonorrhea" },
+            { q: "The contraceptive that releases hormones slowly is:", options: ["IUD", "Condom", "Diaphragm", "Spermicide"], answer: "IUD" },
+            { q: "The method to detect genetic abnormalities in a fetus is:", options: ["Amniocentesis", "Ultrasound", "X-ray", "MRI"], answer: "Amniocentesis" },
+            { q: "The legal age for marriage in India for females is:", options: ["18", "21", "16", "20"], answer: "18" },
+            { q: "The population control measure promoted by the government is:", options: ["Family planning", "Mass sterilization", "Forced abortion", "Single-child policy"], answer: "Family planning" },
+            { q: "The STD that can be cured with antibiotics is:", options: ["Syphilis", "HIV", "Hepatitis B", "Herpes"], answer: "Syphilis" },
+            { q: "The technique of artificial insemination is called:", options: ["IUI", "IVF", "GIFT", "ZIFT"], answer: "IUI" },
+            { q: "The full form of RCH is:", options: ["Reproductive and Child Health", "Reproductive and Community Health", "Rural and Child Health", "Reproductive and Clinical Health"], answer: "Reproductive and Child Health" },
+            { q: "The contraceptive method that requires surgery is:", options: ["Vasectomy", "Condom", "IUD", "Oral pill"], answer: "Vasectomy" },
+            { q: "The virus causing cervical cancer is:", options: ["HPV", "HIV", "HBV", "HCV"], answer: "HPV" },
+            { q: "The method of contraception that involves withdrawal is:", options: ["Coitus interruptus", "Oral pill", "IUD", "Diaphragm"], answer: "Coitus interruptus" }
+          ]
+        },
+        {
+          title: "Principles of Inheritance and Variation - Quiz 1",
+          questions: [
+            { q: "The study of heredity and variation is called:", options: ["Genetics", "Evolution", "Embryology", "Cytology"], answer: "Genetics" },
+            { q: "Mendel conducted his experiments on:", options: ["Pea plant", "Drosophila", "Maize", "Wheat"], answer: "Pea plant" },
+            { q: "The law of segregation states that:", options: ["Alleles segregate during gamete formation", "Traits blend in offspring", "Dominant traits always appear", "Recessive traits are lost"], answer: "Alleles segregate during gamete formation" },
+            { q: "The phenotypic ratio in a monohybrid cross is:", options: ["3:1", "1:2:1", "9:3:3:1", "1:1"], answer: "3:1" },
+            { q: "The genotypic ratio in a monohybrid cross is:", options: ["1:2:1", "3:1", "9:3:3:1", "1:1"], answer: "1:2:1" },
+            { q: "The law of independent assortment applies to:", options: ["Genes on different chromosomes", "Genes on the same chromosome", "Linked genes", "Recessive genes"], answer: "Genes on different chromosomes" },
+            { q: "The phenotypic ratio in a dihybrid cross is:", options: ["9:3:3:1", "3:1", "1:2:1", "1:1:1:1"], answer: "9:3:3:1" },
+            { q: "A test cross is performed to determine:", options: ["Genotype of an individual", "Phenotype of an individual", "Homozygosity", "Heterozygosity"], answer: "Genotype of an individual" },
+            { q: "The condition where both alleles are expressed equally is:", options: ["Codominance", "Incomplete dominance", "Dominance", "Recessiveness"], answer: "Codominance" },
+            { q: "Incomplete dominance results in:", options: ["Intermediate phenotype", "Dominant phenotype", "Recessive phenotype", "No phenotype"], answer: "Intermediate phenotype" },
+            { q: "The blood group AB is an example of:", options: ["Codominance", "Incomplete dominance", "Dominance", "Recessiveness"], answer: "Codominance" },
+            { q: "The chromosome responsible for sex determination in humans is:", options: ["X chromosome", "Y chromosome", "Both X and Y", "Autosomes"], answer: "Both X and Y" },
+            { q: "A disorder caused by a recessive gene on the X chromosome is:", options: ["Hemophilia", "Sickle cell anemia", "Phenylketonuria", "Cystic fibrosis"], answer: "Hemophilia" },
+            { q: "The number of autosomes in a human cell is:", options: ["44", "46", "22", "23"], answer: "44" },
+            { q: "The condition of having more than two sets of chromosomes is:", options: ["Polyploidy", "Aneuploidy", "Monoploidy", "Diploidy"], answer: "Polyploidy" }
+          ]
+        },
+        {
+          title: "Principles of Inheritance and Variation - Quiz 2",
+          questions: [
+            { q: "The scientist known as the father of genetics is:", options: ["Gregor Mendel", "Charles Darwin", "T.H. Morgan", "Hugo de Vries"], answer: "Gregor Mendel" },
+            { q: "The test cross ratio for a heterozygous individual is:", options: ["1:1", "3:1", "1:2:1", "9:3:3:1"], answer: "1:1" },
+            { q: "The phenomenon of linkage was discovered by:", options: ["T.H. Morgan", "Gregor Mendel", "Charles Darwin", "Hugo de Vries"], answer: "T.H. Morgan" },
+            { q: "Genes located close on the same chromosome show:", options: ["Linkage", "Independent assortment", "Segregation", "Codominance"], answer: "Linkage" },
+            { q: "The disorder caused by an extra chromosome 21 is:", options: ["Down syndrome", "Turner syndrome", "Klinefelter syndrome", "Hemophilia"], answer: "Down syndrome" },
+            { q: "The condition with genotype XO is:", options: ["Turner syndrome", "Klinefelter syndrome", "Down syndrome", "Hemophilia"], answer: "Turner syndrome" },
+            { q: "The condition with genotype XXY is:", options: ["Klinefelter syndrome", "Turner syndrome", "Down syndrome", "Hemophilia"], answer: "Klinefelter syndrome" },
+            { q: "The phenotypic ratio in incomplete dominance is:", options: ["1:2:1", "3:1", "9:3:3:1", "1:1"], answer: "1:2:1" },
+            { q: "The law of dominance was proposed by:", options: ["Gregor Mendel", "T.H. Morgan", "Charles Darwin", "Hugo de Vries"], answer: "Gregor Mendel" },
+            { q: "A recessive trait is expressed when the genotype is:", options: ["Homozygous recessive", "Homozygous dominant", "Heterozygous", "Codominant"], answer: "Homozygous recessive" },
+            { q: "The mutation that occurs naturally is called:", options: ["Spontaneous mutation", "Induced mutation", "Point mutation", "Frameshift mutation"], answer: "Spontaneous mutation" },
+            { q: "The blood group with no antigens is:", options: ["O", "A", "B", "AB"], answer: "O" },
+            { q: "The condition of having an extra chromosome is:", options: ["Aneuploidy", "Polyploidy", "Diploidy", "Haploidy"], answer: "Aneuploidy" },
+            { q: "The organism used by Morgan for linkage studies was:", options: ["Drosophila", "Pea plant", "Maize", "Neurospora"], answer: "Drosophila" },
+            { q: "The inheritance pattern where males are more affected is:", options: ["Sex-linked", "Autosomal dominant", "Autosomal recessive", "Codominant"], answer: "Sex-linked" }
+          ]
+        },
+        {
+          title: "Molecular Basis of Inheritance - Quiz 1",
+          questions: [
+            { q: "The genetic material in most organisms is:", options: ["DNA", "RNA", "Protein", "Lipid"], answer: "DNA" },
+            { q: "The structure of DNA was proposed by:", options: ["Watson and Crick", "Mendel", "Morgan", "Sutton"], answer: "Watson and Crick" },
+            { q: "The nitrogenous base not found in DNA is:", options: ["Uracil", "Thymine", "Adenine", "Guanine"], answer: "Uracil" },
+            { q: "The process of copying DNA is called:", options: ["Replication", "Transcription", "Translation", "Mutation"], answer: "Replication" },
+            { q: "The enzyme that unzips DNA during replication is:", options: ["Helicase", "Polymerase", "Ligase", "Primase"], answer: "Helicase" },
+            { q: "The process of synthesizing mRNA from DNA is:", options: ["Transcription", "Translation", "Replication", "Mutation"], answer: "Transcription" },
+            { q: "The site of protein synthesis is:", options: ["Ribosome", "Nucleus", "Mitochondria", "Golgi body"], answer: "Ribosome" },
+            { q: "The genetic code is:", options: ["Triplet", "Doublet", "Single", "Quadruplet"], answer: "Triplet" },
+            { q: "The start codon in protein synthesis is:", options: ["AUG", "UAG", "UGA", "UAA"], answer: "AUG" },
+            { q: "The experiment that confirmed DNA as genetic material was conducted by:", options: ["Hershey and Chase", "Watson and Crick", "Meselson and Stahl", "Griffith"], answer: "Hershey and Chase" },
+            { q: "The number of hydrogen bonds between adenine and thymine is:", options: ["2", "3", "1", "4"], answer: "2" },
+            { q: "The enzyme that joins DNA fragments during replication is:", options: ["Ligase", "Helicase", "Polymerase", "Primase"], answer: "Ligase" },
+            { q: "The central dogma of molecular biology states:", options: ["DNA → RNA → Protein", "RNA → DNA → Protein", "Protein → RNA → DNA", "DNA → Protein → RNA"], answer: "DNA → RNA → Protein" },
+            { q: "The RNA that carries the genetic code to the ribosome is:", options: ["mRNA", "tRNA", "rRNA", "snRNA"], answer: "mRNA" },
+            { q: "The process of protein synthesis from mRNA is:", options: ["Translation", "Transcription", "Replication", "Mutation"], answer: "Translation" }
+          ]
+        },
+        {
+          title: "Molecular Basis of Inheritance - Quiz 2",
+          questions: [
+            { q: "The nitrogenous base found in RNA instead of thymine is:", options: ["Uracil", "Adenine", "Guanine", "Cytosine"], answer: "Uracil" },
+            { q: "The enzyme that synthesizes RNA during transcription is:", options: ["RNA polymerase", "DNA polymerase", "Helicase", "Ligase"], answer: "RNA polymerase" },
+            { q: "The stop codons in protein synthesis are:", options: ["UAA, UAG, UGA", "AUG, UAA, UAG", "AUG, UGA, UAA", "UAG, UGA, AUG"], answer: "UAA, UAG, UGA" },
+            { q: "The DNA replication is:", options: ["Semi-conservative", "Conservative", "Dispersive", "Random"], answer: "Semi-conservative" },
+            { q: "The experiment that proved semi-conservative replication was by:", options: ["Meselson and Stahl", "Hershey and Chase", "Watson and Crick", "Griffith"], answer: "Meselson and Stahl" },
+            { q: "The number of hydrogen bonds between guanine and cytosine is:", options: ["3", "2", "1", "4"], answer: "3" },
+            { q: "The molecule that carries amino acids to the ribosome is:", options: ["tRNA", "mRNA", "rRNA", "snRNA"], answer: "tRNA" },
+            { q: "The process of gene regulation in prokaryotes is called:", options: ["Operon model", "Central dogma", "Replication", "Translation"], answer: "Operon model" },
+            { q: "The lac operon is an example of:", options: ["Inducible operon", "Repressible operon", "Constitutive operon", "Silent operon"], answer: "Inducible operon" },
+            { q: "The human genome project aimed to:", options: ["Sequence human DNA", "Clone humans", "Modify genes", "Study proteins"], answer: "Sequence human DNA" },
+            { q: "The genetic code is universal, meaning it is:", options: ["Same in all organisms", "Different in each organism", "Only in eukaryotes", "Only in prokaryotes"], answer: "Same in all organisms" },
+            { q: "The site of transcription in eukaryotic cells is:", options: ["Nucleus", "Cytoplasm", "Ribosome", "Mitochondria"], answer: "Nucleus" },
+            { q: "The process of removing introns from mRNA is:", options: ["Splicing", "Replication", "Translation", "Transcription"], answer: "Splicing" },
+            { q: "The Griffith experiment demonstrated:", options: ["Transformation", "Transduction", "Conjugation", "Replication"], answer: "Transformation" },
+            { q: "The enzyme that adds nucleotides during DNA replication is:", options: ["DNA polymerase", "RNA polymerase", "Helicase", "Ligase"], answer: "DNA polymerase" }
+          ]
+        },
+        {
+          title: "Evolution - Quiz 1",
+          questions: [
+            { q: "The theory of evolution was proposed by:", options: ["Charles Darwin", "Gregor Mendel", "T.H. Morgan", "Hugo de Vries"], answer: "Charles Darwin" },
+            { q: "The process of natural selection is also called:", options: ["Survival of the fittest", "Genetic drift", "Mutation", "Gene flow"], answer: "Survival of the fittest" },
+            { q: "The structures with similar origin but different functions are:", options: ["Homologous structures", "Analogous structures", "Vestigial structures", "Adaptive structures"], answer: "Homologous structures" },
+            { q: "The wings of birds and insects are:", options: ["Analogous structures", "Homologous structures", "Vestigial structures", "Adaptive structures"], answer: "Analogous structures" },
+            { q: "The appendix in humans is an example of:", options: ["Vestigial structure", "Homologous structure", "Analogous structure", "Adaptive structure"], answer: "Vestigial structure" },
+            { q: "The mechanism that causes random changes in allele frequency is:", options: ["Genetic drift", "Natural selection", "Mutation", "Gene flow"], answer: "Genetic drift" },
+            { q: "The Hardy-Weinberg principle applies to a population in:", options: ["Equilibrium", "Evolution", "Mutation", "Selection"], answer: "Equilibrium" },
+            { q: "The first life forms on Earth were:", options: ["Prokaryotes", "Eukaryotes", "Multicellular organisms", "Plants"], answer: "Prokaryotes" },
+            { q: "The theory of chemical evolution was proposed by:", options: ["Oparin and Haldane", "Darwin", "Lamarck", "Wallace"], answer: "Oparin and Haldane" },
+            { q: "The process of formation of new species is called:", options: ["Speciation", "Mutation", "Genetic drift", "Natural selection"], answer: "Speciation" },
+            { q: "The evidence of evolution from fossils is studied in:", options: ["Paleontology", "Embryology", "Biochemistry", "Genetics"], answer: "Paleontology" },
+            { q: "The common ancestor of humans and chimpanzees lived about:", options: ["5-7 million years ago", "10-12 million years ago", "1-2 million years ago", "20 million years ago"], answer: "5-7 million years ago" },
+            { q: "The theory of use and disuse was proposed by:", options: ["Lamarck", "Darwin", "Wallace", "Mendel"], answer: "Lamarck" },
+            { q: "The Darwin’s finches are an example of:", options: ["Adaptive radiation", "Genetic drift", "Mutation", "Gene flow"], answer: "Adaptive radiation" },
+            { q: "The unit of evolution is:", options: ["Population", "Individual", "Gene", "Chromosome"], answer: "Population" }
+          ]
+        },
+        {
+          title: "Evolution - Quiz 2",
+          questions: [
+            { q: "The scientist who proposed the theory of natural selection along with Darwin was:", options: ["Alfred Wallace", "Gregor Mendel", "Hugo de Vries", "Lamarck"], answer: "Alfred Wallace" },
+            { q: "The process of change in genetic composition of a population is:", options: ["Evolution", "Mutation", "Selection", "Recombination"], answer: "Evolution" },
+            { q: "The structures with different origins but similar functions are:", options: ["Analogous structures", "Homologous structures", "Vestigial structures", "Adaptive structures"], answer: "Analogous structures" },
+            { q: "The Hardy-Weinberg equilibrium is disturbed by:", options: ["Mutation", "Random mating", "Large population", "No migration"], answer: "Mutation" },
+            { q: "The sudden change in genetic material is called:", options: ["Mutation", "Recombination", "Selection", "Genetic drift"], answer: "Mutation" },
+            { q: "The forelimbs of humans and whales are:", options: ["Homologous structures", "Analogous structures", "Vestigial structures", "Adaptive structures"], answer: "Homologous structures" },
+            { q: "The experiment that supported chemical evolution was conducted by:", options: ["Miller and Urey", "Watson and Crick", "Hershey and Chase", "Meselson and Stahl"], answer: "Miller and Urey" },
+            { q: "The type of speciation caused by geographical isolation is:", options: ["Allopatric speciation", "Sympatric speciation", "Parapatric speciation", "Peripatric speciation"], answer: "Allopatric speciation" },
+            { q: "The evidence of evolution from embryology shows:", options: ["Similar developmental stages", "Different developmental stages", "No development", "Random stages"], answer: "Similar developmental stages" },
+            { q: "The modern synthetic theory of evolution includes:", options: ["Natural selection and mutation", "Lamarckism", "Use and disuse", "Inheritance of acquired traits"], answer: "Natural selection and mutation" },
+            { q: "The process of migration of individuals between populations is:", options: ["Gene flow", "Genetic drift", "Mutation", "Selection"], answer: "Gene flow" },
+            { q: "The oldest fossils are found in:", options: ["Sedimentary rocks", "Igneous rocks", "Metamorphic rocks", "Volcanic rocks"], answer: "Sedimentary rocks" },
+            { q: "The phenomenon where a single ancestor diversifies into many species is:", options: ["Adaptive radiation", "Genetic drift", "Mutation", "Speciation"], answer: "Adaptive radiation" },
+            { q: "The human ancestor Homo habilis is known for:", options: ["Tool use", "Fire use", "Language", "Agriculture"], answer: "Tool use" },
+            { q: "The condition where a population is reduced drastically is called:", options: ["Bottleneck effect", "Founder effect", "Natural selection", "Gene flow"], answer: "Bottleneck effect" }
+          ]
+        },
+        {
+          title: "Human Health and Disease - Quiz 1",
+          questions: [
+            { q: "The study of diseases is called:", options: ["Pathology", "Immunology", "Microbiology", "Epidemiology"], answer: "Pathology" },
+            { q: "The causative agent of malaria is:", options: ["Plasmodium", "Trypanosoma", "Leishmania", "Wuchereria"], answer: "Plasmodium" },
+            { q: "The vector for dengue fever is:", options: ["Aedes mosquito", "Anopheles mosquito", "Culex mosquito", "Housefly"], answer: "Aedes mosquito" },
+            { q: "The disease caused by HIV is:", options: ["AIDS", "Tuberculosis", "Malaria", "Cholera"], answer: "AIDS" },
+            { q: "The immune system consists of:", options: ["B and T cells", "Red blood cells", "Platelets", "Neurons"], answer: "B and T cells" },
+            { q: "The type of immunity acquired after birth is:", options: ["Acquired immunity", "Innate immunity", "Passive immunity", "Natural immunity"], answer: "Acquired immunity" },
+            { q: "The vaccine for smallpox was developed by:", options: ["Edward Jenner", "Louis Pasteur", "Alexander Fleming", "Robert Koch"], answer: "Edward Jenner" },
+            { q: "The causative agent of tuberculosis is:", options: ["Mycobacterium tuberculosis", "Streptococcus pneumoniae", "Salmonella typhi", "Vibrio cholerae"], answer: "Mycobacterium tuberculosis" },
+            { q: "The disease caused by Wuchereria bancrofti is:", options: ["Filariasis", "Malaria", "Dengue", "Chikungunya"], answer: "Filariasis" },
+            { q: "The antibody-producing cells are:", options: ["B cells", "T cells", "Macrophages", "Neutrophils"], answer: "B cells" },
+            { q: "The disease caused by Salmonella typhi is:", options: ["Typhoid", "Cholera", "Dysentery", "Tuberculosis"], answer: "Typhoid" },
+            { q: "The type of immunity provided by vaccination is:", options: ["Active immunity", "Passive immunity", "Innate immunity", "Natural immunity"], answer: "Active immunity" },
+            { q: "The cancer-causing agents are called:", options: ["Carcinogens", "Pathogens", "Allergens", "Toxins"], answer: "Carcinogens" },
+            { q: "The organ affected by hepatitis is:", options: ["Liver", "Lungs", "Kidney", "Heart"], answer: "Liver" },
+            { q: "The test to detect HIV infection is:", options: ["ELISA", "PCR", "Western blot", "RT-PCR"], answer: "ELISA" }
+          ]
+        },
+        {
+          title: "Human Health and Disease - Quiz 2",
+          questions: [
+            { q: "The vector for malaria is:", options: ["Anopheles mosquito", "Aedes mosquito", "Culex mosquito", "Housefly"], answer: "Anopheles mosquito" },
+            { q: "The disease caused by Vibrio cholerae is:", options: ["Cholera", "Typhoid", "Tuberculosis", "Dysentery"], answer: "Cholera" },
+            { q: "The cells that directly attack infected cells are:", options: ["T cells", "B cells", "Macrophages", "Neutrophils"], answer: "T cells" },
+            { q: "The type of immunity transferred through breast milk is:", options: ["Passive immunity", "Active immunity", "Innate immunity", "Acquired immunity"], answer: "Passive immunity" },
+            { q: "The causative agent of pneumonia is:", options: ["Streptococcus pneumoniae", "Mycobacterium tuberculosis", "Salmonella typhi", "Vibrio cholerae"], answer: "Streptococcus pneumoniae" },
+            { q: "The drug derived from poppy plant is:", options: ["Opium", "Cocaine", "Marijuana", "Heroin"], answer: "Opium" },
+            { q: "The condition caused by uncontrolled cell growth is:", options: ["Cancer", "Diabetes", "Hypertension", "Asthma"], answer: "Cancer" },
+            { q: "The vaccine for polio was developed by:", options: ["Jonas Salk", "Edward Jenner", "Louis Pasteur", "Alexander Fleming"], answer: "Jonas Salk" },
+            { q: "The disease transmitted through contaminated water is:", options: ["Cholera", "Malaria", "Dengue", "Filariasis"], answer: "Cholera" },
+            { q: "The cells that engulf pathogens are:", options: ["Macrophages", "B cells", "T cells", "Red blood cells"], answer: "Macrophages" },
+            { q: "The virus causing chickenpox is:", options: ["Varicella zoster", "Hepatitis B", "HIV", "Influenza"], answer: "Varicella zoster" },
+            { q: "The allergic reaction is caused by:", options: ["Histamine", "Insulin", "Adrenaline", "Cortisol"], answer: "Histamine" },
+            { q: "The disease caused by Entamoeba histolytica is:", options: ["Amoebiasis", "Malaria", "Filariasis", "Dengue"], answer: "Amoebiasis" },
+            { q: "The organ affected by tuberculosis is primarily:", options: ["Lungs", "Liver", "Kidney", "Heart"], answer: "Lungs" },
+            { q: "The substance that triggers an immune response is:", options: ["Antigen", "Antibody", "Pathogen", "Allergen"], answer: "Antigen" }
+          ]
+        },
+        {
+          title: "Microbes in Human Welfare - Quiz 1",
+          questions: [
+            { q: "The microbe used in the production of curd is:", options: ["Lactobacillus", "Streptococcus", "Saccharomyces", "Penicillium"], answer: "Lactobacillus" },
+            { q: "The yeast used in baking is:", options: ["Saccharomyces cerevisiae", "Lactobacillus", "Penicillium", "Aspergillus"], answer: "Saccharomyces cerevisiae" },
+            { q: "The antibiotic penicillin was discovered by:", options: ["Alexander Fleming", "Louis Pasteur", "Robert Koch", "Edward Jenner"], answer: "Alexander Fleming" },
+            { q: "The microbe used in the production of ethanol is:", options: ["Saccharomyces cerevisiae", "Lactobacillus", "Escherichia coli", "Penicillium"], answer: "Saccharomyces cerevisiae" },
+            { q: "The process of sewage treatment involves:", options: ["Primary and secondary treatment", "Only primary treatment", "Only secondary treatment", "Tertiary treatment only"], answer: "Primary and secondary treatment" },
+            { q: "The gas produced during biogas production is:", options: ["Methane", "Carbon dioxide", "Oxygen", "Nitrogen"], answer: "Methane" },
+            { q: "The microbe used in nitrogen fixation is:", options: ["Rhizobium", "Lactobacillus", "Saccharomyces", "Penicillium"], answer: "Rhizobium" },
+            { q: "The enzyme used in the production of cheese is:", options: ["Rennet", "Amylase", "Lipase", "Protease"], answer: "Rennet" },
+            { q: "The microbe used in the production of citric acid is:", options: ["Aspergillus niger", "Lactobacillus", "Saccharomyces", "Rhizobium"], answer: "Aspergillus niger" },
+            { q: "The process of converting sugar into alcohol is called:", options: ["Fermentation", "Respiration", "Photosynthesis", "Nitrogen fixation"], answer: "Fermentation" },
+            { q: "The microbe used in the production of antibiotics is:", options: ["Penicillium", "Lactobacillus", "Saccharomyces", "Rhizobium"], answer: "Penicillium" },
+            { q: "The bacteria used in biofertilizers are:", options: ["Rhizobium", "Escherichia coli", "Streptococcus", "Clostridium"], answer: "Rhizobium" },
+            { q: "The microbe used in the production of vinegar is:", options: ["Acetobacter", "Lactobacillus", "Saccharomyces", "Penicillium"], answer: "Acetobacter" },
+            { q: "The byproduct of fermentation used in baking is:", options: ["Carbon dioxide", "Methane", "Oxygen", "Nitrogen"], answer: "Carbon dioxide" },
+            { q: "The microbe used in the production of lactic acid is:", options: ["Lactobacillus", "Saccharomyces", "Aspergillus", "Rhizobium"], answer: "Lactobacillus" }
+          ]
+        },
+        {
+          title: "Microbes in Human Welfare - Quiz 2",
+          questions: [
+            { q: "The bacteria used in the treatment of sewage are:", options: ["Aerobic and anaerobic bacteria", "Only aerobic bacteria", "Only anaerobic bacteria", "Fungi"], answer: "Aerobic and anaerobic bacteria" },
+            { q: "The microbe used in the production of streptomycin is:", options: ["Streptomyces griseus", "Penicillium", "Lactobacillus", "Saccharomyces"], answer: "Streptomyces griseus" },
+            { q: "The gas produced in biogas plants is used for:", options: ["Cooking and lighting", "Only cooking", "Only lighting", "Industrial use"], answer: "Cooking and lighting" },
+            { q: "The microbe that fixes nitrogen in leguminous plants is:", options: ["Rhizobium", "Azotobacter", "Clostridium", "Nitrosomonas"], answer: "Rhizobium" },
+            { q: "The process of breaking down organic matter in sewage is called:", options: ["Biodegradation", "Fermentation", "Nitrogen fixation", "Photosynthesis"], answer: "Biodegradation" },
+            { q: "The microbe used in the production of ethanol from molasses is:", options: ["Saccharomyces cerevisiae", "Lactobacillus", "Aspergillus", "Penicillium"], answer: "Saccharomyces cerevisiae" },
+            { q: "The antibiotic derived from Streptomyces is:", options: ["Streptomycin", "Penicillin", "Tetracycline", "Erythromycin"], answer: "Streptomycin" },
+            { q: "The microbe used in the production of biogas is:", options: ["Methanogens", "Lactobacillus", "Saccharomyces", "Penicillium"], answer: "Methanogens" },
+            { q: "The bacteria that convert ammonia to nitrate are:", options: ["Nitrobacter", "Rhizobium", "Clostridium", "Lactobacillus"], answer: "Nitrobacter" },
+            { q: "The microbe used in the production of curd from milk is:", options: ["Lactobacillus", "Saccharomyces", "Aspergillus", "Penicillium"], answer: "Lactobacillus" },
+            { q: "The process of producing alcohol by microbes is called:", options: ["Fermentation", "Respiration", "Photosynthesis", "Nitrogen fixation"], answer: "Fermentation" },
+            { q: "The microbe used in the production of acetone is:", options: ["Clostridium acetobutylicum", "Saccharomyces", "Lactobacillus", "Penicillium"], answer: "Clostridium acetobutylicum" },
+            { q: "The role of microbes in biofertilizers is to:", options: ["Fix nitrogen", "Produce antibiotics", "Degrade waste", "Produce alcohol"], answer: "Fix nitrogen" },
+            { q: "The microbe used in the production of tetracycline is:", options: ["Streptomyces", "Penicillium", "Lactobacillus", "Aspergillus"], answer: "Streptomyces" },
+            { q: "The byproduct of biogas production used as fertilizer is:", options: ["Slurry", "Methane", "Carbon dioxide", "Nitrogen"], answer: "Slurry" }
+          ]
+        },
+        {
+          title: "Biotechnology: Principles and Processes - Quiz 1",
+          questions: [
+            { q: "The technique of manipulating genetic material is called:", options: ["Genetic engineering", "Cloning", "Hybridization", "Mutation"], answer: "Genetic engineering" },
+            { q: "The enzyme that cuts DNA at specific sites is:", options: ["Restriction enzyme", "DNA polymerase", "Ligase", "Helicase"], answer: "Restriction enzyme" },
+            { q: "The vector commonly used in genetic engineering is:", options: ["Plasmid", "Chromosome", "Ribosome", "Mitochondria"], answer: "Plasmid" },
+            { q: "The process of introducing recombinant DNA into a host cell is:", options: ["Transformation", "Transduction", "Conjugation", "Replication"], answer: "Transformation" },
+            { q: "The enzyme that joins DNA fragments is:", options: ["Ligase", "Polymerase", "Helicase", "Primase"], answer: "Ligase" },
+            { q: "The technique used to amplify DNA is:", options: ["PCR", "ELISA", "Gel electrophoresis", "Cloning"], answer: "PCR" },
+            { q: "The full form of PCR is:", options: ["Polymerase Chain Reaction", "Polymerase Cyclic Reaction", "Protein Chain Reaction", "Polymerase Cloning Reaction"], answer: "Polymerase Chain Reaction" },
+            { q: "The process of separating DNA fragments based on size is:", options: ["Gel electrophoresis", "PCR", "Cloning", "Transformation"], answer: "Gel electrophoresis" },
+            { q: "The bacteria commonly used in genetic engineering is:", options: ["Escherichia coli", "Lactobacillus", "Streptococcus", "Clostridium"], answer: "Escherichia coli" },
+            { q: "The enzyme that produces sticky ends in DNA is:", options: ["Restriction enzyme", "Ligase", "Polymerase", "Helicase"], answer: "Restriction enzyme" },
+            { q: "The plasmid used in cloning is called:", options: ["Vector", "Chromosome", "Gene", "Ribosome"], answer: "Vector" },
+            { q: "The technique of producing identical copies of an organism is:", options: ["Cloning", "Hybridization", "Mutation", "Transformation"], answer: "Cloning" },
+            { q: "The first recombinant DNA was created by:", options: ["Cohen and Boyer", "Watson and Crick", "Hershey and Chase", "Meselson and Stahl"], answer: "Cohen and Boyer" },
+            { q: "The marker used to identify transformed cells is:", options: ["Antibiotic resistance gene", "Chromosome", "Plasmid", "Ribosome"], answer: "Antibiotic resistance gene" },
+            { q: "The enzyme used in PCR to synthesize DNA is:", options: ["Taq polymerase", "DNA ligase", "Helicase", "Primase"], answer: "Taq polymerase" }
+          ]
+        },
+        {
+          title: "Biotechnology: Principles and Processes - Quiz 2",
+          questions: [
+            { q: "The process of inserting a gene into a plasmid is called:", options: ["Cloning", "Transformation", "Ligation", "Restriction"], answer: "Ligation" },
+            { q: "The technique used to detect specific DNA sequences is:", options: ["Southern blotting", "Northern blotting", "Western blotting", "PCR"], answer: "Southern blotting" },
+            { q: "The organism used as a bioreactor in biotechnology is:", options: ["E. coli", "Yeast", "Mammalian cells", "All of these"], answer: "All of these" },
+            { q: "The restriction enzymes are also called:", options: ["Molecular scissors", "Molecular glue", "Molecular motors", "Molecular pumps"], answer: "Molecular scissors" },
+            { q: "The technique of producing multiple copies of a gene is:", options: ["Gene cloning", "Gene mutation", "Gene transcription", "Gene translation"], answer: "Gene cloning" },
+            { q: "The vector used in plant genetic engineering is:", options: ["Agrobacterium tumefaciens", "E. coli", "Saccharomyces", "Streptomyces"], answer: "Agrobacterium tumefaciens" },
+            { q: "The gel used in electrophoresis is:", options: ["Agarose", "Starch", "Cellulose", "Polyacrylamide"], answer: "Agarose" },
+            { q: "The process of isolating DNA from cells is called:", options: ["DNA extraction", "DNA amplification", "DNA cloning", "DNA sequencing"], answer: "DNA extraction" },
+            { q: "The enzyme that seals nicks in DNA is:", options: ["Ligase", "Polymerase", "Helicase", "Primase"], answer: "Ligase" },
+            { q: "The technique used to separate proteins is:", options: ["Western blotting", "Southern blotting", "Northern blotting", "PCR"], answer: "Western blotting" },
+            { q: "The source of Taq polymerase is:", options: ["Thermus aquaticus", "Escherichia coli", "Saccharomyces cerevisiae", "Agrobacterium"], answer: "Thermus aquaticus" },
+            { q: "The process of transferring DNA into plant cells is called:", options: ["Transformation", "Transduction", "Conjugation", "Electroporation"], answer: "Transformation" },
+            { q: "The first cloned animal was:", options: ["Dolly the sheep", "Polly the cow", "Molly the goat", "Holly the pig"], answer: "Dolly the sheep" },
+            { q: "The technique used to detect RNA is:", options: ["Northern blotting", "Southern blotting", "Western blotting", "PCR"], answer: "Northern blotting" },
+            { q: "The selectable marker in genetic engineering is used to:", options: ["Identify transformed cells", "Cut DNA", "Amplify DNA", "Sequence DNA"], answer: "Identify transformed cells" }
+          ]
+        },
+        {
+          title: "Biotechnology and its Applications - Quiz 1",
+          questions: [
+            { q: "The genetically modified crop resistant to pests is:", options: ["Bt cotton", "Golden rice", "Flavr Savr tomato", "Roundup Ready soybean"], answer: "Bt cotton" },
+            { q: "The gene for insulin production was inserted into:", options: ["E. coli", "Saccharomyces", "Agrobacterium", "Streptomyces"], answer: "E. coli" },
+            { q: "The crop enriched with vitamin A is:", options: ["Golden rice", "Bt corn", "Flavr Savr tomato", "Roundup Ready soybean"], answer: "Golden rice" },
+            { q: "The technique used to treat genetic disorders is:", options: ["Gene therapy", "Cloning", "PCR", "Gel electrophoresis"], answer: "Gene therapy" },
+            { q: "The first genetically modified food was:", options: ["Flavr Savr tomato", "Bt corn", "Golden rice", "Roundup Ready soybean"], answer: "Flavr Savr tomato" },
+            { q: "The protein produced by Bt crops is:", options: ["Cry protein", "Insulin", "Interferon", "HGH"], answer: "Cry protein" },
+            { q: "The application of biotechnology in medicine includes:", options: ["Vaccine production", "Crop improvement", "Biofertilizer production", "Sewage treatment"], answer: "Vaccine production" },
+            { q: "The technique used to detect GMOs is:", options: ["PCR", "ELISA", "Gel electrophoresis", "Cloning"], answer: "PCR" },
+            { q: "The genetically modified crop resistant to herbicides is:", options: ["Roundup Ready soybean", "Bt cotton", "Golden rice", "Flavr Savr tomato"], answer: "Roundup Ready soybean" },
+            { q: "The use of biotechnology in agriculture improves:", options: ["Crop yield", "Disease diagnosis", "Vaccine production", "Sewage treatment"], answer: "Crop yield" },
+            { q: "The hormone produced using recombinant DNA technology is:", options: ["Insulin", "Adrenaline", "Cortisol", "Thyroxine"], answer: "Insulin" },
+            { q: "The disease treated by gene therapy is:", options: ["SCID", "Malaria", "Tuberculosis", "Cholera"], answer: "SCID" },
+            { q: "The bacteria used to produce Bt toxin is:", options: ["Bacillus thuringiensis", "Escherichia coli", "Agrobacterium", "Streptomyces"], answer: "Bacillus thuringiensis" },
+            { q: "The application of biotechnology in waste management is:", options: ["Bioremediation", "Gene therapy", "Vaccine production", "Crop improvement"], answer: "Bioremediation" },
+            { q: "The genetically modified organism used in bioremediation is:", options: ["Pseudomonas", "E. coli", "Saccharomyces", "Agrobacterium"], answer: "Pseudomonas" }
+          ]
+        },
+        {
+          title: "Biotechnology and its Applications - Quiz 2",
+          questions: [
+            { q: "The technique of producing pest-resistant plants involves:", options: ["Bt gene insertion", "Insulin gene insertion", "Vitamin A gene insertion", "Herbicide gene insertion"], answer: "Bt gene insertion" },
+            { q: "The genetically modified tomato with delayed ripening is:", options: ["Flavr Savr", "Golden rice", "Bt cotton", "Roundup Ready"], answer: "Flavr Savr" },
+            { q: "The application of biotechnology in diagnostics is:", options: ["ELISA", "PCR", "Gene therapy", "Cloning"], answer: "ELISA" },
+            { q: "The protein used in the treatment of viral infections is:", options: ["Interferon", "Insulin", "Cry protein", "HGH"], answer: "Interferon" },
+            { q: "The crop modified to resist drought is developed using:", options: ["Genetic engineering", "Hybridization", "Mutation", "Selection"], answer: "Genetic engineering" },
+            { q: "The technique used to produce human growth hormone is:", options: ["Recombinant DNA technology", "PCR", "Gel electrophoresis", "Cloning"], answer: "Recombinant DNA technology" },
+            { q: "The disease caused by adenosine deaminase deficiency is:", options: ["SCID", "Cystic fibrosis", "Hemophilia", "Sickle cell anemia"], answer: "SCID" },
+            { q: "The use of biotechnology in producing biofuels involves:", options: ["Microbes", "Crops", "Animals", "Fungi"], answer: "Microbes" },
+            { q: "The genetically modified crop with increased nutritional value is:", options: ["Golden rice", "Bt cotton", "Flavr Savr tomato", "Roundup Ready soybean"], answer: "Golden rice" },
+            { q: "The technique of removing pollutants using microbes is:", options: ["Bioremediation", "Gene therapy", "Vaccine production", "Cloning"], answer: "Bioremediation" },
+            { q: "The protein produced for hemophilia treatment is:", options: ["Clotting factor", "Insulin", "Interferon", "Cry protein"], answer: "Clotting factor" },
+            { q: "The application of biotechnology in agriculture reduces:", options: ["Pesticide use", "Water use", "Soil fertility", "Crop yield"], answer: "Pesticide use" },
+            { q: "The first successful gene therapy was performed for:", options: ["SCID", "Cystic fibrosis", "Hemophilia", "Diabetes"], answer: "SCID" },
+            { q: "The genetically modified bacteria used in oil spill cleanup is:", options: ["Pseudomonas", "E. coli", "Saccharomyces", "Agrobacterium"], answer: "Pseudomonas" },
+            { q: "The use of biotechnology in producing vaccines involves:", options: ["Recombinant DNA", "Hybridization", "Mutation", "Selection"], answer: "Recombinant DNA" }
+          ]
+        },
+        {
+          title: "Organisms and Populations - Quiz 1",
+          questions: [
+            { q: "The study of interactions between organisms and their environment is:", options: ["Ecology", "Genetics", "Evolution", "Physiology"], answer: "Ecology" },
+            { q: "The group of individuals of the same species living in an area is:", options: ["Population", "Community", "Ecosystem", "Biome"], answer: "Population" },
+            { q: "The type of interaction where both species benefit is:", options: ["Mutualism", "Commensalism", "Parasitism", "Predation"], answer: "Mutualism" },
+            { q: "The carrying capacity of an environment is:", options: ["Maximum population size supported", "Minimum population size", "Total species in an area", "Number of predators"], answer: "Maximum population size supported" },
+            { q: "The type of population growth with unlimited resources is:", options: ["Exponential growth", "Logistic growth", "Linear growth", "Geometric growth"], answer: "Exponential growth" },
+            { q: "The interaction where one species benefits and the other is unaffected is:", options: ["Commensalism", "Mutualism", "Parasitism", "Predation"], answer: "Commensalism" },
+            { q: "The factor that limits population growth is:", options: ["Limiting factor", "Carrying capacity", "Natality", "Mortality"], answer: "Limiting factor" },
+            { q: "The type of interaction where one species harms another is:", options: ["Parasitism", "Mutualism", "Commensalism", "Competition"], answer: "Parasitism" },
+            { q: "The population growth model that includes carrying capacity is:", options: ["Logistic growth", "Exponential growth", "Linear growth", "Geometric growth"], answer: "Logistic growth" },
+            { q: "The number of births in a population is called:", options: ["Natality", "Mortality", "Density", "Dispersion"], answer: "Natality" },
+            { q: "The number of deaths in a population is called:", options: ["Mortality", "Natality", "Density", "Dispersion"], answer: "Mortality" },
+            { q: "The pattern of distribution of individuals in a population is:", options: ["Dispersion", "Density", "Natality", "Mortality"], answer: "Dispersion" },
+            { q: "The example of mutualism is:", options: ["Lichens", "Ticks on dogs", "Clownfish and sea anemone", "Both a and c"], answer: "Both a and c" },
+            { q: "The type of competition between individuals of the same species is:", options: ["Intraspecific", "Interspecific", "Mutualism", "Commensalism"], answer: "Intraspecific" },
+            { q: "The organism that can tolerate a wide range of temperature is:", options: ["Eurythermal", "Stenothermal", "Euryhaline", "Stenohaline"], answer: "Eurythermal" }
+          ]
+        },
+        {
+          title: "Organisms and Populations - Quiz 2",
+          questions: [
+            { q: "The interaction where one species preys on another is:", options: ["Predation", "Parasitism", "Mutualism", "Commensalism"], answer: "Predation" },
+            { q: "The number of individuals per unit area is:", options: ["Population density", "Population dispersion", "Natality", "Mortality"], answer: "Population density" },
+            { q: "The type of dispersion where individuals are evenly spaced is:", options: ["Uniform dispersion", "Random dispersion", "Clumped dispersion", "Scattered dispersion"], answer: "Uniform dispersion" },
+            { q: "The organism that can tolerate a narrow range of salinity is:", options: ["Stenohaline", "Euryhaline", "Eurythermal", "Stenothermal"], answer: "Stenohaline" },
+            { q: "The type of competition between different species is:", options: ["Interspecific", "Intraspecific", "Mutualism", "Commensalism"], answer: "Interspecific" },
+            { q: "The example of commensalism is:", options: ["Barnacles on whales", "Lichens", "Ticks on dogs", "Bees and flowers"], answer: "Barnacles on whales" },
+            { q: "The population growth rate is calculated as:", options: ["(Births - Deaths)/Population size", "Births + Deaths", "Births/Deaths", "Population size/Births"], answer: "(Births - Deaths)/Population size" },
+            { q: "The organisms that live in extreme environments are called:", options: ["Extremophiles", "Eurythermal", "Stenothermal", "Mesophiles"], answer: "Extremophiles" },
+            { q: "The adaptation of animals to avoid predation is:", options: ["Camouflage", "Migration", "Hibernation", "Aestivation"], answer: "Camouflage" },
+            { q: "The period of dormancy during summer is called:", options: ["Aestivation", "Hibernation", "Migration", "Diapause"], answer: "Aestivation" },
+            { q: "The period of dormancy during winter is called:", options: ["Hibernation", "Aestivation", "Migration", "Diapause"], answer: "Hibernation" },
+            { q: "The movement of organisms from one place to another is:", options: ["Migration", "Hibernation", "Aestivation", "Camouflage"], answer: "Migration" },
+            { q: "The example of predation is:", options: ["Lion and deer", "Lichens", "Barnacles on whales", "Bees and flowers"], answer: "Lion and deer" },
+            { q: "The population size is affected by:", options: ["Natality, mortality, immigration, emigration", "Only natality", "Only mortality", "Only immigration"], answer: "Natality, mortality, immigration, emigration" },
+            { q: "The type of dispersion where individuals are grouped together is:", options: ["Clumped dispersion", "Uniform dispersion", "Random dispersion", "Scattered dispersion"], answer: "Clumped dispersion" }
+          ]
+        },
+        {
+          title: "Ecosystem - Quiz 1",
+          questions: [
+            { q: "The functional unit of nature is called:", options: ["Ecosystem", "Population", "Community", "Biome"], answer: "Ecosystem" },
+            { q: "The organisms that produce their own food are:", options: ["Producers", "Consumers", "Decomposers", "Scavengers"], answer: "Producers" },
+            { q: "The sequence of organisms feeding on one another is:", options: ["Food chain", "Food web", "Trophic level", "Ecological pyramid"], answer: "Food chain" },
+            { q: "The complex network of interconnected food chains is:", options: ["Food web", "Food chain", "Trophic level", "Ecological pyramid"], answer: "Food web" },
+            { q: "The primary source of energy in an ecosystem is:", options: ["Sun", "Water", "Soil", "Air"], answer: "Sun" },
+            { q: "The organisms that break down dead organic matter are:", options: ["Decomposers", "Producers", "Consumers", "Scavengers"], answer: "Decomposers" },
+            { q: "The graphical representation of energy flow is:", options: ["Ecological pyramid", "Food chain", "Food web", "Trophic level"], answer: "Ecological pyramid" },
+            { q: "The 10% law of energy transfer was proposed by:", options: ["Lindeman", "Elton", "Odum", "Haeckel"], answer: "Lindeman" },
+            { q: "The organisms at the second trophic level are:", options: ["Primary consumers", "Producers", "Secondary consumers", "Decomposers"], answer: "Primary consumers" },
+            { q: "The process of nutrient cycling in an ecosystem is called:", options: ["Biogeochemical cycle", "Energy flow", "Food chain", "Trophic level"], answer: "Biogeochemical cycle" },
+            { q: "The pyramid of biomass in a terrestrial ecosystem is:", options: ["Upright", "Inverted", "Spindle-shaped", "Irregular"], answer: "Upright" },
+            { q: "The process of conversion of atmospheric nitrogen into compounds is:", options: ["Nitrogen fixation", "Nitrification", "Denitrification", "Ammonification"], answer: "Nitrogen fixation" },
+            { q: "The organisms at the top of the food chain are:", options: ["Apex predators", "Primary consumers", "Producers", "Decomposers"], answer: "Apex predators" },
+            { q: "The pyramid of numbers in a grassland ecosystem is:", options: ["Upright", "Inverted", "Spindle-shaped", "Irregular"], answer: "Upright" },
+            { q: "The process of water movement through an ecosystem is:", options: ["Hydrological cycle", "Carbon cycle", "Nitrogen cycle", "Phosphorus cycle"], answer: "Hydrological cycle" }
+          ]
+        },
+        {
+          title: "Ecosystem - Quiz 2",
+          questions: [
+            { q: "The organisms that feed on dead animals are:", options: ["Scavengers", "Producers", "Consumers", "Decomposers"], answer: "Scavengers" },
+            { q: "The pyramid of biomass in an aquatic ecosystem is:", options: ["Inverted", "Upright", "Spindle-shaped", "Irregular"], answer: "Inverted" },
+            { q: "The process of converting ammonia to nitrites is:", options: ["Nitrification", "Nitrogen fixation", "Denitrification", "Ammonification"], answer: "Nitrification" },
+            { q: "The organisms at the third trophic level are:", options: ["Secondary consumers", "Primary consumers", "Producers", "Decomposers"], answer: "Secondary consumers" },
+            { q: "The cycle involving carbon dioxide and oxygen is:", options: ["Carbon cycle", "Nitrogen cycle", "Phosphorus cycle", "Hydrological cycle"], answer: "Carbon cycle" },
+            { q: "The pyramid of energy is always:", options: ["Upright", "Inverted", "Spindle-shaped", "Irregular"], answer: "Upright" },
+            { q: "The process of converting nitrates to nitrogen gas is:", options: ["Denitrification", "Nitrification", "Nitrogen fixation", "Ammonification"], answer: "Denitrification" },
+            { q: "The primary consumers are:", options: ["Herbivores", "Carnivores", "Omnivores", "Decomposers"], answer: "Herbivores" },
+            { q: "The process of succession in an ecosystem starts with:", options: ["Pioneer species", "Climax community", "Secondary species", "Tertiary species"], answer: "Pioneer species" },
+            { q: "The stable community in an ecosystem is called:", options: ["Climax community", "Pioneer community", "Seral community", "Initial community"], answer: "Climax community" },
+            { q: "The cycle involving phosphorus is:", options: ["Phosphorus cycle", "Carbon cycle", "Nitrogen cycle", "Hydrological cycle"], answer: "Phosphorus cycle" },
+            { q: "The process of energy flow in an ecosystem is:", options: ["Unidirectional", "Bidirectional", "Cyclic", "Random"], answer: "Unidirectional" },
+            { q: "The organisms that feed on both plants and animals are:", options: ["Omnivores", "Herbivores", "Carnivores", "Decomposers"], answer: "Omnivores" },
+            { q: "The process of converting organic matter to ammonia is:", options: ["Ammonification", "Nitrification", "Denitrification", "Nitrogen fixation"], answer: "Ammonification" },
+            { q: "The ecological pyramid that represents the number of individuals is:", options: ["Pyramid of numbers", "Pyramid of biomass", "Pyramid of energy", "Food chain"], answer: "Pyramid of numbers" }
+          ]
+        },
+         {
+          title: "Biodiversity and Conservation - Quiz 1",
+          questions: [
+            { q: "The term biodiversity refers to:", options: ["Variety of life forms", "Number of individuals", "Single species", "Ecosystem only"], answer: "Variety of life forms" },
+            { q: "The number of species described so far is approximately:", options: ["1.7 million", "10 million", "100 million", "1 million"], answer: "1.7 million" },
+            { q: "The region with high species diversity is called:", options: ["Biodiversity hotspot", "National park", "Sanctuary", "Biosphere reserve"], answer: "Biodiversity hotspot" },
+            { q: "The greatest threat to biodiversity is:", options: ["Habitat loss", "Climate change", "Pollution", "Invasive species"], answer: "Habitat loss" },
+            { q: "The book that lists endangered species is:", options: ["Red Data Book", "Green Data Book", "Blue Data Book", "Black Data Book"], answer: "Red Data Book" },
+            { q: "The level of biodiversity that includes genetic variation is:", options: ["Genetic diversity", "Species diversity", "Ecosystem diversity", "Functional diversity"], answer: "Genetic diversity" },
+            { q: "The Amazon rainforest is an example of:", options: ["Tropical biodiversity", "Temperate biodiversity", "Polar biodiversity", "Desert biodiversity"], answer: "Tropical biodiversity" },
+            { q: "The conservation of biodiversity within its natural habitat is called:", options: ["In-situ conservation", "Ex-situ conservation", "Active conservation", "Passive conservation"], answer: "In-situ conservation" },
+            { q: "An example of in-situ conservation is:", options: ["National park", "Zoo", "Botanical garden", "Seed bank"], answer: "National park" },
+            { q: "The conservation of biodiversity outside its natural habitat is called:", options: ["Ex-situ conservation", "In-situ conservation", "Active conservation", "Passive conservation"], answer: "Ex-situ conservation" },
+            { q: "An example of ex-situ conservation is:", options: ["Seed bank", "Wildlife sanctuary", "National park", "Biosphere reserve"], answer: "Seed bank" },
+            { q: "The organization that monitors biodiversity globally is:", options: ["IUCN", "WWF", "UNEP", "Greenpeace"], answer: "IUCN" },
+            { q: "The species that is no longer found on Earth is:", options: ["Extinct", "Endangered", "Vulnerable", "Critically endangered"], answer: "Extinct" },
+            { q: "The Western Ghats in India is an example of:", options: ["Biodiversity hotspot", "National park", "Sanctuary", "Biosphere reserve"], answer: "Biodiversity hotspot" },
+            { q: "The main cause of species extinction is:", options: ["Habitat destruction", "Climate change", "Pollution", "Overexploitation"], answer: "Habitat destruction" }
+          ]
+        },
+        {
+          title: "Biodiversity and Conservation - Quiz 2",
+          questions: [
+            { q: "The level of biodiversity that includes different ecosystems is:", options: ["Ecosystem diversity", "Genetic diversity", "Species diversity", "Functional diversity"], answer: "Ecosystem diversity" },
+            { q: "The species confined to a specific region is called:", options: ["Endemic species", "Exotic species", "Invasive species", "Keystone species"], answer: "Endemic species" },
+            { q: "The species that has a significant impact on its ecosystem is:", options: ["Keystone species", "Endemic species", "Invasive species", "Exotic species"], answer: "Keystone species" },
+            { q: "The introduction of non-native species to an ecosystem is called:", options: ["Invasive species", "Endemic species", "Keystone species", "Native species"], answer: "Invasive species" },
+            { q: "The convention on biodiversity was signed in:", options: ["1992", "1987", "2000", "1972"], answer: "1992" },
+            { q: "The protected area that allows limited human activity is:", options: ["Wildlife sanctuary", "National park", "Biosphere reserve", "Zoo"], answer: "Wildlife sanctuary" },
+            { q: "The protected area with strict regulations is:", options: ["National park", "Wildlife sanctuary", "Botanical garden", "Seed bank"], answer: "National park" },
+            { q: "The biosphere reserve that includes human settlements is:", options: ["Transition zone", "Core zone", "Buffer zone", "Protected zone"], answer: "Transition zone" },
+            { q: "The loss of biodiversity affects:", options: ["Ecosystem services", "Population size", "Individual health", "Climate only"], answer: "Ecosystem services" },
+            { q: "The species at high risk of extinction is:", options: ["Endangered", "Extinct", "Vulnerable", "Common"], answer: "Endangered" },
+            { q: "The method of conserving plant species by storing seeds is:", options: ["Seed bank", "National park", "Wildlife sanctuary", "Biosphere reserve"], answer: "Seed bank" },
+            { q: "The species that is likely to become endangered is:", options: ["Vulnerable", "Extinct", "Endangered", "Common"], answer: "Vulnerable" },
+            { q: "The international agreement to protect biodiversity is:", options: ["CBD", "IUCN", "WWF", "UNEP"], answer: "CBD" },
+            { q: "The full form of IUCN is:", options: ["International Union for Conservation of Nature", "International Union for Conservation of Natural Resources", "International Unit for Conservation of Nature", "International Union for Conservation of Wildlife"], answer: "International Union for Conservation of Nature" },
+            { q: "The example of an extinct species is:", options: ["Dodo", "Tiger", "Elephant", "Rhinoceros"], answer: "Dodo" }
+          ]
+        }
+]
 }
+
 };
