@@ -53,6 +53,12 @@
     cursor: pointer;
 }
 
+#chapterSelect[size] {
+  height: auto;
+  min-height: 320px;  /* Ensures it's tall enough */
+  max-height: 440px;  /* Prevents it from getting too tall */
+  overflow-y: auto;
+}
 #questions input[type="radio"] {
     margin-right: 10px;
 }
