@@ -80,3 +80,25 @@
     font-size: 1em;
     color: #e74c3c;
 }
+/* Target only the course boxes and list for mobile responsiveness */
+.course-list {
+  gap: 20px; /* Reduce gap for smaller screens */
+}
+
+.course {
+  max-width: 100%; /* Allow full width on small screens */
+  width: 280px; /* Flexible base width */
+  margin: 10px 0; /* Consistent spacing */
+}
+
+@media (max-width: 768px) {
+  .course {
+    width: 100%; /* Full width on Android screens */
+    max-width: 100%; /* Override any fixed width */
+    padding: 16px; /* Slightly reduced padding for fit */
+  }
+
+  .course-list {
+    gap: 15px; /* Further reduce gap on small screens */
+  }
+}
