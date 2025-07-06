@@ -8,15 +8,16 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SGS Coaching Institute - Education in Patiala">
-<meta name="twitter:description" content="Top education for classes 6-12 and competitive exams in Patiala with interactive quizzes.">
-<meta name="twitter:image" content="https://sgscoaching.github.io/sgs-coaching-website/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SGS Coaching Institute - Education in Patiala">
+    <meta name="twitter:description" content="Top education for classes 6-12 and competitive exams in Patiala with interactive quizzes.">
+    <meta name="twitter:image" content="https://sgscoaching.github.io/sgs-coaching-website/logo.png">
     <title>SGS Coaching Institute - Educational Excellence in Patiala</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Adjusted to relative path -->
     <meta name="google-site-verification" content="e97GYn6dXG2RBv1Mua0JF_qYrKbMhEOtd7M4AGu7Xf8" />
     <style>
+        /* Existing styles... */
         body { font-family: 'Arial', sans-serif; line-height: 1.8; background-color: #f4f8fb; }
         header, section { text-align: center; padding: 60px 10px; }
         h1 { font-size: 3em; }
@@ -39,108 +40,132 @@
             .course-list { flex-direction: column; align-items: center; }
             .about-content, .highlight-box, .address-box { max-width: 98%; }
         }
+        /* New responsive styles */
+        html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; box-sizing: border-box; }
+        .container { max-width: 100%; margin: 0 auto; padding: 0 10px; box-sizing: border-box; }
+        header, section { padding: 40px 10px; width: 100%; }
+        header img.logo { max-width: 100px; height: auto; }
+        nav ul { flex-direction: column; gap: 15px; }
+        nav a { font-size: 1em; }
+        .about-content, .highlight-box, .testimonial-container, .address-box, #contact-form { max-width: 100%; margin: 0 auto; padding: 0 10px; }
+        .course-list { gap: 20px; }
+        .course { max-width: 100%; width: 280px; margin: 10px 0; }
+        .testimonial { max-width: 100%; width: 300px; }
+        #contact-form input, #contact-form textarea { width: 100%; box-sizing: border-box; }
+        .btn { width: 100%; margin: 10px 0; box-sizing: border-box; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.8em; }
+            p, li { font-size: 1em; }
+            .course { width: 100%; }
+            .testimonial { width: 100%; }
+            .qr-code { width: 120px; height: 120px; }
+            header, section { padding: 20px 10px; }
+            nav ul { gap: 10px; }
+        }
     </style>
 </head>
 <body>
-    <header style="background-image: linear-gradient(rgba(0, 38, 94, 0.8), rgba(0, 38, 94, 0.8)), url('https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
-        <img src="Logo.png" alt="SGS Coaching Logo" class="logo" width="100" height="100"
-        onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder';">
-        <h1 style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">SGS Coaching Institute</h1>
-        <p style="color: #e0e0e0; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">Empowering Minds, Shaping Futures</p>
-        <nav style="margin-top: 16px;">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="quizzes.html">Quizzes</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container"> <!-- Wrap all content in a container -->
+        <header style="background-image: linear-gradient(rgba(0, 38, 94, 0.8), rgba(0, 38, 94, 0.8)), url('https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
+            <img src="Logo.png" alt="SGS Coaching Logo" class="logo" width="100" height="100"
+            onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=SGS+Logo+Not+Found'; this.alt='SGS Logo Placeholder';">
+            <h1 style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">SGS Coaching Institute</h1>
+            <p style="color: #e0e0e0; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);">Empowering Minds, Shaping Futures</p>
+            <nav style="margin-top: 16px;">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="home" style="background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
-        <h2 style="color: #fff;">Welcome to SGS Coaching</h2>
-        <p style="max-width: 900px; margin: 32px auto; color: #f2f8ff;">Located at <strong>Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab</strong>, SGS Coaching Institute is your partner in academic excellence. Our expert educators, curated materials, and interactive sessions help you achieve your goals.</p>
-        <p style="max-width: 900px; margin: 24px auto; color: #f2f8ff;">Explore our interactive quizzes to test your knowledge and join our community of learners!</p>
-        <div class="highlight-box" style="background: rgba(255,255,255,0.13); padding: 20px; border-radius: 10px;">
-            <h3 style="color: #2d8cf0;">Our Mission</h3>
-            <p style="color: #1b3c67;">To empower students with knowledge and skills for lifelong success through quality education.</p>
-        </div>
-        <a href="quizzes.html" class="btn" style="margin-top: 30px;">Take a Quiz Now</a>
-    </section>
-
-    <section id="about" style="background-color: #f9f9f9;">
-        <h2>About Us</h2>
-        <div class="about-content">
-            <p style="margin: 24px 0;">Founded with a passion for education, SGS Coaching Institute transforms lives in Patiala. We offer personalized learning plans with experienced tutors who make learning engaging and effective.</p>
-            <p style="margin: 24px 0;">We foster creativity and critical thinking through interactive sessions and activities, supported by modern facilities.</p>
-            <h3 style="color: #2d8cf0;">Our Esteemed Tutors</h3>
-            <ul style="list-style-type: disc; margin-left: 40px; text-align: left; display: inline-block;">
-                <li><strong>Priyanshu</strong>: B.Sc. (Non-Medical), M.Sc. Physics – Expert in physics and problem-solving.</li>
-                <li><strong>Gopal</strong>: B.Sc. (Non-Medical), B.Ed. – Master of mathematics and student motivation.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="courses" style="background-color: #ffffff;">
-        <h2>Our Courses</h2>
-        <div class="course-list" style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;">
-            <div class="course">
-                <h3 style="color: #2d8cf0;">Classes 6-10</h3>
-                <p>All Subjects</p>
-                <p style="font-size: 1.1em;">Comprehensive curriculum with interactive lessons and assessments.</p>
+        <section id="home" style="background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
+            <h2 style="color: #fff;">Welcome to SGS Coaching</h2>
+            <p style="max-width: 900px; margin: 32px auto; color: #f2f8ff;">Located at <strong>Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab</strong>, SGS Coaching Institute is your partner in academic excellence. Our expert educators, curated materials, and interactive sessions help you achieve your goals.</p>
+            <p style="max-width: 900px; margin: 24px auto; color: #f2f8ff;">Explore our interactive quizzes to test your knowledge and join our community of learners!</p>
+            <div class="highlight-box" style="background: rgba(255,255,255,0.13); padding: 20px; border-radius: 10px;">
+                <h3 style="color: #2d8cf0;">Our Mission</h3>
+                <p style="color: #1b3c67;">To empower students with knowledge and skills for lifelong success through quality education.</p>
             </div>
-            <div class="course">
-                <h3 style="color: #2d8cf0;">Classes 11-12</h3>
-                <p>Physics, Mathematics</p>
-                <p style="font-size: 1.1em;">Advanced courses with practical sessions for board and competitive exams.</p>
-            </div>
-            <div class="course">
-                <h3 style="color: #2d8cf0;">Competitive Exams</h3>
-                <p>Constable, Excise, Patwari, SSC CHSL</p>
-                <p style="font-size: 1.1em;">Intensive training with mock tests for career success.</p>
-            </div>
-        </div>
-    </section>
+            <a href="quizzes.html" class="btn" style="margin-top: 30px;">Take a Quiz Now</a>
+        </section>
 
-    <section id="testimonials" style="background-color: #ecf0f1;">
-        <h2>What Our Students Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial">
-                <p>“SGS Coaching made physics fun and easy!” - <strong>Rahul K.</strong></p>
+        <section id="about" style="background-color: #f9f9f9;">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p style="margin: 24px 0;">Founded with a passion for education, SGS Coaching Institute transforms lives in Patiala. We offer personalized learning plans with experienced tutors who make learning engaging and effective.</p>
+                <p style="margin: 24px 0;">We foster creativity and critical thinking through interactive sessions and activities, supported by modern facilities.</p>
+                <h3 style="color: #2d8cf0;">Our Esteemed Tutors</h3>
+                <ul style="list-style-type: disc; margin-left: 40px; text-align: left; display: inline-block;">
+                    <li><strong>Priyanshu</strong>: B.Sc. (Non-Medical), M.Sc. Physics – Expert in physics and problem-solving.</li>
+                    <li><strong>Gopal</strong>: B.Sc. (Non-Medical), B.Ed. – Master of mathematics and student motivation.</li>
+                </ul>
             </div>
-            <div class="testimonial">
-                <p>“The quizzes helped me ace my exams!” - <strong>Priya S.</strong></p>
+        </section>
+
+        <section id="courses" style="background-color: #ffffff;">
+            <h2>Our Courses</h2>
+            <div class="course-list" style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;">
+                <div class="course">
+                    <h3 style="color: #2d8cf0;">Classes 6-10</h3>
+                    <p>All Subjects</p>
+                    <p style="font-size: 1.1em;">Comprehensive curriculum with interactive lessons and assessments.</p>
+                </div>
+                <div class="course">
+                    <h3 style="color: #2d8cf0;">Classes 11-12</h3>
+                    <p>Physics, Mathematics</p>
+                    <p style="font-size: 1.1em;">Advanced courses with practical sessions for board and competitive exams.</p>
+                </div>
+                <div class="course">
+                    <h3 style="color: #2d8cf0;">Competitive Exams</h3>
+                    <p>Constable, Excise, Patwari, SSC CHSL</p>
+                    <p style="font-size: 1.1em;">Intensive training with mock tests for career success.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" style="background-color: #ffffff;">
-        <h2>Contact Us</h2>
-        <div class="address-box" style="max-width: 600px; margin: 0 auto; padding: 20px; border-radius: 10px;">
-            <h3 style="color: #2d8cf0;">SGS Coaching Institute</h3>
-            <p style="font-weight: bold;"><span style="color: #1456a0;">Address: Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab</span></p>
-            <p><strong>Contact Numbers:</strong> 8580436681, 6280083892</p>
-        </div>
-        <p style="margin: 24px 0;"><strong>Join Our WhatsApp Group:</strong></p>
-        <img src="whatsapp-qr.png" alt="WhatsApp Group QR Code" class="qr-code"
-            onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=WhatsApp+QR+Not+Found'; this.alt='WhatsApp QR Placeholder';"
-            width="150" height="150">
-        <form id="contact-form" action="https://formspree.io/f/mpwrkdba" method="POST" style="max-width: 600px; margin: 32px auto; display: flex; flex-direction: column; gap: 16px;">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required style="padding: 8px; font-size: 1.1em;">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required style="padding: 8px; font-size: 1.1em;">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required style="padding: 8px; font-size: 1.1em; height: 90px;"></textarea>
-            <button type="submit" class="btn" style="padding: 12px; font-size: 1.2em; border: none;">Send Inquiry</button>
-        </form>
-    </section>
+        <section id="testimonials" style="background-color: #ecf0f1;">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>“SGS Coaching made physics fun and easy!” - <strong>Rahul K.</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>“The quizzes helped me ace my exams!” - <strong>Priya S.</strong></p>
+                </div>
+            </div>
+        </section>
 
-    <footer style="background-color: #2c3e50; color: #ffffff; padding: 30px; text-align: center;">
-        <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
-    </footer>
+        <section id="contact" style="background-color: #ffffff;">
+            <h2>Contact Us</h2>
+            <div class="address-box" style="max-width: 600px; margin: 0 auto; padding: 20px; border-radius: 10px;">
+                <h3 style="color: #2d8cf0;">SGS Coaching Institute</h3>
+                <p style="font-weight: bold;"><span style="color: #1456a0;">Address: Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab</span></p>
+                <p><strong>Contact Numbers:</strong> 8580436681, 6280083892</p>
+            </div>
+            <p style="margin: 24px 0;"><strong>Join Our WhatsApp Group:</strong></p>
+            <img src="whatsapp-qr.png" alt="WhatsApp Group QR Code" class="qr-code"
+                onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=WhatsApp+QR+Not+Found'; this.alt='WhatsApp QR Placeholder';"
+                width="150" height="150">
+            <form id="contact-form" action="https://formspree.io/f/mpwrkdba" method="POST" style="max-width: 600px; margin: 32px auto; display: flex; flex-direction: column; gap: 16px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required style="padding: 8px; font-size: 1.1em;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="padding: 8px; font-size: 1.1em;">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required style="padding: 8px; font-size: 1.1em; height: 90px;"></textarea>
+                <button type="submit" class="btn" style="padding: 12px; font-size: 1.2em; border: none;">Send Inquiry</button>
+            </form>
+        </section>
 
+        <footer style="background-color: #2c3e50; color: #ffffff; padding: 30px; text-align: center;">
+            <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
+        </footer>
+    </div> <!-- Close container -->
     <script src="script.js"></script>
 </body>
 </html>
