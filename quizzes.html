@@ -266,6 +266,8 @@ const quizTitle = document.getElementById('quizTitle');
 const resultDiv = document.getElementById('result');
 let currentQuiz = null;
 
+// Random —
+
 // Randomization functions
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -278,7 +280,9 @@ function shuffleArray(array) {
 function randomizeQuizOptions(quiz) {
   quiz.questions.forEach(question => {
     const correctAnswer = question.answer;
+    console.log(`Before shuffle: ${question.q} - ${question.options}`); // Debug
     question.options = shuffleArray([...question.options]);
+    console.log(`After shuffle: ${question.q} - ${question.options}`); // Debug
     question.answer = correctAnswer;
   });
   return quiz;
@@ -290,6 +294,10 @@ function resetDropdown(sel, msg) {
 
 function populateClassDropdown() {
   resetDropdown(classSelect, "Select Class");
+  if (!window.quizData) {
+    console.error("window.quizData is undefined. Check script.js.");
+    return;
+  }
   Object.keys(window.quizData).forEach(c => {
     classSelect.innerHTML += `<option value="${c}">Class ${c}</option>`;
   });
@@ -330,8 +338,14 @@ function showQuiz() {
   if (!classVal || !subjectVal || chapterVal === "") return;
   
   // Create a deep copy of the quiz and randomize options
-  currentQuiz = JSON.parse(JSON.stringify(window.quizData[classVal][subjectVal][chapterVal]));
-  randomizeQuizOptions(currentQuiz);
+  try {
+    currentQuiz = JSON.parse(JSON.stringify(window.quizData[classVal][subjectVal][chapterVal]));
+    randomizeQuizOptions(currentQuiz);
+    console.log("Randomized quiz:", currentQuiz); // Debug
+  } catch (e) {
+    console.error("Error accessing quiz data:", e);
+    return;
+  }
   
   quizTitle.textContent = currentQuiz.title;
   currentQuiz.questions.forEach((q, idx) => {
