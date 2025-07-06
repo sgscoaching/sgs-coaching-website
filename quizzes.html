@@ -227,178 +227,197 @@
       <div id="result"></div>
     </div>
   </div>
- <script src="script.js"></script>
+<script src="script.js"></script>
 <script>
-  // Student info logic
-  const infoForm = document.getElementById('studentInfoForm');
-  const infoError = document.getElementById('infoError');
-  const dropdownsDiv = document.querySelector('.dropdowns');
-  let studentName = "", studentMobile = "";
+// Student info logic
+const infoForm = document.getElementById('studentInfoForm');
+const infoError = document.getElementById('infoError');
+const dropdownsDiv = document.querySelector('.dropdowns');
+let studentName = "", studentMobile = "";
 
-  infoForm.onsubmit = function(e) {
-    e.preventDefault();
-    const name = document.getElementById('studentName').value.trim();
-    const mobile = document.getElementById('studentMobile').value.trim();
-    if (!name) {
-      infoError.textContent = "Please enter your name.";
-      infoError.style.display = "block";
-      return;
-    }
-    if (!mobile.match(/^[0-9]{10}$/)) {
-      infoError.textContent = "Please enter a valid 10-digit mobile number.";
-      infoError.style.display = "block";
-      return;
-    }
-    infoError.style.display = "none";
-    studentName = name;
-    studentMobile = mobile;
-    infoForm.style.display = "none";
-    dropdownsDiv.style.display = "flex";
-  };
-
-  // Quiz code
-  const classSelect = document.getElementById('classSelect');
-  const subjectSelect = document.getElementById('subjectSelect');
-  const chapterSelect = document.getElementById('chapterSelect');
-  const quizArea = document.getElementById('quizArea');
-  const quizForm = document.getElementById('quizForm');
-  const quizTitle = document.getElementById('quizTitle');
-  const resultDiv = document.getElementById('result');
-  let currentQuiz = null;
-
-  function resetDropdown(sel, msg) {
-    sel.innerHTML = `<option value="">${msg}</option>`;
+infoForm.onsubmit = function(e) {
+  e.preventDefault();
+  const name = document.getElementById('studentName').value.trim();
+  const mobile = document.getElementById('studentMobile').value.trim();
+  if (!name) {
+    infoError.textContent = "Please enter your name.";
+    infoError.style.display = "block";
+    return;
   }
-
-  function populateClassDropdown() {
-    resetDropdown(classSelect, "Select Class");
-    Object.keys(window.quizData).forEach(c => {
-      classSelect.innerHTML += `<option value="${c}">Class ${c}</option>`;
-    });
-    resetDropdown(subjectSelect, "Select Subject");
-    resetDropdown(chapterSelect, "Select Quiz");
+  if (!mobile.match(/^[0-9]{10}$/)) {
+    infoError.textContent = "Please enter a valid 10-digit mobile number.";
+    infoError.style.display = "block";
+    return;
   }
+  infoError.style.display = "none";
+  studentName = name;
+  studentMobile = mobile;
+  infoForm.style.display = "none";
+  dropdownsDiv.style.display = "flex";
+};
 
-  function populateSubjectDropdown() {
-    resetDropdown(subjectSelect, "Select Subject");
-    resetDropdown(chapterSelect, "Select Quiz");
-    quizArea.style.display = "none";
-    const classVal = classSelect.value;
-    if (!classVal) return;
-    const subjects = Object.keys(window.quizData[classVal]);
-    subjects.forEach(subject => {
-      subjectSelect.innerHTML += `<option value="${subject}">${subject.charAt(0).toUpperCase() + subject.slice(1)}</option>`;
-    });
+// Quiz code
+const classSelect = document.getElementById('classSelect');
+const subjectSelect = document.getElementById('subjectSelect');
+const chapterSelect = document.getElementById('chapterSelect');
+const quizArea = document.getElementById('quizArea');
+const quizForm = document.getElementById('quizForm');
+const quizTitle = document.getElementById('quizTitle');
+const resultDiv = document.getElementById('result');
+let currentQuiz = null;
+
+// Randomization functions
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
+  return array;
+}
 
-  function populateChapterDropdown() {
-    resetDropdown(chapterSelect, "Select Quiz");
-    quizArea.style.display = "none";
-    const classVal = classSelect.value;
-    const subjectVal = subjectSelect.value;
-    if (!classVal || !subjectVal) return;
-    window.quizData[classVal][subjectVal].forEach((quiz, i) => {
-      chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
-    });
-  }
+function randomizeQuizOptions(quiz) {
+  quiz.questions.forEach(question => {
+    const correctAnswer = question.answer;
+    question.options = shuffleArray([...question.options]);
+    question.answer = correctAnswer;
+  });
+  return quiz;
+}
 
-  function showQuiz() {
-    quizArea.style.display = "none";
-    quizForm.innerHTML = "";
-    resultDiv.textContent = "";
-    const classVal = classSelect.value;
-    const subjectVal = subjectSelect.value;
-    const chapterVal = chapterSelect.value;
-    if (!classVal || !subjectVal || chapterVal === "") return;
-    currentQuiz = window.quizData[classVal][subjectVal][chapterVal];
-    if (!currentQuiz) return;
-    quizTitle.textContent = currentQuiz.title;
-    currentQuiz.questions.forEach((q, idx) => {
-      quizForm.innerHTML += `
-        <div class="question" id="q${idx}">
-          <p>${idx + 1}. ${q.q}</p>
-          <div class="options">
-            ${q.options.map(opt =>
-              `<label><input type="radio" name="q${idx}" value="${opt}"> ${opt}</label>`
-            ).join('')}
-          </div>
+function resetDropdown(sel, msg) {
+  sel.innerHTML = `<option value="">${msg}</option>`;
+}
+
+function populateClassDropdown() {
+  resetDropdown(classSelect, "Select Class");
+  Object.keys(window.quizData).forEach(c => {
+    classSelect.innerHTML += `<option value="${c}">Class ${c}</option>`;
+  });
+  resetDropdown(subjectSelect, "Select Subject");
+  resetDropdown(chapterSelect, "Select Quiz");
+}
+
+function populateSubjectDropdown() {
+  resetDropdown(subjectSelect, "Select Subject");
+  resetDropdown(chapterSelect, "Select Quiz");
+  quizArea.style.display = "none";
+  const classVal = classSelect.value;
+  if (!classVal) return;
+  const subjects = Object.keys(window.quizData[classVal]);
+  subjects.forEach(subject => {
+    subjectSelect.innerHTML += `<option value="${subject}">${subject.charAt(0).toUpperCase() + subject.slice(1)}</option>`;
+  });
+}
+
+function populateChapterDropdown() {
+  resetDropdown(chapterSelect, "Select Quiz");
+  quizArea.style.display = "none";
+  const classVal = classSelect.value;
+  const subjectVal = subjectSelect.value;
+  if (!classVal || !subjectVal) return;
+  window.quizData[classVal][subjectVal].forEach((quiz, i) => {
+    chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
+  });
+}
+
+function showQuiz() {
+  quizArea.style.display = "none";
+  quizForm.innerHTML = "";
+  resultDiv.textContent = "";
+  const classVal = classSelect.value;
+  const subjectVal = subjectSelect.value;
+  const chapterVal = chapterSelect.value;
+  if (!classVal || !subjectVal || chapterVal === "") return;
+  
+  // Create a deep copy of the quiz and randomize options
+  currentQuiz = JSON.parse(JSON.stringify(window.quizData[classVal][subjectVal][chapterVal]));
+  randomizeQuizOptions(currentQuiz);
+  
+  quizTitle.textContent = currentQuiz.title;
+  currentQuiz.questions.forEach((q, idx) => {
+    quizForm.innerHTML += `
+      <div class="question" id="q${idx}">
+        <p>${idx + 1}. ${q.q}</p>
+        <div class="options">
+          ${q.options.map(opt =>
+            `<label><input type="radio" name="q${idx}" value="${opt}"> ${opt}</label>`
+          ).join('')}
         </div>
-      `;
-    });
-    quizForm.innerHTML += `<button type="button" class="btn" id="submitBtn">Submit</button>`;
-    quizArea.style.display = "block";
-    resultDiv.innerHTML = "";
-    document.getElementById('submitBtn').onclick = checkAnswers;
-  }
-
-  function checkAnswers() {
-    let score = 0;
-    currentQuiz.questions.forEach((q, idx) => {
-      const optionsDiv = document.querySelector(`#q${idx} .options`);
-      const selected = document.querySelector(`input[name="q${idx}"]:checked`);
-      Array.from(optionsDiv.querySelectorAll('label')).forEach(label => {
-        label.classList.remove('correct', 'wrong');
-      });
-      let correctLabel = null, wrongLabel = null;
-      Array.from(optionsDiv.getElementsByTagName('label')).forEach(label => {
-        const input = label.querySelector('input');
-        if (input.value === q.answer) correctLabel = label;
-        if (selected && input.checked && input.value !== q.answer) wrongLabel = label;
-      });
-      if (correctLabel) correctLabel.classList.add('correct');
-      if (selected && selected.value === q.answer) score++;
-      if (wrongLabel) wrongLabel.classList.add('wrong');
-    });
-    // Show result and Try Another Quiz button
-    resultDiv.innerHTML = `
-      Your score: ${score} out of ${currentQuiz.questions.length}
-      <br>
-      <button type="button" class="btn" id="tryAnotherBtn" style="margin-top:18px;">Try Another Quiz</button>
+      </div>
     `;
-    sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title);
-    document.getElementById('tryAnotherBtn').onclick = tryAnotherQuiz;
-  }
+  });
+  quizForm.innerHTML += `<button type="button" class="btn" id="submitBtn">Submit</button>`;
+  quizArea.style.display = "block";
+  resultDiv.innerHTML = "";
+  document.getElementById('submitBtn').onclick = checkAnswers;
+}
 
-  function tryAnotherQuiz() {
-    chapterSelect.value = "";
-    quizArea.style.display = "none";
-    quizForm.innerHTML = "";
-    resultDiv.innerHTML = "";
-    quizTitle.textContent = "";
-  }
-
-  // Send quiz result to Formspree
-  function sendFormspreeResult(score, total, quizTitleStr) {
-    const data = {
-      name: studentName,
-      mobile: studentMobile,
-      quiz: quizTitleStr,
-      score: `${score} / ${total}`
-    };
-    fetch('https://formspree.io/f/xrbkjvky', {
-      method: "POST",
-      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: data.name,
-        mobile: data.mobile,
-        quiz: data.quiz,
-        score: data.score,
-        message: `Quiz: ${data.quiz}\nName: ${data.name}\nMobile: ${data.mobile}\nScore: ${data.score}`
-      })
+function checkAnswers() {
+  let score = 0;
+  currentQuiz.questions.forEach((q, idx) => {
+    const optionsDiv = document.querySelector(`#q${idx} .options`);
+    const selected = document.querySelector(`input[name="q${idx}"]:checked`);
+    Array.from(optionsDiv.querySelectorAll('label')).forEach(label => {
+      label.classList.remove('correct', 'wrong');
     });
-  }
+    let correctLabel = null, wrongLabel = null;
+    Array.from(optionsDiv.getElementsByTagName('label')).forEach(label => {
+      const input = label.querySelector('input');
+      if (input.value === q.answer) correctLabel = label;
+      if (selected && input.checked && input.value !== q.answer) wrongLabel = label;
+    });
+    if (correctLabel) correctLabel.classList.add('correct');
+    if (selected && selected.value === q.answer) score++;
+    if (wrongLabel) wrongLabel.classList.add('wrong');
+  });
+  resultDiv.innerHTML = `
+    Your score: ${score} out of ${currentQuiz.questions.length}
+    <br>
+    <button type="button" class="btn" id="tryAnotherBtn" style="margin-top:18px;">Try Another Quiz</button>
+  `;
+  sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title);
+  document.getElementById('tryAnotherBtn').onclick = tryAnotherQuiz;
+}
 
-  // Event listeners
-  classSelect.onchange = populateSubjectDropdown;
-  subjectSelect.onchange = populateChapterDropdown;
-  chapterSelect.onchange = showQuiz;
+function tryAnotherQuiz() {
+  chapterSelect.value = "";
+  quizArea.style.display = "none";
+  quizForm.innerHTML = "";
+  resultDiv.innerHTML = "";
+  quizTitle.textContent = "";
+}
 
-  // Initialize on page load
-  window.onload = function() {
-    populateClassDropdown();
-    dropdownsDiv.style.display = "none";
-    quizArea.style.display = "none";
-  }
+function sendFormspreeResult(score, total, quizTitleStr) {
+  const data = {
+    name: studentName,
+    mobile: studentMobile,
+    quiz: quizTitleStr,
+    score: `${score} / ${total}`
+  };
+  fetch('https://formspree.io/f/xrbkjvky', {
+    method: "POST",
+    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: data.name,
+      mobile: data.mobile,
+      quiz: data.quiz,
+      score: data.score,
+      message: `Quiz: ${data.quiz}\nName: ${data.name}\nMobile: ${data.mobile}\nScore: ${data.score}`
+    })
+  });
+}
+
+// Event listeners
+classSelect.onchange = populateSubjectDropdown;
+subjectSelect.onchange = populateChapterDropdown;
+chapterSelect.onchange = showQuiz;
+
+// Initialize on page load
+window.onload = function() {
+  populateClassDropdown();
+  dropdownsDiv.style.display = "none";
+  quizArea.style.display = "none";
+}
 </script>
 </body>
 </html>
