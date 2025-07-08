@@ -84,6 +84,12 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
+        /* Course cards hover effects */
+        .course:hover {
+            transform: translateY(-8px) !important;
+            box-shadow: 0 8px 30px rgba(45, 140, 240, 0.2) !important;
+            border-color: #2d8cf0 !important;
+        }
         @media (max-width: 768px) {
             h1 { font-size: 2em; }
             h2 { font-size: 1.8em; }
@@ -141,21 +147,30 @@
         </section>
 <section id="courses" style="background-color: #ffffff;">
     <h2>Our Courses</h2>
-    <div class="course-list">
-        <div class="course">
-            <h3>Classes 6-10</h3>
-            <p>All Subjects</p>
-            <p>Comprehensive curriculum with interactive lessons and assessments.</p>
+    <div class="course-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="course" style="background: #e9f2fb; box-shadow: 0 4px 15px rgba(45, 140, 240, 0.1); border-radius: 15px; padding: 30px 20px; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 2px solid transparent; position: relative; overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #2d8cf0, #1456a0); color: white; border-radius: 50px; padding: 15px 25px; display: inline-block; margin-bottom: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(45, 140, 240, 0.3);">
+                <h3 style="margin: 0; font-size: 1.3em;">Classes 6-10</h3>
+            </div>
+            <p style="color: #2d8cf0; font-weight: bold; font-size: 1.1em; margin: 15px 0;">All Subjects</p>
+            <p style="color: #555; line-height: 1.6; margin: 0;">Comprehensive curriculum with interactive lessons and assessments.</p>
+            <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: linear-gradient(45deg, rgba(45, 140, 240, 0.1), rgba(20, 86, 160, 0.1)); border-radius: 50%; z-index: 0;"></div>
         </div>
-        <div class="course">
-            <h3>Classes 11-12</h3>
-            <p>Physics, Mathematics</p>
-            <p>Advanced courses with practical sessions for board and competitive exams.</p>
+        <div class="course" style="background: #e9f2fb; box-shadow: 0 4px 15px rgba(45, 140, 240, 0.1); border-radius: 15px; padding: 30px 20px; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 2px solid transparent; position: relative; overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #2d8cf0, #1456a0); color: white; border-radius: 50px; padding: 15px 25px; display: inline-block; margin-bottom: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(45, 140, 240, 0.3);">
+                <h3 style="margin: 0; font-size: 1.3em;">Classes 11-12</h3>
+            </div>
+            <p style="color: #2d8cf0; font-weight: bold; font-size: 1.1em; margin: 15px 0;">Physics, Mathematics</p>
+            <p style="color: #555; line-height: 1.6; margin: 0;">Advanced courses with practical sessions for board and competitive exams.</p>
+            <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: linear-gradient(45deg, rgba(45, 140, 240, 0.1), rgba(20, 86, 160, 0.1)); border-radius: 50%; z-index: 0;"></div>
         </div>
-        <div class="course">
-            <h3>Competitive Exams</h3>
-            <p>Constable, Excise, Patwari, SSC CHSL</p>
-            <p>Intensive training with mock tests for career success.</p>
+        <div class="course" style="background: #e9f2fb; box-shadow: 0 4px 15px rgba(45, 140, 240, 0.1); border-radius: 15px; padding: 30px 20px; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 2px solid transparent; position: relative; overflow: hidden;">
+            <div style="background: linear-gradient(135deg, #2d8cf0, #1456a0); color: white; border-radius: 50px; padding: 15px 25px; display: inline-block; margin-bottom: 20px; font-weight: bold; box-shadow: 0 4px 10px rgba(45, 140, 240, 0.3);">
+                <h3 style="margin: 0; font-size: 1.3em;">Competitive Exams</h3>
+            </div>
+            <p style="color: #2d8cf0; font-weight: bold; font-size: 1.1em; margin: 15px 0;">Constable, Excise, Patwari, SSC CHSL</p>
+            <p style="color: #555; line-height: 1.6; margin: 0;">Intensive training with mock tests for career success.</p>
+            <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: linear-gradient(45deg, rgba(45, 140, 240, 0.1), rgba(20, 86, 160, 0.1)); border-radius: 50%; z-index: 0;"></div>
         </div>
     </div>
 </section>

@@ -296,7 +296,7 @@
       </div>
     </div>
   </div>
-<script src="script.js"></script>
+<script src="script.js" onerror="console.error('Failed to load script.js'); document.getElementById('classSelect').innerHTML = '<option value=\'\'>Error loading quiz data. Please check if script.js exists.</option>';"></script>
 <script>
   // Student info logic
   const infoForm = document.getElementById('studentInfoForm');
@@ -489,10 +489,34 @@
 
   function populateClassDropdown() {
     resetDropdown(classSelect, "Select Class");
-    if (!window.quizData) {
-      console.error("window.quizData is undefined. Check script.js.");
+    
+    // Check if script.js is loaded and quiz data is available
+    if (typeof window.quizData === 'undefined') {
+      console.error("Quiz data not loaded. Attempting to reload...");
+      
+      // Show error message to user
+      classSelect.innerHTML = '<option value="">Quiz data loading...</option>';
+      
+      // Try to reload script after a delay
+      setTimeout(() => {
+        if (typeof window.quizData === 'undefined') {
+          classSelect.innerHTML = '<option value="">Error: Quiz data not found. Please refresh the page.</option>';
+          console.error("Failed to load quiz data from script.js");
+        } else {
+          populateClassDropdown(); // Retry
+        }
+      }, 2000);
       return;
     }
+    
+    if (!window.quizData || Object.keys(window.quizData).length === 0) {
+      console.error("Quiz data is empty or invalid");
+      classSelect.innerHTML = '<option value="">No quiz data available</option>';
+      return;
+    }
+    
+    console.log("Quiz data loaded successfully:", Object.keys(window.quizData));
+    
     Object.keys(window.quizData).forEach(c => {
       classSelect.innerHTML += `<option value="${c}">Class ${c}</option>`;
     });
@@ -644,10 +668,27 @@
 
   // Initialize on page load
   window.onload = function() {
-    populateClassDropdown();
-    dropdownsDiv.style.display = "none";
-    quizArea.style.display = "none";
+    console.log("Page loaded. Checking quiz data...");
+    
+    // Wait a bit for script.js to load
+    setTimeout(() => {
+      populateClassDropdown();
+      dropdownsDiv.style.display = "none";
+      quizArea.style.display = "none";
+    }, 500);
   };
+  
+  // Also try when DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM ready. Checking quiz data...");
+    
+    // Wait a bit more for external scripts
+    setTimeout(() => {
+      if (typeof window.quizData !== 'undefined') {
+        populateClassDropdown();
+      }
+    }, 1000);
+  });
 </script>
 </body>
 </html>
