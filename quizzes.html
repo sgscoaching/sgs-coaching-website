@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>SGS Coaching | Quiz Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="quizzez.css"/>
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -302,7 +301,10 @@
   const infoForm = document.getElementById('studentInfoForm');
   const infoError = document.getElementById('infoError');
   const dropdownsDiv = document.querySelector('.dropdowns');
-  let studentName = "", studentMobile = "";
+  
+  // Global variables
+  let studentName = "";
+  let studentMobile = "";
   let quizStartTime = null;
   let quizTimer = null;
   let secondsElapsed = 0;
@@ -666,29 +668,28 @@
   subjectSelect.onchange = populateChapterDropdown;
   chapterSelect.onchange = showQuiz;
 
-  // Initialize on page load
-  window.onload = function() {
-    console.log("Page loaded. Checking quiz data...");
+  // Initialize when everything is loaded
+  function initializeQuiz() {
+    console.log("Initializing quiz...");
+    console.log("Quiz data type:", typeof window.quizData);
+    console.log("Quiz data keys:", window.quizData ? Object.keys(window.quizData) : 'undefined');
     
-    // Wait a bit for script.js to load
-    setTimeout(() => {
-      populateClassDropdown();
-      dropdownsDiv.style.display = "none";
-      quizArea.style.display = "none";
-    }, 500);
-  };
-  
-  // Also try when DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM ready. Checking quiz data...");
-    
-    // Wait a bit more for external scripts
-    setTimeout(() => {
-      if (typeof window.quizData !== 'undefined') {
-        populateClassDropdown();
-      }
-    }, 1000);
+    populateClassDropdown();
+    dropdownsDiv.style.display = "none";
+    quizArea.style.display = "none";
+  }
+
+  // Multiple initialization attempts
+  window.addEventListener('load', function() {
+    setTimeout(initializeQuiz, 100);
   });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(initializeQuiz, 200);
+  });
+  
+  // Fallback initialization
+  setTimeout(initializeQuiz, 1000);
 </script>
 </body>
 </html>
