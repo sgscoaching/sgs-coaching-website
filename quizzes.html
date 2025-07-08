@@ -78,13 +78,36 @@
       margin-top: 1.5em;
       animation: fadeIn .5s;
     }
+    #quizHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      background: #f8fbff;
+      padding: 15px;
+      border-radius: 12px;
+      border-left: 5px solid #3656a7;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
     #quizTitle {
-      margin-top: 0;
+      margin: 0;
       font-size: 1.35rem;
       color: #203864;
-      text-align: left;
-      margin-bottom: 0.8em;
       letter-spacing: 1px;
+      flex: 1;
+      min-width: 200px;
+    }
+    #timer {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #3656a7;
+      background: #fff;
+      padding: 8px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #20386410;
+      min-width: 80px;
+      text-align: center;
     }
     .question {
       background: #f8fbff;
@@ -184,15 +207,51 @@
       margin-bottom: 8px;
       display: block;
     }
+    #rankingSection {
+      margin-top: 25px;
+      background: #f8fbff;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 5px solid #3656a7;
+      animation: slideIn 0.5s ease-out;
+    }
+    #userRank {
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 2px solid #3656a7;
+      font-weight: bold;
+      text-align: center;
+    }
+    .rank-item {
+      background: #fff;
+      padding: 8px 12px;
+      margin: 5px 0;
+      border-radius: 6px;
+      border-left: 3px solid #3656a7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .rank-gold { border-left-color: #ffd700; background: #fffbf0; }
+    .rank-silver { border-left-color: #c0c0c0; background: #f8f8f8; }
+    .rank-bronze { border-left-color: #cd7f32; background: #fdf6f0; }
     @media (max-width: 700px) {
       .quiz-card { padding: 18px 5vw 14px 5vw; }
       header h1 { font-size: 1.25rem; }
       .dropdowns { gap: 8px; }
       select { font-size: 0.95rem; min-width: 160px; }
+      #quizHeader { flex-direction: column; text-align: center; }
+      #quizTitle { margin-bottom: 10px; }
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(16px);}
       to   { opacity: 1; transform: none; }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -222,17 +281,17 @@
       <select id="chapterSelect"><option value="">Select Quiz</option></select>
     </div>
     <div id="quizArea" style="display:none">
-      <div id="quizHeader" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; background: #f8fbff; padding: 15px; border-radius: 12px; border-left: 5px solid #3656a7;">
-        <h2 id="quizTitle" style="margin: 0; color: #203864;"></h2>
-        <div id="timer" style="font-size: 1.2rem; font-weight: bold; color: #3656a7; background: #fff; padding: 8px 15px; border-radius: 8px; box-shadow: 0 2px 8px #20386410;">
+      <div id="quizHeader">
+        <h2 id="quizTitle"></h2>
+        <div id="timer">
           <span id="timeDisplay">00:00</span>
         </div>
       </div>
       <form id="quizForm"></form>
       <div id="result"></div>
-      <div id="rankingSection" style="display:none; margin-top: 25px; background: #f8fbff; padding: 20px; border-radius: 12px; border-left: 5px solid #3656a7;">
+      <div id="rankingSection" style="display:none;">
         <h3 style="color: #203864; margin-bottom: 15px;">🏆 Quiz Rankings</h3>
-        <div id="userRank" style="background: #fff; padding: 12px; border-radius: 8px; margin-bottom: 15px; border: 2px solid #3656a7;"></div>
+        <div id="userRank"></div>
         <div id="topRankers"></div>
       </div>
     </div>
@@ -277,15 +336,129 @@
   const quizForm = document.getElementById('quizForm');
   const quizTitle = document.getElementById('quizTitle');
   const resultDiv = document.getElementById('result');
+  const timeDisplay = document.getElementById('timeDisplay');
+  const rankingSection = document.getElementById('rankingSection');
+  const userRank = document.getElementById('userRank');
+  const topRankers = document.getElementById('topRankers');
   let currentQuiz = null;
+
+  // Timer functions
+  function startTimer() {
+    quizStartTime = Date.now();
+    secondsElapsed = 0;
+    quizTimer = setInterval(() => {
+      secondsElapsed++;
+      const minutes = Math.floor(secondsElapsed / 60);
+      const seconds = secondsElapsed % 60;
+      timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }, 1000);
+  }
+
+  function stopTimer() {
+    if (quizTimer) {
+      clearInterval(quizTimer);
+      quizTimer = null;
+    }
+  }
+
+  // Ranking functions
+  function getQuizKey(quiz) {
+    return `${currentQuiz.title}_${classSelect.value}_${subjectSelect.value}`;
+  }
+
+  function saveQuizResult(score, totalQuestions, timeInSeconds) {
+    const quizKey = getQuizKey(currentQuiz);
+    const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
+    
+    if (!results[quizKey]) {
+      results[quizKey] = [];
+    }
+    
+    const result = {
+      name: studentName,
+      mobile: studentMobile,
+      score: score,
+      total: totalQuestions,
+      time: timeInSeconds,
+      timestamp: Date.now()
+    };
+    
+    results[quizKey].push(result);
+    localStorage.setItem('quizResults', JSON.stringify(results));
+    
+    return result;
+  }
+
+  function calculateRankings(currentResult) {
+    const quizKey = getQuizKey(currentQuiz);
+    const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
+    const quizResults = results[quizKey] || [];
+    
+    // Sort by score (desc), then by time (asc)
+    quizResults.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.time - b.time;
+    });
+    
+    // Find user's rank
+    const userRankNum = quizResults.findIndex(r => 
+      r.name === currentResult.name && 
+      r.mobile === currentResult.mobile && 
+      r.timestamp === currentResult.timestamp
+    ) + 1;
+    
+    return { quizResults, userRankNum };
+  }
+
+  function displayRankings(currentResult) {
+    const { quizResults, userRankNum } = calculateRankings(currentResult);
+    
+    // Display user's rank
+    const percentage = Math.round((currentResult.score / currentResult.total) * 100);
+    userRank.innerHTML = `
+      <div style="font-size: 1.1rem; color: #203864;">
+        🎯 Your Rank: <span style="color: #3656a7; font-size: 1.3rem;">#${userRankNum}</span>
+      </div>
+      <div style="margin-top: 5px; font-size: 0.95rem; color: #666;">
+        Score: ${currentResult.score}/${currentResult.total} (${percentage}%) | Time: ${Math.floor(currentResult.time/60)}:${(currentResult.time%60).toString().padStart(2,'0')}
+      </div>
+    `;
+    
+    // Display top 3 rankers
+    const top3 = quizResults.slice(0, 3);
+    topRankers.innerHTML = '<h4 style="margin: 0 0 10px 0; color: #203864;">🏆 Top Performers</h4>';
+    
+    if (top3.length === 0) {
+      topRankers.innerHTML += '<p style="text-align: center; color: #666;">No previous results</p>';
+    } else {
+      top3.forEach((result, index) => {
+        const rankClass = index === 0 ? 'rank-gold' : index === 1 ? 'rank-silver' : 'rank-bronze';
+        const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉';
+        const percentage = Math.round((result.score / result.total) * 100);
+        
+        topRankers.innerHTML += `
+          <div class="rank-item ${rankClass}">
+            <div>
+              <strong>${medal} ${result.name}</strong><br>
+              <small>${result.score}/${result.total} (${percentage}%) | ${Math.floor(result.time/60)}:${(result.time%60).toString().padStart(2,'0')}</small>
+            </div>
+            <div style="font-weight: bold; color: #3656a7;">#${index + 1}</div>
+          </div>
+        `;
+      });
+    }
+    
+    rankingSection.style.display = 'block';
+  }
 
   // Randomization functions
   function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
     }
-    return array;
+    return newArray;
   }
 
   function randomizeQuizOptions(quiz) {
@@ -299,9 +472,7 @@
         return;
       }
       const correctAnswer = question.answer;
-      console.log(`Before shuffle (Q${index + 1}): ${question.options.join(', ')}`);
-      question.options = shuffleArray([...question.options]);
-      console.log(`After shuffle (Q${index + 1}): ${question.options.join(', ')}`);
+      question.options = shuffleArray(question.options);
       // Ensure the answer remains valid after shuffling
       if (!question.options.includes(correctAnswer)) {
         console.error(`Correct answer ${correctAnswer} not found in shuffled options for Q${index + 1}:`, question.options);
@@ -356,6 +527,9 @@
     quizArea.style.display = "none";
     quizForm.innerHTML = "";
     resultDiv.textContent = "";
+    rankingSection.style.display = "none";
+    stopTimer();
+    
     const classVal = classSelect.value;
     const subjectVal = subjectSelect.value;
     const chapterVal = chapterSelect.value;
@@ -369,7 +543,6 @@
         return;
       }
       randomizeQuizOptions(currentQuiz);
-      console.log("Final randomized quiz:", currentQuiz);
     } catch (e) {
       console.error("Error accessing or randomizing quiz data:", e);
       return;
@@ -386,13 +559,17 @@
         </div>
       `;
     });
-    quizForm.innerHTML += `<button type="button" class="btn" id="submitBtn">Submit</button>`;
+    quizForm.innerHTML += `<button type="button" class="btn" id="submitBtn">Submit Quiz</button>`;
     quizArea.style.display = "block";
     resultDiv.innerHTML = "";
     document.getElementById('submitBtn').onclick = checkAnswers;
+    
+    // Start timer
+    startTimer();
   }
 
   function checkAnswers() {
+    stopTimer();
     let score = 0;
     currentQuiz.questions.forEach((q, idx) => {
       const optionsDiv = document.querySelector(`#q${idx} .options`);
@@ -410,12 +587,20 @@
       if (selected && selected.value === q.answer) score++;
       if (wrongLabel) wrongLabel.classList.add('wrong');
     });
+    
+    // Save result and show rankings
+    const currentResult = saveQuizResult(score, currentQuiz.questions.length, secondsElapsed);
+    
     resultDiv.innerHTML = `
       Your score: ${score} out of ${currentQuiz.questions.length}
       <br>
+      Time taken: ${Math.floor(secondsElapsed/60)}:${(secondsElapsed%60).toString().padStart(2,'0')}
+      <br>
       <button type="button" class="btn" id="tryAnotherBtn" style="margin-top:18px;">Try Another Quiz</button>
     `;
-    sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title);
+    
+    displayRankings(currentResult);
+    sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title, secondsElapsed);
     document.getElementById('tryAnotherBtn').onclick = tryAnotherQuiz;
   }
 
@@ -424,15 +609,19 @@
     quizArea.style.display = "none";
     quizForm.innerHTML = "";
     resultDiv.innerHTML = "";
+    rankingSection.style.display = "none";
     quizTitle.textContent = "";
+    stopTimer();
+    timeDisplay.textContent = "00:00";
   }
 
-  function sendFormspreeResult(score, total, quizTitleStr) {
+  function sendFormspreeResult(score, total, quizTitleStr, timeInSeconds) {
     const data = {
       name: studentName,
       mobile: studentMobile,
       quiz: quizTitleStr,
-      score: `${score} / ${total}`
+      score: `${score} / ${total}`,
+      time: `${Math.floor(timeInSeconds/60)}:${(timeInSeconds%60).toString().padStart(2,'0')}`
     };
     fetch('https://formspree.io/f/xrbkjvky', {
       method: "POST",
@@ -442,9 +631,10 @@
         mobile: data.mobile,
         quiz: data.quiz,
         score: data.score,
-        message: `Quiz: ${data.quiz}\nName: ${data.name}\nMobile: ${data.mobile}\nScore: ${data.score}`
+        time: data.time,
+        message: `Quiz: ${data.quiz}\nName: ${data.name}\nMobile: ${data.mobile}\nScore: ${data.score}\nTime: ${data.time}`
       })
-    });
+    }).catch(error => console.log('Formspree error:', error));
   }
 
   // Event listeners
