@@ -267,10 +267,10 @@
     <form id="studentInfoForm" autocomplete="off">
       <div id="infoError" class="info-error" style="display:none"></div>
       <label for="studentName">Student Name:</label>
-      <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required />
+      <input type="text" id="nameInput" name="studentName" placeholder="Enter your name" required />
 
       <label for="studentMobile">Mobile Number:</label>
-      <input type="tel" id="studentMobile" name="studentMobile" placeholder="Enter 10-digit mobile" maxlength="10" pattern="[0-9]{10}" required />
+      <input type="tel" id="mobileInput" name="studentMobile" placeholder="Enter 10-digit mobile" maxlength="10" pattern="[0-9]{10}" required />
 
       <button type="submit" class="btn">Start Quiz</button>
     </form>
@@ -295,401 +295,394 @@
       </div>
     </div>
   </div>
-<script src="script.js" onerror="console.error('Failed to load script.js'); document.getElementById('classSelect').innerHTML = '<option value=\'\'>Error loading quiz data. Please check if script.js exists.</option>';"></script>
+
+<script src="script.js"></script>
 <script>
-  // Student info logic
-  const infoForm = document.getElementById('studentInfoForm');
-  const infoError = document.getElementById('infoError');
-  const dropdownsDiv = document.querySelector('.dropdowns');
+// Global variables - declared once only
+let currentStudentName = "";
+let currentStudentMobile = "";
+let currentQuiz = null;
+let quizStartTime = null;
+let quizTimer = null;
+let secondsElapsed = 0;
+
+// DOM elements
+const infoForm = document.getElementById('studentInfoForm');
+const infoError = document.getElementById('infoError');
+const dropdownsDiv = document.querySelector('.dropdowns');
+const classSelect = document.getElementById('classSelect');
+const subjectSelect = document.getElementById('subjectSelect');
+const chapterSelect = document.getElementById('chapterSelect');
+const quizArea = document.getElementById('quizArea');
+const quizForm = document.getElementById('quizForm');
+const quizTitle = document.getElementById('quizTitle');
+const resultDiv = document.getElementById('result');
+const timeDisplay = document.getElementById('timeDisplay');
+const rankingSection = document.getElementById('rankingSection');
+const userRank = document.getElementById('userRank');
+const topRankers = document.getElementById('topRankers');
+
+// Student info form handler
+infoForm.onsubmit = function(e) {
+  e.preventDefault();
+  const name = document.getElementById('nameInput').value.trim();
+  const mobile = document.getElementById('mobileInput').value.trim();
   
-  // Global variables
-  let studentName = "";
-  let studentMobile = "";
-  let quizStartTime = null;
-  let quizTimer = null;
-  let secondsElapsed = 0;
+  if (!name) {
+    infoError.textContent = "Please enter your name.";
+    infoError.style.display = "block";
+    return;
+  }
+  if (!mobile.match(/^[0-9]{10}$/)) {
+    infoError.textContent = "Please enter a valid 10-digit mobile number.";
+    infoError.style.display = "block";
+    return;
+  }
+  
+  infoError.style.display = "none";
+  currentStudentName = name;
+  currentStudentMobile = mobile;
+  infoForm.style.display = "none";
+  dropdownsDiv.style.display = "flex";
+};
 
-  infoForm.onsubmit = function(e) {
-    e.preventDefault();
-    const name = document.getElementById('studentName').value.trim();
-    const mobile = document.getElementById('studentMobile').value.trim();
-    if (!name) {
-      infoError.textContent = "Please enter your name.";
-      infoError.style.display = "block";
-      return;
-    }
-    if (!mobile.match(/^[0-9]{10}$/)) {
-      infoError.textContent = "Please enter a valid 10-digit mobile number.";
-      infoError.style.display = "block";
-      return;
-    }
-    infoError.style.display = "none";
-    studentName = name;
-    studentMobile = mobile;
-    infoForm.style.display = "none";
-    dropdownsDiv.style.display = "flex";
+// Timer functions
+function startTimer() {
+  quizStartTime = Date.now();
+  secondsElapsed = 0;
+  quizTimer = setInterval(() => {
+    secondsElapsed++;
+    const minutes = Math.floor(secondsElapsed / 60);
+    const seconds = secondsElapsed % 60;
+    timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  }, 1000);
+}
+
+function stopTimer() {
+  if (quizTimer) {
+    clearInterval(quizTimer);
+    quizTimer = null;
+  }
+}
+
+// Ranking functions
+function getQuizKey() {
+  return `${currentQuiz.title}_${classSelect.value}_${subjectSelect.value}`;
+}
+
+function saveQuizResult(score, totalQuestions, timeInSeconds) {
+  const quizKey = getQuizKey();
+  const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
+  
+  if (!results[quizKey]) {
+    results[quizKey] = [];
+  }
+  
+  const result = {
+    name: currentStudentName,
+    mobile: currentStudentMobile,
+    score: score,
+    total: totalQuestions,
+    time: timeInSeconds,
+    timestamp: Date.now()
   };
+  
+  results[quizKey].push(result);
+  localStorage.setItem('quizResults', JSON.stringify(results));
+  return result;
+}
 
-  // Quiz code
-  const classSelect = document.getElementById('classSelect');
-  const subjectSelect = document.getElementById('subjectSelect');
-  const chapterSelect = document.getElementById('chapterSelect');
-  const quizArea = document.getElementById('quizArea');
-  const quizForm = document.getElementById('quizForm');
-  const quizTitle = document.getElementById('quizTitle');
-  const resultDiv = document.getElementById('result');
-  const timeDisplay = document.getElementById('timeDisplay');
-  const rankingSection = document.getElementById('rankingSection');
-  const userRank = document.getElementById('userRank');
-  const topRankers = document.getElementById('topRankers');
-  let currentQuiz = null;
+function calculateRankings(currentResult) {
+  const quizKey = getQuizKey();
+  const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
+  const quizResults = results[quizKey] || [];
+  
+  // Sort by score (desc), then by time (asc)
+  quizResults.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return a.time - b.time;
+  });
+  
+  // Find user's rank
+  const userRankNum = quizResults.findIndex(r => 
+    r.name === currentResult.name && 
+    r.mobile === currentResult.mobile && 
+    r.timestamp === currentResult.timestamp
+  ) + 1;
+  
+  return { quizResults, userRankNum };
+}
 
-  // Timer functions
-  function startTimer() {
-    quizStartTime = Date.now();
-    secondsElapsed = 0;
-    quizTimer = setInterval(() => {
-      secondsElapsed++;
-      const minutes = Math.floor(secondsElapsed / 60);
-      const seconds = secondsElapsed % 60;
-      timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    }, 1000);
-  }
-
-  function stopTimer() {
-    if (quizTimer) {
-      clearInterval(quizTimer);
-      quizTimer = null;
-    }
-  }
-
-  // Ranking functions
-  function getQuizKey(quiz) {
-    return `${currentQuiz.title}_${classSelect.value}_${subjectSelect.value}`;
-  }
-
-  function saveQuizResult(score, totalQuestions, timeInSeconds) {
-    const quizKey = getQuizKey(currentQuiz);
-    const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
-    
-    if (!results[quizKey]) {
-      results[quizKey] = [];
-    }
-    
-    const result = {
-      name: studentName,
-      mobile: studentMobile,
-      score: score,
-      total: totalQuestions,
-      time: timeInSeconds,
-      timestamp: Date.now()
-    };
-    
-    results[quizKey].push(result);
-    localStorage.setItem('quizResults', JSON.stringify(results));
-    
-    return result;
-  }
-
-  function calculateRankings(currentResult) {
-    const quizKey = getQuizKey(currentQuiz);
-    const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
-    const quizResults = results[quizKey] || [];
-    
-    // Sort by score (desc), then by time (asc)
-    quizResults.sort((a, b) => {
-      if (b.score !== a.score) return b.score - a.score;
-      return a.time - b.time;
-    });
-    
-    // Find user's rank
-    const userRankNum = quizResults.findIndex(r => 
-      r.name === currentResult.name && 
-      r.mobile === currentResult.mobile && 
-      r.timestamp === currentResult.timestamp
-    ) + 1;
-    
-    return { quizResults, userRankNum };
-  }
-
-  function displayRankings(currentResult) {
-    const { quizResults, userRankNum } = calculateRankings(currentResult);
-    
-    // Display user's rank
-    const percentage = Math.round((currentResult.score / currentResult.total) * 100);
-    userRank.innerHTML = `
-      <div style="font-size: 1.1rem; color: #203864;">
-        🎯 Your Rank: <span style="color: #3656a7; font-size: 1.3rem;">#${userRankNum}</span>
-      </div>
-      <div style="margin-top: 5px; font-size: 0.95rem; color: #666;">
-        Score: ${currentResult.score}/${currentResult.total} (${percentage}%) | Time: ${Math.floor(currentResult.time/60)}:${(currentResult.time%60).toString().padStart(2,'0')}
-      </div>
-    `;
-    
-    // Display top 3 rankers
-    const top3 = quizResults.slice(0, 3);
-    topRankers.innerHTML = '<h4 style="margin: 0 0 10px 0; color: #203864;">🏆 Top Performers</h4>';
-    
-    if (top3.length === 0) {
-      topRankers.innerHTML += '<p style="text-align: center; color: #666;">No previous results</p>';
-    } else {
-      top3.forEach((result, index) => {
-        const rankClass = index === 0 ? 'rank-gold' : index === 1 ? 'rank-silver' : 'rank-bronze';
-        const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉';
-        const percentage = Math.round((result.score / result.total) * 100);
-        
-        topRankers.innerHTML += `
-          <div class="rank-item ${rankClass}">
-            <div>
-              <strong>${medal} ${result.name}</strong><br>
-              <small>${result.score}/${result.total} (${percentage}%) | ${Math.floor(result.time/60)}:${(result.time%60).toString().padStart(2,'0')}</small>
-            </div>
-            <div style="font-weight: bold; color: #3656a7;">#${index + 1}</div>
-          </div>
-        `;
-      });
-    }
-    
-    rankingSection.style.display = 'block';
-  }
-
-  // Randomization functions
-  function shuffleArray(array) {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-  }
-
-  function randomizeQuizOptions(quiz) {
-    if (!quiz || !quiz.questions) {
-      console.error("Invalid quiz data in randomizeQuizOptions:", quiz);
-      return quiz;
-    }
-    quiz.questions.forEach((question, index) => {
-      if (!question.options || !Array.isArray(question.options)) {
-        console.error(`Invalid options for question ${index}:`, question);
-        return;
-      }
-      const correctAnswer = question.answer;
-      question.options = shuffleArray(question.options);
-      // Ensure the answer remains valid after shuffling
-      if (!question.options.includes(correctAnswer)) {
-        console.error(`Correct answer ${correctAnswer} not found in shuffled options for Q${index + 1}:`, question.options);
-        question.options[0] = correctAnswer; // Fallback to restore correct answer
-      }
-      question.answer = correctAnswer; // Reassign to maintain reference
-    });
-    return quiz;
-  }
-
-  function resetDropdown(sel, msg) {
-    sel.innerHTML = `<option value="">${msg}</option>`;
-  }
-
-  function populateClassDropdown() {
-    resetDropdown(classSelect, "Select Class");
-    
-    // Check if script.js is loaded and quiz data is available
-    if (typeof window.quizData === 'undefined') {
-      console.error("Quiz data not loaded. Attempting to reload...");
+function displayRankings(currentResult) {
+  const { quizResults, userRankNum } = calculateRankings(currentResult);
+  
+  // Display user's rank
+  const percentage = Math.round((currentResult.score / currentResult.total) * 100);
+  userRank.innerHTML = `
+    <div style="font-size: 1.1rem; color: #203864;">
+      🎯 Your Rank: <span style="color: #3656a7; font-size: 1.3rem;">#${userRankNum}</span>
+    </div>
+    <div style="margin-top: 5px; font-size: 0.95rem; color: #666;">
+      Score: ${currentResult.score}/${currentResult.total} (${percentage}%) | Time: ${Math.floor(currentResult.time/60)}:${(currentResult.time%60).toString().padStart(2,'0')}
+    </div>
+  `;
+  
+  // Display top 3 rankers
+  const top3 = quizResults.slice(0, 3);
+  topRankers.innerHTML = '<h4 style="margin: 0 0 10px 0; color: #203864;">🏆 Top Performers</h4>';
+  
+  if (top3.length === 0) {
+    topRankers.innerHTML += '<p style="text-align: center; color: #666;">No previous results</p>';
+  } else {
+    top3.forEach((result, index) => {
+      const rankClass = index === 0 ? 'rank-gold' : index === 1 ? 'rank-silver' : 'rank-bronze';
+      const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉';
+      const percentage = Math.round((result.score / result.total) * 100);
       
-      // Show error message to user
-      classSelect.innerHTML = '<option value="">Quiz data loading...</option>';
-      
-      // Try to reload script after a delay
-      setTimeout(() => {
-        if (typeof window.quizData === 'undefined') {
-          classSelect.innerHTML = '<option value="">Error: Quiz data not found. Please refresh the page.</option>';
-          console.error("Failed to load quiz data from script.js");
-        } else {
-          populateClassDropdown(); // Retry
-        }
-      }, 2000);
-      return;
-    }
-    
-    if (!window.quizData || Object.keys(window.quizData).length === 0) {
-      console.error("Quiz data is empty or invalid");
-      classSelect.innerHTML = '<option value="">No quiz data available</option>';
-      return;
-    }
-    
-    console.log("Quiz data loaded successfully:", Object.keys(window.quizData));
-    
-    Object.keys(window.quizData).forEach(c => {
-      classSelect.innerHTML += `<option value="${c}">Class ${c}</option>`;
-    });
-    resetDropdown(subjectSelect, "Select Subject");
-    resetDropdown(chapterSelect, "Select Quiz");
-  }
-
-  function populateSubjectDropdown() {
-    resetDropdown(subjectSelect, "Select Subject");
-    resetDropdown(chapterSelect, "Select Quiz");
-    quizArea.style.display = "none";
-    const classVal = classSelect.value;
-    if (!classVal) return;
-    const subjects = Object.keys(window.quizData[classVal]);
-    subjects.forEach(subject => {
-      subjectSelect.innerHTML += `<option value="${subject}">${subject.charAt(0).toUpperCase() + subject.slice(1)}</option>`;
-    });
-  }
-
-  function populateChapterDropdown() {
-    resetDropdown(chapterSelect, "Select Quiz");
-    quizArea.style.display = "none";
-    const classVal = classSelect.value;
-    const subjectVal = subjectSelect.value;
-    if (!classVal || !subjectVal) return;
-    window.quizData[classVal][subjectVal].forEach((quiz, i) => {
-      chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
-    });
-  }
-
-  function showQuiz() {
-    quizArea.style.display = "none";
-    quizForm.innerHTML = "";
-    resultDiv.textContent = "";
-    rankingSection.style.display = "none";
-    stopTimer();
-    
-    const classVal = classSelect.value;
-    const subjectVal = subjectSelect.value;
-    const chapterVal = chapterSelect.value;
-    if (!classVal || !subjectVal || chapterVal === "") return;
-
-    // Create a deep copy and randomize options
-    try {
-      currentQuiz = JSON.parse(JSON.stringify(window.quizData[classVal][subjectVal][chapterVal]));
-      if (!currentQuiz || !currentQuiz.questions) {
-        console.error("Invalid quiz data loaded:", currentQuiz);
-        return;
-      }
-      randomizeQuizOptions(currentQuiz);
-    } catch (e) {
-      console.error("Error accessing or randomizing quiz data:", e);
-      return;
-    }
-
-    quizTitle.textContent = currentQuiz.title;
-    currentQuiz.questions.forEach((q, idx) => {
-      quizForm.innerHTML += `
-        <div class="question" id="q${idx}">
-          <p>${idx + 1}. ${q.q}</p>
-          <div class="options">
-            ${q.options.map(opt => `<label><input type="radio" name="q${idx}" value="${opt}"> ${opt}</label>`).join('')}
+      topRankers.innerHTML += `
+        <div class="rank-item ${rankClass}">
+          <div>
+            <strong>${medal} ${result.name}</strong><br>
+            <small>${result.score}/${result.total} (${percentage}%) | ${Math.floor(result.time/60)}:${(result.time%60).toString().padStart(2,'0')}</small>
           </div>
+          <div style="font-weight: bold; color: #3656a7;">#${index + 1}</div>
         </div>
       `;
     });
-    quizForm.innerHTML += `<button type="button" class="btn" id="submitBtn">Submit Quiz</button>`;
-    quizArea.style.display = "block";
-    resultDiv.innerHTML = "";
-    document.getElementById('submitBtn').onclick = checkAnswers;
+  }
+  
+  rankingSection.style.display = 'block';
+}
+
+// Randomization functions
+function shuffleArray(array) {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+}
+
+function randomizeQuizOptions(quiz) {
+  if (!quiz || !quiz.questions) {
+    console.error("Invalid quiz data:", quiz);
+    return quiz;
+  }
+  quiz.questions.forEach((question, index) => {
+    if (!question.options || !Array.isArray(question.options)) {
+      console.error(`Invalid options for question ${index}:`, question);
+      return;
+    }
+    const correctAnswer = question.answer;
+    question.options = shuffleArray(question.options);
+    if (!question.options.includes(correctAnswer)) {
+      console.error(`Correct answer not found for Q${index + 1}:`, question.options);
+      question.options[0] = correctAnswer;
+    }
+    question.answer = correctAnswer;
+  });
+  return quiz;
+}
+
+// Dropdown functions
+function resetDropdown(sel, msg) {
+  sel.innerHTML = `<option value="">${msg}</option>`;
+}
+
+function populateClassDropdown() {
+  resetDropdown(classSelect, "Select Class");
+  
+  if (typeof window.quizData === 'undefined') {
+    console.error("Quiz data not loaded");
+    classSelect.innerHTML = '<option value="">Quiz data loading...</option>';
     
-    // Start timer
-    startTimer();
+    setTimeout(() => {
+      if (typeof window.quizData === 'undefined') {
+        classSelect.innerHTML = '<option value="">Error: Please refresh the page</option>';
+      } else {
+        populateClassDropdown();
+      }
+    }, 2000);
+    return;
+  }
+  
+  if (!window.quizData || Object.keys(window.quizData).length === 0) {
+    classSelect.innerHTML = '<option value="">No quiz data available</option>';
+    return;
+  }
+  
+  console.log("Quiz data loaded:", Object.keys(window.quizData));
+  
+  Object.keys(window.quizData).forEach(c => {
+    classSelect.innerHTML += `<option value="${c}">Class ${c}</option>`;
+  });
+  resetDropdown(subjectSelect, "Select Subject");
+  resetDropdown(chapterSelect, "Select Quiz");
+}
+
+function populateSubjectDropdown() {
+  resetDropdown(subjectSelect, "Select Subject");
+  resetDropdown(chapterSelect, "Select Quiz");
+  quizArea.style.display = "none";
+  
+  const classVal = classSelect.value;
+  if (!classVal) return;
+  
+  const subjects = Object.keys(window.quizData[classVal]);
+  subjects.forEach(subject => {
+    subjectSelect.innerHTML += `<option value="${subject}">${subject.charAt(0).toUpperCase() + subject.slice(1)}</option>`;
+  });
+}
+
+function populateChapterDropdown() {
+  resetDropdown(chapterSelect, "Select Quiz");
+  quizArea.style.display = "none";
+  
+  const classVal = classSelect.value;
+  const subjectVal = subjectSelect.value;
+  if (!classVal || !subjectVal) return;
+  
+  window.quizData[classVal][subjectVal].forEach((quiz, i) => {
+    chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
+  });
+}
+
+function showQuiz() {
+  quizArea.style.display = "none";
+  quizForm.innerHTML = "";
+  resultDiv.textContent = "";
+  rankingSection.style.display = "none";
+  stopTimer();
+  
+  const classVal = classSelect.value;
+  const subjectVal = subjectSelect.value;
+  const chapterVal = chapterSelect.value;
+  if (!classVal || !subjectVal || chapterVal === "") return;
+
+  try {
+    currentQuiz = JSON.parse(JSON.stringify(window.quizData[classVal][subjectVal][chapterVal]));
+    if (!currentQuiz || !currentQuiz.questions) {
+      console.error("Invalid quiz data loaded");
+      return;
+    }
+    randomizeQuizOptions(currentQuiz);
+  } catch (e) {
+    console.error("Error loading quiz:", e);
+    return;
   }
 
-  function checkAnswers() {
-    stopTimer();
-    let score = 0;
-    currentQuiz.questions.forEach((q, idx) => {
-      const optionsDiv = document.querySelector(`#q${idx} .options`);
-      const selected = document.querySelector(`input[name="q${idx}"]:checked`);
-      Array.from(optionsDiv.querySelectorAll('label')).forEach(label => {
-        label.classList.remove('correct', 'wrong');
-      });
-      let correctLabel = null, wrongLabel = null;
-      Array.from(optionsDiv.getElementsByTagName('label')).forEach(label => {
-        const input = label.querySelector('input');
-        if (input.value === q.answer) correctLabel = label;
-        if (selected && input.checked && input.value !== q.answer) wrongLabel = label;
-      });
-      if (correctLabel) correctLabel.classList.add('correct');
-      if (selected && selected.value === q.answer) score++;
-      if (wrongLabel) wrongLabel.classList.add('wrong');
+  quizTitle.textContent = currentQuiz.title;
+  currentQuiz.questions.forEach((q, idx) => {
+    quizForm.innerHTML += `
+      <div class="question" id="q${idx}">
+        <p>${idx + 1}. ${q.q}</p>
+        <div class="options">
+          ${q.options.map(opt => `<label><input type="radio" name="q${idx}" value="${opt}"> ${opt}</label>`).join('')}
+        </div>
+      </div>
+    `;
+  });
+  quizForm.innerHTML += `<button type="button" class="btn" id="submitBtn">Submit Quiz</button>`;
+  quizArea.style.display = "block";
+  resultDiv.innerHTML = "";
+  document.getElementById('submitBtn').onclick = checkAnswers;
+  
+  startTimer();
+}
+
+function checkAnswers() {
+  stopTimer();
+  let score = 0;
+  
+  currentQuiz.questions.forEach((q, idx) => {
+    const optionsDiv = document.querySelector(`#q${idx} .options`);
+    const selected = document.querySelector(`input[name="q${idx}"]:checked`);
+    
+    Array.from(optionsDiv.querySelectorAll('label')).forEach(label => {
+      label.classList.remove('correct', 'wrong');
     });
     
-    // Save result and show rankings
-    const currentResult = saveQuizResult(score, currentQuiz.questions.length, secondsElapsed);
+    let correctLabel = null, wrongLabel = null;
+    Array.from(optionsDiv.getElementsByTagName('label')).forEach(label => {
+      const input = label.querySelector('input');
+      if (input.value === q.answer) correctLabel = label;
+      if (selected && input.checked && input.value !== q.answer) wrongLabel = label;
+    });
     
-    resultDiv.innerHTML = `
-      Your score: ${score} out of ${currentQuiz.questions.length}
-      <br>
-      Time taken: ${Math.floor(secondsElapsed/60)}:${(secondsElapsed%60).toString().padStart(2,'0')}
-      <br>
-      <button type="button" class="btn" id="tryAnotherBtn" style="margin-top:18px;">Try Another Quiz</button>
-    `;
-    
-    displayRankings(currentResult);
-    sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title, secondsElapsed);
-    document.getElementById('tryAnotherBtn').onclick = tryAnotherQuiz;
-  }
-
-  function tryAnotherQuiz() {
-    chapterSelect.value = "";
-    quizArea.style.display = "none";
-    quizForm.innerHTML = "";
-    resultDiv.innerHTML = "";
-    rankingSection.style.display = "none";
-    quizTitle.textContent = "";
-    stopTimer();
-    timeDisplay.textContent = "00:00";
-  }
-
-  function sendFormspreeResult(score, total, quizTitleStr, timeInSeconds) {
-    const data = {
-      name: studentName,
-      mobile: studentMobile,
-      quiz: quizTitleStr,
-      score: `${score} / ${total}`,
-      time: `${Math.floor(timeInSeconds/60)}:${(timeInSeconds%60).toString().padStart(2,'0')}`
-    };
-    fetch('https://formspree.io/f/xrbkjvky', {
-      method: "POST",
-      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name: data.name,
-        mobile: data.mobile,
-        quiz: data.quiz,
-        score: data.score,
-        time: data.time,
-        message: `Quiz: ${data.quiz}\nName: ${data.name}\nMobile: ${data.mobile}\nScore: ${data.score}\nTime: ${data.time}`
-      })
-    }).catch(error => console.log('Formspree error:', error));
-  }
-
-  // Event listeners
-  classSelect.onchange = populateSubjectDropdown;
-  subjectSelect.onchange = populateChapterDropdown;
-  chapterSelect.onchange = showQuiz;
-
-  // Initialize when everything is loaded
-  function initializeQuiz() {
-    console.log("Initializing quiz...");
-    console.log("Quiz data type:", typeof window.quizData);
-    console.log("Quiz data keys:", window.quizData ? Object.keys(window.quizData) : 'undefined');
-    
-    populateClassDropdown();
-    dropdownsDiv.style.display = "none";
-    quizArea.style.display = "none";
-  }
-
-  // Multiple initialization attempts
-  window.addEventListener('load', function() {
-    setTimeout(initializeQuiz, 100);
+    if (correctLabel) correctLabel.classList.add('correct');
+    if (selected && selected.value === q.answer) score++;
+    if (wrongLabel) wrongLabel.classList.add('wrong');
   });
   
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(initializeQuiz, 200);
-  });
+  const currentResult = saveQuizResult(score, currentQuiz.questions.length, secondsElapsed);
   
-  // Fallback initialization
-  setTimeout(initializeQuiz, 1000);
+  resultDiv.innerHTML = `
+    Your score: ${score} out of ${currentQuiz.questions.length}
+    <br>
+    Time taken: ${Math.floor(secondsElapsed/60)}:${(secondsElapsed%60).toString().padStart(2,'0')}
+    <br>
+    <button type="button" class="btn" id="tryAnotherBtn" style="margin-top:18px;">Try Another Quiz</button>
+  `;
+  
+  displayRankings(currentResult);
+  sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title, secondsElapsed);
+  document.getElementById('tryAnotherBtn').onclick = tryAnotherQuiz;
+}
+
+function tryAnotherQuiz() {
+  chapterSelect.value = "";
+  quizArea.style.display = "none";
+  quizForm.innerHTML = "";
+  resultDiv.innerHTML = "";
+  rankingSection.style.display = "none";
+  quizTitle.textContent = "";
+  stopTimer();
+  timeDisplay.textContent = "00:00";
+}
+
+function sendFormspreeResult(score, total, quizTitleStr, timeInSeconds) {
+  const data = {
+    name: currentStudentName,
+    mobile: currentStudentMobile,
+    quiz: quizTitleStr,
+    score: `${score} / ${total}`,
+    time: `${Math.floor(timeInSeconds/60)}:${(timeInSeconds%60).toString().padStart(2,'0')}`
+  };
+  
+  fetch('https://formspree.io/f/xrbkjvky', {
+    method: "POST",
+    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: data.name,
+      mobile: data.mobile,
+      quiz: data.quiz,
+      score: data.score,
+      time: data.time,
+      message: `Quiz: ${data.quiz}\nName: ${data.name}\nMobile: ${data.mobile}\nScore: ${data.score}\nTime: ${data.time}`
+    })
+  }).catch(error => console.log('Formspree error:', error));
+}
+
+// Event listeners
+classSelect.onchange = populateSubjectDropdown;
+subjectSelect.onchange = populateChapterDropdown;
+chapterSelect.onchange = showQuiz;
+
+// Initialize
+function initializeQuiz() {
+  console.log("Initializing quiz...");
+  console.log("Quiz data available:", typeof window.quizData !== 'undefined');
+  
+  populateClassDropdown();
+  dropdownsDiv.style.display = "none";
+  quizArea.style.display = "none";
+}
+
+// Multiple initialization attempts for reliability
+window.addEventListener('load', () => setTimeout(initializeQuiz, 100));
+document.addEventListener('DOMContentLoaded', () => setTimeout(initializeQuiz, 200));
+setTimeout(initializeQuiz, 1000);
 </script>
 </body>
 </html>
