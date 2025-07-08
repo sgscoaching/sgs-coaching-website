@@ -222,9 +222,19 @@
       <select id="chapterSelect"><option value="">Select Quiz</option></select>
     </div>
     <div id="quizArea" style="display:none">
-      <h2 id="quizTitle"></h2>
+      <div id="quizHeader" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; background: #f8fbff; padding: 15px; border-radius: 12px; border-left: 5px solid #3656a7;">
+        <h2 id="quizTitle" style="margin: 0; color: #203864;"></h2>
+        <div id="timer" style="font-size: 1.2rem; font-weight: bold; color: #3656a7; background: #fff; padding: 8px 15px; border-radius: 8px; box-shadow: 0 2px 8px #20386410;">
+          <span id="timeDisplay">00:00</span>
+        </div>
+      </div>
       <form id="quizForm"></form>
       <div id="result"></div>
+      <div id="rankingSection" style="display:none; margin-top: 25px; background: #f8fbff; padding: 20px; border-radius: 12px; border-left: 5px solid #3656a7;">
+        <h3 style="color: #203864; margin-bottom: 15px;">🏆 Quiz Rankings</h3>
+        <div id="userRank" style="background: #fff; padding: 12px; border-radius: 8px; margin-bottom: 15px; border: 2px solid #3656a7;"></div>
+        <div id="topRankers"></div>
+      </div>
     </div>
   </div>
 <script src="script.js"></script>
@@ -234,6 +244,9 @@
   const infoError = document.getElementById('infoError');
   const dropdownsDiv = document.querySelector('.dropdowns');
   let studentName = "", studentMobile = "";
+  let quizStartTime = null;
+  let quizTimer = null;
+  let secondsElapsed = 0;
 
   infoForm.onsubmit = function(e) {
     e.preventDefault();
