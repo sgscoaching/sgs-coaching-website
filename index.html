@@ -39,6 +39,7 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 1rem 0;
+            padding-top: env(safe-area-inset-top, 20px);
             box-shadow: 0 2px 20px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
@@ -671,6 +672,9 @@
 
             .container {
                 padding: 0 1rem;
+            }
+            .hero {
+        padding-top: 80px; /* New line to add space below nav */
             }
         }
 
