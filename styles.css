@@ -1,4 +1,4 @@
- /* Existing styles remain, adding quiz-specific styles */
+/* Existing styles remain, adding quiz-specific styles */
 .quiz-selector {
     display: flex;
     justify-content: center;
@@ -80,44 +80,25 @@
     font-size: 1em;
     color: #e74c3c;
 }
-/* Add or modify these styles in your existing <style> tag */
-.course {
-    max-width: 100%;
-    background: #e9f2fb;
-    box-shadow: 0 2px 8px #dde7f3;
-    border-radius: 12px;
-    padding: 24px 16px;
-    margin: 12px 0;
-    word-wrap: break-word; /* Ensures text wraps instead of overflowing */
-    overflow: auto; /* Adds scroll if content exceeds height */
-    max-height: 250px; /* Optional: Limits height with scroll */
-}
-
-.course h3 {
-    color: #2d8cf0;
-    margin-top: 0;
-}
-
-.course p {
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
+/* Target only the course boxes and list for mobile responsiveness */
 .course-list {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    flex-wrap: wrap;
-    padding: 0 10px; /* Ensures padding on sides */
+  gap: 20px; /* Reduce gap for smaller screens */
 }
 
-/* Ensure responsiveness */
+.course {
+  max-width: 100%; /* Allow full width on small screens */
+  width: 280px; /* Flexible base width */
+  margin: 10px 0; /* Consistent spacing */
+}
+
 @media (max-width: 768px) {
-    .course {
-        width: 100%; /* Full width on small screens */
-        max-height: none; /* Remove height limit on small screens */
-    }
-    .course-list {
-        gap: 20px;
-    }
+  .course {
+    width: 100%; /* Full width on Android screens */
+    max-width: 100%; /* Override any fixed width */
+    padding: 16px; /* Slightly reduced padding for fit */
+  }
+
+  .course-list {
+    gap: 15px; /* Further reduce gap on small screens */
+  }
 }

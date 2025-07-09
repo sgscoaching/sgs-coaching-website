@@ -17306,3 +17306,171 @@ Biology: [
 }
 
 };
+
+let currentQuizData = [];
+let studentName = "";
+let studentMobile = "";
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("studentInfoForm");
+    if (form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            studentName = document.getElementById("studentName").value.trim();
+            studentMobile = document.getElementById("studentMobile").value.trim();
+            if (studentName && studentMobile) {
+                form.style.display = "none";
+                document.getElementById("quizArea").style.display = "block";
+                loadQuizOptions();
+            } else {
+                alert("Please fill in both name and mobile number.");
+            }
+        });
+    }
+
+    const submitBtn = document.getElementById("submitBtn");
+    if (submitBtn) {
+        submitBtn.addEventListener("click", handleSubmit);
+    }
+
+    const tryAnotherBtn = document.getElementById("tryAnotherBtn");
+    if (tryAnotherBtn) {
+        tryAnotherBtn.addEventListener("click", handleTryAnother);
+    }
+});
+
+function loadQuizOptions() {
+    const classSelect = document.getElementById("classSelect");
+    if (classSelect) {
+        classSelect.innerHTML = '<option value="">Select Class</option>';
+        for (let classNum in window.quizData) {
+            const option = document.createElement("option");
+            option.value = classNum;
+            option.text = `Class ${classNum}`;
+            classSelect.appendChild(option);
+        }
+        classSelect.addEventListener("change", loadSubjects);
+        loadSubjects();
+    }
+}
+
+function loadSubjects() {
+    const classSelect = document.getElementById("classSelect");
+    const subjectSelect = document.getElementById("subjectSelect");
+    if (classSelect && subjectSelect) {
+        subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+        if (classSelect.value) {
+            const subjects = window.quizData[classSelect.value];
+            for (let subject in subjects) {
+                const option = document.createElement("option");
+                option.value = subject;
+                option.text = subject.charAt(0).toUpperCase() + subject.slice(1);
+                subjectSelect.appendChild(option);
+            }
+            subjectSelect.addEventListener("change", loadChapters);
+            loadChapters();
+        }
+    }
+}
+
+function loadChapters() {
+    const classSelect = document.getElementById("classSelect");
+    const subjectSelect = document.getElementById("subjectSelect");
+    const chapterSelect = document.getElementById("chapterSelect");
+    if (classSelect && subjectSelect && chapterSelect) {
+        chapterSelect.innerHTML = '<option value="">Select Quiz</option>';
+        if (classSelect.value && subjectSelect.value) {
+            const quizzes = window.quizData[classSelect.value][subjectSelect.value];
+            quizzes.forEach((quiz, index) => {
+                const option = document.createElement("option");
+                option.value = index;
+                option.text = quiz.title;
+                chapterSelect.appendChild(option);
+            });
+            chapterSelect.addEventListener("change", loadQuiz);
+            loadQuiz();
+        }
+    }
+}
+
+function loadQuiz() {
+    const classSelect = document.getElementById("classSelect");
+    const subjectSelect = document.getElementById("subjectSelect");
+    const chapterSelect = document.getElementById("chapterSelect");
+    const quizForm = document.getElementById("quizForm");
+    if (classSelect && subjectSelect && chapterSelect && quizForm) {
+        quizForm.innerHTML = "";
+        quizForm.style.display = "block";
+        document.getElementById("submitBtn").style.display = "block";
+        if (classSelect.value && subjectSelect.value && chapterSelect.value) {
+            currentQuizData = window.quizData[classSelect.value][subjectSelect.value][chapterSelect.value].questions;
+            if (currentQuizData && currentQuizData.length > 0) {
+                currentQuizData.forEach((item, index) => {
+                    const div = document.createElement("div");
+                    div.innerHTML = `<p>${item.q}</p>`;
+                    item.options.forEach(option => {
+                        div.innerHTML += `<label><input type="radio" name="q${index}" value="${option}"> ${option}</label><br>`;
+                    });
+                    quizForm.appendChild(div);
+                });
+            } else {
+                quizForm.innerHTML = "<p>No questions available for this quiz.</p>";
+            }
+        } else {
+            quizForm.innerHTML = "<p>Please select Class, Subject, and Quiz.</p>";
+        }
+    }
+}
+
+function handleSubmit(e) {
+    e.preventDefault();
+    let score = 0;
+    const totalQuestions = currentQuizData.length;
+    const startTime = Date.now();
+
+    currentQuizData.forEach((item, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selected && selected.value === item.answer) {
+            score++;
+        }
+    });
+
+    const accuracy = (score / totalQuestions) * 100;
+    const submissionTime = Date.now() - startTime;
+    const quizTitle = window.quizData[document.getElementById("classSelect").value][document.getElementById("subjectSelect").value][document.getElementById("chapterSelect").value].title;
+
+    const submission = {
+        name: studentName,
+        mobile: studentMobile,
+        marks: score,
+        accuracy: accuracy.toFixed(2),
+        time: Date.now(),
+        duration: submissionTime,
+        quiz: quizTitle,
+        totalQuestions: totalQuestions
+    };
+
+    let submissions = JSON.parse(localStorage.getItem('quizSubmissions')) || [];
+    submissions.push(submission);
+    localStorage.setItem('quizSubmissions', JSON.stringify(submissions));
+
+    document.getElementById("quizForm").style.display = "none";
+    document.getElementById("submitBtn").style.display = "none";
+    document.getElementById("tryAnotherBtn").style.display = "block";
+    document.getElementById("result").style.display = "block";
+}
+
+function handleTryAnother() {
+    document.getElementById("studentInfoForm").reset();
+    document.getElementById("quizForm").style.display = "none";
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("submitBtn").style.display = "none";
+    document.getElementById("tryAnotherBtn").style.display = "none";
+    document.getElementById("quizArea").style.display = "none";
+    document.getElementById("result").style.display = "none";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("classSelect").value = "";
+    document.getElementById("subjectSelect").value = "";
+    document.getElementById("chapterSelect").value = "";
+    loadQuizOptions();
+}
