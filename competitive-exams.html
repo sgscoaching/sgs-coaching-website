@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGS Coaching | Competitive Exam Mock Tests</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Competitive Exam Specific Styles */
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #f59e0b;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-section img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .back-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.8));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Subject Grid */
+        .subjects-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .subject-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: var(--secondary-color);
+        }
+
+        .subject-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .subject-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .subject-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .difficulty-buttons {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .difficulty-btn {
+            flex: 1;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .difficulty-btn.easy {
+            border-color: var(--success-color);
+            color: var(--success-color);
+        }
+
+        .difficulty-btn.moderate {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .difficulty-btn.hard {
+            border-color: var(--danger-color);
+            color: var(--danger-color);
+        }
+
+        .difficulty-btn:hover, .difficulty-btn.active {
+            color: white;
+        }
+
+        .difficulty-btn.easy:hover, .difficulty-btn.easy.active {
+            background: var(--success-color);
+        }
+
+        .difficulty-btn.moderate:hover, .difficulty-btn.moderate.active {
+            background: var(--accent-color);
+        }
+
+        .difficulty-btn.hard:hover, .difficulty-btn.hard.active {
+            background: var(--danger-color);
+        }
+
+        .start-test-btn {
+            width: 100%;
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .start-test-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .start-test-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .subjects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .difficulty-buttons {
+                flex-direction: column;
+            }
+        }
+
+        /* Test Area Styles */
+        .test-area {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .test-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .timer {
+            background: var(--danger-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .question-counter {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .question-area {
+            margin-bottom: 2rem;
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .option {
+            background: #f8fafc;
+            border: 2px solid #e5e7eb;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .option:hover {
+            border-color: var(--secondary-color);
+            background: #eff6ff;
+        }
+
+        .option.selected {
+            border-color: var(--primary-color);
+            background: #dbeafe;
+        }
+
+        .test-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .test-btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .prev-btn {
+            background: #6b7280;
+            color: white;
+        }
+
+        .next-btn, .submit-btn {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .test-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .test-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Results Styles */
+        .results-area {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .score-display {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .performance-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .detail-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .detail-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="Logo.png" alt="SGS Logo">
+                    <div>
+                        <h2 style="margin: 0; color: var(--primary-color);">SGS Coaching</h2>
+                        <p style="margin: 0; color: #6b7280;">Mock Test Portal</p>
+                    </div>
+                </div>
+                <a href="index.html" class="back-btn">🏠 Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🎯 Competitive Exam Mock Tests</h1>
+            <p>Professional mock tests designed to simulate real exam conditions. Practice with our comprehensive question bank and track your performance with detailed analytics.</p>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your Subject</h2>
+                <p>Select from our comprehensive range of competitive exam subjects</p>
+            </div>
+
+            <div class="subjects-grid">
+                <!-- Quantitative Aptitude -->
+                <div class="subject-card" data-subject="quant">
+                    <span class="subject-icon">🔢</span>
+                    <h3>Quantitative Aptitude</h3>
+                    <p>Master arithmetic, algebra, geometry, and data interpretation</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">20</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Minutes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Topics</div>
+                        </div>
+                    </div>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-difficulty="easy">Easy</button>
+                        <button class="difficulty-btn moderate" data-difficulty="moderate">Moderate</button>
+                        <button class="difficulty-btn hard" data-difficulty="hard">Hard</button>
+                    </div>
+                    <button class="start-test-btn" disabled>Select Difficulty Level</button>
+                </div>
+
+                <!-- Reasoning -->
+                <div class="subject-card" data-subject="reasoning">
+                    <span class="subject-icon">🧠</span>
+                    <h3>Logical Reasoning</h3>
+                    <p>Enhance your analytical and logical thinking skills</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Minutes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Topics</div>
+                        </div>
+                    </div>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-difficulty="easy">Easy</button>
+                        <button class="difficulty-btn moderate" data-difficulty="moderate">Moderate</button>
+                        <button class="difficulty-btn hard" data-difficulty="hard">Hard</button>
+                    </div>
+                    <button class="start-test-btn" disabled>Select Difficulty Level</button>
+                </div>
+
+                <!-- English -->
+                <div class="subject-card" data-subject="english">
+                    <span class="subject-icon">📚</span>
+                    <h3>English Language</h3>
+                    <p>Improve grammar, vocabulary, and comprehension</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Minutes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Topics</div>
+                        </div>
+                    </div>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-difficulty="easy">Easy</button>
+                        <button class="difficulty-btn moderate" data-difficulty="moderate">Moderate</button>
+                        <button class="difficulty-btn hard" data-difficulty="hard">Hard</button>
+                    </div>
+                    <button class="start-test-btn" disabled>Select Difficulty Level</button>
+                </div>
+
+                <!-- GK/GS -->
+                <div class="subject-card" data-subject="gk">
+                    <span class="subject-icon">🌍</span>
+                    <h3>General Knowledge & Studies</h3>
+                    <p>History, Geography, Science, and Current Affairs</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Minutes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10</div>
+                            <div class="stat-label">Topics</div>
+                        </div>
+                    </div>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-difficulty="easy">Easy</button>
+                        <button class="difficulty-btn moderate" data-difficulty="moderate">Moderate</button>
+                        <button class="difficulty-btn hard" data-difficulty="hard">Hard</button>
+                    </div>
+                    <button class="start-test-btn" disabled>Select Difficulty Level</button>
+                </div>
+
+                <!-- Computer -->
+                <div class="subject-card" data-subject="computer">
+                    <span class="subject-icon">💻</span>
+                    <h3>Basic Computer</h3>
+                    <p>Fundamentals, MS Office, Internet, and basic programming</p>
+                    <div class="subject-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">Questions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Minutes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">Mocks</div>
+                        </div>
+                    </div>
+                    <div class="difficulty-buttons">
+                        <button class="difficulty-btn easy" data-difficulty="easy">Easy (5 Tests)</button>
+                        <button class="difficulty-btn moderate" data-difficulty="moderate">Moderate (5 Tests)</button>
+                        <button class="difficulty-btn hard" data-difficulty="hard">Hard (5 Tests)</button>
+                    </div>
+                    <button class="start-test-btn" disabled>Select Difficulty Level</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Area (Hidden by default) -->
+    <section class="test-area" id="testArea">
+        <div class="container">
+            <div class="test-header">
+                <div class="question-counter" id="questionCounter">Question 1 of 25</div>
+                <div class="timer" id="timer">30:00</div>
+            </div>
+            
+            <div class="question-area">
+                <div class="question-text" id="questionText">Loading question...</div>
+                <div class="options" id="optionsContainer">
+                    <!-- Options will be populated dynamically -->
+                </div>
+            </div>
+            
+            <div class="test-controls">
+                <button class="test-btn prev-btn" id="prevBtn" disabled>← Previous</button>
+                <button class="test-btn next-btn" id="nextBtn">Next →</button>
+                <button class="test-btn submit-btn" id="submitBtn" style="display: none;">Submit Test</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Area (Hidden by default) -->
+    <section class="results-area" id="resultsArea">
+        <div class="container">
+            <h2>🎉 Test Completed!</h2>
+            <div class="score-display" id="scoreDisplay">0%</div>
+            <div class="performance-details" id="performanceDetails">
+                <!-- Performance details will be populated -->
+            </div>
+            <button class="start-test-btn" onclick="goHome()">Back to Tests</button>
+        </div>
+    </section>
+
+    <script src="competitive-exam-data.js"></script>
+    <script>
+        // Global variables
+        let currentTest = null;
+        let currentQuestionIndex = 0;
+        let selectedAnswers = {};
+        let timeRemaining = 1800; // 30 minutes in seconds
+        let timer = null;
+        let selectedSubject = '';
+        let selectedDifficulty = '';
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePage();
+        });
+
+        function initializePage() {
+            // Add event listeners for difficulty buttons
+            document.querySelectorAll('.difficulty-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const subjectCard = this.closest('.subject-card');
+                    const subject = subjectCard.dataset.subject;
+                    const difficulty = this.dataset.difficulty;
+                    
+                    // Remove active class from all buttons in this card
+                    subjectCard.querySelectorAll('.difficulty-btn').forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Update button text and enable start button
+                    const startBtn = subjectCard.querySelector('.start-test-btn');
+                    startBtn.disabled = false;
+                    startBtn.textContent = `Start ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} Test`;
+                    
+                    // Store selection
+                    selectedSubject = subject;
+                    selectedDifficulty = difficulty;
+                    
+                    // Add click event to start button
+                    startBtn.onclick = () => startTest(subject, difficulty);
+                });
+            });
+        }
+
+        function startTest(subject, difficulty) {
+            // Get student name
+            const studentName = prompt("Enter your full name for the test record:");
+            if (!studentName || studentName.trim() === '') {
+                alert("Name is required to start the test!");
+                return;
+            }
+            
+            localStorage.setItem('currentStudentName', studentName.trim());
+            
+            // Load test data
+            currentTest = getTestData(subject, difficulty);
+            if (!currentTest) {
+                alert("Test data not available for this selection!");
+                return;
+            }
+            
+            // Hide subjects section and show test area
+            document.querySelector('.subjects-section').style.display = 'none';
+            document.getElementById('testArea').style.display = 'block';
+            
+            // Reset test state
+            currentQuestionIndex = 0;
+            selectedAnswers = {};
+            timeRemaining = 1800; // 30 minutes
+            
+            // Start timer
+            startTimer();
+            
+            // Load first question
+            loadQuestion();
+        }
+
+        function getTestData(subject, difficulty) {
+            // This function will get data from our separate question files
+            if (window.competitiveExamData && window.competitiveExamData[subject] && window.competitiveExamData[subject][difficulty]) {
+                return window.competitiveExamData[subject][difficulty];
+            }
+            return null;
+        }
+
+        function startTimer() {
+            timer = setInterval(() => {
+                timeRemaining--;
+                updateTimerDisplay();
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timer);
+                    submitTest();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            document.getElementById('timer').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        function loadQuestion() {
+            if (!currentTest || currentQuestionIndex >= currentTest.questions.length) {
+                return;
+            }
+            
+            const question = currentTest.questions[currentQuestionIndex];
+            
+            // Update question counter
+            document.getElementById('questionCounter').textContent = 
+                `Question ${currentQuestionIndex + 1} of ${currentTest.questions.length}`;
+            
+            // Update question text
+            document.getElementById('questionText').textContent = question.question;
+            
+            // Update options
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+                optionDiv.textContent = `${String.fromCharCode(65 + index)}. ${option}`;
+                optionDiv.addEventListener('click', () => selectOption(index));
+                
+                // Check if this option was previously selected
+                if (selectedAnswers[currentQuestionIndex] === index) {
+                    optionDiv.classList.add('selected');
+                }
+                
+                optionsContainer.appendChild(optionDiv);
+            });
+            
+            // Update navigation buttons
+            updateNavigationButtons();
+        }
+
+        function selectOption(optionIndex) {
+            // Remove selected class from all options
+            document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+            
+            // Add selected class to clicked option
+            document.querySelectorAll('.option')[optionIndex].classList.add('selected');
+            
+            // Store selection
+            selectedAnswers[currentQuestionIndex] = optionIndex;
+        }
+
+        function updateNavigationButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Previous button
+            prevBtn.disabled = currentQuestionIndex === 0;
+            
+            // Next/Submit button
+            if (currentQuestionIndex === currentTest.questions.length - 1) {
+                nextBtn.style.display = 'none';
+                submitBtn.style.display = 'inline-block';
+            } else {
+                nextBtn.style.display = 'inline-block';
+                submitBtn.style.display = 'none';
+            }
+        }
+
+        // Navigation functions
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion();
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentQuestionIndex < currentTest.questions.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            }
+        });
+
+        document.getElementById('submitBtn').addEventListener('click', submitTest);
+
+        function submitTest() {
+            clearInterval(timer);
+            
+            // Calculate score
+            let correctAnswers = 0;
+            currentTest.questions.forEach((question, index) => {
+                if (selectedAnswers[index] === question.correctAnswer) {
+                    correctAnswers++;
+                }
+            });
+            
+            const percentage = Math.round((correctAnswers / currentTest.questions.length) * 100);
+            const timeTaken = 1800 - timeRemaining;
+            
+            // Save result to ranking system
+            saveTestResult(percentage, timeTaken);
+            
+            // Show results
+            showResults(correctAnswers, percentage, timeTaken);
+        }
+
+        function saveTestResult(percentage, timeTaken) {
+            const studentName = localStorage.getItem('currentStudentName');
+            
+            // Save to competitive exam results
+            const competitiveResults = JSON.parse(localStorage.getItem('competitiveExamResults') || '[]');
+            competitiveResults.push({
+                name: studentName,
+                subject: selectedSubject,
+                difficulty: selectedDifficulty,
+                score: percentage,
+                timeTaken: timeTaken,
+                totalQuestions: currentTest.questions.length,
+                correctAnswers: Math.round((percentage / 100) * currentTest.questions.length),
+                date: new Date().toISOString()
+            });
+            
+            localStorage.setItem('competitiveExamResults', JSON.stringify(competitiveResults));
+            
+            // Update main ranking system if available
+            if (typeof window.handleQuizSubmission === 'function') {
+                window.handleQuizSubmission(
+                    studentName,
+                    Math.round((percentage / 100) * currentTest.questions.length),
+                    currentTest.questions.length,
+                    `${selectedSubject.toUpperCase()} - ${selectedDifficulty.charAt(0).toUpperCase() + selectedDifficulty.slice(1)}`,
+                    'Competitive Exam',
+                    selectedSubject.toUpperCase()
+                );
+            }
+        }
+
+        function showResults(correctAnswers, percentage, timeTaken) {
+            // Hide test area and show results
+            document.getElementById('testArea').style.display = 'none';
+            document.getElementById('resultsArea').style.display = 'block';
+            
+            // Update score display
+            document.getElementById('scoreDisplay').textContent = `${percentage}%`;
+            
+            // Update performance details
+            const performanceDetails = document.getElementById('performanceDetails');
+            performanceDetails.innerHTML = `
+                <div class="detail-card">
+                    <h4>Correct Answers</h4>
+                    <div class="detail-value">${correctAnswers}</div>
+                </div>
+                <div class="detail-card">
+                    <h4>Total Questions</h4>
+                    <div class="detail-value">${currentTest.questions.length}</div>
+                </div>
+                <div class="detail-card">
+                    <h4>Time Taken</h4>
+                    <div class="detail-value">${Math.floor(timeTaken / 60)}:${(timeTaken % 60).toString().padStart(2, '0')}</div>
+                </div>
+                <div class="detail-card">
+                    <h4>Accuracy</h4>
+                    <div class="detail-value">${percentage}%</div>
+                </div>
+            `;
+            
+            // Show celebration message for good scores
+            if (percentage >= 80) {
+                setTimeout(() => {
+                    alert(`🎉 Excellent performance! You scored ${percentage}%!`);
+                }, 500);
+            } else if (percentage >= 60) {
+                setTimeout(() => {
+                    alert(`👍 Good job! You scored ${percentage}%. Keep practicing!`);
+                }, 500);
+            }
+        }
+
+        function goHome() {
+            // Reset everything and go back to subject selection
+            document.getElementById('resultsArea').style.display = 'none';
+            document.querySelector('.subjects-section').style.display = 'block';
+            
+            // Reset all difficulty selections
+            document.querySelectorAll('.difficulty-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.start-test-btn').forEach(btn => {
+                btn.disabled = true;
+                btn.textContent = 'Select Difficulty Level';
+            });
+        }
+    </script>
+</body>
+</html>

@@ -73,7 +73,8 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#courses">Courses</a></li>
-                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="quizzes.html">Class Quizzes</a></li>
+                    <li><a href="competitive-exams.html">Mock Tests</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -136,27 +137,54 @@
             </div>
         </section>
 
-        <section id="contact" style="background-color: #ffffff;">
-            <h2>Contact Us</h2>
-            <div class="address-box" style="max-width: 600px; margin: 0 auto; padding: 20px; border-radius: 10px;">
-                <h3 style="color: #2d8cf0;">SGS Coaching Institute</h3>
-                <p style="font-weight: bold;"><span style="color: #1456a0;">Address: Bajwa Colony, back side of Gurudwara, DMW Colony, Patiala, Punjab</span></p>
-                <p><strong>Contact Numbers:</strong> 8580436681, 6280083892</p>
+        <!-- 📞 CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>📞 Get In Touch</h2>
+                <p>Ready to start your learning journey? Contact us today!</p>
             </div>
-            <p style="margin: 24px 0;"><strong>Join Our WhatsApp Group:</strong></p>
-            <img src="whatsapp-qr.png" alt="WhatsApp Group QR Code" class="qr-code"
-                onerror="this.onerror=null; this.src='https://via.placeholder.com/150?text=WhatsApp+QR+Not+Found'; this.alt='WhatsApp QR Placeholder';"
-                width="150" height="150">
-            <form id="contact-form" action="https://formspree.io/f/mpwrkdba" method="POST" style="max-width: 600px; margin: 32px auto; display: flex; flex-direction: column; gap: 16px;">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required style="padding: 8px; font-size: 1.1em;">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required style="padding: 8px; font-size: 1.1em;">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required style="padding: 8px; font-size: 1.1em; height: 90px;"></textarea>
-                <button type="submit" class="btn" style="padding: 12px; font-size: 1.2em; border: none;">Send Inquiry</button>
-            </form>
-        </section>
+            <div class="contact-grid">
+                <div class="contact-item fade-in">
+                    <span class="contact-icon">📍</span>
+                    <h3>Our Location</h3>
+                    <p>Bajwa Colony, back side of Gurudwara<br>DMW Colony, Patiala, Punjab</p>
+                    <div style="margin-top: 15px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d76.4235614336903!3d30.352556431666994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDIxJzA5LjIiTiA3NsKwMjUnMjQuOCJF!5e0!3m2!1sen!2sin!4v1635789456789!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="contact-item fade-in">
+                    <span class="contact-icon">📱</span>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:8580436681" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">📞 8580436681</a></p>
+                    <p><a href="tel:6280083892" style="color: white; text-decoration: none; display: block; margin-bottom: 8px;">📞 6280083892</a></p>
+                    <p><a href="mailto:sgscoaching0202@gmail.com" style="color: white; text-decoration: none; display: block;">📧 sgscoaching0202@gmail.com</a></p>
+                </div>
+                <div class="contact-item fade-in">
+                    <span class="contact-icon">⏰</span>
+                    <h3>Class Timings</h3>
+                    <p>Morning: 6:00 AM - 11:00 AM<br>Evening: 4:00 PM - 8:00 PM</p>
+                    <div style="margin-top: 15px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 8px;">
+                        <p style="margin: 0; font-size: 0.9rem;">💡 <strong>Online Portal:</strong> 24/7 Access</p>
+                    </div>
+                </div>
+                <div class="contact-item fade-in">
+                    <span class="contact-icon">🏆</span>
+                    <h3>Competitive Exams</h3>
+                    <p>Professional Mock Tests<br>Real Exam Environment</p>
+                    <a href="competitive-exams.html" class="btn btn-primary" style="margin-top: 1rem;">🎯 Mock Tests</a>
+                    <a href="quizzes.html" class="btn btn-secondary" style="margin-top: 0.5rem;">📚 Class Quizzes</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <footer style="background-color: #2c3e50; color: #ffffff; padding: 30px; text-align: center;">
             <p>© 2025 SGS Coaching Institute. All rights reserved.</p>
