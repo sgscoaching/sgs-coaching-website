@@ -1,6 +1,3782 @@
 // script.js
 
 window.quizData = {
+  1: {
+     english: [
+      {
+        title: "Unit 1: My Family and Me",
+        questions: [
+          { q: "What do your hands do in the poem 'Two Little Hands'?", options: ["Clap", "Jump", "Run", "Sing"], answer: "Clap" },
+          { q: "What word is used to say hello in 'Greetings'?", options: ["Goodbye", "Hello", "Thank you", "Sorry"], answer: "Hello" },
+          { q: "How many little hands are mentioned in the poem?", options: ["One", "Two", "Three", "Four"], answer: "Two" },
+          { q: "What can you do with your legs according to 'Two Little Hands'?", options: ["Tap", "Fly", "Swim", "Draw"], answer: "Tap" },
+          { q: "Which greeting word means you are leaving?", options: ["Hello", "Goodbye", "Please", "Yes"], answer: "Goodbye" }
+        ]
+      },
+      {
+        title: "Unit 2: Life Around Us",
+        questions: [
+          { q: "What do you see in 'Picture Time'?", options: ["Animals", "Books", "Cars", "Houses"], answer: "Animals" },
+          { q: "Who takes the caps in 'The Cap-seller and the Monkeys'?", options: ["Birds", "Monkeys", "Dogs", "Cats"], answer: "Monkeys" },
+          { q: "What place is described in 'A Farm'?", options: ["City", "Farm", "School", "Park"], answer: "Farm" },
+          { q: "What do monkeys do with the caps in the story?", options: ["Wear them", "Eat them", "Throw them", "Hide them"], answer: "Wear them" },
+          { q: "What animals might you find on a farm?", options: ["Tigers", "Cows", "Lions", "Elephants"], answer: "Cows" }
+        ]
+      },
+      {
+        title: "Unit 3: Food",
+        questions: [
+          { q: "What can you draw in 'Fun with Pictures'?", options: ["Food", "Stars", "Trees", "Cars"], answer: "Food" },
+          { q: "What do we eat according to 'The Food We Eat'?", options: ["Rocks", "Fruits", "Sand", "Water"], answer: "Fruits" },
+          { q: "Which food is healthy in 'The Food We Eat'?", options: ["Candy", "Vegetables", "Chips", "Soda"], answer: "Vegetables" },
+          { q: "What can you color in 'Fun with Pictures'?", options: ["Sky", "Food items", "Books", "Shoes"], answer: "Food items" },
+          { q: "Which food grows on plants?", options: ["Bread", "Rice", "Cake", "Ice cream"], answer: "Rice" }
+        ]
+      },
+      {
+        title: "Unit 4: Seasons",
+        questions: [
+          { q: "How many seasons are mentioned in 'The Four Seasons'?", options: ["Two", "Four", "Six", "Three"], answer: "Four" },
+          { q: "What color is Anandi’s rainbow in 'Anandi’s Rainbow'?", options: ["One", "Many", "Two", "None"], answer: "Many" },
+          { q: "Which season has snow according to 'The Four Seasons'?", options: ["Summer", "Winter", "Spring", "Autumn"], answer: "Winter" },
+          { q: "What do you see in the sky in 'Anandi’s Rainbow'?", options: ["Stars", "Rainbow", "Moon", "Clouds"], answer: "Rainbow" },
+          { q: "Which season is hot according to 'The Four Seasons'?", options: ["Winter", "Summer", "Spring", "Autumn"], answer: "Summer" }
+        ]
+      }
+    ],
+   mathematics: [
+      {
+        title: "Chapter 1: Finding the Furry Cat! (Pre-number Concepts)",
+        questions: [
+          { q: "Which group has more items: 2 apples or 1 apple?", options: ["2 apples", "1 apple"], answer: "2 apples" },
+          { q: "If you have 3 toys and give 1 away, how many are left?", options: ["2", "3", "1", "0"], answer: "2" },
+          { q: "Which is more: 4 fingers or 2 fingers?", options: ["4 fingers", "2 fingers"], answer: "4 fingers" },
+          { q: "If you see 1 dog and 2 cats, how many animals are there?", options: ["3", "2", "1", "4"], answer: "3" },
+          { q: "Which has less: 1 book or 3 books?", options: ["1 book", "3 books"], answer: "1 book" },
+          { q: "If you have 2 pencils and add 1 more, how many now?", options: ["3", "2", "1", "4"], answer: "3" },
+          { q: "Which is bigger: a group of 5 or a group of 2?", options: ["5", "2"], answer: "5" },
+          { q: "If you take 1 ball from 3 balls, how many are left?", options: ["2", "3", "1", "0"], answer: "2" },
+          { q: "Which has more: 4 stars or 1 star?", options: ["4 stars", "1 star"], answer: "4 stars" },
+          { q: "If you have 2 friends and 1 leaves, how many stay?", options: ["1", "2", "3", "0"], answer: "1" }
+        ]
+      },
+      {
+        title: "Chapter 2: What is Long? What is Round? (Shapes)",
+        questions: [
+          { q: "Which shape has 3 sides?", image: "images/shape_triangle.png", options: ["Triangle", "Circle", "Square", "Rectangle"], answer: "Triangle" },
+          { q: "What shape is a ball?", image: "images/shape_sphere.png", options: ["Sphere", "Cube", "Square", "Triangle"], answer: "Sphere" },
+          { q: "How many sides does a square have?", image: "images/shape_square.png", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "Which shape has no sides?", image: "images/shape_circle.png", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Circle" },
+          { q: "What shape is a book?", image: "images/shape_rectangle.png", options: ["Rectangle", "Circle", "Triangle", "Sphere"], answer: "Rectangle" },
+          { q: "Which shape has 4 equal sides?", image: "images/shape_square.png", options: ["Square", "Circle", "Triangle", "Rectangle"], answer: "Square" },
+          { q: "What shape is a box?", image: "images/shape_cube.png", options: ["Cube", "Circle", "Triangle", "Rectangle"], answer: "Cube" },
+          { q: "How many corners does a triangle have?", image: "images/shape_triangle.png", options: ["3", "4", "2", "5"], answer: "3" },
+          { q: "Which shape rolls?", image: "images/shape_circle.png", options: ["Circle", "Square", "Triangle", "Cube"], answer: "Circle" },
+          { q: "What shape has 2 long and 2 short sides?", image: "images/shape_rectangle.png", options: ["Rectangle", "Square", "Circle", "Triangle"], answer: "Rectangle" }
+        ]
+      },
+      {
+        title: "Chapter 3: Mango Treat (Numbers 1 to 9)",
+        questions: [
+          { q: "What comes after 5?", options: ["6", "4", "7", "3"], answer: "6" },
+          { q: "How many fingers on one hand?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "Which is the smallest number?", options: ["1", "3", "5", "7"], answer: "1" },
+          { q: "What comes before 7?", options: ["6", "5", "8", "4"], answer: "6" },
+          { q: "How many days in a week?", options: ["7", "5", "6", "8"], answer: "7" },
+          { q: "Which number is bigger: 4 or 2?", options: ["4", "2"], answer: "4" },
+          { q: "What is the last number from 1 to 9?", options: ["9", "8", "7", "6"], answer: "9" },
+          { q: "How many legs does a dog have?", options: ["4", "2", "3", "5"], answer: "4" },
+          { q: "What comes after 3?", options: ["4", "2", "5", "1"], answer: "4" },
+          { q: "What is 1 more than 6?", options: ["7", "5", "8", "6"], answer: "7" }
+        ]
+      },
+      {
+        title: "Chapter 4: Making 10 (Numbers 10 to 20)",
+        questions: [
+          { q: "What comes after 12?", options: ["13", "11", "14", "10"], answer: "13" },
+          { q: "What is 10 + 5?", options: ["15", "14", "16", "13"], answer: "15" },
+          { q: "Which is the smallest number?", options: ["10", "15", "12", "18"], answer: "10" },
+          { q: "What comes before 14?", options: ["13", "12", "15", "11"], answer: "13" },
+          { q: "What is 20 - 5?", options: ["15", "14", "16", "13"], answer: "15" },
+          { q: "How many tens in 17?", options: ["1", "2", "3", "0"], answer: "1" },
+          { q: "What is 10 + 3?", options: ["13", "12", "14", "15"], answer: "13" },
+          { q: "Which number is bigger: 11 or 15?", options: ["15", "11"], answer: "15" },
+          { q: "What is 16 - 6?", options: ["10", "9", "11", "8"], answer: "10" },
+          { q: "What comes after 19?", options: ["20", "18", "21", "17"], answer: "20" }
+        ]
+      },
+      {
+        title: "Chapter 5: How Many? (Addition and Subtraction of Single Digit Numbers)",
+        questions: [
+          { q: "What is 2 + 3?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "What is 4 - 1?", options: ["3", "2", "4", "5"], answer: "3" },
+          { q: "What is 5 + 2?", options: ["7", "6", "8", "4"], answer: "7" },
+          { q: "What is 6 - 3?", options: ["3", "4", "2", "5"], answer: "3" },
+          { q: "What is 1 + 4?", options: ["5", "3", "6", "2"], answer: "5" },
+          { q: "What is 7 - 2?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "What is 3 + 3?", options: ["6", "5", "7", "4"], answer: "6" },
+          { q: "What is 8 - 4?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What is 2 + 4?", options: ["6", "5", "7", "3"], answer: "6" },
+          { q: "What is 5 - 1?", options: ["4", "3", "5", "2"], answer: "4" }
+        ]
+      },
+      {
+        title: "Chapter 6: Vegetable Farm (Addition and Subtraction up to 20)",
+        questions: [
+          { q: "What is 10 + 5?", options: ["15", "14", "16", "13"], answer: "15" },
+          { q: "What is 12 - 3?", options: ["9", "10", "8", "11"], answer: "9" },
+          { q: "What is 7 + 6?", options: ["13", "12", "14", "11"], answer: "13" },
+          { q: "What is 15 - 7?", options: ["8", "9", "7", "10"], answer: "8" },
+          { q: "What is 9 + 4?", options: ["13", "12", "14", "11"], answer: "13" },
+          { q: "What is 18 - 9?", options: ["9", "10", "8", "11"], answer: "9" },
+          { q: "What is 6 + 8?", options: ["14", "13", "15", "12"], answer: "14" },
+          { q: "What is 11 - 4?", options: ["7", "8", "6", "9"], answer: "7" },
+          { q: "What is 13 + 2?", options: ["15", "14", "16", "13"], answer: "15" },
+          { q: "What is 16 - 6?", options: ["10", "9", "11", "8"], answer: "10" }
+        ]
+      },
+      {
+        title: "Chapter 7: Lina’s Family (Measurement)",
+        questions: [
+          { q: "Which tool measures length?", options: ["Ruler", "Clock", "Cup", "Bag"], answer: "Ruler" },
+          { q: "Which is longer: a pen or a book?", options: ["Book", "Pen"], answer: "Book" },
+          { q: "How many centimeters are in 1 meter?", options: ["100", "10", "50", "200"], answer: "100" },
+          { q: "What do we use to measure weight?", options: ["Scale", "Ruler", "Clock", "Cup"], answer: "Scale" },
+          { q: "Which is heavier: a feather or a stone?", options: ["Stone", "Feather"], answer: "Stone" },
+          { q: "What unit measures height?", options: ["Meter", "Hour", "Kilogram", "Liter"], answer: "Meter" },
+          { q: "Which is shorter: 5 cm or 10 cm?", options: ["5 cm", "10 cm"], answer: "5 cm" },
+          { q: "What do we use to measure liquid?", options: ["Cup", "Ruler", "Scale", "Clock"], answer: "Cup" },
+          { q: "Which is a unit of length?", options: ["Centimeter", "Kilogram", "Liter", "Hour"], answer: "Centimeter" },
+          { q: "What is bigger: 1 meter or 50 cm?", options: ["1 meter", "50 cm"], answer: "1 meter" }
+        ]
+      },
+      {
+        title: "Chapter 8: Fun with Numbers (Numbers 21 to 99)",
+        questions: [
+          { q: "What comes after 25?", options: ["26", "24", "27", "23"], answer: "26" },
+          { q: "How many tens in 34?", options: ["3", "4", "2", "1"], answer: "3" },
+          { q: "What is 20 + 5?", options: ["25", "24", "26", "23"], answer: "25" },
+          { q: "What comes before 50?", options: ["49", "48", "51", "47"], answer: "49" },
+          { q: "Which is bigger: 33 or 30?", options: ["33", "30"], answer: "33" },
+          { q: "What is 40 + 3?", options: ["43", "42", "44", "41"], answer: "43" },
+          { q: "How many ones in 27?", options: ["7", "2", "3", "4"], answer: "7" },
+          { q: "What is 60 - 5?", options: ["55", "54", "56", "53"], answer: "55" },
+          { q: "What comes after 89?", options: ["90", "88", "91", "87"], answer: "90" },
+          { q: "Which number has 2 tens and 4 ones?", options: ["24", "42", "14", "34"], answer: "24" }
+        ]
+      },
+      {
+        title: "Chapter 9: Utsav (Patterns)",
+        questions: [
+          { q: "What comes next: Red, Blue, Red, __?", image: "images/pattern_redblue.png", options: ["Blue", "Red", "Green", "Yellow"], answer: "Blue" },
+          { q: "What is the next number: 2, 4, 6, __?", options: ["8", "6", "7", "9"], answer: "8" },
+          { q: "Which shape follows: Circle, Square, Circle, __?", image: "images/pattern_circlesquare.png", options: ["Square", "Circle", "Triangle", "Rectangle"], answer: "Square" },
+          { q: "What comes next: A, B, A, __?", image: "images/pattern_abab.png", options: ["B", "A", "C", "D"], answer: "B" },
+          { q: "What is the next color: Red, Yellow, Red, __?", image: "images/pattern_redyellow.png", options: ["Yellow", "Red", "Blue", "Green"], answer: "Yellow" },
+          { q: "What follows: 1, 3, 5, __?", options: ["7", "6", "4", "8"], answer: "7" },
+          { q: "Which pattern is ABAB?", image: "images/pattern_abab.png", options: ["Red, Blue, Red, Blue", "Red, Red, Blue, Blue", "Red, Blue, Green", "Blue, Red, Red"], answer: "Red, Blue, Red, Blue" },
+          { q: "What comes next: Square, Circle, Square, __?", image: "images/pattern_squarecircle.png", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Circle" },
+          { q: "What is the next number: 5, 10, 15, __?", options: ["20", "15", "25", "10"], answer: "20" },
+          { q: "Which is a pattern?", options: ["1, 2, 3, 4", "1, 1, 1, 1", "2, 4, 6, 8", "All"], answer: "All" }
+        ]
+      },
+      {
+        title: "Chapter 10: How do I Spend my Day? (Time)",
+        questions: [
+          { q: "How many days are in a week?", options: ["7", "5", "6", "8"], answer: "7" },
+          { q: "What comes after morning?", image: "images/time_daycycle.png", options: ["Afternoon", "Night", "Evening", "Midnight"], answer: "Afternoon" },
+          { q: "How many hours in a day?", options: ["24", "12", "48", "36"], answer: "24" },
+          { q: "Which is part of a day?", image: "images/time_dayparts.png", options: ["Night", "Week", "Month", "Year"], answer: "Night" },
+          { q: "What do we use to tell time?", image: "images/time_clock.png", options: ["Clock", "Book", "Pen", "Bag"], answer: "Clock" },
+          { q: "Which comes first: day or night?", image: "images/time_daycycle.png", options: ["Day", "Night"], answer: "Day" },
+          { q: "How many minutes in an hour?", options: ["60", "30", "45", "15"], answer: "60" },
+          { q: "What time is it when the sun rises?", image: "images/time_sunrise.png", options: ["Morning", "Night", "Afternoon", "Evening"], answer: "Morning" },
+          { q: "Which is longer: a day or an hour?", options: ["Day", "Hour"], answer: "Day" },
+          { q: "What comes after 1 o’clock?", image: "images/time_clock1.png", options: ["2 o’clock", "12 o’clock", "3 o’clock", "1 o’clock"], answer: "2 o’clock" }
+        ]
+      },
+      {
+        title: "Chapter 11: How Many Times? (Multiplication)",
+        questions: [
+          { q: "What is 2 × 2?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What is 3 × 1?", options: ["3", "2", "4", "5"], answer: "3" },
+          { q: "What is 2 × 3?", options: ["6", "5", "4", "7"], answer: "6" },
+          { q: "How many legs on 2 dogs?", options: ["8", "6", "4", "10"], answer: "8" },
+          { q: "What is 4 × 1?", options: ["4", "3", "5", "2"], answer: "4" },
+          { q: "What is 2 × 4?", options: ["8", "6", "7", "9"], answer: "8" },
+          { q: "What is 3 × 2?", options: ["6", "5", "7", "4"], answer: "6" },
+          { q: "How many wheels on 3 cycles?", options: ["6", "4", "8", "3"], answer: "6" },
+          { q: "What is 1 × 5?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "What is 2 × 5?", options: ["10", "8", "9", "7"], answer: "10" }
+        ]
+      },
+      {
+        title: "Chapter 12: How Much Can We Spend? (Money)",
+        questions: [
+          { q: "What do we use to buy things?", options: ["Money", "Stone", "Paper", "Toy"], answer: "Money" },
+          { q: "How many rupees in 100 paise?", options: ["1", "10", "100", "50"], answer: "1" },
+          { q: "Which is a coin?", image: "images/money_coin.png", options: ["5 rupees", "Book", "Pen", "Bag"], answer: "5 rupees" },
+          { q: "What is 2 rupees + 3 rupees?", options: ["5 rupees", "4 rupees", "6 rupees", "2 rupees"], answer: "5 rupees" },
+          { q: "Which is a note?", image: "images/money_note.png", options: ["10 rupees", "1 paise", "5 paise", "Coin"], answer: "10 rupees" },
+          { q: "How much is 50 paise + 50 paise?", options: ["1 rupee", "2 rupees", "50 paise", "5 rupees"], answer: "1 rupee" },
+          { q: "Which is worth more: 1 rupee or 50 paise?", options: ["1 rupee", "50 paise"], answer: "1 rupee" },
+          { q: "What can you buy with money?", options: ["Food", "Air", "Sun", "Cloud"], answer: "Food" },
+          { q: "How many 25 paise make 1 rupee?", options: ["4", "2", "3", "5"], answer: "4" },
+          { q: "What is 5 rupees - 2 rupees?", options: ["3 rupees", "4 rupees", "2 rupees", "5 rupees"], answer: "3 rupees" }
+        ]
+      },
+      {
+        title: "Chapter 13: So Many Toys (Data Handling)",
+        questions: [
+          { q: "How many colors are in a rainbow?", options: ["7", "5", "6", "8"], answer: "7" },
+          { q: "What do we use to show data?", image: "images/data_chart.png", options: ["Chart", "Pen", "Book", "Bag"], answer: "Chart" },
+          { q: "If 3 toys are red, how many are red?", options: ["3", "2", "4", "5"], answer: "3" },
+          { q: "Which is a way to count things?", image: "images/data_tally.png", options: ["Tally", "Draw", "Sing", "Dance"], answer: "Tally" },
+          { q: "How many sides on 2 triangles?", options: ["6", "4", "3", "9"], answer: "6" },
+          { q: "What shows more or less?", image: "images/data_graph.png", options: ["Graph", "Pen", "Ruler", "Clock"], answer: "Graph" },
+          { q: "If 4 toys are blue, how many are blue?", options: ["4", "3", "5", "2"], answer: "4" },
+          { q: "Which is a data example?", options: ["Names", "Colors", "Numbers", "All"], answer: "All" },
+          { q: "How many wheels on 2 cars?", options: ["8", "6", "4", "10"], answer: "8" },
+          { q: "What helps count toys?", image: "images/data_tally.png", options: ["Tally marks", "Paint", "Paper", "Book"], answer: "Tally marks" }
+        ]
+      }
+    ],
+     hindi: [
+      {
+        title: "अध्याय 1: मीना का परिवार",
+        questions: [
+          { q: "मीना के परिवार में कौन हैं?", options: ["दादा", "शिक्षक", "डॉक्टर", "पुलिस"], answer: "दादा" },
+          { q: "परिवार में माँ क्या करती है?", options: ["खेलती है", "रसोई में काम करती है", "स्कूल जाती है", "सोती है"], answer: "रसोई में काम करती है" },
+          { q: "मीना का भाई क्या करता है?", options: ["पढ़ता है", "नाचता है", "उड़ता है", "खेलता है"], answer: "खेलता है" },
+          { q: "परिवार में सबसे बड़ा कौन हो सकता है?", options: ["दादा", "भाई", "बहन", "मित्र"], answer: "दादा" },
+          { q: "मीना किसे प्यार करती है?", options: ["परिवार", "स्कूल", "गाड़ी", "खिलौना"], answer: "परिवार" }
+        ]
+      },
+      {
+        title: "अध्याय 2: दादा-दादी",
+        questions: [
+          { q: "दादा-दादी क्या सुनाते हैं?", options: ["कहानियाँ", "गाने", "समाचार", "कविताएँ"], answer: "कहानियाँ" },
+          { q: "दादा-दादी किसे प्यार करते हैं?", options: ["पौते-पोतियों", "दोस्तों", "शिक्षकों", "पड़ोसियों"], answer: "पौते-पोतियों" },
+          { q: "दादा-दादी के साथ क्या मज़ा आता है?", options: ["खेलना", "स्कूल जाना", "काम करना", "सोना"], answer: "खेलना" },
+          { q: "दादा-दादी कितने साल के होते हैं?", options: ["बड़े", "छोटे", "जवान", "बच्चे"], answer: "बड़े" },
+          { q: "दादी क्या पहनती है?", options: ["साड़ी", "पैंट", "जूते", "टोपी"], answer: "साड़ी" }
+        ]
+      },
+      {
+        title: "अध्याय 3: रीना का दिन",
+        questions: [
+          { q: "रीना सुबह क्या करती है?", options: ["स्कूल जाती है", "सोती है", "खाती है", "दौड़ती है"], answer: "स्कूल जाती है" },
+          { q: "रीना का दोस्त कौन है?", options: ["पुस्तक", "गाय", "सूरज", "चाँद"], answer: "पुस्तक" },
+          { q: "रीना दिन में क्या पढ़ती है?", options: ["किताब", "खाना", "खिलौना", "पानी"], answer: "किताब" },
+          { q: "रीना कब सोती है?", options: ["रात को", "सुबह को", "दोपहर को", "शाम को"], answer: "रात को" },
+          { q: "रीना का स्कूल कहाँ है?", options: ["नजदीक", "दूर", "आसमान में", "समुद्र में"], answer: "नजदीक" }
+        ]
+      },
+      {
+        title: "अध्याय 4: रानी भी",
+        questions: [
+          { q: "रानी भी क्या करती है?", options: ["हँसती है", "रोती है", "दौड़ती है", "उड़ती है"], answer: "हँसती है" },
+          { q: "रानी का दोस्त कौन है?", options: ["सूरज", "पेड़", "घर", "गाड़ी"], answer: "सूरज" },
+          { q: "रानी कहाँ खेलती है?", options: ["बगीचे में", "स्कूल में", "सड़क पर", "घर में"], answer: "बगीचे में" },
+          { q: "रानी का रंग क्या है?", options: ["लाल", "नीला", "हरा", "पीला"], answer: "लाल" },
+          { q: "रानी को क्या पसंद है?", options: ["फूल", "पत्थर", "कीचड़", "धूल"], answer: "फूल" }
+        ]
+      },
+      {
+        title: "अध्याय 5: छोटा कबीरा",
+        questions: [
+          { q: "कबीरा क्या करता है?", options: ["गाता है", "खाता है", "सोता है", "दौड़ता है"], answer: "गाता है" },
+          { q: "कबीरा कितना छोटा है?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "कबीरा किसके साथ गाता है?", options: ["दोस्तों", "पेड़ों", "पंछियों", "गायों"], answer: "पंछियों" },
+          { q: "कबीरा का गाना क्या है?", options: ["मधुर", "कड़वा", "तीखा", "खट्टा"], answer: "मधुर" },
+          { q: "कबीरा कहाँ रहता है?", options: ["गाँव", "शहर", "जंगल", "समुद्र"], answer: "गाँव" }
+        ]
+      },
+      {
+        title: "अध्याय 6: चूहा और सियार",
+        questions: [
+          { q: "चूहा किससे मिलता है?", options: ["सियार", "गाय", "कुत्ता", "बिल्ली"], answer: "सियार" },
+          { q: "चूहा चालाक क्यों है?", options: ["योजना बनाता है", "दौड़ता है", "खाता है", "सोता है"], answer: "योजना बनाता है" },
+          { q: "सियार क्या चाहता है?", options: ["चूहे को खाना", "दौड़ना", "गाना", "सोना"], answer: "चूहे को खाना" },
+          { q: "चूहा कैसे बचता है?", options: ["छेद में जाता है", "उड़ता है", "छिपता है", "दौड़ता है"], answer: "छेद में जाता है" },
+          { q: "कहानी में कौन जीतता है?", options: ["चूहा", "सियार", "दोनों", "कोई नहीं"], answer: "चूहा" }
+        ]
+      },
+      {
+        title: "अध्याय 7: हाथी चलै बाजार",
+        questions: [
+          { q: "हाथी बाजार में क्या करता है?", options: ["चलता है", "उड़ता है", "खाता है", "सोता है"], answer: "चलता है" },
+          { q: "हाथी का रंग क्या है?", options: ["धूसर", "लाल", "नीला", "हरा"], answer: "धूसर" },
+          { q: "बाजार में क्या बिकता है?", options: ["फल", "पत्थर", "हवा", "धूप"], answer: "फल" },
+          { q: "हाथी कितना बड़ा है?", options: ["बहुत", "थोड़ा", "छोटा", "मध्यम"], answer: "बहुत" },
+          { q: "हाथी की सूंड क्या करती है?", options: ["पानी पीती है", "गाती है", "उड़ती है", "दौड़ती है"], answer: "पानी पीती है" }
+        ]
+      },
+      {
+        title: "अध्याय 8: जंगल की सैर",
+        questions: [
+          { q: "जंगल में कौन रहता है?", options: ["हाथी", "घर", "स्कूल", "गाड़ी"], answer: "हाथी" },
+          { q: "जंगल में क्या उगता है?", options: ["पेड़", "ईंट", "कपड़ा", "कांच"], answer: "पेड़" },
+          { q: "सैर में कौन साथ देता है?", options: ["दोस्त", "टीचर", "पड़ोसी", "डॉक्टर"], answer: "दोस्त" },
+          { q: "जंगल में कौन सा जानवर है?", options: ["हिरन", "घड़ी", "किताब", "पेन"], answer: "हिरन" },
+          { q: "जंगल कितना हरा है?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहut" }
+        ]
+      },
+      {
+        title: "अध्याय 9: सूरज डूबा सोना",
+        questions: [
+          { q: "सूरज डूबने के बाद क्या निकलता है?", options: ["चाँद", "सूरज", "तारा", "बादल"], answer: "चाँद" },
+          { q: "सोना कहाँ होता है?", options: ["रात", "दिन", "सुबह", "दोपहर"], answer: "रात" },
+          { q: "सूरज कब डूबता है?", options: ["शाम", "सुबह", "दोपहर", "रात"], answer: "शाम" },
+          { q: "चाँद की रोशनी क्या है?", options: ["नरम", "तीखी", "गर्म", "ठंडी"], answer: "नरम" },
+          { q: "सूरज डूबने से पहले क्या होता है?", options: ["लाल आसमान", "नीला आसमान", "काला आसमान", "सफेद आसमान"], answer: "लाल आसमान" }
+        ]
+      },
+      {
+        title: "अध्याय 10: भोजन का मेला",
+        questions: [
+          { q: "भोजन मेले में क्या बनाया जाता है?", options: ["खाना", "घर", "कपड़े", "खिलौने"], answer: "खाना" },
+          { q: "मेले में कौन आता है?", options: ["लोग", "पेड़", "गाड़ी", "पत्थर"], answer: "लोग" },
+          { q: "भोजन में क्या पकाया जाता है?", options: ["रोटी", "ईंट", "कागज", "लोहा"], answer: "रोटी" },
+          { q: "मेला कब लगता है?", options: ["त्योहार पर", "रोज", "सप्ताह में", "साल में"], answer: "त्योहार पर" },
+          { q: "भोजन का स्वाद कैसा होता है?", options: ["स्वादिष्ट", "खराब", "तीखा", "बेस्वाद"], answer: "स्वादिष्ट" }
+        ]
+      },
+      {
+        title: "अध्याय 11: पानी पीना",
+        questions: [
+          { q: "पानी क्यों जरूरी है?", options: ["जीने के लिए", "खेलने के लिए", "सोने के लिए", "उड़ने के लिए"], answer: "जीने के लिए" },
+          { q: "पानी कहाँ मिलता है?", options: ["नदी", "आसमान", "घर", "सड़क"], answer: "नदी" },
+          { q: "पानी का रंग क्या है?", options: ["पारदर्शी", "लाल", "नीला", "हरा"], answer: "पारदर्शी" },
+          { q: "पानी से क्या बनता है?", options: ["चाय", "पत्थर", "लकड़ी", "कपड़ा"], answer: "चाय" },
+          { q: "पानी कब पीना चाहिए?", options: ["प्यास लगने पर", "रात को", "सुबह को", "दोपहर को"], answer: "प्यास लगने पर" }
+        ]
+      },
+      {
+        title: "अध्याय 12: खाना खाओ",
+        questions: [
+          { q: "खाना खाने से क्या होता है?", options: ["ताकत", "थकान", "दर्द", "सोना"], answer: "ताकत" },
+          { q: "खाना किसे खाना चाहिए?", options: ["सबको", "केवल बच्चों को", "केवल बड़ों को", "केवल जानवरों को"], answer: "सबको" },
+          { q: "खाने में क्या अच्छा होता है?", options: ["फल", "पत्थर", "कीचड़", "धूल"], answer: "फल" },
+          { q: "खाना कब खाते हैं?", options: ["दिन में", "रात में", "सुबह में", "सब समय"], answer: "सब समय" },
+          { q: "खाना कौन बनाता है?", options: ["माँ", "पेड़", "गाय", "सूरज"], answer: "माँ" }
+        ]
+      },
+      {
+        title: "अध्याय 13: सब्जियों का खेल",
+        questions: [
+          { q: "सब्जियों में कौन सी होती है?", options: ["गाजर", "केक", "चॉकलेट", "आइसक्रीम"], answer: "गाजर" },
+          { q: "सब्जियाँ कहाँ उगती हैं?", options: ["खेत में", "आसमान में", "समुद्र में", "घर में"], answer: "खेत में" },
+          { q: "गाजर का रंग क्या है?", options: ["नारंगी", "नीला", "हरा", "काला"], answer: "नारंगी" },
+          { q: "सब्जियों से क्या बनता है?", options: ["सब्जी", "केक", "पानी", "हवा"], answer: "सब्जी" },
+          { q: "सब्जियाँ कौन खाता है?", options: ["लोग", "पेड़", "पत्थर", "गाड़ी"], answer: "लोग" }
+        ]
+      },
+      {
+        title: "अध्याय 14: वाह, मेरे घोड़े!",
+        questions: [
+          { q: "घोड़ा क्या करता है?", options: ["दौड़ता है", "उड़ता है", "तैरता है", "सोता है"], answer: "दौड़ता है" },
+          { q: "घोड़े का रंग क्या हो सकता है?", options: ["काला", "नीला", "हरा", "गुलाबी"], answer: "काला" },
+          { q: "घोड़ा कहाँ रहता है?", options: ["घर", "जंगल", "खेत", "नदी"], answer: "खेत" },
+          { q: "घोड़े की आवाज क्या है?", options: ["ही-ही", "म्याऊँ", "गूं-गूं", "चूं-चूं"], answer: "ही-ही" },
+          { q: "घोड़ा किसके लिए काम करता है?", options: ["लोगों", "पेड़ों", "पत्थरों", "हवा"], answer: "लोगों" }
+        ]
+      },
+      {
+        title: "अध्याय 15: कितनी प्यारी है ये दुनिया",
+        questions: [
+          { q: "दुनिया में क्या प्यारा है?", options: ["पेड़", "ईंट", "लोहा", "कांच"], answer: "पेड़" },
+          { q: "दुनिया में कौन रहता है?", options: ["लोग", "पत्थर", "हवा", "धूप"], answer: "लोग" },
+          { q: "पेड़ों का रंग क्या है?", options: ["हरा", "लाल", "नीला", "काला"], answer: "हरा" },
+          { q: "दुनिया में क्या उगता है?", options: ["फूल", "घर", "गाड़ी", "कपड़ा"], answer: "फूल" },
+          { q: "दुनिया कितनी बड़ी है?", options: ["बहुत", "थोड़ी", "छोटी", "कोई नहीं"], answer: "बहुत" }
+        ]
+      },
+      {
+        title: "अध्याय 16: चाँद का बच्चा",
+        questions: [
+          { q: "चाँद का बच्चा कौन है?", options: ["तारा", "सूरज", "चमकता गोला", "बादल"], answer: "तारा" },
+          { q: "चाँद कब निकलता है?", options: ["रात", "दिन", "सुबह", "दोपहर"], answer: "रात" },
+          { q: "चाँद की रोशनी कैसी है?", options: ["नरम", "गर्म", "तीखी", "ठंडी"], answer: "नरम" },
+          { q: "चाँद का रंग क्या है?", options: ["सफेद", "लाल", "नीला", "हरा"], answer: "सफेद" },
+          { q: "चाँद कहाँ दिखाई देता है?", options: ["आसमान", "समुद्र", "जंगल", "घर"], answer: "आसमान" }
+        ]
+      },
+      {
+        title: "अध्याय 17: मौसम",
+        questions: [
+          { q: "कौन सा मौसम ठंडा है?", options: ["सर्दी", "गर्मी", "बरसात", "वसंत"], answer: "सर्दी" },
+          { q: "गर्मी में क्या होता है?", options: ["धूप", "बर्फ", "बरसात", "कोहरा"], answer: "धूप" },
+          { q: "बरसात में क्या गिरता है?", options: ["पानी", "बर्फ", "धूल", "हवा"], answer: "पानी" },
+          { q: "वसंत में क्या खिलता है?", options: ["फूल", "पत्थर", "लोहा", "कपड़ा"], answer: "फूल" },
+          { q: "मौसम बदलता कब है?", options: ["हर मौसम में", "कभी-कभी", "रोज", "साल में"], answer: "हर मौसम में" }
+        ]
+      },
+      {
+        title: "अध्याय 18: चारों ओर",
+        questions: [
+          { q: "चारों ओर क्या दिखाई देता है?", options: ["पेड़", "घर", "गाड़ी", "सब"], answer: "सब" },
+          { q: "पेड़ों पर क्या होता है?", options: ["फल", "ईंट", "लोहा", "कपड़ा"], answer: "फल" },
+          { q: "आसमान में क्या है?", options: ["चाँद", "पत्थर", "घर", "सड़क"], answer: "चाँद" },
+          { q: "चारों ओर कौन चलता है?", options: ["लोग", "पेड़", "हवा", "धूप"], answer: "लोग" },
+          { q: "जमीन पर क्या उगता है?", options: ["घास", "कांच", "लोहा", "कपड़ा"], answer: "घास" }
+        ]
+      },
+      {
+        title: "अध्याय 19: खेल-खिलौने",
+        questions: [
+          { q: "खिलौने क्या हैं?", options: ["गुड़िया", "पत्थर", "लोहा", "कागज"], answer: "गुड़िया" },
+          { q: "खिलौनों से क्या होता है?", options: ["मज़ा", "दर्द", "थकान", "भूख"], answer: "मज़ा" },
+          { q: "गुड़िया का रंग क्या हो सकता है?", options: ["लाल", "नीला", "सफेद", "सब"], answer: "सब" },
+          { q: "खिलौने कहाँ मिलते हैं?", options: ["दुकान", "जंगल", "समुद्र", "आसमान"], answer: "दुकान" },
+          { q: "खिलौनों से कौन खेलता है?", options: ["बच्चे", "पेड़", "गाय", "सूरज"], answer: "बच्चे" }
+        ]
+      }
+    ]
+  },
+  2: {
+   mathematics: [
+      {
+        title: "Chapter 1: A Day at the Beach",
+        questions: [
+          { q: "How many coconuts are in the picture?", options: ["20", "25", "27", "30"], answer: "27" },
+          { q: "How many boats are there?", options: ["10", "12", "15", "18"], answer: "12" },
+          { q: "How many children are playing?", options: ["4", "6", "8", "10"], answer: "6" },
+          { q: "How many oranges are shown?", options: ["18", "20", "22", "25"], answer: "20" },
+          { q: "What is the smallest two-digit number?", options: ["10", "11", "20", "30"], answer: "10" },
+          { q: "How many trays of 10 chikoos are in 25 chikoos?", options: ["2", "3", "4", "5"], answer: "2" },
+          { q: "Which color boat came first in the race?", options: ["Red", "Blue", "Yellow", "Green"], answer: "Red" },
+          { q: "How many loose balloons are there?", options: ["1", "2", "3", "4"], answer: "2" },
+          { q: "What is the total number of chikoos in 4 trays of 10?", options: ["30", "40", "50", "60"], answer: "40" },
+          { q: "Which number has repeated digits and is the smallest two-digit?", options: ["11", "22", "33", "44"], answer: "11" }
+        ]
+      },
+      {
+        title: "Chapter 2: Shapes Around Us",
+        questions: [
+          { q: "Which shape has 4 sides?", options: ["Circle", "Square", "Triangle", "Oval"], answer: "Square" },
+          { q: "How many sides does a triangle have?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "Which shape has no sides?", options: ["Square", "Circle", "Rectangle", "Triangle"], answer: "Circle" },
+          { q: "How many corners does a rectangle have?", options: ["2", "4", "6", "8"], answer: "4" },
+          { q: "Which shape looks like a ball?", options: ["Cube", "Sphere", "Cylinder", "Cone"], answer: "Sphere" },
+          { q: "How many faces does a cube have?", options: ["4", "6", "8", "10"], answer: "6" },
+          { q: "Which shape has 3 corners?", options: ["Square", "Triangle", "Circle", "Rectangle"], answer: "Triangle" },
+          { q: "What shape is a book cover?", options: ["Circle", "Rectangle", "Triangle", "Sphere"], answer: "Rectangle" },
+          { q: "How many edges does a cube have?", options: ["6", "8", "12", "16"], answer: "12" },
+          { q: "Which shape rolls easily?", options: ["Cube", "Sphere", "Square", "Rectangle"], answer: "Sphere" }
+        ]
+      },
+      {
+        title: "Chapter 3: Fun with Numbers",
+        questions: [
+          { q: "What comes after 49?", options: ["50", "51", "59", "60"], answer: "50" },
+          { q: "What is 20 + 15?", options: ["25", "30", "35", "40"], answer: "35" },
+          { q: "Which number is between 30 and 32?", options: ["29", "31", "33", "34"], answer: "31" },
+          { q: "What is 50 - 20?", options: ["20", "25", "30", "35"], answer: "30" },
+          { q: "How many tens are in 45?", options: ["3", "4", "5", "6"], answer: "4" },
+          { q: "What is 10 + 10 + 10?", options: ["20", "30", "40", "50"], answer: "30" },
+          { q: "Which is the largest number: 25, 35, 15?", options: ["15", "25", "35", "45"], answer: "35" },
+          { q: "What is 100 - 50?", options: ["40", "50", "60", "70"], answer: "50" },
+          { q: "How many ones are in 23?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "What comes before 40?", options: ["38", "39", "41", "42"], answer: "39" }
+        ]
+      },
+      {
+        title: "Chapter 4: Shadow Story",
+        questions: [
+          { q: "What makes a shadow?", options: ["Light", "Water", "Air", "Sound"], answer: "Light" },
+          { q: "When is a shadow longest?", options: ["Noon", "Morning", "Evening", "Night"], answer: "Morning" },
+          { q: "What blocks light to make a shadow?", options: ["Glass", "Opaque object", "Mirror", "Water"], answer: "Opaque object" },
+          { q: "Where can you see a shadow?", options: ["Wall", "Sky", "Air", "Water"], answer: "Wall" },
+          { q: "What moves with you to make a shadow?", options: ["Tree", "You", "Sun", "Cloud"], answer: "You" },
+          { q: "What time has no shadow?", options: ["Morning", "Noon", "Evening", "Night"], answer: "Noon" },
+          { q: "What shape can a shadow take?", options: ["Your shape", "Circle only", "Square only", "Triangle only"], answer: "Your shape" },
+          { q: "What needs to be present for a shadow?", options: ["Light source", "Rain", "Snow", "Wind"], answer: "Light source" },
+          { q: "How can you change a shadow's size?", options: ["Move closer", "Stay still", "Close eyes", "Sing"], answer: "Move closer" },
+          { q: "What disappears when light goes away?", options: ["Shadow", "Tree", "House", "Road"], answer: "Shadow" }
+        ]
+      },
+      {
+        title: "Chapter 5: Playing with Lines",
+        questions: [
+          { q: "What is a straight line?", options: ["Curved", "No bends", "Wavy", "Broken"], answer: "No bends" },
+          { q: "How many lines meet at a point?", options: ["1", "2", "3", "Many"], answer: "Many" },
+          { q: "What is a curved line?", options: ["Straight", "Bends", "Broken", "Dotted"], answer: "Bends" },
+          { q: "How many ends does a line segment have?", options: ["0", "1", "2", "3"], answer: "2" },
+          { q: "What is a ray?", options: ["One end", "No end", "Two ends", "Curved"], answer: "One end" },
+          { q: "Which line goes on forever?", options: ["Line", "Line segment", "Ray", "Curve"], answer: "Line" },
+          { q: "What shape has only straight lines?", options: ["Circle", "Square", "Oval", "Star"], answer: "Square" },
+          { q: "How many rays can meet at one point?", options: ["1", "2", "Many", "0"], answer: "Many" },
+          { q: "What is a broken line?", options: ["Dashed", "Straight", "Curved", "Solid"], answer: "Dashed" },
+          { q: "Which line has no starting point?", options: ["Ray", "Line", "Line segment", "Curve"], answer: "Line" }
+        ]
+      },
+      {
+        title: "Chapter 6: Decoration for Festival",
+        questions: [
+          { q: "What is used to decorate?", options: ["Flowers", "Stones", "Sand", "Water"], answer: "Flowers" },
+          { q: "How many colors are in a rainbow?", options: ["5", "6", "7", "8"], answer: "7" },
+          { q: "What shape can decorations make?", options: ["Circle", "Square", "Both", "None"], answer: "Both" },
+          { q: "How many flowers in 2 groups of 5?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is a common festival decoration?", options: ["Lights", "Books", "Chairs", "Tables"], answer: "Lights" },
+          { q: "How many sides in a star decoration?", options: ["5", "6", "7", "8"], answer: "5" },
+          { q: "What color is often used for borders?", options: ["Red", "Black", "White", "Blue"], answer: "Red" },
+          { q: "How many groups of 3 make 12?", options: ["3", "4", "5", "6"], answer: "4" },
+          { q: "What is hung for decoration?", options: ["Banners", "Stones", "Sand", "Water"], answer: "Banners" },
+          { q: "What is 10 + 5 flowers?", options: ["12", "13", "14", "15"], answer: "15" }
+        ]
+      },
+      {
+        title: "Chapter 7: Rani’s Gift",
+        questions: [
+          { q: "What did Rani give?", options: ["Book", "Toy", "Flower", "Ball"], answer: "Toy" },
+          { q: "How many toys did Rani have?", options: ["2", "3", "4", "5"], answer: "4" },
+          { q: "What color was the gift?", options: ["Red", "Blue", "Green", "Yellow"], answer: "Blue" },
+          { q: "How many friends got gifts?", options: ["1", "2", "3", "4"], answer: "2" },
+          { q: "What is 3 + 2 toys?", options: ["4", "5", "6", "7"], answer: "5" },
+          { q: "Where did Rani give the gift?", options: ["School", "Home", "Park", "Market"], answer: "School" },
+          { q: "How many toys are left if 1 is given?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "What shape was the gift box?", options: ["Circle", "Square", "Triangle", "Oval"], answer: "Square" },
+          { q: "What is 10 - 3 toys?", options: ["5", "6", "7", "8"], answer: "7" },
+          { q: "Who was happy with the gift?", options: ["Friend", "Teacher", "Dog", "Cat"], answer: "Friend" }
+        ]
+      },
+      {
+        title: "Chapter 8: Grouping and Sharing",
+        questions: [
+          { q: "How many in 2 groups of 5?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is 20 divided by 4?", options: ["4", "5", "6", "7"], answer: "5" },
+          { q: "How many groups of 3 in 12?", options: ["3", "4", "5", "6"], answer: "4" },
+          { q: "What is 15 shared by 3?", options: ["3", "5", "7", "9"], answer: "5" },
+          { q: "How many in 3 groups of 4?", options: ["9", "10", "12", "15"], answer: "12" },
+          { q: "What is 18 divided by 6?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "How many groups of 2 in 8?", options: ["2", "3", "4", "5"], answer: "4" },
+          { q: "What is 10 shared by 2?", options: ["4", "5", "6", "7"], answer: "5" },
+          { q: "How many in 5 groups of 3?", options: ["12", "13", "14", "15"], answer: "15" },
+          { q: "What is 24 divided by 4?", options: ["4", "5", "6", "7"], answer: "6" }
+        ]
+      },
+      {
+        title: "Chapter 9: Which Season is it?",
+        questions: [
+          { q: "Which season is hot?", options: ["Winter", "Summer", "Spring", "Autumn"], answer: "Summer" },
+          { q: "How many months are in a year?", options: ["10", "11", "12", "13"], answer: "12" },
+          { q: "Which season has snow?", options: ["Spring", "Summer", "Winter", "Autumn"], answer: "Winter" },
+          { q: "How many days are in a week?", options: ["5", "6", "7", "8"], answer: "7" },
+          { q: "Which season has falling leaves?", options: ["Summer", "Autumn", "Winter", "Spring"], answer: "Autumn" },
+          { q: "What month comes after March?", options: ["February", "April", "May", "June"], answer: "April" },
+          { q: "Which season has flowers?", options: ["Winter", "Spring", "Summer", "Autumn"], answer: "Spring" },
+          { q: "How many weeks are in a month?", options: ["3", "4", "5", "6"], answer: "4" },
+          { q: "Which season has rain?", options: ["Winter", "Summer", "Spring", "Autumn"], answer: "Summer" },
+          { q: "What day comes after Tuesday?", options: ["Monday", "Wednesday", "Thursday", "Friday"], answer: "Wednesday" }
+        ]
+      },
+      {
+        title: "Chapter 10: Fun at the Fair",
+        questions: [
+          { q: "How many balloons are in 2 groups of 5?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is 20 + 10 rupees?", options: ["20", "25", "30", "35"], answer: "30" },
+          { q: "How many tickets for 2 rides at 5 each?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is 15 - 5 rupees?", options: ["5", "7", "9", "10"], answer: "10" },
+          { q: "How many prizes in 3 groups of 4?", options: ["9", "10", "12", "15"], answer: "12" },
+          { q: "What is the cost of 2 items at 3 rupees each?", options: ["4", "5", "6", "7"], answer: "6" },
+          { q: "How much money if you have 10 and spend 4?", options: ["4", "5", "6", "7"], answer: "6" },
+          { q: "What is 50 - 20 rupees?", options: ["20", "25", "30", "35"], answer: "30" },
+          { q: "How many candies in 5 groups of 2?", options: ["8", "9", "10", "12"], answer: "10" },
+          { q: "What is 10 + 5 + 5 rupees?", options: ["15", "18", "20", "25"], answer: "20" }
+        ]
+      },
+      {
+        title: "Chapter 11: Data Handling",
+        questions: [
+          { q: "How many tally marks for 5?", options: ["3", "4", "5", "6"], answer: "5" },
+          { q: "What shows data with pictures?", options: ["Graph", "Table", "Map", "Book"], answer: "Graph" },
+          { q: "How many in 2 groups of 3 tally marks?", options: ["3", "4", "5", "6"], answer: "6" },
+          { q: "What is used to count items?", options: ["Tally", "Pen", "Paper", "Book"], answer: "Tally" },
+          { q: "How many more than 3 is 5?", options: ["1", "2", "3", "4"], answer: "2" },
+          { q: "What shows data in rows?", options: ["Table", "Graph", "Picture", "Map"], answer: "Table" },
+          { q: "How many tally marks for 10?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is the total of 2 and 3?", options: ["4", "5", "6", "7"], answer: "5" },
+          { q: "Which has more: 4 or 6?", options: ["4", "6", "Equal", "None"], answer: "6" },
+          { q: "What is a pictograph?", options: ["Picture data", "Number list", "Word table", "Color chart"], answer: "Picture data" }
+        ]
+      }
+    ],
+   english: [
+      {
+        title: "Chapter 1: My Bicycle",
+        questions: [
+          { q: "What color is the bicycle?", options: ["Blue", "Red", "Green", "Yellow"], answer: "Red" },
+          { q: "What sound does the bell make?", options: ["Ding-dong", "Trin-trin-trin", "Beep-beep", "Ting-ting"], answer: "Trin-trin-trin" },
+          { q: "What color is the seat?", options: ["Black", "Blue", "Red", "Yellow"], answer: "Blue" },
+          { q: "What are the tyres and pedals?", options: ["Red", "Blue", "Black", "Green"], answer: "Black" },
+          { q: "What does the child need to keep the bicycle moving?", options: ["Water", "Air", "Oil", "Sand"], answer: "Air" },
+          { q: "What does the child wear for safety?", options: ["Shoes", "Helmet", "Gloves", "Cap"], answer: "Helmet" },
+          { q: "How does the child ride sometimes?", options: ["Fast", "Slow", "Both", "Neither"], answer: "Both" },
+          { q: "What happens when the bell rings?", options: ["Friends move aside", "Friends laugh", "Friends run", "Friends stop"], answer: "Friends move aside" },
+          { q: "Where does the child go with the bicycle?", options: ["School", "Everywhere", "Park", "Home"], answer: "Everywhere" },
+          { q: "What keeps the bicycle on track?", options: ["Wheels", "Bell", "Seat", "Handle"], answer: "Wheels" }
+        ]
+      },
+      {
+        title: "Chapter 2: Picture Reading",
+        questions: [
+          { q: "How many children are in the picture?", options: ["15", "16", "17", "18"], answer: "17" },
+          { q: "What are the children doing?", options: ["Studying", "Playing", "Eating", "Sleeping"], answer: "Playing" },
+          { q: "What game did Babli and Jeet play?", options: ["Cricket", "Bat and ball", "Hide and seek", "Tag"], answer: "Bat and ball" },
+          { q: "Where did the ball go?", options: ["House", "Garden", "Road", "School"], answer: "Garden" },
+          { q: "Who threw the ball first?", options: ["Babli", "Jeet", "Mohit", "No one"], answer: "Jeet" },
+          { q: "What did Babli make the ball from?", options: ["Paper", "Rags, paper, wool, string", "Cloth", "Wood"], answer: "Rags, paper, wool, string" },
+          { q: "What happened when Babli hit the ball?", options: ["It flew", "It broke", "It went into the garden", "It stopped"], answer: "It went into the garden" },
+          { q: "What did they lose?", options: ["Ball", "Bat", "Rope", "Toy"], answer: "Ball" },
+          { q: "How were the children having fun?", options: ["Singing", "Playing games", "Drawing", "Reading"], answer: "Playing games" },
+          { q: "Who else was playing with Jeet and Babli?", options: ["Mohit", "No one", "Teacher", "Parent"], answer: "No one" }
+        ]
+      },
+      {
+        title: "Chapter 3: It is Fun",
+        questions: [
+          { q: "What does the poem say is fun to be?", options: ["A dog", "This and that", "A cat", "A bird"], answer: "This and that" },
+          { q: "What does it mean to leap like a lamb?", options: ["Jump", "Run", "Sleep", "Eat"], answer: "Jump" },
+          { q: "What does it mean to swim like a fish?", options: ["Fly", "Dive", "Walk", "Climb"], answer: "Dive" },
+          { q: "What does it mean to fly like a bird?", options: ["Run", "Soar", "Crawl", "Hop"], answer: "Soar" },
+          { q: "What does it mean to climb like a cat?", options: ["Jump", "Scale", "Dig", "Swim"], answer: "Scale" },
+          { q: "What does it mean to hop like a frog?", options: ["Leap", "Fly", "Crawl", "Sit"], answer: "Leap" },
+          { q: "What does it mean to trot like a horse?", options: ["Gallop", "Walk", "Sleep", "Eat"], answer: "Gallop" },
+          { q: "Who can do these fun activities?", options: ["Children", "Animals", "Both", "None"], answer: "Children" },
+          { q: "What is the main idea of the poem?", options: ["Work", "Fun and imagination", "Study", "Sleep"], answer: "Fun and imagination" },
+          { q: "What animal is not mentioned?", options: ["Dog", "Lamb", "Fish", "Elephant"], answer: "Dog" }
+        ]
+      },
+      {
+        title: "Chapter 4: Seeing without Seeing",
+        questions: [
+          { q: "What helps you see without eyes?", options: ["Hands", "Ears", "Nose", "Mouth"], answer: "Hands" },
+          { q: "What can you feel with your hands?", options: ["Sound", "Texture", "Smell", "Taste"], answer: "Texture" },
+          { q: "What is soft to touch?", options: ["Stone", "Cotton", "Wood", "Metal"], answer: "Cotton" },
+          { q: "What is rough to touch?", options: ["Silk", "Sandpaper", "Feather", "Paper"], answer: "Sandpaper" },
+          { q: "What can you hear with your ears?", options: ["Colors", "Sounds", "Smells", "Tastes"], answer: "Sounds" },
+          { q: "What smell comes from flowers?", options: ["Sweet", "Sour", "Bitter", "Salty"], answer: "Sweet" },
+          { q: "What helps you smell?", options: ["Eyes", "Nose", "Ears", "Hands"], answer: "Nose" },
+          { q: "What is smooth to touch?", options: ["Rock", "Glass", "Bark", "Brick"], answer: "Glass" },
+          { q: "What can you taste with your tongue?", options: ["Sounds", "Food", "Colors", "Textures"], answer: "Food" },
+          { q: "What sense helps you avoid danger?", options: ["Touch", "All senses", "Sight", "Smell"], answer: "All senses" }
+        ]
+      },
+      {
+        title: "Chapter 5: Come Back Soon",
+        questions: [
+          { q: "Where did the child travel?", options: ["Nagpur", "Delhi", "Mumbai", "Chennai"], answer: "Nagpur" },
+          { q: "What did the child eat on the way?", options: ["Puris with pickles", "Rice", "Bread", "Fruits"], answer: "Puris with pickles" },
+          { q: "What did the child see from the window?", options: ["Cities", "Trees, rivers, mountains", "Deserts", "Oceans"], answer: "Trees, rivers, mountains" },
+          { q: "Who went with the child?", options: ["Friends", "Parents", "Teacher", "Siblings"], answer: "Parents" },
+          { q: "What game did they play?", options: ["Chess", "Antakshari", "Cards", "Hide and seek"], answer: "Antakshari" },
+          { q: "What did they watch moving with them?", options: ["Sun", "Moon", "Stars", "Clouds"], answer: "Moon" },
+          { q: "What is the poem about?", options: ["School", "Travel fun", "Work", "Sleep"], answer: "Travel fun" },
+          { q: "What did the child do with others?", options: ["Sang", "Danced", "Read", "Wrote"], answer: "Sang" },
+          { q: "What vehicle is mentioned?", options: ["Car", "Bus or train", "Bike", "Plane"], answer: "Bus or train" },
+          { q: "How did the child feel?", options: ["Sad", "Happy", "Tired", "Angry"], answer: "Happy" }
+        ]
+      },
+      {
+        title: "Chapter 6: Between Home and School",
+        questions: [
+          { q: "Where does the story take place?", options: ["Park", "Home and school", "Market", "Forest"], answer: "Home and school" },
+          { q: "What did the boy see on the way?", options: ["Flowers", "Birds and trees", "Cars", "Buildings"], answer: "Birds and trees" },
+          { q: "What did the girl carry?", options: ["Bag", "Books", "Lunchbox", "Both books and lunchbox"], answer: "Both books and lunchbox" },
+          { q: "What did the boy hear?", options: ["Music", "Birds singing", "Traffic", "Wind"], answer: "Birds singing" },
+          { q: "What time did they leave home?", options: ["Morning", "Afternoon", "Evening", "Night"], answer: "Morning" },
+          { q: "What did they see at school?", options: ["Friends", "Teachers", "Classroom", "All of these"], answer: "All of these" },
+          { q: "What did the girl like on the way?", options: ["Flowers", "Birds", "Both", "Neither"], answer: "Both" },
+          { q: "What did the boy carry?", options: ["Bag", "Ball", "Pencil", "Book"], answer: "Bag" },
+          { q: "What was the weather like?", options: ["Rainy", "Sunny", "Cloudy", "Stormy"], answer: "Sunny" },
+          { q: "What did they do at school?", options: ["Played", "Studied", "Both", "Slept"], answer: "Both" }
+        ]
+      },
+      {
+        title: "Chapter 7: This is My Town",
+        questions: [
+          { q: "What is the town full of?", options: ["People", "Houses and shops", "Trees", "Rivers"], answer: "Houses and shops" },
+          { q: "What do people do in the town?", options: ["Work", "Sleep", "Play", "Travel"], answer: "Work" },
+          { q: "What can you see on the streets?", options: ["Cars", "Bicycles", "Both", "None"], answer: "Both" },
+          { q: "What is the market like?", options: ["Quiet", "Busy", "Empty", "Dark"], answer: "Busy" },
+          { q: "What do children do in the town?", options: ["Study", "Play", "Work", "Sleep"], answer: "Play" },
+          { q: "What is the park for?", options: ["Walking", "Relaxing", "Both", "None"], answer: "Both" },
+          { q: "What do shops sell?", options: ["Food", "Clothes", "Toys", "All of these"], answer: "All of these" },
+          { q: "Who lives in the town?", options: ["Animals", "People", "Birds", "Fish"], answer: "People" },
+          { q: "What makes the town lively?", options: ["Noise", "Silence", "Darkness", "Cold"], answer: "Noise" },
+          { q: "What is the school like?", options: ["Big", "Small", "Old", "New"], answer: "Big" }
+        ]
+      },
+      {
+        title: "Chapter 8: A Show of Clouds",
+        questions: [
+          { q: "What do clouds look like?", options: ["Fluffy", "Hard", "Flat", "Sharp"], answer: "Fluffy" },
+          { q: "What color are the clouds?", options: ["Blue", "White", "Black", "Red"], answer: "White" },
+          { q: "What do clouds bring?", options: ["Rain", "Snow", "Wind", "All of these"], answer: "All of these" },
+          { q: "What moves the clouds?", options: ["Sun", "Wind", "Birds", "Cars"], answer: "Wind" },
+          { q: "What shape can clouds take?", options: ["Animals", "People", "Both", "None"], answer: "Both" },
+          { q: "What happens when clouds are heavy?", options: ["Rain falls", "Sun shines", "Wind stops", "Birds fly"], answer: "Rain falls" },
+          { q: "What do clouds do in the sky?", options: ["Float", "Sink", "Run", "Jump"], answer: "Float" },
+          { q: "What is the sky like with clouds?", options: ["Clear", "Covered", "Dark", "Bright"], answer: "Covered" },
+          { q: "What do children imagine in clouds?", options: ["Stories", "Games", "Food", "Toys"], answer: "Stories" },
+          { q: "What season has more clouds?", options: ["Summer", "Monsoon", "Winter", "Spring"], answer: "Monsoon" }
+        ]
+      },
+      {
+        title: "Chapter 9: My Name",
+        questions: [
+          { q: "What does the name represent?", options: ["Identity", "Toy", "Food", "Game"], answer: "Identity" },
+          { q: "Who gave you your name?", options: ["Friends", "Parents", "Teacher", "Self"], answer: "Parents" },
+          { q: "What is special about your name?", options: ["Unique", "Common", "Old", "New"], answer: "Unique" },
+          { q: "What can a name tell?", options: ["Story", "Color", "Shape", "Size"], answer: "Story" },
+          { q: "How do you feel about your name?", options: ["Happy", "Sad", "Angry", "Tired"], answer: "Happy" },
+          { q: "What does the chapter teach?", options: ["Pride", "Fear", "Shame", "Anger"], answer: "Pride" },
+          { q: "Who else has a name?", options: ["Animals", "Plants", "Both", "None"], answer: "Both" },
+          { q: "What is a name like?", options: ["Gift", "Burden", "Toy", "Food"], answer: "Gift" },
+          { q: "What do you do with your name?", options: ["Write", "Eat", "Play", "Hide"], answer: "Write" },
+          { q: "What makes a name important?", options: ["Belonging", "Color", "Shape", "Size"], answer: "Belonging" }
+        ]
+      },
+      {
+        title: "Chapter 10: The Crow",
+        questions: [
+          { q: "What did the crow want?", options: ["Water", "Food", "Nest", "Friend"], answer: "Water" },
+          { q: "Where was the water?", options: ["Pot", "River", "Lake", "Pond"], answer: "Pot" },
+          { q: "What did the crow use?", options: ["Stones", "Sticks", "Leaves", "Feathers"], answer: "Stones" },
+          { q: "What happened when stones were added?", options: ["Water rose", "Water fell", "Pot broke", "Crow left"], answer: "Water rose" },
+          { q: "What is the crow known for?", options: ["Smartness", "Laziness", "Speed", "Size"], answer: "Smartness" },
+          { q: "How many stones did it drop?", options: ["Few", "Many", "One", "None"], answer: "Many" },
+          { q: "What did the crow drink?", options: ["Milk", "Water", "Juice", "Tea"], answer: "Water" },
+          { q: "What is the moral of the story?", options: ["Hard work", "Cleverness", "Sleep", "Play"], answer: "Cleverness" },
+          { q: "Where was the pot?", options: ["Ground", "Tree", "House", "River"], answer: "Ground" },
+          { q: "What color is the crow?", options: ["White", "Black", "Red", "Blue"], answer: "Black" }
+        ]
+      },
+      {
+        title: "Chapter 11: The Smart Monkey",
+        questions: [
+          { q: "Who was clever in the story?", options: ["Monkey", "Crocodile", "Bird", "Fish"], answer: "Monkey" },
+          { q: "What did the crocodile want?", options: ["Fruit", "Heart", "Tail", "Leg"], answer: "Heart" },
+          { q: "Where did the monkey live?", options: ["River", "Tree", "House", "Cave"], answer: "Tree" },
+          { q: "What did the monkey offer?", options: ["Banana", "Heart", "Leaf", "Stone"], answer: "Heart" },
+          { q: "Where did the crocodile take the monkey?", options: ["Forest", "River", "Home", "Market"], answer: "River" },
+          { q: "What did the monkey do to escape?", options: ["Jumped", "Swam", "Flew", "Ran"], answer: "Jumped" },
+          { q: "Who was the crocodile’s wife?", options: ["Bird", "Fish", "Another crocodile", "Monkey"], answer: "Another crocodile" },
+          { q: "What grew on the tree?", options: ["Apples", "Bananas", "Mangoes", "Oranges"], answer: "Mangoes" },
+          { q: "What did the monkey say about his heart?", options: ["In the tree", "In the river", "In the house", "In the cave"], answer: "In the tree" },
+          { q: "What is the lesson from the story?", options: ["Cleverness", "Strength", "Speed", "Size"], answer: "Cleverness" }
+        ]
+      },
+      {
+        title: "Chapter 12: Little Drops of Water",
+        questions: [
+          { q: "What are little drops of?", options: ["Water", "Milk", "Juice", "Tea"], answer: "Water" },
+          { q: "What do little drops make?", options: ["Ocean", "River", "Lake", "Pond"], answer: "Ocean" },
+          { q: "What are little grains of?", options: ["Sand", "Rice", "Sugar", "Salt"], answer: "Sand" },
+          { q: "What do little grains make?", options: ["Beach", "Mountain", "Forest", "Desert"], answer: "Beach" },
+          { q: "What is the poem about?", options: ["Nature", "Animals", "Food", "Toys"], answer: "Nature" },
+          { q: "What do drops and grains show?", options: ["Small things matter", "Big things matter", "No things matter", "Only water matters"], answer: "Small things matter" },
+          { q: "What is an ocean full of?", options: ["Fish", "Water", "Sand", "Rocks"], answer: "Water" },
+          { q: "What is a beach made of?", options: ["Stones", "Sand", "Grass", "Water"], answer: "Sand" },
+          { q: "Who can learn from this poem?", options: ["Children", "Adults", "Both", "None"], answer: "Both" },
+          { q: "What is the main idea?", options: ["Teamwork", "Growth from small beginnings", "Speed", "Size"], answer: "Growth from small beginnings" }
+        ]
+      },
+      {
+        title: "Chapter 13: We Are All Indians",
+        questions: [
+          { q: "Who are all Indians?", options: ["People", "Animals", "Birds", "Fish"], answer: "People" },
+          { q: "What do Indians share?", options: ["Culture", "Food", "Language", "All of these"], answer: "All of these" },
+          { q: "What is India known for?", options: ["Diversity", "Sameness", "Silence", "Darkness"], answer: "Diversity" },
+          { q: "What do children learn in India?", options: ["Songs", "Dances", "Stories", "All of these"], answer: "All of these" },
+          { q: "What unites Indians?", options: ["Love", "Hate", "Fear", "Anger"], answer: "Love" },
+          { q: "What do people celebrate?", options: ["Festivals", "Rain", "Wind", "Sun"], answer: "Festivals" },
+          { q: "What is the land like?", options: ["Rich", "Poor", "Barren", "Cold"], answer: "Rich" },
+          { q: "What do children play?", options: ["Games", "Work", "Sleep", "Eat"], answer: "Games" },
+          { q: "What makes India special?", options: ["People", "Mountains", "Rivers", "All of these"], answer: "All of these" },
+          { q: "What is the poem’s message?", options: ["Unity", "Division", "Loneliness", "Sadness"], answer: "Unity" }
+        ]
+      }
+    ],
+   hindi: [
+      {
+        title: "Chapter 1: नीमा की दादी",
+        questions: [
+          { q: "नीमा की दादी घर पर क्यों रहती हैं?", options: ["खेलने के लिए", "घुटनों के दर्द के कारण", "पढ़ने के लिए", "सैर के लिए"], answer: "घुटनों के दर्द के कारण" },
+          { q: "नीमा स्कूल से कब लौटती है?", options: ["दोपहर दो बजे", "सुबह नौ बजे", "शाम छह बजे", "रात नौ बजे"], answer: "दोपहर दो बजे" },
+          { q: "दादी क्या करती हैं जब नीमा नहीं होती?", options: ["सब्जी काटती हैं", "गाती हैं", "नृत्य करती हैं", "सोती हैं"], answer: "सब्जी काटती हैं" },
+          { q: "नीमा दादी को कहाँ ले गई?", options: ["स्कूल", "खेल का मैदान", "दुकान", "जंगल"], answer: "खेल का मैदान" },
+          { q: "दादी ने नीमा को क्या कहा?", options: ["खाना खाओ", "थोड़ी देर बैठ जाओ", "दौड़ो", "सो जाओ"], answer: "थोड़ी देर बैठ जाओ" }
+        ]
+      },
+      {
+        title: "Chapter 2: घर",
+        questions: [
+          { q: "घर में कौन रहता है?", options: ["पशु", "परिवार", "दोस्त", "अजनबी"], answer: "परिवार" },
+          { q: "घर का आंगन किसके लिए है?", options: ["खेलने", "सोने", "खाने", "पढ़ने"], answer: "खेलने" },
+          { q: "घर की दीवारें किससे बनी होती हैं?", options: ["कपड़ा", "पत्थर", "कागज", "लकड़ी"], answer: "पत्थर" },
+          { q: "घर में कौन सा कमरा होता है?", options: ["जंगल", "रसोई", "समुद्र", "खेत"], answer: "रसोई" },
+          { q: "घर में क्या सुरक्षित रहता है?", options: ["खिलौने", "सामान", "पेड़", "नदी"], answer: "सामान" }
+        ]
+      },
+      {
+        title: "Chapter 3: माला की चाँदी की पायल",
+        questions: [
+          { q: "माला की पायल किस रंग की थी?", options: ["सोने की", "चाँदी की", "लाल", "नीली"], answer: "चाँदी की" },
+          { q: "माला ने पायल कहाँ पहनी?", options: ["हाथ में", "पैर में", "गले में", "कान में"], answer: "पैर में" },
+          { q: "पायल की आवाज़ कैसी थी?", options: ["कर्कश", "मधुर", "धीमी", "उच्च"], answer: "मधुर" },
+          { q: "माला कब पायल पहनती थी?", options: ["स्कूल में", "नृत्य करते समय", "सोते समय", "खेलते समय"], answer: "नृत्य करते समय" },
+          { q: "पायल किसने दी?", options: ["माँ", "दादी", "दोस्त", "पिता"], answer: "दादी" }
+        ]
+      },
+      {
+        title: "Chapter 4: माँ",
+        questions: [
+          { q: "माँ क्या बनाती है?", options: ["खाना", "घर", "कपड़े", "जूते"], answer: "खाना" },
+          { q: "माँ बच्चों को क्या सिखाती है?", options: ["गाना", "पढ़ना", "खेलना", "सभी"], answer: "सभी" },
+          { q: "माँ का प्यार कैसा होता है?", options: ["कठोर", "नरम", "ठंडा", "गरम"], answer: "नरम" },
+          { q: "माँ कब मदद करती है?", options: ["हमेशा", "कभी-कभी", "नहीं", "रात को"], answer: "हमेशा" },
+          { q: "माँ की गोद कैसी होती है?", options: ["ठंडी", "सुखद", "कठोर", "भारी"], answer: "सुखद" }
+        ]
+      },
+      {
+        title: "Chapter 5: थाथू",
+        questions: [
+          { q: "थाथू कौन है?", options: ["भाई", "दोस्त", "गाय", "पेड़"], answer: "भाई" },
+          { q: "थाथू और मैं क्या करते हैं?", options: ["खेलते हैं", "लड़ते हैं", "सोते हैं", "खाते हैं"], answer: "खेलते हैं" },
+          { q: "थाथू का पसंदीदा खेल क्या हो सकता है?", options: ["कबड्डी", "क्रिकेट", "फुटबॉल", "बैडमिंटन"], answer: "कबड्डी" },
+          { q: "हम कब खेलते हैं?", options: ["सुबह", "शाम", "रात", "दोपहर"], answer: "शाम" },
+          { q: "थाथू मुझसे कितना बड़ा हो सकता है?", options: ["एक साल", "दो साल", "तीन साल", "कोई नहीं"], answer: "दो साल" }
+        ]
+      },
+      {
+        title: "Chapter 6: चींटा",
+        questions: [
+          { q: "चींटा क्या करता है?", options: ["उड़ता है", "भोजन ढूंढता है", "नाचता है", "सोता है"], answer: "भोजन ढूंढता है" },
+          { q: "चींटा कहाँ रहता है?", options: ["घर में", "पेड़ पर", "घोंसला में", "मिट्टी में"], answer: "मिट्टी में" },
+          { q: "चींटा कितना छोटा होता है?", options: ["बड़ा", "छोटा", "मध्यम", "लंबा"], answer: "छोटा" },
+          { q: "चींटा क्या उठा सकता है?", options: ["पहाड़", "खाद्य", "घर", "नदी"], answer: "खाद्य" },
+          { q: "चींटा कब काम करता है?", options: ["रात में", "दिन में", "सुबह में", "हमेशा"], answer: "दिन में" }
+        ]
+      },
+      {
+        title: "Chapter 7: टिल्‍लू जी",
+        questions: [
+          { q: "टिल्‍लू जी कौन हो सकता है?", options: ["एक जानवर", "एक पक्षी", "एक व्यक्ति", "एक खिलौना"], answer: "एक व्यक्ति" },
+          { q: "टिल्‍लू जी क्या करते हैं?", options: ["खेलते हैं", "काम करते हैं", "सोते हैं", "उड़ते हैं"], answer: "काम करते हैं" },
+          { q: "टिल्‍लू जी का घर कहाँ हो सकता है?", options: ["जंगल", "गाँव", "शहर", "पहाड़"], answer: "गाँव" },
+          { q: "टिल्‍लू जी का पसंदीदा समय क्या हो सकता है?", options: ["सुबह", "शाम", "रात", "दोपहर"], answer: "सुबह" },
+          { q: "टिल्‍लू जी बच्चों के साथ क्या करते हैं?", options: ["हँसते हैं", "लड़ते हैं", "खेलते हैं", "सोते हैं"], answer: "खेलते हैं" }
+        ]
+      },
+      {
+        title: "Chapter 8: तीन दोस्त",
+        questions: [
+          { q: "तीन दोस्त कौन हो सकते हैं?", options: ["पेड़", "बच्चे", "पशु", "पक्षी"], answer: "बच्चे" },
+          { q: "दोस्त क्या करते हैं?", options: ["लड़ते हैं", "खेलते हैं", "सोते हैं", "खाते हैं"], answer: "खेलते हैं" },
+          { q: "दोस्तों का पसंदीदा खेल क्या हो सकता है?", options: ["कबड्डी", "क्रिकेट", "फुटबॉल", "सभी"], answer: "सभी" },
+          { q: "दोस्त कब मिलते हैं?", options: ["स्कूल में", "रात में", "जंगल में", "पहाड़ पर"], answer: "स्कूल में" },
+          { q: "दोस्तों की मदद कब होती है?", options: ["हमेशा", "कभी-कभी", "नहीं", "रात को"], answer: "हमेशा" }
+        ]
+      },
+      {
+        title: "Chapter 9: दुनिया रंग-बिरंगी",
+        questions: [
+          { q: "दुनिया में क्या रंग हैं?", options: ["एक", "कई", "कोई नहीं", "दो"], answer: "कई" },
+          { q: "रंग कहाँ देखे जा सकते हैं?", options: ["फूलों में", "पत्थरों में", "जंगल में", "सभी"], answer: "सभी" },
+          { q: "कौन सा रंग सबसे सुंदर है?", options: ["लाल", "हरा", "नीला", "सभी"], answer: "सभी" },
+          { q: "रंगों से क्या बनता है?", options: ["चित्र", "खाना", "घर", "पानी"], answer: "चित्र" },
+          { q: "दुनिया रंग-बिरंगी क्यों है?", options: ["प्रकृति के कारण", "धूप के कारण", "पानी के कारण", "हवा के कारण"], answer: "प्रकृति के कारण" }
+        ]
+      },
+      {
+        title: "Chapter 10: कौन",
+        questions: [
+          { q: "कौन सवाल किसके बारे में पूछा जाता है?", options: ["जानवरों", "पेड़ों", "लोगों", "सभी"], answer: "लोगों" },
+          { q: "कौन सवाल का जवाब क्या हो सकता है?", options: ["नाम", "रंग", "आकार", "गंध"], answer: "नाम" },
+          { q: "कौन सवाल कब पूछा जाता है?", options: ["खेल में", "पढ़ाई में", "सोते समय", "खाते समय"], answer: "पढ़ाई में" },
+          { q: "कौन सवाल का जवाब कौन देता है?", options: ["दोस्त", "शिक्षक", "पक्षी", "पेड़"], answer: "शिक्षक" },
+          { q: "कौन सवाल से क्या सीखते हैं?", options: ["जानकारी", "खेल", "नृत्य", "गाना"], answer: "जानकारी" }
+        ]
+      },
+      {
+        title: "Chapter 11: बैंगनी जोजो",
+        questions: [
+          { q: "जोजो का रंग क्या है?", options: ["लाल", "नीला", "बैंगनी", "हरा"], answer: "बैंगनी" },
+          { q: "जोजो क्या हो सकता है?", options: ["खिलौना", "पक्षी", "पेड़", "नदी"], answer: "खिलौना" },
+          { q: "जोजो के साथ क्या किया जाता है?", options: ["खेला जाता है", "खाया जाता है", "पिया जाता है", "सोया जाता है"], answer: "खेला जाता है" },
+          { q: "जोजो कहाँ पाया जा सकता है?", options: ["घर में", "जंगल में", "पहाड़ पर", "समुद्र में"], answer: "घर में" },
+          { q: "जोजो बच्चों को क्या सिखाता है?", options: ["हँसी", "पढ़ाई", "लड़ाई", "सोना"], answer: "हँसी" }
+        ]
+      },
+      {
+        title: "Chapter 12: तोसिया का सपना",
+        questions: [
+          { q: "तोसिया का सपना क्या था?", options: ["उड़ना", "खेलना", "सपने देखना", "सीखना"], answer: "उड़ना" },
+          { q: "तोसिया कौन हो सकता है?", options: ["बच्चा", "पक्षी", "जानवर", "पेड़"], answer: "बच्चा" },
+          { q: "सपना कब आता है?", options: ["रात में", "दिन में", "सुबह में", "शाम में"], answer: "रात में" },
+          { q: "तोसिया का सपना सच्चा क्यों नहीं?", options: ["असली नहीं", "खेल है", "पढ़ाई है", "सोने का"], answer: "असली नहीं" },
+          { q: "तोसिया सपने में क्या देखती है?", options: ["पंख", "घर", "स्कूल", "खिलौना"], answer: "पंख" }
+        ]
+      },
+      {
+        title: "Chapter 13: तालाब",
+        questions: [
+          { q: "तालाब में क्या होता है?", options: ["पानी", "हवा", "आग", "पत्थर"], answer: "पानी" },
+          { q: "तालाब में कौन रहता है?", options: ["मछली", "पक्षी", "इंसान", "सिंह"], answer: "मछली" },
+          { q: "तालाब का रंग क्या हो सकता है?", options: ["नीला", "लाल", "हरा", "सभी"], answer: "नीला" },
+          { q: "तालाब कहाँ मिलता है?", options: ["गाँव में", "शहर में", "जंगल में", "सभी"], answer: "गाँव में" },
+          { q: "तालाब से क्या होता है?", options: ["पानी मिलता है", "खाना मिलता है", "हवा मिलती है", "सोने की जगह"], answer: "पानी मिलता है" }
+        ]
+      },
+      {
+        title: "Chapter 14: बीज",
+        questions: [
+          { q: "बीज से क्या उगता है?", options: ["पेड़", "पत्थर", "जानवर", "घर"], answer: "पेड़" },
+          { q: "बीज कहाँ बोया जाता है?", options: ["मिट्टी में", "पानी में", "हवा में", "आग में"], answer: "मिट्टी में" },
+          { q: "बीज को क्या चाहिए उगने के लिए?", options: ["पानी", "धूप", "दोनों", "कोई नहीं"], answer: "दोनों" },
+          { q: "बीज का रंग क्या हो सकता है?", options: ["भूरा", "लाल", "हरा", "सभी"], answer: "भूरा" },
+          { q: "बीज से क्या बनता है?", options: ["फल", "पत्थर", "जूते", "कपड़े"], answer: "फल" }
+        ]
+      },
+      {
+        title: "Chapter 15: किसान",
+        questions: [
+          { q: "किसान क्या करता है?", options: ["फसल उगाता है", "गाता है", "नृत्य करता है", "सोता है"], answer: "फसल उगाता है" },
+          { q: "किसान कहाँ काम करता है?", options: ["खेत में", "घर में", "स्कूल में", "दुकान में"], answer: "खेत में" },
+          { q: "किसान का औज़ार क्या है?", options: ["हल", "पेन", "किताब", "गेंद"], answer: "हल" },
+          { q: "किसान कब काम करता है?", options: ["सुबह", "रात", "दोपहर", "सभी"], answer: "सुबह" },
+          { q: "किसान क्या उगाता है?", options: ["अनाज", "पत्थर", "हवा", "पानी"], answer: "अनाज" }
+        ]
+      },
+      {
+        title: "Chapter 16: मूली",
+        questions: [
+          { q: "मूली कहाँ उगती है?", options: ["खेत में", "पेड़ पर", "नदी में", "घर में"], answer: "खेत में" },
+          { q: "मूली का रंग क्या है?", options: ["लाल", "सफेद", "नीला", "हरा"], answer: "सफेद" },
+          { q: "मूली खाने में कैसी होती है?", options: ["मीठी", "तीखी", "खट्टी", "नमकीन"], answer: "तीखी" },
+          { q: "मूली का उपयोग क्या है?", options: ["खाना", "खिलौना", "सजावट", "पढ़ाई"], answer: "खाना" },
+          { q: "मूली कौन उगाता है?", options: ["किसान", "शिक्षक", "डॉक्टर", "पेंटर"], answer: "किसान" }
+        ]
+      },
+      {
+        title: "Chapter 17: बरसात और मेंढक",
+        questions: [
+          { q: "बरसात में क्या होता है?", options: ["पानी पड़ता है", "हवा चलती है", "धूप निकलती है", "बर्फ पड़ती है"], answer: "पानी पड़ता है" },
+          { q: "मेंढक कहाँ रहता है?", options: ["पानी में", "पेड़ पर", "घर में", "आकाश में"], answer: "पानी में" },
+          { q: "मेंढक की आवाज़ कैसी होती है?", options: ["मधुर", "कर्कश", "धीमी", "उच्च"], answer: "कर्कश" },
+          { q: "बरसात में मेंढक क्या करता है?", options: ["कूदता है", "उड़ता है", "सोता है", "खाता है"], answer: "कूदता है" },
+          { q: "बरसात कब आती है?", options: ["गर्मी में", "सर्दी में", "वसंत में", "शरद में"], answer: "गर्मी में" }
+        ]
+      },
+      {
+        title: "Chapter 18: शेर और चूहा की दोस्ती",
+        questions: [
+          { q: "शेर कौन है?", options: ["जानवर", "पक्षी", "पेड़", "इंसान"], answer: "जानवर" },
+          { q: "चूहा शेर की मदद कैसे करता है?", options: ["जाल काटकर", "खाना देकर", "सोने देकर", "उड़ने देकर"], answer: "जाल काटकर" },
+          { q: "शेर और चूहा क्या बन जाते हैं?", options: ["दोस्त", "दुश्मन", "भाई", "शत्रु"], answer: "दोस्त" },
+          { q: "शेर कहाँ रहता है?", options: ["जंगल में", "घर में", "नदी में", "पहाड़ पर"], answer: "जंगल में" },
+          { q: "चूहा कितना छोटा है?", options: ["बड़ा", "छोटा", "मध्यम", "लंबा"], answer: "छोटा" }
+        ]
+      },
+      {
+        title: "Chapter 19: आउट",
+        questions: [
+          { q: "आउट का मतलब क्या है?", options: ["खेल से बाहर", "खेल में अंदर", "जीत", "हार"], answer: "खेल से बाहर" },
+          { q: "आउट किस खेल में होता है?", options: ["क्रिकेट", "फुटबॉल", "कबड्डी", "सभी"], answer: "क्रिकेट" },
+          { q: "आउट होने पर क्या होता है?", options: ["बैठना", "दौड़ना", "खेलना", "हँसना"], answer: "बैठना" },
+          { q: "आउट कौन करता है?", options: ["खिलाड़ी", "दर्शक", "अंपायर", "कोच"], answer: "अंपायर" },
+          { q: "आउट से क्या सीखते हैं?", options: ["अभ्यास", "सोना", "खाना", "दौड़ना"], answer: "अभ्यास" }
+        ]
+      },
+      {
+        title: "Chapter 20: छुपन-छुपाई",
+        questions: [
+          { q: "छुपन-छुपाई क्या है?", options: ["खेल", "खाना", "पढ़ाई", "सोना"], answer: "खेल" },
+          { q: "इस खेल में क्या करना है?", options: ["छुपना", "दौड़ना", "उड़ना", "खाना"], answer: "छुपना" },
+          { q: "कौन ढूंढता है?", options: ["एक खिलाड़ी", "सभी", "कोई नहीं", "दर्शक"], answer: "एक खिलाड़ी" },
+          { q: "यह खेल कहाँ खेला जाता है?", options: ["घर में", "खेल के मैदान में", "जंगल में", "सभी"], answer: "सभी" },
+          { q: "इस खेल में कितने लोग हो सकते हैं?", options: ["कई", "एक", "दो", "कोई नहीं"], answer: "कई" }
+        ]
+      },
+      {
+        title: "Chapter 21: हाथी साइकिल चला रहा था",
+        questions: [
+          { q: "हाथी क्या कर रहा था?", options: ["साइकिल चला रहा था", "उड़ रहा था", "सो रहा था", "खा रहा था"], answer: "साइकिल चला रहा था" },
+          { q: "हाथी का आकार क्या है?", options: ["बड़ा", "छोटा", "मध्यम", "पतला"], answer: "बड़ा" },
+          { q: "साइकिल का रंग क्या हो सकता है?", options: ["लाल", "नीला", "हरा", "सभी"], answer: "सभी" },
+          { q: "हाथी कहाँ साइकिल चला रहा था?", options: ["सड़क पर", "जंगल में", "पानी में", "आकाश में"], answer: "सड़क पर" },
+          { q: "यह कहानी कैसी है?", options: ["मज़ेदार", "दुखद", "गंभीर", "धीमी"], answer: "मज़ेदार" }
+        ]
+      },
+      {
+        title: "Chapter 22: चार दिशाएँ",
+        questions: [
+          { q: "चार दिशाएँ कौन सी हैं?", options: ["पूर्व, पश्चिम, उत्तर, दक्षिण", "ऊपर, नीचे, दाएँ, बाएँ", "सामने, पीछे", "सभी"], answer: "पूर्व, पश्चिम, उत्तर, दक्षिण" },
+          { q: "दिशाएँ कहाँ होती हैं?", options: ["आकाश में", "पृथ्वी पर", "समुद्र में", "घर में"], answer: "पृथ्वी पर" },
+          { q: "कौन दिशा सूरज उगता है?", options: ["पूर्व", "पश्चिम", "उत्तर", "दक्षिण"], answer: "पूर्व" },
+          { q: "दिशाएँ कैसे पहचानें?", options: ["सूरज से", "हवा से", "पानी से", "आग से"], answer: "सूरज से" },
+          { q: "दिशाएँ कितनी हैं?", options: ["चार", "तीन", "दो", "एक"], answer: "चार" }
+        ]
+      },
+      {
+        title: "Chapter 23: चंदा मामा",
+        questions: [
+          { q: "चंदा मामा कौन है?", options: ["चाँद", "सूरज", "तारा", "पेड़"], answer: "चाँद" },
+          { q: "चंदा मामा कब दिखता है?", options: ["रात में", "दिन में", "सुबह में", "शाम में"], answer: "रात में" },
+          { q: "चंदा मामा का रंग क्या है?", options: ["सफेद", "लाल", "नीला", "हरा"], answer: "सफेद" },
+          { q: "चंदा मामा बच्चों को क्या देता है?", options: ["प्रकाश", "खाना", "पानी", "खिलौना"], answer: "प्रकाश" },
+          { q: "चंदा मामा कहाँ रहता है?", options: ["आकाश में", "पृथ्वी पर", "समुद्र में", "जंगल में"], answer: "आकाश में" }
+        ]
+      },
+      {
+        title: "Chapter 24: ताल में चंदा मामा",
+        questions: [
+          { q: "चंदा मामा ताल में कहाँ दिखता है?", options: ["पानी में", "हवा में", "धरती पर", "आकाश में"], answer: "पानी में" },
+          { q: "ताल में चंदा मामा कैसा दिखता है?", options: ["सुंदर", "धुंधला", "काला", "भूरा"], answer: "सुंदर" },
+          { q: "ताल का पानी कैसा होता है?", options: ["शांत", "गर्म", "ठंडा", "हिलता"], answer: "शांत" },
+          { q: "चंदा मामा ताल में क्यों दिखता है?", options: ["प्रतिबिंब के कारण", "हवा के कारण", "धूप के कारण", "पानी के कारण"], answer: "प्रतिबिंब के कारण" },
+          { q: "यह दृश्य कब देखा जा सकता है?", options: ["रात में", "दिन में", "सुबह में", "शाम में"], answer: "रात में" }
+        ]
+      },
+      {
+        title: "Chapter 25: सबसे बड़ा छाता",
+        questions: [
+          { q: "सबसे बड़ा छाता किसका है?", options: ["पेड़ का", "घर का", "इंसान का", "सूरज का"], answer: "पेड़ का" },
+          { q: "छाता किससे बचाता है?", options: ["बरसात से", "धूप से", "हवा से", "सभी"], answer: "सभी" },
+          { q: "पेड़ का छाता कैसा होता है?", options: ["हरा", "लाल", "नीला", "काला"], answer: "हरा" },
+          { q: "छाता कहाँ मिलता है?", options: ["प्रकृति में", "दुकान में", "घर में", "स्कूल में"], answer: "प्रकृति में" },
+          { q: "छाता कितना बड़ा हो सकता है?", options: ["बहुत बड़ा", "छोटा", "मध्यम", "एक इंच"], answer: "बहुत बड़ा" }
+        ]
+      },
+      {
+        title: "Chapter 26: बादल",
+        questions: [
+          { q: "बादल कहाँ होते हैं?", options: ["आकाश में", "पृथ्वी पर", "समुद्र में", "घर में"], answer: "आकाश में" },
+          { q: "बादल से क्या होता है?", options: ["बरसात", "धूप", "हवा", "बर्फ"], answer: "बरसात" },
+          { q: "बादल का रंग क्या हो सकता है?", options: ["सफेद", "काला", "ग्रे", "सभी"], answer: "सभी" },
+          { q: "बादल कैसे बनते हैं?", options: ["वाष्प से", "पानी से", "हवा से", "धूप से"], answer: "वाष्प से" },
+          { q: "बादल कब दिखते हैं?", options: ["दिन में", "रात में", "सुबह में", "सभी"], answer: "दिन में" }
+        ]
+      }
+    ]
+   },
+  3: {
+  EVS: [
+      {
+        title: "Chapter 1: Family and Friends",
+        questions: [
+          { q: "Who are part of your family?", options: ["Friends only", "Parents and siblings", "Teachers", "Strangers"], answer: "Parents and siblings" },
+          { q: "What do families do together?", options: ["Work", "Play games", "Fight", "Sleep all day"], answer: "Play games" },
+          { q: "How many people are in a small family?", options: ["2-4", "5-7", "8-10", "10+"], answer: "2-4" },
+          { q: "What helps families stay happy?", options: ["Love", "Money", "Toys", "Food"], answer: "Love" },
+          { q: "Who is your best friend in the family?", options: ["Brother", "Neighbor", "Teacher", "Dog"], answer: "Brother" },
+          { q: "What do families celebrate?", options: ["Birthdays", "Rain", "Wind", "Snow"], answer: "Birthdays" },
+          { q: "How do you help your family?", options: ["Cleaning", "Sleeping", "Playing", "Eating"], answer: "Cleaning" },
+          { q: "What is a family member’s role?", options: ["Caring", "Fighting", "Running", "Hiding"], answer: "Caring" },
+          { q: "How many grandparents can you have?", options: ["2", "4", "6", "8"], answer: "4" },
+          { q: "What do friends share?", options: ["Toys", "Houses", "Cars", "Trees"], answer: "Toys" }
+        ]
+      },
+      {
+        title: "Chapter 2: Going to the Mela",
+        questions: [
+          { q: "What is a mela?", options: ["A school", "A fair", "A house", "A river"], answer: "A fair" },
+          { q: "What can you buy at a mela?", options: ["Toys", "Books", "Food", "All of these"], answer: "All of these" },
+          { q: "How do people travel to a mela?", options: ["Walking", "Bus", "Car", "All"], answer: "All" },
+          { q: "What games are played at a mela?", options: ["Ring toss", "Chess", "Swimming", "Running"], answer: "Ring toss" },
+          { q: "What time does a mela start?", options: ["Morning", "Night", "Afternoon", "Evening"], answer: "Morning" },
+          { q: "What do people wear at a mela?", options: ["Uniforms", "Bright clothes", "Raincoats", "Shoes"], answer: "Bright clothes" },
+          { q: "How many stalls might be at a mela?", options: ["5", "10", "20", "50"], answer: "20" },
+          { q: "What is sold in food stalls?", options: ["Books", "Snacks", "Clothes", "Toys"], answer: "Snacks" },
+          { q: "Who enjoys a mela?", options: ["Children", "Adults", "Everyone", "No one"], answer: "Everyone" },
+          { q: "What do you need to enter a mela?", options: ["Ticket", "Book", "Pen", "Bag"], answer: "Ticket" }
+        ]
+      },
+      {
+        title: "Chapter 3: Celebrating Festivals",
+        questions: [
+          { q: "What is a festival?", options: ["A game", "A celebration", "A school", "A river"], answer: "A celebration" },
+          { q: "Which festival has lights?", options: ["Diwali", "Holi", "Christmas", "All"], answer: "Diwali" },
+          { q: "What do we use to decorate?", options: ["Flowers", "Stones", "Mud", "Wood"], answer: "Flowers" },
+          { q: "How do we celebrate Holi?", options: ["With colors", "With snow", "With rain", "With wind"], answer: "With colors" },
+          { q: "What do we share during festivals?", options: ["Sweets", "Books", "Pens", "Chairs"], answer: "Sweets" },
+          { q: "Which festival is in winter?", options: ["Christmas", "Diwali", "Holi", "Eid"], answer: "Christmas" },
+          { q: "What do we wear on festivals?", options: ["Old clothes", "New clothes", "Uniforms", "Shoes"], answer: "New clothes" },
+          { q: "How many days does Diwali last?", options: ["1", "3", "5", "7"], answer: "5" },
+          { q: "What do we light during Diwali?", options: ["Candles", "Lamps", "Torches", "All"], answer: "Lamps" },
+          { q: "Who joins festival celebrations?", options: ["Family", "Friends", "Community", "All"], answer: "All" }
+        ]
+      },
+      {
+        title: "Chapter 4: Getting to Know Plants",
+        questions: [
+          { q: "What do plants need to grow?", options: ["Water", "Sunlight", "Both", "Neither"], answer: "Both" },
+          { q: "What is the green part of a plant?", options: ["Leaf", "Root", "Stem", "Flower"], answer: "Leaf" },
+          { q: "Where do roots grow?", options: ["In soil", "In air", "In water", "On leaves"], answer: "In soil" },
+          { q: "What do flowers attract?", options: ["Butterflies", "Rocks", "Wind", "Rain"], answer: "Butterflies" },
+          { q: "How do plants make food?", options: ["Photosynthesis", "Eating", "Drinking", "Sleeping"], answer: "Photosynthesis" },
+          { q: "What part holds the plant up?", options: ["Stem", "Leaf", "Root", "Flower"], answer: "Stem" },
+          { q: "What color are most leaves?", options: ["Green", "Red", "Blue", "Yellow"], answer: "Green" },
+          { q: "What grows into a new plant?", options: ["Seed", "Stone", "Leaf", "Water"], answer: "Seed" },
+          { q: "Which plant has thorns?", options: ["Rose", "Lily", "Tulip", "Lotus"], answer: "Rose" },
+          { q: "What do roots absorb?", options: ["Water", "Air", "Light", "Food"], answer: "Water" }
+        ]
+      },
+      {
+        title: "Chapter 5: Plants and Animals Live Together",
+        questions: [
+          { q: "What do animals eat from plants?", options: ["Leaves", "Stones", "Sand", "Water"], answer: "Leaves" },
+          { q: "Which animal lives on trees?", options: ["Monkey", "Lion", "Elephant", "Fish"], answer: "Monkey" },
+          { q: "What do bees collect from flowers?", options: ["Honey", "Water", "Mud", "Leaves"], answer: "Honey" },
+          { q: "How do plants help animals?", options: ["Give oxygen", "Give stones", "Give sand", "Give water"], answer: "Give oxygen" },
+          { q: "Which animal eats grass?", options: ["Cow", "Tiger", "Snake", "Eagle"], answer: "Cow" },
+          { q: "What do birds use from plants?", options: ["Nests", "Houses", "Caves", "Rocks"], answer: "Nests" },
+          { q: "Which plant has fruits for animals?", options: ["Mango tree", "Cactus", "Pine", "Fern"], answer: "Mango tree" },
+          { q: "What do animals give to plants?", options: ["Carbon dioxide", "Oxygen", "Water", "Soil"], answer: "Carbon dioxide" },
+          { q: "Which animal digs in soil?", options: ["Rabbit", "Bird", "Fish", "Snake"], answer: "Rabbit" },
+          { q: "How do plants and animals depend?", options: ["Together", "Separately", "Never", "Sometimes"], answer: "Together" }
+        ]
+      },
+      {
+        title: "Chapter 6: Living in Harmony",
+        questions: [
+          { q: "What does harmony mean?", options: ["Peace", "War", "Fight", "Noise"], answer: "Peace" },
+          { q: "Who lives in harmony with nature?", options: ["People", "Rocks", "Cars", "Houses"], answer: "People" },
+          { q: "What helps animals live together?", options: ["Food", "Water", "Shelter", "All"], answer: "All" },
+          { q: "How do we help nature?", options: ["Planting trees", "Cutting trees", "Burning leaves", "Throwing waste"], answer: "Planting trees" },
+          { q: "What do birds and trees share?", options: ["Home", "Food", "Water", "Air"], answer: "Home" },
+          { q: "Why is harmony important?", options: ["For life", "For noise", "For fight", "For sleep"], answer: "For life" },
+          { q: "What do people share in a community?", options: ["Resources", "Toys", "Books", "All"], answer: "All" },
+          { q: "Which animal lives with others?", options: ["Ant", "Tiger", "Snake", "Eagle"], answer: "Ant" },
+          { q: "What grows with harmony?", options: ["Plants", "Stones", "Sand", "Water"], answer: "Plants" },
+          { q: "How do we show harmony?", options: ["Helping", "Fighting", "Running", "Sleeping"], answer: "Helping" }
+        ]
+      },
+      {
+        title: "Chapter 7: Water— A Precious Gift",
+        questions: [
+          { q: "What is water used for?", options: ["Drinking", "Cooking", "Bathing", "All"], answer: "All" },
+          { q: "Where do we get water from?", options: ["River", "Rain", "Well", "All"], answer: "All" },
+          { q: "What happens if we waste water?", options: ["Shortage", "More rain", "Flood", "Snow"], answer: "Shortage" },
+          { q: "What color is clean water?", options: ["Clear", "Green", "Brown", "Red"], answer: "Clear" },
+          { q: "How can we save water?", options: ["Close taps", "Leave taps open", "Waste it", "Throw it"], answer: "Close taps" },
+          { q: "What lives in water?", options: ["Fish", "Birds", "Dogs", "Cats"], answer: "Fish" },
+          { q: "What is rain made of?", options: ["Water", "Sand", "Soil", "Air"], answer: "Water" },
+          { q: "How much water do plants need?", options: ["Little", "None", "A lot", "Medium"], answer: "Little" },
+          { q: "What pollutes water?", options: ["Garbage", "Flowers", "Trees", "Air"], answer: "Garbage" },
+          { q: "Why is water precious?", options: ["Life needs it", "It’s colorful", "It’s heavy", "It’s light"], answer: "Life needs it" }
+        ]
+      },
+      {
+        title: "Chapter 8: Food We Eat",
+        questions: [
+          { q: "What food comes from plants?", options: ["Rice", "Meat", "Fish", "Eggs"], answer: "Rice" },
+          { q: "Which animal gives us milk?", options: ["Cow", "Bird", "Fish", "Snake"], answer: "Cow" },
+          { q: "What do we eat for breakfast?", options: ["Bread", "Stones", "Sand", "Water"], answer: "Bread" },
+          { q: "Which fruit is yellow?", options: ["Banana", "Apple", "Orange", "Grape"], answer: "Banana" },
+          { q: "What keeps us healthy?", options: ["Balanced diet", "Sugar", "Salt", "Fat"], answer: "Balanced diet" },
+          { q: "What food grows underground?", options: ["Carrot", "Apple", "Mango", "Banana"], answer: "Carrot" },
+          { q: "Which food is cooked?", options: ["Rice", "Apple", "Banana", "Grape"], answer: "Rice" },
+          { q: "What do we drink for health?", options: ["Milk", "Soda", "Juice", "Water"], answer: "Water" },
+          { q: "Which food is green?", options: ["Spinach", "Bread", "Rice", "Milk"], answer: "Spinach" },
+          { q: "What do animals eat?", options: ["Grass", "Stones", "Paper", "Plastic"], answer: "Grass" }
+        ]
+      },
+      {
+        title: "Chapter 9: Staying Healthy and Happy",
+        questions: [
+          { q: "What keeps us healthy?", options: ["Exercise", "Sleeping all day", "Eating junk", "Watching TV"], answer: "Exercise" },
+          { q: "How often should we brush teeth?", options: ["Once", "Twice", "Thrice", "Never"], answer: "Twice" },
+          { q: "What do we need to stay happy?", options: ["Friends", "Enemies", "Fights", "Loneliness"], answer: "Friends" },
+          { q: "What food is good for health?", options: ["Vegetables", "Candy", "Chips", "Soda"], answer: "Vegetables" },
+          { q: "How much sleep do kids need?", options: ["8-10 hours", "2-4 hours", "10-12 hours", "1 hour"], answer: "8-10 hours" },
+          { q: "What protects us from germs?", options: ["Washing hands", "Eating dirt", "Playing outside", "Sleeping"], answer: "Washing hands" },
+          { q: "What sport is good for health?", options: ["Running", "Sitting", "Watching", "Eating"], answer: "Running" },
+          { q: "What makes us smile?", options: ["Helping", "Fighting", "Crying", "Sleeping"], answer: "Helping" },
+          { q: "What should we drink daily?", options: ["Water", "Soda", "Juice", "Milk"], answer: "Water" },
+          { q: "Who helps us stay healthy?", options: ["Doctor", "Teacher", "Friend", "Neighbor"], answer: "Doctor" }
+        ]
+      },
+      {
+        title: "Chapter 10: This World of Things",
+        questions: [
+          { q: "What are things made from?", options: ["Materials", "Air", "Water", "Fire"], answer: "Materials" },
+          { q: "Which is a natural thing?", options: ["Stone", "Chair", "Table", "Bed"], answer: "Stone" },
+          { q: "What is made of wood?", options: ["Chair", "Rock", "Metal", "Plastic"], answer: "Chair" },
+          { q: "Which thing is man-made?", options: ["Car", "River", "Mountain", "Tree"], answer: "Car" },
+          { q: "What is used to make clothes?", options: ["Cotton", "Stone", "Metal", "Wood"], answer: "Cotton" },
+          { q: "Which thing floats on water?", options: ["Wood", "Stone", "Iron", "Brick"], answer: "Wood" },
+          { q: "What is a toy made from?", options: ["Plastic", "Sand", "Water", "Air"], answer: "Plastic" },
+          { q: "Which is a living thing?", options: ["Plant", "Chair", "Table", "Car"], answer: "Plant" },
+          { q: "What is used to build houses?", options: ["Bricks", "Leaves", "Water", "Sand"], answer: "Bricks" },
+          { q: "Which thing is heavy?", options: ["Rock", "Feather", "Paper", "Cotton"], answer: "Rock" }
+        ]
+      },
+      {
+        title: "Chapter 11: Making Things",
+        questions: [
+          { q: "What do we use to make a kite?", options: ["Paper", "Stone", "Metal", "Wood"], answer: "Paper" },
+          { q: "Which tool cuts paper?", options: ["Scissors", "Spoon", "Fork", "Knife"], answer: "Scissors" },
+          { q: "What is used to color a drawing?", options: ["Crayons", "Stones", "Water", "Sand"], answer: "Crayons" },
+          { q: "How do we make a clay pot?", options: ["Molding", "Cutting", "Painting", "Sewing"], answer: "Molding" },
+          { q: "What is used to join paper?", options: ["Glue", "Water", "Oil", "Milk"], answer: "Glue" },
+          { q: "Which material is soft?", options: ["Clay", "Stone", "Metal", "Glass"], answer: "Clay" },
+          { q: "What do we use to draw lines?", options: ["Ruler", "Spoon", "Fork", "Knife"], answer: "Ruler" },
+          { q: "Which thing can be sewn?", options: ["Cloth", "Stone", "Metal", "Wood"], answer: "Cloth" },
+          { q: "What is used to make a basket?", options: ["Bamboo", "Stone", "Metal", "Glass"], answer: "Bamboo" },
+          { q: "How do we decorate a craft?", options: ["Painting", "Eating", "Sleeping", "Running"], answer: "Painting" }
+        ]
+      },
+      {
+        title: "Chapter 12: Taking Charge of Waste",
+        questions: [
+          { q: "What should we do with waste?", options: ["Throw it away", "Recycle", "Eat it", "Burn it"], answer: "Recycle" },
+          { q: "Which bin is for paper?", options: ["Blue", "Green", "Red", "Yellow"], answer: "Blue" },
+          { q: "What is made from recycled paper?", options: ["Books", "Stones", "Metal", "Glass"], answer: "Books" },
+          { q: "Which waste is biodegradable?", options: ["Leaves", "Plastic", "Metal", "Glass"], answer: "Leaves" },
+          { q: "What harms the environment?", options: ["Littering", "Planting", "Cleaning", "Watering"], answer: "Littering" },
+          { q: "Which bin is for food waste?", options: ["Green", "Blue", "Red", "Yellow"], answer: "Green" },
+          { q: "What can we reuse?", options: ["Bottle", "Stone", "Metal", "Glass"], answer: "Bottle" },
+          { q: "How do we reduce waste?", options: ["Use less", "Use more", "Throw more", "Burn more"], answer: "Use less" },
+          { q: "What is non-biodegradable?", options: ["Plastic", "Leaves", "Food", "Wood"], answer: "Plastic" },
+          { q: "Who should manage waste?", options: ["Everyone", "No one", "Children", "Adults"], answer: "Everyone" }
+        ]
+      }
+    ],
+ mathematics: [
+      {
+        title: "Chapter 1: What’s in a Name?",
+        questions: [
+          { q: "How many letters are in the name 'Deba'?", options: ["3", "4", "5", "6"], answer: "4" },
+          { q: "What is the longest name among Deba, Deep, and Jojo?", options: ["Deba", "Deep", "Jojo", "All are equal"], answer: "Jojo" },
+          { q: "How many cows did Deba and Deep have to track?", options: ["5", "6", "7", "8"], answer: "6" },
+          { q: "What did Teji and Jojo use to make numbers?", options: ["Stones", "Cards", "Sticks", "Leaves"], answer: "Cards" },
+          { q: "How many letters are in the number name 'fifty-six'?", options: ["7", "8", "9", "10"], answer: "8" },
+          { q: "Which group includes things that eat food?", options: ["Plants", "Animals", "Rocks", "Water"], answer: "Animals" },
+          { q: "What is the shortest name among Teji, Jojo, and Deep?", options: ["Teji", "Jojo", "Deep", "All are equal"], answer: "Deep" },
+          { q: "How many teams were formed by the animals?", options: ["1", "2", "3", "4"], answer: "2" },
+          { q: "What helps in counting cows without numbers?", options: ["Names", "Colors", "Sounds", "Sizes"], answer: "Names" },
+          { q: "What number name has 5 letters?", options: ["Ten", "Twenty", "Thirty", "Forty"], answer: "Twenty" }
+        ]
+      },
+      {
+        title: "Chapter 2: Toy Joy",
+        questions: [
+          { q: "Which shape has no edges?", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Circle" },
+          { q: "How many cubes are needed to make a cuboid?", options: ["4", "6", "8", "10"], answer: "6" },
+          { q: "What toy can be made with only flat faces?", options: ["Ball", "Cube", "Cone", "Cylinder"], answer: "Cube" },
+          { q: "Which shape has both straight and curved edges?", options: ["Star", "Circle", "Square", "Triangle"], answer: "Star" },
+          { q: "How many sides does a triangle have?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "What can you build with 5 cubes?", options: ["Tower", "House", "Bridge", "All of these"], answer: "All of these" },
+          { q: "Which toy has only curved faces?", options: ["Ball", "Block", "Stick", "Board"], answer: "Ball" },
+          { q: "How many faces does a cube have?", options: ["4", "6", "8", "10"], answer: "6" },
+          { q: "What shape is used to make a rocket model?", options: ["Cone", "Cube", "Sphere", "Rectangle"], answer: "Cone" },
+          { q: "Which shape has 4 equal sides?", options: ["Square", "Circle", "Triangle", "Pentagon"], answer: "Square" }
+        ]
+      },
+      {
+        title: "Chapter 3: Double Century",
+        questions: [
+          { q: "What number comes after 199?", options: ["200", "198", "201", "199"], answer: "200" },
+          { q: "How many tens are in 150?", options: ["5", "10", "15", "50"], answer: "15" },
+          { q: "What number should be added to 45 to make 100?", options: ["45", "50", "55", "60"], answer: "55" },
+          { q: "How many bundles of 10 make 200?", options: ["10", "15", "20", "25"], answer: "20" },
+          { q: "What is 70 + 30?", options: ["90", "100", "110", "120"], answer: "100" },
+          { q: "Estimate the number of bangles in a pile of 50?", options: ["30-40", "40-50", "50-60", "60-70"], answer: "40-50" },
+          { q: "How many sticks make 100 if each bundle has 10?", options: ["10", "50", "100", "200"], answer: "100" },
+          { q: "What comes after 175 with a jump of 10?", options: ["180", "185", "190", "195"], answer: "185" },
+          { q: "Which pair adds to 200?", options: ["100+90", "110+80", "120+70", "130+60"], answer: "130+70" },
+          { q: "How many hundreds are in 250?", options: ["1", "2", "3", "4"], answer: "2" }
+        ]
+      },
+      {
+        title: "Chapter 4: Vacation with My Nani Maa",
+        questions: [
+          { q: "What is 10 + 15?", options: ["20", "25", "30", "35"], answer: "25" },
+          { q: "How many days are in a week?", options: ["5", "6", "7", "8"], answer: "7" },
+          { q: "What is 20 - 5?", options: ["10", "15", "20", "25"], answer: "15" },
+          { q: "How many wheels does a bicycle have?", options: ["1", "2", "3", "4"], answer: "2" },
+          { q: "What is half of 10?", options: ["2", "5", "7", "10"], answer: "5" },
+          { q: "How many fingers on two hands?", options: ["8", "10", "12", "15"], answer: "10" },
+          { q: "What is 5 + 5?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "How many legs does a cow have?", options: ["2", "4", "6", "8"], answer: "4" },
+          { q: "What is 30 - 10?", options: ["15", "20", "25", "30"], answer: "20" },
+          { q: "How many months are in a year?", options: ["10", "11", "12", "13"], answer: "12" }
+        ]
+      },
+      {
+        title: "Chapter 5: Fun with Shapes",
+        questions: [
+          { q: "How many sides does a pentagon have?", options: ["4", "5", "6", "7"], answer: "5" },
+          { q: "What shape has 3 sides?", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Triangle" },
+          { q: "How many corners does a rectangle have?", options: ["3", "4", "5", "6"], answer: "4" },
+          { q: "Which shape rolls easily?", options: ["Cube", "Sphere", "Cube", "Cone"], answer: "Sphere" },
+          { q: "What shape has no corners?", options: ["Circle", "Square", "Triangle", "Hexagon"], answer: "Circle" },
+          { q: "How many edges does a cube have?", options: ["6", "8", "12", "16"], answer: "12" },
+          { q: "Which shape has 4 right angles?", options: ["Triangle", "Rectangle", "Circle", "Pentagon"], answer: "Rectangle" },
+          { q: "What is a flat shape with 6 sides called?", options: ["Pentagon", "Hexagon", "Heptagon", "Octagon"], answer: "Hexagon" },
+          { q: "Which shape can stack easily?", options: ["Ball", "Cube", "Cone", "Cylinder"], answer: "Cube" },
+          { q: "How many faces does a cone have?", options: ["1", "2", "3", "4"], answer: "2" }
+        ]
+      },
+      {
+        title: "Chapter 6: House of Hundreds - I",
+        questions: [
+          { q: "What is 100 + 50?", options: ["120", "150", "180", "200"], answer: "150" },
+          { q: "How many tens are in 200?", options: ["10", "15", "20", "25"], answer: "20" },
+          { q: "What is 300 - 100?", options: ["100", "200", "300", "400"], answer: "200" },
+          { q: "How many hundreds are in 500?", options: ["1", "2", "3", "5"], answer: "5" },
+          { q: "What is 50 + 50?", options: ["50", "100", "150", "200"], answer: "100" },
+          { q: "How many ones are in 123?", options: ["1", "2", "3", "4"], answer: "3" },
+          { q: "What is 200 + 100?", options: ["200", "300", "400", "500"], answer: "300" },
+          { q: "How many tens are in 350?", options: ["3", "5", "30", "50"], answer: "35" },
+          { q: "What is 400 - 200?", options: ["100", "200", "300", "400"], answer: "200" },
+          { q: "What number has 2 hundreds and 3 tens?", options: ["203", "230", "320", "302"], answer: "230" }
+        ]
+      },
+      {
+        title: "Chapter 7: Raksha Bandhan",
+        questions: [
+          { q: "How many sisters tie rakhis typically?", options: ["1", "2", "3", "4"], answer: "1" },
+          { q: "What is the gift value if 50 + 20?", options: ["50", "70", "80", "90"], answer: "70" },
+          { q: "How many brothers get rakhis in a family of 2?", options: ["1", "2", "3", "4"], answer: "2" },
+          { q: "What is 100 - 30 for sweets?", options: ["60", "70", "80", "90"], answer: "70" },
+          { q: "How many rakhis can 5 sisters tie?", options: ["3", "4", "5", "6"], answer: "5" },
+          { q: "What is the cost if 10 + 15 rupees?", options: ["20", "25", "30", "35"], answer: "25" },
+          { q: "How many gifts for 3 brothers?", options: ["1", "2", "3", "4"], answer: "3" },
+          { q: "What is 50 - 20 for a present?", options: ["20", "25", "30", "35"], answer: "30" },
+          { q: "How many rakhis in 2 packs of 5?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is 30 + 40 for decorations?", options: ["60", "70", "80", "90"], answer: "70" }
+        ]
+      },
+      {
+        title: "Chapter 8: Fair Share",
+        questions: [
+          { q: "What is 10 divided by 2?", options: ["2", "4", "5", "10"], answer: "5" },
+          { q: "How many pieces if 12 is shared by 3?", options: ["2", "3", "4", "6"], answer: "4" },
+          { q: "What is half of 8?", options: ["2", "4", "6", "8"], answer: "4" },
+          { q: "How many get 3 candies from 9?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "What is 15 divided by 5?", options: ["1", "2", "3", "5"], answer: "3" },
+          { q: "How many pieces for 20 shared by 4?", options: ["4", "5", "6", "10"], answer: "5" },
+          { q: "What is a quarter of 12?", options: ["2", "3", "4", "6"], answer: "3" },
+          { q: "How many get 4 from 16?", options: ["2", "3", "4", "5"], answer: "4" },
+          { q: "What is 6 divided by 2?", options: ["1", "2", "3", "6"], answer: "3" },
+          { q: "How many pieces for 8 shared by 2?", options: ["2", "4", "6", "8"], answer: "4" }
+        ]
+      },
+      {
+        title: "Chapter 9: House of Hundreds - II",
+        questions: [
+          { q: "What is 300 + 200?", options: ["400", "500", "600", "700"], answer: "500" },
+          { q: "How many tens in 450?", options: ["4", "5", "40", "45"], answer: "45" },
+          { q: "What is 600 - 200?", options: ["300", "400", "500", "600"], answer: "400" },
+          { q: "How many hundreds in 700?", options: ["1", "2", "3", "7"], answer: "7" },
+          { q: "What is 150 + 50?", options: ["150", "200", "250", "300"], answer: "200" },
+          { q: "How many ones in 234?", options: ["2", "3", "4", "5"], answer: "4" },
+          { q: "What is 400 + 300?", options: ["600", "700", "800", "900"], answer: "700" },
+          { q: "How many tens in 780?", options: ["7", "8", "70", "78"], answer: "78" },
+          { q: "What is 500 - 100?", options: ["300", "400", "500", "600"], answer: "400" },
+          { q: "What number has 3 hundreds and 2 tens?", options: ["302", "320", "230", "203"], answer: "320" }
+        ]
+      },
+      {
+        title: "Chapter 10: Fun at Class Party!",
+        questions: [
+          { q: "How many chairs for 20 kids and 5 adults?", options: ["20", "25", "30", "35"], answer: "25" },
+          { q: "What is 10 + 15 for balloons?", options: ["20", "25", "30", "35"], answer: "25" },
+          { q: "How many slices from 1 cake for 4?", options: ["2", "4", "6", "8"], answer: "4" },
+          { q: "What is 50 - 20 for snacks?", options: ["20", "25", "30", "40"], answer: "30" },
+          { q: "How many games with 5 teams of 4?", options: ["5", "10", "15", "20"], answer: "5" },
+          { q: "What is 30 + 10 for decorations?", options: ["30", "40", "50", "60"], answer: "40" },
+          { q: "How many candies for 10 kids with 3 each?", options: ["20", "25", "30", "40"], answer: "30" },
+          { q: "What is 15 - 5 for juice glasses?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "How many plates for 12 guests?", options: ["10", "12", "14", "16"], answer: "12" },
+          { q: "What is 20 + 20 for party bags?", options: ["30", "40", "50", "60"], answer: "40" }
+        ]
+      },
+      {
+        title: "Chapter 11: Filling and Lifting",
+        questions: [
+          { q: "How many cups fill 1 liter?", options: ["2", "4", "6", "8"], answer: "4" },
+          { q: "What is half of 1 liter?", options: ["0.25L", "0.5L", "0.75L", "1L"], answer: "0.5L" },
+          { q: "How many 250ml in 1 liter?", options: ["2", "3", "4", "5"], answer: "4" },
+          { q: "What fills faster, a cup or a jug?", options: ["Cup", "Jug", "Both", "None"], answer: "Cup" },
+          { q: "How many 500ml in 2 liters?", options: ["2", "3", "4", "5"], answer: "4" },
+          { q: "What is 1 liter + 500ml?", options: ["1.5L", "1.75L", "2L", "2.5L"], answer: "1.5L" },
+          { q: "How many glasses of 200ml in 1 liter?", options: ["4", "5", "6", "7"], answer: "5" },
+          { q: "What is less than 1 liter?", options: ["500ml", "750ml", "1000ml", "1500ml"], answer: "500ml" },
+          { q: "How many 100ml in 1 liter?", options: ["5", "8", "10", "12"], answer: "10" },
+          { q: "What is 2 liters - 500ml?", options: ["1L", "1.5L", "2L", "2.5L"], answer: "1.5L" }
+        ]
+      },
+      {
+        title: "Chapter 12: Give and Take",
+        questions: [
+          { q: "What is 10 + 20?", options: ["20", "30", "40", "50"], answer: "30" },
+          { q: "What is 50 - 20?", options: ["20", "30", "40", "50"], answer: "30" },
+          { q: "How many left if 15 - 5?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What is 30 + 10?", options: ["30", "40", "50", "60"], answer: "40" },
+          { q: "What is 100 - 50?", options: ["40", "50", "60", "70"], answer: "50" },
+          { q: "How many total with 5 + 15?", options: ["10", "15", "20", "25"], answer: "20" },
+          { q: "What is 40 - 10?", options: ["20", "30", "40", "50"], answer: "30" },
+          { q: "What is 25 + 25?", options: ["40", "50", "60", "70"], answer: "50" },
+          { q: "How many left if 60 - 30?", options: ["20", "30", "40", "50"], answer: "30" },
+          { q: "What is 10 + 30?", options: ["30", "40", "50", "60"], answer: "40" }
+        ]
+      },
+      {
+        title: "Chapter 13: Time Goes On",
+        questions: [
+          { q: "How many hours in a day?", options: ["12", "24", "36", "48"], answer: "24" },
+          { q: "What comes after 2:00 PM?", options: ["1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"], answer: "3:00 PM" },
+          { q: "How many minutes in 1 hour?", options: ["30", "45", "60", "90"], answer: "60" },
+          { q: "What is 3:00 PM + 2 hours?", options: ["4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM"], answer: "5:00 PM" },
+          { q: "How many days in a week?", options: ["5", "6", "7", "8"], answer: "7" },
+          { q: "What time is 1 hour before 5:00 PM?", options: ["3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM"], answer: "4:00 PM" },
+          { q: "How many months in a year?", options: ["10", "11", "12", "13"], answer: "12" },
+          { q: "What is 10:00 AM + 3 hours?", options: ["12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM"], answer: "1:00 PM" },
+          { q: "How many seconds in 1 minute?", options: ["30", "45", "60", "90"], answer: "60" },
+          { q: "What time is 2 hours after 8:00 AM?", options: ["9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM"], answer: "10:00 AM" }
+        ]
+      },
+      {
+        title: "Chapter 14: The Surajkund Fair",
+        questions: [
+          { q: "How many days does the Surajkund Fair last?", options: ["5", "7", "10", "15"], answer: "7" },
+          { q: "What is 20 + 30 for ticket cost?", options: ["40", "50", "60", "70"], answer: "50" },
+          { q: "How many stalls might be there?", options: ["10", "20", "30", "40"], answer: "30" },
+          { q: "What is 50 - 10 for food?", options: ["30", "40", "50", "60"], answer: "40" },
+          { q: "How many people visit in a day?", options: ["100", "500", "1000", "2000"], answer: "1000" },
+          { q: "What is 15 + 15 for crafts?", options: ["20", "30", "40", "50"], answer: "30" },
+          { q: "How many items in 5 stalls with 10 each?", options: ["40", "50", "60", "70"], answer: "50" },
+          { q: "What is 100 - 30 for entry fees?", options: ["60", "70", "80", "90"], answer: "70" },
+          { q: "How many dances might be performed?", options: ["2", "4", "6", "8"], answer: "6" },
+          { q: "What is 25 + 25 for souvenirs?", options: ["40", "50", "60", "70"], answer: "50" }
+        ]
+      }
+    ],
+ english: [
+      {
+        title: "Chapter 1: Colours",
+        questions: [
+          { q: "What is the primary color red mixed with blue?", options: ["Green", "Purple", "Yellow", "Orange"], answer: "Purple" },
+          { q: "Which color is made by mixing yellow and blue?", options: ["Red", "Green", "Purple", "Brown"], answer: "Green" },
+          { q: "What color is the sky on a clear day?", options: ["Blue", "Red", "Green", "Yellow"], answer: "Blue" },
+          { q: "Which color do we see in a rainbow?", options: ["All", "Red only", "Blue only", "Yellow only"], answer: "All" },
+          { q: "What color is a ripe banana?", options: ["Yellow", "Green", "Red", "Blue"], answer: "Yellow" },
+          { q: "Which color is often associated with happiness?", options: ["Yellow", "Black", "Grey", "Brown"], answer: "Yellow" },
+          { q: "What color is a leaf usually?", options: ["Green", "Red", "Purple", "Orange"], answer: "Green" },
+          { q: "Which color do we use to signal stop?", options: ["Red", "Green", "Yellow", "Blue"], answer: "Red" },
+          { q: "What color is mixed with red to make orange?", options: ["Yellow", "Blue", "Green", "Purple"], answer: "Yellow" },
+          { q: "Which color is dark and often scary?", options: ["Black", "White", "Pink", "Light blue"], answer: "Black" }
+        ]
+      },
+      {
+        title: "Chapter 2: Badal and Moti",
+        questions: [
+          { q: "Who are Badal and Moti?", options: ["Dogs", "Cats", "Birds", "Fish"], answer: "Dogs" },
+          { q: "What do Badal and Moti like to do?", options: ["Run", "Sleep", "Fly", "Swim"], answer: "Run" },
+          { q: "Where do Badal and Moti live?", options: ["House", "Forest", "River", "Sky"], answer: "House" },
+          { q: "What color is Badal?", options: ["Black", "White", "Brown", "Grey"], answer: "White" },
+          { q: "What do they chase in the story?", options: ["Ball", "Cat", "Bird", "Car"], answer: "Ball" },
+          { q: "Who takes care of Badal and Moti?", options: ["Family", "Strangers", "Friends", "Teachers"], answer: "Family" },
+          { q: "What sound do they make?", options: ["Bark", "Meow", "Chirp", "Quack"], answer: "Bark" },
+          { q: "What do they eat?", options: ["Bones", "Grass", "Fish", "Leaves"], answer: "Bones" },
+          { q: "How do they play together?", options: ["Tug of war", "Hide and seek", "Swimming", "Flying"], answer: "Tug of war" },
+          { q: "What makes them happy?", options: ["Playtime", "Rain", "Darkness", "Silence"], answer: "Playtime" }
+        ]
+      },
+      {
+        title: "Chapter 3: Best Friends",
+        questions: [
+          { q: "What makes someone a best friend?", options: ["Sharing", "Fighting", "Ignoring", "Hiding"], answer: "Sharing" },
+          { q: "How do best friends help each other?", options: ["With homework", "With fights", "With toys", "All"], answer: "All" },
+          { q: "What do best friends do together?", options: ["Play", "Sleep", "Eat alone", "Fight"], answer: "Play" },
+          { q: "How many best friends can you have?", options: ["1 or more", "Only 1", "None", "10"], answer: "1 or more" },
+          { q: "What do friends share at school?", options: ["Lunch", "Books", "Pencils", "All"], answer: "All" },
+          { q: "What do best friends say to each other?", options: ["Sorry", "Never", "Go away", "Fight"], answer: "Sorry" },
+          { q: "Where do best friends meet?", options: ["Park", "School", "Home", "All"], answer: "All" },
+          { q: "What game do they play?", options: ["Tag", "Chess", "Swimming", "Running"], answer: "Tag" },
+          { q: "What makes friendship strong?", options: ["Trust", "Money", "Toys", "Food"], answer: "Trust" },
+          { q: "How do friends feel when together?", options: ["Happy", "Sad", "Angry", "Tired"], answer: "Happy" }
+        ]
+      },
+      {
+        title: "Chapter 4: Out in the Garden",
+        questions: [
+          { q: "What grows in a garden?", options: ["Flowers", "Rocks", "Cars", "Houses"], answer: "Flowers" },
+          { q: "Who works in the garden?", options: ["Gardener", "Driver", "Teacher", "Doctor"], answer: "Gardener" },
+          { q: "What color are roses?", options: ["Red", "Blue", "Green", "Yellow"], answer: "Red" },
+          { q: "What do plants need to grow?", options: ["Water", "Sand", "Stone", "Metal"], answer: "Water" },
+          { q: "What insect visits flowers?", options: ["Bee", "Ant", "Spider", "Fly"], answer: "Bee" },
+          { q: "What tool is used in a garden?", options: ["Shovel", "Pen", "Book", "Chair"], answer: "Shovel" },
+          { q: "What grows on a vine?", options: ["Grapes", "Apples", "Oranges", "Bananas"], answer: "Grapes" },
+          { q: "What do we see in the sky above the garden?", options: ["Sun", "Moon", "Stars", "All"], answer: "All" },
+          { q: "What animal might dig in a garden?", options: ["Rabbit", "Lion", "Elephant", "Tiger"], answer: "Rabbit" },
+          { q: "What makes a garden beautiful?", options: ["Colors", "Dirt", "Stones", "Water"], answer: "Colors" }
+        ]
+      },
+      {
+        title: "Chapter 5: Talking Toys",
+        questions: [
+          { q: "What toy can talk?", options: ["Doll", "Ball", "Car", "Block"], answer: "Doll" },
+          { q: "What do toys need to work?", options: ["Batteries", "Water", "Sand", "Air"], answer: "Batteries" },
+          { q: "Which toy sings a song?", options: ["Robot", "Car", "Ball", "Cube"], answer: "Robot" },
+          { q: "What color might a talking toy be?", options: ["Pink", "Blue", "Red", "All"], answer: "All" },
+          { q: "Where do we keep toys?", options: ["Toy box", "Garden", "Kitchen", "Road"], answer: "Toy box" },
+          { q: "What do toys teach us?", options: ["Imagination", "Fighting", "Sleeping", "Eating"], answer: "Imagination" },
+          { q: "Which toy can move?", options: ["Robot", "Book", "Chair", "Table"], answer: "Robot" },
+          { q: "What sound does a toy make?", options: ["Beep", "Roar", "Chirp", "All"], answer: "All" },
+          { q: "Who plays with talking toys?", options: ["Children", "Adults", "Animals", "Plants"], answer: "Children" },
+          { q: "What is a toy made of?", options: ["Plastic", "Stone", "Metal", "All"], answer: "All" }
+        ]
+      },
+      {
+        title: "Chapter 6: Paper Boats",
+        questions: [
+          { q: "What are paper boats made from?", options: ["Paper", "Wood", "Metal", "Plastic"], answer: "Paper" },
+          { q: "Where can paper boats float?", options: ["Water", "Air", "Land", "Fire"], answer: "Water" },
+          { q: "Who makes paper boats?", options: ["Children", "Adults", "Animals", "Plants"], answer: "Children" },
+          { q: "What shape is a paper boat?", options: ["Boat", "Ball", "Cube", "Square"], answer: "Boat" },
+          { q: "What happens if it rains on a paper boat?", options: ["Sinks", "Floats", "Flies", "Burns"], answer: "Sinks" },
+          { q: "How many folds make a paper boat?", options: ["Several", "One", "Two", "Three"], answer: "Several" },
+          { q: "What color can a paper boat be?", options: ["White", "Blue", "Red", "All"], answer: "All" },
+          { q: "What do children do with paper boats?", options: ["Race", "Eat", "Sleep", "Draw"], answer: "Race" },
+          { q: "What material is better than paper for boats?", options: ["Wood", "Cloth", "Stone", "Metal"], answer: "Wood" },
+          { q: "Where do paper boats sink?", options: ["Pond", "Sky", "Tree", "Road"], answer: "Pond" }
+        ]
+      },
+      {
+        title: "Chapter 7: The Big Laddoo",
+        questions: [
+          { q: "What is a laddoo?", options: ["Sweet", "Vegetable", "Fruit", "Drink"], answer: "Sweet" },
+          { q: "Who made the big laddoo?", options: ["Mother", "Father", "Friend", "Teacher"], answer: "Mother" },
+          { q: "What shape is a laddoo?", options: ["Round", "Square", "Triangle", "Rectangle"], answer: "Round" },
+          { q: "What is laddoo made of?", options: ["Flour", "Stone", "Wood", "Metal"], answer: "Flour" },
+          { q: "How big was the laddoo?", options: ["Very big", "Small", "Medium", "Tiny"], answer: "Very big" },
+          { q: "Who wanted to eat the laddoo?", options: ["Family", "Strangers", "Animals", "Plants"], answer: "Family" },
+          { q: "What color might a laddoo be?", options: ["Yellow", "Blue", "Green", "Red"], answer: "Yellow" },
+          { q: "What do we use to make laddoo sweet?", options: ["Sugar", "Salt", "Pepper", "Vinegar"], answer: "Sugar" },
+          { q: "How do we share a laddoo?", options: ["Cut it", "Throw it", "Eat it whole", "Burn it"], answer: "Cut it" },
+          { q: "What festival has laddoos?", options: ["Diwali", "Holi", "Christmas", "Eid"], answer: "Diwali" }
+        ]
+      },
+      {
+        title: "Chapter 8: Thank God",
+        questions: [
+          { q: "What do we say to thank God?", options: ["Thank you", "Goodbye", "Hello", "Sorry"], answer: "Thank you" },
+          { q: "Why do we thank God?", options: ["For blessings", "For rain", "For toys", "For food"], answer: "For blessings" },
+          { q: "Where can we pray?", options: ["Temple", "School", "Park", "All"], answer: "All" },
+          { q: "What time do we pray?", options: ["Morning", "Night", "Anytime", "Evening"], answer: "Anytime" },
+          { q: "What do we offer in prayer?", options: ["Flowers", "Stones", "Metal", "Wood"], answer: "Flowers" },
+          { q: "Who teaches us to thank God?", options: ["Parents", "Friends", "Teachers", "All"], answer: "All" },
+          { q: "What feeling comes with thanks?", options: ["Joy", "Sadness", "Anger", "Fear"], answer: "Joy" },
+          { q: "What do we thank God for?", options: ["Health", "Toys", "Books", "All"], answer: "All" },
+          { q: "How do we show gratitude?", options: ["Praying", "Fighting", "Running", "Sleeping"], answer: "Praying" },
+          { q: "What is a place of worship?", options: ["Church", "Home", "School", "Garden"], answer: "Church" }
+        ]
+      },
+      {
+        title: "Chapter 9: Madhu’s Wish",
+        questions: [
+          { q: "What did Madhu wish for?", options: ["Toy", "Food", "Friend", "Book"], answer: "Toy" },
+          { q: "Who granted Madhu’s wish?", options: ["Mother", "Father", "Friend", "Teacher"], answer: "Mother" },
+          { q: "What was the toy Madhu wanted?", options: ["Doll", "Car", "Ball", "Robot"], answer: "Doll" },
+          { q: "When did Madhu make the wish?", options: ["Birthday", "School", "Park", "Home"], answer: "Birthday" },
+          { q: "How did Madhu feel after getting the toy?", options: ["Happy", "Sad", "Angry", "Tired"], answer: "Happy" },
+          { q: "What color was the toy?", options: ["Pink", "Blue", "Green", "Red"], answer: "Pink" },
+          { q: "Who helped Madhu with the wish?", options: ["Sister", "Brother", "Friend", "All"], answer: "All" },
+          { q: "What did Madhu do with the toy?", options: ["Played", "Ate", "Slept", "Threw"], answer: "Played" },
+          { q: "Where did Madhu keep the toy?", options: ["Room", "Garden", "School", "Road"], answer: "Room" },
+          { q: "What made Madhu’s wish come true?", options: ["Love", "Money", "Fight", "Anger"], answer: "Love" }
+        ]
+      },
+      {
+        title: "Chapter 10: Night",
+        questions: [
+          { q: "What shines at night?", options: ["Moon", "Sun", "Stars", "Both"], answer: "Both" },
+          { q: "What color is the night sky?", options: ["Black", "Blue", "Green", "Yellow"], answer: "Black" },
+          { q: "Which animal is active at night?", options: ["Owl", "Sparrow", "Eagle", "Parrot"], answer: "Owl" },
+          { q: "What do we see in the sky at night?", options: ["Stars", "Clouds", "Sun", "Rain"], answer: "Stars" },
+          { q: "What time does night start?", options: ["6 PM", "12 PM", "6 AM", "12 AM"], answer: "6 PM" },
+          { q: "What do people do at night?", options: ["Sleep", "Work", "Play", "All"], answer: "All" },
+          { q: "What is the moon’s shape?", options: ["Round", "Square", "Triangle", "Rectangle"], answer: "Round" },
+          { q: "Which light is soft at night?", options: ["Moonlight", "Sunlight", "Fire", "Lamp"], answer: "Moonlight" },
+          { q: "What animal sleeps at night?", options: ["Dog", "Bat", "Owl", "Cat"], answer: "Dog" },
+          { q: "What makes night dark?", options: ["No sun", "No moon", "No stars", "No clouds"], answer: "No sun" }
+        ]
+      },
+      {
+        title: "Chapter 11: Chanda Mama Counts the Stars",
+        questions: [
+          { q: "Who is Chanda Mama?", options: ["Moon", "Sun", "Star", "Cloud"], answer: "Moon" },
+          { q: "What does Chanda Mama count?", options: ["Stars", "Clouds", "Rivers", "Trees"], answer: "Stars" },
+          { q: "How many stars can be seen?", options: ["Many", "One", "Two", "Three"], answer: "Many" },
+          { q: "What color are the stars?", options: ["White", "Black", "Red", "Blue"], answer: "White" },
+          { q: "When does Chanda Mama appear?", options: ["Night", "Day", "Morning", "Afternoon"], answer: "Night" },
+          { q: "What shape is a star?", options: ["Pointed", "Round", "Square", "Triangle"], answer: "Pointed" },
+          { q: "Who watches the stars with Chanda Mama?", options: ["Children", "Adults", "Animals", "All"], answer: "All" },
+          { q: "What is the sky like at night?", options: ["Clear", "Rainy", "Cloudy", "Windy"], answer: "Clear" },
+          { q: "How does Chanda Mama look?", options: ["Bright", "Dark", "Dull", "Grey"], answer: "Bright" },
+          { q: "What story is told about stars?", options: ["Fairy tales", "Animal tales", "Food tales", "Game tales"], answer: "Fairy tales" }
+        ]
+      },
+      {
+        title: "Chapter 12: Chandrayaan",
+        questions: [
+          { q: "What is Chandrayaan?", options: ["Spaceship", "Car", "Boat", "Plane"], answer: "Spaceship" },
+          { q: "Where does Chandrayaan go?", options: ["Moon", "Sun", "Stars", "Earth"], answer: "Moon" },
+          { q: "Who made Chandrayaan?", options: ["Scientists", "Children", "Farmers", "Teachers"], answer: "Scientists" },
+          { q: "What does Chandrayaan study?", options: ["Moon rocks", "Stars", "Clouds", "Water"], answer: "Moon rocks" },
+          { q: "How does Chandrayaan travel?", options: ["Rocket", "Car", "Bus", "Train"], answer: "Rocket" },
+          { q: "What color is the rocket?", options: ["White", "Black", "Red", "Blue"], answer: "White" },
+          { q: "Who controls Chandrayaan?", options: ["ISRO", "School", "Family", "Friends"], answer: "ISRO" },
+          { q: "What does the moon have?", options: ["Craters", "Rivers", "Trees", "Houses"], answer: "Craters" },
+          { q: "How long does Chandrayaan’s journey take?", options: ["Days", "Hours", "Minutes", "Seconds"], answer: "Days" },
+          { q: "What do we learn from Chandrayaan?", options: ["Space", "Earth", "Water", "Air"], answer: "Space" }
+        ]
+      }
+    ],
+hindi: [
+      {
+        title: "Chapter 1: सीखो",
+        questions: [
+          { q: "सीखने का सबसे अच्छा तरीका क्या है?", options: ["खेल-खेल में", "सोते हुए", "लड़ते हुए", "चुप रहकर"], answer: "खेल-खेल में" },
+          { q: "हम स्कूल में क्या सीखते हैं?", options: ["गाना", "लड़ाई", "सोना", "खाना"], answer: "गाना" },
+          { q: "कौन हमें पढ़ाता है?", options: ["शिक्षक", "मित्र", "पड़ोसी", "दुकानदार"], answer: "शिक्षक" },
+          { q: "किताबों से क्या मिलता है?", options: ["ज्ञान", "खाना", "खिलौने", "पैसे"], answer: "ज्ञान" },
+          { q: "सीखने के लिए क्या जरूरी है?", options: ["ध्यान", "दौड़ना", "खाना", "सोना"], answer: "ध्यान" },
+          { q: "कौन सा खेल सीखने में मदद करता है?", options: ["पहेली", "लड़ाई", "छिपना", "दौड़"], answer: "पहेली" },
+          { q: "कितने घंटे पढ़ाई करनी चाहिए?", options: ["2-3", "5-6", "10-12", "0"], answer: "2-3" },
+          { q: "कौन सी चीज पढ़ाई में मदद करती है?", options: ["पेंसिल", "पत्थर", "लकड़ी", "पानी"], answer: "पेंसिल" },
+          { q: "सीखने से क्या होता है?", options: ["सफलता", "नुकसान", "दुख", "डर"], answer: "सफलता" },
+          { q: "कौन सा दिन पढ़ाई के लिए अच्छा है?", options: ["सोमवार", "रविवार", "कोई भी", "शुक्रवार"], answer: "सोमवार" }
+        ]
+      },
+      {
+        title: "Chapter 2: चींटी",
+        questions: [
+          { q: "चींटी कितनी मेहनती होती है?", options: ["बहुत", "थोड़ी", "बिल्कुल नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "चींटी क्या ढूंढती है?", options: ["खाना", "पानी", "खिलौने", "पत्थर"], answer: "खाना" },
+          { q: "चींटी कहां रहती है?", options: ["मिट्टी", "पेड़", "नदी", "हवा"], answer: "मिट्टी" },
+          { q: "चींटी का रंग क्या होता है?", options: ["काला", "नीला", "लाल", "हरा"], answer: "काला" },
+          { q: "चींटी कितनी छोटी होती है?", options: ["बहुत", "मध्यम", "बड़ी", "विशाल"], answer: "बहुत" },
+          { q: "चींटी कैसे चलती है?", options: ["पैरों से", "पंखों से", "नदी में", "हवा में"], answer: "पैरों से" },
+          { q: "चींटी क्या ले जाती है?", options: ["भोजन", "पत्थर", "लकड़ी", "धातु"], answer: "भोजन" },
+          { q: "चींटी का घर क्या कहलाता है?", options: ["बिल", "घर", "मकान", "पेड़"], answer: "बिल" },
+          { q: "चींटी कितनी मजबूत होती है?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "चींटी किसे डंक मार सकती है?", options: ["इंसान", "पेड़", "पत्थर", "हवा"], answer: "इंसान" }
+        ]
+      },
+      {
+        title: "Chapter 3: कितने पैर?",
+        questions: [
+          { q: "कुत्ते के कितने पैर होते हैं?", options: ["4", "2", "6", "8"], answer: "4" },
+          { q: "मकड़ी के कितने पैर होते हैं?", options: ["8", "4", "6", "10"], answer: "8" },
+          { q: "इंसान के कितने पैर होते हैं?", options: ["2", "4", "6", "8"], answer: "2" },
+          { q: "पंछी के कितने पैर होते हैं?", options: ["2", "4", "6", "8"], answer: "2" },
+          { q: "हाथी के कितने पैर होते हैं?", options: ["4", "2", "6", "8"], answer: "4" },
+          { q: "कीड़े के कितने पैर हो सकते हैं?", options: ["6", "4", "8", "10"], answer: "6" },
+          { q: "सांप के कितने पैर होते हैं?", options: ["0", "2", "4", "6"], answer: "0" },
+          { q: "बिल्ली के कितने पैर होते हैं?", options: ["4", "2", "6", "8"], answer: "4" },
+          { q: "घोड़े के कितने पैर होते हैं?", options: ["4", "2", "6", "8"], answer: "4" },
+          { q: "मछली के कितने पैर होते हैं?", options: ["0", "2", "4", "6"], answer: "0" }
+        ]
+      },
+      {
+        title: "Chapter 4: बया हमारी चिड़िया रानी!",
+        questions: [
+          { q: "बया कौन है?", options: ["चिड़िया", "कुत्ता", "बिल्ली", "गाय"], answer: "चिड़िया" },
+          { q: "बया का घोंसला कहां होता है?", options: ["पेड़ पर", "जमीन पर", "नदी में", "हवा में"], answer: "पेड़ पर" },
+          { q: "बया का रंग क्या होता है?", options: ["पीला", "काला", "नीला", "लाल"], answer: "पीला" },
+          { q: "बया क्या खाती है?", options: ["बीज", "मांस", "पत्थर", "लकड़ी"], answer: "बीज" },
+          { q: "बया का घोंसला कैसा होता है?", options: ["लटकता हुआ", "चौकोर", "गोल", "सीधा"], answer: "लटकता हुआ" },
+          { q: "बया कब उड़ती है?", options: ["दिन में", "रात में", "सुबह", "शाम"], answer: "दिन में" },
+          { q: "बया का बच्चा क्या कहलाता है?", options: ["चूजा", "बच्चा", "नन्हा", "पक्षी"], answer: "चूजा" },
+          { q: "बया की आवाज कैसी होती है?", options: ["मीठी", "कर्कश", "बड़ी", "धीमी"], answer: "मीठी" },
+          { q: "बया का घर कौन बनाता है?", options: ["वह स्वयं", "इंसान", "पेड़", "हवा"], answer: "वह स्वयं" },
+          { q: "बया कहां रहती है?", options: ["जंगल", "शहर", "नदी", "सागर"], answer: "जंगल" }
+        ]
+      },
+      {
+        title: "Chapter 5: आम का पेड़",
+        questions: [
+          { q: "आम का पेड़ क्या देता है?", options: ["फल", "फूल", "पत्ते", "सब"], answer: "सब" },
+          { q: "आम का रंग क्या होता है?", options: ["पीला", "हरा", "लाल", "सब"], answer: "सब" },
+          { q: "आम का पेड़ कितना बड़ा होता है?", options: ["बड़ा", "छोटा", "मध्यम", "नन्हा"], answer: "बड़ा" },
+          { q: "आम कब पकता है?", options: ["गर्मी में", "सर्दी में", "बरसात में", "शरद में"], answer: "गर्मी में" },
+          { q: "आम का पेड़ कहां उगता है?", options: ["खेत", "जंगल", "शहर", "सब"], answer: "सब" },
+          { q: "आम का पेड़ कितना पुराना हो सकता है?", options: ["50 साल", "10 साल", "5 साल", "1 साल"], answer: "50 साल" },
+          { q: "आम के पेड़ की छाया क्या देती है?", options: ["ठंडक", "गर्मी", "बरसात", "हवा"], answer: "ठंडक" },
+          { q: "आम का फल कौन खाता है?", options: ["इंसान", "पशु", "पक्षी", "सब"], answer: "सब" },
+          { q: "आम का पेड़ कितने फल दे सकता है?", options: ["सैकड़ों", "दस", "पांच", "एक"], answer: "सैकड़ों" },
+          { q: "आम का पेड़ किस मौसम में फलता है?", options: ["गर्मी", "सर्दी", "बरसात", "वसंत"], answer: "गर्मी" }
+        ]
+      },
+      {
+        title: "Chapter 6: बीरबल की खिचड़ी",
+        questions: [
+          { q: "बीरबल कौन था?", options: ["वजीर", "सैनिक", "किसान", "डॉक्टर"], answer: "वजीर" },
+          { q: "खिचड़ी किसने बनाई?", options: ["बीरबल", "राजा", "सैनिक", "किसान"], answer: "बीरबल" },
+          { q: "खिचड़ी कहां पकाई गई?", options: ["जंगल", "महल", "नदी", "घर"], answer: "जंगल" },
+          { q: "क्या खिचड़ी पक गई?", options: ["हाँ", "नहीं", "कभी-कभी", "शायद"], answer: "नहीं" },
+          { q: "बीरबल ने क्या साबित किया?", options: ["धैर्य", "गुस्सा", "डर", "लालच"], answer: "धैर्य" },
+          { q: "कौन सा सामान खिचड़ी में था?", options: ["चावल", "पत्थर", "लकड़ी", "धातु"], answer: "चावल" },
+          { q: "राजा ने क्या पूछा?", options: ["सत्य", "धन", "शक्ति", "सोना"], answer: "सत्य" },
+          { q: "बीरबल कितना चालाक था?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "खिचड़ी कब पकती है?", options: ["आग पर", "पानी में", "हवा में", "बर्फ पर"], answer: "आग पर" },
+          { q: "कौन सी बात सिखाई गई?", options: ["धैर्य", "लड़ाई", "दौड़", "खाना"], answer: "धैर्य" }
+        ]
+      },
+      {
+        title: "Chapter 7: मिया को पिया",
+        questions: [
+          { q: "मिया कौन है?", options: ["बच्चा", "पक्षी", "पेड़", "नदी"], answer: "बच्चा" },
+          { q: "मिया क्या चाहता है?", options: ["पानी", "खाना", "खिलौना", "घर"], answer: "पानी" },
+          { q: "कौन मिया को पानी देता है?", options: ["माँ", "पिता", "भाई", "दोस्त"], answer: "माँ" },
+          { q: "मिया कहां है?", options: ["घर", "जंगल", "स्कूल", "नदी"], answer: "घर" },
+          { q: "पानी का रंग क्या है?", options: ["पारदर्शी", "लाल", "नीला", "हरा"], answer: "पारदर्शी" },
+          { q: "मिया को प्यास क्यों लगी?", options: ["गर्मी", "ठंड", "बरसात", "हवा"], answer: "गर्मी" },
+          { q: "कौन सा बर्तन पानी लाता है?", options: ["घड़ा", "कटोरा", "चम्मच", "कांटा"], answer: "घड़ा" },
+          { q: "मिया कितना छोटा है?", options: ["बहुत", "मध्यम", "बड़ा", "विशाल"], answer: "बहुत" },
+          { q: "पानी कहां से आता है?", options: ["कुआं", "आकाश", "पेड़", "मिट्टी"], answer: "कुआं" },
+          { q: "मिया को राहत कब मिली?", options: ["पानी पीने पर", "सोने पर", "खेलने पर", "दौड़ने पर"], answer: "पानी पीने पर" }
+        ]
+      },
+      {
+        title: "Chapter 8: चतुर गीदड़",
+        questions: [
+          { q: "गीदड़ कितना चतुर है?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "गीदड़ कहां रहता है?", options: ["जंगल", "घर", "नदी", "शहर"], answer: "जंगल" },
+          { q: "गीदड़ क्या खाता है?", options: ["मांस", "घास", "फल", "पत्ते"], answer: "मांस" },
+          { q: "गीदड़ ने क्या चाल चली?", options: ["धोखा", "दौड़", "खेल", "सोना"], answer: "धोखा" },
+          { q: "गीदड़ का रंग क्या है?", options: ["भूरा", "नीला", "लाल", "हरा"], answer: "भूरा" },
+          { q: "कौन गीदड़ से डरता है?", options: ["हिरन", "शेर", "हाथी", "बाघ"], answer: "हिरन" },
+          { q: "गीदड़ कब निकलता है?", options: ["रात", "दिन", "सुबह", "शाम"], answer: "रात" },
+          { q: "गीदड़ की आवाज कैसी होती है?", options: ["तीखी", "मीठी", "धीमी", "बड़ी"], answer: "तीखी" },
+          { q: "गीदड़ का शिकार क्या है?", options: ["खरगोश", "हाथी", "शेर", "बाघ"], answer: "खरगोश" },
+          { q: "गीदड़ की चालाकी से क्या हुआ?", options: ["जीत", "हार", "दोस्ती", "प्यार"], answer: "जीत" }
+        ]
+      },
+      {
+        title: "Chapter 9: प्रकृति पर्व — फूलदेई",
+        questions: [
+          { q: "फूलदेई क्या है?", options: ["पर्व", "खेल", "खाना", "पेड़"], answer: "पर्व" },
+          { q: "फूलदेई कब मनाया जाता है?", options: ["वसंत", "सर्दी", "गर्मी", "बरसात"], answer: "वसंत" },
+          { q: "फूलदेई में क्या लगाया जाता है?", options: ["पेड़", "पत्थर", "लकड़ी", "धातु"], answer: "पेड़" },
+          { q: "फूलदेई का उद्देश्य क्या है?", options: ["प्रकृति की रक्षा", "खेलना", "खाना", "सोना"], answer: "प्रकृति की रक्षा" },
+          { q: "कौन फूलदेई मनाता है?", options: ["बच्चे", "वयस्क", "सभी", "कोई नहीं"], answer: "सभी" },
+          { q: "फूलदेई में फूल कहां लगाए जाते हैं?", options: ["घर", "जंगल", "नदी", "सड़क"], answer: "घर" },
+          { q: "फूलदेई का रंग क्या होता है?", options: ["रंग-बिरंगा", "काला", "नीला", "लाल"], answer: "रंग-बिरंगा" },
+          { q: "फूलदेई से क्या सीखते हैं?", options: ["पेड़ लगाना", "लड़ाई", "खाना", "दौड़"], answer: "पेड़ लगाना" },
+          { q: "फूलदेई कब शुरू होता है?", options: ["फाल्गुन", "आषाढ़", "माघ", "चैत्र"], answer: "फाल्गुन" },
+          { q: "फूलदेई में कौन सी चीज जरूरी है?", options: ["फूल", "पत्थर", "लोहा", "कपड़ा"], answer: "फूल" }
+        ]
+      },
+      {
+        title: "Chapter 10: रस्साकशी",
+        questions: [
+          { q: "रस्साकशी क्या है?", options: ["खेल", "खाना", "पर्व", "पेड़"], answer: "खेल" },
+          { q: "रस्साकशी में कितने लोग खेलते हैं?", options: ["दो टीम", "एक", "तीन", "चार"], answer: "दो टीम" },
+          { q: "रस्साकशी में क्या इस्तेमाल होता है?", options: ["रस्सी", "गेंद", "पत्थर", "लकड़ी"], answer: "रस्सी" },
+          { q: "कौन जीतता है रस्साकशी में?", options: ["मजबूत", "कमजोर", "धीमा", "छोटा"], answer: "मजबूत" },
+          { q: "रस्साकशी कहां खेली जाती है?", options: ["मैदान", "घर", "नदी", "सड़क"], answer: "मैदान" },
+          { q: "रस्साकशी में कितना जोश होता है?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहut" },
+          { q: "रस्सी का रंग क्या हो सकता है?", options: ["हरा", "नीला", "लाल", "सब"], answer: "सब" },
+          { q: "रस्साकशी में क्या जरूरी है?", options: ["टीमवर्क", "अकेलापन", "लड़ाई", "सोना"], answer: "टीमवर्क" },
+          { q: "रस्साकशी कितने मिनट चलती है?", options: ["10-15", "1-2", "20-30", "40-50"], answer: "10-15" },
+          { q: "रस्साकशी से क्या मिलता है?", options: ["मजा", "दुख", "डर", "थकान"], answer: "मजा" }
+        ]
+      },
+      {
+        title: "Chapter 11: एक जादुई पिटारा",
+        questions: [
+          { q: "जादुई पिटारा क्या है?", options: ["डिब्बा", "खिलौना", "खाना", "पेड़"], answer: "डिब्बा" },
+          { q: "पिटारे में क्या है?", options: ["चमत्कार", "पत्थर", "लकड़ी", "धातु"], answer: "चमत्कार" },
+          { q: "कौन पिटारा खोलता है?", options: ["बच्चा", "वयस्क", "पशु", "पेड़"], answer: "बच्चा" },
+          { q: "पिटारे से क्या निकलता है?", options: ["खिलौने", "पानी", "हवा", "मिट्टी"], answer: "खिलौने" },
+          { q: "पिटारा का रंग क्या हो सकता है?", options: ["लाल", "नीला", "हरा", "सब"], answer: "सब" },
+          { q: "जादू कब होता है?", options: ["खोलने पर", "सोने पर", "खाने पर", "दौड़ने पर"], answer: "खोलने पर" },
+          { q: "पिटारा कहां रखा है?", options: ["घर", "जंगल", "नदी", "सड़क"], answer: "घर" },
+          { q: "जादुई पिटारे से कौन डरता है?", options: ["कोई नहीं", "बच्चे", "पशु", "पेड़"], answer: "कोई नहीं" },
+          { q: "पिटारे में कितने खिलौने हो सकते हैं?", options: ["कई", "एक", "दो", "तीन"], answer: "कई" },
+          { q: "जादू से क्या होता है?", options: ["खुशी", "दुख", "डर", "गुस्सा"], answer: "खुशी" }
+        ]
+      },
+      {
+        title: "Chapter 12: अपना-अपना काम",
+        questions: [
+          { q: "हर किसी का क्या होता है?", options: ["काम", "खेल", "खाना", "सोना"], answer: "काम" },
+          { q: "किसान क्या करता है?", options: ["फसल उगाता है", "गाना गाता है", "दौड़ता है", "सोता है"], answer: "फसल उगाता है" },
+          { q: "डॉक्टर क्या करता है?", options: ["इलाज", "खेल", "पढ़ाई", "खाना"], answer: "इलाज" },
+          { q: "शिक्षक का काम क्या है?", options: ["पढ़ाना", "लड़ाई", "दौड़", "सोना"], answer: "पढ़ाना" },
+          { q: "बच्चों का काम क्या है?", options: ["पढ़ना", "काम करना", "सोना", "खेलना"], answer: "पढ़ना" },
+          { q: "कौन सा काम आसान है?", options: ["खेलना", "मेहनत", "लड़ाई", "सोना"], answer: "खेलना" },
+          { q: "किसान का औज़ार क्या है?", options: ["हल", "पेन", "किताब", "गेंद"], answer: "हल" },
+          { q: "डॉक्टर का औज़ार क्या है?", options: ["स्टेथोस्कोप", "चम्मच", "कांटा", "पत्थर"], answer: "स्टेथोस्कोप" },
+          { q: "काम से क्या मिलता है?", options: ["सफलता", "दुख", "डर", "गुस्सा"], answer: "सफलता" },
+          { q: "कौन अपना काम करता है?", options: ["सभी", "कोई नहीं", "बच्चे", "वयस्क"], answer: "सभी" }
+        ]
+      },
+      {
+        title: "Chapter 13: पेड़ों की अम्मा ‘तिमक्का’",
+        questions: [
+          { q: "तिमक्का कौन थी?", options: ["महिला", "पेड़", "पशु", "पंछी"], answer: "महिला" },
+          { q: "तिमक्का ने क्या लगाया?", options: ["पेड़", "घर", "सड़क", "नदी"], answer: "पेड़" },
+          { q: "तिमक्का कहां रहती थी?", options: ["गाँव", "शहर", "जंगल", "नदी"], answer: "गाँव" },
+          { q: "तिमक्का ने कितने पेड़ लगाए?", options: ["सैकड़ों", "दस", "पांच", "एक"], answer: "सैकड़ों" },
+          { q: "तिमक्का का उद्देश्य क्या था?", options: ["पर्यावरण बचाना", "खेलना", "खाना", "सोना"], answer: "पर्यावरण बचाना" },
+          { q: "तिमक्का की उम्र कितनी थी?", options: ["बूढ़ी", "जवान", "बच्ची", "किशोर"], answer: "बूढ़ी" },
+          { q: "पेड़ों से क्या लाभ होता है?", options: ["ऑक्सीजन", "धुआं", "गंदगी", "पत्थर"], answer: "ऑक्सीजन" },
+          { q: "तिमक्का को क्या सम्मान मिला?", options: ["पुरस्कार", "सजा", "दंड", "नहीं"], answer: "पुरस्कार" },
+          { q: "तिमक्का ने कौन सा पेड़ लगाया?", options: ["बाँस", "अमरूद", "नीम", "सब"], answer: "बाँस" },
+          { q: "तिमक्का का सबक क्या है?", options: ["पेड़ लगाना", "लड़ाई", "खाना", "दौड़"], answer: "पेड़ लगाना" }
+        ]
+      },
+      {
+        title: "Chapter 14: किसान की होशियारी",
+        questions: [
+          { q: "किसान क्या उगाता है?", options: ["फसल", "पत्थर", "लकड़ी", "धातु"], answer: "फसल" },
+          { q: "किसान की होशियारी क्या है?", options: ["चतुराई", "लापरवाही", "डर", "गुस्सा"], answer: "चतुराई" },
+          { q: "किसान का औज़ार क्या है?", options: ["हल", "पेन", "किताब", "गेंद"], answer: "हल" },
+          { q: "किसान कब काम करता है?", options: ["सुबह", "रात", "दोपहर", "शाम"], answer: "सुबह" },
+          { q: "किसान की फसल क्या है?", options: ["गेहूं", "पत्थर", "लोहा", "कपड़ा"], answer: "गेहूं" },
+          { q: "किसान को क्या चाहिए?", options: ["बरसात", "हवा", "धूप", "सब"], answer: "सब" },
+          { q: "किसान की आय क्या है?", options: ["फसल", "खेल", "पढ़ाई", "सोना"], answer: "फसल" },
+          { q: "किसान कितना मेहनती है?", options: ["बहुत", "थोड़ा", "नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "किसान का घर कहां होता है?", options: ["गाँव", "शहर", "जंगल", "नदी"], answer: "गाँव" },
+          { q: "किसान की चतुराई से क्या हुआ?", options: ["फसल बची", "फसल नष्ट", "खेल", "दौड़"], answer: "फसल बची" }
+        ]
+      },
+      {
+        title: "Chapter 15: भारत",
+        questions: [
+          { q: "भारत क्या है?", options: ["देश", "नदी", "पेड़", "खिलौना"], answer: "देश" },
+          { q: "भारत की राजधानी क्या है?", options: ["दिल्ली", "मुंबई", "कोलकाता", "चेन्नई"], answer: "दिल्ली" },
+          { q: "भारत का राष्ट्रीय पशु क्या है?", options: ["बाघ", "शेर", "हाथी", "घोड़ा"], answer: "बाघ" },
+          { q: "भारत का राष्ट्रीय पक्षी क्या है?", options: ["मोर", "कोयल", "परी", "कौआ"], answer: "मोर" },
+          { q: "भारत में कितने राज्य हैं?", options: ["28", "20", "30", "40"], answer: "28" },
+          { q: "भारत का रंग क्या है?", options: ["हरे-भरे", "काले", "नीले", "लाल"], answer: "हरे-भरे" },
+          { q: "भारत में कौन सी नदी है?", options: ["गंगा", "निल", "डेन्यूब", "मिसिसिपी"], answer: "गंगा" },
+          { q: "भारत का त्योहार क्या है?", options: ["दीवाली", "क्रिसमस", "ईस्टर", "हैलोवीन"], answer: "दीवाली" },
+          { q: "भारत का झंडा कितने रंगों का है?", options: ["तीन", "दो", "चार", "पांच"], answer: "तीन" },
+          { q: "भारत में कौन रहता है?", options: ["हिंदुस्तानी", "अमेरिकी", "चinese", "जापानी"], answer: "हिंदुस्तानी" }
+        ]
+      },
+      {
+        title: "Chapter 16: चंद्रयान (संवाद)",
+        questions: [
+          { q: "चंद्रयान क्या है?", options: ["यान", "पेड़", "खिलौना", "घर"], answer: "यान" },
+          { q: "चंद्रयान कहां जाता है?", options: ["चंद्रमा", "सूरज", "तारे", "पृथ्वी"], answer: "चंद्रमा" },
+          { q: "चंद्रयान किसने बनाया?", options: ["ISRO", "NASA", "ESA", "CNSA"], answer: "ISRO" },
+          { q: "चंद्रयान क्या खोजता है?", options: ["पत्थर", "पानी", "हवा", "सूरज"], answer: "पत्थर" },
+          { q: "चंद्रयान कैसे जाता है?", options: ["रॉकेट", "हवाई जहाज", "कार", "नाव"], answer: "रॉकेट" },
+          { q: "चंद्रयान का रंग क्या है?", options: ["सफेद", "काला", "लाल", "नीला"], answer: "सफेद" },
+          { q: "चंद्रमा पर क्या है?", options: ["गड्ढे", "नदी", "पेड़", "घर"], answer: "गड्ढे" },
+          { q: "चंद्रयान कब लॉन्च हुआ?", options: ["2008", "2010", "2015", "2020"], answer: "2008" },
+          { q: "चंद्रयान से क्या सीखते हैं?", options: ["अंतरिक्ष", "समुद्र", "जंगल", "पहाड़"], answer: "अंतरिक्ष" },
+          { q: "चंद्रयान का उद्देश्य क्या है?", options: ["अनुसंधान", "खेल", "खाना", "सोना"], answer: "अनुसंधान" }
+        ]
+      },
+      {
+        title: "Chapter 17: बोलने वाली मांद",
+        questions: [
+          { q: "मांद क्या है?", options: ["गुफा", "घर", "पेड़", "नदी"], answer: "गुफा" },
+          { q: "मांद कहां होती है?", options: ["जंगल", "शहर", "स्कूल", "घर"], answer: "जंगल" },
+          { q: "मांद में कौन रहता है?", options: ["शेर", "इंसान", "पंछी", "मछली"], answer: "शेर" },
+          { q: "मांद क्यों बोलती है?", options: ["हवा", "पानी", "आग", "धूप"], answer: "हवा" },
+          { q: "मांद का रंग क्या हो सकता है?", options: ["काला", "सफेद", "नीला", "लाल"], answer: "काला" },
+          { q: "मांद में क्या सुनाई देता है?", options: ["गूंज", "गाना", "हंसी", "चुप्पी"], answer: "गूंज" },
+          { q: "कौन मांद में जाता है?", options: ["शिकारी", "बच्चे", "पेड़", "नदी"], answer: "शिकारी" },
+          { q: "मांद कितनी गहरी होती है?", options: ["बहुत", "थोड़ी", "नहीं", "कभी-कभी"], answer: "बहुत" },
+          { q: "मांद में क्या छिपा हो सकता है?", options: ["जानवर", "खजाना", "खिलौना", "पानी"], answer: "जानवर" },
+          { q: "मांद की आवाज क्यों होती है?", options: ["प्रकृति", "इंसान", "पशु", "पेड़"], answer: "प्रकृति" }
+        ]
+      },
+      {
+        title: "Chapter 18: हम अनेक किंतु एक",
+        questions: [
+          { q: "हम अनेक क्यों हैं?", options: ["भाषा", "रंग", "धर्म", "सब"], answer: "सब" },
+          { q: "हम एक क्यों हैं?", options: ["देश", "खाना", "खेल", "सोना"], answer: "देश" },
+          { q: "भारत में कितनी भाषाएं हैं?", options: ["कई", "एक", "दो", "तीन"], answer: "कई" },
+          { q: "हम एकता कैसे दिखाते हैं?", options: ["प्रेम", "लड़ाई", "डर", "गुस्सा"], answer: "प्रेम" },
+          { q: "कौन सा त्योहार एकता लाता है?", options: ["होली", "क्रिसमस", "ईस्टर", "सभी"], answer: "सभी" },
+          { q: "हमारे देश का नाम क्या है?", options: ["भारत", "अमेरिका", "चीन", "जापान"], answer: "भारत" },
+          { q: "एकता से क्या मिलता है?", options: ["शक्ति", "दुख", "डर", "नुकसान"], answer: "शक्ति" },
+          { q: "कितने लोग एक देश में रहते हैं?", options: ["अनेक", "एक", "दो", "तीन"], answer: "अनेक" },
+          { q: "एकता का प्रतीक क्या है?", options: ["झंडा", "पत्थर", "लकड़ी", "पानी"], answer: "झंडा" },
+          { q: "हम एक कैसे हैं?", options: ["हृदय से", "दिमाग से", "पैर से", "हाथ से"], answer: "हृदय से" }
+        ]
+      }
+    ]
+  },
+  4: {
+    EVS: [
+      {
+        title: "Chapter 1: Living Together",
+        questions: [
+          { q: "What do people do when they live together?", options: ["Help each other", "Fight", "Ignore", "Run away"], answer: "Help each other" },
+          { q: "Who are part of a community?", options: ["Family", "Strangers", "Animals", "Trees"], answer: "Family" },
+          { q: "What is shared in a community?", options: ["Resources", "Secrets", "Toys", "Food only"], answer: "Resources" },
+          { q: "How do we stay safe in a community?", options: ["Follow rules", "Break rules", "Hide", "Run"], answer: "Follow rules" },
+          { q: "What builds a strong community?", options: ["Trust", "Lies", "Fights", "Greed"], answer: "Trust" },
+          { q: "Who helps in a village community?", options: ["Farmer", "Robot", "Car", "Cloud"], answer: "Farmer" },
+          { q: "What is a group of houses called?", options: ["Village", "Forest", "River", "Mountain"], answer: "Village" },
+          { q: "How do we celebrate together?", options: ["Festivals", "Alone", "Sleeping", "Fighting"], answer: "Festivals" },
+          { q: "What do friends do in a community?", options: ["Play", "Work only", "Sleep", "Eat alone"], answer: "Play" },
+          { q: "Who leads a community?", options: ["Leader", "Child", "Dog", "Bird"], answer: "Leader" }
+        ]
+      },
+      {
+        title: "Chapter 2: Exploring Our Neighbourhood",
+        questions: [
+          { q: "What can you find in a neighbourhood?", options: ["Park", "Ocean", "Mountain", "Desert"], answer: "Park" },
+          { q: "Who lives near your house?", options: ["Neighbours", "Strangers", "Animals", "Stars"], answer: "Neighbours" },
+          { q: "What is used to travel in a neighbourhood?", options: ["Bike", "Ship", "Plane", "Train"], answer: "Bike" },
+          { q: "Where do we buy things?", options: ["Shop", "Forest", "River", "Sky"], answer: "Shop" },
+          { q: "What keeps a neighbourhood clean?", options: ["Trash bins", "Dirt", "Smoke", "Noise"], answer: "Trash bins" },
+          { q: "Who helps in case of danger?", options: ["Police", "Teacher", "Doctor", "Farmer"], answer: "Police" },
+          { q: "What grows in a neighbourhood garden?", options: ["Flowers", "Rocks", "Water", "Air"], answer: "Flowers" },
+          { q: "How do we meet neighbours?", options: ["Talking", "Hiding", "Running", "Sleeping"], answer: "Talking" },
+          { q: "What is a common place to play?", options: ["Playground", "Road", "River", "House"], answer: "Playground" },
+          { q: "What connects homes in a neighbourhood?", options: ["Roads", "Sky", "Water", "Trees"], answer: "Roads" }
+        ]
+      },
+      {
+        title: "Chapter 3: Nature Trail",
+        questions: [
+          { q: "What can you see on a nature trail?", options: ["Trees", "Cars", "Buildings", "Toys"], answer: "Trees" },
+          { q: "Which animal lives in a forest?", options: ["Deer", "Dog", "Cat", "Cow"], answer: "Deer" },
+          { q: "What grows on a trail?", options: ["Plants", "Houses", "Roads", "Bricks"], answer: "Plants" },
+          { q: "What makes a trail beautiful?", options: ["Flowers", "Trash", "Smoke", "Noise"], answer: "Flowers" },
+          { q: "Which bird sings on a trail?", options: ["Sparrow", "Eagle", "Owl", "Penguin"], answer: "Sparrow" },
+          { q: "What flows in a nature trail?", options: ["River", "Road", "House", "Car"], answer: "River" },
+          { q: "What do we learn on a trail?", options: ["Nature", "Math", "Reading", "Writing"], answer: "Nature" },
+          { q: "Which insect is common on a trail?", options: ["Ant", "Bee", "Fly", "Spider"], answer: "Ant" },
+          { q: "What protects a trail?", options: ["Trees", "Walls", "Gates", "Fences"], answer: "Trees" },
+          { q: "What sound is heard on a trail?", options: ["Birds", "Horns", "Bells", "Claps"], answer: "Birds" }
+        ]
+      },
+      {
+        title: "Chapter 4: Growing up with Nature",
+        questions: [
+          { q: "What helps plants grow?", options: ["Water", "Stone", "Metal", "Plastic"], answer: "Water" },
+          { q: "Who grows with nature?", options: ["Children", "Rocks", "Cars", "Houses"], answer: "Children" },
+          { q: "What gives energy to plants?", options: ["Sun", "Moon", "Stars", "Clouds"], answer: "Sun" },
+          { q: "What do trees provide?", options: ["Oxygen", "Smoke", "Dust", "Noise"], answer: "Oxygen" },
+          { q: "How do we grow strong?", options: ["Exercise", "Sleeping all day", "Eating junk", "Sitting"], answer: "Exercise" },
+          { q: "What animal grows in the wild?", options: ["Lion", "Cat", "Dog", "Rabbit"], answer: "Lion" },
+          { q: "What protects us from rain?", options: ["Leaves", "Stone", "Metal", "Glass"], answer: "Leaves" },
+          { q: "What season helps plants grow?", options: ["Rainy", "Winter", "Summer", "Autumn"], answer: "Rainy" },
+          { q: "What do we learn from nature?", options: ["Patience", "Anger", "Fear", "Greed"], answer: "Patience" },
+          { q: "What grows on a tree?", options: ["Fruits", "Bricks", "Metal", "Plastic"], answer: "Fruits" }
+        ]
+      },
+      {
+        title: "Chapter 5: Food for Health",
+        questions: [
+          { q: "What food gives energy?", options: ["Rice", "Stone", "Paper", "Metal"], answer: "Rice" },
+          { q: "Which fruit is good for eyes?", options: ["Carrot", "Apple", "Banana", "Orange"], answer: "Carrot" },
+          { q: "What drink is healthy?", options: ["Milk", "Soda", "Coffee", "Tea"], answer: "Milk" },
+          { q: "Which food has protein?", options: ["Eggs", "Candy", "Chips", "Cake"], answer: "Eggs" },
+          { q: "What keeps bones strong?", options: ["Calcium", "Sugar", "Salt", "Fat"], answer: "Calcium" },
+          { q: "Which vegetable is green?", options: ["Spinach", "Potato", "Tomato", "Onion"], answer: "Spinach" },
+          { q: "What should we eat daily?", options: ["Balanced diet", "Junk food", "Sweets", "Nothing"], answer: "Balanced diet" },
+          { q: "Which food helps grow?", options: ["Nuts", "Candy", "Chips", "Soda"], answer: "Nuts" },
+          { q: "What avoids illness?", options: ["Fruits", "Dirt", "Smoke", "Noise"], answer: "Fruits" },
+          { q: "How many meals a day?", options: ["3", "1", "5", "10"], answer: "3" }
+        ]
+      },
+      {
+        title: "Chapter 6: Happy and Healthy Living",
+        questions: [
+          { q: "What makes us happy?", options: ["Playing", "Fighting", "Crying", "Sleeping"], answer: "Playing" },
+          { q: "What keeps us healthy?", options: ["Exercise", "Junk food", "Laziness", "Smoking"], answer: "Exercise" },
+          { q: "How do we stay clean?", options: ["Bathing", "Dirt", "Smoke", "Noise"], answer: "Bathing" },
+          { q: "What helps us sleep well?", options: ["Rest", "Work", "Noise", "Light"], answer: "Rest" },
+          { q: "Who teaches us to be healthy?", options: ["Teacher", "Stranger", "Animal", "Tree"], answer: "Teacher" },
+          { q: "What food avoids sickness?", options: ["Vegetables", "Candy", "Chips", "Soda"], answer: "Vegetables" },
+          { q: "How do we make friends?", options: ["Sharing", "Fighting", "Hiding", "Running"], answer: "Sharing" },
+          { q: "What is good for the mind?", options: ["Reading", "Shouting", "Crying", "Sleeping"], answer: "Reading" },
+          { q: "What protects from germs?", options: ["Washing hands", "Dirt", "Smoke", "Noise"], answer: "Washing hands" },
+          { q: "How do we stay active?", options: ["Running", "Sitting", "Sleeping", "Eating"], answer: "Running" }
+        ]
+      },
+      {
+        title: "Chapter 7: How Things Work",
+        questions: [
+          { q: "What makes a fan work?", options: ["Electricity", "Water", "Air", "Fire"], answer: "Electricity" },
+          { q: "What turns on a light?", options: ["Switch", "Stone", "Wood", "Paper"], answer: "Switch" },
+          { q: "What powers a car?", options: ["Fuel", "Water", "Air", "Sand"], answer: "Fuel" },
+          { q: "What moves a bicycle?", options: ["Pedals", "Wheels", "Handle", "Seat"], answer: "Pedals" },
+          { q: "What is inside a clock?", options: ["Gears", "Stones", "Paper", "Water"], answer: "Gears" },
+          { q: "What makes a phone work?", options: ["Battery", "Stone", "Wood", "Air"], answer: "Battery" },
+          { q: "What opens a door?", options: ["Key", "Rock", "Paper", "Water"], answer: "Key" },
+          { q: "What runs a mixer?", options: ["Electricity", "Wind", "Hand", "Fire"], answer: "Electricity" },
+          { q: "What is used in a torch?", options: ["Bulb", "Stone", "Wood", "Paper"], answer: "Bulb" },
+          { q: "What makes a train move?", options: ["Engine", "Wheel", "Seat", "Window"], answer: "Engine" }
+        ]
+      },
+      {
+        title: "Chapter 8: How Things are Made",
+        questions: [
+          { q: "What is cloth made from?", options: ["Cotton", "Stone", "Metal", "Plastic"], answer: "Cotton" },
+          { q: "What is used to make paper?", options: ["Wood", "Stone", "Metal", "Glass"], answer: "Wood" },
+          { q: "What makes a brick?", options: ["Clay", "Sand", "Water", "Fire"], answer: "Clay" },
+          { q: "What is a house built with?", options: ["Cement", "Paper", "Cloth", "Wood only"], answer: "Cement" },
+          { q: "What is glass made from?", options: ["Sand", "Clay", "Stone", "Metal"], answer: "Sand" },
+          { q: "What tool shapes metal?", options: ["Hammer", "Pen", "Book", "Ruler"], answer: "Hammer" },
+          { q: "What is used to make a pot?", options: ["Clay", "Metal", "Glass", "Paper"], answer: "Clay" },
+          { q: "What heats to make steel?", options: ["Fire", "Water", "Air", "Ice"], answer: "Fire" },
+          { q: "What is a chair made from?", options: ["Wood", "Stone", "Metal", "All"], answer: "All" },
+          { q: "What joins wood pieces?", options: ["Nails", "Paper", "Cloth", "Water"], answer: "Nails" }
+        ]
+      },
+      {
+        title: "Chapter 9: Different Lands, Different Lives",
+        questions: [
+          { q: "Where do people live in deserts?", options: ["Tents", "Houses", "Caves", "Trees"], answer: "Tents" },
+          { q: "What grows in a forest?", options: ["Trees", "Sand", "Rock", "Metal"], answer: "Trees" },
+          { q: "Who lives near rivers?", options: ["Fishermen", "Farmers", "Doctors", "Teachers"], answer: "Fishermen" },
+          { q: "What is common in mountains?", options: ["Snow", "Sand", "Water", "Grass"], answer: "Snow" },
+          { q: "What do desert people wear?", options: ["Light clothes", "Heavy coats", "Raincoats", "Boots"], answer: "Light clothes" },
+          { q: "What animal lives in forests?", options: ["Tiger", "Camel", "Penguin", "Elephant"], answer: "Tiger" },
+          { q: "What is found in plains?", options: ["Fields", "Mountains", "Deserts", "Oceans"], answer: "Fields" },
+          { q: "Who herds animals in grasslands?", options: ["Nomads", "Fishermen", "Farmers", "Doctors"], answer: "Nomads" },
+          { q: "What is scarce in deserts?", options: ["Water", "Sand", "Rock", "Air"], answer: "Water" },
+          { q: "What do mountains provide?", options: ["Water", "Sand", "Oil", "Metal"], answer: "Water" }
+        ]
+      },
+      {
+        title: "Chapter 10: Our Sky",
+        questions: [
+          { q: "What shines in the day?", options: ["Sun", "Moon", "Stars", "Clouds"], answer: "Sun" },
+          { q: "What appears at night?", options: ["Moon", "Sun", "Rain", "Wind"], answer: "Moon" },
+          { q: "What are the bright points in the sky?", options: ["Stars", "Clouds", "Birds", "Planes"], answer: "Stars" },
+          { q: "What brings rain?", options: ["Clouds", "Sun", "Moon", "Stars"], answer: "Clouds" },
+          { q: "What changes the sky color?", options: ["Sunset", "Rain", "Wind", "Stars"], answer: "Sunset" },
+          { q: "What flies in the sky?", options: ["Birds", "Fish", "Snakes", "Rabbits"], answer: "Birds" },
+          { q: "What is a rainbow made of?", options: ["Light", "Water", "Air", "Fire"], answer: "Light" },
+          { q: "What moves clouds?", options: ["Wind", "Sun", "Moon", "Stars"], answer: "Wind" },
+          { q: "What is the biggest object in the sky?", options: ["Sun", "Moon", "Star", "Cloud"], answer: "Sun" },
+          { q: "What do we see during the day and night?", options: ["Sky", "Ground", "Water", "Trees"], answer: "Sky" }
+        ]
+      }
+    ],
+     mathematics: [
+      {
+        title: "Chapter 1: Shapes Around Us",
+        questions: [
+          { q: "What shape has 4 equal sides and 4 right angles?", options: ["Square", "Circle", "Triangle", "Rectangle"], answer: "Square" },
+          { q: "How many sides does a triangle have?", options: ["3", "4", "5", "6"], answer: "3" },
+          { q: "Which shape has no sides?", options: ["Circle", "Square", "Rectangle", "Pentagon"], answer: "Circle" },
+          { q: "What shape has 5 sides?", options: ["Pentagon", "Hexagon", "Triangle", "Square"], answer: "Pentagon" },
+          { q: "Which of these is a 3D shape?", options: ["Cube", "Circle", "Square", "Triangle"], answer: "Cube" },
+          { q: "How many corners does a rectangle have?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What shape is like a ball?", options: ["Sphere", "Cube", "Cylinder", "Cone"], answer: "Sphere" },
+          { q: "Which shape has 6 faces?", options: ["Cube", "Cone", "Cylinder", "Sphere"], answer: "Cube" },
+          { q: "How many sides does a hexagon have?", options: ["6", "5", "4", "3"], answer: "6" },
+          { q: "Which shape has only one curved surface?", options: ["Cone", "Cube", "Rectangle", "Square"], answer: "Cone" }
+        ]
+      },
+      {
+        title: "Chapter 2: Hide and Seek",
+        questions: [
+          { q: "Where can you hide behind?", options: ["Tree", "Sky", "Sun", "Cloud"], answer: "Tree" },
+          { q: "What helps you find someone hiding?", options: ["Eyes", "Nose", "Ears", "Mouth"], answer: "Eyes" },
+          { q: "What can hide in a box?", options: ["Toy", "Water", "Air", "Light"], answer: "Toy" },
+          { q: "How many players are needed for hide and seek?", options: ["2 or more", "1", "5", "10"], answer: "2 or more" },
+          { q: "Where is a good hiding spot outdoors?", options: ["Bush", "Road", "River", "House"], answer: "Bush" },
+          { q: "Who counts while others hide?", options: ["Seeker", "Hider", "Watcher", "Runner"], answer: "Seeker" },
+          { q: "What do you say when you find someone?", options: ["Found you!", "Run!", "Hide!", "Stop!"], answer: "Found you!" },
+          { q: "What can block your view to hide?", options: ["Wall", "Glass", "Mirror", "Window"], answer: "Wall" },
+          { q: "How long should you count?", options: ["10-20 seconds", "1 minute", "5 minutes", "10 minutes"], answer: "10-20 seconds" },
+          { q: "What game is similar to hide and seek?", options: ["Tag", "Chess", "Ludo", "Cards"], answer: "Tag" }
+        ]
+      },
+      {
+        title: "Chapter 3: Pattern Around Us",
+        questions: [
+          { q: "What comes next in 2, 4, 6, 8?", options: ["10", "9", "7", "5"], answer: "10" },
+          { q: "Which shape repeats in a square, circle, square, circle?", options: ["Square", "Circle", "Triangle", "Rectangle"], answer: "Square" },
+          { q: "What is the pattern in red, blue, red, blue?", options: ["Alternate", "Same", "Random", "None"], answer: "Alternate" },
+          { q: "What number follows 5, 10, 15, 20?", options: ["25", "20", "15", "10"], answer: "25" },
+          { q: "Which color pattern is A, B, A, B?", options: ["Alternate", "Repeat", "Single", "Mixed"], answer: "Alternate" },
+          { q: "What comes after 1, 3, 5, 7?", options: ["9", "6", "4", "8"], answer: "9" },
+          { q: "In a pattern of stars, circles, stars, what is next?", options: ["Circle", "Star", "Triangle", "Square"], answer: "Circle" },
+          { q: "What is the rule in 10, 20, 30, 40?", options: ["Add 10", "Add 5", "Multiply 2", "Subtract 5"], answer: "Add 10" },
+          { q: "Which shape follows triangle, square, triangle?", options: ["Square", "Circle", "Triangle", "Pentagon"], answer: "Square" },
+          { q: "What number pattern is 3, 6, 9, 12?", options: ["Multiply by 3", "Add 3", "Subtract 3", "Divide by 3"], answer: "Add 3" }
+        ]
+      },
+      {
+        title: "Chapter 4: Thousands Around Us",
+        questions: [
+          { q: "What is 1000 + 200?", options: ["1200", "1300", "1100", "1400"], answer: "1200" },
+          { q: "How many hundreds are in 2000?", options: ["20", "10", "15", "25"], answer: "20" },
+          { q: "What is 5000 - 1000?", options: ["4000", "3000", "5000", "2000"], answer: "4000" },
+          { q: "How many thousands are in 7000?", options: ["7", "5", "3", "9"], answer: "7" },
+          { q: "What is 3000 + 4000?", options: ["7000", "6000", "5000", "8000"], answer: "7000" },
+          { q: "How many hundreds in 4500?", options: ["45", "40", "50", "35"], answer: "45" },
+          { q: "What is 6000 - 2000?", options: ["4000", "3000", "5000", "2000"], answer: "4000" },
+          { q: "What number has 3 thousands?", options: ["3000", "2000", "4000", "5000"], answer: "3000" },
+          { q: "How much is 1000 x 2?", options: ["2000", "3000", "4000", "1000"], answer: "2000" },
+          { q: "What is 8000 - 3000?", options: ["5000", "4000", "6000", "7000"], answer: "5000" }
+        ]
+      },
+      {
+        title: "Chapter 5: Sharing and Measuring",
+        questions: [
+          { q: "If 12 candies are shared by 3 friends, how many each?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What tool measures length?", options: ["Ruler", "Clock", "Scale", "Thermometer"], answer: "Ruler" },
+          { q: "If 20 apples are shared by 5, how many each?", options: ["4", "5", "3", "6"], answer: "4" },
+          { q: "What unit measures short lengths?", options: ["Centimeter", "Meter", "Kilometer", "Millimeter"], answer: "Centimeter" },
+          { q: "If 15 books are shared by 3, how many each?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "What is used to measure weight?", options: ["Scale", "Ruler", "Clock", "Jar"], answer: "Scale" },
+          { q: "If 10 pencils are shared by 2, how many each?", options: ["5", "4", "3", "6"], answer: "5" },
+          { q: "What measures liquid?", options: ["Jug", "Ruler", "Tape", "Clock"], answer: "Jug" },
+          { q: "If 24 toys are shared by 6, how many each?", options: ["4", "5", "3", "6"], answer: "4" },
+          { q: "Which is longer, 10 cm or 1 m?", options: ["1 m", "10 cm", "Both", "None"], answer: "1 m" }
+        ]
+      },
+      {
+        title: "Chapter 6: Measuring Length",
+        questions: [
+          { q: "How many centimeters are in 1 meter?", options: ["100", "10", "1000", "50"], answer: "100" },
+          { q: "What is 50 cm + 30 cm?", options: ["80 cm", "70 cm", "90 cm", "60 cm"], answer: "80 cm" },
+          { q: "Which is longer, 1 m or 100 cm?", options: ["Both", "1 m", "100 cm", "None"], answer: "Both" },
+          { q: "What is 200 cm in meters?", options: ["2 m", "20 m", "0.2 m", "200 m"], answer: "2 m" },
+          { q: "How do you measure a table?", options: ["Ruler", "Clock", "Scale", "Thermometer"], answer: "Ruler" },
+          { q: "What is 150 cm - 50 cm?", options: ["100 cm", "50 cm", "150 cm", "200 cm"], answer: "100 cm" },
+          { q: "How many mm are in 1 cm?", options: ["10", "100", "1000", "1"], answer: "10" },
+          { q: "What is 3 m + 50 cm?", options: ["350 cm", "300 cm", "400 cm", "250 cm"], answer: "350 cm" },
+          { q: "Which unit is for very small lengths?", options: ["Millimeter", "Meter", "Centimeter", "Kilometer"], answer: "Millimeter" },
+          { q: "What is 2 m - 50 cm?", options: ["150 cm", "200 cm", "100 cm", "250 cm"], answer: "150 cm" }
+        ]
+      },
+      {
+        title: "Chapter 7: The Cleanest Village",
+        questions: [
+          { q: "What keeps a village clean?", options: ["Garbage collection", "Littering", "Ignoring", "Pollution"], answer: "Garbage collection" },
+          { q: "Who helps clean the village?", options: ["People", "Animals", "Trees", "Rivers"], answer: "People" },
+          { q: "What should not be thrown on streets?", options: ["Trash", "Water", "Food", "Clothes"], answer: "Trash" },
+          { q: "What grows in a clean village?", options: ["Plants", "Dust", "Smoke", "Mud"], answer: "Plants" },
+          { q: "What tool cleans roads?", options: ["Broom", "Pen", "Book", "Ball"], answer: "Broom" },
+          { q: "Why is a clean village healthy?", options: ["No diseases", "More dirt", "Less water", "More noise"], answer: "No diseases" },
+          { q: "What is used to carry trash?", options: ["Bin", "Plate", "Cup", "Spoon"], answer: "Bin" },
+          { q: "Who leads a clean village?", options: ["Leader", "Child", "Animal", "Tree"], answer: "Leader" },
+          { q: "What color is clean water?", options: ["Clear", "Black", "Red", "Yellow"], answer: "Clear" },
+          { q: "How often should we clean?", options: ["Daily", "Weekly", "Monthly", "Never"], answer: "Daily" }
+        ]
+      },
+      {
+        title: "Chapter 8: Weigh it, Pour it",
+        questions: [
+          { q: "What unit measures weight?", options: ["Kilogram", "Meter", "Liter", "Centimeter"], answer: "Kilogram" },
+          { q: "How much is 500 g?", options: ["0.5 kg", "5 kg", "50 kg", "0.05 kg"], answer: "0.5 kg" },
+          { q: "What is used to pour water?", options: ["Jug", "Ruler", "Scale", "Clock"], answer: "Jug" },
+          { q: "How many grams in 1 kg?", options: ["1000", "100", "10", "10000"], answer: "1000" },
+          { q: "What weighs more, 1 kg or 500 g?", options: ["1 kg", "500 g", "Both", "None"], answer: "1 kg" },
+          { q: "What tool measures weight?", options: ["Scale", "Ruler", "Tape", "Clock"], answer: "Scale" },
+          { q: "How much is 200 g + 300 g?", options: ["500 g", "400 g", "300 g", "600 g"], answer: "500 g" },
+          { q: "What is a unit of liquid?", options: ["Liter", "Meter", "Gram", "Kilogram"], answer: "Liter" },
+          { q: "What is 1 kg - 200 g?", options: ["800 g", "900 g", "700 g", "600 g"], answer: "800 g" },
+          { q: "Which is heavier, 2 kg or 1500 g?", options: ["2 kg", "1500 g", "Both", "None"], answer: "2 kg" }
+        ]
+      },
+      {
+        title: "Chapter 9: Equal Groups",
+        questions: [
+          { q: "If 12 items are in 3 groups, how many each?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What is 20 divided by 4?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "How many groups of 2 in 10?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "If 15 candies are in 3 groups, how many each?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "What is 18 divided by 6?", options: ["3", "4", "5", "6"], answer: "3" },
+          { q: "How many groups of 5 in 20?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "If 24 apples are in 4 groups, how many each?", options: ["6", "5", "4", "3"], answer: "6" },
+          { q: "What is 10 divided by 2?", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "How many groups of 3 in 12?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "If 30 items are in 6 groups, how many each?", options: ["5", "4", "6", "3"], answer: "5" }
+        ]
+      },
+      {
+        title: "Chapter 10: Elephants, Tigers, and Leopards",
+        questions: [
+          { q: "Which is the largest animal?", options: ["Elephant", "Tiger", "Leopard", "Lion"], answer: "Elephant" },
+          { q: "What do tigers eat?", options: ["Meat", "Grass", "Leaves", "Fruits"], answer: "Meat" },
+          { q: "Where do leopards live?", options: ["Forest", "Desert", "Ocean", "Mountain"], answer: "Forest" },
+          { q: "How many legs does an elephant have?", options: ["4", "2", "6", "8"], answer: "4" },
+          { q: "What color is a tiger?", options: ["Orange", "Blue", "Green", "White"], answer: "Orange" },
+          { q: "Which animal has spots?", options: ["Leopard", "Elephant", "Tiger", "Bear"], answer: "Leopard" },
+          { q: "What helps elephants drink water?", options: ["Trunk", "Tail", "Legs", "Ears"], answer: "Trunk" },
+          { q: "Which animal is a good climber?", options: ["Leopard", "Elephant", "Tiger", "Horse"], answer: "Leopard" },
+          { q: "What sound does a tiger make?", options: ["Roar", "Meow", "Bark", "Hiss"], answer: "Roar" },
+          { q: "How many tusks does an elephant have?", options: ["2", "4", "6", "0"], answer: "2" }
+        ]
+      },
+      {
+        title: "Chapter 11: Fun with Symmetry",
+        questions: [
+          { q: "What has a line of symmetry?", options: ["Square", "Circle", "Both", "None"], answer: "Both" },
+          { q: "How many lines of symmetry does a circle have?", options: ["Infinite", "1", "2", "4"], answer: "Infinite" },
+          { q: "Which shape has 2 lines of symmetry?", options: ["Rectangle", "Triangle", "Circle", "Pentagon"], answer: "Rectangle" },
+          { q: "What is symmetry?", options: ["Equal halves", "Unequal sides", "Random shape", "Curved line"], answer: "Equal halves" },
+          { q: "How many lines of symmetry in a square?", options: ["4", "2", "3", "1"], answer: "4" },
+          { q: "Which letter has no symmetry?", options: ["F", "A", "H", "O"], answer: "F" },
+          { q: "What shape has one line of symmetry?", options: ["Isosceles Triangle", "Circle", "Square", "Rectangle"], answer: "Isosceles Triangle" },
+          { q: "Which figure is symmetrical?", options: ["Butterfly", "Spiral", "Wave", "Zigzag"], answer: "Butterfly" },
+          { q: "How many lines of symmetry in a triangle?", options: ["0 or 1", "2", "3", "4"], answer: "0 or 1" },
+          { q: "What tool checks symmetry?", options: ["Mirror", "Ruler", "Scale", "Clock"], answer: "Mirror" }
+        ]
+      },
+      {
+        title: "Chapter 12: Ticking Clocks and Turning Calendar",
+        questions: [
+          { q: "How many hours in a day?", options: ["24", "12", "48", "36"], answer: "24" },
+          { q: "What shows the date?", options: ["Calendar", "Clock", "Ruler", "Scale"], answer: "Calendar" },
+          { q: "How many days in a week?", options: ["7", "5", "10", "14"], answer: "7" },
+          { q: "What time is 3 hours after 10 AM?", options: ["1 PM", "12 PM", "2 PM", "3 PM"], answer: "1 PM" },
+          { q: "How many months in a year?", options: ["12", "10", "15", "8"], answer: "12" },
+          { q: "What shows hours and minutes?", options: ["Clock", "Calendar", "Ruler", "Tape"], answer: "Clock" },
+          { q: "How many days in February?", options: ["28 or 29", "30", "31", "15"], answer: "28 or 29" },
+          { q: "What comes after 11 AM?", options: ["12 PM", "10 AM", "1 PM", "2 PM"], answer: "12 PM" },
+          { q: "How many weeks in a month?", options: ["4 or 5", "3", "6", "7"], answer: "4 or 5" },
+          { q: "What day follows Friday?", options: ["Saturday", "Sunday", "Thursday", "Monday"], answer: "Saturday" }
+        ]
+      },
+      {
+        title: "Chapter 13: The Transport Museum",
+        questions: [
+          { q: "What moves on rails?", options: ["Train", "Car", "Bike", "Bus"], answer: "Train" },
+          { q: "Which is a water transport?", options: ["Ship", "Aeroplane", "Truck", "Cycle"], answer: "Ship" },
+          { q: "What flies in the air?", options: ["Aeroplane", "Car", "Bus", "Train"], answer: "Aeroplane" },
+          { q: "Which has two wheels?", options: ["Cycle", "Car", "Truck", "Bus"], answer: "Cycle" },
+          { q: "What is used on roads?", options: ["Car", "Ship", "Aeroplane", "Boat"], answer: "Car" },
+          { q: "Which transport carries many people?", options: ["Bus", "Bike", "Cycle", "Car"], answer: "Bus" },
+          { q: "What is a museum?", options: ["Place to see history", "Park", "School", "Hospital"], answer: "Place to see history" },
+          { q: "Which is the fastest transport?", options: ["Aeroplane", "Train", "Car", "Cycle"], answer: "Aeroplane" },
+          { q: "What pulls a cart?", options: ["Horse", "Dog", "Cat", "Bird"], answer: "Horse" },
+          { q: "Which transport needs water?", options: ["Boat", "Bus", "Train", "Aeroplane"], answer: "Boat" }
+        ]
+      },
+      {
+        title: "Chapter 14: Data Handling",
+        questions: [
+          { q: "What shows data in a picture?", options: ["Pictograph", "Book", "Ruler", "Clock"], answer: "Pictograph" },
+          { q: "How many tally marks for 5?", options: ["5", "4", "3", "6"], answer: "5" },
+          { q: "What is a bar graph?", options: ["Data in bars", "Data in lines", "Data in circles", "Data in words"], answer: "Data in bars" },
+          { q: "How do you count tally marks?", options: ["In groups of 5", "In groups of 2", "In groups of 10", "In groups of 3"], answer: "In groups of 5" },
+          { q: "What is the most common data?", options: ["Mode", "Mean", "Median", "Range"], answer: "Mode" },
+          { q: "How many symbols in a pictograph?", options: ["1 or more", "0", "5", "10"], answer: "1 or more" },
+          { q: "What is data?", options: ["Information", "Food", "Toy", "Book"], answer: "Information" },
+          { q: "Which shows height in a graph?", options: ["Bar", "Circle", "Line", "Square"], answer: "Bar" },
+          { q: "What is 3 + 2 + 1 tally marks?", options: ["6", "5", "4", "7"], answer: "6" },
+          { q: "Which graph uses pictures?", options: ["Pictograph", "Bar graph", "Line graph", "Pie chart"], answer: "Pictograph" }
+        ]
+      }
+    ],
+   english: [
+      {
+        title: "Chapter 1: Together We Can",
+        questions: [
+          { q: "What happens when we work together?", options: ["Success", "Failure", "Loneliness", "Anger"], answer: "Success" },
+          { q: "Who can work together?", options: ["Friends", "Strangers", "Enemies", "Rocks"], answer: "Friends" },
+          { q: "What do we share when together?", options: ["Ideas", "Secrets", "Fights", "Silence"], answer: "Ideas" },
+          { q: "What makes teamwork fun?", options: ["Laughter", "Crying", "Shouting", "Running"], answer: "Laughter" },
+          { q: "What do we build together?", options: ["Houses", "Walls", "Fences", "Mountains"], answer: "Houses" },
+          { q: "Who helps in a team?", options: ["All", "One", "None", "Some"], answer: "All" },
+          { q: "What is needed for teamwork?", options: ["Trust", "Greed", "Fear", "Lies"], answer: "Trust" },
+          { q: "What game needs a team?", options: ["Cricket", "Solitaire", "Chess", "Puzzle"], answer: "Cricket" },
+          { q: "What do we learn from togetherness?", options: ["Cooperation", "Anger", "Sadness", "Laziness"], answer: "Cooperation" },
+          { q: "What is stronger together?", options: ["People", "Stones", "Water", "Air"], answer: "People" }
+        ]
+      },
+      {
+        title: "Chapter 2: The Tinkling Bells",
+        questions: [
+          { q: "What makes a tinkling sound?", options: ["Bells", "Drums", "Horns", "Whistles"], answer: "Bells" },
+          { q: "Where are bells often found?", options: ["Temples", "Houses", "Rivers", "Mountains"], answer: "Temples" },
+          { q: "What moves bells to tinkle?", options: ["Wind", "Water", "Fire", "Stone"], answer: "Wind" },
+          { q: "What color are bells usually?", options: ["Metallic", "Green", "Blue", "Red"], answer: "Metallic" },
+          { q: "Who rings bells during prayers?", options: ["Priest", "Child", "Dog", "Cat"], answer: "Priest" },
+          { q: "What do bells signify?", options: ["Celebration", "Sadness", "Fear", "Anger"], answer: "Celebration" },
+          { q: "How many bells are in a set?", options: ["Many", "One", "Two", "Three"], answer: "Many" },
+          { q: "What material makes bells?", options: ["Metal", "Wood", "Plastic", "Paper"], answer: "Metal" },
+          { q: "When do bells tinkle loudly?", options: ["Festival", "Rain", "Night", "Silence"], answer: "Festival" },
+          { q: "What do bells attract?", options: ["People", "Animals", "Birds", "Fish"], answer: "People" }
+        ]
+      },
+      {
+        title: "Chapter 3: Be Smart, Be Safe",
+        questions: [
+          { q: "What keeps us safe?", options: ["Rules", "Chaos", "Noise", "Dirt"], answer: "Rules" },
+          { q: "Who teaches safety?", options: ["Parents", "Strangers", "Animals", "Trees"], answer: "Parents" },
+          { q: "What should we wear on roads?", options: ["Helmet", "Hat", "Shoes", "Gloves"], answer: "Helmet" },
+          { q: "What number to call in emergency?", options: ["100", "200", "300", "400"], answer: "100" },
+          { q: "What is smart to do at home?", options: ["Lock doors", "Leave open", "Break windows", "Run"], answer: "Lock doors" },
+          { q: "What avoids accidents?", options: ["Care", "Haste", "Sleep", "Play"], answer: "Care" },
+          { q: "What protects from sun?", options: ["Cap", "Shirt", "Pants", "Shoes"], answer: "Cap" },
+          { q: "Who helps in danger?", options: ["Police", "Teacher", "Friend", "All"], answer: "Police" },
+          { q: "What is safe to eat?", options: ["Cooked food", "Raw meat", "Dirty water", "Spoiled fruit"], answer: "Cooked food" },
+          { q: "What do we learn to be?", options: ["Smart", "Lazy", "Rude", "Angry"], answer: "Smart" }
+        ]
+      },
+      {
+        title: "Chapter 4: One Thing at a Time",
+        questions: [
+          { q: "What should we do at once?", options: ["One task", "Many tasks", "Nothing", "Sleep"], answer: "One task" },
+          { q: "Why focus on one thing?", options: ["Better work", "Confusion", "Laziness", "Noise"], answer: "Better work" },
+          { q: "What helps us focus?", options: ["Silence", "Loud music", "Crowd", "Chaos"], answer: "Silence" },
+          { q: "What is an example of one task?", options: ["Reading", "Running and eating", "Talking and writing", "All"], answer: "Reading" },
+          { q: "Who teaches focus?", options: ["Teacher", "Stranger", "Animal", "Tree"], answer: "Teacher" },
+          { q: "What happens with multitasking?", options: ["Mistakes", "Success", "Happiness", "Peace"], answer: "Mistakes" },
+          { q: "What tool helps with one task?", options: ["Book", "Toy", "Ball", "Noise"], answer: "Book" },
+          { q: "When is focus important?", options: ["Study", "Play", "Sleep", "Eat"], answer: "Study" },
+          { q: "What improves with focus?", options: ["Skills", "Anger", "Fear", "Laziness"], answer: "Skills" },
+          { q: "What distracts from one task?", options: ["TV", "Book", "Pen", "Paper"], answer: "TV" }
+        ]
+      },
+      {
+        title: "Chapter 5: The Old Stag",
+        questions: [
+          { q: "What is a stag?", options: ["Deer", "Tiger", "Lion", "Bear"], answer: "Deer" },
+          { q: "Why was the stag old?", options: ["Age", "Injury", "Hunger", "Sleep"], answer: "Age" },
+          { q: "Where did the stag live?", options: ["Forest", "City", "River", "House"], answer: "Forest" },
+          { q: "What did the stag have?", options: ["Antlers", "Wings", "Horns", "Tail"], answer: "Antlers" },
+          { q: "What was the stag’s problem?", options: ["Weakness", "Strength", "Happiness", "Speed"], answer: "Weakness" },
+          { q: "Who helped the stag?", options: ["Friends", "Enemies", "Strangers", "None"], answer: "Friends" },
+          { q: "What color was the stag?", options: ["Brown", "Blue", "Green", "Red"], answer: "Brown" },
+          { q: "What did the stag eat?", options: ["Grass", "Meat", "Fish", "Fruits"], answer: "Grass" },
+          { q: "What lesson did the stag learn?", options: ["Help", "Fight", "Run", "Hide"], answer: "Help" },
+          { q: "How did the stag feel at the end?", options: ["Happy", "Sad", "Angry", "Tired"], answer: "Happy" }
+        ]
+      },
+      {
+        title: "Chapter 6: Braille",
+        questions: [
+          { q: "What is Braille?", options: ["Writing system", "Game", "Food", "Toy"], answer: "Writing system" },
+          { q: "Who invented Braille?", options: ["Louis Braille", "Thomas Edison", "Albert Einstein", "Isaac Newton"], answer: "Louis Braille" },
+          { q: "What is Braille made of?", options: ["Dots", "Lines", "Shapes", "Colors"], answer: "Dots" },
+          { q: "Who uses Braille?", options: ["Blind people", "All people", "Children", "Adults"], answer: "Blind people" },
+          { q: "How many dots in a Braille cell?", options: ["6", "4", "8", "10"], answer: "6" },
+          { q: "What does Braille help with?", options: ["Reading", "Running", "Jumping", "Eating"], answer: "Reading" },
+          { q: "Where is Braille found?", options: ["Books", "Toys", "Clothes", "Food"], answer: "Books" },
+          { q: "What is Braille written on?", options: ["Paper", "Stone", "Metal", "Wood"], answer: "Paper" },
+          { q: "What skill does Braille teach?", options: ["Touch", "Sight", "Hearing", "Smell"], answer: "Touch" },
+          { q: "Why is Braille important?", options: ["Education", "Play", "Sleep", "Eat"], answer: "Education" }
+        ]
+      },
+      {
+        title: "Chapter 7: Fit Body, Fit Mind, Fit Nation",
+        questions: [
+          { q: "What keeps the body fit?", options: ["Exercise", "Laziness", "Sleeping", "Eating junk"], answer: "Exercise" },
+          { q: "What makes the mind sharp?", options: ["Reading", "Watching TV", "Playing games", "Sleeping"], answer: "Reading" },
+          { q: "What builds a fit nation?", options: ["Healthy people", "Sick people", "Lazy people", "Angry people"], answer: "Healthy people" },
+          { q: "What food helps fitness?", options: ["Fruits", "Candy", "Chips", "Soda"], answer: "Fruits" },
+          { q: "What activity strengthens the body?", options: ["Running", "Sitting", "Lying", "Eating"], answer: "Running" },
+          { q: "What game improves the mind?", options: ["Chess", "Hide and seek", "Tag", "Jump"], answer: "Chess" },
+          { q: "Who needs to be fit?", options: ["Everyone", "Children only", "Adults only", "None"], answer: "Everyone" },
+          { q: "What avoids illness?", options: ["Hygiene", "Dirt", "Smoke", "Noise"], answer: "Hygiene" },
+          { q: "What makes a nation strong?", options: ["Unity", "Division", "Fear", "Lies"], answer: "Unity" },
+          { q: "What is good for the heart?", options: ["Walking", "Sitting", "Sleeping", "Eating"], answer: "Walking" }
+        ]
+      },
+      {
+        title: "Chapter 8: The Lagori Champions",
+        questions: [
+          { q: "What is Lagori?", options: ["Game", "Food", "Toy", "Book"], answer: "Game" },
+          { q: "How many players in Lagori?", options: ["Two teams", "One", "Three", "Five"], answer: "Two teams" },
+          { q: "What is the main object in Lagori?", options: ["Stone pile", "Ball", "Stick", "Rope"], answer: "Stone pile" },
+          { q: "What do players throw?", options: ["Ball", "Stone", "Water", "Sand"], answer: "Ball" },
+          { q: "Who are the champions?", options: ["Winners", "Losers", "Runners", "Watchers"], answer: "Winners" },
+          { q: "What skill is needed in Lagori?", options: ["Aim", "Sleep", "Eat", "Run only"], answer: "Aim" },
+          { q: "Where is Lagori played?", options: ["Ground", "House", "River", "Road"], answer: "Ground" },
+          { q: "How do you win Lagori?", options: ["Hit target", "Run away", "Hide", "Sleep"], answer: "Hit target" },
+          { q: "What protects the stones?", options: ["Players", "Wind", "Water", "Fire"], answer: "Players" },
+          { q: "What makes Lagori fun?", options: ["Teamwork", "Loneliness", "Fear", "Anger"], answer: "Teamwork" }
+        ]
+      },
+      {
+        title: "Chapter 9: Hekko",
+        questions: [
+          { q: "What is Hekko?", options: ["Greeting", "Game", "Food", "Toy"], answer: "Greeting" },
+          { q: "Where is Hekko used?", options: ["Japan", "India", "America", "Australia"], answer: "Japan" },
+          { q: "What does Hekko mean?", options: ["Hello", "Goodbye", "Thank you", "Sorry"], answer: "Hello" },
+          { q: "How do you say Hekko?", options: ["With a bow", "With a shout", "With a jump", "With a run"], answer: "With a bow" },
+          { q: "Who uses Hekko?", options: ["Japanese", "Indians", "Americans", "Australians"], answer: "Japanese" },
+          { q: "What is polite in Hekko?", options: ["Respect", "Rudeness", "Anger", "Laziness"], answer: "Respect" },
+          { q: "When is Hekko said?", options: ["Meeting", "Sleeping", "Eating", "Running"], answer: "Meeting" },
+          { q: "What gesture goes with Hekko?", options: ["Bow", "Handshake", "Wave", "Clap"], answer: "Bow" },
+          { q: "What language is Hekko from?", options: ["Japanese", "English", "Hindi", "French"], answer: "Japanese" },
+          { q: "Why say Hekko?", options: ["Greet", "Fight", "Hide", "Eat"], answer: "Greet" }
+        ]
+      },
+      {
+        title: "Chapter 10: The Swing",
+        questions: [
+          { q: "What is a swing?", options: ["Play equipment", "Food", "Toy", "Book"], answer: "Play equipment" },
+          { q: "Where is a swing found?", options: ["Park", "House", "River", "Road"], answer: "Park" },
+          { q: "What makes a swing move?", options: ["Push", "Pull", "Jump", "Run"], answer: "Push" },
+          { q: "What is a swing made of?", options: ["Rope and wood", "Metal", "Plastic", "Stone"], answer: "Rope and wood" },
+          { q: "Who enjoys a swing?", options: ["Children", "Adults", "All", "None"], answer: "Children" },
+          { q: "What feeling does a swing give?", options: ["Joy", "Sadness", "Fear", "Anger"], answer: "Joy" },
+          { q: "How high can a swing go?", options: ["High", "Low", "Medium", "None"], answer: "High" },
+          { q: "What holds a swing?", options: ["Tree", "Ground", "Water", "Air"], answer: "Tree" },
+          { q: "What safety rule for swings?", options: ["Sit properly", "Stand", "Jump off", "Run"], answer: "Sit properly" },
+          { q: "What sound does a swing make?", options: ["Creak", "Roar", "Hiss", "Buzz"], answer: "Creak" }
+        ]
+      },
+      {
+        title: "Chapter 11: A Journey to the Magical Mountains",
+        questions: [
+          { q: "Where is the journey to?", options: ["Mountains", "Sea", "Forest", "City"], answer: "Mountains" },
+          { q: "What is magical about mountains?", options: ["Beauty", "Noise", "Dirt", "Smoke"], answer: "Beauty" },
+          { q: "What do mountains have?", options: ["Snow", "Sand", "Water", "Grass"], answer: "Snow" },
+          { q: "Who goes on the journey?", options: ["People", "Animals", "Trees", "Rocks"], answer: "People" },
+          { q: "What grows on mountains?", options: ["Plants", "Deserts", "Oceans", "Rivers"], answer: "Plants" },
+          { q: "What is the mountain air like?", options: ["Fresh", "Smoky", "Dirty", "Hot"], answer: "Fresh" },
+          { q: "What do we see from mountains?", options: ["View", "Houses", "Cars", "Roads"], answer: "View" },
+          { q: "What animals live on mountains?", options: ["Yak", "Lion", "Tiger", "Elephant"], answer: "Yak" },
+          { q: "What makes the journey fun?", options: ["Adventure", "Boredom", "Fear", "Anger"], answer: "Adventure" },
+          { q: "What is high on mountains?", options: ["Peaks", "Valleys", "Rivers", "Plains"], answer: "Peaks" }
+        ]
+      },
+      {
+        title: "Chapter 12: Maheshwar",
+        questions: [
+          { q: "Where is Maheshwar?", options: ["India", "Japan", "America", "Australia"], answer: "India" },
+          { q: "What is Maheshwar famous for?", options: ["Weaving", "Farming", "Fishing", "Mining"], answer: "Weaving" },
+          { q: "What river flows by Maheshwar?", options: ["Narmada", "Ganga", "Yamuna", "Godavari"], answer: "Narmada" },
+          { q: "What do people make in Maheshwar?", options: ["Sarees", "Shoes", "Hats", "Bags"], answer: "Sarees" },
+          { q: "What is the culture of Maheshwar?", options: ["Rich", "Poor", "Silent", "Empty"], answer: "Rich" },
+          { q: "Who lives in Maheshwar?", options: ["People", "Animals", "Birds", "Fish"], answer: "People" },
+          { q: "What is a temple in Maheshwar?", options: ["Ahilya", "Shiva", "Vishnu", "Brahma"], answer: "Ahilya" },
+          { q: "What color are Maheshwar sarees?", options: ["Bright", "Dull", "Black", "Grey"], answer: "Bright" },
+          { q: "What do we learn from Maheshwar?", options: ["Craft", "Fight", "Run", "Hide"], answer: "Craft" },
+          { q: "What is special about Maheshwar?", options: ["History", "Noise", "Dirt", "Smoke"], answer: "History" }
+        ]
+      }
+    ],
+hindi: [
+      {
+        title: "Chapter 1: चिड़िया का गीत",
+        questions: [
+          { q: "चिड़िया का गीत कब सुनाई देता है?", options: ["सुबह", "रात", "दोपहर", "शाम"], answer: "सुबह" },
+          { q: "चिड़िया कौन-सा स्वर बनाती है?", options: ["मीठा", "कर्कश", "उच्च", "निम्न"], answer: "मीठा" },
+          { q: "चिड़िया का गीत किसके लिए होता है?", options: ["प्रकृति", "घर", "स्कूल", "सड़क"], answer: "प्रकृति" },
+          { q: "चिड़िया कहाँ गाती है?", options: ["पेड़ पर", "घर में", "सड़क पर", "नदी में"], answer: "पेड़ पर" },
+          { q: "चिड़िया का गीत कब रुकता है?", options: ["बारिश में", "धूप में", "सुबह में", "रात में"], answer: "रात में" },
+          { q: "चिड़िया का रंग क्या हो सकता है?", options: ["हरा", "नीला", "लाल", "सभी"], answer: "सभी" },
+          { q: "चिड़िया का गीत किसे आनंद देता है?", options: ["सभी को", "केवल बच्चों को", "केवल वृद्धों को", "केवल पक्षियों को"], answer: "सभी को" },
+          { q: "चिड़िया का घोंसला कहाँ होता है?", options: ["पेड़ पर", "जमीन पर", "पानी में", "हवा में"], answer: "पेड़ पर" },
+          { q: "चिड़िया का गीत कितना लंबा होता है?", options: ["छोटा", "लंबा", "मध्यम", "अनिश्चित"], answer: "छोटा" },
+          { q: "चिड़िया का गीत किसे सिखाता है?", options: ["प्रेम", "नफरत", "डर", "गुस्सा"], answer: "प्रेम" }
+        ]
+      },
+      {
+        title: "Chapter 2: बगीचे का घोंघा",
+        questions: [
+          { q: "घोंघा कहाँ रहता है?", options: ["बगीचे में", "जंगल में", "नदी में", "पहाड़ पर"], answer: "बगीचे में" },
+          { q: "घोंघा कितनी तेजी से चलता है?", options: ["धीरे-धीरे", "तेज", "मध्यम", "उड़ता है"], answer: "धीरे-धीरे" },
+          { q: "घोंघा का घर क्या है?", options: ["सीप", "पत्ते", "मिट्टी", "पत्थर"], answer: "सीप" },
+          { q: "घोंघा क्या खाता है?", options: ["पत्ते", "मांस", "फल", "दूध"], answer: "पत्ते" },
+          { q: "घोंघा कब छिप जाता है?", options: ["बारिश में", "धूप में", "रात में", "सुबह में"], answer: "बारिश में" },
+          { q: "घोंघा का रंग क्या होता है?", options: ["भूरा", "नीला", "लाल", "हरा"], answer: "भूरा" },
+          { q: "घोंघा किससे डरता है?", options: ["पक्षी", "सूरज", "हवा", "पानी"], answer: "पक्षी" },
+          { q: "घोंघा कितने पैरों पर चलता है?", options: ["कोई नहीं", "दो", "चार", "छह"], answer: "कोई नहीं" },
+          { q: "घोंघा का शरीर कैसा होता है?", options: ["नरम", "कठोर", "भारी", "हल्का"], answer: "नरम" },
+          { q: "घोंघा कहाँ सोता है?", options: ["सीप में", "पत्ते पर", "मिट्टी में", "पानी में"], answer: "सीप में" }
+        ]
+      },
+      {
+        title: "Chapter 3: नीम",
+        questions: [
+          { q: "नीम का पेड़ कहाँ उगता है?", options: ["गाँव में", "शहर में", "जंगल में", "सभी जगह"], answer: "सभी जगह" },
+          { q: "नीम की पत्तियाँ किसके लिए उपयोगी हैं?", options: ["दवा", "खाना", "कपड़ा", "इमारत"], answer: "दवा" },
+          { q: "नीम का रंग क्या होता है?", options: ["हरा", "नीला", "लाल", "पीला"], answer: "हरा" },
+          { q: "नीम की छाल से क्या बनता है?", options: ["दवा", "कागज", "लकड़ी", "कपड़ा"], answer: "दवा" },
+          { q: "नीम की गंध कैसी होती है?", options: ["तीखी", "मधुर", "बेस्वाद", "खट्टी"], answer: "तीखी" },
+          { q: "नीम किस बीमारी को रोकता है?", options: ["मलेरिया", "जुकाम", "खांसी", "बुखार"], answer: "मलेरिया" },
+          { q: "नीम का पेड़ कितना ऊँचा होता है?", options: ["मध्यम", "छोटा", "बहुत ऊँचा", "निम्न"], answer: "मध्यम" },
+          { q: "नीम की छाया किसके लिए अच्छी है?", options: ["लोगों", "पक्षियों", "पेड़ों", "सभी"], answer: "सभी" },
+          { q: "नीम के फल का स्वाद क्या है?", options: ["कड़वा", "मीठा", "खट्टा", "नमकीन"], answer: "कड़वा" },
+          { q: "नीम का उपयोग किसमें होता है?", options: ["सौंदर्य", "खेल", "पढ़ाई", "नृत्य"], answer: "सौंदर्य" }
+        ]
+      },
+      {
+        title: "Chapter 4: हमारा आहार",
+        questions: [
+          { q: "हमारा आहार क्या है?", options: ["खाना", "पानी", "हवा", "मिट्टी"], answer: "खाना" },
+          { q: "स्वस्थ आहार में क्या होता है?", options: ["फल", "चॉकलेट", "चिप्स", "कोल्ड ड्रिंक"], answer: "फल" },
+          { q: "दाल से क्या मिलता है?", options: ["प्रोटीन", "वसा", "चीनी", "नमक"], answer: "प्रोटीन" },
+          { q: "दूध पीने से क्या मजबूत होता है?", options: ["हड्डियाँ", "नाखून", "बाल", "दांत"], answer: "हड्डियाँ" },
+          { q: "कौन-सा भोजन ऊर्जा देता है?", options: ["रोटी", "मिठाई", "केक", "चॉकलेट"], answer: "रोटी" },
+          { q: "सब्जियाँ किसके लिए अच्छी हैं?", options: ["स्वास्थ्य", "खेल", "नींद", "पढ़ाई"], answer: "स्वास्थ्य" },
+          { q: "जंक फूड से क्या होता है?", options: ["बीमारी", "स्वास्थ्य", "शक्ति", "खुशी"], answer: "बीमारी" },
+          { q: "खाना कितनी बार खाना चाहिए?", options: ["तीन", "एक", "पांच", "दस"], answer: "तीन" },
+          { q: "फल खाने का समय क्या है?", options: ["सुबह", "रात", "दोपहर", "शाम"], answer: "सुबह" },
+          { q: "पानी पीने से क्या होता है?", options: ["ताजगी", "थकान", "बीमारी", "गुस्सा"], answer: "ताजगी" }
+        ]
+      },
+      {
+        title: "Chapter 5: आसमान गिरा",
+        questions: [
+          { q: "आसमान गिरने का मतलब क्या है?", options: ["भयंकर घटना", "खुशी", "खेल", "पढ़ाई"], answer: "भयंकर घटना" },
+          { q: "यह कहानी किसके बारे में है?", options: ["लोगों", "पशुओं", "पेड़ों", "नदियों"], answer: "लोगों" },
+          { q: "आसमान गिरने से क्या हुआ?", options: ["डर", "खुशी", "नृत्य", "खेल"], answer: "डर" },
+          { q: "कौन-सा मौसम खतरनाक हो सकता है?", options: ["तूफान", "धूप", "हवा", "बरसात"], answer: "तूफान" },
+          { q: "लोगों ने क्या किया?", options: ["छिपे", "खेला", "नाचे", "खाया"], answer: "छिपे" },
+          { q: "आसमान गिरने की आवाज कैसी थी?", options: ["जोर की", "धीमी", "मीठी", "चुप"], answer: "जोर की" },
+          { q: "इस कहानी का पाठ क्या है?", options: ["सतर्कता", "आलस्य", "खुशी", "नफरत"], answer: "सतर्कता" },
+          { q: "कौन-सा जानवर डरा?", options: ["गाय", "शेर", "हाथी", "बंदर"], answer: "गाय" },
+          { q: "आसमान गिरने के बाद क्या हुआ?", options: ["शांति", "शोर", "खेल", "नृत्य"], answer: "शांति" },
+          { q: "लोगों ने किसकी मदद माँगी?", options: ["ईश्वर", "दोस्त", "पड़ोसी", "शत्रु"], answer: "ईश्वर" }
+        ]
+      },
+      {
+        title: "Chapter 6: चेरापूँजी के मेहमान",
+        questions: [
+          { q: "चेरापूँजी कहाँ है?", options: ["भारत", "जापान", "अमेरिका", "ऑस्ट्रेलिया"], answer: "भारत" },
+          { q: "चेरापूँजी के लिए प्रसिद्ध क्या है?", options: ["बरसात", "धूप", "हिम", "गर्मी"], answer: "बरसात" },
+          { q: "मेहमान कौन थे?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" },
+          { q: "चेरापूँजी में क्या गिरता है?", options: ["मेघ", "पत्थर", "हवा", "धूल"], answer: "मेघ" },
+          { q: "मेहमानों ने क्या देखा?", options: ["झरने", "सड़कें", "घर", "कार"], answer: "झरने" },
+          { q: "चेरापूँजी का मौसम कैसा है?", options: ["गीला", "सूखा", "गर्म", "ठंडा"], answer: "गीला" },
+          { q: "मेहमानों को क्या पसंद आया?", options: ["प्रकृति", "शोर", "धूल", "धुआँ"], answer: "प्रकृति" },
+          { q: "चेरापूँजी में क्या उगता है?", options: ["पौधे", "रेत", "पत्थर", "धातु"], answer: "पौधे" },
+          { q: "मेहमानों ने क्या किया?", options: ["घूमा", "खाया", "सोया", "लड़ा"], answer: "घूमा" },
+          { q: "चेरापूँजी की खासियत क्या है?", options: ["हरियाली", "शहर", "मरुस्थल", "पहाड़"], answer: "हरियाली" }
+        ]
+      },
+      {
+        title: "Chapter 7: जयपुर से पत्र",
+        questions: [
+          { q: "जयपुर कहाँ है?", options: ["राजस्थान", "महाराष्ट्र", "पंजाब", "गुजरात"], answer: "राजस्थान" },
+          { q: "पत्र किसे लिखा गया?", options: ["दोस्त", "शत्रु", "अजनबी", "पेड़"], answer: "दोस्त" },
+          { q: "जयपुर के लिए प्रसिद्ध क्या है?", options: ["हवेलियाँ", "नदियाँ", "जंगल", "पहाड़"], answer: "हवेलियाँ" },
+          { q: "पत्र में क्या बताया गया?", options: ["खबरें", "खेल", "खाना", "नींद"], answer: "खबरें" },
+          { q: "जयपुर का रंग क्या है?", options: ["गुलाबी", "नीला", "हरा", "लाल"], answer: "गुलाबी" },
+          { q: "पत्र किस माध्यम से भेजा गया?", options: ["डाक", "फोन", "ईमेल", "संदेश"], answer: "डाक" },
+          { q: "जयपुर में क्या देखने को मिलता है?", options: ["महल", "समुद्र", "जंगल", "रेत"], answer: "महल" },
+          { q: "पत्र किस भाषा में था?", options: ["हिंदी", "अंग्रेजी", "उर्दू", "संस्कृत"], answer: "हिंदी" },
+          { q: "जयपुर का मौसम कैसा है?", options: ["गर्म", "ठंडा", "गीला", "हल्का"], answer: "गर्म" },
+          { q: "पत्र से क्या सीखा?", options: ["दोस्ती", "नफरत", "डर", "गुस्सा"], answer: "दोस्ती" }
+        ]
+      },
+      {
+        title: "Chapter 8: ओणम के रंग",
+        questions: [
+          { q: "ओणम कहाँ मनाया जाता है?", options: ["केरल", "राजस्थान", "पंजाब", "गुजरात"], answer: "केरल" },
+          { q: "ओणम का त्योहार कब आता है?", options: ["मॉनसून के बाद", "गर्मी में", "सर्दी में", "वसंत में"], answer: "मॉनसून के बाद" },
+          { q: "ओणम में क्या बनाया जाता है?", options: ["पुकार", "मंदिर", "घर", "सड़क"], answer: "पुकार" },
+          { q: "ओणम का रंग क्या है?", options: ["हरा", "नीला", "लाल", "सभी"], answer: "सभी" },
+          { q: "ओणम में क्या खाया जाता है?", options: ["सद्या", "रोटी", "चावल", "दाल"], answer: "सद्या" },
+          { q: "ओणम का प्रतीक क्या है?", options: ["फूल", "पत्थर", "धातु", "लकड़ी"], answer: "फूल" },
+          { q: "ओणम में लोग क्या करते हैं?", options: ["नृत्य", "लड़ाई", "सोना", "खेल"], answer: "नृत्य" },
+          { q: "ओणम का त्योहार किसके लिए है?", options: ["सभी", "केवल बच्चे", "केवल वृद्ध", "केवल पुरुष"], answer: "सभी" },
+          { q: "ओणम में कौन आता है?", options: ["महाराज", "दुश्मन", "पक्षी", "पेड़"], answer: "महाराज" },
+          { q: "ओणम का माहौल कैसा होता है?", options: ["खुशहाल", "दुखी", "शांत", "उदास"], answer: "खुशहाल" }
+        ]
+      },
+      {
+        title: "Chapter 9: मिठाइयों का सम्मेलन",
+        questions: [
+          { q: "मिठाइयों का सम्मेलन क्या है?", options: ["मेला", "खेल", "पढ़ाई", "नृत्य"], answer: "मेला" },
+          { q: "कौन-सी मिठाई लोकप्रिय है?", options: ["लड्डू", "रोटी", "दाल", "चावल"], answer: "लड्डू" },
+          { q: "मिठाइयाँ कहाँ बनती हैं?", options: ["हलवाई की दुकान", "घर", "स्कूल", "सड़क"], answer: "हलवाई की दुकान" },
+          { q: "मिठाइयों में क्या डाला जाता है?", options: ["चीनी", "नमक", "मिर्च", "पानी"], answer: "चीनी" },
+          { q: "मिठाइयों का सम्मेलन कब होता है?", options: ["त्योहारों पर", "सप्ताह में", "रोज", "साल में"], answer: "त्योहारों पर" },
+          { q: "मिठाइयाँ किसे पसंद होती हैं?", options: ["सभी", "केवल बच्चे", "केवल वृद्ध", "केवल महिलाएँ"], answer: "सभी" },
+          { q: "मिठाइयों का रंग क्या होता है?", options: ["रंगीन", "काला", "धूसर", "सफेद"], answer: "रंगीन" },
+          { q: "मिठाइयों से क्या मिलता है?", options: ["ऊर्जा", "बीमारी", "थकान", "डर"], answer: "ऊर्जा" },
+          { q: "मिठाइयों का सम्मेलन कहाँ होता है?", options: ["बाजार", "घर", "स्कूल", "नदी"], answer: "बाजार" },
+          { q: "मिठाइयों का स्वाद क्या है?", options: ["मीठा", "खट्टा", "कड़वा", "नमकीन"], answer: "मीठा" }
+        ]
+      },
+      {
+        title: "Chapter 10: कै मरा",
+        questions: [
+          { q: "कै मरा कहाँ रहता है?", options: ["जंगल", "शहर", "नदी", "पहाड़"], answer: "जंगल" },
+          { q: "कै मरा कौन है?", options: ["कछुआ", "शेर", "हाथी", "बंदर"], answer: "कछुआ" },
+          { q: "कै मरा कितना चलता है?", options: ["धीरे", "तेज", "मध्यम", "उड़ता"], answer: "धीरे" },
+          { q: "कै मरा का घर क्या है?", options: ["खोल", "सीप", "पत्ते", "मिट्टी"], answer: "खोल" },
+          { q: "कै मरा क्या खाता है?", options: ["घास", "मांस", "फल", "दूध"], answer: "घास" },
+          { q: "कै मरा कब सोता है?", options: ["दिन में", "रात में", "सुबह में", "शाम में"], answer: "दिन में" },
+          { q: "कै मरा का रंग क्या है?", options: ["हरे", "नीले", "लाल", "पीले"], answer: "हरे" },
+          { q: "कै मरा कितने पैरों पर चलता है?", options: ["चार", "दो", "छह", "आठ"], answer: "चार" },
+          { q: "कै मरा पानी में रहता है?", options: ["हाँ", "नहीं", "कभी-कभी", "हमेशा"], answer: "हाँ" },
+          { q: "कै मरा का जीवन कितना लंबा होता है?", options: ["लंबा", "छोटा", "मध्यम", "अनिश्चित"], answer: "लंबा" }
+        ]
+      },
+      {
+        title: "Chapter 11: कविता का कमाल",
+        questions: [
+          { q: "कविता क्या है?", options: ["शब्दों का खेल", "खेल", "खाना", "पढ़ाई"], answer: "शब्दों का खेल" },
+          { q: "कविता में क्या होता है?", options: ["भाव", "गणित", "विज्ञान", "खेल"], answer: "भाव" },
+          { q: "कविता को कौन लिखता है?", options: ["कवि", "डॉक्टर", "इंजीनियर", "शिक्षक"], answer: "कवि" },
+          { q: "कविता का कमाल क्या है?", options: ["आनंद", "दुख", "डर", "गुस्सा"], answer: "आनंद" },
+          { q: "कविता में कितने पंक्तियाँ हो सकती हैं?", options: ["कई", "एक", "दो", "तीन"], answer: "कई" },
+          { q: "कविता का स्वर क्या होता है?", options: ["मीठा", "कर्कश", "उच्च", "निम्न"], answer: "मीठा" },
+          { q: "कविता किसे सिखाती है?", options: ["प्रेम", "नफरत", "डर", "झूठ"], answer: "प्रेम" },
+          { q: "कविता कब पढ़ी जाती है?", options: ["कवि सम्मेलन", "स्कूल", "घर", "सड़क"], answer: "कवि सम्मेलन" },
+          { q: "कविता का रंग क्या होता है?", options: ["भावनाओं का", "नीला", "लाल", "हरा"], answer: "भावनाओं का" },
+          { q: "कविता का उद्देश्य क्या है?", options: ["प्रेरणा", "खेल", "नींद", "खाना"], answer: "प्रेरणा" }
+        ]
+      },
+      {
+        title: "Chapter 12: शतरंज में मात",
+        questions: [
+          { q: "शतरंज क्या है?", options: ["खेल", "खाना", "पढ़ाई", "नृत्य"], answer: "खेल" },
+          { q: "शतरंज में कौन जीतता है?", options: ["चतुर", "धीमा", "नया", "लापरवाह"], answer: "चतुर" },
+          { q: "शतरंज में कितने मोहरे होते हैं?", options: ["32", "16", "24", "40"], answer: "32" },
+          { q: "मात का मतलब क्या है?", options: ["हार", "जीत", "बराबरी", "खेल"], answer: "हार" },
+          { q: "शतरंज का राजा कहाँ जाता है?", options: ["सुरक्षित", "खतरे में", "बाहर", "अंदर"], answer: "सुरक्षित" },
+          { q: "शतरंज में कौन चलता है?", options: ["खिलाड़ी", "दर्शक", "अंपायर", "कोच"], answer: "खिलाड़ी" },
+          { q: "शतरंज का बोर्ड कितने खानों का है?", options: ["64", "32", "48", "80"], answer: "64" },
+          { q: "शतरंज में कौन-सा मोहरा महत्वपूर्ण है?", options: ["राजा", "प्यादा", "हाथी", "घोड़ा"], answer: "राजा" },
+          { q: "शतरंज में जीत कैसे मिलती है?", options: ["रणनीति", "भाग्य", "शोर", "नींद"], answer: "रणनीति" },
+          { q: "शतरंज कब खेला जाता है?", options: ["कभी भी", "रात में", "सुबह में", "दोपहर में"], answer: "कभी भी" }
+        ]
+      },
+      {
+        title: "Chapter 13: हमारा आदित्य",
+        questions: [
+          { q: "आदित्य कौन है?", options: ["सूर्य", "चंद्रमा", "तारा", "ग्रह"], answer: "सूर्य" },
+          { q: "आदित्य कब निकलता है?", options: ["सुबह", "रात", "दोपहर", "शाम"], answer: "सुबह" },
+          { q: "आदित्य से क्या मिलता है?", options: ["ऊर्जा", "ठंड", "अंधेरा", "धुआँ"], answer: "ऊर्जा" },
+          { q: "आदित्य का रंग क्या है?", options: ["नारंगी", "नीला", "हरा", "काला"], answer: "नारंगी" },
+          { q: "आदित्य की किरणें कहाँ पहुँचती हैं?", options: ["पृथ्वी", "चंद्रमा", "तारों", "सागर"], answer: "पृथ्वी" },
+          { q: "आदित्य का महत्व क्या है?", options: ["जीवन", "खेल", "नींद", "खाना"], answer: "जीवन" },
+          { q: "आदित्य कब छिपता है?", options: ["शाम", "सुबह", "दोपहर", "रात"], answer: "शाम" },
+          { q: "आदित्य से कौन डरता है?", options: ["कोई नहीं", "पेड़", "पशु", "पक्षी"], answer: "कोई नहीं" },
+          { q: "आदित्य की गर्मी से क्या होता है?", options: ["उष्णता", "ठंड", "बरसात", "हिम"], answer: "उष्णता" },
+          { q: "आदित्य को क्या कहते हैं?", options: ["देवता", "पशु", "पेड़", "नदी"], answer: "देवता" }
+        ]
+      }
+    ]
+  },
+  5: {
+    EVS: [
+      {
+        title: "Chapter 1 - Super Senses",
+        questions: [
+          { q: "Which animal has super hearing?", options: ["Bat", "Dog", "Cat", "Elephant"], answer: "Bat" },
+          { q: "What helps animals sense danger?", options: ["Senses", "Color", "Size", "Speed"], answer: "Senses" },
+          { q: "Which sense is strong in dogs?", options: ["Smell", "Sight", "Hearing", "Taste"], answer: "Smell" },
+          { q: "What do eagles use to see far?", options: ["Eyes", "Ears", "Nose", "Tongue"], answer: "Eyes" },
+          { q: "Which animal uses echolocation?", options: ["Dolphin", "Lion", "Tiger", "Bear"], answer: "Dolphin" },
+          { q: "What sense helps snakes find prey?", options: ["Tongue", "Eyes", "Ears", "Nose"], answer: "Tongue" },
+          { q: "Which animal has a strong sense of touch?", options: ["Starfish", "Snake", "Bird", "Fish"], answer: "Starfish" },
+          { q: "What is a super sense?", options: ["Enhanced ability", "Normal sight", "Weak smell", "Slow hearing"], answer: "Enhanced ability" },
+          { q: "Which sense helps birds migrate?", options: ["Sight", "Smell", "Taste", "Touch"], answer: "Sight" },
+          { q: "What do ants use to communicate?", options: ["Antennae", "Wings", "Legs", "Eyes"], answer: "Antennae" }
+        ]
+      },
+      {
+        title: "Chapter 2 - A Snake Charmer’s Story",
+        questions: [
+          { q: "What instrument does a snake charmer use?", options: ["Pungi", "Flute", "Drum", "Guitar"], answer: "Pungi" },
+          { q: "Where do snake charmers live?", options: ["Villages", "Cities", "Mountains", "Deserts"], answer: "Villages" },
+          { q: "What do snake charmers catch?", options: ["Snakes", "Birds", "Fish", "Rabbits"], answer: "Snakes" },
+          { q: "Why do snakes dance?", options: ["To music", "To eat", "To sleep", "To fly"], answer: "To music" },
+          { q: "What is a cobra?", options: ["Snake", "Bird", "Fish", "Mammal"], answer: "Snake" },
+          { q: "What do snake charmers use snakes for?", options: ["Show", "Food", "Clothing", "Transport"], answer: "Show" },
+          { q: "Are snakes harmful?", options: ["Some", "None", "All", "Few"], answer: "Some" },
+          { q: "What protects snake charmers?", options: ["Knowledge", "Speed", "Strength", "Height"], answer: "Knowledge" },
+          { q: "Where do snakes hide?", options: ["Holes", "Trees", "Water", "Sky"], answer: "Holes" },
+          { q: "What is the snake charmer’s life like?", options: ["Nomadic", "Settled", "Urban", "Rural"], answer: "Nomadic" }
+        ]
+      },
+      {
+        title: "Chapter 3 - From Tasting to Digesting",
+        questions: [
+          { q: "What starts digestion?", options: ["Mouth", "Stomach", "Intestines", "Liver"], answer: "Mouth" },
+          { q: "What helps taste food?", options: ["Tongue", "Nose", "Eyes", "Ears"], answer: "Tongue" },
+          { q: "Where is food broken down?", options: ["Stomach", "Mouth", "Lungs", "Heart"], answer: "Stomach" },
+          { q: "What is saliva?", options: ["Digestive juice", "Water", "Blood", "Air"], answer: "Digestive juice" },
+          { q: "What organ absorbs nutrients?", options: ["Intestines", "Kidneys", "Lungs", "Brain"], answer: "Intestines" },
+          { q: "What helps chew food?", options: ["Teeth", "Tongue", "Lips", "Nose"], answer: "Teeth" },
+          { q: "Where is waste removed?", options: ["Anus", "Mouth", "Nose", "Ears"], answer: "Anus" },
+          { q: "What digests food slowly?", options: ["Stomach", "Mouth", "Teeth", "Tongue"], answer: "Stomach" },
+          { q: "What is the role of enzymes?", options: ["Break food", "Make food", "Store food", "Remove food"], answer: "Break food" },
+          { q: "How long does digestion take?", options: ["Hours", "Minutes", "Days", "Weeks"], answer: "Hours" }
+        ]
+      },
+      {
+        title: "Chapter 4 - Mangoes Round The Year",
+        questions: [
+          { q: "When do mangoes grow?", options: ["Summer", "Winter", "Monsoon", "Autumn"], answer: "Summer" },
+          { q: "How are mangoes preserved?", options: ["Pickling", "Freezing", "Cooking", "Drying"], answer: "Pickling" },
+          { q: "What is a mango?", options: ["Fruit", "Vegetable", "Grain", "Nut"], answer: "Fruit" },
+          { q: "Where do mangoes grow?", options: ["Trees", "Bushes", "Vines", "Ground"], answer: "Trees" },
+          { q: "What color is a ripe mango?", options: ["Yellow", "Green", "Blue", "Red"], answer: "Yellow" },
+          { q: "Who grows mangoes?", options: ["Farmers", "Doctors", "Teachers", "Engineers"], answer: "Farmers" },
+          { q: "What is mango used for?", options: ["Food", "Clothing", "Shelter", "Transport"], answer: "Food" },
+          { q: "How are mangoes transported?", options: ["Trucks", "Planes", "Ships", "All"], answer: "All" },
+          { q: "What season lacks mangoes?", options: ["Winter", "Summer", "Spring", "Monsoon"], answer: "Winter" },
+          { q: "What is a mango shake made of?", options: ["Mango", "Apple", "Banana", "Orange"], answer: "Mango" }
+        ]
+      },
+      {
+        title: "Chapter 5 - Seeds and Seeds",
+        questions: [
+          { q: "What grows from a seed?", options: ["Plant", "Rock", "Water", "Air"], answer: "Plant" },
+          { q: "Where are seeds found?", options: ["Fruits", "Leaves", "Stems", "Roots"], answer: "Fruits" },
+          { q: "What do seeds need to grow?", options: ["Water", "Fire", "Ice", "Wind"], answer: "Water" },
+          { q: "Which seed is edible?", options: ["Almond", "Stone", "Sand", "Soil"], answer: "Almond" },
+          { q: "How are seeds spread?", options: ["Wind", "Fire", "Light", "Heat"], answer: "Wind" },
+          { q: "What protects a seed?", options: ["Coat", "Leaf", "Stem", "Root"], answer: "Coat" },
+          { q: "Which plant has small seeds?", options: ["Mustard", "Mango", "Apple", "Banana"], answer: "Mustard" },
+          { q: "What is inside a seed?", options: ["Embryo", "Stone", "Water", "Air"], answer: "Embryo" },
+          { q: "How long do seeds take to grow?", options: ["Days", "Years", "Hours", "Minutes"], answer: "Days" },
+          { q: "What helps seeds germinate?", options: ["Soil", "Metal", "Plastic", "Glass"], answer: "Soil" }
+        ]
+      },
+      {
+        title: "Chapter 6 - Every Drop Counts",
+        questions: [
+          { q: "Why is water important?", options: ["Life", "Play", "Sleep", "Eat"], answer: "Life" },
+          { q: "What wastes water?", options: ["Leak", "Rain", "River", "Lake"], answer: "Leak" },
+          { q: "How can we save water?", options: ["Reuse", "Waste", "Throw", "Burn"], answer: "Reuse" },
+          { q: "Where does water come from?", options: ["Rain", "Fire", "Wind", "Soil"], answer: "Rain" },
+          { q: "What is a drought?", options: ["Water scarcity", "Flood", "Rain", "Snow"], answer: "Water scarcity" },
+          { q: "What collects rainwater?", options: ["Tank", "Bottle", "Box", "Bag"], answer: "Tank" },
+          { q: "What pollutes water?", options: ["Garbage", "Air", "Soil", "Fire"], answer: "Garbage" },
+          { q: "How much water do we need daily?", options: ["Liters", "Kilograms", "Meters", "Grams"], answer: "Liters" },
+          { q: "What is a well?", options: ["Water source", "Food source", "Air source", "Light source"], answer: "Water source" },
+          { q: "Who manages water?", options: ["Government", "Children", "Animals", "Plants"], answer: "Government" }
+        ]
+      },
+      {
+        title: "Chapter 7 - Experiments With Water",
+        questions: [
+          { q: "What floats on water?", options: ["Wood", "Stone", "Metal", "Iron"], answer: "Wood" },
+          { q: "What sinks in water?", options: ["Rock", "Leaf", "Paper", "Feather"], answer: "Rock" },
+          { q: "What is water’s state at room temperature?", options: ["Liquid", "Solid", "Gas", "Plasma"], answer: "Liquid" },
+          { q: "What happens when water is heated?", options: ["Evaporates", "Freezes", "Sinks", "Rises"], answer: "Evaporates" },
+          { q: "What is condensation?", options: ["Water vapor to liquid", "Liquid to vapor", "Solid to liquid", "Liquid to solid"], answer: "Water vapor to liquid" },
+          { q: "What dissolves in water?", options: ["Salt", "Sand", "Stone", "Wood"], answer: "Salt" },
+          { q: "What is an experiment?", options: ["Test", "Game", "Story", "Song"], answer: "Test" },
+          { q: "What freezes water?", options: ["Cold", "Heat", "Light", "Wind"], answer: "Cold" },
+          { q: "What is water’s boiling point?", options: ["100°C", "0°C", "50°C", "200°C"], answer: "100°C" },
+          { q: "What tool measures water volume?", options: ["Measuring cup", "Ruler", "Scale", "Protractor"], answer: "Measuring cup" }
+        ]
+      },
+      {
+        title: "Chapter 8 - A Treat for Mosquitoes",
+        questions: [
+          { q: "What attracts mosquitoes?", options: ["Stagnant water", "Running water", "Dry land", "Air"], answer: "Stagnant water" },
+          { q: "What disease do mosquitoes carry?", options: ["Malaria", "Cold", "Flu", "Fever"], answer: "Malaria" },
+          { q: "How to prevent mosquito bites?", options: ["Net", "Food", "Drink", "Run"], answer: "Net" },
+          { q: "Where do mosquitoes lay eggs?", options: ["Water", "Soil", "Air", "Trees"], answer: "Water" },
+          { q: "What time are mosquitoes active?", options: ["Night", "Day", "Morning", "Afternoon"], answer: "Night" },
+          { q: "What kills mosquito larvae?", options: ["Oil", "Water", "Soil", "Sand"], answer: "Oil" },
+          { q: "What is a mosquito’s food?", options: ["Blood", "Leaves", "Fruits", "Grass"], answer: "Blood" },
+          { q: "Who is at risk from mosquitoes?", options: ["All", "Children", "Adults", "Elderly"], answer: "All" },
+          { q: "What repels mosquitoes?", options: ["Citronella", "Sugar", "Salt", "Pepper"], answer: "Citronella" },
+          { q: "What is a mosquito net made of?", options: ["Mesh", "Wood", "Metal", "Plastic"], answer: "Mesh" }
+        ]
+      },
+      {
+        title: "Chapter 9 - Up you Go!",
+        questions: [
+          { q: "What helps climb trees?", options: ["Rope", "Stone", "Water", "Air"], answer: "Rope" },
+          { q: "Which animal climbs well?", options: ["Monkey", "Elephant", "Lion", "Bear"], answer: "Monkey" },
+          { q: "What is needed to climb safely?", options: ["Gear", "Food", "Drink", "Book"], answer: "Gear" },
+          { q: "What grows on trees?", options: ["Fruits", "Rocks", "Sand", "Metal"], answer: "Fruits" },
+          { q: "Who climbs for a living?", options: ["Lumberjacks", "Farmers", "Doctors", "Teachers"], answer: "Lumberjacks" },
+          { q: "What is a tree trunk?", options: ["Stem", "Leaf", "Root", "Flower"], answer: "Stem" },
+          { q: "What protects climbers?", options: ["Harness", "Shirt", "Pants", "Shoes"], answer: "Harness" },
+          { q: "What is the top of a tree called?", options: ["Canopy", "Root", "Stem", "Branch"], answer: "Canopy" },
+          { q: "Why do people climb trees?", options: ["Work", "Play", "Sleep", "Eat"], answer: "Work" },
+          { q: "What is a ladder used for?", options: ["Climbing", "Digging", "Swimming", "Flying"], answer: "Climbing" }
+        ]
+      },
+      {
+        title: "Chapter 10 - Walls Tell Stories",
+        questions: [
+          { q: "What do walls show?", options: ["History", "Future", "Weather", "Food"], answer: "History" },
+          { q: "What are old walls made of?", options: ["Stone", "Plastic", "Glass", "Metal"], answer: "Stone" },
+          { q: "What is a fort wall?", options: ["Defense", "Decoration", "Play", "Storage"], answer: "Defense" },
+          { q: "Who built ancient walls?", options: ["Kings", "Farmers", "Children", "Animals"], answer: "Kings" },
+          { q: "What is written on walls?", options: ["Inscriptions", "Songs", "Stories", "Games"], answer: "Inscriptions" },
+          { q: "What protects a wall?", options: ["Guard", "Water", "Air", "Fire"], answer: "Guard" },
+          { q: "What is a mural?", options: ["Painting", "Sculpture", "Photo", "Drawing"], answer: "Painting" },
+          { q: "What erodes walls?", options: ["Weather", "Food", "Drink", "Light"], answer: "Weather" },
+          { q: "What is a castle wall?", options: ["Fortification", "House", "Bridge", "Road"], answer: "Fortification" },
+          { q: "Why study walls?", options: ["Learn", "Play", "Sleep", "Eat"], answer: "Learn" }
+        ]
+      },
+      {
+        title: "Chapter 11 - Sunita in Space",
+        questions: [
+          { q: "Who is Sunita?", options: ["Astronaut", "Doctor", "Teacher", "Farmer"], answer: "Astronaut" },
+          { q: "Where did Sunita go?", options: ["Space", "Sea", "Mountain", "Forest"], answer: "Space" },
+          { q: "What does an astronaut wear?", options: ["Suit", "Shirt", "Pants", "Shoes"], answer: "Suit" },
+          { q: "What is zero gravity?", options: ["No weight", "Heavy", "Light", "Normal"], answer: "No weight" },
+          { q: "What orbits Earth?", options: ["Satellite", "Car", "Bike", "Plane"], answer: "Satellite" },
+          { q: "What do astronauts eat?", options: ["Packets", "Fruits", "Cakes", "Bread"], answer: "Packets" },
+          { q: "What is space made of?", options: ["Vacuum", "Water", "Air", "Soil"], answer: "Vacuum" },
+          { q: "How do astronauts breathe?", options: ["Oxygen tank", "Nose", "Mouth", "Lungs"], answer: "Oxygen tank" },
+          { q: "What is a spaceship?", options: ["Vehicle", "House", "Toy", "Food"], answer: "Vehicle" },
+          { q: "Why go to space?", options: ["Explore", "Play", "Sleep", "Eat"], answer: "Explore" }
+        ]
+      },
+      {
+        title: "Chapter 12 - What if it Finishes",
+        questions: [
+          { q: "What might finish?", options: ["Resources", "Air", "Water", "All"], answer: "All" },
+          { q: "What is a non-renewable resource?", options: ["Coal", "Wind", "Sun", "Water"], answer: "Coal" },
+          { q: "How to save resources?", options: ["Reuse", "Waste", "Throw", "Burn"], answer: "Reuse" },
+          { q: "What is renewable energy?", options: ["Solar", "Oil", "Gas", "Coal"], answer: "Solar" },
+          { q: "What happens if water finishes?", options: ["Drought", "Flood", "Rain", "Snow"], answer: "Drought" },
+          { q: "What is recycling?", options: ["Reusing", "Throwing", "Burning", "Digging"], answer: "Reusing" },
+          { q: "What uses resources?", options: ["Factories", "Trees", "Rocks", "Air"], answer: "Factories" },
+          { q: "What grows with water?", options: ["Plants", "Stones", "Metals", "Plastics"], answer: "Plants" },
+          { q: "What is conservation?", options: ["Saving", "Wasting", "Losing", "Destroying"], answer: "Saving" },
+          { q: "Who manages resources?", options: ["Government", "Children", "Animals", "Plants"], answer: "Government" }
+        ]
+      },
+      {
+        title: "Chapter 13 - A Shelter so High!",
+        questions: [
+          { q: "What is a high shelter?", options: ["House on stilts", "Cave", "Tent", "Igloo"], answer: "House on stilts" },
+          { q: "Where are high shelters found?", options: ["Flood areas", "Deserts", "Mountains", "Plains"], answer: "Flood areas" },
+          { q: "What protects from floods?", options: ["Height", "Depth", "Width", "Length"], answer: "Height" },
+          { q: "What are stilts made of?", options: ["Wood", "Metal", "Plastic", "Stone"], answer: "Wood" },
+          { q: "Who lives in high shelters?", options: ["Tribals", "City people", "Farmers", "Doctors"], answer: "Tribals" },
+          { q: "What is under a stilt house?", options: ["Space", "Room", "Kitchen", "Bed"], answer: "Space" },
+          { q: "Why build high shelters?", options: ["Safety", "Play", "Sleep", "Eat"], answer: "Safety" },
+          { q: "What material is light?", options: ["Bamboo", "Concrete", "Steel", "Brick"], answer: "Bamboo" },
+          { q: "What animals live below?", options: ["Pigs", "Lions", "Tigers", "Elephants"], answer: "Pigs" },
+          { q: "What is a ladder for?", options: ["Access", "Decoration", "Cooking", "Sleeping"], answer: "Access" }
+        ]
+      },
+      {
+        title: "Chapter 14 - When the Earth Shook!",
+        questions: [
+          { q: "What causes an earthquake?", options: ["Tectonic plates", "Wind", "Rain", "Sun"], answer: "Tectonic plates" },
+          { q: "What is a tremor?", options: ["Shake", "Wind", "Rain", "Heat"], answer: "Shake" },
+          { q: "What to do during an earthquake?", options: ["Hide", "Run", "Jump", "Sleep"], answer: "Hide" },
+          { q: "Where do earthquakes occur?", options: ["Fault lines", "Rivers", "Mountains", "Deserts"], answer: "Fault lines" },
+          { q: "What measures earthquakes?", options: ["Richter scale", "Thermometer", "Ruler", "Clock"], answer: "Richter scale" },
+          { q: "What is damaged in earthquakes?", options: ["Buildings", "Trees", "Water", "Air"], answer: "Buildings" },
+          { q: "What is a safe spot?", options: ["Under table", "Window", "Door", "Roof"], answer: "Under table" },
+          { q: "What warns of earthquakes?", options: ["Seismograph", "Thermometer", "Barometer", "Hygrometer"], answer: "Seismograph" },
+          { q: "What is an aftershock?", options: ["Small quake", "Big quake", "Rain", "Wind"], answer: "Small quake" },
+          { q: "Who helps after earthquakes?", options: ["Rescue teams", "Farmers", "Teachers", "Children"], answer: "Rescue teams" }
+        ]
+      },
+      {
+        title: "Chapter 15 - Blow Hot, Blow Cold",
+        questions: [
+          { q: "What happens when you blow hot?", options: ["Warms", "Cools", "Freezes", "Dries"], answer: "Warms" },
+          { q: "What happens when you blow cold?", options: ["Cools", "Heats", "Burns", "Wets"], answer: "Cools" },
+          { q: "What tool shows temperature?", options: ["Thermometer", "Ruler", "Scale", "Clock"], answer: "Thermometer" },
+          { q: "What is hot air like?", options: ["Light", "Heavy", "Wet", "Cold"], answer: "Light" },
+          { q: "What is cold air like?", options: ["Heavy", "Light", "Hot", "Dry"], answer: "Heavy" },
+          { q: "What rises in heat?", options: ["Hot air", "Cold air", "Water", "Soil"], answer: "Hot air" },
+          { q: "What sinks in cold?", options: ["Cold air", "Hot air", "Steam", "Smoke"], answer: "Cold air" },
+          { q: "What is used to blow?", options: ["Mouth", "Nose", "Eyes", "Ears"], answer: "Mouth" },
+          { q: "What cools food?", options: ["Blowing", "Heating", "Cooking", "Burning"], answer: "Blowing" },
+          { q: "What is body temperature?", options: ["37°C", "0°C", "100°C", "50°C"], answer: "37°C" }
+        ]
+      },
+      {
+        title: "Chapter 16 - Who will do this Work",
+        questions: [
+          { q: "Who works in fields?", options: ["Farmers", "Doctors", "Teachers", "Engineers"], answer: "Farmers" },
+          { q: "Who treats the sick?", options: ["Doctors", "Farmers", "Carpenters", "Painters"], answer: "Doctors" },
+          { q: "What is a cobbler’s job?", options: ["Shoe repair", "House building", "Car fixing", "Food cooking"], answer: "Shoe repair" },
+          { q: "Who builds houses?", options: ["Masons", "Farmers", "Teachers", "Doctors"], answer: "Masons" },
+          { q: "What is a potter’s work?", options: ["Making pots", "Fixing cars", "Teaching", "Cooking"], answer: "Making pots" },
+          { q: "Who sells goods?", options: ["Shopkeepers", "Farmers", "Doctors", "Engineers"], answer: "Shopkeepers" },
+          { q: "What is a tailor’s job?", options: ["Stitching", "Farming", "Teaching", "Driving"], answer: "Stitching" },
+          { q: "Who helps in emergencies?", options: ["Police", "Farmers", "Teachers", "Children"], answer: "Police" },
+          { q: "What is a weaver’s work?", options: ["Weaving", "Cooking", "Building", "Farming"], answer: "Weaving" },
+          { q: "Who educates children?", options: ["Teachers", "Farmers", "Doctors", "Engineers"], answer: "Teachers" }
+        ]
+      },
+      {
+        title: "Chapter 17 - Across the Wall",
+        questions: [
+          { q: "What is a wall for?", options: ["Separation", "Decoration", "Play", "Sleep"], answer: "Separation" },
+          { q: "Who crosses walls?", options: ["People", "Animals", "Plants", "Rocks"], answer: "People" },
+          { q: "What is a border?", options: ["Line", "Circle", "Square", "Triangle"], answer: "Line" },
+          { q: "What stops movement?", options: ["Wall", "River", "Air", "Light"], answer: "Wall" },
+          { q: "What is smuggling?", options: ["Illegal trade", "Legal trade", "Farming", "Teaching"], answer: "Illegal trade" },
+          { q: "What is a checkpoint?", options: ["Guard post", "House", "School", "Shop"], answer: "Guard post" },
+          { q: "Who guards borders?", options: ["Soldiers", "Farmers", "Teachers", "Children"], answer: "Soldiers" },
+          { q: "What is beyond a wall?", options: ["Another place", "Same place", "Nothing", "Air"], answer: "Another place" },
+          { q: "What is a visa for?", options: ["Travel", "Work", "Play", "Sleep"], answer: "Travel" },
+          { q: "What connects places?", options: ["Roads", "Walls", "Rivers", "Mountains"], answer: "Roads" }
+        ]
+      },
+      {
+        title: "Chapter 18 - No Place for us",
+        questions: [
+          { q: "What is displacement?", options: ["Forced move", "Happy move", "Play move", "Work move"], answer: "Forced move" },
+          { q: "Who loses homes?", options: ["People", "Animals", "Plants", "All"], answer: "All" },
+          { q: "What causes displacement?", options: ["Dams", "Rivers", "Mountains", "Forests"], answer: "Dams" },
+          { q: "What is lost in displacement?", options: ["Land", "Air", "Water", "Fire"], answer: "Land" },
+          { q: "Who helps displaced people?", options: ["Government", "Children", "Animals", "Plants"], answer: "Government" },
+          { q: "What is a refugee?", options: ["Displaced person", "Farmer", "Teacher", "Doctor"], answer: "Displaced person" },
+          { q: "What is a camp?", options: ["Shelter", "School", "Hospital", "Market"], answer: "Shelter" },
+          { q: "What do displaced need?", options: ["Food", "Toys", "Books", "Clothes"], answer: "Food" },
+          { q: "What is a solution?", options: ["Relocation", "Destruction", "Ignorance", "Fighting"], answer: "Relocation" },
+          { q: "Who faces displacement?", options: ["Tribals", "City people", "Farmers", "All"], answer: "Tribals" }
+        ]
+      },
+      {
+        title: "Chapter 19 - A Seed Tells a Farmer’s Story",
+        questions: [
+          { q: "What grows from a seed?", options: ["Crop", "Rock", "Metal", "Plastic"], answer: "Crop" },
+          { q: "Who plants seeds?", options: ["Farmers", "Doctors", "Teachers", "Engineers"], answer: "Farmers" },
+          { q: "What do farmers need?", options: ["Water", "Fire", "Air", "Stone"], answer: "Water" },
+          { q: "What is a harvest?", options: ["Crop collection", "Seed planting", "Soil digging", "Water fetching"], answer: "Crop collection" },
+          { q: "What tool do farmers use?", options: ["Plough", "Pen", "Book", "Chair"], answer: "Plough" },
+          { q: "What season is for sowing?", options: ["Monsoon", "Summer", "Winter", "Autumn"], answer: "Monsoon" },
+          { q: "What do seeds become?", options: ["Plants", "Rocks", "Metals", "Plastics"], answer: "Plants" },
+          { q: "What is a farmer’s life?", options: ["Hard", "Easy", "Lazy", "Rich"], answer: "Hard" },
+          { q: "What sells crops?", options: ["Market", "School", "Hospital", "Home"], answer: "Market" },
+          { q: "What helps seeds grow?", options: ["Sunlight", "Darkness", "Cold", "Wind"], answer: "Sunlight" }
+        ]
+      },
+      {
+        title: "Chapter 20 - Whose Forests?",
+        questions: [
+          { q: "Who lives in forests?", options: ["Tribals", "City people", "Farmers", "Doctors"], answer: "Tribals" },
+          { q: "What grows in forests?", options: ["Trees", "Rocks", "Metals", "Plastics"], answer: "Trees" },
+          { q: "Who owns forests?", options: ["Government", "Children", "Animals", "Plants"], answer: "Government" },
+          { q: "What is deforestation?", options: ["Cutting trees", "Planting trees", "Watering trees", "Growing trees"], answer: "Cutting trees" },
+          { q: "What do forests give?", options: ["Oxygen", "Stone", "Metal", "Plastic"], answer: "Oxygen" },
+          { q: "Who protects forests?", options: ["Rangers", "Farmers", "Teachers", "Engineers"], answer: "Rangers" },
+          { q: "What lives in forests?", options: ["Animals", "Cars", "Bikes", "Trains"], answer: "Animals" },
+          { q: "What is forest land used for?", options: ["Farming", "Building", "Playing", "All"], answer: "All" },
+          { q: "What is a forest’s role?", options: ["Ecology", "Economy", "Entertainment", "Education"], answer: "Ecology" },
+          { q: "Who depends on forests?", options: ["Tribals", "City people", "Farmers", "All"], answer: "Tribals" }
+        ]
+      },
+      {
+        title: "Chapter 21 - Like Father, Like Daughter",
+        questions: [
+          { q: "What is inherited?", options: ["Traits", "Toys", "Food", "Clothes"], answer: "Traits" },
+          { q: "Who passes traits?", options: ["Parents", "Friends", "Teachers", "Strangers"], answer: "Parents" },
+          { q: "What is a family trait?", options: ["Eye color", "Hair style", "Shoe size", "Book choice"], answer: "Eye color" },
+          { q: "What is genetics?", options: ["Trait study", "Food study", "Water study", "Air study"], answer: "Trait study" },
+          { q: "What do children inherit?", options: ["Genes", "Money", "House", "Car"], answer: "Genes" },
+          { q: "What is similar in family?", options: ["Face", "Voice", "Both", "None"], answer: "Both" },
+          { q: "What is not inherited?", options: ["Skill", "Height", "Skin color", "Hair type"], answer: "Skill" },
+          { q: "Who studies inheritance?", options: ["Scientists", "Farmers", "Teachers", "Doctors"], answer: "Scientists" },
+          { q: "What is a generation?", options: ["Family line", "Single person", "Group of friends", "Class"], answer: "Family line" },
+          { q: "What varies in families?", options: ["Traits", "Houses", "Cars", "Toys"], answer: "Traits" }
+        ]
+      },
+      {
+        title: "Chapter 22 - On the Move Again",
+        questions: [
+          { q: "What is migration?", options: ["Movement", "Staying", "Sleeping", "Eating"], answer: "Movement" },
+          { q: "Who migrates?", options: ["Birds", "Rocks", "Trees", "Water"], answer: "Birds" },
+          { q: "Why do animals migrate?", options: ["Food", "Play", "Sleep", "Work"], answer: "Food" },
+          { q: "What season triggers migration?", options: ["Winter", "Summer", "Monsoon", "Spring"], answer: "Winter" },
+          { q: "What helps birds migrate?", options: ["Wings", "Legs", "Tail", "Beak"], answer: "Wings" },
+          { q: "Where do birds go?", options: ["Warm places", "Cold places", "Deserts", "Mountains"], answer: "Warm places" },
+          { q: "What is a flock?", options: ["Bird group", "Fish group", "Tree group", "Rock group"], answer: "Bird group" },
+          { q: "What guides migration?", options: ["Stars", "Sun", "Moon", "All"], answer: "All" },
+          { q: "What is a disadvantage of migration?", options: ["Tiredness", "Happiness", "Rest", "Play"], answer: "Tiredness" },
+          { q: "Who studies migration?", options: ["Scientists", "Farmers", "Teachers", "Children"], answer: "Scientists" }
+        ]
+      }
+    ],
+    mathematics: [
+      {
+        title: "Chapter 1 - The Fish Tale",
+        questions: [
+          { q: "What is the main theme of The Fish Tale?", options: ["Measurement", "Addition", "Subtraction", "Division"], answer: "Measurement" },
+          { q: "How many fish were caught in the story?", options: ["5", "10", "15", "20"], answer: "10" },
+          { q: "What unit is used to measure fish?", options: ["Kilograms", "Liters", "Meters", "Seconds"], answer: "Kilograms" },
+          { q: "What is the weight of the biggest fish?", options: ["2 kg", "3 kg", "4 kg", "5 kg"], answer: "3 kg" },
+          { q: "How many fishermen were there?", options: ["2", "3", "4", "5"], answer: "3" },
+          { q: "What do fishermen use to catch fish?", options: ["Net", "Pen", "Book", "Ball"], answer: "Net" },
+          { q: "What is the total weight of all fish?", options: ["15 kg", "20 kg", "25 kg", "30 kg"], answer: "15 kg" },
+          { q: "What is the average weight per fish?", options: ["1.5 kg", "2 kg", "2.5 kg", "3 kg"], answer: "1.5 kg" },
+          { q: "Where do fishermen work?", options: ["Sea", "Forest", "Mountain", "City"], answer: "Sea" },
+          { q: "What skill is needed for fishing?", options: ["Patience", "Running", "Jumping", "Singing"], answer: "Patience" }
+        ]
+      },
+      {
+        title: "Chapter 2 - Shapes And Angles",
+        questions: [
+          { q: "How many sides does a triangle have?", options: ["3", "4", "5", "6"], answer: "3" },
+          { q: "What is a right angle?", options: ["90 degrees", "180 degrees", "360 degrees", "45 degrees"], answer: "90 degrees" },
+          { q: "How many angles in a square?", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What shape has no sides?", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Circle" },
+          { q: "What is the sum of angles in a triangle?", options: ["180 degrees", "90 degrees", "360 degrees", "270 degrees"], answer: "180 degrees" },
+          { q: "Which shape has 4 equal sides?", options: ["Square", "Rectangle", "Triangle", "Circle"], answer: "Square" },
+          { q: "What tool measures angles?", options: ["Protractor", "Ruler", "Compass", "Scale"], answer: "Protractor" },
+          { q: "How many degrees in a straight angle?", options: ["180", "90", "360", "45"], answer: "180" },
+          { q: "What is an acute angle?", options: ["Less than 90", "90", "More than 90", "180"], answer: "Less than 90" },
+          { q: "Which shape has 5 sides?", options: ["Pentagon", "Hexagon", "Heptagon", "Octagon"], answer: "Pentagon" }
+        ]
+      },
+      {
+        title: "Chapter 3 - How Many Squares",
+        questions: [
+          { q: "How many squares in a 2x2 grid?", options: ["4", "2", "6", "8"], answer: "4" },
+          { q: "What is the area of a 3x3 square?", options: ["9", "6", "12", "15"], answer: "9" },
+          { q: "How many small squares in a 4x4 grid?", options: ["16", "12", "20", "24"], answer: "16" },
+          { q: "What shape is used to count squares?", options: ["Square", "Circle", "Triangle", "Rectangle"], answer: "Square" },
+          { q: "What is the side length if area is 25?", options: ["5", "4", "6", "7"], answer: "5" },
+          { q: "How many squares in a 1x1 grid?", options: ["1", "2", "3", "4"], answer: "1" },
+          { q: "What is the perimeter of a 2x2 square?", options: ["8", "4", "6", "10"], answer: "8" },
+          { q: "How to find the number of squares?", options: ["Count", "Guess", "Add", "Subtract"], answer: "Count" },
+          { q: "What is the area unit?", options: ["Square units", "Meters", "Liters", "Kilograms"], answer: "Square units" },
+          { q: "How many squares in a 3x2 grid?", options: ["6", "5", "7", "8"], answer: "6" }
+        ]
+      },
+      {
+        title: "Chapter 4 - Parts and Wholes",
+        questions: [
+          { q: "What is a fraction?", options: ["Part of a whole", "Whole number", "Decimal", "Percentage"], answer: "Part of a whole" },
+          { q: "What is 1/2 of 10?", options: ["5", "2", "10", "8"], answer: "5" },
+          { q: "How many parts in 1/4?", options: ["4", "2", "3", "5"], answer: "4" },
+          { q: "What is 3/4 of 12?", options: ["9", "6", "12", "3"], answer: "9" },
+          { q: "What is the numerator in 2/5?", options: ["2", "5", "7", "0"], answer: "2" },
+          { q: "What is the denominator in 1/3?", options: ["3", "1", "4", "2"], answer: "3" },
+          { q: "What is 1/2 + 1/2?", options: ["1", "0.5", "2", "0"], answer: "1" },
+          { q: "How to represent a whole?", options: ["1", "0", "0.5", "2"], answer: "1" },
+          { q: "What is 1/3 of 9?", options: ["3", "6", "9", "1"], answer: "3" },
+          { q: "What shape is divided into fractions?", options: ["Circle", "Square", "Triangle", "All"], answer: "All" }
+        ]
+      },
+      {
+        title: "Chapter 5 - Does It Look the Same",
+        questions: [
+          { q: "What is symmetry?", options: ["Same on both sides", "Different sides", "No sides", "One side"], answer: "Same on both sides" },
+          { q: "Which shape has a line of symmetry?", options: ["Square", "Circle", "Triangle", "All"], answer: "All" },
+          { q: "How many lines of symmetry in a circle?", options: ["Infinite", "1", "2", "4"], answer: "Infinite" },
+          { q: "What is a mirror image?", options: ["Reflection", "Rotation", "Translation", "Scale"], answer: "Reflection" },
+          { q: "Which letter has horizontal symmetry?", options: ["B", "H", "A", "C"], answer: "B" },
+          { q: "How many lines of symmetry in a rectangle?", options: ["2", "1", "3", "4"], answer: "2" },
+          { q: "What is not symmetrical?", options: ["Heart", "Square", "Circle", "Rectangle"], answer: "Heart" },
+          { q: "What tool checks symmetry?", options: ["Mirror", "Ruler", "Protractor", "Compass"], answer: "Mirror" },
+          { q: "How many folds for a square's symmetry?", options: ["2", "1", "3", "4"], answer: "4" },
+          { q: "What is rotational symmetry?", options: ["Turning", "Flipping", "Sliding", "Stretching"], answer: "Turning" }
+        ]
+      },
+      {
+        title: "Chapter 6 - Be My Multiple, I’ll be Your Factor",
+        questions: [
+          { q: "What is a factor of 12?", options: ["3", "7", "11", "13"], answer: "3" },
+          { q: "What is a multiple of 5?", options: ["10", "7", "9", "11"], answer: "10" },
+          { q: "How many factors does 6 have?", options: ["4", "2", "3", "5"], answer: "4" },
+          { q: "What is the smallest multiple of 3?", options: ["3", "6", "9", "12"], answer: "3" },
+          { q: "What is 4 x 3?", options: ["12", "8", "16", "10"], answer: "12" },
+          { q: "Which number has only two factors?", options: ["7", "6", "9", "12"], answer: "7" },
+          { q: "What is a common factor of 12 and 18?", options: ["6", "9", "12", "15"], answer: "6" },
+          { q: "What is 2 x 5?", options: ["10", "8", "12", "15"], answer: "10" },
+          { q: "How to find multiples?", options: ["Multiply", "Divide", "Add", "Subtract"], answer: "Multiply" },
+          { q: "What is the highest common factor of 8 and 12?", options: ["4", "2", "6", "8"], answer: "4" }
+        ]
+      },
+      {
+        title: "Chapter 7 - Can You See The Pattern",
+        questions: [
+          { q: "What is a pattern?", options: ["Repeating sequence", "Random numbers", "Single number", "Letter"], answer: "Repeating sequence" },
+          { q: "What comes next in 2, 4, 6, 8?", options: ["10", "12", "9", "11"], answer: "10" },
+          { q: "What is the pattern in odd numbers?", options: ["+2", "+1", "-1", "-2"], answer: "+2" },
+          { q: "How to identify a pattern?", options: ["Observe", "Guess", "Sleep", "Eat"], answer: "Observe" },
+          { q: "What is the next shape: Circle, Square, Triangle?", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Circle" },
+          { q: "What is 3, 6, 9, 12 pattern?", options: ["+3", "+2", "+4", "+5"], answer: "+3" },
+          { q: "What comes after 5, 10, 15?", options: ["20", "25", "30", "35"], answer: "20" },
+          { q: "Which is not a pattern?", options: ["1, 2, 3", "5, 5, 5", "2, 4, 7", "10, 20, 30"], answer: "2, 4, 7" },
+          { q: "What is the color pattern: Red, Blue, Green?", options: ["Red", "Blue", "Green", "Yellow"], answer: "Red" },
+          { q: "Patterns are used in?", options: ["Math", "Art", "Both", "None"], answer: "Both" }
+        ]
+      },
+      {
+        title: "Chapter 8 - Mapping Your Way",
+        questions: [
+          { q: "What is a map?", options: ["Guide", "Book", "Toy", "Food"], answer: "Guide" },
+          { q: "What shows direction on a map?", options: ["Compass", "Ruler", "Pen", "Eraser"], answer: "Compass" },
+          { q: "What is a symbol on a map?", options: ["Key", "Line", "Color", "Shape"], answer: "Key" },
+          { q: "What is the north direction?", options: ["Up", "Down", "Left", "Right"], answer: "Up" },
+          { q: "What is a scale on a map?", options: ["Distance", "Color", "Shape", "Line"], answer: "Distance" },
+          { q: "Which is a map feature?", options: ["Legend", "Page", "Cover", "Title"], answer: "Legend" },
+          { q: "What does a blue color represent?", options: ["Water", "Land", "Forest", "Mountain"], answer: "Water" },
+          { q: "How to read a map?", options: ["Follow lines", "Guess", "Draw", "Sing"], answer: "Follow lines" },
+          { q: "What is a contour line?", options: ["Height", "Width", "Depth", "Length"], answer: "Height" },
+          { q: "Maps are used for?", options: ["Travel", "Cooking", "Sleeping", "Dancing"], answer: "Travel" }
+        ]
+      },
+      {
+        title: "Chapter 9 - Boxes and Sketches",
+        questions: [
+          { q: "What is a box in geometry?", options: ["Cube", "Circle", "Triangle", "Line"], answer: "Cube" },
+          { q: "How many faces does a cube have?", options: ["6", "4", "8", "12"], answer: "6" },
+          { q: "What is a sketch?", options: ["Drawing", "Painting", "Sculpture", "Photo"], answer: "Drawing" },
+          { q: "How many edges in a cube?", options: ["12", "8", "6", "4"], answer: "12" },
+          { q: "What shape is the base of a box?", options: ["Square", "Circle", "Triangle", "Pentagon"], answer: "Square" },
+          { q: "How many vertices in a cube?", options: ["8", "6", "4", "12"], answer: "8" },
+          { q: "What is the volume of a 2x2x2 cube?", options: ["8", "4", "6", "12"], answer: "8" },
+          { q: "What tool is used for sketching?", options: ["Pencil", "Scissors", "Knife", "Brush"], answer: "Pencil" },
+          { q: "What is the surface area of a 2x2 cube?", options: ["24", "12", "16", "20"], answer: "24" },
+          { q: "Boxes are 3D shapes?", options: ["Yes", "No", "Sometimes", "Never"], answer: "Yes" }
+        ]
+      },
+      {
+        title: "Chapter 10 - Tenths and Hundredths",
+        questions: [
+          { q: "What is 0.1 called?", options: ["Tenth", "Hundredth", "Thousandth", "Whole"], answer: "Tenth" },
+          { q: "What is 0.01?", options: ["Hundredth", "Tenth", "Whole", "Thousandth"], answer: "Hundredth" },
+          { q: "How many tenths in 1?", options: ["10", "100", "1000", "1"], answer: "10" },
+          { q: "What is 0.5 + 0.3?", options: ["0.8", "0.5", "0.2", "1.0"], answer: "0.8" },
+          { q: "How many hundredths in 1?", options: ["100", "10", "1000", "1"], answer: "100" },
+          { q: "What is 0.25 in fraction?", options: ["1/4", "1/2", "1/3", "1/5"], answer: "1/4" },
+          { q: "What is 0.1 of 20?", options: ["2", "4", "6", "10"], answer: "2" },
+          { q: "What place value is 0.03?", options: ["Hundredths", "Tenths", "Ones", "Thousands"], answer: "Hundredths" },
+          { q: "What is 0.7 + 0.2?", options: ["0.9", "0.5", "1.0", "0.3"], answer: "0.9" },
+          { q: "Decimals are used for?", options: ["Precision", "Counting", "Adding", "Subtracting"], answer: "Precision" }
+        ]
+      },
+      {
+        title: "Chapter 11 - Area and Its Boundary",
+        questions: [
+          { q: "What is area?", options: ["Space inside", "Length", "Width", "Height"], answer: "Space inside" },
+          { q: "What is the boundary called?", options: ["Perimeter", "Area", "Volume", "Height"], answer: "Perimeter" },
+          { q: "Area of a 4x3 rectangle?", options: ["12", "8", "16", "24"], answer: "12" },
+          { q: "Perimeter of a 2x2 square?", options: ["8", "4", "6", "10"], answer: "8" },
+          { q: "What unit measures area?", options: ["Square meters", "Meters", "Liters", "Kilograms"], answer: "Square meters" },
+          { q: "Perimeter of a 3x2 rectangle?", options: ["10", "6", "12", "8"], answer: "10" },
+          { q: "Area of a 5x5 square?", options: ["25", "20", "30", "15"], answer: "25" },
+          { q: "What is needed to find perimeter?", options: ["Sides", "Area", "Volume", "Height"], answer: "Sides" },
+          { q: "Area of a triangle base 4 height 3?", options: ["6", "8", "12", "10"], answer: "6" },
+          { q: "Perimeter unit is?", options: ["Meters", "Square meters", "Liters", "Kilograms"], answer: "Meters" }
+        ]
+      },
+      {
+        title: "Chapter 12 - Smart Charts",
+        questions: [
+          { q: "What is a chart?", options: ["Data display", "Story", "Game", "Food"], answer: "Data display" },
+          { q: "What type of chart uses bars?", options: ["Bar chart", "Pie chart", "Line chart", "Table"], answer: "Bar chart" },
+          { q: "What does a pie chart show?", options: ["Percentages", "Length", "Weight", "Time"], answer: "Percentages" },
+          { q: "How to read a chart?", options: ["Look at labels", "Guess", "Draw", "Sing"], answer: "Look at labels" },
+          { q: "What is the purpose of a chart?", options: ["Compare", "Cook", "Sleep", "Play"], answer: "Compare" },
+          { q: "What is a tally mark?", options: ["Count", "Draw", "Color", "Write"], answer: "Count" },
+          { q: "How many sections in a pie chart?", options: ["Many", "1", "2", "3"], answer: "Many" },
+          { q: "What is data?", options: ["Information", "Food", "Toy", "Book"], answer: "Information" },
+          { q: "What chart shows trends?", options: ["Line chart", "Bar chart", "Pie chart", "Table"], answer: "Line chart" },
+          { q: "Charts are used in?", options: ["Math", "Art", "Music", "Dance"], answer: "Math" }
+        ]
+      },
+      {
+        title: "Chapter 13 - Ways to Multiply and Divide",
+        questions: [
+          { q: "What is 4 x 5?", options: ["20", "15", "25", "10"], answer: "20" },
+          { q: "What is 15 ÷ 3?", options: ["5", "3", "10", "15"], answer: "5" },
+          { q: "What is the multiplication shortcut?", options: ["Tables", "Addition", "Subtraction", "Division"], answer: "Tables" },
+          { q: "What is 6 x 7?", options: ["42", "35", "48", "30"], answer: "42" },
+          { q: "What is 20 ÷ 4?", options: ["5", "4", "10", "2"], answer: "5" },
+          { q: "How to check division?", options: ["Multiply", "Add", "Subtract", "Divide"], answer: "Multiply" },
+          { q: "What is 3 x 9?", options: ["27", "18", "36", "45"], answer: "27" },
+          { q: "What is 12 ÷ 2?", options: ["6", "4", "3", "12"], answer: "6" },
+          { q: "What is a factor in multiplication?", options: ["Numbers", "Letters", "Words", "Shapes"], answer: "Numbers" },
+          { q: "What is 8 x 4?", options: ["32", "24", "36", "40"], answer: "32" }
+        ]
+      },
+      {
+        title: "Chapter 14 - How Big How Heavy",
+        questions: [
+          { q: "What measures weight?", options: ["Kilogram", "Meter", "Liter", "Second"], answer: "Kilogram" },
+          { q: "What measures length?", options: ["Meter", "Kilogram", "Liter", "Gram"], answer: "Meter" },
+          { q: "How heavy is a book?", options: ["500g", "1kg", "5kg", "10kg"], answer: "500g" },
+          { q: "What is 1 meter in centimeters?", options: ["100", "10", "1000", "50"], answer: "100" },
+          { q: "What tool measures weight?", options: ["Scale", "Ruler", "Protractor", "Compass"], answer: "Scale" },
+          { q: "How long is a pencil?", options: ["15cm", "1m", "50cm", "5m"], answer: "15cm" },
+          { q: "What is heavier: 2kg or 1kg?", options: ["2kg", "1kg", "Both", "None"], answer: "2kg" },
+          { q: "What unit is for liquid?", options: ["Liter", "Meter", "Kilogram", "Gram"], answer: "Liter" },
+          { q: "How to compare sizes?", options: ["Measure", "Guess", "Draw", "Sing"], answer: "Measure" },
+          { q: "What is 2 meters in length?", options: ["200cm", "20cm", "2000cm", "2cm"], answer: "200cm" }
+        ]
+      }
+    ],
+   english: [
+      {
+        title: "Chapter 1 - Wonderful Waste",
+        questions: [
+          { q: "What is the main idea of Wonderful Waste?", options: ["Recycling", "Wasting", "Buying", "Selling"], answer: "Recycling" },
+          { q: "What is turned into a dish?", options: ["Peels", "Fruits", "Meat", "Bread"], answer: "Peels" },
+          { q: "Who is the story about?", options: ["Cook", "Farmer", "Doctor", "Teacher"], answer: "Cook" },
+          { q: "What is the dish called?", options: ["Pickle", "Soup", "Cake", "Pie"], answer: "Pickle" },
+          { q: "What is wasted in the story?", options: ["Vegetable peels", "Money", "Time", "Water"], answer: "Vegetable peels" },
+          { q: "Where does the story take place?", options: ["Kitchen", "Forest", "School", "Market"], answer: "Kitchen" },
+          { q: "What is the lesson learned?", options: ["Use everything", "Waste food", "Buy more", "Throw away"], answer: "Use everything" },
+          { q: "What spices are used?", options: ["Salt", "Sugar", "Pepper", "All"], answer: "All" },
+          { q: "Who enjoys the dish?", options: ["Family", "Strangers", "Animals", "Plants"], answer: "Family" },
+          { q: "What is the mood of the story?", options: ["Happy", "Sad", "Angry", "Bored"], answer: "Happy" }
+        ]
+      },
+      {
+        title: "Chapter 2 - Flying Together",
+        questions: [
+          { q: "What are the main characters?", options: ["Geese", "Ducks", "Swans", "Cranes"], answer: "Geese" },
+          { q: "What is the danger in the story?", options: ["Hunter", "Storm", "Flood", "Fire"], answer: "Hunter" },
+          { q: "What saves the geese?", options: ["Teamwork", "Speed", "Strength", "Flight"], answer: "Teamwork" },
+          { q: "Where do the geese fly?", options: ["Sky", "Water", "Land", "Forest"], answer: "Sky" },
+          { q: "What is the hunter’s weapon?", options: ["Gun", "Bow", "Net", "Trap"], answer: "Gun" },
+          { q: "How many geese are there?", options: ["Many", "One", "Two", "Three"], answer: "Many" },
+          { q: "What is the lesson?", options: ["Unity", "Greed", "Fear", "Laziness"], answer: "Unity" },
+          { q: "What sound do geese make?", options: ["Honk", "Quack", "Caw", "Moo"], answer: "Honk" },
+          { q: "What happens to the hunter?", options: ["Fails", "Wins", "Flies", "Hides"], answer: "Fails" },
+          { q: "What is the setting?", options: ["Nature", "City", "Village", "School"], answer: "Nature" }
+        ]
+      },
+      {
+        title: "Chapter 3 - Robinson Crusoe",
+        questions: [
+          { q: "Who is Robinson Crusoe?", options: ["Sailor", "Farmer", "Doctor", "Teacher"], answer: "Sailor" },
+          { q: "Where is he stranded?", options: ["Island", "Ship", "Village", "City"], answer: "Island" },
+          { q: "What does he build?", options: ["Shelter", "Boat", "House", "Bridge"], answer: "Shelter" },
+          { q: "Who helps him?", options: ["Friday", "Monday", "Sunday", "Saturday"], answer: "Friday" },
+          { q: "What does he eat?", options: ["Fish", "Bread", "Cake", "Meat"], answer: "Fish" },
+          { q: "How long is he stranded?", options: ["Years", "Months", "Days", "Weeks"], answer: "Years" },
+          { q: "What is his challenge?", options: ["Survival", "Travel", "Work", "Study"], answer: "Survival" },
+          { q: "What does he use to escape?", options: ["Boat", "Raft", "Plane", "Car"], answer: "Boat" },
+          { q: "What is the story’s genre?", options: ["Adventure", "Comedy", "Horror", "Romance"], answer: "Adventure" },
+          { q: "What saves him?", options: ["Rescue", "Luck", "Strength", "Speed"], answer: "Rescue" }
+        ]
+      },
+      {
+        title: "Chapter 4 - My Elder Brother",
+        questions: [
+          { q: "Who is the elder brother?", options: ["Nishad", "Amit", "Rahul", "Vikram"], answer: "Nishad" },
+          { q: "What does he do?", options: ["Helps", "Fights", "Runs", "Hides"], answer: "Helps" },
+          { q: "What is the story about?", options: ["Sibling love", "Rivalry", "Travel", "Work"], answer: "Sibling love" },
+          { q: "Where does the story occur?", options: ["Home", "School", "Park", "Market"], answer: "Home" },
+          { q: "What does the brother share?", options: ["Toys", "Food", "Books", "Clothes"], answer: "Toys" },
+          { q: "What is the younger’s name?", options: ["Narrator", "Rohan", "Karan", "Sameer"], answer: "Narrator" },
+          { q: "What is the mood?", options: ["Warm", "Cold", "Angry", "Sad"], answer: "Warm" },
+          { q: "What lesson is learned?", options: ["Care", "Greed", "Fear", "Laziness"], answer: "Care" },
+          { q: "What do they play?", options: ["Games", "Sports", "Music", "Dance"], answer: "Games" },
+          { q: "Who is kind?", options: ["Brother", "Stranger", "Enemy", "Teacher"], answer: "Brother" }
+        ]
+      },
+      {
+        title: "Chapter 5 - Rip van Winkle",
+        questions: [
+          { q: "Who is Rip van Winkle?", options: ["Man", "Child", "Animal", "Ghost"], answer: "Man" },
+          { q: "What happens to him?", options: ["Sleeps long", "Travels far", "Fights", "Works"], answer: "Sleeps long" },
+          { q: "How long does he sleep?", options: ["20 years", "10 years", "5 years", "2 years"], answer: "20 years" },
+          { q: "Where does he sleep?", options: ["Mountains", "Village", "City", "Forest"], answer: "Mountains" },
+          { q: "What wakes him?", options: ["Noise", "Sun", "Rain", "Wind"], answer: "Noise" },
+          { q: "What changes when he wakes?", options: ["World", "Himself", "Family", "All"], answer: "All" },
+          { q: "Who meets him?", options: ["Villagers", "Family", "Strangers", "Friends"], answer: "Villagers" },
+          { q: "What is the story’s theme?", options: ["Time", "Work", "Play", "Food"], answer: "Time" },
+          { q: "What does he drink?", options: ["Wine", "Water", "Milk", "Juice"], answer: "Wine" },
+          { q: "What is his reaction?", options: ["Surprise", "Happiness", "Anger", "Sadness"], answer: "Surprise" }
+        ]
+      },
+      {
+        title: "Chapter 6 - Talkative Barber",
+        questions: [
+          { q: "Who is the barber?", options: ["Talkative", "Quiet", "Shy", "Rude"], answer: "Talkative" },
+          { q: "What does he do?", options: ["Cuts hair", "Cooks", "Teaches", "Farms"], answer: "Cuts hair" },
+          { q: "Who visits him?", options: ["King", "Farmer", "Doctor", "Teacher"], answer: "King" },
+          { q: "What annoys the king?", options: ["Talking", "Silence", "Work", "Food"], answer: "Talking" },
+          { q: "How many servants come?", options: ["3", "1", "2", "4"], answer: "3" },
+          { q: "What does the barber serve?", options: ["Food", "Drink", "Haircut", "Clothes"], answer: "Food" },
+          { q: "What is the king’s plan?", options: ["Trick", "Help", "Fight", "Leave"], answer: "Trick" },
+          { q: "What is the barber’s flaw?", options: ["Chatter", "Laziness", "Greed", "Fear"], answer: "Chatter" },
+          { q: "What happens at the end?", options: ["Lesson", "Fight", "Escape", "Sleep"], answer: "Lesson" },
+          { q: "Where does it happen?", options: ["Shop", "Palace", "Forest", "Village"], answer: "Shop" }
+        ]
+      },
+      {
+        title: "Chapter 7 - Gulliver's Travels",
+        questions: [
+          { q: "Who is Gulliver?", options: ["Traveler", "Doctor", "Teacher", "Farmer"], answer: "Traveler" },
+          { q: "Where does he go?", options: ["Lilliput", "India", "China", "Japan"], answer: "Lilliput" },
+          { q: "What size are the people?", options: ["Small", "Big", "Medium", "Tall"], answer: "Small" },
+          { q: "What binds him?", options: ["Ropes", "Chains", "Nets", "Strings"], answer: "Ropes" },
+          { q: "What is his size?", options: ["Giant", "Normal", "Tiny", "Short"], answer: "Giant" },
+          { q: "What does he eat?", options: ["Lots", "Little", "Nothing", "Meat"], answer: "Lots" },
+          { q: "What is the conflict?", options: ["Size", "Weather", "Food", "Water"], answer: "Size" },
+          { q: "How does he escape?", options: ["Boat", "Walk", "Fly", "Swim"], answer: "Boat" },
+          { q: "What is the genre?", options: ["Fantasy", "Horror", "Comedy", "Romance"], answer: "Fantasy" },
+          { q: "What does he learn?", options: ["Tolerance", "Greed", "Fear", "Laziness"], answer: "Tolerance" }
+        ]
+      },
+      {
+        title: "Chapter 8 - The Little Bully",
+        questions: [
+          { q: "Who is the bully?", options: ["Child", "Adult", "Animal", "Teacher"], answer: "Child" },
+          { q: "What does he do?", options: ["Teases", "Helps", "Plays", "Works"], answer: "Teases" },
+          { q: "Who stops him?", options: ["Friends", "Parents", "Teacher", "Stranger"], answer: "Friends" },
+          { q: "What is his name?", options: ["Vijay", "Amit", "Rohan", "Karan"], answer: "Vijay" },
+          { q: "Where does it happen?", options: ["School", "Home", "Park", "Market"], answer: "School" },
+          { q: "What changes him?", options: ["Lesson", "Punishment", "Reward", "Gift"], answer: "Lesson" },
+          { q: "What is bullying?", options: ["Harassment", "Help", "Play", "Work"], answer: "Harassment" },
+          { q: "What is the mood?", options: ["Tense", "Happy", "Calm", "Sad"], answer: "Tense" },
+          { q: "What does he learn?", options: ["Kindness", "Greed", "Fear", "Laziness"], answer: "Kindness" },
+          { q: "Who is his target?", options: ["Smaller kids", "Teachers", "Parents", "Adults"], answer: "Smaller kids" }
+        ]
+      },
+      {
+        title: "Chapter 9 - Around the World",
+        questions: [
+          { q: "Who travels the world?", options: ["Phileas", "John", "Peter", "Mark"], answer: "Phileas" },
+          { q: "How long is the journey?", options: ["80 days", "60 days", "90 days", "100 days"], answer: "80 days" },
+          { q: "What mode of transport is used?", options: ["All", "Car", "Plane", "Train"], answer: "All" },
+          { q: "Where does he start?", options: ["London", "Paris", "New York", "Tokyo"], answer: "London" },
+          { q: "What is the challenge?", options: ["Time", "Money", "Food", "Weather"], answer: "Time" },
+          { q: "Who helps him?", options: ["Passepartout", "Friend", "Stranger", "Family"], answer: "Passepartout" },
+          { q: "What is the bet about?", options: ["Speed", "Strength", "Money", "Food"], answer: "Speed" },
+          { q: "What delays him?", options: ["Storm", "Traffic", "Rain", "Wind"], answer: "Storm" },
+          { q: "What is the genre?", options: ["Adventure", "Comedy", "Horror", "Romance"], answer: "Adventure" },
+          { q: "Does he win?", options: ["Yes", "No", "Maybe", "Never"], answer: "Yes" }
+        ]
+      },
+      {
+        title: "Chapter 10 - Who will be Ningthou",
+        questions: [
+          { q: "What is a Ningthou?", options: ["King", "Farmer", "Doctor", "Teacher"], answer: "King" },
+          { q: "Where does the story occur?", options: ["Manipur", "Delhi", "Mumbai", "Kolkata"], answer: "Manipur" },
+          { q: "Who are the children?", options: ["Sanajaoba, Sanayaima, Shagol", "Amit, Rohan, Karan", "John, Peter, Mark", "Vikram, Sameer, Rahul"], answer: "Sanajaoba, Sanayaima, Shagol" },
+          { q: "What quality is needed?", options: ["Kindness", "Strength", "Wealth", "Power"], answer: "Kindness" },
+          { q: "Who becomes Ningthou?", options: ["Shagol", "Sanajaoba", "Sanayaima", "None"], answer: "Shagol" },
+          { q: "What is the test?", options: ["Compassion", "Fighting", "Running", "Jumping"], answer: "Compassion" },
+          { q: "What is the setting?", options: ["Palace", "Village", "Forest", "City"], answer: "Palace" },
+          { q: "What is the lesson?", options: ["Love", "Greed", "Fear", "Laziness"], answer: "Love" },
+          { q: "Who rules with the king?", options: ["Queen", "Prince", "Servant", "Guard"], answer: "Queen" },
+          { q: "What is the mood?", options: ["Joyful", "Sad", "Angry", "Tense"], answer: "Joyful" }
+        ]
+      },
+      {
+        title: "Chapter 1 (Poem) - Ice Cream Man",
+        questions: [
+          { q: "Who is the poem about?", options: ["Ice cream man", "Farmer", "Doctor", "Teacher"], answer: "Ice cream man" },
+          { q: "What does he sell?", options: ["Ice cream", "Fruits", "Vegetables", "Bread"], answer: "Ice cream" },
+          { q: "What season is mentioned?", options: ["Summer", "Winter", "Monsoon", "Autumn"], answer: "Summer" },
+          { q: "What color is the ice cream?", options: ["Many", "White", "Black", "Blue"], answer: "Many" },
+          { q: "What is the mood?", options: ["Happy", "Sad", "Angry", "Bored"], answer: "Happy" },
+          { q: "Where does he go?", options: ["Streets", "Hills", "Forest", "River"], answer: "Streets" },
+          { q: "What do children do?", options: ["Run", "Sleep", "Eat", "Work"], answer: "Run" },
+          { q: "What is the sound?", options: ["Bell", "Horn", "Whistle", "Drum"], answer: "Bell" },
+          { q: "What flavor is popular?", options: ["Chocolate", "Salt", "Pepper", "Vinegar"], answer: "Chocolate" },
+          { q: "What is the poem’s theme?", options: ["Joy", "Fear", "Anger", "Sadness"], answer: "Joy" }
+        ]
+      },
+      {
+        title: "Chapter 2 (Poem) - Teamwork",
+        questions: [
+          { q: "What is the poem about?", options: ["Teamwork", "Laziness", "Fighting", "Sleeping"], answer: "Teamwork" },
+          { q: "Who works together?", options: ["Animals", "People", "Plants", "Rocks"], answer: "Animals" },
+          { q: "What is the task?", options: ["Move a log", "Build a house", "Cook food", "Sing a song"], answer: "Move a log" },
+          { q: "What happens alone?", options: ["Failure", "Success", "Joy", "Peace"], answer: "Failure" },
+          { q: "What is the mood?", options: ["Cooperative", "Angry", "Sad", "Bored"], answer: "Cooperative" },
+          { q: "What do they use?", options: ["Strength", "Speed", "Height", "Weight"], answer: "Strength" },
+          { q: "What is the lesson?", options: ["Unity", "Greed", "Fear", "Laziness"], answer: "Unity" },
+          { q: "Which animal is mentioned?", options: ["Ox", "Lion", "Tiger", "Bear"], answer: "Ox" },
+          { q: "What is the result?", options: ["Success", "Failure", "Fight", "Sleep"], answer: "Success" },
+          { q: "What is needed?", options: ["Help", "Money", "Food", "Toys"], answer: "Help" }
+        ]
+      },
+      {
+        title: "Chapter 3 (Poem) - My Shadow",
+        questions: [
+          { q: "What follows the child?", options: ["Shadow", "Dog", "Cat", "Bird"], answer: "Shadow" },
+          { q: "When does the shadow appear?", options: ["Day", "Night", "Rain", "Snow"], answer: "Day" },
+          { q: "What does the shadow do?", options: ["Mimics", "Runs", "Flies", "Hides"], answer: "Mimics" },
+          { q: "What is the shadow like?", options: ["Silent", "Noisy", "Loud", "Bright"], answer: "Silent" },
+          { q: "What happens at night?", options: ["Disappears", "Grows", "Shrinks", "Moves"], answer: "Disappears" },
+          { q: "What is the mood?", options: ["Playful", "Sad", "Angry", "Scary"], answer: "Playful" },
+          { q: "What creates the shadow?", options: ["Sun", "Moon", "Stars", "Lamp"], answer: "Sun" },
+          { q: "What is the shadow’s size?", options: ["Changes", "Fixed", "Small", "Large"], answer: "Changes" },
+          { q: "What is the theme?", options: ["Imagination", "Fear", "Work", "Sleep"], answer: "Imagination" },
+          { q: "Who sees the shadow?", options: ["Child", "Adult", "Animal", "Plant"], answer: "Child" }
+        ]
+      },
+      {
+        title: "Chapter 4 (Poem) - Crying",
+        questions: [
+          { q: "What is the poem about?", options: ["Crying", "Laughing", "Singing", "Dancing"], answer: "Crying" },
+          { q: "Who cries in the poem?", options: ["Baby", "Adult", "Animal", "Bird"], answer: "Baby" },
+          { q: "What causes crying?", options: ["Hunger", "Joy", "Sleep", "Play"], answer: "Hunger" },
+          { q: "What sound is made?", options: ["Wail", "Laugh", "Sing", "Shout"], answer: "Wail" },
+          { q: "What stops crying?", options: ["Food", "Noise", "Darkness", "Cold"], answer: "Food" },
+          { q: "What is the mood?", options: ["Sad", "Happy", "Angry", "Excited"], answer: "Sad" },
+          { q: "Who comforts the baby?", options: ["Mother", "Father", "Stranger", "Friend"], answer: "Mother" },
+          { q: "What is crying for?", options: ["Attention", "Play", "Work", "Sleep"], answer: "Attention" },
+          { q: "What is the baby’s state?", options: ["Unhappy", "Happy", "Calm", "Sleepy"], answer: "Unhappy" },
+          { q: "What is the theme?", options: ["Need", "Joy", "Fear", "Laziness"], answer: "Need" }
+        ]
+      },
+      {
+        title: "Chapter 5 (Poem) - The Lazy Frog",
+        questions: [
+          { q: "Who is the poem about?", options: ["Frog", "Bird", "Fish", "Dog"], answer: "Frog" },
+          { q: "What is the frog like?", options: ["Lazy", "Active", "Happy", "Busy"], answer: "Lazy" },
+          { q: "Where does the frog live?", options: ["Pond", "Tree", "Sky", "Desert"], answer: "Pond" },
+          { q: "What does the frog do?", options: ["Sleeps", "Jumps", "Flies", "Runs"], answer: "Sleeps" },
+          { q: "What is the mood?", options: ["Humorous", "Sad", "Angry", "Scary"], answer: "Humorous" },
+          { q: "What sound does it make?", options: ["Croak", "Tweet", "Moo", "Bark"], answer: "Croak" },
+          { q: "What is the lesson?", options: ["Work", "Sleep", "Play", "Eat"], answer: "Work" },
+          { q: "Who teases the frog?", options: ["Others", "None", "Friends", "Family"], answer: "Others" },
+          { q: "What is the frog’s color?", options: ["Green", "Red", "Blue", "Yellow"], answer: "Green" },
+          { q: "What is the theme?", options: ["Laziness", "Activity", "Joy", "Fear"], answer: "Laziness" }
+        ]
+      },
+      {
+        title: "Chapter 6 (Poem) - Class Discussion",
+        questions: [
+          { q: "What is the poem about?", options: ["Discussion", "Silence", "Fight", "Sleep"], answer: "Discussion" },
+          { q: "Where does it happen?", options: ["Class", "Home", "Park", "Market"], answer: "Class" },
+          { q: "Who participates?", options: ["Students", "Teachers", "Parents", "Strangers"], answer: "Students" },
+          { q: "What is the mood?", options: ["Lively", "Quiet", "Sad", "Angry"], answer: "Lively" },
+          { q: "What do they talk about?", options: ["Ideas", "Food", "Toys", "Games"], answer: "Ideas" },
+          { q: "What is needed?", options: ["Listening", "Shouting", "Running", "Sleeping"], answer: "Listening" },
+          { q: "What is the outcome?", options: ["Learning", "Fighting", "Leaving", "Sleeping"], answer: "Learning" },
+          { q: "Who leads the discussion?", options: ["Teacher", "Student", "Parent", "Guard"], answer: "Teacher" },
+          { q: "What is the theme?", options: ["Cooperation", "Laziness", "Fear", "Greed"], answer: "Cooperation" },
+          { q: "What do they share?", options: ["Thoughts", "Food", "Toys", "Books"], answer: "Thoughts" }
+        ]
+      },
+      {
+        title: "Chapter 7 (Poem) - Topsy Turvey Land",
+        questions: [
+          { q: "What is Topsy Turvey Land?", options: ["Upside down", "Normal", "Happy", "Sad"], answer: "Upside down" },
+          { q: "What happens there?", options: ["Reverse", "Same", "Quiet", "Loud"], answer: "Reverse" },
+          { q: "Who lives there?", options: ["People", "Animals", "Birds", "Fish"], answer: "People" },
+          { q: "What is the mood?", options: ["Funny", "Serious", "Angry", "Scary"], answer: "Funny" },
+          { q: "What grows downward?", options: ["Trees", "Flowers", "Grass", "Bushes"], answer: "Trees" },
+          { q: "What is the theme?", options: ["Imagination", "Reality", "Work", "Sleep"], answer: "Imagination" },
+          { q: "What do people do?", options: ["Walk upside", "Run normally", "Fly", "Swim"], answer: "Walk upside" },
+          { q: "What is the sky like?", options: ["Ground", "Blue", "Green", "Red"], answer: "Ground" },
+          { q: "What is the poem’s style?", options: ["Humorous", "Sad", "Epic", "Romantic"], answer: "Humorous" },
+          { q: "What is unusual?", options: ["Everything", "Nothing", "Some", "Few"], answer: "Everything" }
+        ]
+      },
+      {
+        title: "Chapter 8 (Poem) - Nobody's Friend",
+        questions: [
+          { q: "Who is the poem about?", options: ["Lonely child", "Happy child", "Busy child", "Angry child"], answer: "Lonely child" },
+          { q: "What is the problem?", options: ["No friends", "Many friends", "Work", "Play"], answer: "No friends" },
+          { q: "What is the mood?", options: ["Sad", "Happy", "Excited", "Angry"], answer: "Sad" },
+          { q: "What does he do?", options: ["Sits alone", "Plays", "Talks", "Runs"], answer: "Sits alone" },
+          { q: "What is the lesson?", options: ["Kindness", "Greed", "Fear", "Laziness"], answer: "Kindness" },
+          { q: "Who ignores him?", options: ["Others", "Family", "Teacher", "Pet"], answer: "Others" },
+          { q: "What does he want?", options: ["Friends", "Toys", "Food", "Money"], answer: "Friends" },
+          { q: "What is the theme?", options: ["Loneliness", "Joy", "Work", "Sleep"], answer: "Loneliness" },
+          { q: "What is his behavior?", options: ["Selfish", "Kind", "Helpful", "Quiet"], answer: "Selfish" },
+          { q: "What changes him?", options: ["Realization", "Punishment", "Reward", "Gift"], answer: "Realization" }
+        ]
+      },
+      {
+        title: "Chapter 9 (Poem) - Sing a Song of People",
+        questions: [
+          { q: "What is the poem about?", options: ["People", "Animals", "Plants", "Rocks"], answer: "People" },
+          { q: "Where are people seen?", options: ["Streets", "Sky", "Sea", "Forest"], answer: "Streets" },
+          { q: "What do people do?", options: ["Walk", "Fly", "Swim", "Climb"], answer: "Walk" },
+          { q: "What is the mood?", options: ["Lively", "Sad", "Angry", "Quiet"], answer: "Lively" },
+          { q: "What is the sound?", options: ["Noise", "Silence", "Music", "Wind"], answer: "Noise" },
+          { q: "What is the theme?", options: ["Life", "Death", "Fear", "Laziness"], answer: "Life" },
+          { q: "Who are the people?", options: ["All", "Children", "Adults", "Elderly"], answer: "All" },
+          { q: "What do they carry?", options: ["Bags", "Toys", "Books", "Food"], answer: "Bags" },
+          { q: "What is the setting?", options: ["City", "Village", "Mountain", "Desert"], answer: "City" },
+          { q: "What is the rhythm like?", options: ["Song", "Poem", "Story", "Speech"], answer: "Song" }
+        ]
+      },
+      {
+        title: "Chapter 10 (Poem) - Malu Bhalu",
+        questions: [
+          { q: "Who is Malu Bhalu?", options: ["Bear", "Tiger", "Lion", "Elephant"], answer: "Bear" },
+          { q: "Where does she live?", options: ["Snow", "Jungle", "Desert", "Forest"], answer: "Snow" },
+          { q: "What does she want?", options: ["Swim", "Run", "Fly", "Climb"], answer: "Swim" },
+          { q: "What is the mood?", options: ["Adventurous", "Sad", "Angry", "Quiet"], answer: "Adventurous" },
+          { q: "Who helps her?", options: ["Mother", "Father", "Friend", "Stranger"], answer: "Mother" },
+          { q: "What is the challenge?", options: ["Cold water", "Hot sun", "Rain", "Wind"], answer: "Cold water" },
+          { q: "What does she learn?", options: ["Swimming", "Running", "Jumping", "Flying"], answer: "Swimming" },
+          { q: "What is her color?", options: ["White", "Black", "Brown", "Gray"], answer: "White" },
+          { q: "What is the theme?", options: ["Courage", "Fear", "Laziness", "Greed"], answer: "Courage" },
+          { q: "What is the setting?", options: ["Ice", "Sand", "Grass", "Water"], answer: "Ice" }
+        ]
+      }
+    ],
+    hindi: [
+      {
+        title: "Chapter 1 - रखा की रस्सी",
+        questions: [
+          { q: "कहानी का मुख्य पात्र कौन है?", options: ["रखा", "राम", "शyam", "किशन"], answer: "रखा" },
+          { q: "रस्सी का क्या उपयोग है?", options: ["खेलने के लिए", "खाना बनाने के लिए", "पढ़ाई के लिए", "सोने के लिए"], answer: "खेलने के लिए" },
+          { q: "कहानी का माहौल क्या है?", options: ["खुशमिजाज", "दुखद", "डरावना", "उदास"], answer: "खुशमिजाज" },
+          { q: "रखा कहाँ रहती है?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "रस्सी से कौन-सा खेल खेला जाता है?", options: ["कूदना", "दौड़ना", "तैराकी", "उड़ना"], answer: "कूदना" },
+          { q: "कहानी का सबक क्या है?", options: ["एकता", "लालच", "डर", "आलस"], answer: "एकता" },
+          { q: "रखा की उम्र क्या हो सकती है?", options: ["बच्ची", "बूढ़ी", "जवान", "बच्चा"], answer: "बच्ची" },
+          { q: "रस्सी का रंग क्या है?", options: ["लाल", "नीला", "हरा", "पीला"], answer: "लाल" },
+          { q: "कौन रस्सी के खेल में शामिल होता है?", options: ["दोस्त", "परिवार", "अजनबी", "शिक्षक"], answer: "दोस्त" },
+          { q: "कहानी का अंत कैसा है?", options: ["सुखद", "दुखद", "डरावना", "उबाऊ"], answer: "सुखद" }
+        ]
+      },
+      {
+        title: "Chapter 2 - फसलें का त्योहार",
+        questions: [
+          { q: "फसलें का त्योहार कौन मनाता है?", options: ["किसान", "डॉक्टर", "शिक्षक", "इंजीनियर"], answer: "किसान" },
+          { q: "यह त्योहार कब मनाया जाता है?", options: ["फसल कटने पर", "सर्दियों में", "गर्मियों में", "वसंत में"], answer: "फसल कटने पर" },
+          { q: "क्या खाया जाता है?", options: ["नई फसल", "मिठाई", "फल", "पानी"], answer: "नई फसल" },
+          { q: "त्योहार का मकसद क्या है?", options: ["धन्यवाद देना", "लड़ाई", "खेल", "सोना"], answer: "धन्यवाद देना" },
+          { q: "कहाँ मनाया जाता है?", options: ["खेत", "घर", "स्कूल", "मंदिर"], answer: "खेत" },
+          { q: "कौन से रंग दिखते हैं?", options: ["हरा", "काला", "नीला", "सफेद"], answer: "हरा" },
+          { q: "क्या गाया जाता है?", options: ["गीत", "कविता", "कहानी", "चिल्लाहट"], answer: "गीत" },
+          { q: "त्योहार का माहौल क्या है?", options: ["खुशी", "दुख", "डर", "गुस्सा"], answer: "खुशी" },
+          { q: "किसान क्या पहनते हैं?", options: ["पारंपरिक वस्त्र", "जूते", "कोट", "पजामा"], answer: "पारंपरिक वस्त्र" },
+          { q: "क्या सबक मिलता है?", options: ["मेहनत", "आलस", "लालच", "डर"], answer: "मेहनत" }
+        ]
+      },
+      {
+        title: "Chapter 3 - खिलौनेवाला",
+        questions: [
+          { q: "खिलौनेवाला कौन है?", options: ["दुकानदार", "किसान", "डॉक्टर", "शिक्षक"], answer: "दुकानदार" },
+          { q: "वह क्या बेचता है?", options: ["खिलौने", "खाना", "कपड़े", "पुस्तकें"], answer: "खिलौने" },
+          { q: "कहाँ बेचता है?", options: ["हाट", "घर", "स्कूल", "जंगल"], answer: "हाट" },
+          { q: "कौन खरीदता है?", options: ["बच्चे", "वृद्ध", "किसान", "शहरवासी"], answer: "बच्चे" },
+          { q: "खिलौनों का रंग क्या है?", options: ["रंगीन", "काला", "सफेद", "भूरा"], answer: "रंगीन" },
+          { q: "क्या उपयोगी है?", options: ["खेल", "खाना", "सोना", "पढ़ाई"], answer: "खेल" },
+          { q: "माहौल कैसा है?", options: ["आनंदमय", "उदास", "डरावना", "शांत"], answer: "आनंदमय" },
+          { q: "कौन-सा खिलौना लोकप्रिय है?", options: ["घोड़ा", "पुस्तक", "कटोरा", "चम्मच"], answer: "घोड़ा" },
+          { q: "कहानी का सबक क्या है?", options: ["खुशी", "लालच", "डर", "आलस"], answer: "खुशी" },
+          { q: "खिलौनेवाला कब आता है?", options: ["सप्ताह में एक बार", "हर दिन", "साल में एक बार", "कभी नहीं"], answer: "सप्ताह में एक बार" }
+        ]
+      },
+      {
+        title: "Chapter 4 - नन्हा फनकार",
+        questions: [
+          { q: "नन्हा फनकार कौन है?", options: ["बच्चा", "वयस्क", "बूढ़ा", "शिक्षक"], answer: "बच्चा" },
+          { q: "वह क्या करता है?", options: ["गाता", "खेलता", "सोता", "खाता"], answer: "गाता" },
+          { q: "कहाँ प्रदर्शन करता है?", options: ["मंच", "घर", "स्कूल", "जंगल"], answer: "मंच" },
+          { q: "कौन सुनता है?", options: ["भीड़", "पक्षी", "पेड़", "नदी"], answer: "भीड़" },
+          { q: "गाने का विषय क्या है?", options: ["प्रकृति", "खेल", "खाना", "सोना"], answer: "प्रकृति" },
+          { q: "माहौल क्या है?", options: ["उत्साहपूर्ण", "उदास", "डरावना", "शांत"], answer: "उत्साहपूर्ण" },
+          { q: "क्या सीखता है?", options: ["प्रयास", "आलस", "लालच", "डर"], answer: "प्रयास" },
+          { q: "उसकी उम्र क्या है?", options: ["छोटी", "बड़ी", "मध्यम", "अज्ञात"], answer: "छोटी" },
+          { q: "कौन प्रेरित करता है?", options: ["माता-पिता", "दोस्त", "शिक्षक", "अजनबी"], answer: "माता-पिता" },
+          { q: "अंत कैसा है?", options: ["सफलता", "विफलता", "डर", "उदासी"], answer: "सफलता" }
+        ]
+      },
+      {
+        title: "Chapter 5 - जहाँ चाह वहाँ राह",
+        questions: [
+          { q: "कहानी का मुख्य संदेश क्या है?", options: ["इच्छाशक्ति", "आलस", "लालच", "डर"], answer: "इच्छाशक्ति" },
+          { q: "कौन आगे बढ़ता है?", options: ["लड़का", "बूढ़ा", "कुत्ता", "पक्षी"], answer: "लड़का" },
+          { q: "क्या बाधा है?", options: ["पहाड़", "नदी", "जंगल", "सड़क"], answer: "पहाड़" },
+          { q: "कैसे सफल होता है?", options: ["मेहनत", "भाग्य", "सोना", "खेल"], answer: "मेहनत" },
+          { q: "कहानी का माहौल क्या है?", options: ["प्रेरणादायक", "उदास", "डरावना", "शांत"], answer: "प्रेरणादायक" },
+          { q: "कौन मदद करता है?", options: ["दोस्त", "परिवार", "अजनबी", "शिक्षक"], answer: "दोस्त" },
+          { q: "क्या सीखता है?", options: ["साहस", "लालच", "डर", "आलस"], answer: "साहस" },
+          { q: "कहाँ होती है कहानी?", options: ["गाँव", "शहर", "पहाड़", "समुद्र"], answer: "पहाड़" },
+          { q: "अंत कैसा है?", options: ["सुखद", "दुखद", "डरावना", "उबाऊ"], answer: "सुखद" },
+          { q: "कौन प्रेरणा देता है?", options: ["माता", "पिता", "दोस्त", "शिक्षक"], answer: "माता" }
+        ]
+      },
+      {
+        title: "Chapter 6 - चिटठी का सफर",
+        questions: [
+          { q: "चिटठी कहाँ से जाती है?", options: ["डाकघर", "घर", "स्कूल", "दुकान"], answer: "डाकघर" },
+          { q: "कौन ले जाता है?", options: ["डाकिया", "किसान", "शिक्षक", "डॉक्टर"], answer: "डाकिया" },
+          { q: "चिटठी का उद्देश्य क्या है?", options: ["संदेश", "खेल", "खाना", "सोना"], answer: "संदेश" },
+          { q: "कितने दिन लगते हैं?", options: ["कुछ दिन", "एक घंटा", "एक साल", "एक महीना"], answer: "कुछ दिन" },
+          { q: "कहाँ पहुँचती है?", options: ["घर", "जंगल", "पहाड़", "नदी"], answer: "घर" },
+          { q: "क्या उपयोगी है?", options: ["संचार", "खेल", "खाना", "सोना"], answer: "संचार" },
+          { q: "माहौल क्या है?", options: ["उत्सुकता", "उदासी", "डर", "गुस्सा"], answer: "उत्सुकता" },
+          { q: "डाकिया क्या पहनता है?", options: ["वर्दी", "कोट", "पजामा", "शर्ट"], answer: "वर्दी" },
+          { q: "कौन लिखता है?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" },
+          { q: "अंत कैसा है?", options: ["खुशी", "दुख", "डर", "उदासी"], answer: "खुशी" }
+        ]
+      },
+      {
+        title: "Chapter 7 - डाकिए की कहानी, कंवरसिंह की जुबानी",
+        questions: [
+          { q: "कौन कहानी सुनाता है?", options: ["कंवरसिंह", "राम", "शyam", "किशन"], answer: "कंवरसिंह" },
+          { q: "वह क्या है?", options: ["डाकिया", "किसान", "शिक्षक", "डॉक्टर"], answer: "डाकिया" },
+          { q: "कहानी का समय क्या है?", options: ["पुराना", "आधुनिक", "भविष्य", "अज्ञात"], answer: "पुराना" },
+          { q: "क्या करता है डाकिया?", options: ["चिट्ठियाँ पहुँचाता", "खेती", "पढ़ाता", "चिकित्सा"], answer: "चिट्ठियाँ पहुँचाता" },
+          { q: "कहाँ जाता है?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "क्या चुनौती है?", options: ["मौसम", "खेल", "खाना", "सोना"], answer: "मौसम" },
+          { q: "माहौल क्या है?", options: ["स्मृतियाँ", "उदासी", "डर", "गुस्सा"], answer: "स्मृतियाँ" },
+          { q: "कौन प्रेरित करता है?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" },
+          { q: "क्या सीखता है?", options: ["निष्ठा", "लालच", "डर", "आलस"], answer: "निष्ठा" },
+          { q: "अंत कैसा है?", options: ["सम्मान", "दुख", "डर", "उदासी"], answer: "सम्मान" }
+        ]
+      },
+      {
+        title: "Chapter 8 - वे दिन भी क्या दिन थे",
+        questions: [
+          { q: "कहानी किसके बारे में है?", options: ["पुरानी यादें", "नई कहानी", "खेल", "खाना"], answer: "पुरानी यादें" },
+          { q: "कौन याद करता है?", options: ["बूढ़ा", "बच्चा", "जवान", "शिक्षक"], answer: "बूढ़ा" },
+          { q: "कहाँ की यादें हैं?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "क्या याद आता है?", options: ["दोस्त", "पैसे", "खिलौने", "कार"], answer: "दोस्त" },
+          { q: "माहौल क्या है?", options: ["नostalgic", "उदास", "डरावना", "शांत"], answer: "नostalgic" },
+          { q: "क्या खेला जाता था?", options: ["कबड्डी", "क्रिकेट", "फुटबॉल", "हॉकी"], answer: "कबड्डी" },
+          { q: "क्या सीखा?", options: ["मित्रता", "लालच", "डर", "आलस"], answer: "मित्रता" },
+          { q: "कौन साथ था?", options: ["दोस्त", "परिवार", "अजनबी", "शिक्षक"], answer: "दोस्त" },
+          { q: "कहानी का अंत कैसा है?", options: ["सुखद", "दुखद", "डरावना", "उबाऊ"], answer: "सुखद" },
+          { q: "क्या याद रहता है?", options: ["खुशी", "गुस्सा", "डर", "उदासी"], answer: "खुशी" }
+        ]
+      },
+      {
+        title: "Chapter 9 - एक माँ की बेबसी",
+        questions: [
+          { q: "कहानी किसके बारे में है?", options: ["माँ", "बच्चा", "डॉक्टर", "शिक्षक"], answer: "माँ" },
+          { q: "क्या समस्या है?", options: ["गरीबी", "खुशी", "खेल", "सोना"], answer: "गरीबी" },
+          { q: "कौन प्रभावित है?", options: ["बच्चे", "पिता", "दोस्त", "शिक्षक"], answer: "बच्चे" },
+          { q: "माँ क्या करती है?", options: ["कोशिश", "आराम", "खेल", "सोना"], answer: "कोशिश" },
+          { q: "कहाँ होती है कहानी?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "माहौल क्या है?", options: ["दुखद", "खुशमिजाज", "डरावना", "शांत"], answer: "दुखद" },
+          { q: "क्या सीखा?", options: ["सहनशीलता", "लालच", "डर", "आलस"], answer: "सहनशीलता" },
+          { q: "माँ का व्यवहार कैसा है?", options: ["प्यारभरा", "गुस्सैल", "निष्ठुर", "उदासीन"], answer: "प्यारभरा" },
+          { q: "कौन मदद करता है?", options: ["पड़ोसी", "दोस्त", "शत्रु", "अजनबी"], answer: "पड़ोसी" },
+          { q: "अंत कैसा है?", options: ["आशा", "दुख", "डर", "उदासी"], answer: "आशा" }
+        ]
+      },
+      {
+        title: "Chapter 10 - एक दिन की बादशाहत",
+        questions: [
+          { q: "कौन बादशाह बनता है?", options: ["लड़का", "बूढ़ा", "शिक्षक", "डॉक्टर"], answer: "लड़का" },
+          { q: "कितने दिन के लिए?", options: ["एक", "दो", "तीन", "चार"], answer: "एक" },
+          { q: "कहाँ होता है?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "क्या करता है बादशाह?", options: ["शासन", "खेल", "सोना", "खाना"], answer: "शासन" },
+          { q: "माहौल क्या है?", options: ["उत्साहपूर्ण", "उदास", "डरावना", "शांत"], answer: "उत्साहपूर्ण" },
+          { q: "कौन मदद करता है?", options: ["दोस्त", "परिवार", "अजनबी", "शत्रु"], answer: "दोस्त" },
+          { q: "क्या सीखता है?", options: ["जिम्मेदारी", "लालच", "डर", "आलस"], answer: "जिम्मेदारी" },
+          { q: "क्या पहनता है?", options: ["ताज", "टोपी", "जूते", "कोट"], answer: "ताज" },
+          { q: "कहानी का अंत कैसा है?", options: ["सुखद", "दुखद", "डरावना", "उबाऊ"], answer: "सुखद" },
+          { q: "कौन खुश होता है?", options: ["लोग", "पशु", "पेड़", "नदी"], answer: "लोग" }
+        ]
+      },
+      {
+        title: "Chapter 11 - चावल की रोटियां",
+        questions: [
+          { q: "कहानी का मुख्य भोजन क्या है?", options: ["चावल की रोटी", "रोटी", "दाल", "चावल"], answer: "चावल की रोटी" },
+          { q: "कौन बनाता है?", options: ["माँ", "पिता", "बच्चा", "दोस्त"], answer: "माँ" },
+          { q: "कहाँ खाई जाती है?", options: ["घर", "स्कूल", "जंगल", "दुकान"], answer: "घर" },
+          { q: "क्या उपयोगी है?", options: ["भोजन", "खेल", "सोना", "पढ़ाई"], answer: "भोजन" },
+          { q: "माहौल क्या है?", options: ["गर्मजोशी", "उदास", "डरावना", "शांत"], answer: "गर्मजोशी" },
+          { q: "कौन खाता है?", options: ["परिवार", "अजनबी", "शत्रु", "पशु"], answer: "परिवार" },
+          { q: "क्या सीखा?", options: ["प्यार", "लालच", "डर", "आलस"], answer: "प्यार" },
+          { q: "कितने लोग हैं?", options: ["तीन", "दो", "चार", "पाँच"], answer: "तीन" },
+          { q: "कहानी का अंत कैसा है?", options: ["खुशी", "दुख", "डर", "उदासी"], answer: "खुशी" },
+          { q: "क्या बनाया जाता है?", options: ["सब्जी", "मीठा", "चटनी", "दाल"], answer: "सब्जी" }
+        ]
+      },
+      {
+        title: "Chapter 12 - गुरु और चेला",
+        questions: [
+          { q: "गुरु कौन है?", options: ["शिक्षक", "किसान", "डॉक्टर", "शहरवासी"], answer: "शिक्षक" },
+          { q: "चेला कौन है?", options: ["शिष्य", "दोस्त", "पिता", "माता"], answer: "शिष्य" },
+          { q: "क्या सिखाया जाता है?", options: ["ज्ञान", "खेल", "खाना", "सोना"], answer: "ज्ञान" },
+          { q: "कहाँ होती है शिक्षा?", options: ["आश्रम", "घर", "स्कूल", "जंगल"], answer: "आश्रम" },
+          { q: "माहौल क्या है?", options: ["शांत", "उदास", "डरावना", "शोर"], answer: "शांत" },
+          { q: "क्या चुनौती है?", options: ["अज्ञानता", "खेल", "खाना", "सोना"], answer: "अज्ञानता" },
+          { q: "क्या सीखता है चेला?", options: ["धैर्य", "लालच", "डर", "आलस"], answer: "धैर्य" },
+          { q: "गुरु का व्यवहार कैसा है?", options: ["दयालु", "गुस्सैल", "निष्ठुर", "उदासीन"], answer: "दयालु" },
+          { q: "अंत कैसा है?", options: ["सफलता", "विफलता", "डर", "उदासी"], answer: "सफलता" },
+          { q: "कौन प्रेरित करता है?", options: ["गुरु", "दोस्त", "परिवार", "अजनबी"], answer: "गुरु" }
+        ]
+      },
+      {
+        title: "Chapter 13 - स्वामी की दादी",
+        questions: [
+          { q: "स्वामी कौन है?", options: ["लड़का", "बूढ़ी", "शिक्षक", "डॉक्टर"], answer: "लड़का" },
+          { q: "दादी क्या करती है?", options: ["कहानियाँ सुनाती", "खाना बनाती", "सोती", "खेलती"], answer: "कहानियाँ सुनाती" },
+          { q: "कहाँ होती है कहानी?", options: ["घर", "स्कूल", "जंगल", "पहाड़"], answer: "घर" },
+          { q: "क्या सिखाती है दादी?", options: ["साहस", "लालच", "डर", "आलस"], answer: "साहस" },
+          { q: "माहौल क्या है?", options: ["प्यारा", "उदास", "डरावना", "शांत"], answer: "प्यारा" },
+          { q: "कौन-सी कहानी पसंद है?", options: ["भूतिया", "खुशमिजाज", "डरावनी", "उदास"], answer: "भूतिया" },
+          { q: "दादी की उम्र क्या है?", options: ["बड़ी", "छोटी", "मध्यम", "अज्ञात"], answer: "बड़ी" },
+          { q: "स्वामी का व्यवहार कैसा है?", options: ["डरपोक", "नन्हा", "गुस्सैल", "उदासीन"], answer: "डरपोक" },
+          { q: "अंत कैसा है?", options: ["हिम्मत", "दुख", "डर", "उदासी"], answer: "हिम्मत" },
+          { q: "कौन प्रेरित करता है?", options: ["दादी", "दोस्त", "शिक्षक", "पिता"], answer: "दादी" }
+        ]
+      },
+      {
+        title: "Chapter 14 - बाघ आया उस रात",
+        questions: [
+          { q: "क्या आया रात को?", options: ["बाघ", "शेर", "हाथी", "भालू"], answer: "बाघ" },
+          { q: "कहाँ होती है कहानी?", options: ["जंगल", "गाँव", "शहर", "पहाड़"], answer: "जंगल" },
+          { q: "कौन डरता है?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" },
+          { q: "क्या होता है?", options: ["हमला", "खेल", "सोना", "खाना"], answer: "हमला" },
+          { q: "माहौल क्या है?", options: ["तनावपूर्ण", "खुशमिजाज", "शांत", "उदास"], answer: "तनावपूर्ण" },
+          { q: "कौन बचाता है?", options: ["शिकारी", "किसान", "शिक्षक", "डॉक्टर"], answer: "शिकारी" },
+          { q: "क्या सीखा?", options: ["सतर्कता", "लालच", "डर", "आलस"], answer: "सतर्कता" },
+          { q: "बाघ का रंग क्या है?", options: ["पीला", "काला", "सफेद", "नीला"], answer: "पीला" },
+          { q: "अंत कैसा है?", options: ["सुरक्षा", "दुख", "डर", "उदासी"], answer: "सुरक्षा" },
+          { q: "कौन तैयार रहता है?", options: ["गाँववाले", "पशु", "पक्षी", "पेड़"], answer: "गाँववाले" }
+        ]
+      },
+      {
+        title: "Chapter 15 - बिशन की दिलेरी",
+        questions: [
+          { q: "बिशन कौन है?", options: ["लड़का", "बूढ़ा", "शिक्षक", "डॉक्टर"], answer: "लड़का" },
+          { q: "वह क्या करता है?", options: ["साहस दिखाता", "सोता", "खेलता", "खाता"], answer: "साहस दिखाता" },
+          { q: "कहाँ होती है कहानी?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "क्या खतरा है?", options: ["चोर", "जानवर", "आग", "बाढ़"], answer: "चोर" },
+          { q: "माहौल क्या है?", options: ["तनावपूर्ण", "खुशमिजाज", "शांत", "उदास"], answer: "तनावपूर्ण" },
+          { q: "कौन मदद करता है?", options: ["दोस्त", "परिवार", "अजनबी", "शत्रु"], answer: "दोस्त" },
+          { q: "क्या सीखा?", options: ["हिम्मत", "लालच", "डर", "आलस"], answer: "हिम्मत" },
+          { q: "बिशन की उम्र क्या है?", options: ["छोटी", "बड़ी", "मध्यम", "अज्ञात"], answer: "छोटी" },
+          { q: "अंत कैसा है?", options: ["विजय", "दुख", "डर", "उदासी"], answer: "विजय" },
+          { q: "कौन प्रशंसा करता है?", options: ["गाँववाले", "पशु", "पक्षी", "पेड़"], answer: "गाँववाले" }
+        ]
+      },
+      {
+        title: "Chapter 16 - पानी रे पानी",
+        questions: [
+          { q: "कहानी का मुख्य विषय क्या है?", options: ["पानी", "खाना", "खेल", "सोना"], answer: "पानी" },
+          { q: "कौन पानी की बात करता है?", options: ["लोग", "पशु", "पेड़", "पक्षी"], answer: "लोग" },
+          { q: "कहाँ की समस्या है?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "क्या कमी है?", options: ["पानी", "खाना", "हवा", "मिट्टी"], answer: "पानी" },
+          { q: "माहौल क्या है?", options: ["चिंताजनक", "खुशमिजाज", "शांत", "उदास"], answer: "चिंताजनक" },
+          { q: "कौन मदद करता है?", options: ["सभी", "कोई नहीं", "पशु", "पेड़"], answer: "सभी" },
+          { q: "क्या सीखा?", options: ["संरक्षण", "लालच", "डर", "आलस"], answer: "संरक्षण" },
+          { q: "पानी का स्रोत क्या है?", options: ["कुआँ", "हवा", "आग", "पत्थर"], answer: "कुआँ" },
+          { q: "अंत कैसा है?", options: ["आशा", "दुख", "डर", "उदासी"], answer: "आशा" },
+          { q: "कौन जागरूक होता है?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" }
+        ]
+      },
+      {
+        title: "Chapter 17 - छोटी-सी हमारी नदी",
+        questions: [
+          { q: "नदी कहाँ है?", options: ["गाँव", "शहर", "जंगल", "पहाड़"], answer: "गाँव" },
+          { q: "कौन नदी से प्यार करता है?", options: ["लोग", "पशु", "पेड़", "पक्षी"], answer: "लोग" },
+          { q: "नदी का आकार क्या है?", options: ["छोटा", "बड़ा", "मध्यम", "अज्ञात"], answer: "छोटा" },
+          { q: "क्या उपयोग है?", options: ["पानी", "खेल", "सोना", "खाना"], answer: "पानी" },
+          { q: "माहौल क्या है?", options: ["शांत", "उदास", "डरावना", "शोर"], answer: "शांत" },
+          { q: "क्या खतरा है?", options: ["सूखा", "बाढ़", "आग", "हवा"], answer: "सूखा" },
+          { q: "क्या सीखा?", options: ["संरक्षण", "लालच", "डर", "आलस"], answer: "संरक्षण" },
+          { q: "नदी का रंग क्या है?", options: ["नीला", "काला", "लाल", "हरा"], answer: "नीला" },
+          { q: "अंत कैसा है?", options: ["सुरक्षा", "दुख", "डर", "उदासी"], answer: "सुरक्षा" },
+          { q: "कौन नदी बचाता है?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" }
+        ]
+      },
+      {
+        title: "Chapter 18 - चुनौती हिमालय की",
+        questions: [
+          { q: "कहानी का मुख्य स्थान क्या है?", options: ["हिमालय", "गंगा", "जंगल", "समुद्र"], answer: "हिमालय" },
+          { q: "कौन चढ़ाई करता है?", options: ["पर्वतारोही", "किसान", "शिक्षक", "डॉक्टर"], answer: "पर्वतारोही" },
+          { q: "क्या चुनौती है?", options: ["ठंड", "गर्मी", "बरसात", "हवा"], answer: "ठंड" },
+          { q: "क्या उपयोगी है?", options: ["रोप", "खाना", "सोना", "खेल"], answer: "रोप" },
+          { q: "माहौल क्या है?", options: ["खतरनाक", "खुशमिजाज", "शांत", "उदास"], answer: "खतरनाक" },
+          { q: "कौन मदद करता है?", options: ["टीम", "परिवार", "अजनबी", "शत्रु"], answer: "टीम" },
+          { q: "क्या सीखा?", options: ["साहस", "लालच", "डर", "आलस"], answer: "साहस" },
+          { q: "कौन-सा उपकरण है?", options: ["हिम खोपड़ी", "छाता", "बैग", "पुस्तक"], answer: "हिम खोपड़ी" },
+          { q: "अंत कैसा है?", options: ["विजय", "दुख", "डर", "उदासी"], answer: "विजय" },
+          { q: "कौन प्रशंसा करता है?", options: ["लोग", "पशु", "पक्षी", "पेड़"], answer: "लोग" }
+        ]
+      }
+    ]
+  },
   6: {
     science: [
       {
@@ -9571,7 +13347,309 @@ window.quizData = {
     {q: "Find the error: 'Rina are my sister.'", options: ["are", "Rina", "my", "sister"], answer: "are"}
   ]
 }
-]
+],
+ "social science": [
+      {
+        title: "Chapter 1: The French Revolution",
+        questions: [
+          { q: "When did the French Revolution begin?", options: ["1789", "1800", "1776", "1799"], answer: "1789" },
+          { q: "Who was the king of France during the Revolution?", options: ["Louis XVI", "Napoleon", "Louis XIV", "Charles X"], answer: "Louis XVI" },
+          { q: "What was the main cause of the Revolution?", options: ["Financial crisis", "War victory", "Peace treaty", "Trade surplus"], answer: "Financial crisis" },
+          { q: "Which estate paid the most taxes?", options: ["Third Estate", "First Estate", "Second Estate", "Royalty"], answer: "Third Estate" },
+          { q: "What was the slogan of the Revolution?", options: ["Liberty, Equality, Fraternity", "Peace, Love, Unity", "Power, Wealth, Strength", "Justice, Order, Rule"], answer: "Liberty, Equality, Fraternity" },
+          { q: "Which document declared the rights of citizens?", options: ["Declaration of the Rights of Man", "Magna Carta", "Bill of Rights", "Constitution of 1791"], answer: "Declaration of the Rights of Man" },
+          { q: "Who led the Reign of Terror?", options: ["Robespierre", "Danton", "Mirabeau", "Marat"], answer: "Robespierre" },
+          { q: "What ended the monarchy in France?", options: ["Storming of the Bastille", "Napoleon’s rise", "Treaty of Versailles", "Execution of Louis XVI"], answer: "Execution of Louis XVI" },
+          { q: "Which group supported the Revolution initially?", options: ["Bourgeoisie", "Nobility", "Clergy", "Peasants"], answer: "Bourgeoisie" },
+          { q: "What was the outcome of the Revolution?", options: ["End of feudalism", "Start of war", "Rise of monarchy", "Economic boom"], answer: "End of feudalism" }
+        ]
+      },
+      {
+        title: "Chapter 2: Socialism in Europe and the Russian Revolution",
+        questions: [
+          { q: "When did the Russian Revolution occur?", options: ["1917", "1905", "1920", "1914"], answer: "1917" },
+          { q: "Who led the Bolsheviks?", options: ["Lenin", "Stalin", "Trotsky", "Kerensky"], answer: "Lenin" },
+          { q: "What was the main idea of socialism?", options: ["Equality", "Monarchy", "Capitalism", "Dictatorship"], answer: "Equality" },
+          { q: "Which event sparked the February Revolution?", options: ["Bread riots", "War victory", "Royal wedding", "Economic growth"], answer: "Bread riots" },
+          { q: "What was the Soviet?", options: ["Workers' council", "Royal court", "Military unit", "Trade guild"], answer: "Workers' council" },
+          { q: "Who was overthrown in the October Revolution?", options: ["Provisional Government", "Tsar Nicholas II", "Bolsheviks", "Mensheviks"], answer: "Provisional Government" },
+          { q: "What was collectivization?", options: ["State control of farms", "Private ownership", "Urban development", "Industrial growth"], answer: "State control of farms" },
+          { q: "Which country influenced Russian socialism?", options: ["Germany", "France", "Britain", "Italy"], answer: "Germany" },
+          { q: "What ended the Romanov dynasty?", options: ["Russian Revolution", "World War I", "Napoleonic Wars", "Civil War"], answer: "Russian Revolution" },
+          { q: "What was the role of women in the Revolution?", options: ["Active participants", "Passive observers", "Royal supporters", "Military leaders"], answer: "Active participants" }
+        ]
+      },
+      {
+        title: "Chapter 3: Nazism and the Rise of Hitler",
+        questions: [
+          { q: "When did Hitler become Chancellor?", options: ["1933", "1939", "1945", "1929"], answer: "1933" },
+          { q: "What was the Nazi Party’s ideology?", options: ["Aryan supremacy", "Equality", "Communism", "Democracy"], answer: "Aryan supremacy" },
+          { q: "Which treaty humiliated Germany?", options: ["Treaty of Versailles", "Treaty of Paris", "Treaty of London", "Treaty of Rome"], answer: "Treaty of Versailles" },
+          { q: "What was the Gestapo?", options: ["Secret police", "Army unit", "Economic council", "Trade union"], answer: "Secret police" },
+          { q: "Which event started World War II?", options: ["Invasion of Poland", "Annexation of Austria", "Occupation of Rhineland", "Munich Agreement"], answer: "Invasion of Poland" },
+          { q: "What was the Enabling Act?", options: ["Gave Hitler dictatorial powers", "Ended the war", "Created democracy", "Reduced taxes"], answer: "Gave Hitler dictatorial powers" },
+          { q: "Who were the main targets of Nazi persecution?", options: ["Jews", "Christians", "Muslims", "Buddhists"], answer: "Jews" },
+          { q: "What was the Night of Long Knives?", options: ["Purge of rivals", "Military victory", "Peace treaty", "Economic reform"], answer: "Purge of rivals" },
+          { q: "What was the role of propaganda?", options: ["Control minds", "Educate youth", "Promote peace", "Boost economy"], answer: "Control minds" },
+          { q: "How did Hitler die?", options: ["Suicide", "Execution", "Natural death", "Battle"], answer: "Suicide" }
+        ]
+      },
+      {
+        title: "Chapter 4: Forest Society and Colonialism",
+        questions: [
+          { q: "Who introduced the forest laws in India?", options: ["British", "French", "Dutch", "Portuguese"], answer: "British" },
+          { q: "What were reserved forests?", options: ["State-controlled", "Village-owned", "Tribal land", "Private property"], answer: "State-controlled" },
+          { q: "Which act regulated forest use?", options: ["Indian Forest Act", "Land Act", "Trade Act", "Water Act"], answer: "Indian Forest Act" },
+          { q: "What was the impact on tribes?", options: ["Displacement", "Wealth", "Education", "Power"], answer: "Displacement" },
+          { q: "Which product was in demand?", options: ["Timber", "Cotton", "Spices", "Tea"], answer: "Timber" },
+          { q: "Who rebelled against forest laws?", options: ["Tribals", "Farmers", "Merchants", "Soldiers"], answer: "Tribals" },
+          { q: "What was scientific forestry?", options: ["Plantation system", "Natural growth", "Crop rotation", "Irrigation"], answer: "Plantation system" },
+          { q: "Where was the Forest Society movement strong?", options: ["Central India", "North India", "South India", "East India"], answer: "Central India" },
+          { q: "What was lost due to colonialism?", options: ["Traditional rights", "Modern tools", "Trade routes", "Urban land"], answer: "Traditional rights" },
+          { q: "What was the role of forests?", options: ["Livelihood", "Luxury", "Entertainment", "Decoration"], answer: "Livelihood" }
+        ]
+      },
+      {
+        title: "Chapter 5: Pastoralists in the Modern World",
+        questions: [
+          { q: "Who are pastoralists?", options: ["Nomadic herders", "Farmers", "Traders", "Fishermen"], answer: "Nomadic herders" },
+          { q: "What was affected by colonial rules?", options: ["Grazing lands", "Urban areas", "Rivers", "Mountains"], answer: "Grazing lands" },
+          { q: "Which community is known for pastoralism?", options: ["Gujjar", "Bania", "Rajput", "Jat"], answer: "Gujjar" },
+          { q: "What was the Waste Land Rules?", options: ["Land conversion", "Forest protection", "Water management", "Trade regulation"], answer: "Land conversion" },
+          { q: "How did pastoralists adapt?", options: ["New routes", "Settled farming", "Urban jobs", "Trade"], answer: "New routes" },
+          { q: "What was the impact of taxes?", options: ["Reduced income", "Increased wealth", "Better health", "More land"], answer: "Reduced income" },
+          { q: "Where did pastoralists migrate?", options: ["Plateaus", "Cities", "Deserts", "Coasts"], answer: "Plateaus" },
+          { q: "What animal was commonly herded?", options: ["Goats", "Elephants", "Tigers", "Deer"], answer: "Goats" },
+          { q: "What challenged their lifestyle?", options: ["Fences", "Rains", "Forests", "Mountains"], answer: "Fences" },
+          { q: "What was the outcome for pastoralists?", options: ["Struggle", "Prosperity", "Migration", "Settlement"], answer: "Struggle" }
+        ]
+      },
+      {
+        title: "Chapter 1: India",
+        questions: [
+          { q: "What is the capital of India?", options: ["New Delhi", "Mumbai", "Kolkata", "Chennai"], answer: "New Delhi" },
+          { q: "Which ocean borders India to the south?", options: ["Indian Ocean", "Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"], answer: "Indian Ocean" },
+          { q: "How many states does India have?", options: ["28", "25", "30", "32"], answer: "28" },
+          { q: "What is India’s national animal?", options: ["Tiger", "Lion", "Elephant", "Peacock"], answer: "Tiger" },
+          { q: "Which river is considered sacred?", options: ["Ganga", "Yamuna", "Narmada", "Godavari"], answer: "Ganga" },
+          { q: "What is the largest state by area?", options: ["Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Maharashtra"], answer: "Rajasthan" },
+          { q: "Which mountain range is in the north?", options: ["Himalayas", "Western Ghats", "Eastern Ghats", "Aravalli"], answer: "Himalayas" },
+          { q: "What is the official language?", options: ["Hindi", "English", "Tamil", "Bengali"], answer: "Hindi" },
+          { q: "Which desert is in India?", options: ["Thar", "Sahara", "Gobi", "Kalahari"], answer: "Thar" },
+          { q: "What is India’s population rank globally?", options: ["2nd", "1st", "3rd", "4th"], answer: "2nd" }
+        ]
+      },
+      {
+        title: "Chapter 2: Physical Features of India",
+        questions: [
+          { q: "Which range forms the northern boundary?", options: ["Himalayas", "Vindhyas", "Satpuras", "Aravalli"], answer: "Himalayas" },
+          { q: "What is the Deccan Plateau known for?", options: ["Rich minerals", "Forests", "Rivers", "Deserts"], answer: "Rich minerals" },
+          { q: "Which river valley is fertile?", options: ["Indus", "Ganga", "Brahmaputra", "Godavari"], answer: "Ganga" },
+          { q: "What are the Western Ghats?", options: ["Mountain range", "River", "Plateau", "Desert"], answer: "Mountain range" },
+          { q: "Which island group is in the Arabian Sea?", options: ["Lakshadweep", "Andaman", "Nicobar", "Sri Lanka"], answer: "Lakshadweep" },
+          { q: "What is the highest peak in India?", options: ["Kanchenjunga", "Everest", "Nanda Devi", "Annamudi"], answer: "Kanchenjunga" },
+          { q: "Which plain is known for agriculture?", options: ["Indo-Gangetic", "Deccan", "Coastal", "Plateau"], answer: "Indo-Gangetic" },
+          { q: "What forms the eastern boundary?", options: ["Eastern Ghats", "Western Ghats", "Himalayas", "Aravalli"], answer: "Eastern Ghats" },
+          { q: "Which feature affects climate?", options: ["Himalayas", "Rivers", "Plains", "Deserts"], answer: "Himalayas" },
+          { q: "What is the coastal plain called?", options: ["Coromandel", "Thar", "Deccan", "Vindhya"], answer: "Coromandel" }
+        ]
+      },
+      {
+        title: "Chapter 3: Drainage",
+        questions: [
+          { q: "Which river is the longest in India?", options: ["Ganga", "Brahmaputra", "Godavari", "Yamuna"], answer: "Ganga" },
+          { q: "What is a tributary?", options: ["Smaller river", "Lake", "Ocean", "Canal"], answer: "Smaller river" },
+          { q: "Which river flows into the Bay of Bengal?", options: ["Mahanadi", "Narmada", "Tapti", "Sabarmati"], answer: "Mahanadi" },
+          { q: "What is a delta?", options: ["River mouth", "Mountain", "Plateau", "Desert"], answer: "River mouth" },
+          { q: "Which river flows westward?", options: ["Narmada", "Ganga", "Brahmaputra", "Kaveri"], answer: "Narmada" },
+          { q: "What causes river pollution?", options: ["Industrial waste", "Rain", "Wind", "Soil"], answer: "Industrial waste" },
+          { q: "Which lake is in Rajasthan?", options: ["Sambhar", "Dal", "Wular", "Chilika"], answer: "Sambhar" },
+          { q: "What is the source of the Ganga?", options: ["Gangotri", "Yamunotri", "Badrinath", "Kedarnath"], answer: "Gangotri" },
+          { q: "Which river is known for its estuary?", options: ["Narmada", "Ganga", "Godavari", "Krishna"], answer: "Narmada" },
+          { q: "What is the importance of rivers?", options: ["Irrigation", "Decoration", "Transport", "All"], answer: "All" }
+        ]
+      },
+      {
+        title: "Chapter 4: Climate",
+        questions: [
+          { q: "What is India’s climate type?", options: ["Monsoon", "Desert", "Tropical", "Polar"], answer: "Monsoon" },
+          { q: "When does the monsoon arrive?", options: ["June-September", "January-March", "April-May", "October-November"], answer: "June-September" },
+          { q: "What causes the monsoon?", options: ["Differential heating", "Volcanoes", "Earthquakes", "Tides"], answer: "Differential heating" },
+          { q: "Which wind brings rain?", options: ["Southwest monsoon", "Northeast monsoon", "Western winds", "Eastern winds"], answer: "Southwest monsoon" },
+          { q: "What is the coldest month?", options: ["January", "June", "August", "October"], answer: "January" },
+          { q: "Which region gets less rainfall?", options: ["Rajasthan", "West Bengal", "Kerala", "Assam"], answer: "Rajasthan" },
+          { q: "What is the retreating monsoon?", options: ["October-November", "June-July", "March-April", "December-January"], answer: "October-November" },
+          { q: "What affects local climate?", options: ["Altitude", "Color", "Shape", "Size"], answer: "Altitude" },
+          { q: "Which season has high humidity?", options: ["Monsoon", "Winter", "Summer", "Autumn"], answer: "Monsoon" },
+          { q: "What is the average temperature in summer?", options: ["30-45°C", "10-20°C", "0-5°C", "20-30°C"], answer: "30-45°C" }
+        ]
+      },
+      {
+        title: "Chapter 5: Natural Vegetation and Wildlife",
+        questions: [
+          { q: "What is tropical rainforest?", options: ["Dense forest", "Desert", "Grassland", "Tundra"], answer: "Dense forest" },
+          { q: "Where are mangroves found?", options: ["Sundarbans", "Himalayas", "Thar", "Deccan"], answer: "Sundarbans" },
+          { q: "Which tree is common in the Himalayas?", options: ["Deodar", "Teak", "Sal", "Bamboo"], answer: "Deodar" },
+          { q: "What affects vegetation?", options: ["Climate", "Color", "Shape", "Size"], answer: "Climate" },
+          { q: "Which animal is endangered?", options: ["Tiger", "Cow", "Goat", "Sheep"], answer: "Tiger" },
+          { q: "What is a biosphere reserve?", options: ["Protected area", "Urban zone", "Industrial site", "Farm land"], answer: "Protected area" },
+          { q: "Which forest is in the northeast?", options: ["Evergreen", "Deciduous", "Thorny", "Mangrove"], answer: "Evergreen" },
+          { q: "What is the role of wildlife?", options: ["Ecosystem balance", "Entertainment", "Trade", "Decoration"], answer: "Ecosystem balance" },
+          { q: "Which region has thorny bushes?", options: ["Rajasthan", "Kerala", "Assam", "West Bengal"], answer: "Rajasthan" },
+          { q: "What is deforestation’s impact?", options: ["Loss of habitat", "More rain", "Urban growth", "Soil gain"], answer: "Loss of habitat" }
+        ]
+      },
+      {
+        title: "Chapter 6: Population",
+        questions: [
+          { q: "What is population density?", options: ["People per unit area", "Total births", "Total deaths", "Age group"], answer: "People per unit area" },
+          { q: "Which state has the highest population?", options: ["Uttar Pradesh", "Maharashtra", "Bihar", "West Bengal"], answer: "Uttar Pradesh" },
+          { q: "What is the main cause of population growth?", options: ["High birth rate", "Low death rate", "Migration", "All"], answer: "All" },
+          { q: "What is the working population?", options: ["15-59 years", "0-14 years", "60+ years", "All ages"], answer: "15-59 years" },
+          { q: "Which factor affects population?", options: ["Education", "Color", "Shape", "Size"], answer: "Education" },
+          { q: "What is the population policy?", options: ["Control growth", "Increase growth", "Ignore growth", "Tax growth"], answer: "Control growth" },
+          { q: "Which region is sparsely populated?", options: ["Himalayas", "Plains", "Coasts", "Plateaus"], answer: "Himalayas" },
+          { q: "What is the sex ratio?", options: ["Males per 1000 females", "Females per 1000 males", "Total population", "Age ratio"], answer: "Males per 1000 females" },
+          { q: "What is overpopulation’s effect?", options: ["Resource strain", "More jobs", "Less pollution", "Urban growth"], answer: "Resource strain" },
+          { q: "What is the census?", options: ["Population count", "Weather data", "Trade stats", "Crop yield"], answer: "Population count" }
+        ]
+      },
+      {
+        title: "Chapter 1: What Is Democracy? Why Democracy?",
+        questions: [
+          { q: "What is democracy?", options: ["Rule by people", "Rule by king", "Rule by army", "Rule by rich"], answer: "Rule by people" },
+          { q: "Which country is the largest democracy?", options: ["India", "USA", "China", "Russia"], answer: "India" },
+          { q: "What is a key feature of democracy?", options: ["Elections", "Dictatorship", "Monarchy", "Hereditary rule"], answer: "Elections" },
+          { q: "Why is democracy preferred?", options: ["Accountability", "Speed", "Wealth", "Power"], answer: "Accountability" },
+          { q: "What is direct democracy?", options: ["People vote directly", "Representatives vote", "King decides", "Army rules"], answer: "People vote directly" },
+          { q: "Which right is essential?", options: ["Freedom", "Slavery", "Taxation", "War"], answer: "Freedom" },
+          { q: "What limits democracy?", options: ["Corruption", "Peace", "Trade", "Education"], answer: "Corruption" },
+          { q: "Who can vote in a democracy?", options: ["All adults", "Children", "Soldiers", "Rich only"], answer: "All adults" },
+          { q: "What is the opposite of democracy?", options: ["Dictatorship", "Republic", "Federation", "Union"], answer: "Dictatorship" },
+          { q: "What ensures equality?", options: ["Law", "Wealth", "Power", "Force"], answer: "Law" }
+        ]
+      },
+      {
+        title: "Chapter 2: Constitutional Design",
+        questions: [
+          { q: "What is a constitution?", options: ["Set of rules", "Book", "Lawyer", "King"], answer: "Set of rules" },
+          { q: "When was India’s Constitution adopted?", options: ["1950", "1947", "1960", "1975"], answer: "1950" },
+          { q: "Who was the chairman of the Constituent Assembly?", options: ["Dr. B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Patel", "Rajendra Prasad"], answer: "Dr. B.R. Ambedkar" },
+          { q: "What is a preamble?", options: ["Introduction", "Conclusion", "Chapter", "Article"], answer: "Introduction" },
+          { q: "Which value is in the Preamble?", options: ["Justice", "Wealth", "Power", "Force"], answer: "Justice" },
+          { q: "What is secularism?", options: ["Religious freedom", "One religion", "No religion", "State religion"], answer: "Religious freedom" },
+          { q: "How long did it take to draft the Constitution?", options: ["Nearly 3 years", "1 year", "5 years", "10 years"], answer: "Nearly 3 years" },
+          { q: "What is the source of the Constitution?", options: ["People", "King", "Army", "Foreigners"], answer: "People" },
+          { q: "Which country influenced India’s Constitution?", options: ["Britain", "USA", "France", "Russia"], answer: "Britain" },
+          { q: "What ensures amendment?", options: ["Flexible process", "Fixed laws", "Royal decree", "Military rule"], answer: "Flexible process" }
+        ]
+      },
+      {
+        title: "Chapter 3: Electoral Politics",
+        questions: [
+          { q: "What is an election?", options: ["Voting process", "Law making", "War", "Trade"], answer: "Voting process" },
+          { q: "Who conducts elections in India?", options: ["Election Commission", "Parliament", "President", "Prime Minister"], answer: "Election Commission" },
+          { q: "What is a constituency?", options: ["Voting area", "City", "Village", "River"], answer: "Voting area" },
+          { q: "What is the voting age?", options: ["18", "21", "25", "30"], answer: "18" },
+          { q: "What is a ballot?", options: ["Vote paper", "Money", "Weapon", "Food"], answer: "Vote paper" },
+          { q: "What ensures fair elections?", options: ["Independent body", "Party control", "King’s rule", "Army"], answer: "Independent body" },
+          { q: "What is a hung assembly?", options: ["No majority", "Full majority", "Single party", "Coalition"], answer: "No majority" },
+          { q: "Who can contest elections?", options: ["Citizens", "Foreigners", "Children", "Soldiers"], answer: "Citizens" },
+          { q: "What is the role of media?", options: ["Inform voters", "Control votes", "Count votes", "Set rules"], answer: "Inform voters" },
+          { q: "What is the election symbol for?", options: ["Party identity", "Voter count", "Law making", "Tax collection"], answer: "Party identity" }
+        ]
+      },
+      {
+        title: "Chapter 4: Working of Institutions",
+        questions: [
+          { q: "What is the Parliament?", options: ["Law-making body", "Army", "Court", "Bank"], answer: "Law-making body" },
+          { q: "Who is the head of the government?", options: ["Prime Minister", "President", "Chief Justice", "Governor"], answer: "Prime Minister" },
+          { q: "What is the role of the judiciary?", options: ["Interpret laws", "Make laws", "Enforce laws", "Tax collection"], answer: "Interpret laws" },
+          { q: "What is the upper house called?", options: ["Rajya Sabha", "Lok Sabha", "Vidhan Sabha", "Assembly"], answer: "Rajya Sabha" },
+          { q: "Who appoints the judges?", options: ["President", "Prime Minister", "Parliament", "Governor"], answer: "President" },
+          { q: "What is a cabinet?", options: ["Ministers’ group", "Army unit", "Court panel", "Trade union"], answer: "Ministers’ group" },
+          { q: "What checks the government?", options: ["Supreme Court", "Police", "Army", "Media"], answer: "Supreme Court" },
+          { q: "What is the term of Lok Sabha?", options: ["5 years", "3 years", "6 years", "10 years"], answer: "5 years" },
+          { q: "Who is the ceremonial head?", options: ["President", "Prime Minister", "Speaker", "Chief Justice"], answer: "President" },
+          { q: "What is a bill?", options: ["Proposed law", "Tax", "Budget", "Policy"], answer: "Proposed law" }
+        ]
+      },
+      {
+        title: "Chapter 5: Democratic Rights",
+        questions: [
+          { q: "What are fundamental rights?", options: ["Basic freedoms", "Tax rules", "Trade laws", "Military codes"], answer: "Basic freedoms" },
+          { q: "Which right protects against exploitation?", options: ["Right against Exploitation", "Right to Freedom", "Right to Equality", "Right to Education"], answer: "Right against Exploitation" },
+          { q: "What is the Right to Equality?", options: ["No discrimination", "Tax benefits", "Voting rights", "Property rights"], answer: "No discrimination" },
+          { q: "Who enforces rights?", options: ["Courts", "Police", "Army", "Government"], answer: "Courts" },
+          { q: "What is habeas corpus?", options: ["Protects liberty", "Taxes land", "Regulates trade", "Controls army"], answer: "Protects liberty" },
+          { q: "Which right includes education?", options: ["Right to Education", "Right to Work", "Right to Property", "Right to Vote"], answer: "Right to Education" },
+          { q: "What limits rights?", options: ["Public order", "Wealth", "Power", "Force"], answer: "Public order" },
+          { q: "What is the role of PIL?", options: ["Public interest litigation", "Private law", "Property issue", "Tax regulation"], answer: "Public interest litigation" },
+          { q: "Which right protects speech?", options: ["Right to Freedom", "Right to Equality", "Right to Religion", "Right to Property"], answer: "Right to Freedom" },
+          { q: "What ensures rights?", options: ["Constitution", "King", "Army", "Media"], answer: "Constitution" }
+        ]
+      },
+      {
+        title: "Chapter 1: The Economic Story of Palampore",
+        questions: [
+          { q: "Where is Palampore located?", options: ["Uttar Pradesh", "Rajasthan", "Punjab", "Haryana"], answer: "Uttar Pradesh" },
+          { q: "What is the main occupation?", options: ["Farming", "Trading", "Teaching", "Fishing"], answer: "Farming" },
+          { q: "What crop is grown in Palampore?", options: ["Wheat", "Rice", "Cotton", "Tea"], answer: "Wheat" },
+          { q: "What is multiple cropping?", options: ["Growing multiple crops", "Single crop", "No crop", "Trade crop"], answer: "Growing multiple crops" },
+          { q: "What is the land distribution like?", options: ["Unequal", "Equal", "Fixed", "Random"], answer: "Unequal" },
+          { q: "What is the role of wells?", options: ["Irrigation", "Drinking", "Fishing", "Transport"], answer: "Irrigation" },
+          { q: "What is the population of Palampore?", options: ["450", "1000", "5000", "10000"], answer: "450" },
+          { q: "What is the traditional method?", options: ["Plough", "Tractor", "Harvester", "Drill"], answer: "Plough" },
+          { q: "What is the economic activity?", options: ["Agriculture", "Industry", "Service", "Mining"], answer: "Agriculture" },
+          { q: "What is the village’s size?", options: ["Small", "Large", "Medium", "Urban"], answer: "Small" }
+        ]
+      },
+      {
+        title: "Chapter 2: People as Resource",
+        questions: [
+          { q: "What is human capital?", options: ["Skilled people", "Money", "Land", "Machines"], answer: "Skilled people" },
+          { q: "What improves human capital?", options: ["Education", "War", "Pollution", "Disease"], answer: "Education" },
+          { q: "What is the working age group?", options: ["15-59", "0-14", "60+", "All"], answer: "15-59" },
+          { q: "What is unemployment?", options: ["No jobs", "Many jobs", "Part-time work", "Full-time work"], answer: "No jobs" },
+          { q: "What is the role of health?", options: ["Productivity", "Wealth", "Power", "Trade"], answer: "Productivity" },
+          { q: "What is vocational education?", options: ["Skill training", "General study", "Sports", "Art"], answer: "Skill training" },
+          { q: "What affects employment?", options: ["Economy", "Weather", "Color", "Shape"], answer: "Economy" },
+          { q: "What is the literacy rate’s impact?", options: ["Better jobs", "Less work", "More taxes", "No change"], answer: "Better jobs" },
+          { q: "What is the population pyramid?", options: ["Age structure", "Economic data", "Trade stats", "Crop yield"], answer: "Age structure" },
+          { q: "What is the goal of education?", options: ["Development", "Entertainment", "War", "Trade"], answer: "Development" }
+        ]
+      },
+      {
+        title: "Chapter 3: Poverty as a Challenge",
+        questions: [
+          { q: "What is poverty?", options: ["Lack of resources", "Wealth", "Power", "Health"], answer: "Lack of resources" },
+          { q: "What is the poverty line?", options: ["Income threshold", "Wealth limit", "Tax rate", "Job count"], answer: "Income threshold" },
+          { q: "Which state has high poverty?", options: ["Bihar", "Punjab", "Gujarat", "Kerala"], answer: "Bihar" },
+          { q: "What causes poverty?", options: ["Unemployment", "Rain", "Peace", "Trade"], answer: "Unemployment" },
+          { q: "What is a poverty alleviation program?", options: ["MNREGA", "Education scheme", "Health plan", "Trade policy"], answer: "MNREGA" },
+          { q: "What is the impact of poverty?", options: ["Malnutrition", "Wealth", "Power", "Education"], answer: "Malnutrition" },
+          { q: "What is the role of education?", options: ["Reduces poverty", "Increases poverty", "No effect", "Trade impact"], answer: "Reduces poverty" },
+          { q: "What is the global poverty line?", options: ["$1.90/day", "$5/day", "$10/day", "$20/day"], answer: "$1.90/day" },
+          { q: "What is rural poverty?", options: ["Village poverty", "Urban poverty", "City wealth", "Trade loss"], answer: "Village poverty" },
+          { q: "What can reduce poverty?", options: ["Jobs", "War", "Taxes", "Pollution"], answer: "Jobs" }
+        ]
+      },
+      {
+        title: "Chapter 4: Food Security in India",
+        questions: [
+          { q: "What is food security?", options: ["Access to food", "Wealth", "Power", "Trade"], answer: "Access to food" },
+          { q: "Which program ensures food supply?", options: ["PDS", "Education scheme", "Health plan", "Trade policy"], answer: "PDS" },
+          { q: "What is a buffer stock?", options: ["Food reserve", "Money reserve", "Land reserve", "Water reserve"], answer: "Food reserve" },
+          { q: "Which crop is a staple?", options: ["Rice", "Cotton", "Tea", "Coffee"], answer: "Rice" },
+          { q: "What causes food insecurity?", options: ["Drought", "Rain", "Peace", "Trade"], answer: "Drought" },
+          { q: "What is the role of FCI?", options: ["Food distribution", "Education", "Health", "Trade"], answer: "Food distribution" },
+          { q: "What is the minimum support price?", options: ["Farmers’ price", "Consumer price", "Tax rate", "Trade cost"], answer: "Farmers’ price" },
+          { q: "Which group is vulnerable?", options: ["Poor", "Rich", "Traders", "Soldiers"], answer: "Poor" },
+          { q: "What is rationing?", options: ["Controlled distribution", "Free food", "Trade policy", "Tax system"], answer: "Controlled distribution" },
+          { q: "What ensures food security?", options: ["Government policy", "Private trade", "War", "Pollution"], answer: "Government policy" }
+        ]
+      }
+    ]
     // ...other subjects for class 9
   },
 
