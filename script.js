@@ -3202,6 +3202,308 @@ hindi: [
         ]
       }
     ],
+    TheWorldAroundUs: [
+      {
+        title: "Chapter 1: Water—The Essence of Life - Quiz 1",
+        questions: [
+          { q: "What is the primary source of water on Earth?", options: ["Rivers", "Oceans", "Lakes", "Glaciers"], answer: "Oceans" },
+          { q: "Which state of water is found in clouds?", options: ["Liquid", "Solid", "Gas", "All of these"], answer: "Gas" },
+          { q: "What is the process of water turning into vapor called?", options: ["Condensation", "Evaporation", "Precipitation", "Sublimation"], answer: "Evaporation" },
+          { q: "What do we call water that is safe to drink?", options: ["Salty water", "Dirty water", "Potable water", "Rainwater"], answer: "Potable water" },
+          { q: "Which of these is a use of water in daily life?", options: ["Cooking", "Painting", "Singing", "Reading"], answer: "Cooking" },
+          { q: "What is the main component of rain?", options: ["Dust", "Water", "Air", "Salt"], answer: "Water" },
+          { q: "Where is groundwater stored?", options: ["Clouds", "Rivers", "Underground", "Lakes"], answer: "Underground" },
+          { q: "Which process cleans water in nature?", options: ["Water cycle", "Photosynthesis", "Respiration", "Combustion"], answer: "Water cycle" },
+          { q: "What form of water is ice?", options: ["Liquid", "Solid", "Gas", "Steam"], answer: "Solid" },
+          { q: "Why is water important for plants?", options: ["For growth", "For decoration", "For singing", "For sleeping"], answer: "For growth" }
+        ]
+      },
+      {
+        title: "Chapter 1: Water—The Essence of Life - Quiz 2",
+        questions: [
+          { q: "What percentage of Earth's surface is covered by water?", options: ["50%", "70%", "30%", "90%"], answer: "70%" },
+          { q: "What is the process of water droplets forming clouds called?", options: ["Evaporation", "Condensation", "Precipitation", "Filtration"], answer: "Condensation" },
+          { q: "Which source of water is found in wells?", options: ["Surface water", "Groundwater", "Rainwater", "Sea water"], answer: "Groundwater" },
+          { q: "What do we use to store water at home?", options: ["Bucket", "Book", "Table", "Chair"], answer: "Bucket" },
+          { q: "Which of these animals lives in water?", options: ["Fish", "Tiger", "Elephant", "Monkey"], answer: "Fish" },
+          { q: "What is water in the form of snow?", options: ["Liquid", "Solid", "Gas", "Vapor"], answer: "Solid" },
+          { q: "What helps purify water for drinking?", options: ["Boiling", "Freezing", "Burning", "Drying"], answer: "Boiling" },
+          { q: "Which is a way to save water?", options: ["Leaving taps open", "Using a bucket", "Wasting water", "Long showers"], answer: "Using a bucket" },
+          { q: "What is the falling of water as rain called?", options: ["Evaporation", "Condensation", "Precipitation", "Sublimation"], answer: "Precipitation" },
+          { q: "Why do we need water for hygiene?", options: ["To bathe", "To read", "To sleep", "To play"], answer: "To bathe" }
+        ]
+      },
+      {
+        title: "Chapter 2: Journey of a River - Quiz 1",
+        questions: [
+          { q: "Where does a river usually start?", options: ["Ocean", "Mountain", "Desert", "City"], answer: "Mountain" },
+          { q: "What is the starting point of a river called?", options: ["Mouth", "Source", "Tributary", "Delta"], answer: "Source" },
+          { q: "What do rivers carry along their path?", options: ["Water", "Rocks", "Sand", "All of these"], answer: "All of these" },
+          { q: "What is the end point of a river called?", options: ["Source", "Mouth", "Tributary", "Stream"], answer: "Mouth" },
+          { q: "What helps a river flow?", options: ["Gravity", "Wind", "Sunlight", "Rain"], answer: "Gravity" },
+          { q: "Which of these is a famous river in India?", options: ["Ganga", "Sahara", "Himalaya", "Deccan"], answer: "Ganga" },
+          { q: "What forms when a river meets the sea?", options: ["Delta", "Mountain", "Lake", "Waterfall"], answer: "Delta" },
+          { q: "What do rivers provide to people?", options: ["Water", "Books", "Clothes", "Toys"], answer: "Water" },
+          { q: "What is a smaller river joining a larger one called?", options: ["Tributary", "Delta", "Mouth", "Source"], answer: "Tributary" },
+          { q: "What shapes the land as a river flows?", options: ["Erosion", "Evaporation", "Condensation", "Precipitation"], answer: "Erosion" }
+        ]
+      },
+      {
+        title: "Chapter 2: Journey of a River - Quiz 2",
+        questions: [
+          { q: "What is a river's path called?", options: ["Channel", "Road", "Track", "Bridge"], answer: "Channel" },
+          { q: "What can a river create over time?", options: ["Valley", "Hill", "Desert", "Forest"], answer: "Valley" },
+          { q: "Which animal might live in a river?", options: ["Crocodile", "Lion", "Giraffe", "Elephant"], answer: "Crocodile" },
+          { q: "What do people use rivers for?", options: ["Fishing", "Flying", "Running", "Singing"], answer: "Fishing" },
+          { q: "What can make a river dirty?", options: ["Pollution", "Rain", "Sunlight", "Wind"], answer: "Pollution" },
+          { q: "What is a large body of water a river flows into?", options: ["Ocean", "Pond", "Well", "Bucket"], answer: "Ocean" },
+          { q: "What is a man-made structure on a river?", options: ["Dam", "Hill", "Tree", "Cloud"], answer: "Dam" },
+          { q: "What helps plants grow near rivers?", options: ["Fertile soil", "Dry sand", "Rocks", "Glass"], answer: "Fertile soil" },
+          { q: "What is the movement of water in a river called?", options: ["Flow", "Jump", "Dance", "Sing"], answer: "Flow" },
+          { q: "What can a river form when it drops soil?", options: ["Island", "Mountain", "Cloud", "Road"], answer: "Island" }
+        ]
+      },
+      {
+        title: "Chapter 3: The Mystery of Food - Quiz 1",
+        questions: [
+          { q: "What gives us energy to work and play?", options: ["Food", "Water", "Air", "Light"], answer: "Food" },
+          { q: "Which of these is a healthy food?", options: ["Vegetables", "Chips", "Candy", "Soda"], answer: "Vegetables" },
+          { q: "What do plants use to make their food?", options: ["Sunlight", "Soil", "Water", "All of these"], answer: "All of these" },
+          { q: "Which nutrient helps build muscles?", options: ["Protein", "Carbohydrate", "Fat", "Vitamin"], answer: "Protein" },
+          { q: "What is the main source of carbohydrates?", options: ["Rice", "Milk", "Eggs", "Fruits"], answer: "Rice" },
+          { q: "Which food comes from animals?", options: ["Milk", "Rice", "Wheat", "Sugar"], answer: "Milk" },
+          { q: "What do we call food that is not cooked?", options: ["Raw", "Baked", "Fried", "Boiled"], answer: "Raw" },
+          { q: "Which vitamin is found in oranges?", options: ["Vitamin C", "Vitamin A", "Vitamin B", "Vitamin D"], answer: "Vitamin C" },
+          { q: "What do we need to eat to stay strong?", options: ["Balanced diet", "Only sweets", "Only snacks", "Only drinks"], answer: "Balanced diet" },
+          { q: "Which food group includes bread?", options: ["Grains", "Fruits", "Vegetables", "Dairy"], answer: "Grains" }
+        ]
+      },
+      {
+        title: "Chapter 3: The Mystery of Food - Quiz 2",
+        questions: [
+          { q: "What helps our bones grow strong?", options: ["Calcium", "Sugar", "Salt", "Oil"], answer: "Calcium" },
+          { q: "Which food is rich in fiber?", options: ["Fruits", "Candy", "Ice cream", "Soda"], answer: "Fruits" },
+          { q: "What do we call the process plants use to make food?", options: ["Photosynthesis", "Respiration", "Digestion", "Evaporation"], answer: "Photosynthesis" },
+          { q: "Which food is a source of protein?", options: ["Eggs", "Sugar", "Salt", "Oil"], answer: "Eggs" },
+          { q: "What is an example of a dairy product?", options: ["Cheese", "Rice", "Apple", "Potato"], answer: "Cheese" },
+          { q: "Which nutrient gives quick energy?", options: ["Carbohydrates", "Proteins", "Fats", "Vitamins"], answer: "Carbohydrates" },
+          { q: "What should we drink to stay hydrated?", options: ["Water", "Soda", "Juice", "Coffee"], answer: "Water" },
+          { q: "Which food helps improve eyesight?", options: ["Carrot", "Chocolate", "Cake", "Chips"], answer: "Carrot" },
+          { q: "What is a healthy breakfast food?", options: ["Oats", "Candy", "Cookies", "Chips"], answer: "Oats" },
+          { q: "Why do we need vitamins?", options: ["For body functions", "For taste", "For color", "For smell"], answer: "For body functions" }
+        ]
+      },
+      {
+        title: "Chapter 4: Our School—A Happy Place - Quiz 1",
+        questions: [
+          { q: "What is the main activity in a school?", options: ["Learning", "Sleeping", "Eating", "Playing"], answer: "Learning" },
+          { q: "Who helps students learn in school?", options: ["Teacher", "Driver", "Cook", "Guard"], answer: "Teacher" },
+          { q: "What do we use to write in school?", options: ["Pencil", "Spoon", "Brush", "Comb"], answer: "Pencil" },
+          { q: "What is a place in school for reading books?", options: ["Library", "Playground", "Kitchen", "Office"], answer: "Library" },
+          { q: "What do students carry to school?", options: ["School bag", "Shopping bag", "Suitcase", "Bucket"], answer: "School bag" },
+          { q: "What do we do in the playground?", options: ["Play", "Study", "Cook", "Sleep"], answer: "Play" },
+          { q: "What is a school event?", options: ["Sports day", "Shopping day", "Cooking day", "Sleeping day"], answer: "Sports day" },
+          { q: "Who keeps the school clean?", options: ["Sweeper", "Teacher", "Student", "Principal"], answer: "Sweeper" },
+          { q: "What do we learn in school besides subjects?", options: ["Values", "Cooking", "Driving", "Painting"], answer: "Values" },
+          { q: "What is the head of a school called?", options: ["Principal", "Teacher", "Student", "Guard"], answer: "Principal" }
+        ]
+      },
+      {
+        title: "Chapter 4: Our School—A Happy Place - Quiz 2",
+        questions: [
+          { q: "What do we use to draw in school?", options: ["Crayons", "Spoons", "Brushes", "Combs"], answer: "Crayons" },
+          { q: "Where do students eat lunch in school?", options: ["Canteen", "Classroom", "Library", "Playground"], answer: "Canteen" },
+          { q: "What is a place for experiments in school?", options: ["Laboratory", "Playground", "Library", "Office"], answer: "Laboratory" },
+          { q: "What do students wear in school?", options: ["Uniform", "Swimsuit", "Party dress", "Night suit"], answer: "Uniform" },
+          { q: "What helps students learn new things?", options: ["Books", "Toys", "Clothes", "Food"], answer: "Books" },
+          { q: "What do we celebrate in school?", options: ["Festivals", "Holidays", "Weekends", "Exams"], answer: "Festivals" },
+          { q: "Who takes care of school safety?", options: ["Guard", "Teacher", "Student", "Cook"], answer: "Guard" },
+          { q: "What is a school activity for fun?", options: ["Drawing", "Sleeping", "Eating", "Cleaning"], answer: "Drawing" },
+          { q: "What do students do in assembly?", options: ["Pray", "Sleep", "Eat", "Run"], answer: "Pray" },
+          { q: "What is a place for sports in school?", options: ["Playground", "Classroom", "Library", "Canteen"], answer: "Playground" }
+        ]
+      },
+      {
+        title: "Chapter 5: Our Vibrant Country - Quiz 1",
+        questions: [
+          { q: "What is the capital of India?", options: ["Delhi", "Mumbai", "Kolkata", "Chennai"], answer: "Delhi" },
+          { q: "Which festival is called the festival of lights?", options: ["Diwali", "Holi", "Eid", "Christmas"], answer: "Diwali" },
+          { q: "What is the national animal of India?", options: ["Tiger", "Lion", "Elephant", "Leopard"], answer: "Tiger" },
+          { q: "Which river is considered holy in India?", options: ["Ganga", "Yamuna", "Brahmaputra", "Godavari"], answer: "Ganga" },
+          { q: "What is the national bird of India?", options: ["Peacock", "Parrot", "Eagle", "Sparrow"], answer: "Peacock" },
+          { q: "Which language is widely spoken in India?", options: ["Hindi", "Tamil", "Bengali", "Telugu"], answer: "Hindi" },
+          { q: "What is the national flower of India?", options: ["Lotus", "Rose", "Jasmine", "Sunflower"], answer: "Lotus" },
+          { q: "Which monument is a symbol of love in India?", options: ["Taj Mahal", "Qutub Minar", "Red Fort", "India Gate"], answer: "Taj Mahal" },
+          { q: "What is the national flag of India called?", options: ["Tricolour", "Bicolour", "Unicolour", "Multicolour"], answer: "Tricolour" },
+          { q: "Which dance is famous in India?", options: ["Bharatanatyam", "Ballet", "Salsa", "Hip-hop"], answer: "Bharatanatyam" }
+        ]
+      },
+      {
+        title: "Chapter 5: Our Vibrant Country - Quiz 2",
+        questions: [
+          { q: "What is the national sport of India?", options: ["Hockey", "Cricket", "Football", "Badminton"], answer: "Hockey" },
+          { q: "Which festival is known as the festival of colors?", options: ["Holi", "Diwali", "Eid", "Christmas"], answer: "Holi" },
+          { q: "What is the national tree of India?", options: ["Banyan", "Mango", "Coconut", "Neem"], answer: "Banyan" },
+          { q: "Which mountain range is in northern India?", options: ["Himalayas", "Western Ghats", "Aravalli", "Vindhya"], answer: "Himalayas" },
+          { q: "What is the currency of India?", options: ["Rupee", "Dollar", "Euro", "Pound"], answer: "Rupee" },
+          { q: "Which city is known as the financial capital of India?", options: ["Mumbai", "Delhi", "Kolkata", "Chennai"], answer: "Mumbai" },
+          { q: "What is the national emblem of India?", options: ["Ashoka Pillar", "Lotus", "Peacock", "Tiger"], answer: "Ashoka Pillar" },
+          { q: "Which food is popular in India?", options: ["Biryani", "Pizza", "Burger", "Sushi"], answer: "Biryani" },
+          { q: "What is the largest state in India by area?", options: ["Rajasthan", "Uttar Pradesh", "Maharashtra", "Gujarat"], answer: "Rajasthan" },
+          { q: "Which instrument is popular in Indian music?", options: ["Sitar", "Guitar", "Piano", "Drum"], answer: "Sitar" }
+        ]
+      },
+      {
+        title: "Chapter 6: Some Unique Places - Quiz 1",
+        questions: [
+          { q: "Which place is known as the 'Pink City'?", options: ["Jaipur", "Delhi", "Mumbai", "Kolkata"], answer: "Jaipur" },
+          { q: "What is the Taj Mahal made of?", options: ["Marble", "Brick", "Wood", "Stone"], answer: "Marble" },
+          { q: "Which state is famous for the backwaters?", options: ["Kerala", "Rajasthan", "Punjab", "Assam"], answer: "Kerala" },
+          { q: "What is the Golden Temple also called?", options: ["Harmandir Sahib", "Akshardham", "Lotus Temple", "Jama Masjid"], answer: "Harmandir Sahib" },
+          { q: "Which city is known as the 'City of Lakes'?", options: ["Udaipur", "Jaipur", "Delhi", "Mumbai"], answer: "Udaipur" },
+          { q: "What is the Qutub Minar made of?", options: ["Sandstone", "Marble", "Wood", "Glass"], answer: "Sandstone" },
+          { q: "Which place is famous for tea gardens?", options: ["Darjeeling", "Jaipur", "Chennai", "Mumbai"], answer: "Darjeeling" },
+          { q: "Which monument is in Delhi?", options: ["India Gate", "Taj Mahal", "Hawa Mahal", "Charminar"], answer: "India Gate" },
+          { q: "Which state is known for the Sun Temple?", options: ["Odisha", "Rajasthan", "Kerala", "Punjab"], answer: "Odisha" },
+          { q: "What is the Hawa Mahal known for?", options: ["Windows", "Domes", "Pillars", "Gardens"], answer: "Windows" }
+        ]
+      },
+      {
+        title: "Chapter 6: Some Unique Places - Quiz 2",
+        questions: [
+          { q: "Which city is called the 'City of Joy'?", options: ["Kolkata", "Delhi", "Mumbai", "Chennai"], answer: "Kolkata" },
+          { q: "What is the Charminar famous for?", options: ["Four minarets", "Two towers", "One dome", "Three gates"], answer: "Four minarets" },
+          { q: "Which state is home to the Ajanta Caves?", options: ["Maharashtra", "Rajasthan", "Kerala", "Odisha"], answer: "Maharashtra" },
+          { q: "Which monument is known as the 'Iron Pillar'?", options: ["Qutub Minar", "Red Fort", "Mehrauli Pillar", "India Gate"], answer: "Mehrauli Pillar" },
+          { q: "Which place is famous for its beaches?", options: ["Goa", "Delhi", "Jaipur", "Kolkata"], answer: "Goa" },
+          { q: "What is the Lotus Temple known for?", options: ["Petal-like structure", "Tall tower", "Red walls", "Big dome"], answer: "Petal-like structure" },
+          { q: "Which city is famous for Mysore Palace?", options: ["Mysore", "Jaipur", "Delhi", "Mumbai"], answer: "Mysore" },
+          { q: "Which state has the Kaziranga National Park?", options: ["Assam", "Rajasthan", "Kerala", "Punjab"], answer: "Assam" },
+          { q: "What is the Red Fort made of?", options: ["Red sandstone", "Marble", "Wood", "Brick"], answer: "Red sandstone" },
+          { q: "Which place is known for its desert?", options: ["Rajasthan", "Kerala", "Assam", "Odisha"], answer: "Rajasthan" }
+        ]
+      },
+      {
+        title: "Chapter 7: Energy—How Things Work - Quiz 1",
+        questions: [
+          { q: "What is the main source of energy on Earth?", options: ["Sun", "Moon", "Stars", "Clouds"], answer: "Sun" },
+          { q: "What type of energy makes a bulb glow?", options: ["Electrical", "Heat", "Sound", "Light"], answer: "Electrical" },
+          { q: "What energy helps a car move?", options: ["Fuel", "Water", "Air", "Sand"], answer: "Fuel" },
+          { q: "What is the energy of moving water called?", options: ["Hydro energy", "Solar energy", "Wind energy", "Thermal energy"], answer: "Hydro energy" },
+          { q: "What energy is used to cook food?", options: ["Heat", "Sound", "Light", "Wind"], answer: "Heat" },
+          { q: "What is the energy of moving air called?", options: ["Wind energy", "Solar energy", "Hydro energy", "Thermal energy"], answer: "Wind energy" },
+          { q: "What device converts solar energy to electricity?", options: ["Solar panel", "Windmill", "Battery", "Bulb"], answer: "Solar panel" },
+          { q: "What energy is stored in food?", options: ["Chemical", "Electrical", "Sound", "Light"], answer: "Chemical" },
+          { q: "What is the energy of a moving object called?", options: ["Kinetic", "Potential", "Thermal", "Chemical"], answer: "Kinetic" },
+          { q: "What energy is used in a fan?", options: ["Electrical", "Heat", "Sound", "Light"], answer: "Electrical" }
+        ]
+      },
+      {
+        title: "Chapter 7: Energy—How Things Work - Quiz 2",
+        questions: [
+          { q: "What energy is stored in a stretched rubber band?", options: ["Potential", "Kinetic", "Thermal", "Electrical"], answer: "Potential" },
+          { q: "What is the source of energy for a windmill?", options: ["Wind", "Sun", "Water", "Fuel"], answer: "Wind" },
+          { q: "What energy is produced by burning wood?", options: ["Heat", "Light", "Sound", "Electrical"], answer: "Heat" },
+          { q: "What device stores electrical energy?", options: ["Battery", "Bulb", "Fan", "Wire"], answer: "Battery" },
+          { q: "What energy is used to lift an object?", options: ["Mechanical", "Thermal", "Sound", "Light"], answer: "Mechanical" },
+          { q: "What is the energy of the Sun called?", options: ["Solar", "Hydro", "Wind", "Chemical"], answer: "Solar" },
+          { q: "What energy makes a bell ring?", options: ["Sound", "Heat", "Light", "Electrical"], answer: "Sound" },
+          { q: "What is the energy in a torchlight?", options: ["Electrical", "Thermal", "Wind", "Hydro"], answer: "Electrical" },
+          { q: "What energy is used in a microwave?", options: ["Electrical", "Solar", "Wind", "Hydro"], answer: "Electrical" },
+          { q: "What is the energy of a falling object?", options: ["Kinetic", "Potential", "Thermal", "Chemical"], answer: "Kinetic" }
+        ]
+      },
+      {
+        title: "Chapter 8: Clothes—How Things are Made - Quiz 1",
+        questions: [
+          { q: "What is the main material for cotton clothes?", options: ["Cotton", "Wool", "Silk", "Nylon"], answer: "Cotton" },
+          { q: "Which animal gives us wool?", options: ["Sheep", "Cow", "Goat", "Horse"], answer: "Sheep" },
+          { q: "What is silk made from?", options: ["Silkworm", "Cotton plant", "Sheep", "Nylon"], answer: "Silkworm" },
+          { q: "What plant is used to make jute clothes?", options: ["Jute", "Cotton", "Wool", "Silk"], answer: "Jute" },
+          { q: "What is the process of making cloth called?", options: ["Weaving", "Cooking", "Painting", "Singing"], answer: "Weaving" },
+          { q: "What tool is used to spin thread?", options: ["Spinning wheel", "Sewing machine", "Loom", "Needle"], answer: "Spinning wheel" },
+          { q: "What is used to stitch clothes?", options: ["Needle", "Brush", "Pen", "Spoon"], answer: "Needle" },
+          { q: "Which fibre is man-made?", options: ["Nylon", "Cotton", "Wool", "Silk"], answer: "Nylon" },
+          { q: "What protects us from cold?", options: ["Woollen clothes", "Cotton clothes", "Silk clothes", "Nylon clothes"], answer: "Woollen clothes" },
+          { q: "What is dyed to make colorful clothes?", options: ["Fabric", "Wood", "Metal", "Paper"], answer: "Fabric" }
+        ]
+      },
+      {
+        title: "Chapter 8: Clothes—How Things are Made - Quiz 2",
+        questions: [
+          { q: "What is used to weave cloth?", options: ["Loom", "Needle", "Brush", "Pen"], answer: "Loom" },
+          { q: "Which fibre comes from plants?", options: ["Cotton", "Wool", "Silk", "Nylon"], answer: "Cotton" },
+          { q: "What is the first step in making cloth?", options: ["Spinning", "Weaving", "Dyeing", "Stitching"], answer: "Spinning" },
+          { q: "Which animal provides silk?", options: ["Silkworm", "Sheep", "Goat", "Cow"], answer: "Silkworm" },
+          { q: "What is used to make synthetic clothes?", options: ["Chemicals", "Plants", "Animals", "Water"], answer: "Chemicals" },
+          { q: "What protects us from rain?", options: ["Raincoat", "Woollen sweater", "Cotton shirt", "Silk dress"], answer: "Raincoat" },
+          { q: "What is used to design clothes?", options: ["Patterns", "Books", "Toys", "Food"], answer: "Patterns" },
+          { q: "Which fibre is used for bags?", options: ["Jute", "Wool", "Silk", "Nylon"], answer: "Jute" },
+          { q: "What is the process of coloring cloth called?", options: ["Dyeing", "Spinning", "Weaving", "Stitching"], answer: "Dyeing" },
+          { q: "What do we wear in summer?", options: ["Cotton clothes", "Woollen clothes", "Silk clothes", "Nylon clothes"], answer: "Cotton clothes" }
+        ]
+      },
+      {
+        title: "Chapter 9: Rhythms of Nature - Quiz 1",
+        questions: [
+          { q: "How many seasons are there in a year?", options: ["Four", "Three", "Five", "Six"], answer: "Four" },
+          { q: "Which season is known for rain?", options: ["Monsoon", "Summer", "Winter", "Spring"], answer: "Monsoon" },
+          { q: "What happens to leaves in autumn?", options: ["They fall", "They grow", "They bloom", "They turn green"], answer: "They fall" },
+          { q: "Which season is the hottest?", options: ["Summer", "Winter", "Monsoon", "Spring"], answer: "Summer" },
+          { q: "What blooms in spring?", options: ["Flowers", "Snow", "Rain", "Clouds"], answer: "Flowers" },
+          { q: "What is the coldest season?", options: ["Winter", "Summer", "Monsoon", "Spring"], answer: "Winter" },
+          { q: "What do birds do in some seasons?", options: ["Migrate", "Sleep", "Eat", "Dance"], answer: "Migrate" },
+          { q: "What is the cycle of seasons called?", options: ["Seasonal cycle", "Water cycle", "Life cycle", "Food cycle"], answer: "Seasonal cycle" },
+          { q: "Which season has long days?", options: ["Summer", "Winter", "Monsoon", "Spring"], answer: "Summer" },
+          { q: "What do we wear in winter?", options: ["Woollen clothes", "Cotton clothes", "Silk clothes", "Nylon clothes"], answer: "Woollen clothes" }
+        ]
+      },
+      {
+        title: "Chapter 9: Rhythms of Nature - Quiz 2",
+        questions: [
+          { q: "Which season is good for flying kites?", options: ["Spring", "Winter", "Monsoon", "Summer"], answer: "Spring" },
+          { q: "What do animals do in winter to stay warm?", options: ["Hibernate", "Migrate", "Bloom", "Grow"], answer: "Hibernate" },
+          { q: "Which season brings heavy rainfall?", options: ["Monsoon", "Summer", "Winter", "Spring"], answer: "Monsoon" },
+          { q: "What do trees do in autumn?", options: ["Shed leaves", "Grow leaves", "Bloom flowers", "Produce fruits"], answer: "Shed leaves" },
+          { q: "Which season is known for new plant growth?", options: ["Spring", "Winter", "Monsoon", "Summer"], answer: "Spring" },
+          { q: "What do we see in the sky during monsoon?", options: ["Clouds", "Stars", "Sun", "Moon"], answer: "Clouds" },
+          { q: "What do farmers do in the monsoon?", options: ["Plant crops", "Harvest crops", "Store crops", "Sell crops"], answer: "Plant crops" },
+          { q: "Which season has short days?", options: ["Winter", "Summer", "Monsoon", "Spring"], answer: "Winter" },
+          { q: "What do we use in monsoon to stay dry?", options: ["Umbrella", "Sweater", "Fan", "Heater"], answer: "Umbrella" },
+          { q: "What changes with seasons?", options: ["Weather", "Time", "Day", "Night"], answer: "Weather" }
+        ]
+      },
+      {
+        title: "Chapter 10: Earth—Our Shared Home - Quiz 1",
+        questions: [
+          { q: "What is the shape of the Earth?", options: ["Sphere", "Flat", "Square", "Triangle"], answer: "Sphere" },
+          { q: "What covers most of the Earth's surface?", options: ["Water", "Land", "Forest", "Desert"], answer: "Water" },
+          { q: "What is the layer of air around Earth called?", options: ["Atmosphere", "Hydrosphere", "Lithosphere", "Biosphere"], answer: "Atmosphere" },
+          { q: "What do we call the solid part of Earth?", options: ["Land", "Water", "Air", "Cloud"], answer: "Land" },
+          { q: "What is the home of living things on Earth?", options: ["Biosphere", "Atmosphere", "Hydrosphere", "Lithosphere"], answer: "Biosphere" },
+          { q: "What causes day and night on Earth?", options: ["Rotation", "Revolution", "Orbit", "Tilt"], answer: "Rotation" },
+          { q: "What is the main source of heat on Earth?", options: ["Sun", "Moon", "Stars", "Clouds"], answer: "Sun" },
+          { q: "What do we call a large area of trees?", options: ["Forest", "Desert", "Ocean", "Mountain"], answer: "Forest" },
+          { q: "What protects Earth from harmful rays?", options: ["Ozone layer", "Clouds", "Water", "Land"], answer: "Ozone layer" },
+          { q: "What do we need to breathe?", options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Helium"], answer: "Oxygen" }
+        ]
+      },
+      {
+        title: "Chapter 10: Earth—Our Shared Home - Quiz 2",
+        questions: [
+          { q: "What causes seasons on Earth?", options: ["Tilt", "Rotation", "Orbit", "Revolution"], answer: "Tilt" },
+          { q: "What is a large body of water on Earth?", options: ["Ocean", "Pond", "Lake", "River"], answer: "Ocean" },
+          { q: "What do we call a high landform on Earth?", options: ["Mountain", "Valley", "Plain", "Desert"], answer: "Mountain" },
+          { q: "What is the Earth's outer layer called?", options: ["Crust", "Mantle", "Core", "Surface"], answer: "Crust" },
+          { q: "What do plants produce that helps us breathe?", options: ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"], answer: "Oxygen" },
+          { q: "What is a dry area with little rain called?", options: ["Desert", "Forest", "Ocean", "Mountain"], answer: "Desert" },
+          { q: "What do we call the movement of Earth around the Sun?", options: ["Revolution", "Rotation", "Orbit", "Tilt"], answer: "Revolution" },
+          { q: "What is a flat landform on Earth?", options: ["Plain", "Mountain", "Valley", "Desert"], answer: "Plain" },
+          { q: "What do we need to protect on Earth?", options: ["Environment", "Rocks", "Sand", "Glass"], answer: "Environment" },
+          { q: "What is a frozen area on Earth called?", options: ["Polar region", "Desert", "Forest", "Plain"], answer: "Polar region" }
+        ]
+      }
+    ],
    english: [
       {
         title: "Chapter 1 - Wonderful Waste",
@@ -21390,16 +21692,45 @@ let studentName = "";
 let studentMobile = "";
 
 document.addEventListener("DOMContentLoaded", function() {
+    // Only run this code if we're NOT on quizzes.html (which has its own handler)
+    const isQuizzesPage = window.location.pathname.includes('quizzes.html') || 
+                          window.location.href.includes('quizzes.html') ||
+                          document.querySelector('.quiz-hero') !== null; // Check for quizzes.html specific element
+    
+    if (isQuizzesPage) {
+        return; // Skip this code on quizzes.html - it has its own handler
+    }
+    
     const form = document.getElementById("studentInfoForm");
     if (form) {
+        // Check if this is the quizzes.html form (has nameInput/mobileInput) - if so, skip
+        const nameInput = document.getElementById("nameInput");
+        const mobileInput = document.getElementById("mobileInput");
+        if (nameInput && mobileInput) {
+            // This is quizzes.html form, skip
+            return;
+        }
+        
         form.addEventListener("submit", function(e) {
             e.preventDefault();
-            studentName = document.getElementById("studentName").value.trim();
-            studentMobile = document.getElementById("studentMobile").value.trim();
+            const nameField = document.getElementById("studentName");
+            const mobileField = document.getElementById("studentMobile");
+            
+            if (!nameField || !mobileField) {
+                return; // Inputs don't exist, skip
+            }
+            
+            studentName = nameField.value.trim();
+            studentMobile = mobileField.value.trim();
             if (studentName && studentMobile) {
                 form.style.display = "none";
-                document.getElementById("quizArea").style.display = "block";
-                loadQuizOptions();
+                const quizArea = document.getElementById("quizArea");
+                if (quizArea) {
+                    quizArea.style.display = "block";
+                }
+                if (typeof loadQuizOptions === 'function') {
+                    loadQuizOptions();
+                }
             } else {
                 alert("Please fill in both name and mobile number.");
             }

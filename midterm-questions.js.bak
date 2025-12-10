@@ -1,0 +1,336 @@
+// midterm-questions.js
+// This file contains all questions for midterm exams
+
+console.log('midterm-questions.js loaded successfully');
+
+window.midtermQuizData = {
+  // Class 6 Science
+  "6": {
+    "Science": {
+      "midterm1": {
+        "sample1": [
+  "8": {  // Class 8
+    "Science": {  // Subject
+      "midterm1": {  // Midterm 1
+        "sample1": [  // Sample Test 1 with 50 questions
+          // 25 MCQs
+          {
+            type: 'mcq',
+            q: 'Which of the following is a kharif crop?',
+            options: ['Wheat', 'Barley', 'Paddy', 'Peas'],
+            answer: 'Paddy'
+          },
+          {
+            type: 'mcq',
+            q: 'Which microorganism is used in making bread?',
+            options: ['Virus', 'Bacteria', 'Yeast', 'Amoeba'],
+            answer: 'Yeast'
+          },
+          {
+            type: 'mcq',
+            q: 'The process of conversion of sugar into alcohol is called:',
+            options: ['Nitrogen fixation', 'Moulding', 'Fermentation', 'Infection'],
+            answer: 'Fermentation'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is not a greenhouse gas?',
+            options: ['Methane', 'Carbon dioxide', 'Oxygen', 'Nitrous oxide'],
+            answer: 'Oxygen'
+          },
+          {
+            type: 'mcq',
+            q: 'The largest gland in the human body is:',
+            options: ['Pancreas', 'Liver', 'Kidney', 'Lung'],
+            answer: 'Liver'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is a non-metal that remains liquid at room temperature?',
+            options: ['Phosphorus', 'Bromine', 'Chlorine', 'Helium'],
+            answer: 'Bromine'
+          },
+          {
+            type: 'mcq',
+            q: 'The process by which plants make their own food is called:',
+            options: ['Respiration', 'Photosynthesis', 'Transpiration', 'Digestion'],
+            answer: 'Photosynthesis'
+          },
+          {
+            type: 'mcq',
+            q: 'Which planet is known as the Red Planet?',
+            options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
+            answer: 'Mars'
+          },
+          {
+            type: 'mcq',
+            q: 'The chemical formula of water is:',
+            options: ['CO2', 'H2O', 'NaCl', 'O2'],
+            answer: 'H2O'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is not a part of a plant cell?',
+            options: ['Cell wall', 'Chloroplast', 'Centriole', 'Vacuole'],
+            answer: 'Centriole'
+          },
+          {
+            type: 'mcq',
+            q: 'The SI unit of electric current is:',
+            options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+            answer: 'Ampere'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is a good conductor of electricity?',
+            options: ['Rubber', 'Plastic', 'Copper', 'Wood'],
+            answer: 'Copper'
+          },
+          {
+            type: 'mcq',
+            q: 'The process of water turning into vapor is called:',
+            options: ['Condensation', 'Evaporation', 'Freezing', 'Melting'],
+            answer: 'Evaporation'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is not a primary color of light?',
+            options: ['Red', 'Blue', 'Green', 'Yellow'],
+            answer: 'Yellow'
+          },
+          {
+            type: 'mcq',
+            q: 'The hardest natural substance on Earth is:',
+            options: ['Gold', 'Iron', 'Diamond', 'Platinum'],
+            answer: 'Diamond'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is a greenhouse gas?',
+            options: ['Oxygen', 'Nitrogen', 'Methane', 'Hydrogen'],
+            answer: 'Methane'
+          },
+          {
+            type: 'mcq',
+            q: 'The study of earthquakes is called:',
+            options: ['Meteorology', 'Seismology', 'Volcanology', 'Geology'],
+            answer: 'Seismology'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is not a metal?',
+            options: ['Gold', 'Silver', 'Sulfur', 'Copper'],
+            answer: 'Sulfur'
+          },
+          {
+            type: 'mcq',
+            q: 'The process by which plants lose water is called:',
+            options: ['Photosynthesis', 'Respiration', 'Transpiration', 'Evaporation'],
+            answer: 'Transpiration'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is a vector quantity?',
+            options: ['Mass', 'Speed', 'Time', 'Force'],
+            answer: 'Force'
+          },
+          {
+            type: 'mcq',
+            q: 'The chemical symbol for gold is:',
+            options: ['Go', 'Gd', 'Au', 'Ag'],
+            answer: 'Au'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is not a renewable source of energy?',
+            options: ['Solar', 'Wind', 'Coal', 'Hydro'],
+            answer: 'Coal'
+          },
+          {
+            type: 'mcq',
+            q: 'The process of cell division is called:',
+            options: ['Respiration', 'Photosynthesis', 'Mitosis', 'Osmosis'],
+            answer: 'Mitosis'
+          },
+          {
+            type: 'mcq',
+            q: 'Which of these is not a part of the human digestive system?',
+            options: ['Stomach', 'Liver', 'Kidney', 'Small intestine'],
+            answer: 'Kidney'
+          },
+          {
+            type: 'mcq',
+            q: 'The SI unit of force is:',
+            options: ['Joule', 'Watt', 'Newton', 'Pascal'],
+            answer: 'Newton'
+          },
+          
+          // 10 Fill in the blanks
+          {
+            type: 'fill_in_blank',
+            q: 'The process of conversion of sugar into alcohol is called __________.',
+            answer: 'fermentation'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The largest gland in the human body is __________.',
+            answer: 'liver'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The SI unit of force is __________.',
+            answer: 'newton'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The chemical formula of water is __________.',
+            answer: 'h2o'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The process by which plants make their food is called __________.',
+            answer: 'photosynthesis'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The hardest natural substance on Earth is __________.',
+            answer: 'diamond'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The planet known as the Red Planet is __________.',
+            answer: 'mars'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The study of earthquakes is called __________.',
+            answer: 'seismology'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The chemical symbol for gold is __________.',
+            answer: 'au'
+          },
+          {
+            type: 'fill_in_blank',
+            q: 'The process of cell division is called __________.',
+            answer: 'mitosis'
+          },
+          
+          // 10 True/False
+          {
+            type: 'true_false',
+            q: 'Coal and petroleum are renewable resources.',
+            answer: 'False'
+          },
+          {
+            type: 'true_false',
+            q: 'Sound cannot travel through vacuum.',
+            answer: 'True'
+          },
+          {
+            type: 'true_false',
+            q: 'The image formed by a plane mirror is of the same size as the object.',
+            answer: 'True'
+          },
+          {
+            type: 'true_false',
+            q: 'All metals are magnetic.',
+            answer: 'False'
+          },
+          {
+            type: 'true_false',
+            q: 'The Earth revolves around the Sun.',
+            answer: 'True'
+          },
+          {
+            type: 'true_false',
+            q: 'Bacteria are multicellular organisms.',
+            answer: 'False'
+          },
+          {
+            type: 'true_false',
+            q: 'The human body has 206 bones.',
+            answer: 'True'
+          },
+          {
+            type: 'true_false',
+            q: 'Light travels faster than sound.',
+            answer: 'True'
+          },
+          {
+            type: 'true_false',
+            q: 'All plants perform photosynthesis.',
+            answer: 'False'
+          },
+          {
+            type: 'true_false',
+            q: 'The chemical symbol for sodium is Na.',
+            answer: 'True'
+          },
+          
+          // 5 Assertion/Reasoning
+          {
+            type: 'assertion_reasoning',
+            q: 'Assertion: The process of rusting is a chemical change.\nReason: A new substance iron oxide is formed during rusting.',
+            options: [
+              'Both A and R are true and R is the correct explanation of A.',
+              'Both A and R are true but R is not the correct explanation of A.',
+              'A is true but R is false.',
+              'A is false but R is true.'
+            ],
+            answer: 'Both A and R are true and R is the correct explanation of A.'
+          },
+          {
+            type: 'assertion_reasoning',
+            q: 'Assertion: Yeast is used in the production of alcohol.\nReason: Yeast respires anaerobically to produce alcohol and carbon dioxide.',
+            options: [
+              'Both A and R are true and R is the correct explanation of A.',
+              'Both A and R are true but R is not the correct explanation of A.',
+              'A is true but R is false.',
+              'A is false but R is true.'
+            ],
+            answer: 'Both A and R are true and R is the correct explanation of A.'
+          },
+          {
+            type: 'assertion_reasoning',
+            q: 'Assertion: The sky appears blue.\nReason: Blue light is scattered more than other colors by the gases in the atmosphere.',
+            options: [
+              'Both A and R are true and R is the correct explanation of A.',
+              'Both A and R are true but R is not the correct explanation of A.',
+              'A is true but R is false.',
+              'A is false but R is true.'
+            ],
+            answer: 'Both A and R are true and R is the correct explanation of A.'
+          },
+          {
+            type: 'assertion_reasoning',
+            q: 'Assertion: Plants are called autotrophs.\nReason: They can prepare their own food using sunlight.',
+            options: [
+              'Both A and R are true and R is the correct explanation of A.',
+              'Both A and R are true but R is not the correct explanation of A.',
+              'A is true but R is false.',
+              'A is false but R is true.'
+            ],
+            answer: 'Both A and R are true and R is the correct explanation of A.'
+          },
+          {
+            type: 'assertion_reasoning',
+            q: 'Assertion: Mercury is the hottest planet in our solar system.\nReason: Mercury is the closest planet to the Sun.',
+            options: [
+              'Both A and R are true and R is the correct explanation of A.',
+              'Both A and R are true but R is not the correct explanation of A.',
+              'A is true but R is false.',
+              'A is false but R is true.'
+            ],
+            answer: 'A is false but R is true.'
+          }
+        ]
+      }
+    }
+  },
+  // Class 8 Science (existing questions)
+  "8": {  // Class 8
+    "Science": {  // Subject
+      "midterm1": {  // Midterm 1
+        "sample1": [  // Sample Test 1 with 50 questions

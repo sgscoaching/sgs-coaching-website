@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.gstatic.com">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <meta name="description" content="SGS Coaching Institute in Patiala offers top education for classes 6-12 and competitive exams with interactive quizzes and expert tutoring.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://sgscoaching.github.io/sgs-coaching-website/Logo.png">
@@ -39,7 +45,6 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 1rem 0;
-            padding-top: env(safe-area-inset-top, 20px);
             box-shadow: 0 2px 20px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
         }
@@ -132,6 +137,7 @@
             align-items: center;
             position: relative;
             overflow: hidden;
+            padding-top: 80px; /* Add padding to account for fixed header */
         }
 
         .hero::before {
@@ -180,8 +186,21 @@
 
         .hero-buttons {
             display: flex;
-            gap: 1rem;
             flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .hero-buttons .btn-secondary {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        .hero-buttons .btn-primary {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
         }
 
         .btn-primary {
@@ -492,12 +511,125 @@
         .testimonials {
             padding: 6rem 0;
             background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+
+        .testimonials-slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonials-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            will-change: transform;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 0 15px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .testimonial-slide.active {
+            opacity: 1;
         }
 
         .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Navigation Arrows */
+        .testimonial-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-nav:hover {
+            background: #2d8cf0;
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .testimonial-nav.prev {
+            left: 0;
+        }
+
+        .testimonial-nav.next {
+            right: 0;
+        }
+
+        /* Dots Navigation */
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 10px;
+        }
+
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+
+        .testimonial-dot.active {
+            background: #2d8cf0;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-container {
+                padding: 0 40px;
+            }
+
+            .testimonial-nav {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .testimonial-card {
+                max-width: 100%;
+                margin: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonials-container {
+                padding: 0 20px;
+            }
         }
 
         .testimonial-card {
@@ -506,6 +638,11 @@
             border-radius: 16px;
             position: relative;
             border: 1px solid #e2e8f0;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
         .testimonial-card::before {
@@ -673,9 +810,6 @@
             .container {
                 padding: 0 1rem;
             }
-            .hero {
-        padding-top: 80px; /* New line to add space below nav */
-            }
         }
 
         /* Animations */
@@ -724,6 +858,7 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
+<a href="mock-test.html" target="_blank">Mock Test</a>
             </ul>
             <a href="quizzes.html" class="cta-button">Take Quiz</a>
         </div>
@@ -740,6 +875,10 @@
                         <i class="fas fa-play"></i>
                         Start Quiz Now
                     </a>
+                    <a href="mock-test.html" class="btn-secondary" style="background: #f39c12; border-color: #e67e22;">
+                        <i class="fas fa-tasks"></i>
+                        Try Mock Test
+                    </a>
                     <a href="#courses" class="btn-secondary">
                         <i class="fas fa-book"></i>
                         Explore Courses
@@ -748,29 +887,34 @@
             </div>
             <div class="hero-visual fade-in-up">
                 <div class="hero-card">
-                    <h3 style="color: white; margin-bottom: 1rem; text-align: center;">🎯 Our Success Story</h3>
+                    <h3 style="color: white; margin-bottom: 1rem; text-align: center;">🚀 Why Choose Us?</h3>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Students Taught</div>
+                            <div class="stat-number">📚</div>
+                            <div class="stat-label">Comprehensive Study Material</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Success Rate</div>
+                            <div class="stat-number">🎯</div>
+                            <div class="stat-label">Targeted Test Series</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">7</div>
-                            <div class="stat-label">Years Experience</div>
+                            <div class="stat-number">👨‍🏫</div>
+                            <div class="stat-label">Expert Faculty</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">Support</div>
+                            <div class="stat-number">💡</div>
+                            <div class="stat-label">Smart Learning</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    
+
+    
 
     <!-- Features Section -->
     <section class="features" id="features">
@@ -821,6 +965,48 @@
                     </div>
                     <h3>Digital Learning</h3>
                     <p>Access study materials and practice quizzes online anytime, anywhere with our modern digital learning platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mock Test Section -->
+    <section class="mock-test" style="background: #f9fafc; padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ace Your Competitive Exams</h2>
+                <p class="section-subtitle">Prepare with our realistic mock tests designed for SSC CGL, RRB, and other competitive exams</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+                    <div style="background: #f8f9fa; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-stopwatch" style="font-size: 1.8rem; color: #2d8cf0;"></i>
+                    </div>
+                    <h3 style="text-align: center; margin-bottom: 1rem; color: #2c3e50;">Timed Tests</h3>
+                    <p style="text-align: center; color: #64748b; line-height: 1.6; margin-bottom: 1.5rem;">Practice with time-bound tests that simulate real exam conditions to improve your speed and accuracy.</p>
+                    <a href="mock-test.html" class="btn-primary" style="display: block; text-align: center; margin: 0 auto; max-width: 180px; background: #2d8cf0; color: white; padding: 0.8rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                        Start Test <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+                <div class="feature-card" style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+                    <div style="background: #f8f9fa; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-chart-line" style="font-size: 1.8rem; color: #10b981;"></i>
+                    </div>
+                    <h3 style="text-align: center; margin-bottom: 1rem; color: #2c3e50;">Performance Analytics</h3>
+                    <p style="text-align: center; color: #64748b; line-height: 1.6; margin-bottom: 1.5rem;">Get detailed performance reports with section-wise analysis to identify your strengths and weaknesses.</p>
+                    <a href="mock-test.html" class="btn-primary" style="display: block; text-align: center; margin: 0 auto; max-width: 180px; background: #10b981; color: white; padding: 0.8rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                        View Analytics <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
+                </div>
+                <div class="feature-card" style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: all 0.3s ease;">
+                    <div style="background: #f8f9fa; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-book-open" style="font-size: 1.8rem; color: #f59e0b;"></i>
+                    </div>
+                    <h3 style="text-align: center; margin-bottom: 1rem; color: #2c3e50;">Comprehensive Solutions</h3>
+                    <p style="text-align: center; color: #64748b; line-height: 1.6; margin-bottom: 1.5rem;">Access detailed solutions and explanations for every question to enhance your understanding.</p>
+                    <a href="mock-test.html" class="btn-primary" style="display: block; text-align: center; margin: 0 auto; max-width: 180px; background: #f59e0b; color: white; padding: 0.8rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                        View Solutions <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -881,10 +1067,110 @@
                 Start Quiz Portal
             </a>
         </div>
+      <div id="quizForm"></div>
     </section>
 
     <!-- Top Rankers Section -->
     <section class="top-rankers" id="top-rankers">
+
+<script>
+  function displayHomeTopRankers() {
+    try {
+      // Check if element exists before proceeding
+      const container = document.getElementById('homeRankingsList');
+      if (!container) {
+        // Element doesn't exist, silently return
+        return;
+      }
+      
+      // Try to get rankings from localStorage with error handling
+      let rankings = [];
+      try {
+        const storedRankings = localStorage.getItem('rankings');
+        if (storedRankings) {
+          rankings = JSON.parse(storedRankings);
+        }
+      } catch (storageError) {
+        // Tracking prevention or storage access blocked - silently handle
+        console.log('Storage access blocked or unavailable:', storageError.message);
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; color: #64748b; font-style: italic;">
+            Rankings unavailable (storage access restricted).
+          </div>
+        `;
+        return;
+      }
+      
+      if(rankings.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; color: #64748b; font-style: italic;">
+            No quiz results yet! Be the first to take a quiz.
+          </div>
+        `;
+        return;
+      }
+      
+      // Sort descending by score (number), making sure score is a valid float
+      rankings = rankings.filter(r => !isNaN(parseFloat(r.score))).sort((a,b) => parseFloat(b.score) - parseFloat(a.score));
+      
+      const topRankers = rankings.slice(0, 6);
+      container.innerHTML = topRankers.map((r, i) => {
+        const colors = ['#ffd700', '#c0c0c0', '#cd7f32']; // Gold, Silver, Bronze
+        const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '🏆';
+        const borderColor = i < 3 ? colors[i] : '#2d8cf0';
+        
+        const nameWithMobile = (() => {
+          // Try to show user name, if mobile inside parentheses available
+          if (r.user && r.mobile) return `${r.user} (${r.mobile})`;
+          if (r.user) return r.user;
+          if (r.mobile) return r.mobile;
+          return "Unknown Student";
+        })();
+        
+        return `
+          <div style="
+            background: white; 
+            border-radius: 16px; 
+            box-shadow: 0 8px 32px rgba(45, 140, 240, 0.15);
+            border: 2px solid ${borderColor};
+            padding: 1.5rem;
+            color: #374151;
+            font-family: 'Inter', sans-serif;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          ">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">${medal}</div>
+            <h3 style="margin: 0; color: #2c3e50; font-weight: 700;">${nameWithMobile}</h3>
+            <div style="
+              margin-top: 0.5rem; 
+              background: linear-gradient(135deg, #2d8cf0, #1e3a8a); 
+              color: white; 
+              padding: 0.5rem 1rem; 
+              border-radius: 20px; 
+              font-weight: 600;
+              font-size: 1rem;
+              width: fit-content;
+            ">
+              Score: ${parseFloat(r.score).toFixed(2)}%
+            </div>
+            <p style="margin-top: 1rem; color: #64748b; font-size: 0.9rem;">
+              ${r.date}
+            </p>
+          </div>
+        `;
+      }).join('');
+    } catch (err) {
+      console.error('Error loading top rankers:', err);
+      const container = document.getElementById('homeRankingsList');
+      if (container) {
+        container.textContent = 'Unable to load top rankers.';
+      }
+    }
+  }
+  document.addEventListener('DOMContentLoaded', displayHomeTopRankers);
+</script>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">🏆 Top Quiz Performers</h2>
@@ -899,6 +1185,239 @@
         </div>
     </section>
 
+    <!-- Top Mock Test Performers (Live Leaderboard) -->
+    <section class="top-rankers" id="mock-leaderboard" style="background: #f8fafc; padding: 6rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🏆 Top Mock Test Performers</h2>
+                <p class="section-subtitle">Live leaderboard showcasing the best results from our mock tests</p>
+            </div>
+            <div class="rankers-grid" id="mockLeaderboardList">
+                <!-- Filled dynamically from localStorage 'quizSubmissions' -->
+            </div>
+        </div>
+        <script>
+            // Store all mock test rankers globally
+            let allMockTestRankers = [];
+            
+            async function displayMockLeaderboard() {
+                try {
+                    // Try to fetch from Google Sheets first
+                    let sheetsRankings = null;
+                    if (typeof fetchMockTestRankingsFromSheets === 'function') {
+                        try {
+                            sheetsRankings = await fetchMockTestRankingsFromSheets();
+                        } catch (e) {
+                            console.log('Could not fetch from Google Sheets, using local data:', e);
+                        }
+                    }
+                    
+                    // Get local submissions as fallback
+                    let submissions = JSON.parse(localStorage.getItem('quizSubmissions')) || [];
+                    const list = document.getElementById('mockLeaderboardList');
+                    if (!list) return;
+
+                    // Merge with Google Sheets data if available
+                    if (sheetsRankings && sheetsRankings.length > 0) {
+                        sheetsRankings.forEach(rank => {
+                            submissions.push({
+                                name: rank.name,
+                                mobile: rank.mobile,
+                                marks: rank.marks,
+                                totalQuestions: rank.totalQuestions,
+                                accuracy: rank.accuracy,
+                                timestamp: rank.timestamp
+                            });
+                        });
+                    }
+
+                    if (submissions.length === 0) {
+                        list.innerHTML = `
+                            <div style="grid-column: 1 / -1; text-align: center; color: #64748b; font-style: italic;">
+                                No mock test attempts yet. Be the first to take a mock test!
+                            </div>`;
+                        return;
+                    }
+
+                    // Sort: higher marks first, then earliest timestamp
+                    submissions.sort((a, b) => {
+                        if (b.marks !== a.marks) return b.marks - a.marks;
+                        return (a.timestamp || 0) - (b.timestamp || 0);
+                    });
+
+                    // Remove duplicates based on name + mobile + marks
+                    const seen = new Set();
+                    const unique = [];
+                    for (const s of submissions) {
+                        const key = `${s.name}_${s.mobile}_${s.marks}`;
+                        if (!seen.has(key)) {
+                            seen.add(key);
+                            unique.push({
+                                ...s,
+                                rank: unique.length + 1
+                            });
+                        }
+                    }
+
+                    // Store all rankers for "See All" functionality
+                    allMockTestRankers = unique;
+                    
+                    // Show only top 3
+                    const top3 = unique.slice(0, 3);
+                    
+                    list.innerHTML = top3.map((s, i) => {
+                        const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : '🥉';
+                        const borders = ['#ffd700', '#c0c0c0', '#cd7f32'];
+                        const borderColor = borders[i];
+                        const percent = s.totalQuestions ? ((s.marks / s.totalQuestions) * 100).toFixed(0) : s.marks;
+                        const accuracy = s.accuracy ? Math.round(s.accuracy) : percent;
+                        const name = s.name || 'Anonymous Student';
+                        return `
+                        <div class="ranker-card rank-${i+1}" style="border-color: ${borderColor};">
+                            <div style="font-size: 2rem; margin-bottom: .25rem;">${medal}</div>
+                            <h3 style="margin: 0; color: #2c3e50; font-weight: 700;">${name}</h3>
+                            <div style="margin-top: .5rem; display: inline-block; background: linear-gradient(135deg, #2d8cf0, #1e3a8a); color: #fff; padding: .4rem .9rem; border-radius: 999px; font-weight: 600;">
+                                Score: ${s.marks}/${s.totalQuestions} (${percent}%)
+                            </div>
+                            <p style="margin-top: .4rem; color: #64748b; font-size: .9rem;">Accuracy: ${accuracy}%</p>
+                        </div>`;
+                    }).join('');
+                    
+                    // Add "See All Rankers" button if there are more than 3
+                    if (unique.length > 3) {
+                        const container = list.parentElement;
+                        const seeAllBtn = document.createElement('div');
+                        seeAllBtn.style.textAlign = 'center';
+                        seeAllBtn.style.marginTop = '2rem';
+                        seeAllBtn.innerHTML = `
+                            <button onclick="showAllMockTestRankers()" style="
+                                background: linear-gradient(135deg, #2d8cf0, #1e3a8a);
+                                color: white;
+                                padding: 0.75rem 2rem;
+                                border: none;
+                                border-radius: 50px;
+                                font-weight: 600;
+                                font-size: 1rem;
+                                cursor: pointer;
+                                transition: all 0.3s ease;
+                                box-shadow: 0 4px 15px rgba(45, 140, 240, 0.3);
+                            " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 25px rgba(45, 140, 240, 0.4)';" 
+                               onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(45, 140, 240, 0.3)';">
+                                <i class="fas fa-trophy"></i> See All Rankers (${unique.length})
+                            </button>
+                        `;
+                        // Remove existing button if any
+                        const existingBtn = container.querySelector('#mockSeeAllBtn');
+                        if (existingBtn) existingBtn.remove();
+                        seeAllBtn.id = 'mockSeeAllBtn';
+                        container.appendChild(seeAllBtn);
+                    }
+                } catch (e) {
+                    console.error('Failed to load mock leaderboard', e);
+                    const list = document.getElementById('mockLeaderboardList');
+                    if (list) list.textContent = 'Unable to load mock leaderboard.';
+                }
+            }
+            
+            // Function to show all mock test rankers in a modal (make it globally accessible)
+            window.showAllMockTestRankers = function() {
+                if (allMockTestRankers.length === 0) return;
+                
+                const modal = document.createElement('div');
+                modal.id = 'allMockRankersModal';
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.7);
+                    z-index: 10000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    overflow-y: auto;
+                `;
+                
+                const modalContent = document.createElement('div');
+                modalContent.style.cssText = `
+                    background: white;
+                    border-radius: 20px;
+                    padding: 2rem;
+                    max-width: 900px;
+                    width: 100%;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                    position: relative;
+                `;
+                
+                modalContent.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h2 style="margin: 0; color: #2c3e50; font-size: 2rem;">
+                            <i class="fas fa-trophy"></i> All Mock Test Rankers
+                        </h2>
+                        <button onclick="document.getElementById('allMockRankersModal').remove()" style="
+                            background: #ef4444;
+                            color: white;
+                            border: none;
+                            border-radius: 50%;
+                            width: 40px;
+                            height: 40px;
+                            font-size: 1.5rem;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        ">&times;</button>
+                    </div>
+                    <div class="rankers-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
+                        ${allMockTestRankers.map((s, index) => {
+                            const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
+                            const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '🏅';
+                            const borderColor = index < 3 ? (index === 0 ? '#ffd700' : index === 1 ? '#c0c0c0' : '#cd7f32') : '#e2e8f0';
+                            const percent = s.totalQuestions ? ((s.marks / s.totalQuestions) * 100).toFixed(0) : s.marks;
+                            const accuracy = s.accuracy ? Math.round(s.accuracy) : percent;
+                            const name = s.name || 'Anonymous Student';
+                            return `
+                                <div class="ranker-card ${rankClass}" style="
+                                    background: white;
+                                    padding: 1.5rem;
+                                    border-radius: 16px;
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                                    text-align: center;
+                                    border: 2px solid ${borderColor};
+                                ">
+                                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">${medal}</div>
+                                    <h3 style="margin: 0; color: #2c3e50; font-weight: 700; font-size: 1.1rem;">${name}</h3>
+                                    <div style="margin-top: 0.5rem; display: inline-block; background: linear-gradient(135deg, #2d8cf0, #1e3a8a); color: #fff; padding: 0.4rem 0.9rem; border-radius: 999px; font-weight: 600;">
+                                        Rank #${s.rank}
+                                    </div>
+                                    <div style="margin-top: 0.5rem; display: inline-block; background: linear-gradient(135deg, #10b981, #059669); color: #fff; padding: 0.4rem 0.9rem; border-radius: 999px; font-weight: 600; font-size: 0.9rem;">
+                                        Score: ${s.marks}/${s.totalQuestions} (${percent}%)
+                                    </div>
+                                    <p style="margin-top: 0.5rem; color: #64748b; font-size: 0.9rem;">Accuracy: ${accuracy}%</p>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+                
+                modal.appendChild(modalContent);
+                document.body.appendChild(modal);
+                
+                // Close on outside click
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.remove();
+                    }
+                });
+            }
+            
+            document.addEventListener('DOMContentLoaded', displayMockLeaderboard);
+        </script>
+    </section>
+
     <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
         <div class="container">
@@ -906,85 +1425,129 @@
                 <h2 class="section-title">What Our Students Say</h2>
                 <p class="section-subtitle">Real success stories from our students who achieved their dreams with SGS Coaching.</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">SGS Coaching transformed my understanding of Physics and Mathematics. The teachers explain complex concepts so clearly that even difficult topics become easy to understand.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">AK</div>
-                        <div class="author-info">
-                            <h4>Arjun Kumar</h4>
-                            <p>Class 12 Student • 92% in Boards</p>
-                        </div>
+            <div class="testimonials-container">
+                <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-slider">
+                    <div class="testimonials-track">
+                        <!-- Slides will be dynamically inserted here by JavaScript -->
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">The quiz system here is amazing! It helped me identify my weak areas and improve them systematically. I secured first rank in SSC CHSL thanks to their guidance.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">PS</div>
-                        <div class="author-info">
-                            <h4>Priya Sharma</h4>
-                            <p>SSC CHSL Qualifier • Rank 1</p>
-                        </div>
-                    </div>
+                <button class="testimonial-nav next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <!-- Dots will be dynamically inserted here by JavaScript -->
                 </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">Small batch sizes meant I got personal attention from teachers. They helped me overcome my fear of Mathematics and now it's my favorite subject!</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RG</div>
-                        <div class="author-info">
-                            <h4>Rahul Gupta</h4>
-                            <p>Class 10 Student • 95% in Maths</p>
-                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Review Section -->
+    <section class="add-review" style="background: #f8fafc; padding: 4rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Share Your Experience</h2>
+                <p class="section-subtitle">We'd love to hear about your learning journey with us!</p>
+            </div>
+            <div class="review-form-container" style="max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <form id="reviewForm" style="display: grid; gap: 1.5rem;">
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="reviewerName" style="font-weight: 500; color: #2c3e50;">Your Name</label>
+                        <input type="text" id="reviewerName" required 
+                               style="padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 1rem;"
+                               placeholder="Enter your name">
                     </div>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="reviewerClass" style="font-weight: 500; color: #2c3e50;">Your Class/Exam</label>
+                        <input type="text" id="reviewerClass" required 
+                               style="padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 1rem;"
+                               placeholder="E.g., Class 10, SSC CGL, etc.">
+                    </div>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label style="font-weight: 500; color: #2c3e50; margin-bottom: 0.5rem;">Your Rating</label>
+                        <div class="star-rating" style="display: flex; gap: 0.5rem; justify-content: center; margin: 0.5rem 0;">
+                            <span class="star" data-rating="1" style="font-size: 1.8rem; color: #e2e8f0; cursor: pointer; transition: color 0.2s; user-select: none;">★</span>
+                            <span class="star" data-rating="2" style="font-size: 1.8rem; color: #e2e8f0; cursor: pointer; transition: color 0.2s; user-select: none;">★</span>
+                            <span class="star" data-rating="3" style="font-size: 1.8rem; color: #e2e8f0; cursor: pointer; transition: color 0.2s; user-select: none;">★</span>
+                            <span class="star" data-rating="4" style="font-size: 1.8rem; color: #e2e8f0; cursor: pointer; transition: color 0.2s; user-select: none;">★</span>
+                            <span class="star" data-rating="5" style="font-size: 1.8rem; color: #e2e8f0; cursor: pointer; transition: color 0.2s; user-select: none;">★</span>
+                        </div>
+                        <input type="hidden" id="reviewRating" name="rating" value="0" required>
+                        <p id="ratingError" style="color: #e53e3e; font-size: 0.85rem; margin: 0.25rem 0 0; text-align: center; display: none;">Please select a rating</p>
+                    </div>
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label for="reviewText" style="font-weight: 500; color: #2c3e50;">Your Review</label>
+                        <textarea id="reviewText" rows="4" required 
+                                 style="padding: 0.75rem 1rem; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 1rem; resize: vertical; min-height: 120px;"
+                                 placeholder="Share your experience with SGS Coaching..."></textarea>
+                    </div>
+                    <div style="display: flex; justify-content: center; margin-top: 1rem;">
+                        <button type="submit" style="background: linear-gradient(135deg, #2d8cf0, #1e3a8a); color: white; border: none; padding: 0.75rem 2rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;"
+                                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 15px rgba(45, 140, 240, 0.4)';"
+                                onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                            Submit Review
+                        </button>
+                    </div>
+                </form>
+                <div id="formSuccess" style="display: none; text-align: center; margin-top: 1.5rem; padding: 1rem; background: #e3f9e5; color: #0a5c36; border-radius: 8px;">
+                    <p style="margin: 0;">Thank you for your review! It will be displayed after page refresh.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="container">
-        <h2 class="section-title" style="color: white;">Get In Touch With Us</h2>
-        <p style="margin-bottom: 2rem;">Ready to start your learning journey? Contact us today!</p>
-        
-        <div class="contact-content">
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get In Touch With Us</h2>
+            <p style="margin-bottom: 2rem;">Ready to start your learning journey? Contact us today!</p>
+            
+            <div class="contact-content">
+                <div class="contact-item">
+                    <a href="tel:+918580436681" style="text-decoration: none; color: inherit;">
+                        <div class="contact-icon" style="cursor: pointer;" title="Click to call">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    </a>
+                    <h3>Call Us</h3>
+                    <p>
+                        <a href="tel:+918580436681" style="color: white; text-decoration: none; font-size: 1.1rem; font-weight: 500;">
+                            +91 8580436681
+                        </a>
+                        <br>Available 9 AM - 8 PM
+                    </p>
                 </div>
-                <h3>Visit Us</h3>
-                <p><a href="https://www.google.com/maps/place/29,+Bajwa+Colony,+Gur+Baksh+Colony,+Patiala,+Punjab+147003/@30.3524241,76.423491,20.99z/data=!4m6!3m5!1s0x3910286fa437cc23:0xab465f02f999b58e!8m2!3d30.3525609!4d76.4235537!16s%2Fg%2F11hht471r_?authuser=0&entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: white; text-decoration: none;">29, Bajwa Colony, Gur Baksh Colony, Patiala, Punjab 147003</a></p>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
+                <div class="contact-item">
+                    <a href="mailto:sgscoaching0202@gmail.com" style="text-decoration: none; color: inherit;">
+                        <div class="contact-icon" style="cursor: pointer;" title="Click to email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    </a>
+                    <h3>Email Us</h3>
+                    <p>
+                        <a href="mailto:sgscoaching0202@gmail.com" style="color: white; text-decoration: none; font-size: 1rem;">
+                            sgscoaching0202@gmail.com
+                        </a>
+                        <br>Quick response guaranteed
+                    </p>
                 </div>
-                <h3>Call Us</h3>
-                <p><a href="tel:+918580436681" style="color: white; text-decoration: none;">+91 8580436681</a><br>Available 9 AM - 8 PM</p>
             </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <h3>Email Us</h3>
-                <p><a href="mailto:sgscoaching0202@gmail.com" style="color: white; text-decoration: none;">sgscoaching0202@gmail.com</a><br>Quick response guaranteed</p>
-            </div>
-        </div>
 
-        <div class="social-links">
-            <a href="https://chat.whatsapp.com/EmrgBj6r1duEFXn1vrzCOV" target="_blank" class="social-btn whatsapp" title="Join WhatsApp Group">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.instagram.com/sgscoaching0202?igsh=cXd4a2xsd3R0b2gz" target="_blank" class="social-btn instagram" title="Follow on Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/share/16ujgN5h93/" target="_blank" class="social-btn facebook" title="Follow Us">
-                <i class="fab fa-facebook-f"></i>
-            </a>
+            <div class="social-links">
+                <a href="https://chat.whatsapp.com/EmrgBj6r1duEFXn1vrzCOV" target="_blank" class="social-btn whatsapp" title="Join WhatsApp Group">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/sgscoaching0202?igsh=cXd4a2xsd3R0b2gz" target="_blank" class="social-btn instagram" title="Follow on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.instagram.com/sgscoaching0202/" target="_blank" class="social-btn facebook" title="Follow Us">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -993,18 +1556,116 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script>
-        // Top Rankers Display Function
-        function displayTopRankers() {
+        // Handles scrolling to anchor links from other pages after dynamic content has loaded
+        window.addEventListener('load', () => { // Use 'load' to wait for all resources
+            // Use a timeout to ensure scripts like leaderboard rendering have completed
+            setTimeout(() => {
+                if (window.location.hash) {
+                    const targetId = window.location.hash;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        console.log('Anchor found, scrolling to:', targetId);
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                        console.warn('Anchor target not found after delay:', targetId);
+                    }
+                }
+            }, 500); // Increased delay to 500ms for more reliability
+        });
+    </script>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDKMKifbh7XKmD6kqoUpHd0wuPccbYsaZM",
+    authDomain: "sgs-quiz-portal.firebaseapp.com",
+    projectId: "sgs-quiz-portal",
+    storageBucket: "sgs-quiz-portal.firebasestorage.app",
+    messagingSenderId: "534812750253",
+    appId: "1:534812750253:web:b0130fd726db348136b124",
+    measurementId: "G-DF2RF7562J"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+  const auth = firebase.auth();
+</script>
+<script src="google-sheets-api.js" defer></script>
+<script src="script.js" defer></script>
+    <script>
+        // Scroll to top on page load
+        (function() {
+            // Function to force scroll to top
+            function scrollToTop() {
+                // For modern browsers
+                if (window.scrollTo) {
+                    window.scrollTo(0, 0);
+                }
+                
+                // For older browsers
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+                
+                // Extra scroll for good measure
+                window.scroll(0, 0);
+            }
+            
+            // Run on page load
+            scrollToTop();
+            
+            // Run after a short delay to catch any late-loading content
+            setTimeout(scrollToTop, 100);
+            
+            // Run again when the page is fully loaded
+            window.addEventListener('load', scrollToTop);
+            
+            // Also scroll to top when the page is shown from bfcache (back/forward)
+            window.addEventListener('pageshow', function(event) {
+                if (event.persisted) {
+                    scrollToTop();
+                }
+            });
+            
+            // Add a small delay and scroll one more time
+            setTimeout(scrollToTop, 500);
+        })();
+    </script>
+    <script>
+        // Store all rankers globally for "See All" functionality
+        let allQuizRankers = [];
+        
+        // Top Rankers Display Function (Updated to use Google Sheets)
+        async function displayTopRankers() {
             const rankersContainer = document.getElementById('rankersContainer');
             const loadingElement = document.getElementById('loadingRankers');
             
+            // Hide loading element immediately
+            if (loadingElement) {
+                loadingElement.style.display = 'none';
+            }
+            
             try {
+                // Try to fetch from Google Sheets first
+                let sheetsRankings = null;
+                if (typeof fetchQuizRankingsFromSheets === 'function') {
+                    try {
+                        sheetsRankings = await fetchQuizRankingsFromSheets();
+                    } catch (e) {
+                        console.log('Could not fetch from Google Sheets, using local data:', e);
+                    }
+                }
+                
+                // Get local results as fallback
                 const quizResults = JSON.parse(localStorage.getItem('quizResults') || '{}');
                 let allResults = [];
                 
-                // Collect all quiz results
+                // Collect all quiz results from localStorage
                 for (const quizKey in quizResults) {
                     const results = quizResults[quizKey];
                     results.forEach(result => {
@@ -1012,12 +1673,29 @@
                         allResults.push({
                             ...result,
                             percentage: percentage,
-                            quizName: quizKey.split('_')[0]
+                            quizName: quizKey.split('_')[0],
+                            time: result.time || result.timeTaken || 0
+                        });
+                    });
+                }
+                
+                // Merge with Google Sheets data if available
+                if (sheetsRankings && sheetsRankings.length > 0) {
+                    sheetsRankings.forEach(rank => {
+                        allResults.push({
+                            name: rank.name,
+                            mobile: rank.mobile,
+                            score: rank.score,
+                            total: rank.totalQuestions,
+                            percentage: rank.percentage,
+                            time: rank.timeTaken,
+                            quizName: rank.quizTitle || 'Quiz'
                         });
                     });
                 }
                 
                 if (allResults.length === 0) {
+                    if (rankersContainer) {
                     rankersContainer.innerHTML = `
                         <div style="text-align: center; padding: 40px; color: #64748b;">
                             <i class="fas fa-trophy" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;"></i>
@@ -1026,34 +1704,45 @@
                             <a href="quizzes.html" class="btn-primary" style="margin-top: 1rem;">Take First Quiz</a>
                         </div>
                     `;
+                    }
+                    if (loadingElement) loadingElement.style.display = 'none';
                     return;
                 }
                 
                 // Sort by percentage (desc), then by time (asc)
                 allResults.sort((a, b) => {
                     if (b.percentage !== a.percentage) return b.percentage - a.percentage;
-                    return a.time - b.time;
+                    return (a.time || 0) - (b.time || 0);
                 });
                 
-                // Get top 6 unique students
+                // Get all unique students (store globally)
                 const uniqueStudents = [];
                 const seenStudents = new Set();
                 
                 allResults.forEach(result => {
                     const studentKey = `${result.name}_${result.mobile}`;
-                    if (!seenStudents.has(studentKey) && uniqueStudents.length < 6) {
+                    if (!seenStudents.has(studentKey)) {
                         seenStudents.add(studentKey);
-                        uniqueStudents.push(result);
+                        uniqueStudents.push({
+                            ...result,
+                            rank: uniqueStudents.length + 1
+                        });
                     }
                 });
+                
+                // Store all rankers for "See All" functionality
+                allQuizRankers = uniqueStudents;
+                
+                // Show only top 3
+                const top3Rankers = uniqueStudents.slice(0, 3);
                 
                 // Create rankers grid
                 const rankersGrid = document.createElement('div');
                 rankersGrid.className = 'rankers-grid';
                 
-                uniqueStudents.forEach((result, index) => {
-                    const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
-                    const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '🏆';
+                top3Rankers.forEach((result, index) => {
+                    const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : 'rank-3';
+                    const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : '🥉';
                     
                     const rankerCard = document.createElement('div');
                     rankerCard.className = `ranker-card ${rankClass}`;
@@ -1061,23 +1750,57 @@
                         <div style="font-size: 2rem; margin-bottom: 0.5rem;">${medal}</div>
                         <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">${result.name}</h3>
                         <div style="background: linear-gradient(135deg, #2d8cf0, #1e3a8a); color: white; padding: 0.5rem 1rem; border-radius: 20px; margin-bottom: 1rem; font-weight: 600;">
-                            Rank #${index + 1}
+                            Rank #${result.rank}
                         </div>
                         <p style="color: #64748b; margin-bottom: 0.5rem;">
                             <strong>${result.percentage}%</strong> in ${result.quizName}
                         </p>
                         <p style="color: #64748b; font-size: 0.9rem;">
-                            Time: ${Math.floor(result.time/60)}:${(result.time%60).toString().padStart(2,'0')}
+                            Time: ${Math.floor((result.time || 0)/60)}:${((result.time || 0)%60).toString().padStart(2,'0')}
                         </p>
                     `;
                     rankersGrid.appendChild(rankerCard);
                 });
                 
+                if (rankersContainer) {
                 rankersContainer.innerHTML = '';
                 rankersContainer.appendChild(rankersGrid);
+                }
+                
+                // Hide loading element
+                if (loadingElement) {
+                    loadingElement.style.display = 'none';
+                }
+                
+                // Add "See All Rankers" button if there are more than 3
+                if (uniqueStudents.length > 3) {
+                    const seeAllBtn = document.createElement('div');
+                    seeAllBtn.style.textAlign = 'center';
+                    seeAllBtn.style.marginTop = '2rem';
+                    seeAllBtn.innerHTML = `
+                        <button onclick="showAllQuizRankers()" style="
+                            background: linear-gradient(135deg, #2d8cf0, #1e3a8a);
+                            color: white;
+                            padding: 0.75rem 2rem;
+                            border: none;
+                            border-radius: 50px;
+                            font-weight: 600;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 4px 15px rgba(45, 140, 240, 0.3);
+                        " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 25px rgba(45, 140, 240, 0.4)';" 
+                           onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(45, 140, 240, 0.3)';">
+                            <i class="fas fa-trophy"></i> See All Rankers (${uniqueStudents.length})
+                        </button>
+                    `;
+                    rankersContainer.appendChild(seeAllBtn);
+                }
                 
             } catch (error) {
                 console.error('Error displaying top rankers:', error);
+                if (loadingElement) loadingElement.style.display = 'none';
+                if (rankersContainer) {
                 rankersContainer.innerHTML = `
                     <div style="text-align: center; padding: 40px; color: #64748b;">
                         <p>Unable to load rankings. Take a quiz to see results!</p>
@@ -1085,6 +1808,100 @@
                     </div>
                 `;
             }
+            }
+        }
+        
+        // Function to show all quiz rankers in a modal (make it globally accessible)
+        window.showAllQuizRankers = function() {
+            if (allQuizRankers.length === 0) return;
+            
+            const modal = document.createElement('div');
+            modal.id = 'allRankersModal';
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                overflow-y: auto;
+            `;
+            
+            const modalContent = document.createElement('div');
+            modalContent.style.cssText = `
+                background: white;
+                border-radius: 20px;
+                padding: 2rem;
+                max-width: 900px;
+                width: 100%;
+                max-height: 90vh;
+                overflow-y: auto;
+                position: relative;
+            `;
+            
+            modalContent.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                    <h2 style="margin: 0; color: #2c3e50; font-size: 2rem;">
+                        <i class="fas fa-trophy"></i> All Quiz Rankers
+                    </h2>
+                    <button onclick="document.getElementById('allRankersModal').remove()" style="
+                        background: #ef4444;
+                        color: white;
+                        border: none;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    ">&times;</button>
+                </div>
+                <div class="rankers-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem;">
+                    ${allQuizRankers.map((result, index) => {
+                        const rankClass = index === 0 ? 'rank-1' : index === 1 ? 'rank-2' : index === 2 ? 'rank-3' : '';
+                        const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '🏆';
+                        return `
+                            <div class="ranker-card ${rankClass}" style="
+                                background: white;
+                                padding: 1.5rem;
+                                border-radius: 16px;
+                                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                                text-align: center;
+                                border: 2px solid ${index < 3 ? (index === 0 ? '#ffd700' : index === 1 ? '#c0c0c0' : '#cd7f32') : '#e2e8f0'};
+                            ">
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">${medal}</div>
+                                <h3 style="color: #2c3e50; margin-bottom: 0.5rem; font-size: 1.1rem;">${result.name}</h3>
+                                <div style="background: linear-gradient(135deg, #2d8cf0, #1e3a8a); color: white; padding: 0.5rem 1rem; border-radius: 20px; margin-bottom: 1rem; font-weight: 600; display: inline-block;">
+                                    Rank #${result.rank}
+                                </div>
+                                <p style="color: #64748b; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                                    <strong>${result.percentage}%</strong> in ${result.quizName}
+                                </p>
+                                <p style="color: #64748b; font-size: 0.85rem;">
+                                    Time: ${Math.floor((result.time || 0)/60)}:${((result.time || 0)%60).toString().padStart(2,'0')}
+                                </p>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+            
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+            
+            // Close on outside click
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.remove();
+                }
+            });
         }
 
         // Smooth scrolling for navigation links
@@ -1101,9 +1918,702 @@
             });
         });
 
+        // Star rating functionality
+        function initializeStarRating() {
+            const stars = document.querySelectorAll('.star');
+            const ratingInput = document.getElementById('reviewRating');
+            const ratingError = document.getElementById('ratingError');
+            let currentRating = 0;
+            
+            // Set initial state
+            function updateStars(rating) {
+                stars.forEach(star => {
+                    const starRating = parseInt(star.getAttribute('data-rating'));
+                    if (starRating <= rating) {
+                        star.style.color = '#FFD700';
+                        star.style.textShadow = '0 0 5px rgba(255, 215, 0, 0.5)';
+                    } else {
+                        star.style.color = '#e2e8f0';
+                        star.style.textShadow = 'none';
+                    }
+                });
+                
+                // Update hidden input
+                ratingInput.value = rating;
+                currentRating = rating;
+                
+                // Hide error if rating is selected
+                if (rating > 0 && ratingError) {
+                    ratingError.style.display = 'none';
+                }
+            }
+            
+            // Add event listeners
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const rating = parseInt(star.getAttribute('data-rating'));
+                    updateStars(rating);
+                });
+                
+                star.addEventListener('mouseover', (e) => {
+                    const rating = parseInt(e.target.getAttribute('data-rating'));
+                    stars.forEach(s => {
+                        const sRating = parseInt(s.getAttribute('data-rating'));
+                        if (sRating <= rating) {
+                            s.style.color = '#FFD700';
+                            s.style.transform = 'scale(1.1)';
+                        }
+                    });
+                });
+                
+                star.addEventListener('mouseout', () => {
+                    updateStars(currentRating);
+                });
+            });
+            
+            // Return validation function
+            return function validateRating() {
+                const isValid = currentRating > 0;
+                if (!isValid && ratingError) {
+                    ratingError.style.display = 'block';
+                }
+                return isValid;
+            };
+        }
+        
+        // Function to get star rating display
+        function getStarRating(rating) {
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            let stars = '';
+            
+            for (let i = 1; i <= 5; i++) {
+                if (i <= fullStars) {
+                    stars += '★';
+                } else if (i === fullStars + 1 && hasHalfStar) {
+                    stars += '½';
+                } else {
+                    stars += '☆';
+                }
+            }
+            
+            return `<span style="color: #FFD700; letter-spacing: 2px; font-size: 1.2em;">${stars}</span>`;
+        }
+
+        // Function to save review to localStorage and Google Sheets
+        async function saveReview(review) {
+            try {
+                // Generate initials from name
+                const nameParts = review.name.trim().split(' ');
+                review.initials = nameParts.length > 1 ? 
+                    (nameParts[0].charAt(0) + nameParts[nameParts.length - 1].charAt(0)).toUpperCase() :
+                    nameParts[0].substring(0, 2).toUpperCase();
+                
+                // Add timestamp to the review
+                review.timestamp = new Date().getTime();
+                
+                // Save to Google Sheets
+                if (typeof saveReviewToSheets === 'function') {
+                    await saveReviewToSheets(review);
+                }
+                
+                // Also save to localStorage as backup
+                let reviews = [];
+                const storedReviews = localStorage.getItem('studentReviews');
+                if (storedReviews) {
+                    reviews = JSON.parse(storedReviews);
+                    // Filter out any default testimonials when adding a new review
+                    reviews = reviews.filter(r => !r.isDefault);
+                }
+                
+                // Add to the beginning of the array (newest first)
+                reviews.unshift(review);
+                
+                // Combine with default testimonials (excluding any that might have been added before)
+                const defaultReviews = defaultTestimonials.filter(dt => 
+                    !reviews.some(r => r.text === dt.text) // Only add default if not already in reviews
+                );
+                
+                const allReviews = [...reviews, ...defaultReviews];
+                
+                // Save back to localStorage
+                localStorage.setItem('studentReviews', JSON.stringify(allReviews));
+                return true;
+            } catch (e) {
+                console.error('Error saving review:', e);
+                return false;
+            }
+        }
+
+        // Testimonial Slider Functionality
+        function initTestimonialSlider() {
+            const slider = document.querySelector('.testimonials-slider');
+            const track = document.querySelector('.testimonials-track');
+            const prevBtn = document.querySelector('.testimonial-nav.prev');
+            const nextBtn = document.querySelector('.testimonial-nav.next');
+            const dotsContainer = document.querySelector('.testimonial-dots');
+            
+            if (!slider || !track) return;
+            
+            let currentSlide = 0;
+            let slidesPerView = 1; // Show one review at a time
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+            let animationID;
+            let slideInterval;
+            const slideDuration = 4000; // 4 seconds per slide for better engagement
+            
+            // Always show one slide at a time
+            function setSlidesPerView() {
+                slidesPerView = 1;
+                updateSliderPosition();
+                startAutoSlide(); // Ensure auto-slide starts when view is set
+            }
+            
+            // Create testimonial slide HTML
+            function createSlideHTML(testimonial) {
+                return `
+                    <div class="testimonial-card" style="height: 100%;">
+                        <div style="margin-bottom: 0.5rem; min-height: 24px;">
+                            ${testimonial.rating ? getStarRating(testimonial.rating) + 
+                            '<span style="color: #64748b; font-size: 0.9em; margin-left: 8px; vertical-align: middle;">' + 
+                            testimonial.rating.toFixed(1) + '</span>' : ''}
+                        </div>
+                        <p class="testimonial-text">${testimonial.text}</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">${testimonial.initials}</div>
+                            <div class="author-info">
+                                <h4>${testimonial.name}</h4>
+                                <p>${testimonial.class}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Create slides from reviews
+            function createSlides(reviews) {
+                track.innerHTML = '';
+                dotsContainer.innerHTML = '';
+                
+                if (reviews.length === 0) {
+                    reviews = [
+                        {
+                            name: 'Arjun Kumar',
+                            class: 'Class 12 Student • 92% in Boards',
+                            text: 'SGS Coaching transformed my understanding of Physics and Mathematics. The teachers explain complex concepts so clearly that even difficult topics become easy to understand.',
+                            initials: 'AK',
+                            rating: 4.8
+                        },
+                        {
+                            name: 'Priya Sharma',
+                            class: 'SSC CHSL Qualifier • Rank 1',
+                            text: 'The quiz system here is amazing! It helped me identify my weak areas and improve them systematically. I secured first rank in SSC CHSL thanks to their guidance.',
+                            initials: 'PS',
+                            rating: 5.0
+                        },
+                        {
+                            name: 'Rahul Gupta',
+                            class: 'Class 10 Student • 95% in Maths',
+                            text: 'Small batch sizes meant I got personal attention from teachers. They helped me overcome my fear of Mathematics and now it\'s my favorite subject!',
+                            initials: 'RG',
+                            rating: 4.9
+                        },
+                        {
+                            name: 'Ananya Patel',
+                            class: 'JEE Advanced • AIR 342',
+                            text: 'The study material and test series at SGS are top-notch. Regular mock tests helped me manage time effectively during the actual JEE Advanced exam.',
+                            initials: 'AP',
+                            rating: 4.9
+                        },
+                        {
+                            name: 'Vikram Singh',
+                            class: 'NEET Aspirant • 680/720',
+                            text: 'Biology faculty is exceptional here. Their teaching methods made learning complex biological processes so much easier. Highly recommended for NEET preparation!',
+                            initials: 'VS',
+                            rating: 4.7
+                        },
+                        {
+                            name: 'Meera Desai',
+                            class: 'Class 9 Student • 98% in SA1',
+                            text: 'The foundation courses are excellent. I was weak in Science, but after joining SGS, I\'ve developed a strong conceptual understanding.',
+                            initials: 'MD',
+                            rating: 4.8
+                        },
+                        {
+                            name: 'Rohit Malhotra',
+                            class: 'SSC CGL • Selected as Tax Assistant',
+                            text: 'Quantitative Aptitude classes are the best! Cleared SSC CGL in first attempt with good rank. Thank you SGS team for your guidance and support.',
+                            initials: 'RM',
+                            rating: 5.0
+                        },
+                        {
+                            name: 'Neha Verma',
+                            class: 'Class 11 Science • Improved by 35%',
+                            text: 'The way they teach Chemistry makes it so interesting. I used to hate the subject, but now it\'s my strongest subject!',
+                            initials: 'NV',
+                            rating: 4.6
+                        },
+                        {
+                            name: 'Amit Joshi',
+                            class: 'Bank PO • Selected in SBI',
+                            text: 'The reasoning and English faculty are exceptional. Their shortcuts and tricks saved me a lot of time during the exam. Grateful for their guidance!',
+                            initials: 'AJ',
+                            rating: 4.9
+                        },
+                        {
+                            name: 'Sneha Iyer',
+                            class: 'Class 10 Student • 97% in Boards',
+                            text: 'The board exam preparation strategy was perfect. Regular tests and doubt-solving sessions helped me score above 95 in all subjects. Thank you SGS!',
+                            initials: 'SI',
+                            rating: 5.0
+                        }
+                    ];
+                }
+                
+                // Create one slide per review
+                const slides = [];
+                reviews.forEach((review, index) => {
+                    const slideHTML = `
+                        <div class="testimonial-slide ${index === 0 ? 'active' : ''}" style="width: 100%;">
+                            ${createSlideHTML(review)}
+                        </div>
+                    `;
+                    slides.push(slideHTML);
+                    
+                    // Create dot for this slide
+                    const dot = document.createElement('button');
+                    dot.className = `testimonial-dot ${index === 0 ? 'active' : ''}`;
+                    dot.setAttribute('data-index', index);
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+                });
+                
+                track.innerHTML = slides.join('');
+                setSlidesPerView();
+                startAutoSlide();
+            }
+            
+            // Update slider position with smooth transition
+            function updateSliderPosition() {
+                track.style.transition = 'transform 0.5s ease-in-out';
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                // Update active dots
+                const dots = document.querySelectorAll('.testimonial-dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Update slide classes
+                const slides = document.querySelectorAll('.testimonial-slide');
+                slides.forEach((slide, index) => {
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+                
+                // Reset transition after animation completes
+                setTimeout(() => {
+                    track.style.transition = 'transform 0.5s ease-in-out';
+                }, 500);
+            }
+            
+            // Go to specific slide
+            function goToSlide(slideIndex) {
+                const slides = document.querySelectorAll('.testimonial-slide');
+                if (slideIndex < 0) {
+                    currentSlide = slides.length - 1;
+                } else if (slideIndex >= slides.length) {
+                    currentSlide = 0;
+                } else {
+                    currentSlide = slideIndex;
+                }
+                updateSliderPosition();
+                resetAutoSlide();
+            }
+            
+            // Navigate to next/previous slide
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+            
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+            
+            // Auto slide functionality with smooth transitions
+            function startAutoSlide() {
+                stopAutoSlide();
+                slideInterval = setInterval(() => {
+                    nextSlide();
+                }, slideDuration);
+                
+                // Add animation class for smooth transition
+                track.style.transition = 'transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
+            }
+            
+            function stopAutoSlide() {
+                if (slideInterval) {
+                    clearInterval(slideInterval);
+                }
+            }
+            
+            function resetAutoSlide() {
+                stopAutoSlide();
+                startAutoSlide();
+            }
+            
+            // Touch event handlers for swipe
+            function touchStart(index) {
+                return function(e) {
+                    isDragging = true;
+                    startPos = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+                    prevTranslate = currentTranslate;
+                    track.style.transition = 'none';
+                    cancelAnimationFrame(animationID);
+                    stopAutoSlide();
+                };
+            }
+            
+            function touchMove(e) {
+                if (!isDragging) return;
+                const currentPosition = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+                const diff = currentPosition - startPos;
+                currentTranslate = prevTranslate + diff;
+                track.style.transform = `translateX(calc(-${currentSlide * 100}% + ${diff}px))`;
+            }
+            
+            function touchEnd() {
+                if (!isDragging) return;
+                isDragging = false;
+                track.style.transition = 'transform 0.3s ease-in-out';
+                
+                const movedBy = currentTranslate - prevTranslate;
+                if (Math.abs(movedBy) > 50) {
+                    if (movedBy > 0) {
+                        prevSlide();
+                    } else {
+                        nextSlide();
+                    }
+                } else {
+                    updateSliderPosition();
+                }
+                
+                startAutoSlide();
+            }
+            
+            // Event listeners
+            if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+            if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+            
+            // Touch events for mobile
+            track.addEventListener('touchstart', touchStart(), { passive: true });
+            track.addEventListener('touchmove', touchMove, { passive: false });
+            track.addEventListener('touchend', touchEnd);
+            
+            // Mouse events for desktop
+            track.addEventListener('mousedown', touchStart());
+            window.addEventListener('mousemove', touchMove);
+            window.addEventListener('mouseup', touchEnd);
+            
+            // Handle window resize
+            window.addEventListener('resize', setSlidesPerView);
+            
+            // Pause auto-slide on hover
+            slider.addEventListener('mouseenter', stopAutoSlide);
+            slider.addEventListener('mouseleave', startAutoSlide);
+            
+            // Initialize with empty array, will be populated by loadReviews
+            return {
+                createSlides,
+                nextSlide,
+                prevSlide,
+                goToSlide
+            };
+        }
+        
+        // Initialize the slider (global variable)
+        let testimonialSlider = null;
+        
+        // Default testimonials data
+        const defaultTestimonials = [
+            {
+                name: 'Arjun Kumar',
+                class: 'Class 12 Student • 92% in Boards',
+                text: 'SGS Coaching transformed my understanding of Physics and Mathematics. The teachers explain complex concepts so clearly that even difficult topics become easy to understand.',
+                initials: 'AK',
+                rating: 4.8,
+                timestamp: new Date('2023-01-15').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Priya Sharma',
+                class: 'SSC CHSL Qualifier • Rank 1',
+                text: 'The quiz system here is amazing! It helped me identify my weak areas and improve them systematically. I secured first rank in SSC CHSL thanks to their guidance.',
+                initials: 'PS',
+                rating: 5.0,
+                timestamp: new Date('2023-02-20').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Rahul Gupta',
+                class: 'Class 10 Student • 95% in Maths',
+                text: 'Small batch sizes meant I got personal attention from teachers. They helped me overcome my fear of Mathematics and now it\'s my favorite subject!',
+                initials: 'RG',
+                rating: 4.9,
+                timestamp: new Date('2023-03-05').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Ananya Patel',
+                class: 'JEE Advanced • AIR 342',
+                text: 'The study material and test series at SGS are top-notch. Regular mock tests helped me manage time effectively during the actual JEE Advanced exam.',
+                initials: 'AP',
+                rating: 4.9,
+                timestamp: new Date('2023-01-28').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Vikram Singh',
+                class: 'NEET Aspirant • 680/720',
+                text: 'Biology faculty is exceptional here. Their teaching methods made learning complex biological processes so much easier. Highly recommended for NEET preparation!',
+                initials: 'VS',
+                rating: 4.7,
+                timestamp: new Date('2023-02-10').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Meera Desai',
+                class: 'Class 9 Student • 98% in SA1',
+                text: 'The foundation courses are excellent. I was weak in Science, but after joining SGS, I\'ve developed a strong conceptual understanding.',
+                initials: 'MD',
+                rating: 4.8,
+                timestamp: new Date('2023-03-15').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Rohit Malhotra',
+                class: 'SSC CGL • Selected as Tax Assistant',
+                text: 'Quantitative Aptitude classes are the best! Cleared SSC CGL in first attempt with good rank. Thank you SGS team for your guidance and support.',
+                initials: 'RM',
+                rating: 5.0,
+                timestamp: new Date('2023-02-28').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Neha Verma',
+                class: 'Class 11 Science • Improved by 35%',
+                text: 'The way they teach Chemistry makes it so interesting. I used to hate the subject, but now it\'s my strongest subject!',
+                initials: 'NV',
+                rating: 4.6,
+                timestamp: new Date('2023-03-10').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Amit Joshi',
+                class: 'Bank PO • Selected in SBI',
+                text: 'The reasoning and English faculty are exceptional. Their shortcuts and tricks saved me a lot of time during the exam. Grateful for their guidance!',
+                initials: 'AJ',
+                rating: 4.9,
+                timestamp: new Date('2023-01-20').getTime(),
+                isDefault: true
+            },
+            {
+                name: 'Sneha Iyer',
+                class: 'Class 10 Student • 97% in Boards',
+                text: 'The board exam preparation strategy was perfect. Regular tests and doubt-solving sessions helped me score above 95 in all subjects. Thank you SGS!',
+                initials: 'SI',
+                rating: 5.0,
+                timestamp: new Date('2023-03-01').getTime(),
+                isDefault: true
+            }
+        ];
+
+        // Function to load and display reviews from Google Sheets and localStorage
+        async function loadReviews() {
+            try {
+                const sliderContainer = document.querySelector('.testimonials-slider .testimonials-track');
+                if (!sliderContainer) return;
+                
+                // Clear existing slides
+                sliderContainer.innerHTML = '';
+                
+                let reviews = [];
+                
+                // Try to fetch from Google Sheets first
+                let sheetsReviews = null;
+                if (typeof fetchReviewsFromSheets === 'function') {
+                    try {
+                        sheetsReviews = await fetchReviewsFromSheets();
+                    } catch (e) {
+                        console.log('Could not fetch from Google Sheets, using local data:', e);
+                    }
+                }
+                
+                // Get local reviews as fallback
+                const storedReviews = localStorage.getItem('studentReviews');
+                if (storedReviews) {
+                    reviews = JSON.parse(storedReviews);
+                }
+                
+                // Merge with Google Sheets data if available
+                if (sheetsReviews && sheetsReviews.length > 0) {
+                    // Convert sheets reviews to same format
+                    const formattedSheetsReviews = sheetsReviews.map(r => ({
+                        name: r.name,
+                        class: r.class,
+                        text: r.text,
+                        rating: r.rating,
+                        initials: r.initials,
+                        timestamp: r.timestamp,
+                        date: r.date
+                    }));
+                    
+                    // Combine and remove duplicates
+                    const allReviews = [...formattedSheetsReviews, ...reviews];
+                    const seen = new Set();
+                    reviews = [];
+                    
+                    for (const review of allReviews) {
+                        const key = `${review.name}_${review.text}_${review.timestamp}`;
+                        if (!seen.has(key)) {
+                            seen.add(key);
+                            reviews.push(review);
+                        }
+                    }
+                }
+                
+                // If no reviews, use default testimonials
+                if (reviews.length === 0) {
+                    reviews = [...defaultTestimonials];
+                    // Don't save defaults to localStorage, just use them for display
+                }
+                
+                // Sort all reviews by timestamp (newest first)
+                reviews.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+                
+                // Pass reviews to the slider
+                if (!testimonialSlider) {
+                    testimonialSlider = initTestimonialSlider();
+                }
+                
+                if (testimonialSlider && testimonialSlider.createSlides) {
+                    testimonialSlider.createSlides(reviews);
+                }
+                
+                // Ensure the slider is visible
+                const sliderWrapper = document.querySelector('.testimonials-slider');
+                if (sliderWrapper) {
+                    sliderWrapper.style.display = 'block';
+                }
+                
+            } catch (e) {
+                console.error('Error loading reviews:', e);
+            }
+        }
+
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the slider first
+            testimonialSlider = initTestimonialSlider();
+            
             displayTopRankers();
+            loadReviews();
+            
+            // Initialize star rating - wait a bit for DOM to be ready
+            setTimeout(() => {
+            const validateRating = initializeStarRating();
+                window.validateReviewRating = validateRating; // Make it globally accessible
+            }, 100);
+            
+            // Handle review form submission
+            const reviewForm = document.getElementById('reviewForm');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            if (reviewForm) {
+                reviewForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Validate rating - use global function or initialize if needed
+                    let validateRating = window.validateReviewRating;
+                    if (!validateRating) {
+                        validateRating = initializeStarRating();
+                        window.validateReviewRating = validateRating;
+                    }
+                    
+                    if (!validateRating()) {
+                        return;
+                    }
+                    
+                    const review = {
+                        name: document.getElementById('reviewerName').value.trim(),
+                        class: document.getElementById('reviewerClass').value.trim(),
+                        text: document.getElementById('reviewText').value.trim(),
+                        rating: parseInt(document.getElementById('reviewRating').value)
+                    };
+                    
+                    // Show loading state
+                    const submitBtn = reviewForm.querySelector('button[type="submit"]');
+                    const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                    }
+                    
+                    try {
+                        // Save review (async)
+                        const saved = await saveReview(review);
+                        
+                        if (saved) {
+                        // Show success message
+                        reviewForm.style.display = 'none';
+                            if (formSuccess) formSuccess.style.display = 'block';
+                        
+                            // Reset form and rating
+                        reviewForm.reset();
+                            document.getElementById('reviewRating').value = '0';
+                            const stars = document.querySelectorAll('.star');
+                            stars.forEach(star => {
+                                star.style.color = '#e2e8f0';
+                                star.style.textShadow = 'none';
+                            });
+                            
+                            // Reload reviews immediately
+                            await loadReviews();
+                            
+                            // Scroll to testimonials
+                        setTimeout(() => {
+                                const testimonialsSection = document.querySelector('.testimonials');
+                                if (testimonialsSection) {
+                            window.scrollTo({
+                                        top: testimonialsSection.offsetTop - 100,
+                                behavior: 'smooth'
+                            });
+                                }
+                            }, 500);
+                        } else {
+                            // Restore button
+                            if (submitBtn) {
+                                submitBtn.disabled = false;
+                                submitBtn.innerHTML = originalBtnText;
+                            }
+                            alert('There was an error saving your review. Please try again.');
+                        }
+                    } catch (error) {
+                        console.error('Error submitting review:', error);
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnText;
+                        }
+                        alert('There was an error saving your review. Please try again.');
+                    }
+                });
+            }
             
             // Add scroll effect to navigation
             const nav = document.querySelector('nav');
@@ -1120,6 +2630,7 @@
             // Refresh rankings every 30 seconds
             setInterval(displayTopRankers, 30000);
         });
+        
     </script>
 </body>
 </html>

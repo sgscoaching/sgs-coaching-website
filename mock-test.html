@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test Portal - SGS Coaching</title>
+    <meta name="description" content="Practice timed mock tests at SGS Coaching with detailed analytics and live leaderboard.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://sgscoaching.github.io/sgs-coaching-website/mock-test.html">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="mock-test-body">
+    <!-- Simple Login Page -->
+    <div id="loginPage">
+        <div class="login-container">
+            <div class="login-header">
+                <div class="logo-section">
+                    <img src="Logo.png" alt="SGS Coaching" class="login-logo" loading="lazy" decoding="async" onerror="this.style.display='none'"/>
+                    <div class="login-title">
+                        <h1>SGS Coaching</h1>
+                        <p>Mock Test Portal</p>
+                    </div>
+                </div>
+                <div class="back-home">
+                    <a href="index.html" class="home-link">
+                        <i class="fas fa-home"></i>
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+            
+            <div class="login-content">
+                <div class="login-card">
+                    <div class="login-form-header">
+                        <h2>Welcome to Mock Test</h2>
+                        <p>Enter your details to start practicing</p>
+                    </div>
+                    
+                    <form id="studentInfoForm" class="login-form">
+                        <div class="form-group">
+                            <label for="studentName">
+                                <i class="fas fa-user"></i>
+                                Full Name
+                            </label>
+                            <input type="text" id="studentName" placeholder="Enter your full name" autocomplete="name" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="studentMobile">
+                                <i class="fas fa-phone"></i>
+                                Mobile Number
+                            </label>
+                            <input type="tel" id="studentMobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10" autocomplete="tel" list="mobileNumbers" required />
+                            <datalist id="mobileNumbers">
+                                <!-- Mobile numbers will be populated by JavaScript -->
+                            </datalist>
+                        </div>
+                        
+                        <div class="button-wrapper">
+                            <button type="submit" class="login-btn">
+                                <i class="fas fa-play"></i>
+                                Start Mock Test
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="login-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Timed Tests</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Analytics</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <span>Live Rankings</span>
+                        </div>
+                    </div>
+                    
+                    <p class="disclaimer">By continuing, you agree to the test rules and honor code.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Navigation (Hidden during login) -->
+    <div class="navbar" id="testNavbar" style="display: none;">
+        <h1>SGS Coaching Mock Test</h1>
+        <a href="index.html">Home</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="index.html#mock-leaderboard">Leaderboard</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="timer" id="timer">Time: 00:00</div>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </div>
+
+    <div id="selectionPage" class="container">
+        <div class="box" id="quizzes" style="flex: 1;">
+            <h2>Select Your Test</h2>
+            <div class="form-group">
+                <label for="mockType">Type of Mock:</label>
+                <select id="mockType">
+                    <option value="">Select Type</option>
+                    <option value="subjectWise">Subject Wise</option>
+                    <option value="sectionalTest">Sectional Test</option>
+                    <option value="fullTest">Full Test</option>
+                </select>
+            </div>
+            <div class="form-group" id="subjectDropdown" style="display: none;">
+                <label for="subjectSelect">Subject:</label>
+                <select id="subjectSelect">
+                    <option value="">Select Subject</option>
+                </select>
+            </div>
+            <div class="form-group" id="topicDropdown" style="display: none;">
+                <label for="topicSelect">Topic:</label>
+                <select id="topicSelect">
+                    <option value="">Select Topic</option>
+                </select>
+            </div>
+            <div class="form-group" id="testDropdown" style="display: none;">
+                <label for="testSelect">Test:</label>
+                <select id="testSelect">
+                    <option value="">Select Test</option>
+                </select>
+            </div>
+        </div>
+        <div class="box" id="leaderboard" style="flex: 1;">
+            <h2>Top Rankers</h2>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="instructionsPage" class="container">
+        <div class="box">
+            <h2>Instructions</h2>
+            <p>Please read the following instructions carefully:</p>
+            <ul>
+                <li>Do not navigate back or take screenshots during the test.</li>
+                <li>Answer each question one at a time.</li>
+                <li>Use "Save and Next" to proceed or "Previous" to go back.</li>
+                <li>Swipe left/right on mobile to navigate questions.</li>
+                <li>The test will auto-submit when time runs out.</li>
+                <li>Any cheating attempt will result in disqualification.</li>
+            </ul>
+            <button id="startTestBtn">I Agree and Start</button>
+        </div>
+    </div>
+
+    <div id="testPage" class="container">
+        <div class="box" style="flex: 1;">
+            <div id="questionArea" class="form-group">
+                <div id="currentQuestion"></div>
+                <button id="prevBtn" style="display: none;">Previous</button>
+                <button id="markReviewBtn" type="button">Mark for Review</button>
+                <button id="saveNextBtn">Save and Next</button>
+            </div>
+        </div>
+        <div id="questionPanel" class="box"></div>
+    </div>
+<div id="resultStats" style="display: none;"></div>
+<div id="result" style="display: none;"></div>
+<div id="answersPage" style="display: none;"></div>
+    <script src="questions.js" defer></script>
+    <script src="google-sheets-api.js" defer></script>
+    <script src="mock-test-script.js" defer></script>
+</body>
+</html>

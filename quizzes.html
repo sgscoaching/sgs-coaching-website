@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>SGS Coaching | Interactive Quiz Portal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="description" content="Interactive quiz portal at SGS Coaching. Chapterwise and midterm quizzes with rankings and instant analytics.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://sgscoaching.github.io/sgs-coaching-website/quizzes.html">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     * {
@@ -319,6 +327,24 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      position: sticky;
+      top: 80px;
+      z-index: 100;
+      width: fit-content;
+      margin: 0 auto 1rem;
+    }
+    
+    /* Mobile timer visibility */
+    @media (max-width: 768px) {
+      .timer-display {
+        position: fixed;
+        top: 70px;
+        right: 10px;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      }
     }
 
     /* Questions */
@@ -353,46 +379,120 @@
     .option-item {
       display: flex;
       align-items: center;
-      padding: 1rem;
-      background: #f8fafc;
+      padding: 1rem 1.25rem;
+      margin: 0.5rem 0;
+      background-color: #f9fafb;
       border: 2px solid #e5e7eb;
-      border-radius: 12px;
+      border-radius: 0.5rem;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.2s ease-in-out;
       position: relative;
+      overflow: hidden;
     }
-
+    
     .option-item:hover {
-      background: #f0f9ff;
-      border-color: #bfdbfe;
+      background-color: #f3f4f6;
+      border-color: #d1d5db;
     }
-
+    
+    .option-item input[type="radio"] {
+      display: none; /* Hide the default radio button */
+    }
+    
     .option-item.selected {
-      background: #dbeafe;
-      border-color: #3b82f6;
-    }
-
-    .option-item.correct {
-      background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+      background-color: #ecfdf5;
       border-color: #10b981;
       color: #064e3b;
     }
-
-    .option-item.wrong {
-      background: linear-gradient(135deg, #fee2e2, #fecaca);
+    
+    .option-item.selected .option-text::before {
+      content: "✓";
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.75rem;
+      background-color: #10b981;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.25rem;
+      font-size: 0.75rem;
+    }
+    
+    /* Correct answer (not selected by user) */
+    .option-item.correct-answer {
+      background-color: #d1fae5;
+      border-color: #10b981;
+      color: #064e3b;
+    }
+    
+    /* Correct answer (selected by user) */
+    .option-item.correct-answer.selected {
+      background-color: #10b981;
+      color: white;
+      font-weight: 600;
+    }
+    
+    /* Incorrect answer (selected by user) */
+    .option-item.incorrect-answer {
+      background-color: #fee2e2;
       border-color: #ef4444;
       color: #7f1d1d;
+      text-decoration: line-through;
     }
-
-    .option-radio {
-      margin-right: 1rem;
-      transform: scale(1.3);
-      accent-color: #3b82f6;
+    
+    /* Fill in blank input styling */
+    .fill-blank-container {
+      margin: 1rem 0;
     }
-
-    .option-text {
+    
+    .fill-blank-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
       font-size: 1rem;
-      color: inherit;
+      margin: 0.5rem 0;
+      transition: all 0.3s ease;
+      background-color: white;
+    }
+    
+    .fill-blank-input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+      outline: none;
+    }
+    
+    .fill-blank-input.correct {
+      background-color: #d1fae5;
+      border-color: #10b981;
+      color: #064e3b;
+      font-weight: 500;
+    }
+    
+    .fill-blank-input.incorrect {
+      background-color: #fee2e2;
+      border-color: #ef4444;
+      color: #7f1d1d;
+      text-decoration: line-through;
+    }
+    
+    .correct-answer-text {
+      display: block;
+      margin: 0.5rem 0 1rem 0;
+      padding: 0.75rem 1rem;
+      background-color: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 8px;
+      color: #064e3b;
+      font-weight: 500;
+      font-size: 0.95rem;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Results */
@@ -550,6 +650,110 @@
 
     /* Mobile Responsive */
     @media (max-width: 768px) {
+      .quiz-container {
+        padding: 0.5rem;
+        margin: 1rem auto;
+      }
+      
+      .card {
+        border-radius: 12px;
+        padding: 1rem;
+      }
+      
+      .nav-container {
+        padding: 0 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      
+      .logo-section {
+        justify-content: center;
+      }
+      
+      .question-text {
+        font-size: 1.1rem;
+        line-height: 1.4;
+      }
+      
+      .option-item {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+      }
+      
+      .btn-primary, .home-btn {
+        width: 100%;
+        padding: 0.8rem;
+        text-align: center;
+        justify-content: center;
+      }
+      
+      .timer-display {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        position: fixed !important;
+        top: 70px !important;
+        right: 10px !important;
+        z-index: 1000 !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+        display: flex !important;
+      }
+      
+      .quiz-header {
+        padding-top: 60px; /* Add space for fixed timer */
+      }
+      
+      .result-score {
+        font-size: 2.5rem;
+      }
+      
+      .result-details {
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .question-text {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .option-item {
+        padding: 0.9rem 1rem;
+        margin: 0.4rem 0;
+        min-height: 3.5rem;
+        display: flex;
+        align-items: center;
+      }
+      
+      .btn-primary, .home-btn {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+      
+      .fill-blank-input {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        min-height: 3rem;
+      }
+      
+      .dropdown-select {
+        font-size: 0.95rem;
+        padding: 0.8rem 2.5rem 0.8rem 1rem;
+      }
+      
+      .quiz-title {
+        font-size: 1.3rem;
+      }
+      
+      .timer-display {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
       .quiz-hero h1 {
         font-size: 2rem;
       }
@@ -668,26 +872,49 @@
       </form>
 
       <!-- Subject Selection -->
-      <div class="dropdowns">
+      <div class="dropdowns" style="display: none;">
         <div class="dropdown-grid">
-          <div class="dropdown-group">
+          <div class="dropdown-group" id="classDropdownGroup">
             <label class="dropdown-label">Select Class</label>
             <select id="classSelect" class="dropdown-select">
               <option value="">Choose your class...</option>
             </select>
           </div>
-          <div class="dropdown-group">
+          <div class="dropdown-group" id="subjectDropdownGroup" style="display: none;">
             <label class="dropdown-label">Select Subject</label>
             <select id="subjectSelect" class="dropdown-select">
               <option value="">Choose subject...</option>
             </select>
           </div>
-          <div class="dropdown-group">
-            <label class="dropdown-label">Select Quiz</label>
+          <div class="dropdown-group" id="testTypeDropdownGroup" style="display: none;">
+            <label class="dropdown-label">Select Test Type</label>
+            <select id="testTypeSelect" class="dropdown-select">
+              <option value="">Choose test type...</option>
+              <option value="chapterwise">Chapterwise</option>
+              <option value="midterm1">Mid Term 1</option>
+              <option value="midterm2">Mid Term 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="dropdown-grid">
+          <div class="dropdown-group" id="chapterDropdownContainer" style="display: none; width: 100%;">
+            <label class="dropdown-label">Select Chapter</label>
             <select id="chapterSelect" class="dropdown-select">
               <option value="">Choose quiz topic...</option>
             </select>
           </div>
+          <div class="dropdown-group" id="midtermDropdownContainer" style="display: none; width: 100%;">
+            <label class="dropdown-label">Select Test</label>
+            <select id="midtermTestSelect" class="dropdown-select">
+              <option value="">Choose sample test...</option>
+            </select>
+          </div>
+        </div>
+        <!-- Start Quiz Button -->
+        <div id="startQuizButtonContainer" style="display: none; text-align: center; margin-top: 2rem;">
+          <button id="startQuizBtn" class="btn-primary" style="padding: 1rem 3rem; font-size: 1.2rem;">
+            <i class="fas fa-play"></i> Start Quiz
+          </button>
         </div>
       </div>
 
@@ -731,6 +958,8 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="midterm-questions.js"></script>
+  <script src="google-sheets-api.js"></script>
   <script>
     // Global variables
     let currentStudentName = "";
@@ -740,6 +969,7 @@
     let quizTimer = null;
     let secondsElapsed = 0;
     let answeredQuestions = 0;
+    let isShowingAlert = false; // Flag to prevent blur warnings during alerts
 
     // DOM elements
     const infoForm = document.getElementById('studentInfoForm');
@@ -747,7 +977,14 @@
     const dropdownsDiv = document.querySelector('.dropdowns');
     const classSelect = document.getElementById('classSelect');
     const subjectSelect = document.getElementById('subjectSelect');
+    const subjectDropdownGroup = document.getElementById('subjectDropdownGroup');
+    const testTypeSelect = document.getElementById('testTypeSelect');
+    const testTypeDropdownGroup = document.getElementById('testTypeDropdownGroup');
+    const chapterDropdownContainer = document.getElementById('chapterDropdownContainer');
     const chapterSelect = document.getElementById('chapterSelect');
+    const midtermDropdownContainer = document.getElementById('midtermDropdownContainer');
+    const midtermTestSelect = document.getElementById('midtermTestSelect');
+    const startQuizButtonContainer = document.getElementById('startQuizButtonContainer');
     const quizArea = document.getElementById('quizArea');
     const quizForm = document.getElementById('quizForm');
     const quizTitle = document.getElementById('quizTitle');
@@ -760,37 +997,79 @@
     const floatingStats = document.getElementById('floatingStats');
 
     // Student form handler
-    infoForm.onsubmit = function(e) {
-      e.preventDefault();
-      const name = document.getElementById('nameInput').value.trim();
-      const mobile = document.getElementById('mobileInput').value.trim();
-      
-      if (!name) {
-        showError("Please enter your full name");
-        return;
-      }
-      if (!mobile.match(/^[0-9]{10}$/)) {
-        showError("Please enter a valid 10-digit mobile number");
-        return;
-      }
-      
-      hideError();
-      currentStudentName = name;
-      currentStudentMobile = mobile;
-      
-      // Success animation
-      const successDiv = document.createElement('div');
-      successDiv.className = 'success-indicator fade-in';
-      successDiv.innerHTML = '<i class="fas fa-check"></i> Registration successful! Please select your quiz.';
-      infoForm.parentNode.insertBefore(successDiv, infoForm.nextSibling);
-      
-      setTimeout(() => {
-        infoForm.style.display = "none";
-        successDiv.style.display = "none";
-        dropdownsDiv.style.display = "block";
-        dropdownsDiv.classList.add('fade-in');
-      }, 1500);
-    };
+    if (infoForm) {
+      infoForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const nameInput = document.getElementById('nameInput');
+        const mobileInput = document.getElementById('mobileInput');
+        
+        if (!nameInput || !mobileInput) {
+          console.error('Form inputs not found');
+          return;
+        }
+        
+        const name = nameInput.value.trim();
+        const mobile = mobileInput.value.trim();
+        
+        if (!name) {
+          showError("Please enter your full name");
+          return;
+        }
+        if (!mobile.match(/^[0-9]{10}$/)) {
+          showError("Please enter a valid 10-digit mobile number");
+          return;
+        }
+        
+        hideError();
+        currentStudentName = name;
+        currentStudentMobile = mobile;
+        
+        // Success animation
+        const successDiv = document.createElement('div');
+        successDiv.className = 'success-indicator fade-in';
+        successDiv.innerHTML = '<i class="fas fa-check"></i> Registration successful! Please select your quiz.';
+        infoForm.parentNode.insertBefore(successDiv, infoForm.nextSibling);
+        
+        setTimeout(() => {
+          infoForm.style.display = "none";
+          successDiv.style.display = "none";
+          
+          // Show dropdowns section
+          if (dropdownsDiv) {
+            dropdownsDiv.style.display = "block";
+            dropdownsDiv.classList.add('fade-in');
+          }
+          
+          // Ensure only class dropdown is visible initially
+          if (subjectDropdownGroup) subjectDropdownGroup.style.display = 'none';
+          if (testTypeDropdownGroup) testTypeDropdownGroup.style.display = 'none';
+          if (chapterDropdownContainer) chapterDropdownContainer.style.display = 'none';
+          if (midtermDropdownContainer) midtermDropdownContainer.style.display = 'none';
+          if (startQuizButtonContainer) startQuizButtonContainer.style.display = 'none';
+          
+          // Ensure class dropdown is populated and visible
+          if (classSelect) {
+            // Make sure class dropdown group is visible
+            const classDropdownGroup = document.getElementById('classDropdownGroup');
+            if (classDropdownGroup) {
+              classDropdownGroup.style.display = 'block';
+            }
+            
+            // Populate if needed
+            if (classSelect.options.length <= 1) {
+              populateClassDropdown();
+            }
+          }
+          
+          // Scroll to dropdowns after a small delay to ensure they're rendered
+          setTimeout(() => {
+            if (dropdownsDiv) {
+              dropdownsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 100);
+        }, 1500);
+      });
+    }
 
     function showError(message) {
       infoError.textContent = message;
@@ -981,9 +1260,19 @@
       resetDropdown(subjectSelect, "Choose subject...");
       resetDropdown(chapterSelect, "Choose quiz topic...");
       quizArea.style.display = "none";
+      testTypeDropdownGroup.style.display = 'none';
+      chapterDropdownContainer.style.display = 'none';
+      midtermDropdownContainer.style.display = 'none';
+      startQuizButtonContainer.style.display = 'none';
       
       const classVal = classSelect.value;
-      if (!classVal) return;
+      if (!classVal) {
+        subjectDropdownGroup.style.display = 'none';
+        return;
+      }
+      
+      // Show subject dropdown
+      subjectDropdownGroup.style.display = 'block';
       
       const subjects = Object.keys(window.quizData[classVal]);
       subjects.forEach(subject => {
@@ -993,38 +1282,264 @@
 
     function populateChapterDropdown() {
       resetDropdown(chapterSelect, "Choose quiz topic...");
-      quizArea.style.display = "none";
-      
       const classVal = classSelect.value;
       const subjectVal = subjectSelect.value;
       if (!classVal || !subjectVal) return;
       
-      window.quizData[classVal][subjectVal].forEach((quiz, i) => {
-        chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
-      });
+      // This part remains for chapterwise tests
+      if (window.quizData && window.quizData[classVal] && window.quizData[classVal][subjectVal]) {
+        window.quizData[classVal][subjectVal].forEach((quiz, i) => {
+          chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
+        });
+      }
+      
+      // Check if selections are complete
+      checkSelectionsComplete();
+    }
+
+    function handleTestTypeChange() {
+      const testType = testTypeSelect.value;
+      console.log('Test type changed to:', testType);
+      
+      // Hide all containers first
+      chapterDropdownContainer.style.display = 'none';
+      midtermDropdownContainer.style.display = 'none';
+      quizArea.style.display = 'none';
+      startQuizButtonContainer.style.display = 'none';
+
+      if (!testType) {
+        return;
+      }
+
+      if (testType === 'chapterwise') {
+        console.log('Showing chapterwise test options');
+        chapterDropdownContainer.style.display = 'block';
+        populateChapterDropdown();
+      } else if (testType === 'midterm1' || testType === 'midterm2') {
+        console.log('Showing midterm test options for:', testType);
+        midtermDropdownContainer.style.display = 'block';
+        populateMidtermTestDropdown();
+      } else {
+        console.log('No valid test type selected');
+      }
+    }
+    
+    // Function to check if all selections are made and show Start Quiz button
+    function checkSelectionsComplete() {
+      const classVal = classSelect.value;
+      const subjectVal = subjectSelect.value;
+      const testType = testTypeSelect.value;
+      
+      if (!classVal || !subjectVal || !testType) {
+        startQuizButtonContainer.style.display = 'none';
+        return;
+      }
+      
+      let isComplete = false;
+      
+      if (testType === 'chapterwise') {
+        const chapterVal = chapterSelect.value;
+        isComplete = chapterVal !== '';
+      } else if (testType === 'midterm1' || testType === 'midterm2') {
+        const sampleTestVal = midtermTestSelect.value;
+        isComplete = sampleTestVal !== '';
+      }
+      
+      if (isComplete) {
+        startQuizButtonContainer.style.display = 'block';
+      } else {
+        startQuizButtonContainer.style.display = 'none';
+      }
+    }
+
+    function populateMidtermTestDropdown() {
+      resetDropdown(midtermTestSelect, "Choose sample test...");
+      // Add all three sample tests
+      midtermTestSelect.innerHTML += '<option value="sample1">Sample Test 1</option>';
+      midtermTestSelect.innerHTML += '<option value="sample2">Sample Test 2</option>';
+      midtermTestSelect.innerHTML += '<option value="sample3">Sample Test 3</option>';
+      
+      // Check if selections are complete
+      checkSelectionsComplete();
+    }
+
+    function assembleMidtermTest(allQuestions) {
+      console.log('Assembling midterm test with questions:', allQuestions);
+      
+      const questionCounts = {
+        mcq: 25,
+        fill_in_blank: 10,
+        true_false: 10,
+        assertion_reasoning: 5
+      };
+
+      let assembledQuestions = [];
+      
+      // First, verify we have enough questions of each type
+      for (const type in questionCounts) {
+        const count = allQuestions.filter(q => q.type === type).length;
+        console.log(`Found ${count} questions of type ${type}`);
+        if (count < questionCounts[type]) {
+          console.warn(`Warning: Only found ${count} questions of type ${type}, but need ${questionCounts[type]}`);
+        }
+      }
+
+      // Shuffle the questions
+      const shuffledQuestions = shuffleArray([...allQuestions]);
+      
+      // Select questions by type
+      for (const type in questionCounts) {
+        const needed = questionCounts[type];
+        const filtered = shuffledQuestions.filter(q => q.type === type);
+        const selected = filtered.slice(0, needed);
+        
+        console.log(`Selected ${selected.length} of ${filtered.length} available ${type} questions`);
+        
+        // If we don't have enough questions, take what we have
+        if (selected.length < needed) {
+          console.warn(`Warning: Only found ${selected.length} questions of type ${type}, but needed ${needed}`);
+        }
+        
+        assembledQuestions = [...assembledQuestions, ...selected];
+      }
+
+      // Shuffle the final list of questions
+      const finalQuestions = shuffleArray(assembledQuestions);
+      console.log(`Assembled ${finalQuestions.length} questions total`);
+
+      return {
+        title: "Mid Term Sample Test",
+        questions: finalQuestions
+      };
     }
 
     function showQuiz() {
-      quizArea.style.display = "none";
+      // Hide error message if any
+      hideError();
+      
+      // Validate all selections are made
+      if (!classSelect || !subjectSelect || !testTypeSelect) {
+        console.error('Required dropdowns not found');
+        return;
+      }
+      
+      const selectedClass = classSelect.value;
+      const selectedSubject = subjectSelect.value;
+      const selectedTestType = testTypeSelect.value;
+      
+      if (!selectedClass || !selectedSubject || !selectedTestType) {
+        alert('Please complete all selections before starting the quiz.');
+        return;
+      }
+      
+      if (selectedTestType === 'chapterwise') {
+        if (!chapterSelect || !chapterSelect.value) {
+          alert('Please select a chapter before starting the quiz.');
+          return;
+        }
+      } else if (selectedTestType === 'midterm1' || selectedTestType === 'midterm2') {
+        if (!midtermTestSelect || !midtermTestSelect.value) {
+          alert('Please select a sample test before starting the quiz.');
+          return;
+        }
+      }
+      
+      // Don't enable anti-cheating yet - wait until quiz is successfully loaded
+      // Show quiz area and hide student form and dropdowns (will revert if loading fails)
+      document.querySelector('.quiz-area').style.display = 'block';
+      document.querySelector('.student-form').style.display = 'none';
+      document.querySelector('.dropdowns').style.display = 'none';
+
       quizForm.innerHTML = "";
       resultDiv.style.display = "none";
       rankingSection.style.display = "none";
       stopTimer();
       answeredQuestions = 0;
-      
-      const classVal = classSelect.value;
-      const subjectVal = subjectSelect.value;
-      const chapterVal = chapterSelect.value;
-      if (!classVal || !subjectVal || chapterVal === "") return;
 
-      try {
-        currentQuiz = JSON.parse(JSON.stringify(window.quizData[classVal][subjectVal][chapterVal]));
-        if (!currentQuiz || !currentQuiz.questions) return;
-        randomizeQuizOptions(currentQuiz);
-      } catch (e) {
-        console.error("Error loading quiz:", e);
+      if (!selectedClass || !selectedSubject || !selectedTestType) {
+        // Revert UI changes
+        document.querySelector('.quiz-area').style.display = 'none';
+        document.querySelector('.dropdowns').style.display = 'block';
         return;
       }
+
+      try {
+        if (selectedTestType === 'chapterwise') {
+          const chapterVal = chapterSelect.value;
+          if (chapterVal === "") return;
+          currentQuiz = JSON.parse(JSON.stringify(window.quizData[selectedClass][selectedSubject][chapterVal]));
+          randomizeQuizOptions(currentQuiz);
+        } else if (selectedTestType === 'midterm1' || selectedTestType === 'midterm2') {
+          const sampleTestVal = midtermTestSelect.value;
+          if (sampleTestVal === "") return;
+          try {
+            console.log('Midterm data structure:', window.midtermQuizData);
+            
+            // Convert selectedClass to string to match the data structure
+            const classKey = String(selectedClass);
+            
+            // Get the class data
+            const classData = window.midtermQuizData[classKey];
+            if (!classData) throw new Error(`Class ${selectedClass} not found in midterm data`);
+            
+            // Get the subject data (handle both spaces and underscores in subject names)
+            const subjectKeys = Object.keys(classData);
+            // Normalize both the selected subject and available subjects by replacing underscores with spaces
+            const normalizedSubjectVal = selectedSubject.toLowerCase().replace(/_/g, ' ');
+            const subjectKey = subjectKeys.find(key => 
+              key.toLowerCase().replace(/_/g, ' ') === normalizedSubjectVal
+            );
+            if (!subjectKey) throw new Error(`Subject '${selectedSubject}' not found in class data. Available subjects: ${subjectKeys.join(', ')}`);
+            
+            // Use the original key from the data to access the subject
+            const subjectData = classData[subjectKey];
+            
+            // Get the midterm data
+            const midtermKey = selectedTestType; // Use the selected test type (midterm1 or midterm2)
+            const midtermData = subjectData[midtermKey];
+            if (!midtermData) throw new Error(`${selectedTestType} not found in subject data`);
+            
+            // Get the sample test data
+            const allMidtermQuestions = midtermData[sampleTestVal];
+            if (!allMidtermQuestions) throw new Error(`Sample test ${sampleTestVal} not found`);
+            
+            console.log('Found questions:', allMidtermQuestions);
+            currentQuiz = assembleMidtermTest(allMidtermQuestions);
+          } catch (error) {
+            console.error('Error loading midterm test:', error);
+            // Revert UI changes before showing alert
+            document.querySelector('.quiz-area').style.display = 'none';
+            document.querySelector('.dropdowns').style.display = 'block';
+            isShowingAlert = true;
+            alert(`Error loading midterm test: ${error.message}`);
+            isShowingAlert = false;
+            return;
+          }
+        }
+
+        if (!currentQuiz || !currentQuiz.questions || currentQuiz.questions.length === 0) {
+          // Revert UI changes before showing alert
+          document.querySelector('.quiz-area').style.display = 'none';
+          document.querySelector('.dropdowns').style.display = 'block';
+          isShowingAlert = true;
+          alert('No questions found for this selection. Please add questions to the data file.');
+          isShowingAlert = false;
+          return;
+        }
+
+      } catch (e) {
+        console.error("Error loading quiz:", e);
+        // Revert UI changes before showing alert
+        document.querySelector('.quiz-area').style.display = 'none';
+        document.querySelector('.dropdowns').style.display = 'block';
+        isShowingAlert = true;
+        alert('Could not load the quiz. Please check the data source and your selections.');
+        isShowingAlert = false;
+        return;
+      }
+      
+      // Only enable anti-cheating AFTER successfully loading the quiz
+      enableAntiCheating();
 
       quizTitle.textContent = currentQuiz.title;
       document.getElementById('statQuestions').textContent = currentQuiz.questions.length;
@@ -1032,28 +1547,75 @@
       currentQuiz.questions.forEach((q, idx) => {
         const questionDiv = document.createElement('div');
         questionDiv.className = 'question fade-in';
+        questionDiv.setAttribute('data-question-idx', idx);
         questionDiv.style.animationDelay = `${idx * 0.1}s`;
+        let optionsHtml = '';
+
+        if (!q.type) {
+          optionsHtml = q.options.map(opt => `
+            <label class="option-item" onclick="this.querySelector('input').click()">
+              <input type="radio" name="q${idx}" value="${opt}" class="option-radio" onchange="this.closest('.option-item').classList.toggle('selected', this.checked)">
+              <span class="option-text">${opt}</span>
+            </label>
+          `).join('');
+        } else {
+          switch (q.type) {
+            case 'mcq':
+            case 'assertion_reasoning':
+              optionsHtml = q.options.map(opt => `
+                <label class="option-item" onclick="this.querySelector('input').click()">
+                  <input type="radio" name="q${idx}" value="${opt}" class="option-radio" onchange="this.closest('.option-item').classList.toggle('selected', this.checked)">
+                  <span class="option-text">${opt}</span>
+                </label>
+              `).join('');
+              break;
+            case 'fill_in_blank':
+              optionsHtml = `
+                <div class="fill-blank-container">
+                  <input type="text" name="q${idx}" class="form-input fill-blank-input" placeholder="Type your answer here">
+                </div>
+              `;
+              break;
+            case 'true_false':
+              optionsHtml = `
+                <label class="option-item" onclick="this.querySelector('input').click()">
+                  <input type="radio" name="q${idx}" value="True" class="option-radio" onchange="this.closest('.option-item').classList.toggle('selected', this.checked)">
+                  <span class="option-text">True</span>
+                </label>
+                <label class="option-item" onclick="this.querySelector('input').click()">
+                  <input type="radio" name="q${idx}" value="False" class="option-radio" onchange="this.closest('.option-item').classList.toggle('selected', this.checked)">
+                  <span class="option-text">False</span>
+                </label>
+              `;
+              break;
+          }
+        }
+
         questionDiv.innerHTML = `
           <div class="question-text">${idx + 1}. ${q.q}</div>
-          <div class="options">
-            ${q.options.map(opt => `
-              <label class="option-item">
-                <input type="radio" name="q${idx}" value="${opt}" class="option-radio">
-                <span class="option-text">${opt}</span>
-              </label>
-            `).join('')}
-          </div>
+          <div class="options">${optionsHtml}</div>
         `;
         quizForm.appendChild(questionDiv);
       });
       
-      // Add submit button
+      // Add submit button with confirmation
       const submitBtn = document.createElement('button');
       submitBtn.type = 'button';
       submitBtn.className = 'btn-primary pulse';
       submitBtn.id = 'submitBtn';
       submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Quiz';
-      submitBtn.onclick = checkAnswers;
+      submitBtn.onclick = () => {
+        // Count answered questions
+        const totalQuestions = currentQuiz.questions.length;
+        const answeredQuestions = Array.from(document.querySelectorAll('input[type="radio"]:checked, input[type="text"][name^="q"]')).filter(
+          input => input.type === 'radio' || input.value.trim() !== ''
+        ).length;
+        
+        // Show confirmation dialog
+        if (confirm(`You have answered ${answeredQuestions} out of ${totalQuestions} questions. Are you sure you want to submit?`)) {
+          checkAnswers();
+        }
+      };
       quizForm.appendChild(submitBtn);
       
       // Add option selection handlers
@@ -1080,31 +1642,285 @@
       startTimer();
     }
 
+    function tryAnotherQuiz() {
+      // Disable anti-cheating measures
+      disableAntiCheating();
+      
+      // Reset the form and show the dropdowns again
+      document.getElementById('quizForm').reset();
+      document.getElementById('result').style.display = 'none';
+      document.querySelector('.ranking-section').style.display = 'none';
+      document.getElementById('floatingStats').style.display = 'none';
+      
+      // Reset the timer and progress
+      stopTimer();
+      document.getElementById('timeDisplay').textContent = '00:00';
+      document.getElementById('progressBar').style.width = '0%';
+      
+      // Hide quiz area
+      document.querySelector('.quiz-area').style.display = 'none';
+      
+      // Show the dropdowns again
+      const dropdowns = document.querySelector('.dropdowns');
+      dropdowns.style.display = 'block';
+      
+      // Reset dropdown values but keep selections
+      // Don't reset class, subject, test type - just reset the final selection
+      document.getElementById('chapterSelect').value = '';
+      document.getElementById('midtermTestSelect').value = '';
+      
+      // Hide final dropdown containers
+      document.getElementById('chapterDropdownContainer').style.display = 'none';
+      document.getElementById('midtermDropdownContainer').style.display = 'none';
+      
+      // Hide start button
+      startQuizButtonContainer.style.display = 'none';
+      
+      // Re-populate based on current selections
+      if (classSelect.value) {
+        populateSubjectDropdown();
+        if (subjectSelect.value) {
+          subjectDropdownGroup.style.display = 'block';
+          testTypeDropdownGroup.style.display = 'block';
+          if (testTypeSelect.value) {
+            handleTestTypeChange();
+          }
+        }
+      }
+      
+      // Clear the quiz title
+      document.getElementById('quizTitle').textContent = '';
+      
+      // Clear the quiz form
+      const quizForm = document.getElementById('quizForm');
+      while (quizForm.firstChild) {
+        quizForm.removeChild(quizForm.firstChild);
+      }
+      
+      // Remove submit button if it exists
+      const submitBtn = document.getElementById('submitBtn');
+      if (submitBtn) {
+        submitBtn.remove();
+      }
+      
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    // Anti-cheating functions
+    function enableAntiCheating() {
+      // Disable right-click
+      document.addEventListener('contextmenu', preventRightClick);
+      
+      // Disable text selection
+      document.addEventListener('selectstart', preventSelection);
+      
+      // Disable copy, cut, paste
+      document.addEventListener('copy', preventCopy);
+      document.addEventListener('cut', preventCopy);
+      document.addEventListener('paste', preventPaste);
+      
+      // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+      document.addEventListener('keydown', preventDevTools);
+      
+      // Prevent tab switching
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+      
+      // Disable print screen (partial - can't fully prevent)
+      document.addEventListener('keydown', preventPrintScreen);
+      
+      // Warn on tab switch attempt
+      window.addEventListener('blur', handleWindowBlur);
+      
+      // Disable drag and drop
+      document.addEventListener('dragstart', preventDrag);
+      document.addEventListener('drop', preventDrop);
+    }
+    
+    function disableAntiCheating() {
+      document.removeEventListener('contextmenu', preventRightClick);
+      document.removeEventListener('selectstart', preventSelection);
+      document.removeEventListener('copy', preventCopy);
+      document.removeEventListener('cut', preventCopy);
+      document.removeEventListener('paste', preventPaste);
+      document.removeEventListener('keydown', preventDevTools);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      document.removeEventListener('keydown', preventPrintScreen);
+      window.removeEventListener('blur', handleWindowBlur);
+      document.removeEventListener('dragstart', preventDrag);
+      document.removeEventListener('drop', preventDrop);
+    }
+    
+    function preventRightClick(e) {
+      e.preventDefault();
+      return false;
+    }
+    
+    function preventSelection(e) {
+      e.preventDefault();
+      return false;
+    }
+    
+    function preventCopy(e) {
+      e.preventDefault();
+      alert('Copying is not allowed during the quiz!');
+      return false;
+    }
+    
+    function preventPaste(e) {
+      e.preventDefault();
+      alert('Pasting is not allowed during the quiz!');
+      return false;
+    }
+    
+    function preventDevTools(e) {
+      // F12
+      if (e.keyCode === 123) {
+        e.preventDefault();
+        alert('Developer tools are disabled during the quiz!');
+        return false;
+      }
+      // Ctrl+Shift+I
+      if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+        e.preventDefault();
+        alert('Developer tools are disabled during the quiz!');
+        return false;
+      }
+      // Ctrl+Shift+J
+      if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+        e.preventDefault();
+        alert('Developer tools are disabled during the quiz!');
+        return false;
+      }
+      // Ctrl+U (View Source)
+      if (e.ctrlKey && e.keyCode === 85) {
+        e.preventDefault();
+        alert('View source is disabled during the quiz!');
+        return false;
+      }
+    }
+    
+    function handleVisibilityChange() {
+      if (document.hidden && !isShowingAlert) {
+        alert('⚠️ Warning: You switched tabs/windows. This may be considered cheating. Please stay on the quiz page.');
+      }
+    }
+    
+    function preventPrintScreen(e) {
+      // Print Screen key
+      if (e.keyCode === 44) {
+        e.preventDefault();
+        alert('Screenshots are not allowed during the quiz!');
+        return false;
+      }
+    }
+    
+    function handleWindowBlur() {
+      // Don't show warning if we're currently showing an alert
+      if (isShowingAlert) return;
+      alert('⚠️ Warning: You switched away from the quiz. Please stay on the quiz page.');
+    }
+    
+    function preventDrag(e) {
+      e.preventDefault();
+      return false;
+    }
+    
+    function preventDrop(e) {
+      e.preventDefault();
+      return false;
+    }
+
     function checkAnswers() {
       stopTimer();
-      let score = 0;
       
+      // Disable anti-cheating measures after submission
+      disableAntiCheating();
+      
+      let score = 0;
+      const totalQuestions = currentQuiz.questions.length;
+      const quizFormInputs = quizForm.elements;
+
+      // Disable all inputs after submission
+      for (let item of quizFormInputs) {
+        item.disabled = true;
+      }
+
       currentQuiz.questions.forEach((q, idx) => {
-        const options = document.querySelectorAll(`input[name="q${idx}"]`);
-        const selected = document.querySelector(`input[name="q${idx}"]:checked`);
-        
-        options.forEach(option => {
-          const optionItem = option.closest('.option-item');
-          optionItem.classList.remove('selected');
+        const questionElement = document.querySelector(`.question[data-question-idx="${idx}"]`);
+        const questionOptions = document.querySelectorAll(`input[name="q${idx}"]`);
+        let userAnswer = null;
+        let isCorrect = false;
+
+        if (q.type === 'fill_in_blank') {
+          const input = questionOptions[0];
+          userAnswer = input ? input.value.trim().toLowerCase() : '';
+          isCorrect = userAnswer === q.answer.toLowerCase();
           
-          if (option.value === q.answer) {
-            optionItem.classList.add('correct');
+          // Add appropriate class to input
+          input.classList.add(isCorrect ? 'correct' : 'incorrect');
+          
+          // Add correct answer text if wrong
+          if (!isCorrect) {
+            const correctAnswerEl = document.createElement('div');
+            correctAnswerEl.className = 'correct-answer-text';
+            correctAnswerEl.textContent = `Correct answer: ${q.answer}`;
+            input.parentNode.insertBefore(correctAnswerEl, input.nextSibling);
+          } else {
+            score++;
           }
-          if (selected && option === selected && option.value !== q.answer) {
-            optionItem.classList.add('wrong');
+        } else { // MCQ, True/False, Assertion/Reasoning
+          // First, mark all correct answers
+          questionOptions.forEach(opt => {
+            const optionItem = opt.closest('.option-item');
+            if (opt.value === q.answer) {
+              optionItem.classList.add('correct-answer');
+            }
+          });
+          
+          // Then check user's selection
+          let hasSelected = false;
+          questionOptions.forEach(opt => {
+            if (opt.checked) {
+              hasSelected = true;
+              userAnswer = opt.value;
+              const optionItem = opt.closest('.option-item');
+              
+              if (userAnswer === q.answer) {
+                optionItem.classList.add('selected', 'correct-answer');
+                isCorrect = true;
+                score++;
+              } else {
+                optionItem.classList.add('incorrect-answer');
+              }
+            }
+          });
+          
+          // If no option was selected but there is a correct answer
+          if (!hasSelected && q.answer) {
+            questionOptions.forEach(opt => {
+              if (opt.value === q.answer) {
+                opt.closest('.option-item').classList.add('correct-answer', 'not-selected');
+              }
+            });
           }
-        });
-        
-        if (selected && selected.value === q.answer) score++;
+        }
       });
       
       const currentResult = saveQuizResult(score, currentQuiz.questions.length, secondsElapsed);
       const percentage = Math.round((score / currentQuiz.questions.length) * 100);
+      
+      // Save to Google Sheets
+      saveQuizResultToSheets({
+        name: currentStudentName,
+        mobile: currentStudentMobile,
+        class: classSelect.value,
+        subject: subjectSelect.value,
+        quizTitle: currentQuiz.title,
+        score: score,
+        totalQuestions: currentQuiz.questions.length,
+        timeTaken: secondsElapsed
+      });
       
       resultDiv.innerHTML = `
         <div class="result-score">${score}/${currentQuiz.questions.length}</div>
@@ -1125,18 +1941,6 @@
       
       // Scroll to results
       resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    function tryAnotherQuiz() {
-      chapterSelect.value = "";
-      quizArea.style.display = "none";
-      quizForm.innerHTML = "";
-      resultDiv.style.display = "none";
-      rankingSection.style.display = "none";
-      quizTitle.textContent = "";
-      progressBar.style.width = "0%";
-      stopTimer();
-      timeDisplay.textContent = "00:00";
     }
 
     function sendFormspreeResult(score, total, quizTitleStr, timeInSeconds) {
@@ -1163,21 +1967,90 @@
     }
 
     // Event listeners
-    classSelect.onchange = populateSubjectDropdown;
-    subjectSelect.onchange = populateChapterDropdown;
-    chapterSelect.onchange = showQuiz;
+    classSelect.onchange = () => {
+      populateSubjectDropdown();
+      checkSelectionsComplete();
+    };
+    
+    subjectSelect.onchange = () => {
+      const subjectVal = subjectSelect.value;
+      if (!subjectVal) {
+        testTypeDropdownGroup.style.display = 'none';
+        testTypeSelect.value = '';
+        chapterDropdownContainer.style.display = 'none';
+        midtermDropdownContainer.style.display = 'none';
+        startQuizButtonContainer.style.display = 'none';
+        quizArea.style.display = 'none';
+        return;
+      }
+      
+      // Show test type dropdown
+      testTypeDropdownGroup.style.display = 'block';
+      testTypeSelect.value = '';
+      chapterDropdownContainer.style.display = 'none';
+      midtermDropdownContainer.style.display = 'none';
+      startQuizButtonContainer.style.display = 'none';
+      quizArea.style.display = 'none';
+      checkSelectionsComplete();
+    };
+    
+    testTypeSelect.onchange = () => {
+      handleTestTypeChange();
+      checkSelectionsComplete();
+    };
+    
+    chapterSelect.onchange = () => {
+      checkSelectionsComplete();
+    };
+    
+    midtermTestSelect.onchange = () => {
+      checkSelectionsComplete();
+    };
+    
+    // Start Quiz button click handler
+    const startQuizBtn = document.getElementById('startQuizBtn');
+    if (startQuizBtn) {
+      startQuizBtn.addEventListener('click', showQuiz);
+    }
 
     // Initialize
     function initializeQuiz() {
-      populateClassDropdown();
-      dropdownsDiv.style.display = "none";
-      quizArea.style.display = "none";
+      // Only initialize if elements exist
+      if (dropdownsDiv) {
+        dropdownsDiv.style.display = "none";
+      }
+      if (quizArea) {
+        quizArea.style.display = "none";
+      }
+      if (subjectDropdownGroup) {
+        subjectDropdownGroup.style.display = 'none';
+      }
+      if (testTypeDropdownGroup) {
+        testTypeDropdownGroup.style.display = 'none';
+      }
+      if (chapterDropdownContainer) {
+        chapterDropdownContainer.style.display = 'none';
+      }
+      if (midtermDropdownContainer) {
+        midtermDropdownContainer.style.display = 'none';
+      }
+      if (startQuizButtonContainer) {
+        startQuizButtonContainer.style.display = 'none';
+      }
+      
+      // Populate class dropdown
+      if (classSelect) {
+        populateClassDropdown();
+      }
     }
 
     // Multiple initialization attempts
-    window.addEventListener('load', () => setTimeout(initializeQuiz, 100));
-    document.addEventListener('DOMContentLoaded', () => setTimeout(initializeQuiz, 200));
-    setTimeout(initializeQuiz, 1000);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => setTimeout(initializeQuiz, 100));
+    } else {
+      setTimeout(initializeQuiz, 100);
+    }
+    window.addEventListener('load', () => setTimeout(initializeQuiz, 200));
   </script>
 </body>
 </html>
