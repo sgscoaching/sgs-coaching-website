@@ -1304,12 +1304,12 @@ function submitTest() {
         </style>
     `;
 
-    document.getElementById("nextBtn").addEventListener("click", function() {
+    document.getElementById("nextBtn").addEventListener("click", async function() {
         document.getElementById("resultStats").style.display = "none";
         document.getElementById("result").style.display = "block";
         
-        // Calculate rank and other metrics
-        const rank = calculateRank(score, currentQuizData.length);
+        // Calculate rank and get all submissions for the leaderboard
+        const { rank, submissions } = await calculateRankAndGetSubmissions(score, currentQuizData.length);
         
         // Calculate time taken during the test
         const testEndTime = new Date().getTime();
@@ -1322,7 +1322,8 @@ function submitTest() {
         const accuracy = (attemptedQuestions > 0 ? (score / attemptedQuestions) * 100 : 0).toFixed(1);
         const performanceMessage = getPerformanceMessage(accuracy);
         const rankBadge = getRankBadge(rank);
-        
+        const leaderboardHTML = generateLeaderboardHTML(submissions);
+
         // Generate result HTML
         document.getElementById("result").innerHTML = `
             <div class="result-container">
@@ -1729,6 +1730,8 @@ function submitTest() {
             }
         });
 
+        document.getElementById("result").innerHTML += leaderboardHTML;
+
         document.getElementById("seeSolutionBtn").addEventListener("click", function() {
             document.getElementById("result").style.display = "none";
             document.getElementById("testPage").style.display = "flex";
@@ -1996,42 +1999,59 @@ function updateSolutionView() {
     }
 }
 
-function calculateRank(score, totalQuestions) {
-    // Get all submissions from localStorage
-    let submissions = JSON.parse(localStorage.getItem('quizSubmissions')) || [];
-    
-    // Add current test data for ranking
-    const currentTest = {
-        name: studentName,
-        marks: score,
-        totalQuestions: totalQuestions,
-        accuracy: (score / totalQuestions) * 100,
-        timestamp: Date.now()
-    };
-    
-    // Add current test to submissions for ranking
-    submissions.push(currentTest);
-    
-    // Sort by marks (descending) and then by time taken (ascending)
-    submissions.sort((a, b) => {
-        if (b.marks !== a.marks) {
-            return b.marks - a.marks; // Higher marks first
-        } else {
-            return a.timestamp - b.timestamp; // Earlier submission first for same marks
-        }
+async function calculateRankAndGetSubmissions(score, totalQuestions) {
+    console.log('--- Debugging Leaderboard ---');
+    const mockType = document.getElementById("mockType").value;
+    const subject = document.getElementById("subjectSelect").value;
+    const topic = document.getElementById("topicSelect").value;
+
+    console.log('Filter Criteria:', { mockType, subject, topic });
+
+    // Try fetching from Google Sheets first
+    let rankings = await fetchMockTestRankingsFromSheets();
+    console.log('Raw data from Google Sheets:', rankings);
+
+    // Fallback to localStorage if Sheets fetch fails
+    if (!rankings) {
+        console.warn("Could not fetch rankings from Google Sheets. Falling back to local data.");
+        rankings = JSON.parse(localStorage.getItem('quizSubmissions')) || [];
+        console.log('Data from localStorage (fallback):', rankings);
+    }
+
+    // Ensure rankings is an array before filtering
+    if (!Array.isArray(rankings)) {
+        console.error('Fetched rankings is not an array. Cannot filter.', rankings);
+        rankings = [];
+    }
+
+    // Filter for the current quiz
+    let quizSubmissions = rankings.filter(s => {
+        const match = s.testType === mockType && s.subject === subject && s.topic === topic;
+        return match;
     });
+    console.log('Filtered Submissions (before adding current user):', quizSubmissions);
+
+    // Add current user's score to the list for ranking
+    // Use a temporary flag to easily find the current user later
+    const currentUserSubmission = { 
+        name: studentName, 
+        mobile: studentMobile, 
+        marks: score, 
+        totalQuestions: totalQuestions,
+        isCurrentUser: true 
+    };
+    quizSubmissions.push(currentUserSubmission);
+
+    // Sort by score (desc)
+    quizSubmissions.sort((a, b) => b.marks - a.marks);
+
+    // Find the rank of the current user
+    const rank = quizSubmissions.findIndex(s => s.isCurrentUser) + 1;
     
-    // Find the rank of the current test
-    const rank = submissions.findIndex(s => 
-        s.name === studentName && 
-        s.marks === score && 
-        s.totalQuestions === totalQuestions
-    ) + 1;
-    
-    // Save the updated submissions
-    localStorage.setItem('quizSubmissions', JSON.stringify(submissions));
-    
-    return rank > 0 ? rank : submissions.length;
+    // Remove the temporary flag
+    delete currentUserSubmission.isCurrentUser;
+
+    return { rank: rank || 1, submissions: quizSubmissions };
 }
 
 function getRankBadge(rank) {
@@ -2040,6 +2060,59 @@ function getRankBadge(rank) {
     if (rank === 3) return '🥉'; // Bronze for 3rd
     if (rank <= 10) return '⭐'; // Star for top 10
     return '🎯'; // Target for others
+}
+
+function generateLeaderboardHTML(submissions) {
+    let leaderboardHTML = `
+        <div class="leaderboard-preview">
+            <h3>Quiz Leaderboard</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+    `;
+
+    submissions.forEach((submission, index) => {
+        const isCurrentUser = submission.name === studentName && submission.mobile === studentMobile;
+        leaderboardHTML += `
+            <tr class="${isCurrentUser ? 'current-user' : ''}">
+                <td>${index + 1}</td>
+                <td>${submission.name}</td>
+                <td>${submission.marks}/${submission.totalQuestions}</td>
+            </tr>
+        `;
+    });
+
+    leaderboardHTML += `
+                </tbody>
+            </table>
+        </div>
+        <style>
+            .leaderboard-preview {
+                margin-top: 20px;
+            }
+            .leaderboard-preview table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .leaderboard-preview th, .leaderboard-preview td {
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+            .leaderboard-preview .current-user {
+                background-color: #e0f7fa;
+                font-weight: bold;
+            }
+        </style>
+    `;
+
+    return leaderboardHTML;
 }
 
 function getPerformanceMessage(accuracy) {

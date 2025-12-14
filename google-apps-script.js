@@ -50,7 +50,7 @@ function doGet(e) {
     if (action === 'getAllResults') {
       return getAllResults();
     } else if (action === 'getQuizRankings') {
-      return getQuizRankings();
+      return getQuizRankings(e);
     } else if (action === 'getMockTestRankings') {
       return getMockTestRankings();
     } else if (action === 'getReviews') {
@@ -244,8 +244,9 @@ function getAllResults() {
 
 /**
  * Get quiz rankings (top performers)
+ * Optionally filter by quizTitle parameter
  */
-function getQuizRankings() {
+function getQuizRankings(e) {
   try {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(QUIZ_RESULTS_SHEET);
     
@@ -255,8 +256,11 @@ function getQuizRankings() {
         .setMimeType(ContentService.MimeType.JSON);
     }
     
+    // Get quizTitle from query parameter if provided
+    const quizTitle = e && e.parameter && e.parameter.quizTitle ? e.parameter.quizTitle : null;
+    
     const data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 11).getValues();
-    const results = data.map(row => ({
+    let results = data.map(row => ({
       timestamp: row[0],
       name: row[1],
       mobile: row[2],
@@ -270,6 +274,14 @@ function getQuizRankings() {
       date: row[10]
     }));
     
+    // Filter by quiz title if provided (case-insensitive, partial match)
+    if (quizTitle) {
+      const searchTitle = quizTitle.trim().toLowerCase();
+      results = results.filter(r => 
+        r.quizTitle && r.quizTitle.trim().toLowerCase().includes(searchTitle)
+      );
+    }
+    
     // Sort by percentage (desc), then by time (asc)
     results.sort((a, b) => {
       if (b.percentage !== a.percentage) {
@@ -278,23 +290,35 @@ function getQuizRankings() {
       return a.timeTaken - b.timeTaken;
     });
     
-    // Get top 10 unique students (by name + mobile)
-    const seen = new Set();
-    const topRankings = [];
-    
+    // De-duplicate results, keeping the best score for each student
+    const bestScores = new Map();
     for (const result of results) {
-      const key = `${result.name}_${result.mobile}`;
-      if (!seen.has(key) && topRankings.length < 10) {
-        seen.add(key);
-        topRankings.push({
-          ...result,
-          rank: topRankings.length + 1
-        });
+      const key = `${(result.name || '').trim().toLowerCase()}-${result.mobile || ''}`;
+      const existing = bestScores.get(key);
+      
+      if (!existing || result.score > existing.score || 
+          (result.score === existing.score && result.timeTaken < existing.timeTaken)) {
+        bestScores.set(key, result);
       }
     }
     
+    // Convert map to array and sort again after de-duplication
+    const uniqueResults = Array.from(bestScores.values());
+    uniqueResults.sort((a, b) => {
+      if (b.percentage !== a.percentage) {
+        return b.percentage - a.percentage;
+      }
+      return a.timeTaken - b.timeTaken;
+    });
+    
+    // Return all results (not just top 10) so client can filter/display as needed
+    const rankings = uniqueResults.map((result, index) => ({
+      ...result,
+      rank: index + 1
+    }));
+    
     return ContentService
-      .createTextOutput(JSON.stringify({ success: true, rankings: topRankings }))
+      .createTextOutput(JSON.stringify({ success: true, rankings: rankings }))
       .setMimeType(ContentService.MimeType.JSON);
       
   } catch (error) {
@@ -448,4 +472,5 @@ function getReviews() {
       .setMimeType(ContentService.MimeType.JSON);
   }
 }
+
 

@@ -5,7 +5,7 @@
  */
 
 // ⚠️ UPDATE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL ⚠️
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzRxPdUVXlaBzsFjiC8SXua8Xw2KlWrBsYHUs4YIDfaS9_BeLZzblCGRDoA23Csd9aeDg/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzRpRU9ImsWokMZsqiEqloYbA187mQb2Lyir1WFyh8WzScxqNkIEhaSuoM1wBMFMqgCEg/exec';
 
 /**
  * Send quiz result to Google Sheets
@@ -87,17 +87,37 @@ async function saveMockTestResultToSheets(testData) {
   }
 }
 
+// Cache for quiz rankings (per quiz title)
+let quizRankingsCache = new Map();
+const QUIZ_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes (reduced for more real-time updates)
+
 /**
- * Fetch quiz rankings from Google Sheets
+ * Fetch quiz rankings from Google Sheets, with caching per quiz
+ * @param {string} quizTitle - Optional quiz title to filter rankings
  */
-async function fetchQuizRankingsFromSheets() {
+async function fetchQuizRankingsFromSheets(quizTitle = null) {
+  const now = Date.now();
+  const cacheKey = quizTitle || 'all';
+
+  // If we have a valid cache for this quiz, return it immediately
+  const cached = quizRankingsCache.get(cacheKey);
+  if (cached && (now - cached.timestamp < QUIZ_CACHE_DURATION)) {
+    console.log(`Returning cached quiz rankings for: ${cacheKey}`);
+    return cached.data;
+  }
+
   if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_WEB_APP_URL_HERE') {
     console.warn('Google Sheets URL not configured. Using local data only.');
     return null;
   }
 
   try {
-    const url = `${GOOGLE_SCRIPT_URL}?action=getQuizRankings`;
+    console.log(`Fetching fresh quiz rankings from Google Sheets${quizTitle ? ` for: ${quizTitle}` : ''}...`);
+    let url = `${GOOGLE_SCRIPT_URL}?action=getQuizRankings`;
+    if (quizTitle) {
+      url += `&quizTitle=${encodeURIComponent(quizTitle)}`;
+    }
+    
     const response = await fetch(url);
     
     if (!response.ok) {
@@ -105,7 +125,18 @@ async function fetchQuizRankingsFromSheets() {
     }
     
     const data = await response.json();
-    return data.success ? data.rankings : null;
+    
+    if (data.success) {
+      // Update cache for this quiz
+      quizRankingsCache.set(cacheKey, {
+        data: data.rankings,
+        timestamp: now
+      });
+      console.log(`Quiz rankings fetched and cached successfully for: ${cacheKey}`);
+      return data.rankings;
+    } else {
+      return null;
+    }
   } catch (error) {
     console.error('Error fetching quiz rankings from Google Sheets:', error);
     return null;
