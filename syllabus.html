@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Syllabus & Exam Pattern | SGS Coaching</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2933;
+            background: #f5f7fb;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 0.75rem 0;
+            box-shadow: 0 2px 14px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-section img {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #2d8cf0, #1e3a8a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 0.55rem 1.2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .page-wrapper {
+            max-width: 1100px;
+            margin: 2rem auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .page-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            color: #6b7280;
+            max-width: 700px;
+        }
+
+        .notice-card {
+            margin-top: 1.5rem;
+            padding: 1rem 1.25rem;
+            border-radius: 0.75rem;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e40af;
+            font-size: 0.9rem;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+            gap: 1.75rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+            padding: 1.5rem;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: #111827;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .tab-button {
+            border: 1px solid #e5e7eb;
+            background: #f9fafb;
+            border-radius: 999px;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.85rem;
+            cursor: pointer;
+            color: #4b5563;
+        }
+
+        .tab-button.active {
+            background: #2563eb;
+            border-color: #1d4ed8;
+            color: white;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.25rem;
+            color: #111827;
+        }
+
+        ul {
+            padding-left: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.15rem;
+            font-size: 0.93rem;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .exam-structure {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .exam-structure th,
+        .exam-structure td {
+            border: 1px solid #e5e7eb;
+            padding: 0.55rem 0.6rem;
+            text-align: left;
+        }
+
+        .exam-structure th {
+            background: #f3f4f6;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            background: #ecfdf5;
+            color: #047857;
+            margin-right: 0.4rem;
+            margin-top: 0.3rem;
+        }
+
+        .side-section h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .side-section p {
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            color: #4b5563;
+        }
+
+        .side-section ul {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Class 10 Board Corner */
+        .board-corner {
+            margin-top: 2.5rem;
+        }
+
+        .board-corner-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.25rem;
+        }
+
+        .board-corner-subtitle {
+            font-size: 0.95rem;
+            color: #4b5563;
+            margin-bottom: 1.25rem;
+        }
+
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .subject-card {
+            background: #ffffff;
+            border-radius: 0.9rem;
+            border: 1px solid #e5e7eb;
+            padding: 1rem 1.1rem;
+            box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+        }
+
+        .subject-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.35rem;
+            color: #111827;
+        }
+
+        .subject-chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subject-chip {
+            font-size: 0.78rem;
+            padding: 0.15rem 0.55rem;
+            border-radius: 999px;
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+
+        .chapters-list {
+            font-size: 0.86rem;
+            color: #4b5563;
+            max-height: 210px;
+            overflow-y: auto;
+            padding-right: 0.35rem;
+        }
+
+        .chapters-list li {
+            margin-bottom: 0.15rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9ca3af;
+            margin: 2rem 0 1rem;
+        }
+
+        @media (max-width: 900px) {
+            .layout-grid {
+                grid-template-columns: minmax(0,1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+            .nav-links {
+                display: none;
+            }
+            .page-wrapper {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-section">
+                <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;">
+                    <img src="Logo.png" alt="SGS Coaching Logo">
+                    <div class="logo-text">SGS Coaching</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#courses">Courses</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="mock-test.html" target="_blank">Mock Test</a></li>
+            </ul>
+            <a href="https://wa.me/918580436681" class="btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Talk to Mentor
+            </a>
+        </div>
+    </nav>
+
+    <main class="page-wrapper">
+        <header class="page-header">
+            <h1 class="page-title">CBSE Syllabus & Exam Pattern</h1>
+            <p class="page-subtitle">
+                Here you can quickly check the latest CBSE syllabus outline and exam pattern for different classes.
+                For Class 10 we have given a clear explanation of exam style and how your final marksheet is prepared.
+            </p>
+            <div class="notice-card">
+                <strong>Note:</strong> This is a simplified summary for students and parents. For any official updates or
+                detailed subject–wise syllabus, always refer to the latest circulars and syllabus PDFs on the
+                official CBSE website.
+            </div>
+        </header>
+
+        <section class="layout-grid">
+            <div class="card">
+                <h2>Select Class</h2>
+                <div class="tabs">
+                    <button class="tab-button active" data-target="class6-8">Classes 6–8</button>
+                    <button class="tab-button" data-target="class9">Class 9</button>
+                    <button class="tab-button" data-target="class10">Class 10 (Board)</button>
+                    <button class="tab-button" data-target="class11-12">Classes 11–12</button>
+                </div>
+
+                <div id="class6-8" class="tab-content active">
+                    <h3>Subjects (Typical CBSE Pattern)</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi / Second Language</li>
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>Social Science</li>
+                        <li>Computer / Information Technology (school based)</li>
+                    </ul>
+                    <h3>Assessment Style</h3>
+                    <ul>
+                        <li>Regular class tests and periodic tests</li>
+                        <li>Half–yearly and annual exams (school level)</li>
+                        <li>Projects, notebook work, subject enrichment activities</li>
+                    </ul>
+                </div>
+
+                <div id="class9" class="tab-content">
+                    <h3>Subjects (CBSE Secondary Level – Class 9)</h3>
+                    <ul>
+                        <li>English Language & Literature</li>
+                        <li>Hindi / Other Second Language</li>
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>Social Science</li>
+                        <li>Work Education, Art Education, Health & Physical Education</li>
+                    </ul>
+                    <h3>Exam Pattern (Internal + Final)</h3>
+                    <ul>
+                        <li><span class="highlight">80 marks</span> – year–end exam (per subject)</li>
+                        <li><span class="highlight">20 marks</span> – internal assessment (periodic tests, notebook, activities)</li>
+                    </ul>
+                </div>
+
+                <div id="class10" class="tab-content">
+                    <h3>Core Subjects (CBSE Class 10)</h3>
+                    <ul>
+                        <li>English Language & Literature</li>
+                        <li>Hindi / Other Second Language</li>
+                        <li>Mathematics (Standard / Basic)</li>
+                        <li>Science</li>
+                        <li>Social Science</li>
+                        <li>Additional Subject (e.g. IT / Skill Subject – optional)</li>
+                    </ul>
+
+                    <h3>Board Exam Pattern (Per Main Subject)</h3>
+                    <table class="exam-structure">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Marks</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Theory Board Exam</td>
+                                <td>80</td>
+                                <td>3 hour written paper conducted by CBSE with different sections (MCQs, short & long answer)</td>
+                            </tr>
+                            <tr>
+                                <td>Internal Assessment</td>
+                                <td>20</td>
+                                <td>Periodic tests, notebook submission, subject enrichment & practicals (as per subject)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total per subject</strong></td>
+                                <td><strong>100</strong></td>
+                                <td>Minimum marks required as per CBSE pass criteria</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3 style="margin-top:1rem;">How Your Final Class 10 Marksheet is Prepared</h3>
+                    <p style="font-size:0.93rem; margin-bottom:0.4rem;">
+                        For each main subject, CBSE adds your <span class="highlight">theory marks (out of 80)</span>
+                        and your <span class="highlight">internal assessment marks (out of 20)</span>.
+                        This gives your final marks out of 100 in that subject.
+                    </p>
+                    <ul>
+                        <li>Example: Science – 65/80 in theory + 18/20 internal = 83/100 final marks</li>
+                        <li>Similar calculation is done for all other core subjects.</li>
+                    </ul>
+
+                    <h3>Grading System (Indicative)</h3>
+                    <ul>
+                        <li>A1: 91–100 marks</li>
+                        <li>A2: 81–90 marks</li>
+                        <li>B1: 71–80 marks</li>
+                        <li>B2: 61–70 marks</li>
+                        <li>C1: 51–60 marks</li>
+                        <li>C2: 41–50 marks</li>
+                        <li>D: 33–40 marks</li>
+                        <li>E: &lt; 33 (needs improvement as per CBSE rules)</li>
+                    </ul>
+
+                    <h3>Important Points for Students</h3>
+                    <ul>
+                        <li>Take <span class="highlight">periodic tests and internal activities</span> seriously – those 20 marks can change your grade.</li>
+                        <li>Focus on <span class="highlight">NCERT textbooks</span> first – most board questions are based on NCERT.</li>
+                        <li>Practice previous year papers and sample papers to understand the exact question pattern.</li>
+                    </ul>
+
+                    <div class="board-corner" id="class10-board-corner">
+                        <h3 class="board-corner-title">Class 10 Board Corner – Subject & Chapter View</h3>
+                        <p class="board-corner-subtitle">
+                            Below is a quick chapter–wise view of the five main subjects usually counted for your final marksheet:
+                            <strong>English, Hindi, Mathematics, Science, Social Science</strong>. Always match with the latest
+                            CBSE syllabus PDF for your session.
+                        </p>
+                        <div class="board-grid">
+                            <div class="subject-card">
+                                <h4>English Language & Literature</h4>
+                                <div class="subject-chip-row">
+                                    <span class="subject-chip">First Flight</span>
+                                    <span class="subject-chip">Footprints Without Feet</span>
+                                </div>
+                                <ul class="chapters-list">
+                                    <li>Chapter 1: A Letter to God</li>
+                                    <li>Chapter 2: Nelson Mandela: Long Walk to Freedom</li>
+                                    <li>Chapter 3: Two Stories About Flying</li>
+                                    <li>Chapter 4: From the Diary of Anne Frank</li>
+                                    <li>Chapter 5: The Hundred Dresses – I & II</li>
+                                    <li>Chapter 6: Glimpses of India</li>
+                                    <li>Chapter 7: Madam Rides the Bus</li>
+                                    <li>Chapter 8: The Sermon at Benares</li>
+                                    <li>Chapter 9: The Proposal (Play)</li>
+                                    <li>Footprints: A Triumph of Surgery, The Thief’s Story, The Midnight Visitor, A Question of Trust, Footprints Without Feet, The Making of a Scientist, The Necklace, The Hack Driver, Bholi, The Book That Saved the Earth (check latest list).</li>
+                                </ul>
+                            </div>
+
+                            <div class="subject-card">
+                                <h4>Hindi (example: Course B)</h4>
+                                <div class="subject-chip-row">
+                                    <span class="subject-chip">क्षितिज</span>
+                                    <span class="subject-chip">कृतिका</span>
+                                </div>
+                                <ul class="chapters-list">
+                                    <li>क्षितिज पाठ: दो बैलों की कथा, ल्हासा की ओर, साना–साना हाथ जोड़ि, जयपुर से पत्र, यात्री आदि (as per current book).</li>
+                                    <li>कृतिका पाठ: माता का अँचल, जॉर्ज पंचम की नाक, साना–साना हाथ जोड़ि आदि।</li>
+                                    <li>अपठित गद्यांश, पत्र–लेखन, अनुच्छेद, विज्ञापन, संवाद आदि लेखन कौशल।</li>
+                                </ul>
+                            </div>
+
+                            <div class="subject-card">
+                                <h4>Mathematics (Standard)</h4>
+                                <div class="subject-chip-row">
+                                    <span class="subject-chip">Algebra</span>
+                                    <span class="subject-chip">Geometry</span>
+                                    <span class="subject-chip">Trigonometry</span>
+                                </div>
+                                <ul class="chapters-list">
+                                    <li>Chapter 1: Real Numbers</li>
+                                    <li>Chapter 2: Polynomials</li>
+                                    <li>Chapter 3: Pair of Linear Equations in Two Variables</li>
+                                    <li>Chapter 4: Quadratic Equations</li>
+                                    <li>Chapter 5: Arithmetic Progressions</li>
+                                    <li>Chapter 6: Triangles</li>
+                                    <li>Chapter 7: Coordinate Geometry</li>
+                                    <li>Chapter 8: Introduction to Trigonometry & its Applications</li>
+                                    <li>Chapter 9: Circles & Constructions</li>
+                                    <li>Chapter 10: Areas Related to Circles</li>
+                                    <li>Chapter 11: Surface Areas and Volumes</li>
+                                    <li>Chapter 12: Statistics & Probability</li>
+                                </ul>
+                            </div>
+
+                            <div class="subject-card">
+                                <h4>Science</h4>
+                                <div class="subject-chip-row">
+                                    <span class="subject-chip">Physics</span>
+                                    <span class="subject-chip">Chemistry</span>
+                                    <span class="subject-chip">Biology</span>
+                                </div>
+                                <ul class="chapters-list">
+                                    <li>Chemical Reactions and Equations</li>
+                                    <li>Acids, Bases and Salts</li>
+                                    <li>Metals and Non-metals</li>
+                                    <li>Carbon and Its Compounds</li>
+                                    <li>Periodic Classification of Elements</li>
+                                    <li>Life Processes</li>
+                                    <li>Control and Coordination</li>
+                                    <li>How do Organisms Reproduce?</li>
+                                    <li>Heredity and Evolution</li>
+                                    <li>Light – Reflection and Refraction, The Human Eye and the Colourful World</li>
+                                    <li>Electricity, Magnetic Effects of Electric Current</li>
+                                    <li>Sources of Energy, Our Environment, Management of Natural Resources</li>
+                                </ul>
+                            </div>
+
+                            <div class="subject-card">
+                                <h4>Social Science</h4>
+                                <div class="subject-chip-row">
+                                    <span class="subject-chip">History</span>
+                                    <span class="subject-chip">Geography</span>
+                                    <span class="subject-chip">Civics</span>
+                                    <span class="subject-chip">Economics</span>
+                                </div>
+                                <ul class="chapters-list">
+                                    <li>History (India and the Contemporary World – II): The Rise of Nationalism in Europe, Nationalism in India, The Making of a Global World, The Age of Industrialisation, Print Culture and the Modern World.</li>
+                                    <li>Geography (Contemporary India – II): Resources and Development, Water Resources, Agriculture, Minerals and Energy Resources, Manufacturing Industries, Lifelines of National Economy.</li>
+                                    <li>Civics (Democratic Politics – II): Power Sharing, Federalism, Gender, Religion and Caste, Political Parties, Outcomes of Democracy, Challenges to Democracy.</li>
+                                    <li>Economics (Understanding Economic Development): Development, Sectors of the Indian Economy, Money and Credit, Globalisation and the Indian Economy, Consumer Rights.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="class11-12" class="tab-content">
+                    <h3>Streams & Subjects (Typical)</h3>
+                    <h4 style="font-size:0.95rem;margin-top:0.4rem;">Science Stream</h4>
+                    <ul>
+                        <li>Physics</li>
+                        <li>Chemistry</li>
+                        <li>Mathematics / Biology</li>
+                        <li>English</li>
+                        <li>Optional Subject (e.g. Computer Science, Physical Education etc.)</li>
+                    </ul>
+                    <h3>Exam Pattern</h3>
+                    <ul>
+                        <li>Year–end board exam with theory paper (usually 70 or 80 marks, depending on subject)</li>
+                        <li>Practical / project / internal assessment (20–30 marks)</li>
+                        <li>Regular unit tests, half–yearly, pre–boards at school level</li>
+                    </ul>
+                </div>
+            </div>
+
+            <aside class="card side-section">
+                <h3>How SGS Coaching Helps You</h3>
+                <p>We align our teaching with the exact CBSE pattern so that you are fully ready for school as well as board exams.</p>
+                <ul>
+                    <li>Complete NCERT–based coverage</li>
+                    <li>Regular chapter–wise tests and full syllabus tests</li>
+                    <li>Doubt–clearing and revision sessions</li>
+                    <li>Special focus on Class 10 board exam strategy</li>
+                </ul>
+
+                <h3>Quick Links</h3>
+                <p>
+                    <span class="chip"><i class="fas fa-file-alt"></i> CBSE official syllabus PDFs</span><br>
+                    <a href="https://www.cbse.gov.in/cbsenew/cbse.html" target="_blank" style="font-size:0.9rem; color:#1d4ed8; text-decoration:none;">
+                        Open official CBSE syllabus page
+                    </a>
+                </p>
+                <p>
+                    <span class="chip"><i class="fas fa-book"></i> NCERT Books (PDF)</span><br>
+                    <a href="https://ncert.nic.in/textbook.php" target="_blank" style="font-size:0.9rem; color:#1d4ed8; text-decoration:none;">
+                        View NCERT textbooks PDF (all classes)
+                    </a>
+                </p>
+                <p>
+                    <span class="chip"><i class="fas fa-lightbulb"></i> Tip</span><br>
+                    Keep one print–out of the official syllabus in your study file and tick topics as you complete them.
+                </p>
+            </aside>
+        </section>
+
+        <footer>
+            © <span id="year"></span> SGS Coaching. For the latest official CBSE syllabus always refer to the CBSE website.
+        </footer>
+    </main>
+
+    <script>
+        // Simple tab switching
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.getAttribute('data-target');
+
+                tabButtons.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                btn.classList.add('active');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+
+        // Year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+

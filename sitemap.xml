@@ -5,9 +5,14 @@
     <lastmod>2025-07-06</lastmod>
     <priority>1.0</priority>
   </url>
-<url>
-  <loc>https://sgscoaching.github.io/sgs-coaching-website/quizzes.html</loc>
-  <lastmod>2025-07-06</lastmod>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://sgscoaching.github.io/sgs-coaching-website/quizzes.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sgscoaching.github.io/sgs-coaching-website/syllabus.html</loc>
+    <lastmod>2025-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

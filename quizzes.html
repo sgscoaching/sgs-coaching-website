@@ -135,6 +135,54 @@
       margin-bottom: 1rem;
     }
 
+    /* Floating characters like home hero */
+    .quiz-floating {
+      position: fixed;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      box-shadow: 0 10px 40px rgba(15,23,42,0.25);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #fefcbf;
+      animation: quizFloat 9s ease-in-out infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .quiz-floating.student {
+      width: 70px;
+      height: 70px;
+      top: 18%;
+      right: 8%;
+      animation-delay: 0s;
+    }
+
+    .quiz-floating.book {
+      width: 60px;
+      height: 60px;
+      bottom: 18%;
+      left: 6%;
+      animation-delay: 1.8s;
+    }
+
+    .quiz-floating.light {
+      width: 60px;
+      height: 60px;
+      bottom: 30%;
+      right: 18%;
+      animation-delay: 3.2s;
+    }
+
+    @keyframes quizFloat {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      25% { transform: translateY(-10px) translateX(4px); }
+      50% { transform: translateY(0) translateX(8px); }
+      75% { transform: translateY(8px) translateX(-4px); }
+    }
+
     /* Quiz Card */
     .quiz-card {
       background: rgba(255, 255, 255, 0.95);
@@ -770,6 +818,10 @@
         flex-direction: column;
         text-align: center;
       }
+
+      .quiz-floating {
+        display: none;
+      }
       
       .nav-container {
         padding: 0 1rem;
@@ -821,6 +873,9 @@
   </style>
 </head>
 <body>
+  <div class="quiz-floating student">🧑‍🎓</div>
+  <div class="quiz-floating book">📘</div>
+  <div class="quiz-floating light">💡</div>
   <!-- Navigation -->
   <div class="nav-header">
     <div class="nav-container">

@@ -144,6 +144,52 @@
             padding-top: 80px; /* Add padding to account for fixed header */
         }
 
+        /* Floating study characters / shapes */
+        .hero-floating {
+            position: absolute;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 10px 40px rgba(15,23,42,0.25);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #fefcbf;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-floating.student {
+            width: 80px;
+            height: 80px;
+            top: 18%;
+            right: 12%;
+            animation-delay: 0s;
+        }
+
+        .hero-floating.book {
+            width: 70px;
+            height: 70px;
+            bottom: 16%;
+            left: 8%;
+            animation-delay: 1.5s;
+        }
+
+        .hero-floating.light {
+            width: 65px;
+            height: 65px;
+            bottom: 25%;
+            right: 20%;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-12px) translateX(4px); }
+            50% { transform: translateY(0) translateX(8px); }
+            75% { transform: translateY(10px) translateX(-4px); }
+        }
+
         .hero::before {
             content: '';
             position: absolute;
@@ -247,6 +293,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         .hero-card {
@@ -256,6 +303,8 @@
             padding: 2rem;
             border: 1px solid rgba(255,255,255,0.2);
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
         }
 
         .stats-grid {
@@ -279,6 +328,183 @@
         .stat-label {
             color: rgba(255,255,255,0.8);
             font-size: 0.9rem;
+        }
+
+        /* Syllabus highlight section */
+        .syllabus-highlight {
+            background: radial-gradient(circle at top left, #e0f2fe 0, #f9fafb 50%, #eef2ff 100%);
+            padding: 5rem 0;
+        }
+
+        .syllabus-highlight .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: minmax(0,1.3fr) minmax(0,1fr);
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .syllabus-heading {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.75rem;
+        }
+
+        .syllabus-subtext {
+            color: #4b5563;
+            max-width: 520px;
+            margin-bottom: 1.5rem;
+        }
+
+        .syllabus-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .syllabus-tag {
+            padding: 0.35rem 0.8rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            background: #e0f2fe;
+            color: #1d4ed8;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .syllabus-tag.board {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .syllabus-cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0,1fr));
+            gap: 1rem;
+        }
+
+        .syllabus-mini-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 0 10px 25px rgba(15,23,42,0.08);
+            border: 1px solid #e5e7eb;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            opacity: 0;
+            transform: translateY(25px);
+        }
+
+        .syllabus-mini-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 35px rgba(37,99,235,0.18);
+            border-color: #2563eb;
+        }
+
+        .syllabus-mini-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .syllabus-mini-card h3 {
+            font-size: 0.98rem;
+            margin-bottom: 0.25rem;
+            color: #111827;
+        }
+
+        .syllabus-mini-card p {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        .syllabus-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .syllabus-note {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        .syllabus-preview {
+            position: relative;
+        }
+
+        .syllabus-preview-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 20px 45px rgba(15,23,42,0.18);
+            border: 1px solid #dbeafe;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(25px);
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .syllabus-preview-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            background: #eff6ff;
+            color: #1d4ed8;
+            margin-bottom: 0.75rem;
+        }
+
+        .syllabus-preview-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .syllabus-preview h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        .syllabus-preview ul {
+            padding-left: 1.1rem;
+            margin: 0.4rem 0 0.8rem;
+            font-size: 0.85rem;
+            color: #4b5563;
+        }
+
+        .syllabus-preview-pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .syllabus-pill {
+            padding: 0.25rem 0.7rem;
+            border-radius: 999px;
+            font-size: 0.78rem;
+            background: #f9fafb;
+            border: 1px dashed #cbd5f5;
+            color: #4b5563;
+        }
+
+        .syllabus-glow {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border-radius: 999px;
+            background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 60%);
+            top: -40px;
+            right: -40px;
+            pointer-events: none;
         }
 
         /* Features Section */
@@ -814,6 +1040,15 @@
             .container {
                 padding: 0 1rem;
             }
+
+            .syllabus-highlight .container {
+                padding: 0 1rem;
+                grid-template-columns: minmax(0,1fr);
+            }
+
+            .syllabus-cards {
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
         }
 
         /* Animations */
@@ -862,7 +1097,8 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
-<a href="mock-test.html" target="_blank">Mock Test</a>
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="mock-test.html" target="_blank">Mock Test</a></li>
             </ul>
             <a href="quizzes.html" class="cta-button">Take Quiz</a>
         </div>
@@ -890,6 +1126,9 @@
                 </div>
             </div>
             <div class="hero-visual fade-in-up">
+                <div class="hero-floating student">🧑‍🎓</div>
+                <div class="hero-floating book">📘</div>
+                <div class="hero-floating light">💡</div>
                 <div class="hero-card">
                     <h3 style="color: white; margin-bottom: 1rem; text-align: center;">🚀 Why Choose Us?</h3>
                     <div class="stats-grid">
@@ -919,6 +1158,67 @@
     
 
     
+
+    <!-- Syllabus Highlight Section -->
+    <section class="syllabus-highlight" id="syllabus-highlight">
+        <div class="container">
+            <div>
+                <h2 class="syllabus-heading">See Your CBSE Syllabus at a Glance</h2>
+                <p class="syllabus-subtext">
+                    Quickly check what is important for your class and board exam. We’ve organised syllabus,
+                    exam pattern and NCERT book links so you don’t waste time searching.
+                </p>
+                <div class="syllabus-tags">
+                    <span class="syllabus-tag"><i class="fas fa-check-circle"></i> Classes 6–8</span>
+                    <span class="syllabus-tag"><i class="fas fa-check-circle"></i> Class 9</span>
+                    <span class="syllabus-tag board"><i class="fas fa-star"></i> Class 10 Board Focus</span>
+                    <span class="syllabus-tag"><i class="fas fa-check-circle"></i> Classes 11–12</span>
+                </div>
+                <div class="syllabus-cards">
+                    <div class="syllabus-mini-card" onclick="window.location.href='syllabus.html#class6-8'">
+                        <h3>Foundation (6–8)</h3>
+                        <p>All subjects with NCERT focus and school exam pattern.</p>
+                    </div>
+                    <div class="syllabus-mini-card" onclick="window.location.href='syllabus.html#class9'">
+                        <h3>Class 9 Roadmap</h3>
+                        <p>80 + 20 pattern and concepts that build your Class 10 base.</p>
+                    </div>
+                    <div class="syllabus-mini-card" onclick="window.location.href='syllabus.html#class10'">
+                        <h3>Class 10 Board Plan</h3>
+                        <p>Exam style, marking scheme and how final marksheet is prepared.</p>
+                    </div>
+                </div>
+                <div class="syllabus-cta" style="margin-top:1.75rem;">
+                    <a href="syllabus.html" class="btn-primary">
+                        <i class="fas fa-book-open"></i>
+                        Open Full Syllabus Page
+                    </a>
+                    <p class="syllabus-note">
+                        Includes direct links to CBSE official syllabus and NCERT book PDFs.
+                    </p>
+                </div>
+            </div>
+            <div class="syllabus-preview">
+                <div class="syllabus-preview-card">
+                    <div class="syllabus-preview-badge">
+                        <i class="fas fa-clipboard-list"></i> Live Preview – Class 10
+                    </div>
+                    <h3>Board Exam Snapshot</h3>
+                    <ul>
+                        <li>5 main subjects (English, Hindi, Maths, Science, SST)</li>
+                        <li>Each subject: 80 marks theory + 20 marks internal</li>
+                        <li>NCERT based questions with mix of MCQ, short & long answer</li>
+                    </ul>
+                    <div class="syllabus-preview-pill-row">
+                        <span class="syllabus-pill">Marksheet explanation</span>
+                        <span class="syllabus-pill">Grade system (A1–E)</span>
+                        <span class="syllabus-pill">Previous year focus</span>
+                    </div>
+                    <div class="syllabus-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Features Section -->
     <section class="features" id="features">
@@ -2730,6 +3030,28 @@
 
             // Refresh rankings every 30 seconds
             setInterval(displayTopRankers, 30000);
+
+            // Scroll-in animation for syllabus cards and preview
+            const syllabusCards = document.querySelectorAll('.syllabus-mini-card');
+            const syllabusPreview = document.querySelector('.syllabus-preview-card');
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                syllabusCards.forEach(card => observer.observe(card));
+                if (syllabusPreview) observer.observe(syllabusPreview);
+            } else {
+                // Fallback: make them visible without animation
+                syllabusCards.forEach(card => card.classList.add('visible'));
+                if (syllabusPreview) syllabusPreview.classList.add('visible');
+            }
         });
         
     </script>
