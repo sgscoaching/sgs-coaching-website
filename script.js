@@ -2992,6 +2992,346 @@ hindi: [
     ],
     mathematics: [
       {
+        title: "Numbers and Numeration",
+        questions: [
+          { q: "What is the place value of 7 in 47,523?", options: ["Thousands", "Ten thousands", "Hundreds", "Lakhs"], answer: "Thousands" },
+          { q: "How do you read 5,08,900?", options: ["Five lakh eight thousand nine hundred", "Five lakh eight hundred nine", "Fifty thousand eight hundred ninety", "Five lakh eighty nine"], answer: "Five lakh eight thousand nine hundred" },
+          { q: "The smallest 5-digit number is?", options: ["10000", "9999", "1000", "100000"], answer: "10000" },
+          { q: "What is the expanded form of 23,456?", options: ["2×10000 + 3×1000 + 4×100 + 5×10 + 6×1", "2×1000 + 3×100 + 4×10 + 5×1 + 6", "23×1000 + 456", "2×10000 + 3456"], answer: "2×10000 + 3×1000 + 4×100 + 5×10 + 6×1" },
+          { q: "Compare 45,678 and 45,768. Which is larger?", options: ["45,768", "45,678", "Equal", "45,687"], answer: "45,768" },
+          { q: "The successor of 99,999 is?", options: ["100,000", "99,998", "100,099", "99,100"], answer: "100,000" },
+          { q: "How many millions in 1 crore?", options: ["10", "100", "1", "1000"], answer: "10" },
+          { q: "Arrange in ascending order: 12,345; 12,354; 12,435.", options: ["12,345; 12,354; 12,435", "12,435; 12,354; 12,345", "12,354; 12,345; 12,435", "12,345; 12,435; 12,354"], answer: "12,345; 12,354; 12,435" },
+          { q: "What is 7,89,012 in words?", options: ["Seven lakh eighty-nine thousand twelve", "Seven lakh nine thousand twelve", "Seventy-eight lakh nine thousand twelve", "Seven lakh eighty-nine twelve"], answer: "Seven lakh eighty-nine thousand twelve" },
+          { q: "The largest 4-digit number is?", options: ["9999", "10000", "9000", "999"], answer: "9999" },
+          { q: "Round 4,567 to nearest thousand?", options: ["5000", "4000", "4500", "4600"], answer: "5000" },
+          { q: "How many digits in a lakh?", options: ["6", "5", "7", "4"], answer: "6" },
+          { q: "Predecessor of 1,00,000 is?", options: ["99,999", "1,00,001", "99,000", "1,00,100"], answer: "99,999" },
+          { q: "Which is even: 12,346 or 12,347?", options: ["12,346", "12,347", "Both", "None"], answer: "12,346" },
+          { q: "Face value of 5 in 5,23,456?", options: ["5", "500", "50000", "5000"], answer: "5" }
+        ]
+      },
+      {
+        title: "Roman Numerals",
+        questions: [
+          { q: "What is the Roman numeral for 50?", options: ["L", "C", "D", "M"], answer: "L" },
+          { q: "Convert 100 to Roman numerals?", options: ["C", "M", "D", "L"], answer: "C" },
+          { q: "What does IX represent?", options: ["9", "11", "6", "4"], answer: "9" },
+          { q: "Roman for 40?", options: ["XL", "LX", "XXXX", "L"], answer: "XL" },
+          { q: "Write 199 in Roman numerals?", options: ["CXCIX", "MCMXCIX", "CXCCIX", "CLXXXXIX"], answer: "CXCIX" },
+          { q: "What is V + III?", options: ["VIII", "V III", "V+III", "8"], answer: "VIII" },
+          { q: "Roman for 500?", options: ["D", "M", "C", "L"], answer: "D" },
+          { q: "Convert 49 to Roman?", options: ["XLIX", "XXXXIX", "IL", "XLVIIII"], answer: "XLIX" },
+          { q: "What does MCM represent?", options: ["1900", "2000", "1800", "1950"], answer: "1900" },
+          { q: "Roman for 7?", options: ["VII", "V II", "IVII", "VI"], answer: "VII" },
+          { q: "Write 888 in Roman numerals?", options: ["DCCCLXXXVIII", "DCCC LXXX VIII", "CMXXXVIII", "DCCCLXXVIII"], answer: "DCCCLXXXVIII" },
+          { q: "What is the value of CM?", options: ["900", "1000", "800", "1900"], answer: "900" },
+          { q: "Roman for 30?", options: ["XXX", "XX X", "XC", "LX"], answer: "XXX" },
+          { q: "Convert 94 to Roman?", options: ["XCIV", "XCIIII", "LXXXXIV", "CMIV"], answer: "XCIV" },
+          { q: "What does LV represent?", options: ["55", "65", "45", "50"], answer: "55" }
+        ]
+      },
+      {
+        title: "Addition and Subtraction",
+        questions: [
+          { q: "Add 23,456 + 7,890. What is the sum?", options: ["31,346", "30,346", "31,456", "32,346"], answer: "31,346" },
+          { q: "Subtract 45,678 - 12,345. Result?", options: ["33,333", "33,334", "33,232", "58,023"], answer: "33,333" },
+          { q: "Add 9,999 + 1. Answer?", options: ["10,000", "9,998", "10,001", "11,000"], answer: "10,000" },
+          { q: "What is 67,890 - 23,456?", options: ["44,434", "44,435", "91,346", "44,344"], answer: "44,434" },
+          { q: "Add three numbers: 12,345 + 6,789 + 3,456?", options: ["22,590", "22,589", "22,591", "22,592"], answer: "22,590" },
+          { q: "Subtract 1,00,000 - 45,678?", options: ["54,322", "54,323", "1,45,678", "55,322"], answer: "54,322" },
+          { q: "Add 5,67,890 + 2,34,567?", options: ["8,02,457", "8,02,456", "7,02,457", "8,12,457"], answer: "8,02,457" },
+          { q: "What is 89,012 - 34,567?", options: ["54,445", "54,446", "123,579", "54,355"], answer: "54,445" },
+          { q: "Add 99,999 + 99,999?", options: ["1,99,998", "1,99,999", "2,00,000", "1,99,997"], answer: "1,99,998" },
+          { q: "Subtract 78,901 - 23,456?", options: ["55,445", "55,446", "102,357", "55,355"], answer: "55,445" },
+          { q: "Add 1,23,456 + 7,65,432?", options: ["8,88,888", "8,88,889", "8,88,887", "9,88,888"], answer: "8,88,888" },
+          { q: "What is 2,00,000 - 1,23,456?", options: ["76,544", "76,545", "3,23,456", "77,544"], answer: "76,544" },
+          { q: "Add 45,678 + 54,322?", options: ["1,00,000", "99,999", "1,00,001", "99,998"], answer: "1,00,000" },
+          { q: "Subtract 67,890 - 45,678?", options: ["22,212", "22,213", "113,568", "22,122"], answer: "22,212" },
+          { q: "Add 3,45,678 + 6,54,322?", options: ["10,00,000", "9,99,999", "10,00,001", "9,99,998"], answer: "10,00,000" }
+        ]
+      },
+      {
+        title: "Multiplication and Division",
+        questions: [
+          { q: "What is 25 × 4?", options: ["100", "125", "20", "50"], answer: "100" },
+          { q: "Divide 144 by 12?", options: ["12", "132", "156", "120"], answer: "12" },
+          { q: "23 × 10 = ?", options: ["230", "13", "233", "20"], answer: "230" },
+          { q: "What is 360 ÷ 5?", options: ["72", "365", "355", "70"], answer: "72" },
+          { q: "Multiply 15 × 6?", options: ["90", "21", "9", "150"], answer: "90" },
+          { q: "Divide 200 by 8?", options: ["25", "208", "192", "20"], answer: "25" },
+          { q: "What is 34 × 3?", options: ["102", "37", "31", "108"], answer: "102" },
+          { q: "156 ÷ 13 = ?", options: ["12", "169", "143", "10"], answer: "12" },
+          { q: "Multiply 22 × 5?", options: ["110", "27", "17", "120"], answer: "110" },
+          { q: "What is 480 ÷ 6?", options: ["80", "486", "474", "70"], answer: "80" },
+          { q: "45 × 2 = ?", options: ["90", "47", "43", "100"], answer: "90" },
+          { q: "Divide 96 by 4?", options: ["24", "100", "92", "20"], answer: "24" },
+          { q: "What is 18 × 7?", options: ["126", "25", "11", "136"], answer: "126" },
+          { q: "350 ÷ 7 = ?", options: ["50", "357", "343", "40"], answer: "50" },
+          { q: "Multiply 12 × 9?", options: ["108", "21", "3", "120"], answer: "108" }
+        ]
+      },
+      {
+        title: "Factors and Multiples",
+        questions: [
+          { q: "What is a factor of 24?", options: ["6", "7", "8", "9"], answer: "6" },
+          { q: "Multiple of 5 ending with 5 or 0?", options: ["All", "Only 5", "Only 0", "None"], answer: "All" },
+          { q: "Prime factors of 30?", options: ["2,3,5", "2,15", "3,10", "5,6"], answer: "2,3,5" },
+          { q: "Common factor of 12 and 18?", options: ["6", "3", "9", "2"], answer: "6" },
+          { q: "What number has factors 1 and itself only? (Prime)", options: ["17", "16", "15", "14"], answer: "17" },
+          { q: "LCM of 4 and 6?", options: ["12", "2", "24", "10"], answer: "12" },
+          { q: "HCF of 15 and 25?", options: ["5", "1", "75", "10"], answer: "5" },
+          { q: "Multiples of 3 up to 15: 3,6,9,?", options: ["12", "15", "Both", "None"], answer: "Both" },
+          { q: "Factors of 20?", options: ["1,2,4,5,10,20", "1,2,4,20", "2,4,5,10", "1,5,20"], answer: "1,2,4,5,10,20" },
+          { q: "Composite number example?", options: ["15", "13", "11", "7"], answer: "15" },
+          { q: "Common multiple of 2 and 3?", options: ["6", "5", "4", "1"], answer: "6" },
+          { q: "HCF of 8 and 12?", options: ["4", "2", "24", "1"], answer: "4" },
+          { q: "Prime number between 20 and 30?", options: ["23", "21", "25", "27"], answer: "23" },
+          { q: "LCM of 3 and 5?", options: ["15", "8", "1", "3"], answer: "15" },
+          { q: "Even number's smallest factor?", options: ["2", "1", "Even number", "0"], answer: "2" }
+        ]
+      },
+      {
+        title: "Fractions",
+        questions: [
+          { q: "What is 1/2 of 10?", options: ["5", "2", "10", "1"], answer: "5" },
+          { q: "Simplify 4/8?", options: ["1/2", "2/4", "4/2", "8/4"], answer: "1/2" },
+          { q: "3/4 + 1/4 = ?", options: ["1", "1/2", "4/4", "3/8"], answer: "1" },
+          { q: "What fraction is 2 parts out of 5?", options: ["2/5", "5/2", "2/10", "5/10"], answer: "2/5" },
+          { q: "Equivalent to 3/6?", options: ["1/2", "3/3", "6/3", "1/3"], answer: "1/2" },
+          { q: "1/3 of 12?", options: ["4", "3", "12", "6"], answer: "4" },
+          { q: "Subtract 1/2 - 1/4?", options: ["1/4", "1/2", "3/4", "0"], answer: "1/4" },
+          { q: "Whole is?", options: ["1/1", "0/1", "1/2", "2/2"], answer: "1/1" },
+          { q: "2/3 + 1/3 = ?", options: ["1", "3/3", "2/6", "1/6"], answer: "1" },
+          { q: "What is 3/5 of 20?", options: ["12", "5", "20", "3"], answer: "12" },
+          { q: "Simplify 6/9?", options: ["2/3", "3/3", "6/3", "1/3"], answer: "2/3" },
+          { q: "1/4 + 3/4 = ?", options: ["1", "4/4", "1/2", "2/4"], answer: "1" },
+          { q: "Half of 8 is?", options: ["4", "2", "8", "16"], answer: "4" },
+          { q: "4/6 simplified?", options: ["2/3", "1/3", "4/3", "2/6"], answer: "2/3" },
+          { q: "What fraction shows 3 equal parts out of 8?", options: ["3/8", "8/3", "3/5", "8/3"], answer: "3/8" }
+        ]
+      },
+      {
+        title: "Decimal Numbers",
+        questions: [
+          { q: "What is 0.5 as a fraction?", options: ["1/2", "5/10", "0/5", "5/1"], answer: "1/2" },
+          { q: "Add 0.23 + 0.77?", options: ["1.00", "0.46", "1.00", "0.10"], answer: "1.00" },
+          { q: "0.1 = ?/10", options: ["1", "10", "0.1", "1/100"], answer: "1" },
+          { q: "Compare 0.45 and 0.54?", options: ["0.45 < 0.54", "0.45 > 0.54", "Equal", "0.54 < 0.45"], answer: "0.45 < 0.54" },
+          { q: "Subtract 1.00 - 0.25?", options: ["0.75", "1.25", "0.50", "0.25"], answer: "0.75" },
+          { q: "0.75 as fraction?", options: ["3/4", "75/100", "7/5", "3/5"], answer: "3/4" },
+          { q: "What is tenths place in 3.456?", options: ["4", "5", "3", "6"], answer: "4" },
+          { q: "0.09 + 0.91 = ?", options: ["1.00", "0.18", "0.82", "1.00"], answer: "1.00" },
+          { q: "1/10 = ?", options: ["0.1", "0.10", "1.0", "0.01"], answer: "0.1" },
+          { q: "Multiply 0.2 × 5?", options: ["1", "0.1", "1.0", "10"], answer: "1" },
+          { q: "0.4 = ?/10", options: ["4", "40", "0.4", "4/100"], answer: "4" },
+          { q: "Add 2.3 + 1.7?", options: ["4.0", "3.6", "4.0", "1.0"], answer: "4.0" },
+          { q: "0.25 as fraction?", options: ["1/4", "25/100", "2/5", "1/5"], answer: "1/4" },
+          { q: "Subtract 0.6 - 0.3?", options: ["0.3", "0.9", "0.27", "0.33"], answer: "0.3" },
+          { q: "Hundredths in 0.123?", options: ["2", "1", "3", "0"], answer: "2" }
+        ]
+      },
+      {
+        title: "Unitary Method",
+        questions: [
+          { q: "If 5 books cost ₹25, cost of 1 book?", options: ["₹5", "₹20", "₹30", "₹10"], answer: "₹5" },
+          { q: "8 kg apples for ₹40, price per kg?", options: ["₹5", "₹48", "₹32", "₹10"], answer: "₹5" },
+          { q: "If 1 pen costs ₹10, 6 pens cost?", options: ["₹60", "₹16", "₹4", "₹70"], answer: "₹60" },
+          { q: "12 liters milk for ₹120, per liter?", options: ["₹10", "₹132", "₹108", "₹20"], answer: "₹10" },
+          { q: "3 workers finish in 6 days, 1 worker in?", options: ["18 days", "9 days", "2 days", "3 days"], answer: "18 days" },
+          { q: "If 4 apples cost ₹20, 10 apples cost?", options: ["₹50", "₹24", "₹16", "₹80"], answer: "₹50" },
+          { q: "1 km in 2 min, 3 km in?", options: ["6 min", "5 min", "1.5 min", "3 min"], answer: "6 min" },
+          { q: "6 pencils for ₹12, 1 pencil?", options: ["₹2", "₹18", "₹6", "₹10"], answer: "₹2" },
+          { q: "If 7 days work ₹350, 1 day?", options: ["₹50", "₹357", "₹343", "₹100"], answer: "₹50" },
+          { q: "2 kg rice ₹100, 5 kg?", options: ["₹250", "₹102", "₹98", "₹500"], answer: "₹250" },
+          { q: "1 bus carries 40, 3 buses carry?", options: ["120", "43", "37", "80"], answer: "120" },
+          { q: "9 oranges ₹45, per orange?", options: ["₹5", "₹54", "₹36", "₹10"], answer: "₹5" },
+          { q: "4 liters paint ₹80, 1 liter?", options: ["₹20", "₹84", "₹76", "₹40"], answer: "₹20" },
+          { q: "If 5 toys ₹150, 2 toys?", options: ["₹60", "₹152", "₹148", "₹300"], answer: "₹60" },
+          { q: "1 worker 10 days, 2 workers?", options: ["5 days", "20 days", "11 days", "0 days"], answer: "5 days" }
+        ]
+      },
+      {
+        title: "Money and Bills",
+        questions: [
+          { q: "₹50 + ₹30 - ₹20 = ?", options: ["₹60", "₹100", "₹0", "₹80"], answer: "₹60" },
+          { q: "Cost of 2 apples at ₹5 each?", options: ["₹10", "₹7", "₹3", "₹15"], answer: "₹10" },
+          { q: "Change from ₹100 for ₹45 item?", options: ["₹55", "₹145", "₹55", "₹45"], answer: "₹55" },
+          { q: "Total bill: ₹200 + ₹150 + ₹50?", options: ["₹400", "₹350", "₹300", "₹450"], answer: "₹400" },
+          { q: "If 1 kg sugar ₹40, 3 kg?", options: ["₹120", "₹43", "₹37", "₹80"], answer: "₹120" },
+          { q: "Discount 10% on ₹500?", options: ["₹50", "₹550", "₹450", "₹100"], answer: "₹50" },
+          { q: "₹100 note for ₹75, change?", options: ["₹25", "₹175", "₹50", "₹75"], answer: "₹25" },
+          { q: "Cost of 5 pens at ₹8 each?", options: ["₹40", "₹13", "₹3", "₹48"], answer: "₹40" },
+          { q: "Total: bread ₹20, milk ₹30, eggs ₹15?", options: ["₹65", "₹35", "₹50", "₹65"], answer: "₹65" },
+          { q: "Savings: earn ₹200, spend ₹150?", options: ["₹50", "₹350", "₹50", "₹200"], answer: "₹50" },
+          { q: "₹200 for ₹180 bill, change?", options: ["₹20", "₹380", "₹10", "₹30"], answer: "₹20" },
+          { q: "Price per dozen eggs ₹60, per egg?", options: ["₹5", "₹65", "₹55", "₹10"], answer: "₹5" },
+          { q: "Add ₹10 + ₹20 + ₹50 notes?", options: ["₹80", "₹90", "₹70", "₹100"], answer: "₹80" },
+          { q: "Cost 4 chocolates ₹12, each?", options: ["₹3", "₹16", "₹8", "₹2"], answer: "₹3" },
+          { q: "Bill ₹350, pay ₹400, change?", options: ["₹50", "₹750", "₹350", "₹100"], answer: "₹50" }
+        ]
+      },
+      {
+        title: "Percentage",
+        questions: [
+          { q: "What is 50% of 100?", options: ["50", "100", "25", "200"], answer: "50" },
+          { q: "25% of 200?", options: ["50", "25", "100", "75"], answer: "50" },
+          { q: "10% of 500?", options: ["50", "60", "40", "100"], answer: "50" },
+          { q: "What percent is 20 of 100?", options: ["20%", "10%", "50%", "200%"], answer: "20%" },
+          { q: "75% of 40?", options: ["30", "10", "20", "35"], answer: "30" },
+          { q: "5% of 200?", options: ["10", "20", "5", "100"], answer: "10" },
+          { q: "What is 100% of 50?", options: ["50", "100", "25", "0"], answer: "50" },
+          { q: "40% of 250?", options: ["100", "90", "110", "50"], answer: "100" },
+          { q: "15% of 100?", options: ["15", "85", "20", "10"], answer: "15" },
+          { q: "What percent is 30 of 150?", options: ["20%", "30%", "50%", "10%"], answer: "20%" },
+          { q: "80% of 25?", options: ["20", "5", "15", "30"], answer: "20" },
+          { q: "2% of 500?", options: ["10", "2", "50", "100"], answer: "10" },
+          { q: "60% of 50?", options: ["30", "20", "40", "10"], answer: "30" },
+          { q: "What is 25% of 80?", options: ["20", "30", "10", "40"], answer: "20" },
+          { q: "90% of 100?", options: ["90", "10", "100", "80"], answer: "90" }
+        ]
+      },
+      {
+        title: "Measurement",
+        questions: [
+          { q: "1 meter = ? cm", options: ["100", "10", "1000", "1"], answer: "100" },
+          { q: "Which is longest: km, m, cm?", options: ["km", "m", "cm", "All same"], answer: "km" },
+          { q: "1 kg = ? g", options: ["1000", "100", "10", "1"], answer: "1000" },
+          { q: "Length of a pencil approx?", options: ["15 cm", "15 m", "15 km", "15 g"], answer: "15 cm" },
+          { q: "1 liter = ? ml", options: ["1000", "100", "10", "1"], answer: "1000" },
+          { q: "Weight of a book approx?", options: ["500 g", "500 kg", "500 m", "500 l"], answer: "500 g" },
+          { q: "1 cm = ? mm", options: ["10", "100", "1000", "1"], answer: "10" },
+          { q: "Capacity of a bucket approx?", options: ["10 l", "10 g", "10 m", "10 cm"], answer: "10 l" },
+          { q: "1 km = ? m", options: ["1000", "100", "10", "1"], answer: "1000" },
+          { q: "Add 2 m 50 cm + 1 m 30 cm?", options: ["4 m", "3 m 80 cm", "3 m 20 cm", "4 m 80 cm"], answer: "4 m" },
+          { q: "Which is heaviest: 1 kg, 1000 g?", options: ["Same", "1 kg heavier", "1000 g heavier", "Neither"], answer: "Same" },
+          { q: "1 m = ? mm", options: ["1000", "100", "10", "10000"], answer: "1000" },
+          { q: "Perimeter unit?", options: ["m", "m²", "l", "g"], answer: "m" },
+          { q: "Volume unit for solids?", options: ["cm³", "cm", "g", "l"], answer: "cm³" },
+          { q: "Convert 3 kg to g?", options: ["3000", "30", "300", "30000"], answer: "3000" }
+        ]
+      },
+      {
+        title: "Time",
+        questions: [
+          { q: "How many minutes in 1 hour?", options: ["60", "24", "12", "365"], answer: "60" },
+          { q: "What time is 15 minutes after 3:45?", options: ["4:00", "3:60", "4:15", "3:30"], answer: "4:00" },
+          { q: "How many days in a week?", options: ["7", "30", "12", "365"], answer: "7" },
+          { q: "Add 2 hours 30 min + 1 hour 45 min?", options: ["4 hours 15 min", "3 hours 75 min", "4 hours", "3 hours 15 min"], answer: "4 hours 15 min" },
+          { q: "What is 1 day in hours?", options: ["24", "12", "60", "7"], answer: "24" },
+          { q: "Time from 9:00 AM to 5:00 PM?", options: ["8 hours", "9 hours", "7 hours", "6 hours"], answer: "8 hours" },
+          { q: "How many seconds in 1 minute?", options: ["60", "24", "3600", "12"], answer: "60" },
+          { q: "Subtract 2:30 PM - 1:45 PM?", options: ["45 min", "1 hour 15 min", "45 min", "3 hours 15 min"], answer: "45 min" },
+          { q: "Months in a year?", options: ["12", "52", "365", "24"], answer: "12" },
+          { q: "What is 3 hours before 10:00 AM?", options: ["7:00 AM", "1:00 PM", "13:00 AM", "6:00 AM"], answer: "7:00 AM" },
+          { q: "How many weeks in a year approx?", options: ["52", "12", "365", "24"], answer: "52" },
+          { q: "Add 45 min + 20 min?", options: ["1 hour 5 min", "65 min", "1 hour", "25 min"], answer: "1 hour 5 min" },
+          { q: "24-hour format for 9:00 PM?", options: ["21:00", "09:00", "9:00 PM", "20:00"], answer: "21:00" },
+          { q: "Hours in a day?", options: ["24", "12", "60", "7"], answer: "24" },
+          { q: "Time for school usually starts at?", options: ["9:00 AM", "9:00 PM", "12:00 PM", "6:00 AM"], answer: "9:00 AM" }
+        ]
+      },
+      {
+        title: "Temperature",
+        questions: [
+          { q: "Boiling point of water in Celsius?", options: ["100°C", "0°C", "37°C", "212°C"], answer: "100°C" },
+          { q: "Freezing point of water?", options: ["0°C", "100°C", "37°C", "-273°C"], answer: "0°C" },
+          { q: "Normal human body temperature?", options: ["37°C", "100°C", "0°C", "212°C"], answer: "37°C" },
+          { q: "If temperature rises by 5°C from 20°C?", options: ["25°C", "15°C", "25°F", "20°C"], answer: "25°C" },
+          { q: "Convert 0°C to Fahrenheit approx?", options: ["32°F", "212°F", "100°F", "0°F"], answer: "32°F" },
+          { q: "What is 100°C in Fahrenheit?", options: ["212°F", "32°F", "37°F", "0°F"], answer: "212°F" },
+          { q: "Temperature drops 10°C from 15°C?", options: ["5°C", "25°C", "-5°C", "15°C"], answer: "5°C" },
+          { q: "Fahrenheit to Celsius formula involves?", options: ["(F-32)×5/9", "F×9/5", "F+32", "F-100"], answer: "(F-32)×5/9" },
+          { q: "Room temperature approx?", options: ["25°C", "0°C", "100°C", "37°C"], answer: "25°C" },
+          { q: "Add 20°C + 30°C average?", options: ["25°C", "50°C", "10°C", "50°F"], answer: "25°C" },
+          { q: "Absolute zero is?", options: ["-273°C", "0°C", "100°C", "273°C"], answer: "-273°C" },
+          { q: "37°C in Fahrenheit?", options: ["98.6°F", "212°F", "32°F", "100°F"], answer: "98.6°F" },
+          { q: "If 40°C, feels hot?", options: ["Yes", "No", "Freezing", "Boiling"], answer: "Yes" },
+          { q: "Subtract 30°C - 10°C?", options: ["20°C", "40°C", "0°C", "40°F"], answer: "20°C" },
+          { q: "Celsius scale used in?", options: ["India", "USA only", "UK", "All"], answer: "India" }
+        ]
+      },
+      {
+        title: "Geometry",
+        questions: [
+          { q: "How many sides in a triangle?", options: ["3", "4", "5", "6"], answer: "3" },
+          { q: "A quadrilateral has ? sides", options: ["4", "3", "5", "6"], answer: "4" },
+          { q: "What is a circle's boundary called?", options: ["Circumference", "Diameter", "Radius", "Arc"], answer: "Circumference" },
+          { q: "Angle less than 90°?", options: ["Acute", "Obtuse", "Right", "Straight"], answer: "Acute" },
+          { q: "Sum of angles in triangle?", options: ["180°", "360°", "90°", "270°"], answer: "180°" },
+          { q: "Shape with no sides?", options: ["Circle", "Square", "Triangle", "Rectangle"], answer: "Circle" },
+          { q: "Right angle is?", options: ["90°", "180°", "45°", "360°"], answer: "90°" },
+          { q: "Pentagon has ? sides", options: ["5", "4", "6", "3"], answer: "5" },
+          { q: "Perpendicular lines form?", options: ["90° angle", "0°", "180°", "45°"], answer: "90° angle" },
+          { q: "What is a polygon?", options: ["Closed shape with straight sides", "Curve", "Open line", "3D"], answer: "Closed shape with straight sides" },
+          { q: "Obtuse angle greater than?", options: ["90°", "180°", "0°", "45°"], answer: "90°" },
+          { q: "Hexagon sides?", options: ["6", "5", "7", "4"], answer: "6" },
+          { q: "Diameter is ? times radius", options: ["2", "1", "3", "4"], answer: "2" },
+          { q: "Parallel lines never?", options: ["Meet", "Cross", "Both", "None"], answer: "Meet" },
+          { q: "Vertex is?", options: ["Corner point", "Side", "Angle", "Curve"], answer: "Corner point" }
+        ]
+      },
+      {
+        title: "Perimeter, Area and Volume",
+        questions: [
+          { q: "Perimeter of square side 5 cm?", options: ["20 cm", "25 cm", "10 cm", "5 cm"], answer: "20 cm" },
+          { q: "Area of rectangle 4 cm × 3 cm?", options: ["12 cm²", "7 cm²", "12 cm", "1 cm²"], answer: "12 cm²" },
+          { q: "Volume of cube side 2 cm?", options: ["8 cm³", "4 cm³", "6 cm³", "2 cm³"], answer: "8 cm³" },
+          { q: "Perimeter of triangle sides 3,4,5 cm?", options: ["12 cm", "6 cm", "12 cm²", "9 cm"], answer: "12 cm" },
+          { q: "Area of square side 6 cm?", options: ["36 cm²", "12 cm²", "24 cm²", "6 cm²"], answer: "36 cm²" },
+          { q: "Volume of cuboid 2×3×4 cm?", options: ["24 cm³", "9 cm³", "24 cm", "48 cm³"], answer: "24 cm³" },
+          { q: "Perimeter of rectangle 5 cm length, 2 cm width?", options: ["14 cm", "7 cm", "10 cm", "10 cm²"], answer: "14 cm" },
+          { q: "Area of triangle base 6 cm, height 4 cm?", options: ["12 cm²", "10 cm²", "24 cm²", "5 cm²"], answer: "12 cm²" },
+          { q: "Volume unit?", options: ["cm³", "cm²", "cm", "m"], answer: "cm³" },
+          { q: "Perimeter of equilateral triangle side 4 cm?", options: ["12 cm", "16 cm", "8 cm", "4 cm"], answer: "12 cm" },
+          { q: "Area of parallelogram base 5 cm, height 3 cm?", options: ["15 cm²", "8 cm²", "15 cm", "2 cm²"], answer: "15 cm²" },
+          { q: "If perimeter 24 cm square, side?", options: ["6 cm", "12 cm", "4 cm", "24 cm"], answer: "6 cm" },
+          { q: "Volume of box 1×1×1 cm?", options: ["1 cm³", "3 cm³", "1 cm²", "6 cm³"], answer: "1 cm³" },
+          { q: "Area unit?", options: ["cm²", "cm", "cm³", "m"], answer: "cm²" },
+          { q: "Perimeter of circle is?", options: ["Circumference", "Area", "Radius", "Diameter"], answer: "Circumference" }
+        ]
+      },
+      {
+        title: "Symmetry and Patterns",
+        questions: [
+          { q: "A square has ? lines of symmetry", options: ["4", "2", "1", "0"], answer: "4" },
+          { q: "What comes next: 1,3,5,?", options: ["7", "6", "4", "8"], answer: "7" },
+          { q: "Circle has ? symmetry lines", options: ["Infinite", "0", "1", "4"], answer: "Infinite" },
+          { q: "Pattern: ABAB, next?", options: ["A", "B", "AB", "C"], answer: "A" },
+          { q: "Equilateral triangle symmetry lines?", options: ["3", "1", "0", "2"], answer: "3" },
+          { q: "Next in 2,4,6,8?", options: ["10", "9", "7", "12"], answer: "10" },
+          { q: "Rectangle has ? symmetry lines", options: ["2", "4", "1", "0"], answer: "2" },
+          { q: "Shape pattern: circle, square, triangle,?", options: ["Circle", "Square", "Triangle", "Line"], answer: "Circle" },
+          { q: "Rotational symmetry for square?", options: ["Order 4", "Order 2", "Order 1", "Order 3"], answer: "Order 4" },
+          { q: "Next: 10,20,30,?", options: ["40", "50", "30", "10"], answer: "40" },
+          { q: "Isosceles triangle symmetry?", options: ["1", "3", "0", "2"], answer: "1" },
+          { q: "Number pattern: 5,10,15,?", options: ["20", "25", "15", "10"], answer: "20" },
+          { q: "Rhombus symmetry lines?", options: ["2", "4", "1", "0"], answer: "2" },
+          { q: "Color pattern: red, blue, red,?", options: ["Blue", "Red", "Green", "Yellow"], answer: "Blue" },
+          { q: "Scalene triangle symmetry?", options: ["0", "1", "3", "2"], answer: "0" }
+        ]
+      },
+      {
+        title: "Data Handling",
+        questions: [
+          { q: "What is a bar graph?", options: ["Uses bars to show data", "Pictures", "Lines over time", "Circle parts"], answer: "Uses bars to show data" },
+          { q: "Pictograph uses?", options: ["Symbols or pictures", "Bars", "Lines", "Pie"], answer: "Symbols or pictures" },
+          { q: "Tally marks: |||| = ?", options: ["4", "5", "1", "3"], answer: "4" },
+          { q: "Pie chart shows?", options: ["Parts of whole", "Change over time", "Categories", "Pictures"], answer: "Parts of whole" },
+          { q: "If 1 symbol = 2, 3 symbols = ?", options: ["6", "5", "3", "2"], answer: "6" },
+          { q: "Line graph for?", options: ["Trends over time", "Categories", "Parts", "Pictures"], answer: "Trends over time" },
+          { q: "Table has?", options: ["Rows and columns", "Bars", "Pictures", "Lines"], answer: "Rows and columns" },
+          { q: "Most in data: 10,15,5,20. What?", options: ["20", "5", "15", "10"], answer: "20" },
+          { q: "Least in 3,7,1,4?", options: ["1", "3", "7", "4"], answer: "1" },
+          { q: "Total: apples 5, oranges 7?", options: ["12", "2", "35", "1:1.4"], answer: "12" },
+          { q: "Histogram is like bar graph but?", options: ["No gaps", "With gaps", "Pictures", "Lines"], answer: "No gaps" },
+          { q: "Data organization tool?", options: ["Chart", "Story", "Game", "Book"], answer: "Chart" },
+          { q: "Frequency means?", options: ["How often", "Total", "Average", "Difference"], answer: "How often" },
+          { q: "Double bar graph compares?", options: ["Two sets", "One set", "Time", "Parts"], answer: "Two sets" },
+          { q: "Range of data 1,3,5,10?", options: ["9", "4", "19", "3"], answer: "9" }
+        ]
+      },
+      {
         title: "Chapter 1 - The Fish Tale",
         questions: [
           { q: "What is the main theme of The Fish Tale?", options: ["Measurement", "Addition", "Subtraction", "Division"], answer: "Measurement" },

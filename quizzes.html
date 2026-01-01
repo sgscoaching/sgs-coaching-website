@@ -39,6 +39,188 @@
       z-index: -1;
     }
 
+    /* Live Ticker Bar */
+    .live-ticker-bar {
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: white;
+      padding: 0.65rem 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      overflow: hidden;
+    }
+    
+    /* Adjust body padding to account for fixed ticker */
+    body.has-ticker {
+      padding-top: 40px;
+    }
+
+    .ticker-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ticker-label {
+      background: rgba(255,255,255,0.2);
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+
+    .ticker-wrapper {
+      display: flex;
+      gap: 2rem;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .ticker-content {
+      display: flex;
+      gap: 2rem;
+      animation: scrollTicker 40s linear infinite;
+    }
+
+    #tickerContentDuplicate {
+      animation: scrollTicker 40s linear infinite;
+    }
+
+    .ticker-wrapper:hover .ticker-content,
+    .ticker-wrapper:hover #tickerContentDuplicate {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollTicker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .ticker-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .ticker-item.rank1 {
+      font-weight: 700;
+      color: #fef3c7;
+    }
+    
+    .ticker-item.recent {
+      color: #e0e7ff;
+      font-style: italic;
+    }
+
+    .ticker-medal {
+      font-size: 1rem;
+    }
+
+    /* Congratulations Modal */
+    .congrats-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(5px);
+      z-index: 10000;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    .congrats-modal.show {
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .congrats-content {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      animation: scaleIn 0.4s ease-out;
+      border: 4px solid #fbbf24;
+      position: relative;
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .congrats-icon {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      animation: bounce 1s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .congrats-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #92400e;
+      margin-bottom: 1rem;
+    }
+
+    .congrats-message {
+      font-size: 1.2rem;
+      color: #78350f;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .congrats-btn {
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+
+    .congrats-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
+    }
+
     /* Navigation */
     .nav-header {
       background: rgba(255, 255, 255, 0.95);
@@ -46,8 +228,12 @@
       padding: 1rem 0;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       position: sticky;
-      top: 0;
-      z-index: 100;
+      top: 40px;
+      z-index: 999;
+    }
+    
+    body.has-ticker .nav-header {
+      top: 40px;
     }
 
     .nav-container {
@@ -679,9 +865,31 @@
       animation: spin 1s ease-in-out infinite;
     }
 
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+
+        @keyframes slideIn {
+          from {
+            transform: translateX(400px);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        @keyframes slideOut {
+          from {
+            transform: translateX(0);
+            opacity: 1;
+          }
+          to {
+            transform: translateX(400px);
+            opacity: 0;
+          }
+        }
 
     /* Success States */
     .success-indicator {
@@ -698,6 +906,29 @@
 
     /* Mobile Responsive */
     @media (max-width: 768px) {
+      .live-ticker-bar {
+        padding: 0.5rem 0;
+        font-size: 0.8rem;
+      }
+      
+      .ticker-label {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+      }
+      
+      .ticker-item {
+        font-size: 0.8rem;
+        gap: 0.3rem;
+      }
+      
+      body.has-ticker {
+        padding-top: 35px;
+      }
+      
+      body.has-ticker .nav-header {
+        top: 35px;
+      }
+      
       .quiz-container {
         padding: 0.5rem;
         margin: 1rem auto;
@@ -876,6 +1107,39 @@
   <div class="quiz-floating student">🧑‍🎓</div>
   <div class="quiz-floating book">📘</div>
   <div class="quiz-floating light">💡</div>
+  
+  <!-- Live Ticker Bar -->
+  <div class="live-ticker-bar" id="liveTickerBar" style="display: none;">
+    <div class="ticker-container">
+      <div class="ticker-label">
+        <i class="fas fa-fire"></i>
+        Live Activity
+      </div>
+      <div class="ticker-wrapper">
+        <div class="ticker-content" id="tickerContent">
+          <!-- Ticker items will be populated by JavaScript -->
+        </div>
+        <!-- Duplicate content for seamless loop -->
+        <div class="ticker-content" id="tickerContentDuplicate">
+          <!-- Duplicate ticker items -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Congratulations Modal -->
+  <div class="congrats-modal" id="congratsModal">
+    <div class="congrats-content">
+      <div class="congrats-icon">🏆</div>
+      <h2 class="congrats-title">Congratulations!</h2>
+      <p class="congrats-message" id="congratsMessage">
+        You've achieved <strong>Rank #1</strong>! 🎉<br>
+        Outstanding performance! Keep up the excellent work and continue to excel in your studies!
+      </p>
+      <button class="congrats-btn" onclick="closeCongratsModal()">Awesome!</button>
+    </div>
+  </div>
+
   <!-- Navigation -->
   <div class="nav-header">
     <div class="nav-container">
@@ -896,6 +1160,20 @@
     <div class="quiz-hero fade-in">
       <h1>🧠 Interactive <span class="highlight">Quiz Portal</span></h1>
       <p>Test your knowledge, track your progress, and compete with fellow students!</p>
+      <div style="margin-top: 1.5rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.95rem; color: rgba(255,255,255,0.9);">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <i class="fas fa-users" style="font-size: 1.2rem;"></i>
+          <span><strong id="totalParticipants">193+</strong> Students Participated</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <i class="fas fa-trophy" style="font-size: 1.2rem;"></i>
+          <span>Live Rankings</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <i class="fas fa-redo" style="font-size: 1.2rem;"></i>
+          <span>Retake Anytime</span>
+        </div>
+      </div>
     </div>
 
     <!-- Quiz Card -->
@@ -907,6 +1185,23 @@
           Welcome to Quiz Portal
         </div>
         <p class="form-subtitle">Enter your details to start your learning journey</p>
+        
+        <!-- Notification Permission Banner -->
+        <div id="notificationBanner" style="display: none; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="flex: 1; text-align: left;">
+              <strong style="display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-bell"></i> Get Daily Quiz Reminders!
+              </strong>
+              <div style="font-size: 0.85rem; opacity: 0.95; margin-top: 0.3rem;">
+                Stay motivated with daily notifications about new quizzes and your progress
+              </div>
+            </div>
+            <button type="button" id="enableNotificationsBtn" style="background: white; color: #059669; border: none; padding: 0.7rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+              <i class="fas fa-check"></i> Enable
+            </button>
+          </div>
+        </div>
         
         <div id="infoError" class="error-message"></div>
         
@@ -928,6 +1223,15 @@
 
       <!-- Subject Selection -->
       <div class="dropdowns" style="display: none;">
+        <!-- Quiz Statistics Banner -->
+        <div id="quizStatsBanner" style="display: none; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);">
+          <div style="font-size: 0.9rem; opacity: 0.95;">
+            <i class="fas fa-chart-line"></i> 
+            <span id="availableQuizzesCount">0</span> new quizzes available | 
+            <span id="completedQuizzesCount">0</span> completed
+          </div>
+        </div>
+        
         <div class="dropdown-grid">
           <div class="dropdown-group" id="classDropdownGroup">
             <label class="dropdown-label">Select Class</label>
@@ -1093,6 +1397,11 @@
           if (dropdownsDiv) {
             dropdownsDiv.style.display = "block";
             dropdownsDiv.classList.add('fade-in');
+            
+            // Refresh dropdowns to show only available quizzes
+            if (classSelect.value) {
+              populateSubjectDropdown();
+            }
           }
           
           // Ensure only class dropdown is visible initially
@@ -1136,6 +1445,207 @@
       infoError.style.display = "none";
     }
 
+    // ==================== NOTIFICATION SYSTEM ====================
+    
+    // Motivational notification messages
+    const notificationMessages = [
+      {
+        title: "🎯 New Quiz Challenge Awaits!",
+        body: "Test your knowledge today and climb the leaderboard! Your next quiz is waiting!",
+        icon: "🧠"
+      },
+      {
+        title: "⚡ Boost Your Rank Today!",
+        body: "Take a quick quiz now and see how you rank among 193+ students. Every quiz makes you better!",
+        icon: "🏆"
+      },
+      {
+        title: "📚 Practice Makes Perfect!",
+        body: "Daily quiz practice is the key to success. Start your learning journey now!",
+        icon: "✨"
+      },
+      {
+        title: "🚀 You're Doing Great!",
+        body: "Keep the momentum going! Take another quiz and improve your score even more!",
+        icon: "💪"
+      },
+      {
+        title: "🎓 Master Your Subjects!",
+        body: "New quizzes are available for you. Challenge yourself and track your progress!",
+        icon: "📖"
+      },
+      {
+        title: "🌟 Show Your Skills!",
+        body: "Compete with other students and see where you stand. Your quiz adventure continues!",
+        icon: "⭐"
+      },
+      {
+        title: "🔥 Don't Miss Out!",
+        body: "More students are joining daily. Stay ahead by practicing regularly with our quizzes!",
+        icon: "🔥"
+      },
+      {
+        title: "💡 Quick Practice Session?",
+        body: "Just 10 minutes of quiz practice can boost your confidence! Start now!",
+        icon: "⚡"
+      }
+    ];
+
+    // Check if notifications are supported
+    function checkNotificationSupport() {
+      if (!("Notification" in window)) {
+        console.log("This browser does not support notifications");
+        return false;
+      }
+      return true;
+    }
+
+    // Request notification permission
+    async function requestNotificationPermission() {
+      if (!checkNotificationSupport()) {
+        return false;
+      }
+
+      if (Notification.permission === "granted") {
+        return true;
+      }
+
+      if (Notification.permission !== "denied") {
+        const permission = await Notification.requestPermission();
+        return permission === "granted";
+      }
+
+      return false;
+    }
+
+    // Show notification
+    function showNotification(title, body, icon = "🧠") {
+      if (!checkNotificationSupport() || Notification.permission !== "granted") {
+        return;
+      }
+
+      const options = {
+        body: body,
+        icon: "Logo.png",
+        badge: "Logo.png",
+        tag: "quiz-reminder",
+        requireInteraction: false,
+        silent: false
+      };
+
+      try {
+        const notification = new Notification(`${icon} ${title}`, options);
+        
+        // Auto close after 5 seconds
+        setTimeout(() => {
+          notification.close();
+        }, 5000);
+
+        // Handle click - redirect to quiz page
+        notification.onclick = function() {
+          window.focus();
+          this.close();
+          if (window.location.pathname !== '/quizzes.html' && window.location.pathname !== '/sgs web/quizzes.html') {
+            window.location.href = "quizzes.html";
+          }
+        };
+      } catch (error) {
+        console.log("Error showing notification:", error);
+      }
+    }
+
+    // Show random motivational notification
+    function showMotivationalNotification() {
+      const randomMessage = notificationMessages[Math.floor(Math.random() * notificationMessages.length)];
+      showNotification(randomMessage.title, randomMessage.body, randomMessage.icon);
+    }
+
+    // Schedule daily notification check (when user visits the site)
+    function scheduleDailyNotifications() {
+      const notificationsEnabled = localStorage.getItem('notificationsEnabled') === 'true';
+      if (!notificationsEnabled || Notification.permission !== 'granted') {
+        return;
+      }
+
+      const lastNotification = localStorage.getItem('lastNotificationTime');
+      const now = Date.now();
+      const oneDay = 24 * 60 * 60 * 1000; // 24 hours
+
+      if (!lastNotification || (now - parseInt(lastNotification)) >= oneDay) {
+        setTimeout(() => {
+          showMotivationalNotification();
+          localStorage.setItem('lastNotificationTime', now.toString());
+        }, 3000); // Wait 3 seconds after page load
+      }
+    }
+
+    // Show notification banner if permission not granted
+    function checkAndShowNotificationBanner() {
+      const banner = document.getElementById('notificationBanner');
+      if (!banner) return;
+
+      const notificationsEnabled = localStorage.getItem('notificationsEnabled') === 'true';
+      
+      if (Notification.permission === 'granted' || (notificationsEnabled && Notification.permission !== 'denied')) {
+        banner.style.display = 'none';
+        return;
+      }
+
+      // Show banner if user has visited before (but not on first visit)
+      const hasVisited = localStorage.getItem('hasVisitedQuizPage') === 'true';
+      if (hasVisited && Notification.permission === 'default') {
+        setTimeout(() => {
+          banner.style.display = 'block';
+        }, 2000);
+      } else {
+        localStorage.setItem('hasVisitedQuizPage', 'true');
+      }
+    }
+
+    // Handle enable notifications button click
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        setupNotificationButton();
+      });
+    } else {
+      setupNotificationButton();
+    }
+
+    function setupNotificationButton() {
+      const enableBtn = document.getElementById('enableNotificationsBtn');
+      const banner = document.getElementById('notificationBanner');
+      
+      if (enableBtn) {
+        enableBtn.addEventListener('click', async function() {
+          const granted = await requestNotificationPermission();
+          if (granted) {
+            localStorage.setItem('notificationsEnabled', 'true');
+            if (banner) banner.style.display = 'none';
+            
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.style.cssText = 'position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 1rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 10000; animation: slideIn 0.3s ease-out; display: flex; align-items: center; gap: 0.5rem;';
+            successMsg.innerHTML = '<i class="fas fa-check-circle"></i> <span>Notifications enabled! You\'ll receive daily quiz reminders.</span>';
+            document.body.appendChild(successMsg);
+            
+            setTimeout(() => {
+              successMsg.style.animation = 'slideOut 0.3s ease-out';
+              setTimeout(() => successMsg.remove(), 300);
+            }, 4000);
+
+            // Show first notification after 5 seconds
+            setTimeout(() => {
+              showMotivationalNotification();
+              localStorage.setItem('lastNotificationTime', Date.now().toString());
+            }, 5000);
+          } else if (Notification.permission === 'denied') {
+            alert('Notifications were blocked. Please enable them in your browser settings to receive daily quiz reminders.');
+          }
+        });
+      }
+    }
+    // ==================== END NOTIFICATION SYSTEM ====================
+
     // Timer functions
     function startTimer() {
       quizStartTime = Date.now();
@@ -1172,6 +1682,99 @@
       return `${currentQuiz.title}_${classSelect.value}_${subjectSelect.value}`;
     }
 
+    // Get unique quiz identifier
+    function getQuizIdentifier(classVal, subjectVal, testType, chapterOrTest) {
+      if (testType === 'chapterwise') {
+        const quizTitle = window.quizData[classVal][subjectVal][chapterOrTest]?.title || '';
+        return `${classVal}_${subjectVal}_chapterwise_${quizTitle}`;
+      } else if (testType === 'midterm1' || testType === 'midterm2') {
+        return `${classVal}_${subjectVal}_${testType}_${chapterOrTest}`;
+      }
+      return `${classVal}_${subjectVal}_${testType}`;
+    }
+
+    // Get all completed quizzes for current student
+    function getCompletedQuizzes() {
+      if (!currentStudentName || !currentStudentMobile) return new Set();
+      
+      const completed = new Set();
+      
+      // Check local storage
+      const localResults = JSON.parse(localStorage.getItem('quizResults') || '{}');
+      Object.values(localResults).flat().forEach(result => {
+        if (result.name === currentStudentName && result.mobile === currentStudentMobile && result.quizTitle) {
+          completed.add(result.quizTitle);
+        }
+      });
+      
+      // Also check from Google Sheets data if available (we'll fetch this)
+      return completed;
+    }
+
+    // Get completed quiz identifiers for current student
+    async function getCompletedQuizIdentifiers() {
+      if (!currentStudentName || !currentStudentMobile) return new Set();
+      
+      const completed = new Set();
+      const studentKey = `${currentStudentName.trim().toLowerCase()}_${currentStudentMobile}`;
+      
+      // Check local storage first
+      const localResults = JSON.parse(localStorage.getItem('quizResults') || '{}');
+      Object.values(localResults).flat().forEach(result => {
+        if (result.name === currentStudentName && result.mobile === currentStudentMobile) {
+          // Create identifier from result data
+          if (result.class && result.subject && result.quizTitle) {
+            const testType = result.quizTitle.includes('Mid Term') ? 
+              (result.quizTitle.includes('Mid Term 1') ? 'midterm1' : 'midterm2') : 'chapterwise';
+            let identifier = '';
+            if (testType === 'chapterwise') {
+              identifier = `${result.class}_${result.subject}_chapterwise_${result.quizTitle}`;
+            } else {
+              // For midterm, try to extract sample test number from quiz title or use a generic identifier
+              const sampleMatch = result.quizTitle.match(/sample\s*(\d+)/i) || result.quizTitle.match(/test\s*(\d+)/i);
+              const sampleNum = sampleMatch ? `sample${sampleMatch[1]}` : 'sample1';
+              identifier = `${result.class}_${result.subject}_${testType}_${sampleNum}`;
+            }
+            if (identifier) completed.add(identifier);
+          }
+        }
+      });
+      
+      // Also check from completedQuizzes storage
+      const completedQuizzes = JSON.parse(localStorage.getItem('completedQuizzes') || '{}');
+      if (completedQuizzes[studentKey] && Array.isArray(completedQuizzes[studentKey])) {
+        completedQuizzes[studentKey].forEach(identifier => completed.add(identifier));
+      }
+      
+      // Try to fetch from Google Sheets (async, but we'll use cached version)
+      try {
+        const sheetsRankings = await fetchQuizRankingsFromSheets();
+        if (sheetsRankings && Array.isArray(sheetsRankings)) {
+          sheetsRankings.forEach(result => {
+            if (result.name === currentStudentName && result.mobile === currentStudentMobile && result.quizTitle) {
+              if (result.class && result.subject) {
+                const testType = result.quizTitle.includes('Mid Term') ? 
+                  (result.quizTitle.includes('Mid Term 1') ? 'midterm1' : 'midterm2') : 'chapterwise';
+                let identifier = '';
+                if (testType === 'chapterwise') {
+                  identifier = `${result.class}_${result.subject}_chapterwise_${result.quizTitle}`;
+                } else {
+                  const sampleMatch = result.quizTitle.match(/sample\s*(\d+)/i) || result.quizTitle.match(/test\s*(\d+)/i);
+                  const sampleNum = sampleMatch ? `sample${sampleMatch[1]}` : 'sample1';
+                  identifier = `${result.class}_${result.subject}_${testType}_${sampleNum}`;
+                }
+                if (identifier) completed.add(identifier);
+              }
+            }
+          });
+        }
+      } catch (error) {
+        console.log('Could not fetch completed quizzes from Google Sheets:', error);
+      }
+      
+      return completed;
+    }
+
     function saveQuizResult(score, totalQuestions, timeInSeconds) {
       const quizKey = getQuizKey();
       const results = JSON.parse(localStorage.getItem('quizResults') || '{}');
@@ -1191,7 +1794,195 @@
       
       results[quizKey].push(result);
       localStorage.setItem('quizResults', JSON.stringify(results));
+      
+      // Also save completed quiz identifier
+      const completedQuizzes = JSON.parse(localStorage.getItem('completedQuizzes') || '{}');
+      const studentKey = `${currentStudentName.trim().toLowerCase()}_${currentStudentMobile}`;
+      if (!completedQuizzes[studentKey]) {
+        completedQuizzes[studentKey] = [];
+      }
+      
+      // Add current quiz identifier if not already present
+      const classVal = classSelect.value;
+      const subjectVal = subjectSelect.value;
+      const testType = testTypeSelect.value;
+      let quizIdentifier = '';
+      
+      if (testType === 'chapterwise') {
+        const chapterVal = chapterSelect.value;
+        const quizTitle = window.quizData[classVal][subjectVal][chapterVal]?.title || '';
+        quizIdentifier = `${classVal}_${subjectVal}_chapterwise_${quizTitle}`;
+      } else if (testType === 'midterm1' || testType === 'midterm2') {
+        const sampleTestVal = midtermTestSelect.value;
+        quizIdentifier = `${classVal}_${subjectVal}_${testType}_${sampleTestVal}`;
+      }
+      
+      if (quizIdentifier && !completedQuizzes[studentKey].includes(quizIdentifier)) {
+        completedQuizzes[studentKey].push(quizIdentifier);
+        localStorage.setItem('completedQuizzes', JSON.stringify(completedQuizzes));
+      }
+      
       return result;
+    }
+
+    // Show congratulations modal for rank 1
+    function showCongratsModal(studentName) {
+      const modal = document.getElementById('congratsModal');
+      const messageEl = document.getElementById('congratsMessage');
+      
+      const messages = [
+        `Congratulations ${studentName}! 🎉<br>You've achieved <strong>Rank #1</strong>!<br>Outstanding performance! Your dedication and hard work have paid off!`,
+        `Amazing work, ${studentName}! 🏆<br>You're at the <strong>top of the leaderboard</strong>!<br>Keep up this excellent momentum and continue to shine!`,
+        `Fantastic achievement, ${studentName}! ⭐<br><strong>Rank #1</strong> - You're a star!<br>Your consistent efforts are truly inspiring!`
+      ];
+      
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      messageEl.innerHTML = randomMessage;
+      
+      modal.classList.add('show');
+      
+      // Auto-close after 8 seconds
+      setTimeout(() => {
+        closeCongratsModal();
+      }, 8000);
+    }
+
+    // Close congratulations modal
+    function closeCongratsModal() {
+      const modal = document.getElementById('congratsModal');
+      modal.classList.remove('show');
+    }
+
+    // Update live ticker bar with top rankers and recent quiz takers
+    function updateLiveTicker(topRankers, recentTakers = null) {
+      const tickerContent = document.getElementById('tickerContent');
+      const tickerContentDuplicate = document.getElementById('tickerContentDuplicate');
+      const liveTickerBar = document.getElementById('liveTickerBar');
+      
+      if (!tickerContent || !tickerContentDuplicate) return;
+      
+      // Combine top rankers and recent takers
+      const tickerItems = [];
+      
+      // Add top rankers with medals
+      if (topRankers && topRankers.length > 0) {
+        topRankers.slice(0, 5).forEach((ranker, index) => {
+          const total = ranker.total || ranker.totalQuestions || 1;
+          const percentage = Math.round((ranker.score / total) * 100);
+          const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '';
+          const rankClass = index === 0 ? 'rank1' : '';
+          
+          tickerItems.push({
+            html: `<span class="ticker-medal">${medal}</span><span><strong>${ranker.name}</strong> - Rank #${index + 1} (${percentage}%)</span>`,
+            class: rankClass
+          });
+        });
+      }
+      
+      // Add recent quiz takers (people who just took quizzes)
+      if (recentTakers && recentTakers.length > 0) {
+        recentTakers.forEach((taker) => {
+          const total = taker.total || taker.totalQuestions || 1;
+          const percentage = Math.round((taker.score / total) * 100);
+          tickerItems.push({
+            html: `<span>✨ <strong>${taker.name}</strong> just completed a quiz! (${percentage}%)</span>`,
+            class: 'recent'
+          });
+        });
+      }
+      
+      if (tickerItems.length === 0) {
+        liveTickerBar.style.display = 'none';
+        document.body.classList.remove('has-ticker');
+        return;
+      }
+      
+      liveTickerBar.style.display = 'block';
+      document.body.classList.add('has-ticker');
+      tickerContent.innerHTML = '';
+      tickerContentDuplicate.innerHTML = '';
+      
+      // Create items
+      tickerItems.forEach((itemData) => {
+        const item = document.createElement('div');
+        item.className = `ticker-item ${itemData.class}`;
+        item.innerHTML = itemData.html;
+        tickerContent.appendChild(item);
+        
+        // Duplicate for seamless loop
+        const duplicateItem = item.cloneNode(true);
+        tickerContentDuplicate.appendChild(duplicateItem);
+      });
+      
+      // Duplicate items again for smoother scrolling if we have fewer items
+      if (tickerItems.length < 8) {
+        tickerItems.forEach((itemData) => {
+          const item = document.createElement('div');
+          item.className = `ticker-item ${itemData.class}`;
+          item.innerHTML = itemData.html;
+          tickerContent.appendChild(item);
+          tickerContentDuplicate.appendChild(item.cloneNode(true));
+        });
+      }
+    }
+
+    // Load initial ticker on page load
+    async function loadInitialTicker() {
+      try {
+        // Try to get rankings from Google Sheets first
+        let allRankings = await fetchQuizRankingsFromSheets();
+        
+        // Fallback to local storage
+        if (!allRankings || allRankings.length === 0) {
+          const localResults = JSON.parse(localStorage.getItem('quizResults') || '{}');
+          allRankings = Object.values(localResults).flat();
+        }
+        
+        if (allRankings.length > 0) {
+          // Get top performers (best score per student)
+          const bestScores = new Map();
+          for (const submission of allRankings) {
+            const key = `${(submission.name || '').trim().toLowerCase()}-${submission.mobile || ''}`;
+            const existing = bestScores.get(key);
+            
+            const total = submission.total || submission.totalQuestions || 1;
+            const percent = ((submission.score || 0) / total) * 100;
+            const existingPercent = existing ? ((existing.score || 0) / (existing.total || existing.totalQuestions || 1)) * 100 : 0;
+            
+            if (!existing || percent > existingPercent || (percent === existingPercent && (submission.time || submission.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999))) {
+              bestScores.set(key, submission);
+            }
+          }
+          
+          const topPerformers = Array.from(bestScores.values())
+            .sort((a, b) => {
+              const scoreA = a.score || 0;
+              const scoreB = b.score || 0;
+              const totalA = a.total || a.totalQuestions || 1;
+              const totalB = b.total || b.totalQuestions || 1;
+              const percentA = (scoreA / totalA) * 100;
+              const percentB = (scoreB / totalB) * 100;
+              return percentB - percentA;
+            })
+            .slice(0, 5);
+          
+          // Get recent quiz takers (last 5 submissions within last hour)
+          const oneHourAgo = Date.now() - (60 * 60 * 1000);
+          const recentTakers = allRankings
+            .filter(r => (r.timestamp || 0) > oneHourAgo)
+            .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0))
+            .slice(0, 5);
+          
+          updateLiveTicker(topPerformers, recentTakers);
+        } else {
+          document.getElementById('liveTickerBar').style.display = 'none';
+          document.body.classList.remove('has-ticker');
+        }
+      } catch (error) {
+        console.error('Error loading initial ticker:', error);
+        document.getElementById('liveTickerBar').style.display = 'none';
+        document.body.classList.remove('has-ticker');
+      }
     }
 
     async function displayRankingsFromSheets(currentResult) {
@@ -1285,6 +2076,13 @@
           (r.name === currentResult.name && r.mobile === currentResult.mobile)
         ) + 1;
 
+        // Show congratulations modal if rank 1 (even if only one person has taken the quiz)
+        if (userRankNum === 1) {
+          setTimeout(() => {
+            showCongratsModal(currentResult.name);
+          }, 500); // Small delay to ensure rankings are displayed first
+        }
+
         // Display user's rank
         const percentage = Math.round((currentResult.score / currentResult.total) * 100);
         userRank.innerHTML = `
@@ -1298,6 +2096,13 @@
             Out of ${quizSubmissions.length} student${quizSubmissions.length !== 1 ? 's' : ''}
           </div>
         `;
+
+        // Update live ticker with top rankers (and include current user as recent taker if not in top 5)
+        const topRankersForTicker = quizSubmissions.slice(0, 5);
+        const recentTakers = quizSubmissions.length > 5 && 
+          !topRankersForTicker.find(r => r.timestamp === currentResult.timestamp) 
+          ? [currentUserData] : [];
+        updateLiveTicker(topRankersForTicker, recentTakers);
 
         // Display the leaderboard - show only top 3 by default
         topRankers.innerHTML = '';
@@ -1470,6 +2275,7 @@
       const classVal = classSelect.value;
       if (!classVal) {
         subjectDropdownGroup.style.display = 'none';
+        updateQuizStatsBanner();
         return;
       }
       
@@ -1480,23 +2286,112 @@
       subjects.forEach(subject => {
         subjectSelect.innerHTML += `<option value="${subject}">${subject.charAt(0).toUpperCase() + subject.slice(1)}</option>`;
       });
+      
+      updateQuizStatsBanner();
+    }
+    
+    // Update quiz statistics banner
+    async function updateQuizStatsBanner() {
+      if (!currentStudentName || !currentStudentMobile) {
+        document.getElementById('quizStatsBanner').style.display = 'none';
+        return;
+      }
+      
+      const classVal = classSelect.value;
+      if (!classVal) {
+        document.getElementById('quizStatsBanner').style.display = 'none';
+        return;
+      }
+      
+      const completedQuizzes = await getCompletedQuizIdentifiers();
+      let totalAvailable = 0;
+      let totalCompleted = 0;
+      
+      // Count all quizzes across all subjects for this class
+      if (window.quizData && window.quizData[classVal]) {
+        Object.keys(window.quizData[classVal]).forEach(subjectVal => {
+          // Count chapterwise quizzes
+          if (window.quizData[classVal][subjectVal]) {
+            window.quizData[classVal][subjectVal].forEach((quiz, i) => {
+              const quizIdentifier = `${classVal}_${subjectVal}_chapterwise_${quiz.title}`;
+              if (completedQuizzes.has(quizIdentifier)) {
+                totalCompleted++;
+              } else {
+                totalAvailable++;
+              }
+            });
+          }
+          
+          // Count midterm tests (3 each for midterm1 and midterm2)
+          ['midterm1', 'midterm2'].forEach(testType => {
+            for (let i = 1; i <= 3; i++) {
+              const quizIdentifier = `${classVal}_${subjectVal}_${testType}_sample${i}`;
+              if (completedQuizzes.has(quizIdentifier)) {
+                totalCompleted++;
+              } else {
+                totalAvailable++;
+              }
+            }
+          });
+        });
+      }
+      
+      if (totalAvailable > 0 || totalCompleted > 0) {
+        document.getElementById('quizStatsBanner').style.display = 'block';
+        document.getElementById('availableQuizzesCount').textContent = totalAvailable;
+        document.getElementById('completedQuizzesCount').textContent = totalCompleted;
+      } else {
+        document.getElementById('quizStatsBanner').style.display = 'none';
+      }
     }
 
-    function populateChapterDropdown() {
+    async function populateChapterDropdown() {
       resetDropdown(chapterSelect, "Choose quiz topic...");
       const classVal = classSelect.value;
       const subjectVal = subjectSelect.value;
       if (!classVal || !subjectVal) return;
       
+      // Get completed quizzes for current student
+      const completedQuizzes = await getCompletedQuizIdentifiers();
+      
       // This part remains for chapterwise tests
       if (window.quizData && window.quizData[classVal] && window.quizData[classVal][subjectVal]) {
+        let availableCount = 0;
+        let completedCount = 0;
+        
         window.quizData[classVal][subjectVal].forEach((quiz, i) => {
-          chapterSelect.innerHTML += `<option value="${i}">${quiz.title}</option>`;
+          const quizIdentifier = `${classVal}_${subjectVal}_chapterwise_${quiz.title}`;
+          const isCompleted = completedQuizzes.has(quizIdentifier);
+          
+          if (isCompleted) {
+            completedCount++;
+            // Show completed quizzes but still allow selection (not disabled)
+            chapterSelect.innerHTML += `<option value="${i}" style="color: #6b7280;">${quiz.title} ✓ Completed</option>`;
+          } else {
+            availableCount++;
+            // Show available quizzes with NEW badge
+            chapterSelect.innerHTML += `<option value="${i}" style="font-weight: 600; color: #059669;">✨ ${quiz.title} (NEW)</option>`;
+          }
         });
+        
+        // Show statistics
+        if (availableCount === 0 && completedCount > 0) {
+          const firstOption = chapterSelect.querySelector('option[value=""]');
+          if (firstOption) {
+            firstOption.textContent = `Choose quiz topic... (All ${completedCount} completed - You can retake any!)`;
+          }
+        } else if (availableCount > 0) {
+          // Add a separator option showing count
+          const firstOption = chapterSelect.querySelector('option[value=""]');
+          if (firstOption) {
+            firstOption.textContent = `Choose quiz topic... (${availableCount} new available)`;
+          }
+        }
       }
       
       // Check if selections are complete
       checkSelectionsComplete();
+      updateQuizStatsBanner();
     }
 
     function handleTestTypeChange() {
@@ -1524,6 +2419,8 @@
       } else {
         console.log('No valid test type selected');
       }
+      
+      updateQuizStatsBanner();
     }
     
     // Function to check if all selections are made and show Start Quiz button
@@ -1554,12 +2451,51 @@
       }
     }
 
-    function populateMidtermTestDropdown() {
+    async function populateMidtermTestDropdown() {
       resetDropdown(midtermTestSelect, "Choose sample test...");
-      // Add all three sample tests
-      midtermTestSelect.innerHTML += '<option value="sample1">Sample Test 1</option>';
-      midtermTestSelect.innerHTML += '<option value="sample2">Sample Test 2</option>';
-      midtermTestSelect.innerHTML += '<option value="sample3">Sample Test 3</option>';
+      const classVal = classSelect.value;
+      const subjectVal = subjectSelect.value;
+      const testType = testTypeSelect.value;
+      
+      if (!classVal || !subjectVal || !testType) return;
+      
+      // Get completed quizzes for current student
+      const completedQuizzes = await getCompletedQuizIdentifiers();
+      
+      const testOptions = [
+        { value: 'sample1', label: 'Sample Test 1' },
+        { value: 'sample2', label: 'Sample Test 2' },
+        { value: 'sample3', label: 'Sample Test 3' }
+      ];
+      
+      let availableCount = 0;
+      let completedCount = 0;
+      
+      testOptions.forEach(test => {
+        const quizIdentifier = `${classVal}_${subjectVal}_${testType}_${test.value}`;
+        const isCompleted = completedQuizzes.has(quizIdentifier);
+        
+        if (isCompleted) {
+          completedCount++;
+          midtermTestSelect.innerHTML += `<option value="${test.value}" style="color: #6b7280;">${test.label} ✓ Completed</option>`;
+        } else {
+          availableCount++;
+          midtermTestSelect.innerHTML += `<option value="${test.value}" style="font-weight: 600; color: #059669;">✨ ${test.label} (NEW)</option>`;
+        }
+      });
+      
+      // Update placeholder
+      if (availableCount === 0 && completedCount > 0) {
+        const firstOption = midtermTestSelect.querySelector('option[value=""]');
+        if (firstOption) {
+          firstOption.textContent = `Choose sample test... (All ${completedCount} completed - You can retake any!)`;
+        }
+      } else if (availableCount > 0) {
+        const firstOption = midtermTestSelect.querySelector('option[value=""]');
+        if (firstOption) {
+          firstOption.textContent = `Choose sample test... (${availableCount} new available)`;
+        }
+      }
       
       // Check if selections are complete
       checkSelectionsComplete();
@@ -2144,6 +3080,23 @@
       resultDiv.classList.add('fade-in');
       
       displayRankingsFromSheets(currentResult);
+      
+      // Refresh dropdowns to show updated quiz availability
+      setTimeout(async () => {
+        if (classSelect.value && subjectSelect.value && testTypeSelect.value) {
+          if (testTypeSelect.value === 'chapterwise') {
+            await populateChapterDropdown();
+          } else if (testTypeSelect.value === 'midterm1' || testTypeSelect.value === 'midterm2') {
+            await populateMidtermTestDropdown();
+          }
+          await updateQuizStatsBanner();
+        }
+      }, 2000);
+      
+      // Update ticker after quiz completion
+      setTimeout(() => {
+        loadInitialTicker();
+      }, 1500);
       sendFormspreeResult(score, currentQuiz.questions.length, currentQuiz.title, secondsElapsed);
       
       // Scroll to results
@@ -2174,8 +3127,8 @@
     }
 
     // Event listeners
-    classSelect.onchange = () => {
-      populateSubjectDropdown();
+    classSelect.onchange = async () => {
+      await populateSubjectDropdown();
       checkSelectionsComplete();
     };
     
@@ -2249,6 +3202,15 @@
       if (classSelect) {
         populateClassDropdown();
       }
+      
+      // Load initial ticker
+      loadInitialTicker();
+      
+      // Check and show notification banner
+      checkAndShowNotificationBanner();
+      
+      // Schedule daily notifications
+      scheduleDailyNotifications();
     }
 
     // Multiple initialization attempts
