@@ -1328,6 +1328,7 @@
     let quizTimer = null;
     let secondsElapsed = 0;
     let answeredQuestions = 0;
+    let lastWarningTime = null;
     let isShowingAlert = false; // Flag to prevent blur warnings during alerts
 
     // DOM elements
@@ -2956,7 +2957,17 @@
     function handleWindowBlur() {
       // Don't show warning if we're currently showing an alert
       if (isShowingAlert) return;
-      alert('⚠️ Warning: You switched away from the quiz. Please stay on the quiz page.');
+      
+      // Only show warning if quiz is active and we haven't shown it recently
+      if (!quizStartTime) return;
+      
+      const now = Date.now();
+      if (!lastWarningTime || (now - lastWarningTime) > 30000) { // Show max once per 30 seconds
+        isShowingAlert = true;
+        alert('⚠️ Warning: You switched away from the quiz. Please stay on the quiz page.');
+        lastWarningTime = now;
+        isShowingAlert = false;
+      }
     }
     
     function preventDrag(e) {

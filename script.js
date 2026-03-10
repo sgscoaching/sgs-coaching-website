@@ -5339,7 +5339,49 @@ hindi: [
     {q: "A straight line joining two points is called:", options: ["Line segment", "Ray", "Curve", "Chord"], answer: "Line segment"},
     {q: "The angle made by the minute hand at 3 o'clock is:", options: ["90°", "180°", "60°", "120°"], answer: "90°"},
     {q: "A circle can be drawn if we know its:", options: ["Radius", "Area", "Diameter", "Circumference"], answer: "Radius"}
-  ]}
+  ]},
+  
+  // Chapter 15: Perimeter and Area
+  {
+    title: "Chapter 15: Perimeter and Area - Quiz 1",
+    questions: [
+      {q: "A square has a side length of 8 cm. What is its perimeter?", options: ["24 cm", "32 cm", "64 cm", "16 cm"], answer: "32 cm"},
+      {q: "The length of a rectangle is 15 m and its breadth is 10 m. Find its area.", options: ["150 m²", "50 m²", "25 m²", "150 m"], answer: "150 m²"},
+      {q: "Consider the rectangle shown below. What is the perimeter of this rectangle?\n\n    +--------------------+\n    |                    |\n    |      12 cm         |\n    |                    |\n    +--------------------+\n            6 cm\n\n(Figure: Rectangle with length 12 cm and breadth 6 cm)", options: ["18 cm", "24 cm", "36 cm", "72 cm"], answer: "36 cm"},
+      {q: "A regular triangle (equilateral) has each side measuring 9 cm. What is its perimeter?", options: ["18 cm", "27 cm", "36 cm", "81 cm"], answer: "27 cm"},
+      {q: "If the perimeter of a square is 48 cm, what is the length of one side?", options: ["12 cm", "16 cm", "24 cm", "8 cm"], answer: "12 cm"},
+      {q: "Look at the L-shaped figure below. What is its perimeter?\n\n    +-------+\n    |       |\n    |       | 5 cm\n    |       |\n    +---+---+\n        4 cm\n            3 cm\n\n(Figure: L-shape made of rectangles - vertical arm 5 cm × 3 cm, horizontal arm 4 cm × 3 cm)", options: ["20 cm", "24 cm", "28 cm", "30 cm"], answer: "24 cm"},
+      {q: "A piece of wire 36 cm long is bent to form a regular hexagon. What is the length of each side?", options: ["6 cm", "9 cm", "12 cm", "18 cm"], answer: "6 cm"},
+      {q: "The area of a rectangular field is 200 m² and its length is 20 m. What is its breadth?", options: ["10 m", "15 m", "5 m", "40 m"], answer: "10 m"},
+      {q: "The compound shape below has equal perimeters to a square. If the total perimeter is 48 cm, what is the side of the square?\n\n       /\\\n      /  \\   10 cm (base of triangle)\n     /____\\\n    |      |\n    |      | 6 cm\n    |      |\n    +------+\n\n(Figure: Equilateral triangle on top of rectangle 10 cm × 6 cm)", options: ["12 cm", "10 cm", "14 cm", "8 cm"], answer: "12 cm"},
+      {q: "Fencing a rectangular garden (12 m × 8 m) costs ₹50 per metre. What is the total cost?", options: ["₹1,000", "₹1,600", "₹2,000", "₹960"], answer: "₹2,000"},
+      {q: "Two plots have the same perimeter of 200 m. One is a square, the other a rectangle with length 60 m. Which has greater area and by how much?", options: ["Square, by 100 m²", "Rectangle, by 100 m²", "Square, by 200 m²", "Equal area"], answer: "Square, by 100 m²"},
+      {q: "A regular pentagon has each side 5 cm. What is its perimeter?", options: ["20 cm", "25 cm", "30 cm", "15 cm"], answer: "25 cm"},
+      {q: "A rectangular park 20 m × 15 m has a 2 m wide path around it. What is the area of the path?\n\n    +------------------------+\n    |        Path 2 m        |\n    |  +------------------+  |\n    |  |                  |  |\n    |  |     Park         |  |\n    |  | 20 m × 15 m      |  |\n    |  |                  |  |\n    |  +------------------+  |\n    |        Path 2 m        |\n    +------------------------+\n\n(Figure: Park with 2 m path around it)", options: ["156 m²", "184 m²", "200 m²", "300 m²"], answer: "156 m²"},
+      {q: "If the side of a square is halved, the area becomes:", options: ["one-fourth", "half", "one-third", "remains the same"], answer: "one-fourth"},
+      {q: "A photograph is 25 cm × 20 cm. Frame border is 2 cm wide on each side. What length of frame material is needed?", options: ["98 cm", "106 cm", "90 cm", "110 cm"], answer: "98 cm"}
+    ]
+  },
+  {
+    title: "Chapter 15: Perimeter and Area - Quiz 2",
+    questions: [
+      {q: "A rectangle has length 18 cm and breadth 12 cm. What is its perimeter?", options: ["60 cm", "50 cm", "54 cm", "48 cm"], answer: "60 cm"},
+      {q: "The area of a square is 144 cm². What is the length of each side?", options: ["12 cm", "10 cm", "14 cm", "16 cm"], answer: "12 cm"},
+      {q: "Look at the square grid below. If each small square has side 2 cm, what is the perimeter of the figure?\n\n    +---+---+---+\n    |   |   |   |\n    +---+---+---+\n    |   |   |   |\n    +---+---+---+\n    |   |   |   |\n    +---+---+---+\n\n(Figure: 3×3 grid of squares, each side 2 cm)", options: ["24 cm", "28 cm", "32 cm", "36 cm"], answer: "24 cm"},
+      {q: "A rectangular playground has length 25 m and breadth 18 m. Find its area.", options: ["450 m²", "430 m²", "500 m²", "400 m²"], answer: "450 m²"},
+      {q: "The perimeter of an equilateral triangle is 45 cm. What is the length of each side?", options: ["15 cm", "12 cm", "18 cm", "20 cm"], answer: "15 cm"},
+      {q: "A square and a rectangle have the same perimeter of 40 cm. If the rectangle has length 12 cm, what is its breadth?", options: ["8 cm", "10 cm", "6 cm", "9 cm"], answer: "8 cm"},
+      {q: "The area of a rectangle is 84 cm². If its length is 14 cm, what is its breadth?", options: ["6 cm", "7 cm", "8 cm", "5 cm"], answer: "6 cm"},
+      {q: "A rectangular tile is 30 cm long and 20 cm wide. What is the area of 5 such tiles?", options: ["3000 cm²", "2500 cm²", "3500 cm²", "2800 cm²"], answer: "3000 cm²"},
+      {q: "Look at the compound shape made of two rectangles:\n\n    +----------+\n    |          |\n    |    A     | 4 cm\n    |          |\n    +----+-----+\n         |  B  | 3 cm\n         +-----+\n         6 cm\n\n(Figure: Rectangle A: 8 cm × 4 cm, Rectangle B: 6 cm × 3 cm, shared side)", options: ["50 cm²", "54 cm²", "56 cm²", "58 cm²"], answer: "50 cm²"},
+      {q: "A square garden has side 16 m. A 1 m wide path is made around it. What is the area of the path?", options: ["68 m²", "64 m²", "72 m²", "70 m²"], answer: "68 m²"},
+      {q: "The perimeter of a regular octagon is 64 cm. What is the length of each side?", options: ["8 cm", "7 cm", "9 cm", "10 cm"], answer: "8 cm"},
+      {q: "A rectangular field is 40 m long and 30 m wide. If fencing costs ₹25 per metre, what is the total cost to fence it?", options: ["₹3,500", "₹3,000", "₹3,750", "₹4,000"], answer: "₹3,500"},
+      {q: "Two squares have sides 6 cm and 8 cm respectively. What is the difference in their perimeters?", options: ["8 cm", "6 cm", "10 cm", "4 cm"], answer: "8 cm"},
+      {q: "A rectangle has length twice its breadth. If the perimeter is 48 cm, what is the area?", options: ["128 cm²", "120 cm²", "144 cm²", "108 cm²"], answer: "128 cm²"},
+      {q: "The area of a square plot is 625 m². What is the cost of fencing it at ₹20 per metre?", options: ["₹2,000", "₹2,200", "₹1,800", "₹2,500"], answer: "₹2,000"}
+    ]
+  }
     ],
     Social_science: [
   // History: Chapter 1 - What, Where, How and When?

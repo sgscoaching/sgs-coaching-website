@@ -6822,1075 +6822,184 @@ window.midtermQuizData = {
         
       "midterm2": {
         "sample1": [
-          {
-            "type": "mcq",
-            "q": "What is 20% of 100?",
-            "options": ["20", "50", "100", "200"],
-            "answer": "20",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Perimeter of square with side 5 cm is:",
-            "options": ["20 cm", "25 cm", "10 cm", "15 cm"],
-            "answer": "20 cm",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Simplify: 2x + 3x",
-            "options": ["5x", "6x", "x", "5"],
-            "answer": "5x",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "2^3 = ",
-            "options": ["8", "6", "4", "9"],
-            "answer": "8",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "A square has how many lines of symmetry?",
-            "options": ["4", "2", "1", "3"],
-            "answer": "4",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "A cube has how many faces?",
-            "options": ["6", "4", "8", "12"],
-            "answer": "6",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Convert 1/2 to percentage.",
-            "options": ["50%", "100%", "25%", "75%"],
-            "answer": "50%",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Area of rectangle length 4, breadth 3 is:",
-            "options": ["12", "7", "14", "1"],
-            "answer": "12",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "x^2 + x^2 = ",
-            "options": ["2x^2", "x^4", "2x", "x"],
-            "answer": "2x^2",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "10^0 = ",
-            "options": ["1", "0", "10", "100"],
-            "answer": "1",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Equilateral triangle has symmetry of order:",
-            "options": ["3", "2", "4", "1"],
-            "answer": "3",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "A sphere has how many edges?",
-            "options": ["0", "1", "2", "4"],
-            "answer": "0",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Profit % = (profit/CP) x ",
-            "options": ["100", "50", "10", "200"],
-            "answer": "100",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Circumference of circle = 2πr, r=7, approx = ",
-            "options": ["44", "22", "14", "7"],
-            "answer": "44",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": " (a + b)^2 = ",
-            "options": ["a^2 + 2ab + b^2", "a^2 - b^2", "a^2 + b^2", "2ab"],
-            "answer": "a^2 + 2ab + b^2",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "a^m x a^n = ",
-            "options": ["a^{m+n}", "a^{m-n}", "a^{mn}", "a^m"],
-            "answer": "a^{m+n}",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Rectangle has lines of symmetry:",
-            "options": ["2", "4", "1", "3"],
-            "answer": "2",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Cylinder has how many bases?",
-            "options": ["2", "1", "0", "3"],
-            "answer": "2",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Ratio 2:3 as fraction:",
-            "options": ["2/3", "3/2", "2/5", "5/2"],
-            "answer": "2/3",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Area of triangle base 4, height 3:",
-            "options": ["6", "12", "7", "1"],
-            "answer": "6",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "3a - 2b + a - b = ",
-            "options": ["4a - 3b", "2a - b", "4a + 3b", "3a - b"],
-            "answer": "4a - 3b",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": " (10^2)^3 = ",
-            "options": ["10^6", "10^5", "1000", "10"],
-            "answer": "10^6",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Rhombus has symmetry:",
-            "options": ["2", "4", "1", "3"],
-            "answer": "2",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Cone has vertex:",
-            "options": ["1", "0", "2", "4"],
-            "answer": "1",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Simple interest = P x R x T / ",
-            "options": ["100", "50", "10", "200"],
-            "answer": "100",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "25% of 200 is __________. ",
-            "answer": "50",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Perimeter of rectangle = 2(l + __________). ",
-            "answer": "b",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Like terms have same __________. ",
-            "answer": "variable",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "a^0 = __________. ",
-            "answer": "1",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Line symmetry divides into __________ parts. ",
-            "answer": "equal",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Prism has two __________ faces. ",
-            "answer": "parallel",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Ratio is comparison by __________. ",
-            "answer": "division",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Area of square = side x __________. ",
-            "answer": "side",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Binomial has __________ terms. ",
-            "answer": "two",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Scientific notation uses powers of __________. ",
-            "answer": "10",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "Percentage means per hundred.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Area is in square units.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Algebraic expressions have variables.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Exponents can be negative.",
-            "answer": "True",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "All shapes have symmetry.",
-            "answer": "False",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Cube has 12 edges.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Profit is selling price minus cost.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Parallelogram area = base x height.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Constants are terms without variables.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Rotational symmetry order 1 means no symmetry.",
-            "answer": "False",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: 10% of 50 is 5.\nReason: Percent means /100.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "easy"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Perimeter encloses shape.\nReason: Sum of sides.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true but R is not the correct explanation of A.",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: (a-b)^2 = a^2 - 2ab + b^2.\nReason: Expansion.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "easy"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: a^m / a^n = a^{m-n}.\nReason: When m > n.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true but R is not the correct explanation of A.",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Circle has infinite symmetry.\nReason: Rotational.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "moderate"
-          }
+          // Your questions: first batch + new ones to make 50
+          { type: "mcq", q: "The smallest rational number is", options: ["0", "1", "10", "not determinable"], answer: "not determinable", difficulty: "moderate" },
+          { type: "mcq", q: "The rational number that is neither positive not negative is", options: ["0", "1/0", "1", "none of these"], answer: "0", difficulty: "easy" },
+          { type: "mcq", q: "If x/6=4/(-3)  , then the value of x is", options: ["8", "– 8", "12", "– 12"], answer: "– 8", difficulty: "moderate" },
+          { type: "mcq", q: "The reciprocal of 18/7 is", options: ["-18/7", "7/18", "9/7", "-7/18"], answer: "7/18", difficulty: "easy" },
+          { type: "mcq", q: "The degree of the polynomial a^2 b+6ab^2+5a^2 b^3 is", options: ["3", "2", "5", "1"], answer: "5", difficulty: "moderate" },
+          { type: "mcq", q: "The expression 2z-5x+7y  is a", options: ["Binomial", "trinomial", "monomial", "cubic polynomial"], answer: "trinomial", difficulty: "easy" },
+          { type: "mcq", q: "Which of the following is a rational number?", options: ["√2", "π", "3/4", "√-1"], answer: "3/4", difficulty: "easy" },
+          { type: "mcq", q: "(-3/5) + (7/5) equals", options: ["4/5", "-4/5", "10/5", "2/5"], answer: "4/5", difficulty: "easy" },
+          { type: "mcq", q: "The value of 2^5 is", options: ["32", "64", "16", "25"], answer: "32", difficulty: "easy" },
+          { type: "mcq", q: "In the expression 4x² + 3x - 7, the coefficient of x is", options: ["4", "3", "-7", "x"], answer: "3", difficulty: "easy" },
+          { type: "mcq", q: "A triangle with sides 5 cm, 5 cm, 8 cm is", options: ["equilateral", "isosceles", "scalene", "right-angled"], answer: "isosceles", difficulty: "moderate" },
+          { type: "mcq", q: "The sum of angles in a triangle is", options: ["180°", "360°", "90°", "270°"], answer: "180°", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of a square with side 6 cm is", options: ["12 cm", "18 cm", "24 cm", "36 cm"], answer: "24 cm", difficulty: "easy" },
+          { type: "mcq", q: "Area of a rectangle 10 cm by 5 cm is", options: ["15 cm²", "30 cm²", "50 cm²", "100 cm²"], answer: "50 cm²", difficulty: "easy" },
+          { type: "mcq", q: "Two triangles are congruent if their", options: ["areas are equal", "corresponding sides and angles match", "perimeters are equal", "heights are equal"], answer: "corresponding sides and angles match", difficulty: "moderate" },
+          { type: "mcq", q: "(-2)^4 equals", options: ["16", "-16", "8", "-8"], answer: "16", difficulty: "moderate" },
+          { type: "mcq", q: "The additive inverse of -5/8 is", options: ["5/8", "-5/8", "8/5", "0"], answer: "5/8", difficulty: "easy" },
+          { type: "mcq", q: "In 3x + 2y - 5, number of terms is", options: ["1", "2", "3", "4"], answer: "3", difficulty: "easy" },
+          { type: "mcq", q: "A right-angled triangle has one angle of", options: ["90°", "60°", "45°", "30°"], answer: "90°", difficulty: "easy" },
+          { type: "mcq", q: "Circumference of circle with radius 7 cm (take π=22/7) is", options: ["22 cm", "44 cm", "154 cm", "49 cm"], answer: "44 cm", difficulty: "moderate" },
+          { type: "mcq", q: "SSS congruence rule stands for", options: ["Side-Side-Side", "Angle-Angle-Side", "Side-Angle-Side", "Angle-Side-Angle"], answer: "Side-Side-Side", difficulty: "moderate" },
+          { type: "mcq", q: "10^0 equals", options: ["0", "1", "10", "100"], answer: "1", difficulty: "easy" },
+          { type: "mcq", q: "The multiplicative inverse of 4 is", options: ["4", "1/4", "-4", "0"], answer: "1/4", difficulty: "easy" },
+          { type: "mcq", q: "Area of triangle with base 10 cm and height 8 cm is", options: ["40 cm²", "80 cm²", "18 cm²", "90 cm²"], answer: "40 cm²", difficulty: "moderate" },
+          { type: "mcq", q: "Two figures are congruent if they have", options: ["same shape but different size", "same size and shape", "same area only", "same perimeter only"], answer: "same size and shape", difficulty: "easy" },
+
+          // 10 Fill in the Blank
+          { type: "fill_in_blank", q: "The standard form of rational number -12/-18 is ______.", answer: "2/3", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Any number raised to the power ______ is 1.", answer: "0", difficulty: "easy" },
+          { type: "fill_in_blank", q: "In the polynomial 5x³ - 2x + 7, the degree is ______.", answer: "3", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "The sum of interior angles of a triangle is ______ degrees.", answer: "180", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Perimeter of an equilateral triangle with side a is ______.", answer: "3a", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of a square with side s is ______.", answer: "s²", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Two triangles are congruent by ______ rule if two sides and included angle are equal.", answer: "SAS", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "(-5) × ______ = 0.", answer: "0", difficulty: "easy" },
+          { type: "fill_in_blank", q: "The reciprocal of a rational number p/q (q ≠ 0) is ______.", answer: "q/p", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of circle is ______ × r².", answer: "π", difficulty: "easy" },
+
+          // 10 True/False
+          { type: "true_false", q: "0 is a rational number.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Every integer is a rational number.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "(-3)^2 = -9.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "All equilateral triangles are congruent to each other.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Perimeter is always greater than area numerically.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "RHS congruence criterion applies to right-angled triangles.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "A monomial has only one term.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Rational numbers are closed under division (except by zero).", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "The base in 5³ is 15.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Congruent triangles have equal corresponding angles.", answer: "True", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning (your one + new)
+          { type: "assertion_reasoning", q: "Assertion (A): Rational numbers can be expressed as fractions.\nReason (R): The numbers that can be written in the form of p/q, where p and q are integers and q≠0 are rational numbers", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): The sum of two rational numbers is always rational.\nReason (R): Rational numbers are closed under addition.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): All right-angled triangles are congruent.\nReason (R): They have one angle 90°.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area of a triangle is (1/2) × base × height.\nReason (R): Height is perpendicular distance from base to opposite vertex.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): 2³ × 2² = 2⁵.\nReason (R): When multiplying powers with same base, add exponents.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" }
         ],
+
         "sample2": [
-          {
-            "type": "mcq",
-            "q": "Ratio 3:4 = ? %",
-            "options": ["75%", "300%", "43%", "34%"],
-            "answer": "75%",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Area of circle r=2, π=3.14",
-            "options": ["12.56", "6.28", "4", "8"],
-            "answer": "12.56",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Expand (x+2)(x+3)",
-            "options": ["x^2 + 5x + 6", "x^2 + 6x + 5", "x^2 + 5x + 5", "x^2 + 6x + 6"],
-            "answer": "x^2 + 5x + 6",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "3^2 x 3^3 = ",
-            "options": ["3^5", "3^6", "9^3", "27"],
-            "answer": "3^5",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Parallelogram symmetry lines:",
-            "options": ["0", "2", "4", "1"],
-            "answer": "0",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Cuboid vertices:",
-            "options": ["8", "6", "12", "4"],
-            "answer": "8",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "CP=100, SP=120, profit %=",
-            "options": ["20%", "120%", "100%", "10%"],
-            "answer": "20%",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Perimeter triangle sides 3,4,5:",
-            "options": ["12", "15", "6", "7"],
-            "answer": "12",
-            "difficulty": "easy"
-          },
-          {
-            "type": "mcq",
-            "q": "Value of x in x^2 - 4 = 0",
-            "options": ["2 or -2", "4", "0", "1"],
-            "answer": "2 or -2",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "a^{-1} = ",
-            "options": ["1/a", "a", "-a", "0"],
-            "answer": "1/a",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Isosceles trapezium symmetry:",
-            "options": ["1", "2", "0", "4"],
-            "answer": "1",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Pyramid base square, faces:",
-            "options": ["5", "4", "6", "8"],
-            "answer": "5",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Equivalent ratio 2:3 = 4:?",
-            "options": ["6", "5", "3", "2"],
-            "answer": "6",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Area parallelogram base 5, height 2:",
-            "options": ["10", "7", "3", "20"],
-            "answer": "10",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Subtract: 5x - 3y from 2x - y",
-            "options": ["3x - 2y", "-3x + 2y", "7x - 4y", "3x + 2y"],
-            "answer": "-3x + 2y",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "2^4 / 2^2 = ",
-            "options": ["2^2", "2^6", "4^2", "8"],
-            "answer": "2^2",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Regular pentagon rotational symmetry order:",
-            "options": ["5", "4", "6", "3"],
-            "answer": "5",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Cone curved surface area = π r l, l slant.",
-            "options": ["True", "False", "π r^2", "2π r"],
-            "answer": "True",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "SI for P=1000, R=5, T=2:",
-            "options": ["100", "200", "50", "500"],
-            "answer": "100",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Circumference semicircle = ",
-            "options": ["π r + 2r", "2π r", "π r", "π r^2"],
-            "answer": "π r + 2r",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Degree of 3x^2 y:",
-            "options": ["3", "2", "1", "4"],
-            "answer": "3",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": " (3 x 10^2) in standard form.",
-            "options": ["300", "3e2", "0.003", "3000"],
-            "answer": "300",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Reflection symmetry over line.",
-            "options": ["Mirror", "Rotation", "Translation", "Glide"],
-            "answer": "Mirror",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Net of cube has how many squares?",
-            "options": ["6", "4", "8", "12"],
-            "answer": "6",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "mcq",
-            "q": "Loss % if CP>SP.",
-            "options": ["True", "False", "Equal", "None"],
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Discount = marked price - __________. ",
-            "answer": "selling price",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Area of trapezium = 1/2 x sum parallel x __________. ",
-            "answer": "height",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Monomial has __________ term. ",
-            "answer": "one",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "a^m ^ n = __________. ",
-            "answer": "a^{mn}",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Order of rotational symmetry for square is __________. ",
-            "answer": "4",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Sphere volume = 4/3 π __________. ",
-            "answer": "r^3",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Proportion a/b = __________. ",
-            "answer": "c/d",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Circumference = __________ diameter. ",
-            "answer": "π",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Coefficient in -3x is __________. ",
-            "answer": "-3",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "1 lakh = 10^ __________. ",
-            "answer": "5",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Interest is on principal.",
-            "answer": "True",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "Area includes interior.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Expressions can be solved.",
-            "answer": "False",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "Negative exponents mean reciprocal.",
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Asymmetric shapes have no symmetry.",
-            "answer": "True",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "Prism has curved surfaces.",
-            "answer": "False",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "Ratios can be simplified.",
-            "answer": "True",
-            "difficulty": "easy"
-          },
-          {
-            "type": "true_false",
-            "q": "Perimeter of circle is circumference.",
-            "answer": "True",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "true_false",
-            "q": "Polynomials have positive exponents.",
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Cube net has 6 faces.",
-            "answer": "True",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: SI = PRT/100.\nReason: Formula.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Area circle π r^2.\nReason: Derived.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true but R is not the correct explanation of A.",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Like terms add.\nReason: Same variables.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "moderate"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: a^{-m} = 1/a^m.\nReason: Yes.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: All solids have volume.\nReason: 3D.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "moderate"
-          }
+          // Your questions: next batch (including corrected p=-10) + new
+          { type: "mcq", q: "If p= -10, then p^2-2p+100  is", options: ["20", "220", "180", "– 20"], answer: "220", difficulty: "moderate" },
+          { type: "mcq", q: "Coefficient of x^3 in -5x^3 is", options: ["5x", "– 5", "-5x", "-5x^2"], answer: "– 5", difficulty: "easy" },
+          { type: "mcq", q: "(-7)^3   is equal to", options: ["– 343", "343", "-243", "49"], answer: "– 343", difficulty: "easy" },
+          { type: "mcq", q: "What is the base in 8²", options: ["2", "4", "8", "64"], answer: "8", difficulty: "easy" },
+          { type: "mcq", q: "(2^0-3^0 )+1 is equal to", options: ["1", "0", "2", "– 3"], answer: "1", difficulty: "moderate" },
+          { type: "mcq", q: "A triangle having one angle exactly 90° is:", options: ["Acute triangle", "Obtuse triangle", "Right-angled triangle", "Equilateral triangle"], answer: "Right-angled triangle", difficulty: "easy" },
+          { type: "mcq", q: "If all angles of a triangle are equal, then each angle is:", options: ["90°", "60°", "120°", "45"], answer: "60°", difficulty: "easy" },
+          { type: "mcq", q: "Which of the following is not a Pythagorean triplet ?", options: ["5, 12, 13", "10, 15, 25", "15, 36, 39", "10, 24, 26"], answer: "10, 15, 25", difficulty: "moderate" },
+          { type: "mcq", q: "When two circle are said to be congruent?", options: ["If their areas are not equal.", "If their radii are equal", "If diameter of one is greater than second .", "None of the above"], answer: "If their radii are equal", difficulty: "moderate" },
+          { type: "mcq", q: "CPCT stands for", options: ["Corresponding Points of Congruent Triangles", "Corresponding Points of Combined Triangles", "Corresponding Parts of Combined Triangles", "Corresponding Parts of Congruent Triangles"], answer: "Corresponding Parts of Congruent Triangles", difficulty: "easy" },
+          { type: "mcq", q: "If the area of a circle is numerically equal to its circumference, then the radius of the circle is", options: ["1 unit", "2 unit", "3 units", "4 units"], answer: "2 unit", difficulty: "difficult" },
+          { type: "mcq", q: "If the ratio of the radii of two circles is 3 : 5, then the ratio of their areas is", options: ["3 : 5", "5 : 3", "25 : 9", "9 : 25"], answer: "9 : 25", difficulty: "moderate" },
+          { type: "mcq", q: "The value of (-4)^3 is", options: ["-64", "64", "-16", "16"], answer: "-64", difficulty: "easy" },
+          { type: "mcq", q: "Between two rational numbers, there are ______ rational numbers.", options: ["none", "one", "infinitely many", "two"], answer: "infinitely many", difficulty: "moderate" },
+          { type: "mcq", q: "The like terms in 3x + 5x² - 2x + 7 are", options: ["3x and -2x", "5x² and 7", "3x and 7", "all"], answer: "3x and -2x", difficulty: "moderate" },
+          { type: "mcq", q: "In a scalene triangle, all sides are", options: ["equal", "two equal", "all different", "right angles"], answer: "all different", difficulty: "easy" },
+          { type: "mcq", q: "Area of parallelogram = base × ______", options: ["height", "length", "width", "perimeter"], answer: "height", difficulty: "easy" },
+          { type: "mcq", q: "ASA congruence rule requires", options: ["two angles and included side", "two angles and non-included side", "three sides", "three angles"], answer: "two angles and included side", difficulty: "moderate" },
+          { type: "mcq", q: "5/0 is a", options: ["rational number", "integer", "undefined", "natural number"], answer: "undefined", difficulty: "easy" },
+          { type: "mcq", q: "The perimeter of an isosceles triangle with equal sides 7 cm and base 6 cm is", options: ["20 cm", "21 cm", "13 cm", "26 cm"], answer: "20 cm", difficulty: "moderate" },
+          { type: "mcq", q: "x² + y² is a", options: ["monomial", "binomial", "trinomial", "none"], answer: "binomial", difficulty: "easy" },
+          { type: "mcq", q: "3^{-2} equals", options: ["9", "1/9", "-9", "1/6"], answer: "1/9", difficulty: "moderate" },
+          { type: "mcq", q: "The median of a triangle joins vertex to", options: ["midpoint of opposite side", "centroid", "orthocentre", "circumcentre"], answer: "midpoint of opposite side", difficulty: "moderate" },
+          { type: "mcq", q: "Two congruent circles have", options: ["equal radii", "equal areas", "equal circumferences", "all of these"], answer: "all of these", difficulty: "easy" },
+          { type: "mcq", q: "The value of (1/2)^0 is", options: ["0", "1", "1/2", "2"], answer: "1", difficulty: "easy" },
+
+          // 10 Fill in the Blank (sample2)
+          { type: "fill_in_blank", q: "The number with negative exponent becomes ______ in numerator.", answer: "reciprocal", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "(-8) + ______ = 0.", answer: "8", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A triangle with no equal sides is called ______ triangle.", answer: "scalene", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of equilateral triangle involves height = (√3/2) × ______.", answer: "side", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Corresponding parts of ______ triangles are equal (CPCT).", answer: "congruent", difficulty: "easy" },
+          { type: "fill_in_blank", q: "The identity element for addition is ______.", answer: "0", difficulty: "easy" },
+          { type: "fill_in_blank", q: "In 7a²b³, the degree is ______.", answer: "5", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Pythagoras theorem holds in ______ triangle.", answer: "right-angled", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Perimeter is the ______ of all sides.", answer: "sum", difficulty: "easy" },
+          { type: "fill_in_blank", q: "______ is used when two sides and non-included angle are equal for congruence.", answer: "AAS", difficulty: "moderate" },
+
+          // 10 True/False (sample2)
+          { type: "true_false", q: "Every rational number has a reciprocal.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Exponents can be negative.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "All isosceles triangles are equilateral.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Area of circle depends on radius only.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Congruent figures have same shape and size.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "0 has a reciprocal.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Algebraic expressions can have negative coefficients.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Obtuse triangle has one angle >90°.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Perimeter unit is square unit.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "SAS is a congruence criterion.", answer: "True", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning (your second one + new)
+          { type: "assertion_reasoning", q: "Assertion (A) : All isosceles triangles are congruent.\nReason (R) : Isosceles triangle has two sides of equal length.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Exponents follow the law a^m × a^n = a^(m+n).\nReason (R): Bases are the same.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Rational numbers include integers.\nReason (R): Integers can be written as p/1.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Perimeter and area have same units.\nReason (R): Perimeter is length, area is length squared.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Congruent triangles have equal areas.\nReason (R): Same size and shape imply same area.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" }
         ],
+
         "sample3": [
-          {
-            "type": "mcq",
-            "q": "CP=80, SP=100, % profit?",
-            "options": ["25%", "20%", "80%", "100%"],
-            "answer": "25%",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Area ring outer r=5, inner=3:",
-            "options": ["π(25-9)", "π(5-3)", "2π(5+3)", "π25"],
-            "answer": "π(25-9)",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Factor x^2 - 5x + 6",
-            "options": ["(x-2)(x-3)", "(x-1)(x-6)", "(x+2)(x+3)", "(x-5)(x-1)"],
-            "answer": "(x-2)(x-3)",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": " (4^3)^2 = ",
-            "options": ["4^6", "4^5", "16^3", "64^2"],
-            "answer": "4^6",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Kite symmetry lines:",
-            "options": ["1", "2", "0", "4"],
-            "answer": "1",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Euler's formula V - E + F = ",
-            "options": ["2", "0", "1", "3"],
-            "answer": "2",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "CI formula P(1+r/100)^t - P",
-            "options": ["True", "False", "P r t /100", "None"],
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Path area = length x breadth, for border.",
-            "options": "False",
-            "answer": "False",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Evaluate 2x + 3y for x=1, y=2.",
-            "options": ["8", "5", "7", "4"],
-            "answer": "8",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "0.00032 in scientific = ",
-            "options": ["3.2 x 10^{-4}", "3.2 x 10^4", "32 x 10^{-5}", "3.2 x 10^ -5"],
-            "answer": "3.2 x 10^{-4}",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Alphabet A symmetry:",
-            "options": ["1", "2", "0", "Infinite"],
-            "answer": "1",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "For cuboid, diagonals equal.",
-            "options": ["True", "False", "Sometimes", "None"],
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Unitary method for proportion.",
-            "options": ["True", "False", "Ratio", "Percent"],
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Quadrilateral area = 1/2 d (h1 + h2) for:",
-            "options": ["Trapezium", "Rectangle", "Square", "Rhombus"],
-            "answer": "Trapezium",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Find x: (x+1)(x-1) = x^2 - 1",
-            "options": ["Identity", "Equation", "Expression", "None"],
-            "answer": "Identity",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": " (2/3)^{-1} = ",
-            "options": ["3/2", "2/3", "-3/2", "1"],
-            "answer": "3/2",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Rotational symmetry 180 degrees order 2.",
-            "options": ["True", "False", "Order 1", "Order 4"],
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Cross section of cylinder is:",
-            "options": ["Circle", "Rectangle", "Square", "Triangle"],
-            "answer": "Circle",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "VAT is value added:",
-            "options": ["Tax", "Profit", "Loss", "Interest"],
-            "answer": "Tax",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Heron's formula for area triangle.",
-            "options": ["True", "False", "Base height", "None"],
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Trinomial example x^2 + x + 1.",
-            "options": ["True", "False", "Binomial", "Monomial"],
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "1.23 x 10^3 = ",
-            "options": ["1230", "123", "0.00123", "12300"],
-            "answer": "1230",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Asymmetry example scalene triangle.",
-            "options": ["True", "False", "Symmetry", "Rotation"],
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Oblique sketch not isometric.",
-            "options": ["True", "False", "Same", "None"],
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "mcq",
-            "q": "Convert fraction to percent multiply 100.",
-            "options": ["True", "False", "Divide", "Add"],
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Loss % = loss / __________ x 100. ",
-            "answer": "CP",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Area rhombus = 1/2 x d1 x __________. ",
-            "answer": "d2",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Zero of linear polynomial ax + b is __________. ",
-            "answer": "-b/a",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": " (a/b)^m = __________ / b^m. ",
-            "answer": "a^m",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Centre of symmetry called __________. ",
-            "answer": "point",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Euler's V + F - E = __________. ",
-            "answer": "2",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Extreme terms in proportion __________ product. ",
-            "answer": "equal",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Quadrilateral perimeter sum __________ sides. ",
-            "answer": "four",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Constant term no __________. ",
-            "answer": "variable",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "fill_in_blank",
-            "q": "Large numbers in __________ notation. ",
-            "answer": "scientific",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Compound interest > simple.",
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Heron's for all triangles.",
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Expressions equal equations.",
-            "answer": "False",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Fractional exponents possible.",
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "All letters have symmetry.",
-            "answer": "False",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Net unfolds to solid.",
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Direct proportion increase together.",
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Circle area includes pi.",
-            "answer": "True",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Unlike terms can't combine.",
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "true_false",
-            "q": "Isometric sketch equal scale.",
-            "answer": "True",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Profit % on CP.\nReason: Yes.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Trapezium has one parallel pair.\nReason: Area formula.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true but R is not the correct explanation of A.",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Polynomials classified by degree.\nReason: Highest power.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Negative exponent fraction.\nReason: Yes.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true and R is the correct explanation of A.",
-            "difficulty": "very difficult"
-          },
-          {
-            "type": "assertion_reasoning",
-            "q": "Assertion: Cube has rotational symmetry.\nReason: Order 4 on face.",
-            "options": [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            "answer": "Both A and R are true but R is not the correct explanation of A.",
-            "difficulty": "very difficult"
-          }
+          // Your remaining questions (if any left, but distributed) + more new to fill
+          // (Since you had 18 MCQ + 2 A/R, some overlap in distribution for balance)
+          { type: "mcq", q: "The product of a rational and irrational number is", options: ["always rational", "always irrational", "may be rational or irrational", "always integer"], answer: "may be rational or irrational", difficulty: "difficult" },
+          { type: "mcq", q: "Simplify: 16^{1/2}", options: ["4", "8", "2", "16"], answer: "4", difficulty: "moderate" },
+          { type: "mcq", q: "Subtract: (3x + 5) - (x - 2)", options: ["2x + 7", "4x + 3", "2x + 3", "4x + 7"], answer: "2x + 7", difficulty: "moderate" },
+          { type: "mcq", q: "In an acute triangle, all angles are", options: ["less than 90°", "greater than 90°", "one 90°", "equal"], answer: "less than 90°", difficulty: "easy" },
+          { type: "mcq", q: "Area of trapezium = (sum of parallel sides)/2 × ______", options: ["height", "length", "base", "perimeter"], answer: "height", difficulty: "moderate" },
+          { type: "mcq", q: "Two polygons are congruent if", options: ["corresponding angles equal and sides proportional", "corresponding parts equal", "areas equal", "perimeters equal"], answer: "corresponding parts equal", difficulty: "moderate" },
+          { type: "mcq", q: "The value of 3^4 ÷ 3^2 is", options: ["9", "27", "81", "3"], answer: "9", difficulty: "moderate" },
+          { type: "mcq", q: "Which is greater: -5/6 or -7/8?", options: ["-5/6", "-7/8", "equal", "cannot compare"], answer: "-5/6", difficulty: "moderate" },
+          { type: "mcq", q: "The altitude of a triangle is also called", options: ["median", "height", "angle bisector", "perpendicular bisector"], answer: "height", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of rectangle = 2 × (length + ______)", options: ["breadth", "height", "area", "diagonal"], answer: "breadth", difficulty: "easy" },
+          { type: "mcq", q: "AAA is sufficient for congruence.", options: ["True for triangles", "False for triangles", "Only for quadrilaterals", "Always true"], answer: "False for triangles", difficulty: "moderate" },
+          { type: "mcq", q: "2.5 as rational number is", options: ["5/2", "25/10", "5/10", "both a and b"], answer: "both a and b", difficulty: "easy" },
+          { type: "mcq", q: "The constant term in 4x² - 3x + 8 is", options: ["4", "-3", "8", "x"], answer: "8", difficulty: "easy" },
+          { type: "mcq", q: "An obtuse triangle has", options: ["one obtuse angle", "all acute angles", "one right angle", "all obtuse"], answer: "one obtuse angle", difficulty: "easy" },
+          { type: "mcq", q: "If two triangles have equal areas, they are congruent.", options: ["Always", "Sometimes", "Never", "Only if right-angled"], answer: "Never", difficulty: "moderate" },
+          { type: "mcq", q: "10^{-1} equals", options: ["0.1", "10", "1", "0.01"], answer: "0.1", difficulty: "easy" },
+          { type: "mcq", q: "The number of variables in 5xy + 2z is", options: ["1", "2", "3", "0"], answer: "3", difficulty: "moderate" },
+          { type: "mcq", q: "In congruence, RHS is used for", options: ["right-angled triangles only", "all triangles", "only isosceles", "none"], answer: "right-angled triangles only", difficulty: "moderate" },
+          { type: "mcq", q: "The reciprocal of -1 is", options: ["1", "-1", "0", "undefined"], answer: "-1", difficulty: "easy" },
+          { type: "mcq", q: "Area unit is", options: ["cm", "cm²", "cm³", "none"], answer: "cm²", difficulty: "easy" },
+          { type: "mcq", q: "5/7 × 14/15 = ______ (simplify)", options: ["2/3", "10/21", "70/105", "1"], answer: "2/3", difficulty: "moderate" },
+          { type: "mcq", q: "A polynomial of degree 2 is called", options: ["linear", "quadratic", "cubic", "constant"], answer: "quadratic", difficulty: "easy" },
+          { type: "mcq", q: "The exterior angle of a triangle equals sum of", options: ["two interior opposite angles", "all interior angles", "adjacent angles", "none"], answer: "two interior opposite angles", difficulty: "moderate" },
+          { type: "mcq", q: "If radii equal, circles are", options: ["congruent", "similar", "equal area only", "none"], answer: "congruent", difficulty: "easy" },
+          { type: "mcq", q: "(-1/2) × (-4) = ", options: ["-2", "2", "1/2", "-1/2"], answer: "2", difficulty: "easy" },
+
+          // 10 Fill in the Blank (sample3)
+          { type: "fill_in_blank", q: "______ theorem is used in right-angled triangles for side relation.", answer: "Pythagoras", difficulty: "easy" },
+          { type: "fill_in_blank", q: "When dividing powers with same base, ______ exponents.", answer: "subtract", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "A rational number between 1/2 and 3/4 is ______ (example).", answer: "5/8", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "The formula for area of rhombus is (d1 × d2)/______ .", answer: "2", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "______ means same shape, may different size.", answer: "Similar", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "The identity for multiplication is ______.", answer: "1", difficulty: "easy" },
+          { type: "fill_in_blank", q: "In triangle, sum of any two sides > ______ side.", answer: "third", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Perimeter of semicircle is ______ + 2r.", answer: "πr", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Coefficient of term without variable is ______ term.", answer: "constant", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Two angles and included side equal → congruence by ______ rule.", answer: "SAS", difficulty: "moderate" },
+
+          // 10 True/False (sample3)
+          { type: "true_false", q: "Negative exponents give fractions.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "All triangles are congruent if areas equal.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Rational numbers are dense on number line.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Perimeter of circle is called circumference.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Algebraic expression must have variable.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Acute triangle can have right angle.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "a^m / a^n = a^(m-n) when a ≠ 0.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Congruence preserves orientation.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Area of triangle = base × height.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "0 is neither positive nor negative rational.", answer: "True", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning (all new for variety)
+          { type: "assertion_reasoning", q: "Assertion (A): There are infinitely many rational numbers between two rationals.\nReason (R): Rational numbers are dense.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Congruent triangles have equal perimeters.\nReason (R): Corresponding sides are equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area depends on shape only.\nReason (R): Different shapes can have same area.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): (a+b)^2 = a^2 + b^2.\nReason (R): It ignores 2ab term.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Every integer has a reciprocal.\nReason (R): Reciprocal of 0 is undefined.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" }
         ]
       }
       },
