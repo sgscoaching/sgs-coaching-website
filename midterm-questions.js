@@ -5,7 +5,7 @@ console.log('midterm-questions.js loaded successfully');
 
 window.midtermQuizData = {
   // Class 1 - Environmental Studies (EVS)
-  "1": {
+  "5": {
     "English": {
       "midterm1": {
         "sample1": [
@@ -43,254 +43,183 @@ window.midtermQuizData = {
         ]
       },
       "midterm2": {
-        "sample1": [
-          // Add 25 MCQs + 10 Fill in Blank + 10 True/False + 5 Assertion/Reasoning here
+       "sample1": [
+          // Your originals: MCQ 1-4 + FIB 1 & 3 + new questions
+          { type: "mcq", q: "Ritika buys a table lamp for ₹812.75 and gives ₹1000 to the shopkeeper. How much money will the shopkeeper return to Ritika?", options: ["₹107.25", "₹178.25", "₹187.52", "₹187.25"], answer: "₹187.25", difficulty: "moderate" },
+          { type: "mcq", q: "What should be subtracted from ₹72.57 to get ₹53.75?", options: ["₹18.28", "₹81.82", "₹18.02", "₹18.82"], answer: "₹18.82", difficulty: "moderate" },
+          { type: "mcq", q: "Ribbon of length 8 m 54 cm is cut into 7 pieces of equal length. What is the length of each piece?", options: ["12.2 m", "1.22 m", "1.34 m", "3.26 m"], answer: "1.22 m", difficulty: "moderate" },
+          { type: "mcq", q: "A train covers 525.80 km on Monday and 514.75 km on Tuesday. What distance does it cover on Wednesday if the total distance covered in the three days is 1600 km?", options: ["5.954 km", "55.945 km", "559.45 km", "395.246 km"], answer: "559.45 km", difficulty: "moderate" },
+          { type: "mcq", q: "₹500 note has how many ₹100 notes inside it?", options: ["4", "5", "10", "20"], answer: "5", difficulty: "easy" },
+          { type: "mcq", q: "1 kilometre = ______ metres.", options: ["100", "1000", "10", "10000"], answer: "1000", difficulty: "easy" },
+          { type: "mcq", q: "1 hour = ______ minutes.", options: ["50", "60", "100", "30"], answer: "60", difficulty: "easy" },
+          { type: "mcq", q: "Freezing point of water in Celsius is", options: ["100°C", "0°C", "32°C", "37°C"], answer: "0°C", difficulty: "easy" },
+          { type: "mcq", q: "An angle of 90° is called", options: ["acute", "obtuse", "right", "straight"], answer: "right", difficulty: "easy" },
+          { type: "mcq", q: "A quadrilateral with all sides equal is called", options: ["rectangle", "square", "trapezium", "kite"], answer: "square", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of a square with side 5 cm is", options: ["25 cm", "20 cm", "10 cm", "15 cm"], answer: "20 cm", difficulty: "easy" },
+          { type: "mcq", q: "Volume of a cube of side 3 cm is", options: ["27 cm³", "9 cm³", "6 cm³", "18 cm³"], answer: "27 cm³", difficulty: "easy" },
+          { type: "mcq", q: "₹10 = ______ paise.", options: ["100", "1000", "10", "1"], answer: "1000", difficulty: "easy" },
+          { type: "mcq", q: "1 metre = ______ centimetres.", options: ["10", "100", "1000", "1"], answer: "100", difficulty: "easy" },
+          { type: "mcq", q: "From 10:00 a.m. to 1:30 p.m. is ______ hours.", options: ["3.5", "4", "2.5", "3"], answer: "3.5", difficulty: "easy" },
+          { type: "mcq", q: "Normal room temperature is about", options: ["20°C", "37°C", "100°C", "0°C"], answer: "20°C", difficulty: "easy" },
+          { type: "mcq", q: "A triangle with all sides equal is", options: ["isosceles", "equilateral", "scalene", "right"], answer: "equilateral", difficulty: "easy" },
+          { type: "mcq", q: "A rectangle has ______ lines of symmetry.", options: ["2", "4", "1", "infinite"], answer: "2", difficulty: "easy" },
+          { type: "mcq", q: "Area of rectangle 8 cm by 5 cm is", options: ["40 cm²", "26 cm²", "13 cm²", "80 cm²"], answer: "40 cm²", difficulty: "easy" },
+          { type: "mcq", q: "1 kg = ______ grams.", options: ["100", "1000", "10", "10000"], answer: "1000", difficulty: "easy" },
+          { type: "mcq", q: "From 2:15 p.m. to 4:45 p.m. is ______ hours.", options: ["2 hours 30 min", "3 hours", "2 hours", "1 hour 30 min"], answer: "2 hours 30 min", difficulty: "easy" },
+          { type: "mcq", q: "Boiling point of water in Celsius is", options: ["0°C", "100°C", "37°C", "32°C"], answer: "100°C", difficulty: "easy" },
+          { type: "mcq", q: "A quadrilateral with no parallel sides is", options: ["parallelogram", "trapezium", "kite", "none"], answer: "kite", difficulty: "moderate" },
+          { type: "mcq", q: "Perimeter of equilateral triangle side 6 cm is", options: ["18 cm", "12 cm", "24 cm", "36 cm"], answer: "18 cm", difficulty: "easy" },
+          { type: "mcq", q: "Volume of cuboid 4 cm × 3 cm × 2 cm is", options: ["24 cm³", "14 cm³", "9 cm³", "48 cm³"], answer: "24 cm³", difficulty: "moderate" },
+
+          // Your FIB
+          { type: "fill_in_blank", q: "The currency used in India is ___________________.", answer: "rupee", difficulty: "easy" },
+          { type: "fill_in_blank", q: "The bigger units of length are kilometre, hectometre and ___________________.", answer: "decametre", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "On the Celsius scale, the freezing point of water is _________ and the boiling point of water is_______________.", answer: "0°C, 100°C", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A triangle in which two sides are equal to each other is called an_________________  triangle.", answer: "isosceles", difficulty: "easy" },
+          { type: "fill_in_blank", q: "₹1 = __________ paise.", answer: "100", difficulty: "easy" },
+          { type: "fill_in_blank", q: "1 litre = __________ ml.", answer: "1000", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A day has __________ hours.", answer: "24", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Normal body temperature is __________ °C.", answer: "37", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A square has __________ lines of symmetry.", answer: "4", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Perimeter of square = __________ × side.", answer: "4", difficulty: "easy" },
+
+          // 10 True/False
+          { type: "true_false", q: "We always get change when we pay more than the bill.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "1 km = 1000 m.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "1 hour = 60 minutes.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Temperature is measured in degree Celsius.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "All angles in a square are 90°.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Perimeter is measured in square units.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Volume is measured in cubic units.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Trapezium has two pairs of parallel sides.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "1 kg = 1000 g.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Obtuse angle is greater than 90°.", answer: "True", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning (all new)
+          { type: "assertion_reasoning", q: "Assertion (A): Shopkeeper returns money when we pay more.\nReason (R): Change = amount paid - bill amount.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): 1 m = 100 cm.\nReason (R): Metre is bigger unit than centimetre.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Normal body temperature is 37°C.\nReason (R): 98.6°F converts to 37°C.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Square has 4 lines of symmetry.\nReason (R): All sides and angles are equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area of rectangle is length × breadth.\nReason (R): It covers length and width.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" }
         ],
+
         "sample2": [
-          // Add 25 MCQs + 10 Fill in Blank + 10 True/False + 5 Assertion/Reasoning here
+          // Your originals: MCQ 5-7 + FIB 2 + new questions
+          { type: "mcq", q: "54 months equal to", options: ["2 year 4 months", "5 year 4 months", "9 years", "4 year 6 months"], answer: "4 year 6 months", difficulty: "moderate" },
+          { type: "mcq", q: "Mrs Sharma’s office starts at 9:50 a.m. and close at 7:10 p.m. The time duration of her office is", options: ["8 hours 20 minute", "9 hours 30 minutes", "10 hours 20 minute", "9 hours 20 minute"], answer: "9 hours 20 minute", difficulty: "moderate" },
+          { type: "mcq", q: "Normal human body temperature is 98.6°F, that is equal to .", options: ["36°C", "37°C", "38°C", "35°C"], answer: "37°C", difficulty: "moderate" },
+          { type: "mcq", q: "A bill of ₹250 with 10% tax is", options: ["₹275", "₹225", "₹260", "₹200"], answer: "₹275", difficulty: "easy" },
+          { type: "mcq", q: "2 kg 500 g = ______ g", options: ["2500", "2000", "3000", "1500"], answer: "2500", difficulty: "easy" },
+          { type: "mcq", q: "From 11:30 a.m. to 2:45 p.m. is", options: ["3 hours 15 min", "2 hours 15 min", "3 hours", "4 hours"], answer: "3 hours 15 min", difficulty: "moderate" },
+          { type: "mcq", q: "An angle of 120° is", options: ["acute", "obtuse", "right", "straight"], answer: "obtuse", difficulty: "easy" },
+          { type: "mcq", q: "A trapezium has ______ pair of parallel sides.", options: ["one", "two", "three", "none"], answer: "one", difficulty: "easy" },
+          { type: "mcq", q: "Area of square side 4 cm is", options: ["16 cm²", "8 cm²", "12 cm²", "20 cm²"], answer: "16 cm²", difficulty: "easy" },
+          { type: "mcq", q: "Volume of cube side 2 cm is", options: ["8 cm³", "4 cm³", "16 cm³", "6 cm³"], answer: "8 cm³", difficulty: "easy" },
+          { type: "mcq", q: "₹1000 = ______ ₹100 notes.", options: ["10", "5", "20", "8"], answer: "10", difficulty: "easy" },
+          { type: "mcq", q: "1 litre = ______ ml.", options: ["100", "1000", "10", "10000"], answer: "1000", difficulty: "easy" },
+          { type: "mcq", q: "A clock at 3:00 shows ______° angle between hands.", options: ["90", "180", "0", "270"], answer: "90", difficulty: "moderate" },
+          { type: "mcq", q: "Temperature of ice is about", options: ["0°C", "100°C", "37°C", "-10°C"], answer: "-10°C", difficulty: "easy" },
+          { type: "mcq", q: "A rectangle has ______ sides equal.", options: ["all four", "two pairs", "three", "none"], answer: "two pairs", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of rectangle 7 cm by 3 cm is", options: ["20 cm", "21 cm", "10 cm", "14 cm"], answer: "20 cm", difficulty: "easy" },
+          { type: "mcq", q: "1 week = ______ days.", options: ["7", "10", "30", "365"], answer: "7", difficulty: "easy" },
+          { type: "mcq", q: "An angle less than 90° is", options: ["obtuse", "acute", "right", "straight"], answer: "acute", difficulty: "easy" },
+          { type: "mcq", q: "Area of triangle base 10 cm height 6 cm is", options: ["60 cm²", "30 cm²", "16 cm²", "120 cm²"], answer: "30 cm²", difficulty: "moderate" },
+          { type: "mcq", q: "Volume of cuboid 5×4×3 cm is", options: ["60 cm³", "20 cm³", "12 cm³", "30 cm³"], answer: "60 cm³", difficulty: "moderate" },
+          { type: "mcq", q: "Discount is calculated on", options: ["marked price", "cost price", "selling price", "profit"], answer: "marked price", difficulty: "easy" },
+          { type: "mcq", q: "1 m 25 cm = ______ cm.", options: ["125", "1025", "25", "100"], answer: "125", difficulty: "easy" },
+          { type: "mcq", q: "From 8:45 a.m. to 11:15 a.m. is", options: ["2 hours 30 min", "3 hours", "2 hours", "1 hour 30 min"], answer: "2 hours 30 min", difficulty: "easy" },
+          { type: "mcq", q: "A square is a special type of", options: ["rectangle", "trapezium", "kite", "parallelogram"], answer: "rectangle", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of triangle sides 5,6,7 cm is", options: ["18 cm", "36 cm", "12 cm", "17 cm"], answer: "18 cm", difficulty: "moderate" },
+
+          // Your FIB + new
+          { type: "fill_in_blank", q: "The bigger units of length are kilometre, hectometre and ___________________.", answer: "decametre", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "₹1 = __________ paise.", answer: "100", difficulty: "easy" },
+          { type: "fill_in_blank", q: "1 hour = __________ minutes.", answer: "60", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Normal body temperature is __________ °C.", answer: "37", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A square has __________ lines of symmetry.", answer: "4", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of square = side × __________. ", answer: "side", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Volume of cube = side × side × __________. ", answer: "side", difficulty: "easy" },
+          { type: "fill_in_blank", q: "An angle of 90° is called __________ angle.", answer: "right", difficulty: "easy" },
+          { type: "fill_in_blank", q: "1 kg = __________ grams.", answer: "1000", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Perimeter of rectangle = 2 × (length + __________).", answer: "breadth", difficulty: "easy" },
+
+          // 10 True/False + 5 AR (all new)
+          { type: "assertion_reasoning", q: "Assertion (A): Change = amount paid - bill.\nReason (R): Shopkeeper returns extra money.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): 1 km = 1000 m.\nReason (R): Kilometre is bigger unit.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Obtuse angle is between 90° and 180°.\nReason (R): It is greater than right angle.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area of square is side × side.\nReason (R): All sides are equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Trapezium has one pair of parallel sides.\nReason (R): It is a special quadrilateral.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+
+          // 10 True/False
+          { type: "true_false", q: "We get change only when we pay exact amount.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "1 m = 100 cm.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "1 day = 24 hours.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "37°C is normal body temperature.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "A square is a rectangle.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Perimeter unit is cm².", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Volume unit is cm³.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Trapezium has all sides equal.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "1 litre = 1000 ml.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Acute angle is less than 90°.", answer: "True", difficulty: "easy" }
         ],
+
         "sample3": [
-          // Add 25 MCQs + 10 Fill in Blank + 10 True/False + 5 Assertion/Reasoning here
-        ]
-      }
-    },
-    "Environmental Studies": {
-      "midterm1": {
-        "sample1": [
-          // Sample 1: Easy
-          {
-            type: "mcq",
-            q: "Which of these is a fruit?",
-            options: ["Carrot", "Apple", "Potato", "Onion"],
-            answer: "Apple",
-            difficulty: "easy"
-          },
-          {
-            type: "true_false",
-            q: "The sun rises in the east.",
-            answer: "True",
-            difficulty: "easy"
-          },
-          {
-            type: "fill_in_blank",
-            q: "We have _____ seasons in a year.",
-            answer: "four",
-            difficulty: "easy"
-          },
-          {
-            type: "mcq",
-            q: "Which animal gives us milk?",
-            options: ["Lion", "Elephant", "Cow", "Tiger"],
-            answer: "Cow",
-            difficulty: "easy"
-          },
-          {
-            type: "true_false",
-            q: "We should waste water.",
-            answer: "False",
-            difficulty: "easy"
-          },
-          {
-            type: "fill_in_blank",
-            q: "A baby dog is called a _____.",
-            answer: "puppy",
-            difficulty: "easy"
-          },
-          {
-            type: "mcq",
-            q: "Which of these is a vegetable?",
-            options: ["Mango", "Banana", "Tomato", "Orange"],
-            answer: "Tomato",
-            difficulty: "easy"
-          },
-          {
-            type: "true_false",
-            q: "We should plant more trees.",
-            answer: "True",
-            difficulty: "easy"
-          },
-          {
-            type: "fill_in_blank",
-            q: "The color of grass is _____.",
-            answer: "green",
-            difficulty: "easy"
-          },
-          {
-            type: "mcq",
-            q: "Which of these is a bird?",
-            options: ["Dog", "Cat", "Sparrow", "Fish"],
-            answer: "Sparrow",
-            difficulty: "easy"
-          }
-        ],
-        "sample2": [
-          // Sample 2: Moderate
-          {
-            type: "mcq",
-            q: "What do we call the place where birds lay eggs?",
-            options: ["Cage", "Nest", "Hole", "Box"],
-            answer: "Nest",
-            difficulty: "moderate"
-          },
-          {
-            type: "true_false",
-            q: "The moon gives its own light.",
-            answer: "False",
-            difficulty: "moderate"
-          },
-          {
-            type: "fill_in_blank",
-            q: "We use our _____ to smell flowers.",
-            answer: "nose",
-            difficulty: "moderate"
-          },
-          {
-            type: "mcq",
-            q: "Which of these helps us see things?",
-            options: ["Ears", "Eyes", "Nose", "Mouth"],
-            answer: "Eyes",
-            difficulty: "moderate"
-          },
-          {
-            type: "true_false",
-            q: "We should cross the road when the signal is red.",
-            answer: "False",
-            difficulty: "moderate"
-          }
-        ],
-        "sample3": [
-          // Sample 3: Difficult
-          {
-            type: "mcq",
-            q: "Which of these is a natural source of light?",
-            options: ["Bulb", "Candle", "Sun", "Torch"],
-            answer: "Sun",
-            difficulty: "difficult"
-          },
-          {
-            type: "true_false",
-            q: "All plants have flowers.",
-            answer: "False",
-            difficulty: "difficult"
-          },
-          {
-            type: "fill_in_blank",
-            q: "The process by which plants make their food is called __________.",
-            answer: "photosynthesis",
-            difficulty: "difficult"
-          },
-          {
-            type: "assertion_reasoning",
-            q: "Assertion: We should not waste food.\nReason: Many people in the world don't have enough to eat.",
-            options: [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            answer: "Both A and R are true and R is the correct explanation of A.",
-            difficulty: "difficult"
-          }
-        ]
-      },
-      "midterm2": {
-        "sample1": [
-          // Sample 1: Easy
-          {
-            type: "mcq",
-            q: "Which of these is a mode of transport?",
-            options: ["Chair", "Car", "Table", "Book"],
-            answer: "Car",
-            difficulty: "easy"
-          },
-          {
-            type: "true_false",
-            q: "We should keep our surroundings clean.",
-            answer: "True",
-            difficulty: "easy"
-          },
-          {
-            type: "fill_in_blank",
-            q: "We use our _____ to hear sounds.",
-            answer: "ears",
-            difficulty: "easy"
-          },
-          {
-            type: "mcq",
-            q: "Which of these is a domestic animal?",
-            options: ["Lion", "Tiger", "Elephant", "Dog"],
-            answer: "Dog",
-            difficulty: "easy"
-          },
-          {
-            type: "true_false",
-            q: "We should eat junk food every day.",
-            answer: "False",
-            difficulty: "easy"
-          }
-        ],
-        "sample2": [
-          // Sample 2: Moderate
-          {
-            type: "mcq",
-            q: "What do we call the baby of a cat?",
-            options: ["Puppy", "Kitten", "Cub", "Calf"],
-            answer: "Kitten",
-            difficulty: "moderate"
-          },
-          {
-            type: "true_false",
-            q: "The Earth is flat.",
-            answer: "False",
-            difficulty: "moderate"
-          },
-          {
-            type: "fill_in_blank",
-            q: "The _____ is the largest animal in the world.",
-            answer: "blue whale",
-            difficulty: "moderate"
-          },
-          {
-            type: "mcq",
-            q: "Which of these is a source of light?",
-            options: ["Stone", "Water", "Sun", "Soil"],
-            answer: "Sun",
-            difficulty: "moderate"
-          }
-        ],
-        "sample3": [
-          // Sample 3: Difficult
-          {
-            type: "mcq",
-            q: "Which of these is a natural resource that we should conserve?",
-            options: ["Plastic", "Water", "Paper", "All of these"],
-            answer: "Water",
-            difficulty: "difficult"
-          },
-          {
-            type: "true_false",
-            q: "All animals are herbivores.",
-            answer: "False",
-            difficulty: "difficult"
-          },
-          {
-            type: "fill_in_blank",
-            q: "The process of water turning into vapor is called __________.",
-            answer: "evaporation",
-            difficulty: "difficult"
-          },
-          {
-            type: "assertion_reasoning",
-            q: "Assertion: We should not pluck flowers from public gardens.\nReason: It makes the garden look beautiful for everyone.",
-            options: [
-              "Both A and R are true and R is the correct explanation of A.",
-              "Both A and R are true but R is not the correct explanation of A.",
-              "A is true but R is false.",
-              "A is false but R is true."
-            ],
-            answer: "Both A and R are true and R is the correct explanation of A.",
-            difficulty: "difficult"
-          }
+          // Your originals: MCQ 8-10 + FIB 4 + new questions
+          { type: "mcq", q: "An angle that measures more than 90° but less than 180° is called a/an…………… angle.", options: ["straight", "obtuse", "reflex", "acute"], answer: "obtuse", difficulty: "easy" },
+          { type: "mcq", q: "A quadrilateral in which one pair of opposite sides is parallel is known as a", options: ["kite", "trapezium", "rectangle", "square"], answer: "trapezium", difficulty: "moderate" },
+          { type: "mcq", q: "From a square sheet of side 6 cm, a square of side 3 cm is cut. The area of the meaning sheet is", options: ["18 sq.cm", "3 sq.cm", "27 sq.cm", "12 sq.cm"], answer: "27 sq.cm", difficulty: "moderate" },
+          { type: "mcq", q: "₹200 note has how many ₹50 notes?", options: ["2", "4", "5", "10"], answer: "4", difficulty: "easy" },
+          { type: "mcq", q: "2 m 75 cm = ______ cm.", options: ["275", "200", "75", "1025"], answer: "275", difficulty: "easy" },
+          { type: "mcq", q: "From 9:00 a.m. to 12:30 p.m. is ______ hours.", options: ["3.5", "4", "3", "2.5"], answer: "3.5", difficulty: "easy" },
+          { type: "mcq", q: "Temperature of boiling water is", options: ["0°C", "100°C", "37°C", "32°C"], answer: "100°C", difficulty: "easy" },
+          { type: "mcq", q: "A triangle with one right angle is", options: ["acute", "obtuse", "right-angled", "equilateral"], answer: "right-angled", difficulty: "easy" },
+          { type: "mcq", q: "A parallelogram has ______ lines of symmetry.", options: ["0", "2", "4", "1"], answer: "0", difficulty: "moderate" },
+          { type: "mcq", q: "Area of square side 10 cm is", options: ["100 cm²", "40 cm²", "20 cm²", "50 cm²"], answer: "100 cm²", difficulty: "easy" },
+          { type: "mcq", q: "Volume of cuboid 6×4×3 cm is", options: ["72 cm³", "24 cm³", "18 cm³", "36 cm³"], answer: "72 cm³", difficulty: "moderate" },
+          { type: "mcq", q: "GST is a type of", options: ["tax", "discount", "profit", "loss"], answer: "tax", difficulty: "easy" },
+          { type: "mcq", q: "1 km = ______ m.", options: ["100", "1000", "10", "10000"], answer: "1000", difficulty: "easy" },
+          { type: "mcq", q: "A clock shows 6:00. Angle between hands is", options: ["180°", "90°", "0°", "360°"], answer: "180°", difficulty: "moderate" },
+          { type: "mcq", q: "Ice melts at", options: ["0°C", "100°C", "37°C", "-10°C"], answer: "0°C", difficulty: "easy" },
+          { type: "mcq", q: "A kite has ______ lines of symmetry.", options: ["1", "2", "4", "0"], answer: "1", difficulty: "moderate" },
+          { type: "mcq", q: "Perimeter of rectangle 9 cm by 4 cm is", options: ["26 cm", "36 cm", "18 cm", "13 cm"], answer: "26 cm", difficulty: "easy" },
+          { type: "mcq", q: "1 day = ______ hours.", options: ["12", "24", "48", "7"], answer: "24", difficulty: "easy" },
+          { type: "mcq", q: "Reflex angle is greater than", options: ["90°", "180°", "360°", "0°"], answer: "180°", difficulty: "moderate" },
+          { type: "mcq", q: "Area of triangle base 6 cm height 8 cm is", options: ["24 cm²", "48 cm²", "14 cm²", "96 cm²"], answer: "24 cm²", difficulty: "moderate" },
+          { type: "mcq", q: "Volume of cube side 4 cm is", options: ["64 cm³", "16 cm³", "32 cm³", "8 cm³"], answer: "64 cm³", difficulty: "easy" },
+          { type: "mcq", q: "Discount reduces the", options: ["marked price", "cost price", "selling price", "profit"], answer: "marked price", difficulty: "easy" },
+          { type: "mcq", q: "1 m = ______ cm.", options: ["10", "100", "1000", "1"], answer: "100", difficulty: "easy" },
+          { type: "mcq", q: "From 7:45 a.m. to 10:15 a.m. is", options: ["2 hours 30 min", "3 hours", "2 hours", "1 hour 30 min"], answer: "2 hours 30 min", difficulty: "easy" },
+          { type: "mcq", q: "A parallelogram has opposite sides", options: ["equal", "parallel", "both", "none"], answer: "both", difficulty: "easy" },
+
+          // Your FIB 4 + new
+          { type: "fill_in_blank", q: "A triangle in which two sides are equal to each other is called an_________________  triangle.", answer: "isosceles", difficulty: "easy" },
+          { type: "fill_in_blank", q: "₹1 = __________ paise.", answer: "100", difficulty: "easy" },
+          { type: "fill_in_blank", q: "1 metre = __________ centimetres.", answer: "100", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A day has __________ hours.", answer: "24", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Normal body temperature is __________ °C.", answer: "37", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A square has __________ lines of symmetry.", answer: "4", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of rectangle = length × __________. ", answer: "breadth", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Volume of cube = side × side × __________. ", answer: "side", difficulty: "easy" },
+          { type: "fill_in_blank", q: "An angle greater than 90° is __________ angle.", answer: "obtuse", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A trapezium has __________ pair of parallel sides.", answer: "one", difficulty: "moderate" },
+
+          // 10 True/False + 5 AR
+          { type: "assertion_reasoning", q: "Assertion (A): Change = paid amount - bill amount.\nReason (R): Extra money is returned.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): 1 litre = 1000 ml.\nReason (R): Litre is bigger unit.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Right angle is 90°.\nReason (R): It is formed by perpendicular lines.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Perimeter of equilateral triangle is 3 × side.\nReason (R): All sides are equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Trapezium has one pair of parallel sides.\nReason (R): It is a quadrilateral.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+
+          { type: "true_false", q: "GST increases the bill amount.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "1 m = 100 cm.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "1 hour = 60 minutes.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "37°C is normal body temperature.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Square has 4 lines of symmetry.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Perimeter unit is square unit.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Volume unit is cubic unit.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Trapezium has two pairs of parallel sides.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Obtuse angle is less than 90°.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Area of square is side × side.", answer: "True", difficulty: "easy" }
         ]
       }
     }
@@ -3591,6 +3520,176 @@ window.midtermQuizData = {
             "answer": "A is false but R is true.",
             "difficulty": "very difficult"
           }
+        ]
+      }
+    },
+    "Mathematics": {
+      "midterm2": {
+        "sample1": [
+          // Your originals: MCQ 1–4 + first FIBs + AR1
+          { type: "mcq", q: "The sum of two integer is -23 if one integer is 145 then other is", options: ["-168", "122", "168", "-122"], answer: "-168", difficulty: "moderate" },
+          { type: "mcq", q: "A place is 18 m above sea level and another place is 13 m below sea level what is the difference of levels between two places?", options: ["5 m", "15 m", "31 m", "10 m"], answer: "31 m", difficulty: "easy" },
+          { type: "mcq", q: "The absolute value of -53 is", options: ["53", "-53", "0", "58"], answer: "53", difficulty: "easy" },
+          { type: "mcq", q: "A lift went up to 16th floor from the ground floor and that descended 9 floors. On which floor is the lift now?", options: ["25th floor", "20th floor", "7th floor", "9th floor"], answer: "7th floor", difficulty: "moderate" },
+          { type: "mcq", q: "What is the difference of 10/27 and 1/27 ?", options: ["1/3", "1", "1/10", "11/27"], answer: "1/3", difficulty: "moderate" },
+          { type: "mcq", q: "The fraction equivalent to 5/9 with numerator 15 is", options: ["15/36", "15/27", "7/15", "10/15"], answer: "15/27", difficulty: "easy" },
+          { type: "mcq", q: "The food we eat remains in the stomach for a maximum of 4 hours. For what fraction of a day, does it remain their?", options: ["4/12", "4/24", "4/7", "4/10"], answer: "4/24", difficulty: "moderate" },
+          { type: "mcq", q: "The length of a rectangular field is 82 m. If its perimeter is 248 m, what is its breadth?", options: ["40 m", "42 m", "43 m", "44 m"], answer: "42 m", difficulty: "moderate" },
+          { type: "mcq", q: "The opposite of +15 on number line is", options: ["-15", "0", "+15", "-30"], answer: "-15", difficulty: "easy" },
+          { type: "mcq", q: "Equivalent fraction of 2/5 with denominator 20 is", options: ["8/20", "4/10", "10/25", "6/15"], answer: "8/20", difficulty: "moderate" },
+          { type: "mcq", q: "Perimeter of square with side 10 cm is", options: ["40 cm", "20 cm", "100 cm", "30 cm"], answer: "40 cm", difficulty: "easy" },
+          { type: "mcq", q: "Area of rectangle length 12 cm, breadth 5 cm is", options: ["60 cm²", "34 cm²", "17 cm²", "120 cm²"], answer: "60 cm²", difficulty: "easy" },
+          { type: "mcq", q: "A square has how many lines of symmetry?", options: ["4", "2", "1", "infinite"], answer: "4", difficulty: "easy" },
+          { type: "mcq", q: "The smallest integer greater than -8 is", options: ["-7", "-9", "0", "-8"], answer: "-7", difficulty: "easy" },
+          { type: "mcq", q: "In pictograph, if one symbol = 4 books and there are 5 symbols, total books are", options: ["20", "25", "15", "9"], answer: "20", difficulty: "easy" },
+          { type: "mcq", q: "To construct a perpendicular line to a given line we use", options: ["compass and ruler", "protractor only", "set square only", "ruler only"], answer: "compass and ruler", difficulty: "moderate" },
+          { type: "mcq", q: "Improper fraction 9/4 as mixed number is", options: ["2 1/4", "1 5/4", "3 1/4", "2 3/4"], answer: "2 1/4", difficulty: "moderate" },
+          { type: "mcq", q: "The successor of -10 is", options: ["-9", "-11", "0", "10"], answer: "-9", difficulty: "easy" },
+          { type: "mcq", q: "A regular pentagon has how many lines of symmetry?", options: ["5", "6", "4", "10"], answer: "5", difficulty: "moderate" },
+          { type: "mcq", q: "Perimeter of equilateral triangle side 7 cm is", options: ["21 cm", "14 cm", "28 cm", "35 cm"], answer: "21 cm", difficulty: "easy" },
+          { type: "mcq", q: "In bar graph, bars should have", options: ["equal width", "different widths", "no gap", "curved shape"], answer: "equal width", difficulty: "easy" },
+          { type: "mcq", q: "Additive inverse of 0 is", options: ["0", "1", "-1", "undefined"], answer: "0", difficulty: "easy" },
+          { type: "mcq", q: "Fraction greater than 1 is called", options: ["improper fraction", "proper fraction", "like fraction", "unit fraction"], answer: "improper fraction", difficulty: "easy" },
+          { type: "mcq", q: "To bisect an angle we use", options: ["compass", "ruler", "protractor", "both compass and ruler"], answer: "compass", difficulty: "moderate" },
+          { type: "mcq", q: "Area of square side 8 cm is", options: ["64 cm²", "32 cm²", "16 cm²", "48 cm²"], answer: "64 cm²", difficulty: "easy" },
+
+          // Fill in the Blanks (your 5 distributed across samples + new)
+          { type: "fill_in_blank", q: "On a number line, positive integers are always placed to the __________ of zero.", answer: "right", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Fractions with the same denominators are called __________ fractions.", answer: "like", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Representing data through pictures of objects is called a __________.", answer: "pictograph", difficulty: "easy" },
+          { type: "fill_in_blank", q: "The distance covered along the boundary of a closed figure is called its __________.", answer: "perimeter", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Two lines are said to be __________ if they never meet, no matter how far they are extended.", answer: "parallel", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Additive inverse of 9 is __________. ", answer: "-9", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A square has __________ lines of symmetry.", answer: "4", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of square = side × __________. ", answer: "side", difficulty: "easy" },
+          { type: "fill_in_blank", q: "In tally marks, 5 lines are grouped with a __________. ", answer: "diagonal", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "To construct 60° angle we mainly use __________. ", answer: "compass", difficulty: "moderate" },
+
+          // 10 True/False
+          { type: "true_false", q: "All integers are either positive or negative.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Perimeter is measured in square units.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "A rectangle has 2 lines of symmetry.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Proper fraction is always less than 1.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Pictograph uses symbols to show data.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "We can construct any angle using only compass.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Area of rectangle = length × breadth.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Like fractions have different denominators.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Frequency shows how many times something appears.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Integers include decimal numbers.", answer: "False", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning
+          { type: "assertion_reasoning", q: "Assertion (A) : An improper fraction is always greater than a proper fraction.\nReason (R) : The numerator of an improper fraction is greater than or equal to its denominator.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not that explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Perimeter of square is 4 × side.\nReason (R): All sides of square are equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): A square has 4 lines of symmetry.\nReason (R): It has 4 equal sides and 4 equal angles.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): We can construct 90° angle using compass and ruler.\nReason (R): Compass helps draw perpendicular bisector.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area is measured in square units.\nReason (R): Area is two-dimensional.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" }
+        ],
+
+        "sample2": [
+          // Your originals: MCQ 9–12 + AR2 (tally for 6)
+          { type: "mcq", q: "The distance travelled by Ritesh going 3 rounds of a square park of high 25 m is", options: ["250 m", "150 m", "320 m", "300 m"], answer: "300 m", difficulty: "easy" },
+          { type: "mcq", q: "The word that is made of letters that have only horizontal line of symmetry is", options: ["MAT", "TEN", "HOW", "BED"], answer: "MAT", difficulty: "moderate" },
+          { type: "mcq", q: "How many lines of symmetry does a regular hexagon have?", options: ["7", "8", "9", "6"], answer: "6", difficulty: "moderate" },
+          { type: "mcq", q: "Two lines that intersect at a 90° angle are called :", options: ["Parallel lines", "Perpendicular lines", "Bisectors", "Rays"], answer: "Perpendicular lines", difficulty: "easy" },
+          { type: "mcq", q: "The predecessor of -5 is", options: ["-6", "-4", "0", "5"], answer: "-6", difficulty: "easy" },
+          { type: "mcq", q: "Fraction 3/4 as decimal is", options: ["0.75", "0.3", "0.4", "0.25"], answer: "0.75", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of rectangle 10 cm by 6 cm is", options: ["32 cm", "16 cm", "60 cm", "48 cm"], answer: "32 cm", difficulty: "easy" },
+          { type: "mcq", q: "Area of square side 11 cm is", options: ["121 cm²", "44 cm²", "22 cm²", "66 cm²"], answer: "121 cm²", difficulty: "easy" },
+          { type: "mcq", q: "In bar graph, the scale shows", options: ["value per unit", "color", "width", "height"], answer: "value per unit", difficulty: "moderate" },
+          { type: "mcq", q: "A rectangle has how many lines of symmetry?", options: ["2", "4", "1", "infinite"], answer: "2", difficulty: "easy" },
+          { type: "mcq", q: "To construct an equilateral triangle we use", options: ["compass and ruler", "protractor only", "set square only", "compass only"], answer: "compass and ruler", difficulty: "moderate" },
+          { type: "mcq", q: "The integer between -3 and -1 is", options: ["-2", "-4", "0", "1"], answer: "-2", difficulty: "easy" },
+          { type: "mcq", q: "Mixed fraction 3 1/2 as improper is", options: ["7/2", "5/2", "8/2", "6/2"], answer: "7/2", difficulty: "moderate" },
+          { type: "mcq", q: "In data handling, tally marks are grouped in", options: ["5", "10", "3", "4"], answer: "5", difficulty: "easy" },
+          { type: "mcq", q: "A rhombus has how many lines of symmetry?", options: ["2", "4", "1", "infinite"], answer: "2", difficulty: "moderate" },
+          { type: "mcq", q: "The sum of -7 and +7 is", options: ["0", "14", "-14", "7"], answer: "0", difficulty: "easy" },
+          { type: "mcq", q: "Area of triangle base 12 cm height 5 cm is", options: ["30 cm²", "60 cm²", "17 cm²", "120 cm²"], answer: "30 cm²", difficulty: "moderate" },
+          { type: "mcq", q: "To construct 120° angle we can use", options: ["protractor", "compass only", "set square", "ruler only"], answer: "protractor", difficulty: "moderate" },
+          { type: "mcq", q: "Perimeter of equilateral triangle side 12 cm is", options: ["36 cm", "24 cm", "48 cm", "18 cm"], answer: "36 cm", difficulty: "easy" },
+          { type: "mcq", q: "Unit fraction has numerator", options: ["1", "0", "greater than 1", "any"], answer: "1", difficulty: "easy" },
+          { type: "mcq", q: "In pictograph, key shows", options: ["value of one picture", "total data", "color", "shape"], answer: "value of one picture", difficulty: "easy" },
+          { type: "mcq", q: "The largest negative integer is", options: ["no largest", "-1", "-100", "1"], answer: "no largest", difficulty: "moderate" },
+          { type: "mcq", q: "Area of rectangle 8 cm by 7 cm is", options: ["56 cm²", "30 cm²", "15 cm²", "112 cm²"], answer: "56 cm²", difficulty: "easy" },
+          { type: "mcq", q: "To construct parallel line we can use", options: ["set square and ruler", "compass only", "protractor only", "none"], answer: "set square and ruler", difficulty: "moderate" },
+          { type: "mcq", q: "Fraction equivalent to 2/3 with numerator 10 is", options: ["15/3", "20/3", "10/15", "6/9"], answer: "10/15", difficulty: "moderate" },
+
+          // Remaining FIB + 10 T/F + 5 AR (AR2 + 4 new)
+          { type: "assertion_reasoning", q: "Assertion (A) : Using tally marks, 6 is represented as ||||/ | \nReason (R) : Tally marks are usually marked in bunches of five.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not that explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Frequency is the number of times an item appears.\nReason (R): Tally marks help count frequency.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): A circle has infinite lines of symmetry.\nReason (R): Every diameter is a line of symmetry.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Perimeter of rectangle is 2(l + b).\nReason (R): Opposite sides are equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): We can construct 45° angle with compass and ruler.\nReason (R): It can be obtained by bisecting 90° angle.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+
+          // 10 True/False (continued)
+          { type: "true_false", q: "All fractions are integers.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "A regular hexagon has 6 lines of symmetry.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Area is always greater than perimeter numerically.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Integers are closed under subtraction.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Bar graph has gaps between bars.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "We can construct any angle using compass only.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Like fractions can be added directly.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Tally marks are used in data handling.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Perimeter unit is square unit.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "0 is neither positive nor negative integer.", answer: "True", difficulty: "easy" }
+        ],
+
+        "sample3": [
+          // Your originals: AR3 + remaining MCQs distributed
+          { type: "mcq", q: "The distance travelled by Ritesh going 3 rounds of a square park of high 25 m is", options: ["250 m", "150 m", "320 m", "300 m"], answer: "300 m", difficulty: "easy" },
+          { type: "mcq", q: "The word that is made of letters that have only horizontal line of symmetry is", options: ["MAT", "TEN", "HOW", "BED"], answer: "MAT", difficulty: "moderate" },
+          { type: "mcq", q: "How many lines of symmetry does a regular hexagon have?", options: ["7", "8", "9", "6"], answer: "6", difficulty: "moderate" },
+          { type: "mcq", q: "Two lines that intersect at a 90° angle are called :", options: ["Parallel lines", "Perpendicular lines", "Bisectors", "Rays"], answer: "Perpendicular lines", difficulty: "easy" },
+          { type: "mcq", q: "The integer -4 is less than", options: ["-3", "0", "-5", "4"], answer: "-3", difficulty: "easy" },
+          { type: "mcq", q: "Fraction 4/5 equivalent with denominator 25 is", options: ["20/25", "16/25", "10/25", "5/25"], answer: "20/25", difficulty: "moderate" },
+          { type: "mcq", q: "Perimeter of square side 15 cm is", options: ["60 cm", "30 cm", "225 cm", "45 cm"], answer: "60 cm", difficulty: "easy" },
+          { type: "mcq", q: "Area of rectangle 14 cm by 6 cm is", options: ["84 cm²", "40 cm²", "20 cm²", "168 cm²"], answer: "84 cm²", difficulty: "easy" },
+          { type: "mcq", q: "In data handling, mode is the value with", options: ["maximum frequency", "minimum frequency", "average frequency", "zero frequency"], answer: "maximum frequency", difficulty: "moderate" },
+          { type: "mcq", q: "A rhombus has how many lines of symmetry?", options: ["2", "4", "1", "infinite"], answer: "2", difficulty: "moderate" },
+          { type: "mcq", q: "To construct 60° angle we use", options: ["compass", "protractor", "set square", "ruler"], answer: "compass", difficulty: "moderate" },
+          { type: "mcq", q: "The sum of -9 and 4 is", options: ["-5", "-13", "5", "13"], answer: "-5", difficulty: "easy" },
+          { type: "mcq", q: "Area of triangle base 8 cm height 10 cm is", options: ["40 cm²", "80 cm²", "18 cm²", "90 cm²"], answer: "40 cm²", difficulty: "moderate" },
+          { type: "mcq", q: "A circle has how many lines of symmetry?", options: ["infinite", "2", "0", "4"], answer: "infinite", difficulty: "moderate" },
+          { type: "mcq", q: "Unlike fractions have", options: ["different denominators", "same denominators", "same numerators", "same value"], answer: "different denominators", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter is sum of", options: ["all sides", "opposite sides", "adjacent sides", "diagonals"], answer: "all sides", difficulty: "easy" },
+          { type: "mcq", q: "In pictograph, each picture represents", options: ["fixed number", "variable number", "color", "shape"], answer: "fixed number", difficulty: "easy" },
+          { type: "mcq", q: "The largest negative integer is", options: ["no largest", "-1", "-100", "1"], answer: "no largest", difficulty: "moderate" },
+          { type: "mcq", q: "Area of square side 9 cm is", options: ["81 cm²", "36 cm²", "18 cm²", "54 cm²"], answer: "81 cm²", difficulty: "easy" },
+          { type: "mcq", q: "To construct parallel lines we use", options: ["set square and ruler", "compass only", "protractor only", "none"], answer: "set square and ruler", difficulty: "moderate" },
+          { type: "mcq", q: "Fraction 7/10 as decimal is", options: ["0.7", "0.07", "7", "0.07"], answer: "0.7", difficulty: "easy" },
+          { type: "mcq", q: "The integer just before -1 is", options: ["-2", "0", "-1", "1"], answer: "-2", difficulty: "easy" },
+          { type: "mcq", q: "Perimeter of rectangle 20 cm by 5 cm is", options: ["50 cm", "100 cm", "25 cm", "40 cm"], answer: "50 cm", difficulty: "easy" },
+          { type: "mcq", q: "In data handling, bar graph is used to show", options: ["comparison", "percentage", "parts of whole", "time"], answer: "comparison", difficulty: "easy" },
+          { type: "mcq", q: "A regular octagon has how many lines of symmetry?", options: ["8", "4", "16", "2"], answer: "8", difficulty: "moderate" },
+
+          // Your AR3
+          { type: "assertion_reasoning", q: "Assertion (A) : The frequency of 4 in the data 0, 2, 4, 6, 4, 6, 2, 0, 4, 2, 4, 0, 6, 4, 2, 4, 6, 4, 0, 2 is 6\nReason (R) : Frequency is the number of times an observation occurs in the data.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not that explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area of square is side squared.\nReason (R): Square has equal sides.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Integers are closed under addition.\nReason (R): Sum of two integers is always integer.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Pictograph makes data easy to understand.\nReason (R): It uses pictures instead of numbers.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "easy" },
+          { type: "assertion_reasoning", q: "Assertion (A): Perimeter and area have different units.\nReason (R): Perimeter is length, area is length squared.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+
+          // Remaining 10 T/F + 5 FIB to complete 50
+          { type: "fill_in_blank", q: "The additive inverse of -15 is __________. ", answer: "15", difficulty: "easy" },
+          { type: "fill_in_blank", q: "A regular hexagon has __________ lines of symmetry.", answer: "6", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Perimeter of equilateral triangle = __________ × side.", answer: "3", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area is measured in __________ units.", answer: "square", difficulty: "easy" },
+          { type: "fill_in_blank", q: "To construct 90° angle we can use __________. ", answer: "set square", difficulty: "easy" },
+          { type: "fill_in_blank", q: "In bar graph, bars are __________ in width.", answer: "equal", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Fraction with numerator 1 is called __________ fraction.", answer: "unit", difficulty: "easy" },
+          { type: "fill_in_blank", q: "The integer -1 comes before __________. ", answer: "0", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Tally marks for 8 is __________. ", answer: "|||| ||||", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "A line has __________ end points.", answer: "no", difficulty: "moderate" },
+
+          { type: "true_false", q: "All squares are rectangles.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Area unit is metre.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Integers include 0.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Like fractions need common denominator to add.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "A circle has infinite lines of symmetry.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Perimeter of circle is called circumference.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Tally marks are used in bar graphs.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "We can construct 30° angle using compass.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Negative integers are to the left of zero.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Area of triangle is base × height.", answer: "False", difficulty: "easy" }
         ]
       }
     }
@@ -9517,6 +9616,191 @@ window.midtermQuizData = {
             answer: 'Both A and R are true but R is not the correct explanation of A.',
             difficulty: 'difficult'
           }
+        ]
+      }
+    },
+    "Mathematics": {
+      "midterm2": {
+        "sample1": [
+          // === YOUR ORIGINAL QUESTIONS (1-6 MCQ + AR19) ===
+          { type: "mcq", q: "Which of the following is the additive inverse of (-7)/12?", options: ["12/7", "7/12", "(-7)/12", "1"], answer: "7/12", difficulty: "easy" },
+          { type: "mcq", q: "The product of a rational number and its multiplicative inverse (reciprocal) is always:", options: ["0", "1", "-1", "The number itself"], answer: "1", difficulty: "easy" },
+          { type: "mcq", q: "Between any two distinct rational numbers, how many rational numbers exist?", options: ["None", "only one", "Exactly ten.", "Infinitely many"], answer: "Infinitely many", difficulty: "easy" },
+          { type: "mcq", q: "Which one of these is true for any non zero rational number p?", options: ["p×(-p)=1", "(-p)÷ p=-1", "p-(-p)=0", "(-1)/p=p"], answer: "(-p)÷ p=-1", difficulty: "moderate" },
+          { type: "mcq", q: "On dividing -15a^2 bc^2 by 5ab, the quotient is", options: ["-3a^2 cb", "-3ac^2", "-3a^2 c^2", "-3abc^2"], answer: "-3ac^2", difficulty: "moderate" },
+          { type: "mcq", q: "Which identity is used to factorise an expression of the form a^2  +  2ab + b^2?", options: ["(a - b)^2", "(a + b)(a - b)", "(a + b)^2", "(x + a)(x + b)"], answer: "(a + b)^2", difficulty: "easy" },
+          // 19 more new MCQ (from Rational Numbers, Exponents, Factorisation, etc.)
+          { type: "mcq", q: "The multiplicative inverse of -5/7 is", options: ["5/7", "-7/5", "-5/7", "7/5"], answer: "-7/5", difficulty: "easy" },
+          { type: "mcq", q: "2^3 × 2^4 equals", options: ["2^7", "2^12", "16", "64"], answer: "2^7", difficulty: "easy" },
+          { type: "mcq", q: "Factorise: x^2 - 9", options: ["(x-3)(x+3)", "(x+3)^2", "(x-3)^2", "x(x-9)"], answer: "(x-3)(x+3)", difficulty: "moderate" },
+          { type: "mcq", q: "30% of 200 is", options: ["30", "60", "70", "90"], answer: "60", difficulty: "easy" },
+          { type: "mcq", q: "If x : 5 = 8 : 20, then x is", options: ["2", "4", "10", "16"], answer: "2", difficulty: "moderate" },
+          { type: "mcq", q: "Sum of interior angles of a quadrilateral is", options: ["180°", "360°", "540°", "720°"], answer: "360°", difficulty: "easy" },
+          { type: "mcq", q: "Area of trapezium = (sum of parallel sides)/2 ×", options: ["height", "length", "width", "base"], answer: "height", difficulty: "easy" },
+          { type: "mcq", q: "Surface area of a cube of side a is", options: ["6a²", "4a²", "a³", "8a³"], answer: "6a²", difficulty: "easy" },
+          { type: "mcq", q: "If 10 men do a work in 20 days, then 5 men will do it in", options: ["30 days", "40 days", "10 days", "20 days"], answer: "40 days", difficulty: "moderate" },
+          { type: "mcq", q: "(3/4)^{-2} equals", options: ["9/16", "16/9", "3/4", "4/3"], answer: "16/9", difficulty: "moderate" },
+          { type: "mcq", q: "A parallelogram has opposite angles", options: ["equal", "supplementary", "both a and b", "none"], answer: "both a and b", difficulty: "moderate" },
+          { type: "mcq", q: "Volume of a cylinder is", options: ["πr²h", "2πrh", "πr²", "4/3πr³"], answer: "πr²h", difficulty: "easy" },
+          { type: "mcq", q: "The additive inverse of 0 is", options: ["1", "-1", "0", "undefined"], answer: "0", difficulty: "easy" },
+          { type: "mcq", q: "Factorise 4x² + 12x + 9", options: ["(2x+3)^2", "(2x-3)^2", "(x+3)^2", "4(x+3)"], answer: "(2x+3)^2", difficulty: "moderate" },
+          { type: "mcq", q: "If a/b = 3/5, then 5a = ?", options: ["3b", "15b", "b", "none"], answer: "3b", difficulty: "moderate" },
+          { type: "mcq", q: "Each exterior angle of a regular pentagon is", options: ["72°", "108°", "60°", "90°"], answer: "72°", difficulty: "moderate" },
+          { type: "mcq", q: "Area of a regular polygon = (perimeter × apothem)/", options: ["2", "4", "3", "1"], answer: "2", difficulty: "difficult" },
+          { type: "mcq", q: "Total surface area of a closed cylinder is", options: ["2πrh", "2πr(r+h)", "πr²h", "4πr²"], answer: "2πr(r+h)", difficulty: "moderate" },
+          { type: "mcq", q: "In direct variation, if x increases, y", options: ["increases", "decreases", "remains same", "none"], answer: "increases", difficulty: "easy" },
+
+          // 10 Fill in the Blank
+          { type: "fill_in_blank", q: "Additive inverse of 3/5 is ______.", answer: "-3/5", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Any non-zero number raised to power 0 is ______.", answer: "1", difficulty: "easy" },
+          { type: "fill_in_blank", q: "a² - b² = ______.", answer: "(a-b)(a+b)", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "50% as fraction is ______.", answer: "1/2", difficulty: "easy" },
+          { type: "fill_in_blank", q: "If x/4 = 6/8 then x = ______.", answer: "3", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Sum of angles of quadrilateral is ______°.", answer: "360", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of trapezium formula has ______ in numerator.", answer: "sum of parallel sides", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Volume of cube of side a is ______.", answer: "a³", difficulty: "easy" },
+          { type: "fill_in_blank", q: "In inverse variation, xy = ______ (constant).", answer: "k", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Lateral surface area of open cylinder is ______.", answer: "2πrh", difficulty: "easy" },
+
+          // 10 True/False
+          { type: "true_false", q: "Every rational number has a multiplicative inverse.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "a^m × a^n = a^(m-n).", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "(a+b)^2 = a^2 + 2ab + b^2.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Profit % is always calculated on selling price.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "In direct variation, x/y is constant.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "All rectangles are parallelograms.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Area of rhombus = (d1 × d2)/2.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Surface area of sphere is 4πr².", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "0 has a reciprocal.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Diagonals of a rhombus bisect each other at 90°.", answer: "True", difficulty: "moderate" },
+
+          // 5 Assertion/Reasoning (your AR19 + 4 new)
+          { type: "assertion_reasoning", q: "Assertion (A): The factorisation of   4x^2+2x   is  2x(2x+1)\nReason (R): a^2 b^2+ ab  can be written as ab (ab+1)", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is true but R is false.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Rational numbers are closed under division.\nReason (R): Division by zero is undefined.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is true but R is false.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): (a+b)^2 = a^2 + b^2.\nReason (R): It ignores the middle term 2ab.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): In inverse variation, more men take less days.\nReason (R): Product of men and days is constant.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Diagonals of rectangle bisect each other.\nReason (R): Rectangle is a parallelogram.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" }
+        ],
+
+        "sample2": [
+          // === YOUR ORIGINAL QUESTIONS (7-12 MCQ + AR20) ===
+          { type: "mcq", q: "2x-8x^3= ", options: ["2x (2x+1)(2x-1)", "2x(1+x)(1-x)", "2x(1+2x)(1-2x)", "2x(1-4x^3)"], answer: "2x(1+2x)(1-2x)", difficulty: "moderate" },
+          { type: "mcq", q: "40% in fraction is expressed as", options: ["4/45", "2/5", "1/25", "3/20"], answer: "2/5", difficulty: "easy" },
+          { type: "mcq", q: "Salman secure 60% marks in an examination. If he scored 420 marks, the maximum marks were", options: ["720", "600", "620", "700"], answer: "700", difficulty: "moderate" },
+          { type: "mcq", q: "The list price of a watch is ₹1600. If 10% tax is to be charged on it then the customer has to pay", options: ["₹1446", "₹1710", "₹1760", "₹1780"], answer: "₹1760", difficulty: "moderate" },
+          { type: "mcq", q: "What is the sum of the measures of the exterior angles of any convex polygon", options: ["180°", "360°", "(n-2)×180°", "540°"], answer: "360°", difficulty: "easy" },
+          { type: "mcq", q: "The adjacent angles of a parallelogram are in the ratio 4 : 5. Its smallest angle is", options: ["60°", "100°", "80°", "90°"], answer: "80°", difficulty: "moderate" },
+          // 19 more new MCQ...
+          { type: "mcq", q: "The reciprocal of 1 is", options: ["1", "-1", "0", "undefined"], answer: "1", difficulty: "easy" },
+          { type: "mcq", q: "Simplify: 5^3 ÷ 5^2", options: ["5", "25", "1", "125"], answer: "5", difficulty: "easy" },
+          { type: "mcq", q: "Factorise 9x² - 16", options: ["(3x-4)(3x+4)", "(9x-4)(9x+4)", "(3x+4)^2", "none"], answer: "(3x-4)(3x+4)", difficulty: "moderate" },
+          { type: "mcq", q: "If 25% of a number is 80, the number is", options: ["200", "320", "300", "400"], answer: "320", difficulty: "moderate" },
+          { type: "mcq", q: "In inverse variation, when x doubles, y becomes", options: ["double", "half", "same", "four times"], answer: "half", difficulty: "moderate" },
+          { type: "mcq", q: "Diagonals of a square bisect each other at", options: ["90°", "60°", "45°", "120°"], answer: "90°", difficulty: "easy" },
+          { type: "mcq", q: "Area of a polygon with apothem a and perimeter p is", options: ["(p × a)/2", "p × a", "2pa", "pa/4"], answer: "(p × a)/2", difficulty: "moderate" },
+          { type: "mcq", q: "If radius of cylinder is doubled and height same, volume becomes", options: ["2 times", "4 times", "8 times", "same"], answer: "4 times", difficulty: "moderate" },
+          { type: "mcq", q: "If 20 workers finish work in 15 days, 30 workers will finish in", options: ["10 days", "20 days", "25 days", "30 days"], answer: "10 days", difficulty: "moderate" },
+          { type: "mcq", q: "(-2)^5 equals", options: ["-32", "32", "-10", "10"], answer: "-32", difficulty: "easy" },
+          { type: "mcq", q: "A kite is a quadrilateral with", options: ["two pairs of adjacent equal sides", "all sides equal", "opposite sides equal", "all angles 90°"], answer: "two pairs of adjacent equal sides", difficulty: "moderate" },
+          { type: "mcq", q: "Volume of cone is (1/3)πr²h while cylinder is", options: ["πr²h", "(1/3)πr²h", "2πr²h", "4πr³/3"], answer: "πr²h", difficulty: "easy" },
+          { type: "mcq", q: "Discount is always calculated on", options: ["marked price", "cost price", "selling price", "none"], answer: "marked price", difficulty: "easy" },
+          { type: "mcq", q: "If a/b = c/d then ad = ", options: ["bc", "ac", "bd", "none"], answer: "bc", difficulty: "moderate" },
+          { type: "mcq", q: "Each interior angle of regular hexagon is", options: ["120°", "135°", "108°", "90°"], answer: "120°", difficulty: "moderate" },
+          { type: "mcq", q: "Surface area of sphere is", options: ["4πr²", "2πr²", "πr³", "4/3πr³"], answer: "4πr²", difficulty: "easy" },
+          { type: "mcq", q: "In direct variation, graph is a", options: ["straight line through origin", "parabola", "hyperbola", "circle"], answer: "straight line through origin", difficulty: "moderate" },
+          { type: "mcq", q: "Factorise x³ - 8", options: ["(x-2)(x²+2x+4)", "(x-2)^3", "(x+2)(x²-2x+4)", "none"], answer: "(x-2)(x²+2x+4)", difficulty: "difficult" },
+
+          // 10 Fill in the Blank (sample2)
+          { type: "fill_in_blank", q: "Multiplicative inverse of 0 is ______.", answer: "undefined", difficulty: "easy" },
+          { type: "fill_in_blank", q: "a^m / a^n = a^______ (m-n).", answer: "(m-n)", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "(a+b)(a-b) = ______.", answer: "a² - b²", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Selling price = Cost price + ______.", answer: "profit", difficulty: "easy" },
+          { type: "fill_in_blank", q: "If x increases, y decreases → ______ variation.", answer: "inverse", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Opposite sides of parallelogram are ______.", answer: "equal", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of regular polygon = (perimeter × ______)/2.", answer: "apothem", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Lateral surface area of cone is ______.", answer: "πrl", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "If 15 men do work in 20 days, 1 man does in ______ days.", answer: "300", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "______ % means per hundred.", answer: "Percent", difficulty: "easy" },
+
+          // 10 True/False (sample2)
+          { type: "true_false", q: "Rational numbers are closed under subtraction.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Negative exponent gives positive result always.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "All squares are rhombus.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Volume of cylinder depends on radius squared.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "In direct variation xy = constant.", answer: "False", difficulty: "moderate" },
+          { type: "true_false", q: "Trapezium has exactly one pair of parallel sides.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Profit % = (Profit/CP) × 100.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Diagonals of rectangle are equal.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "a^0 = 0 for a ≠ 0.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Surface area has square units.", answer: "True", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning (your AR20 + 4 new)
+          { type: "assertion_reasoning", q: "Assertion (A): A cylinder of radius r and height h has a volume πr^2 h.\nReason (R): Volume of a cylinder is the product of the area of the base and the height.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Percentage is always greater than fraction.\nReason (R): % means /100.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): If x ∝ 1/y then xy = k.\nReason (R): Inverse variation means product constant.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): All rhombus are squares.\nReason (R): All sides equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "A is false but R is true.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area of trapezium needs height.\nReason (R): Height is perpendicular distance between parallel sides.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" }
+        ],
+
+        "sample3": [
+          // === YOUR ORIGINAL QUESTIONS (13-18 MCQ) ===
+          { type: "mcq", q: "Which of the following quadrilaterals has diagonals that bisect each other at right angles?", options: ["Rectangle", "Rhombus", "Parallelogram", "Trapezium"], answer: "Rhombus", difficulty: "moderate" },
+          { type: "mcq", q: "If each edge of a cube is doubled, its volume will become", options: ["6 times", "8 times", "4 times", "remain same"], answer: "8 times", difficulty: "easy" },
+          { type: "mcq", q: "What is the total surface area of a hollow cylinder open at both ends with radius  r  and height  h?", options: ["2πr^2+h", "2πr(r+h)", "πr^2+h", "2πrh"], answer: "2πrh", difficulty: "moderate" },
+          { type: "mcq", q: "If 36 men can do a piece of work in 24 days then 16 men will do the same work in", options: ["54 days", "45 days", "56 days", "48 days"], answer: "54 days", difficulty: "moderate" },
+          { type: "mcq", q: "The value of   (3/5)^(-3)", options: ["27/125", "125/27", "9/15", "27/25"], answer: "125/27", difficulty: "moderate" },
+          { type: "mcq", q: "The area of a Trapezium is 198 sq. cm and the distance between its parallel side is 12 cm. The sum of the parallel sides is", options: ["32 cm", "33 cm", "36 cm", "42 cm"], answer: "33 cm", difficulty: "difficult" },
+          // 19 more new MCQ to complete 25...
+          { type: "mcq", q: "Between 1/2 and 3/4 there are ______ rationals.", options: ["none", "one", "infinitely many", "ten"], answer: "infinitely many", difficulty: "easy" },
+          { type: "mcq", q: "10^(-2) = ", options: ["0.01", "0.1", "100", "10"], answer: "0.01", difficulty: "easy" },
+          { type: "mcq", q: "Factorise 25x² - 1", options: ["(5x-1)(5x+1)", "(25x-1)^2", "25(x-1)", "none"], answer: "(5x-1)(5x+1)", difficulty: "moderate" },
+          { type: "mcq", q: "CP = ₹500, SP = ₹600, profit % =", options: ["10%", "20%", "25%", "30%"], answer: "20%", difficulty: "easy" },
+          { type: "mcq", q: "If y = kx, then it is", options: ["direct", "inverse", "both", "none"], answer: "direct", difficulty: "easy" },
+          { type: "mcq", q: "A rectangle has ______ lines of symmetry.", options: ["2", "4", "1", "0"], answer: "2", difficulty: "moderate" },
+          { type: "mcq", q: "Area of polygon can be found by dividing into", options: ["triangles", "rectangles", "both", "none"], answer: "both", difficulty: "moderate" },
+          { type: "mcq", q: "Curved surface area of hemisphere is", options: ["2πr²", "3πr²", "4πr²", "πr²"], answer: "2πr²", difficulty: "moderate" },
+          { type: "mcq", q: "If 8 men finish in 12 days, 24 men finish in", options: ["4 days", "6 days", "8 days", "24 days"], answer: "4 days", difficulty: "moderate" },
+          { type: "mcq", q: "The value of (1/2)^(-3) is", options: ["8", "1/8", "2", "4"], answer: "8", difficulty: "moderate" },
+          { type: "mcq", q: "In a rhombus diagonals are", options: ["equal", "perpendicular bisectors", "parallel", "none"], answer: "perpendicular bisectors", difficulty: "moderate" },
+          { type: "mcq", q: "Volume of sphere is", options: ["4/3πr³", "4πr²", "πr³", "2πr³"], answer: "4/3πr³", difficulty: "easy" },
+          { type: "mcq", q: "Tax is calculated on", options: ["list price", "selling price", "cost price", "profit"], answer: "list price", difficulty: "easy" },
+          { type: "mcq", q: "If x ∝ 1/y, then x1 y1 = ", options: ["x2 y2", "x1 y2", "none", "x2 y1"], answer: "x2 y2", difficulty: "moderate" },
+          { type: "mcq", q: "Sum of exterior angles of any polygon is", options: ["180°", "360°", "540°", "depends on sides"], answer: "360°", difficulty: "easy" },
+          { type: "mcq", q: "Total surface area of hemisphere is", options: ["3πr²", "2πr²", "4πr²", "πr²"], answer: "3πr²", difficulty: "moderate" },
+          { type: "mcq", q: "In factorisation by grouping we take", options: ["common factor", "difference of squares", "perfect square", "none"], answer: "common factor", difficulty: "moderate" },
+          { type: "mcq", q: "If 10% discount on ₹1000, customer pays", options: ["₹900", "₹1000", "₹1100", "₹800"], answer: "₹900", difficulty: "easy" },
+          { type: "mcq", q: "A trapezium has ______ parallel sides.", options: ["one pair", "two pairs", "no", "three"], answer: "one pair", difficulty: "easy" },
+
+          // 10 Fill in the Blank (sample3)
+          { type: "fill_in_blank", q: "Rational numbers between 0 and 1 are ______.", answer: "infinite", difficulty: "easy" },
+          { type: "fill_in_blank", q: "a^m × b^m = (ab)^______.", answer: "m", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "x² + 2xy + y² = ______.", answer: "(x+y)²", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Loss % = (Loss/CP) × ______.", answer: "100", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Direct variation → y = ______ × x.", answer: "k", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Diagonals of square bisect at ______°.", answer: "90", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Area of parallelogram = base × ______.", answer: "height", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Total surface area of cube = ______ a².", answer: "6", difficulty: "easy" },
+          { type: "fill_in_blank", q: "Time taken is ______ proportional to number of men.", answer: "inversely", difficulty: "moderate" },
+          { type: "fill_in_blank", q: "Volume of cone = ______ of cylinder of same base and height.", answer: "1/3", difficulty: "moderate" },
+
+          // 10 True/False (sample3)
+          { type: "true_false", q: "Integers are rational numbers.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Exponents can be fractions.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "All rectangles are squares.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Volume has cubic units.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Inverse variation graph is hyperbola.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Rhombus has all angles 90°.", answer: "False", difficulty: "easy" },
+          { type: "true_false", q: "Trapezium area formula uses height.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Cylinder has two circular bases.", answer: "True", difficulty: "easy" },
+          { type: "true_false", q: "Profit and loss % calculated on same base.", answer: "True", difficulty: "moderate" },
+          { type: "true_false", q: "Diagonals of parallelogram are always equal.", answer: "False", difficulty: "easy" },
+
+          // 5 Assertion/Reasoning (all new)
+          { type: "assertion_reasoning", q: "Assertion (A): There are infinitely many rationals between two rationals.\nReason (R): Rationals are dense on number line.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "difficult" },
+          { type: "assertion_reasoning", q: "Assertion (A): Volume of cube becomes 8 times when edge doubled.\nReason (R): Volume ∝ edge³.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): In direct variation ratio is constant.\nReason (R): y = kx.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Diagonals of rhombus bisect at 90°.\nReason (R): All sides equal.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "moderate" },
+          { type: "assertion_reasoning", q: "Assertion (A): Area of trapezium = average of parallel sides × height.\nReason (R): It can be divided into rectangle and triangles.", options: ["Both A and R are true and R is the correct explanation of A.", "Both A and R are true but R is not the correct explanation of A.", "A is true but R is false.", "A is false but R is true."], answer: "Both A and R are true and R is the correct explanation of A.", difficulty: "difficult" }
         ]
       }
     }

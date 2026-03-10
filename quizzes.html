@@ -1451,9 +1451,29 @@
     // Motivational notification messages
     const notificationMessages = [
       {
-        title: "🎯 New Quiz Challenge Awaits!",
-        body: "Test your knowledge today and climb the leaderboard! Your next quiz is waiting!",
-        icon: "🧠"
+        title: "🎯 Morning Quiz Time!",
+        body: "Good morning! Start your day with a challenging quiz and boost your learning!",
+        icon: "🌅"
+      },
+      {
+        title: "📚 Quiz Reminder",
+        body: "Don't forget to complete your pending quizzes. Every quiz counts towards your progress!",
+        icon: "📝"
+      },
+      {
+        title: "🎯 Evening Quiz Challenge!",
+        body: "Evening quiz time! Test your knowledge and end the day on a high note!",
+        icon: "🌆"
+      },
+      {
+        title: "⚡ Quick Quiz Alert",
+        body: "5 minutes until quiz time! Get ready to showcase your skills!",
+        icon: "⏰"
+      },
+      {
+        title: "🏆 Quiz Achievement Unlocked",
+        body: "You're making great progress! Keep up the excellent work on your quizzes!",
+        icon: "🌟"
       },
       {
         title: "⚡ Boost Your Rank Today!",
@@ -1469,21 +1489,6 @@
         title: "🚀 You're Doing Great!",
         body: "Keep the momentum going! Take another quiz and improve your score even more!",
         icon: "💪"
-      },
-      {
-        title: "🎓 Master Your Subjects!",
-        body: "New quizzes are available for you. Challenge yourself and track your progress!",
-        icon: "📖"
-      },
-      {
-        title: "🌟 Show Your Skills!",
-        body: "Compete with other students and see where you stand. Your quiz adventure continues!",
-        icon: "⭐"
-      },
-      {
-        title: "🔥 Don't Miss Out!",
-        body: "More students are joining daily. Stay ahead by practicing regularly with our quizzes!",
-        icon: "🔥"
       },
       {
         title: "💡 Quick Practice Session?",
@@ -1568,16 +1573,77 @@
         return;
       }
 
-      const lastNotification = localStorage.getItem('lastNotificationTime');
-      const now = Date.now();
-      const oneDay = 24 * 60 * 60 * 1000; // 24 hours
-
-      if (!lastNotification || (now - parseInt(lastNotification)) >= oneDay) {
-        setTimeout(() => {
+      const now = new Date();
+      const currentHour = now.getHours();
+      
+      // Check if it's 8 AM or 5 PM
+      if (currentHour === 8 || currentHour === 17) {
+        const lastNotification = localStorage.getItem('lastNotificationTime');
+        const oneDay = 24 * 60 * 60 * 1000; // 24 hours
+        
+        if (!lastNotification || (now.getTime() - parseInt(lastNotification)) >= oneDay) {
           showMotivationalNotification();
-          localStorage.setItem('lastNotificationTime', now.toString());
-        }, 3000); // Wait 3 seconds after page load
+          localStorage.setItem('lastNotificationTime', now.getTime().toString());
+        }
       }
+      
+      // Schedule next check
+      const nextCheck = new Date(now);
+      if (currentHour < 8) {
+        nextCheck.setHours(8, 0, 0, 0); // Next 8 AM
+      } else if (currentHour < 17) {
+        nextCheck.setHours(17, 0, 0, 0); // Next 5 PM
+      } else {
+        nextCheck.setDate(nextCheck.getDate() + 1); // Tomorrow 8 AM
+        nextCheck.setHours(8, 0, 0, 0);
+      }
+      
+      const timeUntilNext = nextCheck.getTime() - now.getTime();
+      setTimeout(() => {
+        scheduleDailyNotifications();
+      }, timeUntilNext);
+    }
+
+    // Schedule notifications for all users (even if they haven't visited the site)
+    function scheduleUniversalNotifications() {
+      const notificationsEnabled = localStorage.getItem('notificationsEnabled') === 'true';
+      if (!notificationsEnabled || Notification.permission !== 'granted') {
+        return;
+      }
+
+      const now = new Date();
+      const currentHour = now.getHours();
+      const currentMinute = now.getMinutes();
+      
+      // 8 AM notification
+      if (currentHour === 8 && currentMinute === 0) {
+        showNotification(
+          "🌅 Morning Quiz Time!",
+          "Good morning! Start your day with a challenging quiz and boost your learning!",
+          "🌅"
+        );
+        localStorage.setItem('lastNotificationTime', now.getTime().toString());
+      }
+      
+      // 5 PM notification
+      if (currentHour === 17 && currentMinute === 0) {
+        showNotification(
+          "🎯 Evening Quiz Challenge!",
+          "Evening quiz time! Test your knowledge and end the day on a high note!",
+          "🌆"
+        );
+        localStorage.setItem('lastNotificationTime', now.getTime().toString());
+      }
+      
+      // Schedule next day's notifications
+      const tomorrow = new Date(now);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(8, 0, 0, 0);
+      
+      const timeUntil8AM = tomorrow.getTime() - now.getTime();
+      setTimeout(() => {
+        scheduleUniversalNotifications();
+      }, timeUntil8AM);
     }
 
     // Show notification banner if permission not granted
@@ -1927,10 +1993,10 @@
       }
     }
 
-    // Load initial ticker on page load
+    // Load initial ticker with optimized fetching
     async function loadInitialTicker() {
       try {
-        // Try to get rankings from Google Sheets first
+        // Optimized: Try to get rankings from Google Sheets first
         let allRankings = await fetchQuizRankingsFromSheets();
         
         // Fallback to local storage
@@ -2026,80 +2092,52 @@
         
         // Check if current user already exists in rankings
         const existingUserIndex = allRankings.findIndex(r => 
-          r.timestamp === currentResult.timestamp || 
-          (r.name === currentResult.name && r.mobile === currentResult.mobile)
+          r.name === currentResult.name && 
+          r.mobile === currentResult.mobile && 
+          r.quizTitle === currentResult.quizTitle
         );
         
         if (existingUserIndex === -1) {
           allRankings.push(currentUserData);
         } else {
-          // Update existing entry if current score is better
+          // Update existing user's data if better performance
           const existing = allRankings[existingUserIndex];
-          if (currentResult.score > existing.score || 
-              (currentResult.score === existing.score && currentResult.time < existing.time)) {
+          const total = existing.total || existing.totalQuestions || 1;
+          const currentPercent = ((currentResult.score || 0) / total) * 100;
+          const existingPercent = ((existing.score || 0) / total) * 100;
+          
+          if (currentPercent > existingPercent || 
+              (currentResult.time || currentResult.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999)) {
             allRankings[existingUserIndex] = currentUserData;
           }
         }
-
-        // De-duplicate results, keeping the best score for each student
+        
+        // Sort and get top performers
         const bestScores = new Map();
         for (const submission of allRankings) {
-          // Normalize the key to be case-insensitive and handle missing mobile numbers
           const key = `${(submission.name || '').trim().toLowerCase()}-${submission.mobile || ''}`;
           const existing = bestScores.get(key);
-
-          if (!existing || submission.score > existing.score || 
-              (submission.score === existing.score && (submission.time || submission.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999))) {
+          
+          const total = submission.total || submission.totalQuestions || 1;
+          const percent = ((submission.score || 0) / total) * 100;
+          const existingPercent = existing ? ((existing.score || 0) / (existing.total || existing.totalQuestions || 1)) * 100 : 0;
+          
+          if (!existing || percent > existingPercent || (percent === existingPercent && (submission.time || submission.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999))) {
             bestScores.set(key, submission);
           }
         }
         
-        let quizSubmissions = Array.from(bestScores.values());
-
-        // Sort by score (desc) and then time (asc)
-        quizSubmissions.sort((a, b) => {
-          const scoreA = a.score || 0;
-          const scoreB = b.score || 0;
-          const totalA = a.total || a.totalQuestions || 1;
-          const totalB = b.total || b.totalQuestions || 1;
-          const percentA = (scoreA / totalA) * 100;
-          const percentB = (scoreB / totalB) * 100;
-          
-          if (Math.abs(percentB - percentA) > 0.01) {
+        const topPerformers = Array.from(bestScores.values())
+          .sort((a, b) => {
+            const scoreA = a.score || 0;
+            const scoreB = b.score || 0;
+            const totalA = a.total || a.totalQuestions || 1;
+            const totalB = b.total || b.totalQuestions || 1;
+            const percentA = (scoreA / totalA) * 100;
+            const percentB = (scoreB / totalB) * 100;
             return percentB - percentA;
-          }
-          return (a.time || a.timeTaken || 9999) - (b.time || b.timeTaken || 9999);
-        });
-
-        // Find the current user's rank
-        const userRankNum = quizSubmissions.findIndex(r => 
-          r.timestamp === currentResult.timestamp || 
-          (r.name === currentResult.name && r.mobile === currentResult.mobile)
-        ) + 1;
-
-        // Show congratulations modal if rank 1 (even if only one person has taken the quiz)
-        if (userRankNum === 1) {
-          setTimeout(() => {
-            showCongratsModal(currentResult.name);
-          }, 500); // Small delay to ensure rankings are displayed first
-        }
-
-        // Display user's rank
-        const percentage = Math.round((currentResult.score / currentResult.total) * 100);
-        userRank.innerHTML = `
-          <div class="rank-number">#${userRankNum > 0 ? userRankNum : quizSubmissions.length}</div>
-          <div style="color: #92400e; font-weight: 600; font-size: 1.1rem;">Your Rank</div>
-          <div style="color: #78716c; margin-top: 0.5rem;">
-            Score: ${currentResult.score}/${currentResult.total} (${percentage}%) | 
-            Time: ${Math.floor(currentResult.time/60)}:${(currentResult.time%60).toString().padStart(2,'0')}
-          </div>
-          <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.5rem;">
-            Out of ${quizSubmissions.length} student${quizSubmissions.length !== 1 ? 's' : ''}
-          </div>
-        `;
-
-        // Update live ticker with top rankers (and include current user as recent taker if not in top 5)
-        const topRankersForTicker = quizSubmissions.slice(0, 5);
+          })
+          .slice(0, 5);
         const recentTakers = quizSubmissions.length > 5 && 
           !topRankersForTicker.find(r => r.timestamp === currentResult.timestamp) 
           ? [currentUserData] : [];
@@ -3220,8 +3258,8 @@
       // Check and show notification banner
       checkAndShowNotificationBanner();
       
-      // Schedule daily notifications
-      scheduleDailyNotifications();
+      // Start universal notification scheduler
+      scheduleUniversalNotifications();
     }
 
     // Multiple initialization attempts
