@@ -1993,10 +1993,10 @@
       }
     }
 
-    // Load initial ticker with optimized fetching
+    // Load initial ticker on page load
     async function loadInitialTicker() {
       try {
-        // Optimized: Try to get rankings from Google Sheets first
+        // Try to get rankings from Google Sheets first
         let allRankings = await fetchQuizRankingsFromSheets();
         
         // Fallback to local storage
@@ -2092,52 +2092,80 @@
         
         // Check if current user already exists in rankings
         const existingUserIndex = allRankings.findIndex(r => 
-          r.name === currentResult.name && 
-          r.mobile === currentResult.mobile && 
-          r.quizTitle === currentResult.quizTitle
+          r.timestamp === currentResult.timestamp || 
+          (r.name === currentResult.name && r.mobile === currentResult.mobile)
         );
         
         if (existingUserIndex === -1) {
           allRankings.push(currentUserData);
         } else {
-          // Update existing user's data if better performance
+          // Update existing entry if current score is better
           const existing = allRankings[existingUserIndex];
-          const total = existing.total || existing.totalQuestions || 1;
-          const currentPercent = ((currentResult.score || 0) / total) * 100;
-          const existingPercent = ((existing.score || 0) / total) * 100;
-          
-          if (currentPercent > existingPercent || 
-              (currentResult.time || currentResult.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999)) {
+          if (currentResult.score > existing.score || 
+              (currentResult.score === existing.score && currentResult.time < existing.time)) {
             allRankings[existingUserIndex] = currentUserData;
           }
         }
-        
-        // Sort and get top performers
+
+        // De-duplicate results, keeping the best score for each student
         const bestScores = new Map();
         for (const submission of allRankings) {
+          // Normalize the key to be case-insensitive and handle missing mobile numbers
           const key = `${(submission.name || '').trim().toLowerCase()}-${submission.mobile || ''}`;
           const existing = bestScores.get(key);
-          
-          const total = submission.total || submission.totalQuestions || 1;
-          const percent = ((submission.score || 0) / total) * 100;
-          const existingPercent = existing ? ((existing.score || 0) / (existing.total || existing.totalQuestions || 1)) * 100 : 0;
-          
-          if (!existing || percent > existingPercent || (percent === existingPercent && (submission.time || submission.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999))) {
+
+          if (!existing || submission.score > existing.score || 
+              (submission.score === existing.score && (submission.time || submission.timeTaken || 9999) < (existing.time || existing.timeTaken || 9999))) {
             bestScores.set(key, submission);
           }
         }
         
-        const topPerformers = Array.from(bestScores.values())
-          .sort((a, b) => {
-            const scoreA = a.score || 0;
-            const scoreB = b.score || 0;
-            const totalA = a.total || a.totalQuestions || 1;
-            const totalB = b.total || b.totalQuestions || 1;
-            const percentA = (scoreA / totalA) * 100;
-            const percentB = (scoreB / totalB) * 100;
+        let quizSubmissions = Array.from(bestScores.values());
+
+        // Sort by score (desc) and then time (asc)
+        quizSubmissions.sort((a, b) => {
+          const scoreA = a.score || 0;
+          const scoreB = b.score || 0;
+          const totalA = a.total || a.totalQuestions || 1;
+          const totalB = b.total || b.totalQuestions || 1;
+          const percentA = (scoreA / totalA) * 100;
+          const percentB = (scoreB / totalB) * 100;
+          
+          if (Math.abs(percentB - percentA) > 0.01) {
             return percentB - percentA;
-          })
-          .slice(0, 5);
+          }
+          return (a.time || a.timeTaken || 9999) - (b.time || b.timeTaken || 9999);
+        });
+
+        // Find the current user's rank
+        const userRankNum = quizSubmissions.findIndex(r => 
+          r.timestamp === currentResult.timestamp || 
+          (r.name === currentResult.name && r.mobile === currentResult.mobile)
+        ) + 1;
+
+        // Show congratulations modal if rank 1 (even if only one person has taken the quiz)
+        if (userRankNum === 1) {
+          setTimeout(() => {
+            showCongratsModal(currentResult.name);
+          }, 500); // Small delay to ensure rankings are displayed first
+        }
+
+        // Display user's rank
+        const percentage = Math.round((currentResult.score / currentResult.total) * 100);
+        userRank.innerHTML = `
+          <div class="rank-number">#${userRankNum > 0 ? userRankNum : quizSubmissions.length}</div>
+          <div style="color: #92400e; font-weight: 600; font-size: 1.1rem;">Your Rank</div>
+          <div style="color: #78716c; margin-top: 0.5rem;">
+            Score: ${currentResult.score}/${currentResult.total} (${percentage}%) | 
+            Time: ${Math.floor(currentResult.time/60)}:${(currentResult.time%60).toString().padStart(2,'0')}
+          </div>
+          <div style="color: #64748b; font-size: 0.9rem; margin-top: 0.5rem;">
+            Out of ${quizSubmissions.length} student${quizSubmissions.length !== 1 ? 's' : ''}
+          </div>
+        `;
+
+        // Update live ticker with top rankers (and include current user as recent taker if not in top 5)
+        const topRankersForTicker = quizSubmissions.slice(0, 5);
         const recentTakers = quizSubmissions.length > 5 && 
           !topRankersForTicker.find(r => r.timestamp === currentResult.timestamp) 
           ? [currentUserData] : [];

@@ -90,68 +90,10 @@ async function saveMockTestResultToSheets(testData) {
 
 // Cache for quiz rankings (per quiz title)
 let quizRankingsCache = new Map();
-const QUIZ_CACHE_DURATION = 30 * 60 * 1000; // 30 seconds (reduced for faster updates)
-const BATCH_SIZE = 5; // Process requests in batches
-
-// Performance optimization: Pre-fetch common data
-let preFetchQueue = [];
-let isPreFetching = false;
+const QUIZ_CACHE_DURATION = 2 * 60 * 1000; // 2 minutes (reduced for more real-time updates)
 
 /**
- * Optimized batch fetch for multiple quiz titles
- * Reduces API calls by fetching multiple quizzes in one request
- */
-async function batchFetchQuizRankings(quizTitles) {
-  if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_WEB_APP_URL_HERE') {
-    console.warn('Google Sheets URL not configured. Using local data only.');
-    return null;
-  }
-
-  try {
-    const url = `${GOOGLE_SCRIPT_URL}?action=getBatchRankings&quizzes=${encodeURIComponent(quizTitles.join(','))}`;
-    console.log(`Batch fetching ${quizTitles.length} quizzes...`);
-    
-    const response = await fetch(url, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Batch-Size': quizTitles.length.toString()
-      }
-    });
-    
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    
-    const data = await response.json();
-    
-    if (data.success) {
-      // Cache all returned rankings
-      const now = Date.now();
-      quizTitles.forEach((title, index) => {
-        if (data.rankings && data.rankings[index]) {
-          quizRankingsCache.set(title, {
-            data: data.rankings[index],
-            timestamp: now
-          });
-        }
-      });
-      
-      console.log(`Batch cached ${quizTitles.length} quizzes successfully`);
-      return data.rankings;
-    } else {
-      console.error('Batch fetch failed:', data.error);
-      return null;
-    }
-  } catch (error) {
-    console.error('Error in batch fetch:', error);
-    return null;
-  }
-}
-
-/**
- * Fetch quiz rankings from Google Sheets, with caching and optimizations
+ * Fetch quiz rankings from Google Sheets, with caching per quiz
  * @param {string} quizTitle - Optional quiz title to filter rankings
  */
 async function fetchQuizRankingsFromSheets(quizTitle = null) {
@@ -177,17 +119,7 @@ async function fetchQuizRankingsFromSheets(quizTitle = null) {
       url += `&quizTitle=${encodeURIComponent(quizTitle)}`;
     }
     
-    // Add cache-busting parameter to avoid stale responses
-    url += `&t=${now}`;
-    
-    const response = await fetch(url, {
-      method: 'GET',
-      mode: 'no-cors',
-      headers: {
-        'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache'
-      }
-    });
+    const response = await fetch(url);
     
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
@@ -204,7 +136,6 @@ async function fetchQuizRankingsFromSheets(quizTitle = null) {
       console.log(`Quiz rankings fetched and cached successfully for: ${cacheKey}`);
       return data.rankings;
     } else {
-      console.error('Fetch failed:', data.error);
       return null;
     }
   } catch (error) {
